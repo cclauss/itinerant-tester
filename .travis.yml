@@ -5,10 +5,10 @@ python:
     - 2.7
     - 3.6.1
 before_install:
-    #- git clone --depth=50 --branch=master https://github.com/facebookresearch/InferSent ~/InferSent
-    - git clone --depth=50 --branch=master https://github.com/ibm-watson-data-lab/ibmseti ~/ibmseti
-    - cp *.py ~/ibmseti/ibmseti  # copy local pytest scripts into ~/ibmseti
-    - cd ~/ibmseti
+    - REPO_TO_TEST=https://github.com/ibm-watson-data-lab/ibmseti
+    - git clone --depth=50 --branch=master ${REPO_TO_TEST} ~/itinerant-tester
+    #- cp *.py ~/itinerant-tester  # copy local python scripts into ~/itinerant-tester
+    - cd ~/itinerant-tester
 install:
     - pip install flake8  # pytest  # add some test later
 before_script:
@@ -20,4 +20,4 @@ script: true
     # pytest --capture=sys
 notifications:
     on_success: change
-    on_failure: change  # `always` will be the setting once code changes slow down
+on_failure: change  # `always` will be the setting once code changes slow down
