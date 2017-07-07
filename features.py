@@ -325,7 +325,7 @@ def entropy(p, w):
 
 def asymmetry(spectrogram_L, spectrogram_R):
   '''
-  returns (spectogram_L - spectrogram_R) / (spectogram_L + spectrogram_R)
+  returns (spectrogram_L - spectrogram_R) / (spectogram_L + spectrogram_R)
 
   The asymmetry measure should be used for both polarizations recorded for a particular observation.
 
