@@ -9,6 +9,8 @@ before_install:
     - git clone --depth=50 --branch=master https://github.com/ibm-watson-data-lab/ibmseti ~/ibmseti
     - cp *.py ~/ibmseti  # copy local pytest scripts into ~/ibmseti
     - cd ~/ibmseti
+    - ls
+    - cat features.py
 install:
     - pip install flake8  # pytest  # add some test later
 before_script:
