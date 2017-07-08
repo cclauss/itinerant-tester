@@ -8,7 +8,7 @@ before_install:
     #- REPO_TO_TEST=https://github.com/ibm-watson-data-lab/ibmseti
     - REPO_TO_TEST=https://github.com/AlexiaJM/Deep-learning-with-cats
     - REPO_TO_TEST=https://github.com/vividvilla/csvtotable
-    - REPO_TO_HOST=https://github.com/cloudant/python-cloudant
+    - REPO_TO_TEST=https://github.com/cloudant/python-cloudant
     - git clone --depth=50 --branch=master ${REPO_TO_TEST} ~/itinerant-tester
     #- cp *.py ~/itinerant-tester  # copy local python scripts into ~/itinerant-tester
     - cd ~/itinerant-tester
