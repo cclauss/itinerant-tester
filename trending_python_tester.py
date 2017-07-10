@@ -7,6 +7,12 @@ import requests
     tests on the top 25 GitHub Trending Python repos.
 """
 
+ignore = [
+    'python/cpython', 'ansible/ansible', 'django/django',
+    'jadore801120/attention-is-all-you-need-pytorch',
+    'andreiapostoae/dota2-predictor', 'lmcinnes/umap', 'vinta/awesome-python'
+]
+
 fmt = """sudo: false
 dist: trusty
 language: python
@@ -21,7 +27,7 @@ script:
     - URL=https://github.com/${REPO}
     - git clone --depth=50 --branch=master ${URL} ~/${REPO}
     - cd ~/${REPO}
-    - echo ; echo -n flake8 testing of ${URL} on  ; python -V
+    - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     # stop the build if there are Python syntax errors or undefined names
     - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
@@ -31,8 +37,6 @@ notifications:
     on_failure: change  # `always` will be the setting once code changes slow down
 
 """
-
-ignore = ['python/cpython', 'ansible/ansible']
 
 url = 'https://github.com/trending?l=Python'
 soup = bs4.BeautifulSoup(requests.get(url).content, 'lxml')  # or 'html5lib'
