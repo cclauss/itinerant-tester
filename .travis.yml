@@ -2,29 +2,29 @@ sudo: false
 dist: trusty
 language: python
 env:
+    - REPO=DutchGraa/crackcoin
     - REPO=iogf/crocs
     - REPO=probcomp/bayeslite
-    - REPO=AlexiaJM/Deep-learning-with-cats
     - REPO=tensorflow/models
+    - REPO=AlexiaJM/Deep-learning-with-cats
     - REPO=jadore801120/attention-is-all-you-need-pytorch
     - REPO=andreiapostoae/dota2-predictor
-    - REPO=0x4D31/honeyLambda
+    - REPO=lmcinnes/umap
     - REPO=vinta/awesome-python
-    - REPO=warner/magic-wormhole
     - REPO=fchollet/keras
+    - REPO=0x4D31/honeyLambda
+    - REPO=scikit-learn/scikit-learn
+    - REPO=warner/magic-wormhole
+    - REPO=pallets/flask
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=jordanpotti/AWSBucketDump
+    - REPO=metachris/logzero
+    - REPO=jisungk/RIDDLE
     - REPO=rg3/youtube-dl
     - REPO=biancasubion/jupyshare
-    - REPO=scikit-learn/scikit-learn
-    - REPO=jordanpotti/AWSBucketDump
-    - REPO=lmcinnes/umap
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=jisungk/RIDDLE
     - REPO=vividvilla/csvtotable
-    - REPO=pallets/flask
+    - REPO=django/django
     - REPO=songrotek/Deep-Learning-Papers-Reading-Roadmap
-    - REPO=metachris/logzero
-    - REPO=saulpw/visidata
-    - REPO=cloudnativelabs/kube-shell
 python:
     - 2.7.13
     - 3.6.1
