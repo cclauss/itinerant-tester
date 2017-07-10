@@ -4,7 +4,7 @@ language: python
 python: 3.6.1
 env:
     REPO=probcomp/bayeslite
-    REPO=Deep-learning-with-cats:
+    REPO=Deep-learning-with-cats
 install:
     - pip install flake8  # pytest  # add some test later
 script:
