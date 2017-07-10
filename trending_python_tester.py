@@ -8,9 +8,13 @@ import requests
 """
 
 ignore = [
-    'python/cpython', 'ansible/ansible', 'django/django',
-    'jadore801120/attention-is-all-you-need-pytorch',
-    'andreiapostoae/dota2-predictor', 'lmcinnes/umap', 'vinta/awesome-python'
+    '0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor', 'ansible/ansible',
+    'django/django', 'iogf/crocs',
+    'jadore801120/attention-is-all-you-need-pytorch', 'jisungk/RIDDLE',
+    'jordanpotti/AWSBucketDump', 'lmcinnes/umap', 'metachris/logzero',
+    'python/cpython', 'rg3/youtube-dl',
+    'songrotek/Deep-Learning-Papers-Reading-Roadmap', 'vinta/awesome-python',
+    'vividvilla/csvtotable'
 ]
 
 fmt = """sudo: false
