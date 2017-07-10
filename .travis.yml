@@ -1,13 +1,13 @@
 sudo: false
 dist: trusty
 language: python
-python:
-    - 2.7
-    - 3.6.1
 env:
     - REPO=probcomp/bayeslite
     - REPO=AlexiaJM/Deep-learning-with-cats
     - REPO=vividvilla/csvtotable
+python:
+    - 2.7
+    - 3.6.1
 install:
     - pip install flake8  # pytest  # add some test later
 script:
