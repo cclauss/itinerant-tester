@@ -15,11 +15,19 @@ python:
 install:
     - pip install flake8  # pytest  # add some test later
 before_script:
+    # 1 flake8 testing of: probcomp/bayeslite...
+    - git clone --depth=50 --branch=master https://github.com/probcomp/bayeslite ~/bayeslite
+    - cd ~/bayeslite
+    # stop the build if there are Python syntax errors or undefined names
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
+    # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
+    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
     # 2 flake8 testing of: AlexiaJM/Deep-learning-with-cats...
     - git clone --depth=50 --branch=master https://github.com/AlexiaJM/Deep-learning-with-cats ~/Deep-learning-with-cats
     - cd ~/Deep-learning-with-cats
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -27,7 +35,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/iogf/crocs ~/crocs
     - cd ~/crocs
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -35,7 +43,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/0x4D31/honeyLambda ~/honeyLambda
     - cd ~/honeyLambda
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -43,7 +51,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/tensorflow/models ~/models
     - cd ~/models
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -51,7 +59,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/biancasubion/jupyshare ~/jupyshare
     - cd ~/jupyshare
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -59,7 +67,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/jadore801120/attention-is-all-you-need-pytorch ~/attention-is-all-you-need-pytorch
     - cd ~/attention-is-all-you-need-pytorch
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -67,7 +75,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/python/cpython ~/cpython
     - cd ~/cpython
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -75,7 +83,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/warner/magic-wormhole ~/magic-wormhole
     - cd ~/magic-wormhole
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -83,7 +91,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/rg3/youtube-dl ~/youtube-dl
     - cd ~/youtube-dl
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -91,7 +99,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/jordanpotti/AWSBucketDump ~/AWSBucketDump
     - cd ~/AWSBucketDump
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -99,7 +107,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/vinta/awesome-python ~/awesome-python
     - cd ~/awesome-python
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -107,7 +115,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/vividvilla/csvtotable ~/csvtotable
     - cd ~/csvtotable
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -115,7 +123,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/Arvanaghi/CheckPlease ~/CheckPlease
     - cd ~/CheckPlease
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -123,7 +131,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/scikit-learn/scikit-learn ~/scikit-learn
     - cd ~/scikit-learn
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -131,7 +139,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/andreiapostoae/dota2-predictor ~/dota2-predictor
     - cd ~/dota2-predictor
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -139,7 +147,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/ansible/ansible ~/ansible
     - cd ~/ansible
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -147,7 +155,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/stanford-futuredata/noscope ~/noscope
     - cd ~/noscope
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -155,7 +163,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/jisungk/RIDDLE ~/RIDDLE
     - cd ~/RIDDLE
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -163,7 +171,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/Eyyub/tensorflow-pix2pix ~/tensorflow-pix2pix
     - cd ~/tensorflow-pix2pix
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -171,7 +179,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/saulpw/visidata ~/visidata
     - cd ~/visidata
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -179,7 +187,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/josephmisiti/awesome-machine-learning ~/awesome-machine-learning
     - cd ~/awesome-machine-learning
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -187,7 +195,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/cloudnativelabs/kube-shell ~/kube-shell
     - cd ~/kube-shell
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -195,7 +203,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/reiinakano/scikit-plot ~/scikit-plot
     - cd ~/scikit-plot
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
@@ -203,7 +211,7 @@ before_script:
     - git clone --depth=50 --branch=master https://github.com/fchollet/keras ~/keras
     - cd ~/keras
     # stop the build if there are Python syntax errors or undefined names
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
+    - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 script: true
