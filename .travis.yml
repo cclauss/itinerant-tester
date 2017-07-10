@@ -1,7 +1,9 @@
 sudo: false
 dist: trusty
 language: python
-python: 3.6.1
+python:
+    - 2.7
+    - 3.6.1
 env:
     - REPO=probcomp/bayeslite
     - REPO=AlexiaJM/Deep-learning-with-cats
@@ -9,7 +11,7 @@ env:
 install:
     - pip install flake8  # pytest  # add some test later
 script:
-    # echo ; echo -n "flake8 testing of ${REPO}..."
+    - echo ; echo -n "flake8 testing of ${REPO}..."
     - git clone --depth=50 --branch=master "https://github.com/${REPO}" "~/${REPO}"
     - cd "~/${REPO}"
     # stop the build if there are Python syntax errors or undefined names
