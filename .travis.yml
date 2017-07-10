@@ -2,11 +2,32 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=probcomp/bayeslite
-    - REPO=AlexiaJM/Deep-learning-with-cats
-    - REPO=vividvilla/csvtotable
+    - probcomp/bayeslite
+    - iogf/crocs
+    - AlexiaJM/Deep-learning-with-cats
+    - tensorflow/models
+    - jadore801120/attention-is-all-you-need-pytorch
+    - 0x4D31/honeyLambda
+    - biancasubion/jupyshare
+    - warner/magic-wormhole
+    - rg3/youtube-dl
+    - andreiapostoae/dota2-predictor
+    - vinta/awesome-python
+    - jordanpotti/AWSBucketDump
+    - fchollet/keras
+    - scikit-learn/scikit-learn
+    - ansible/ansible
+    - josephmisiti/awesome-machine-learning
+    - vividvilla/csvtotable
+    - jisungk/RIDDLE
+    - stanford-futuredata/noscope
+    - Arvanaghi/CheckPlease
+    - saulpw/visidata
+    - songrotek/Deep-Learning-Papers-Reading-Roadmap
+    - infobyte/spoilerwall
+    - reiinakano/scikit-plot
 python:
-    - 2.7
+    - 2.7.13
     - 3.6.1
 install:
     - pip install flake8  # pytest  # add some test later
