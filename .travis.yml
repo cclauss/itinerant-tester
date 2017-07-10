@@ -3,23 +3,15 @@ dist: trusty
 language: python
 env:
     - REPO=DutchGraa/crackcoin
-    - REPO=iogf/crocs
     - REPO=probcomp/bayeslite
     - REPO=tensorflow/models
     - REPO=AlexiaJM/Deep-learning-with-cats
     - REPO=fchollet/keras
-    - REPO=0x4D31/honeyLambda
     - REPO=scikit-learn/scikit-learn
     - REPO=warner/magic-wormhole
     - REPO=pallets/flask
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=jordanpotti/AWSBucketDump
-    - REPO=metachris/logzero
-    - REPO=jisungk/RIDDLE
-    - REPO=rg3/youtube-dl
     - REPO=biancasubion/jupyshare
-    - REPO=vividvilla/csvtotable
-    - REPO=songrotek/Deep-Learning-Papers-Reading-Roadmap
 python:
     - 2.7.13
     - 3.6.1
