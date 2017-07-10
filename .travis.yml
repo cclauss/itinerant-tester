@@ -2,30 +2,39 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=probcomp/bayeslite
     - REPO=iogf/crocs
+    - REPO=probcomp/bayeslite
     - REPO=AlexiaJM/Deep-learning-with-cats
     - REPO=tensorflow/models
+    - REPO=jadore801120/attention-is-all-you-need-pytorch
+    - REPO=andreiapostoae/dota2-predictor
+    - REPO=0x4D31/honeyLambda
     - REPO=biancasubion/jupyshare
     - REPO=warner/magic-wormhole
-    - REPO=andreiapostoae/dota2-predictor
+    - REPO=rg3/youtube-dl
+    - REPO=vinta/awesome-python
     - REPO=fchollet/keras
     - REPO=scikit-learn/scikit-learn
-    - REPO=ansible/ansible
+    - REPO=jordanpotti/AWSBucketDump
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=jisungk/RIDDLE
+    - REPO=songrotek/Deep-Learning-Papers-Reading-Roadmap
+    - REPO=pallets/flask
+    - REPO=lmcinnes/umap
     - REPO=stanford-futuredata/noscope
-    - REPO=Arvanaghi/CheckPlease
+    - REPO=requests/requests
+    - REPO=vividvilla/csvtotable
+    - REPO=saulpw/visidata
 python:
     - 2.7.13
     - 3.6.1
 install:
     - pip install flake8  # pytest  # add some test later
 script:
-    - URL="https://github.com/${REPO}"
-    - git clone --depth=50 --branch=master ${URL} "~/${REPO}"
-    - cd "~/${REPO}"
-    - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+    - URL=https://github.com/$REPO
+    - git clone --depth=50 --branch=master $URL ~/$REPO
+    - cd ~/$REPO
+    - echo ; echo -n flake8 testing of $URL on  ; python -V
     # stop the build if there are Python syntax errors or undefined names
     - flake8 . --count --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
