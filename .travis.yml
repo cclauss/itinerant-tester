@@ -3,18 +3,14 @@ dist: trusty
 language: python
 python: 3.6.1
 env:
-    bayeslite:
-        LONG=probcomp/bayeslite
-        SHORT=bayeslite
-    Deep-learning-with-cats:
-        LONG=AlexiaJM/Deep-learning-with-cats
-        SHORT=Deep-learning-with-cats
+    REPO=probcomp/bayeslite
+    REPO=Deep-learning-with-cats:
 install:
     - pip install flake8  # pytest  # add some test later
 script:
-    # echo ; echo -n flake8 testing of ${LONG}...
-    - git clone --depth=50 --branch=master https://github.com/${LONG} ~/${SHORT}
-    - cd ~/${SHORT}
+    # echo ; echo -n flake8 testing of ${REPO}...
+    - git clone --depth=50 --branch=master https://github.com/${REPO} ~/${REPO}
+    - cd ~/${REPO}
     # stop the build if there are Python syntax errors or undefined names
     - flake8 . --count --exit-zero --select=E901,E999,F821,F822,F823 --statistics
     # exit-zero treates all errors as warnings.  The GitHub editor is 127 chars wide
