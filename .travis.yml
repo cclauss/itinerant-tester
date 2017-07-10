@@ -2,30 +2,30 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - probcomp/bayeslite
-    - iogf/crocs
-    - AlexiaJM/Deep-learning-with-cats
-    - tensorflow/models
-    - jadore801120/attention-is-all-you-need-pytorch
-    - 0x4D31/honeyLambda
-    - biancasubion/jupyshare
-    - warner/magic-wormhole
-    - rg3/youtube-dl
-    - andreiapostoae/dota2-predictor
-    - vinta/awesome-python
-    - jordanpotti/AWSBucketDump
-    - fchollet/keras
-    - scikit-learn/scikit-learn
-    - ansible/ansible
-    - josephmisiti/awesome-machine-learning
-    - vividvilla/csvtotable
-    - jisungk/RIDDLE
-    - stanford-futuredata/noscope
-    - Arvanaghi/CheckPlease
-    - saulpw/visidata
-    - songrotek/Deep-Learning-Papers-Reading-Roadmap
-    - infobyte/spoilerwall
-    - reiinakano/scikit-plot
+    - REPO=probcomp/bayeslite
+    - REPO=iogf/crocs
+    - REPO=AlexiaJM/Deep-learning-with-cats
+    - REPO=tensorflow/models
+    - REPO=jadore801120/attention-is-all-you-need-pytorch
+    - REPO=0x4D31/honeyLambda
+    - REPO=biancasubion/jupyshare
+    - REPO=warner/magic-wormhole
+    - REPO=rg3/youtube-dl
+    - REPO=andreiapostoae/dota2-predictor
+    - REPO=vinta/awesome-python
+    - REPO=jordanpotti/AWSBucketDump
+    - REPO=fchollet/keras
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ansible/ansible
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=vividvilla/csvtotable
+    - REPO=jisungk/RIDDLE
+    - REPO=stanford-futuredata/noscope
+    - REPO=Arvanaghi/CheckPlease
+    - REPO=saulpw/visidata
+    - REPO=songrotek/Deep-Learning-Papers-Reading-Roadmap
+    - REPO=infobyte/spoilerwall
+    - REPO=reiinakano/scikit-plot
 python:
     - 2.7.13
     - 3.6.1
