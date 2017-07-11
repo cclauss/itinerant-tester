@@ -2,9 +2,22 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=fchollet/keras
+    - REPO=DutchGraa/crackcoin
+    - REPO=anishathalye/seashells
+    - REPO=williballenthin/python-idb
+    - REPO=tensorflow/models
     - REPO=mandatoryprogrammer/TrustTrees
-    - REPO=biancasubion/jupyshare
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=fchollet/keras
+    - REPO=probcomp/bayeslite
+    - REPO=AlexiaJM/Deep-learning-with-cats
+    - REPO=warner/magic-wormhole
+    - REPO=scikit-learn/scikit-learn
+    - REPO=requests/requests
+    - REPO=astorfi/TensorFlow-World
+    - REPO=XX-net/XX-Net
+    - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
 python:
     - 2.7.13
     - 3.6.1
