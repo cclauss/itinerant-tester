@@ -1,27 +1,22 @@
-#!/usr/bin/env python3
-
-import bs4
-import requests
-"""
-    Creates a .travis.yml file for running flake8
-    tests on the top 25 GitHub Trending Python repos.
-"""
-
-ignore = [
-    '0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor', 'ansible/ansible',
-    'django/django', 'iogf/crocs',
-    'jadore801120/attention-is-all-you-need-pytorch', 'jisungk/RIDDLE',
-    'jordanpotti/AWSBucketDump', 'lmcinnes/umap', 'metachris/logzero',
-    'python/cpython', 'rg3/youtube-dl',
-    'songrotek/Deep-Learning-Papers-Reading-Roadmap', 'vinta/awesome-python',
-    'vividvilla/csvtotable'
-]
-
-fmt = """sudo: false
+sudo: false
 dist: trusty
 language: python
 env:
-%s
+    - REPO=DutchGraa/crackcoin
+    - REPO=tensorflow/models
+    - REPO=probcomp/bayeslite
+    - REPO=anishathalye/seashells
+    - REPO=AlexiaJM/Deep-learning-with-cats
+    - REPO=fchollet/keras
+    - REPO=warner/magic-wormhole
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=scikit-learn/scikit-learn
+    - REPO=meetshah1995/pytorch-semseg
+    - REPO=pallets/flask
+    - REPO=mandatoryprogrammer/TrustTrees
+    - REPO=tensorflow/tensor2tensor
+    - REPO=donnemartin/system-design-primer
+    - REPO=astorfi/TensorFlow-World
 python:
     - 2.7.13
     - 3.6.1
@@ -39,15 +34,3 @@ script:
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
-
-"""
-
-url = 'https://github.com/trending?l=Python'
-soup = bs4.BeautifulSoup(requests.get(url).content, 'lxml')  # or 'html5lib'
-# 'python / cpython'
-repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
-# 'python/cpython'
-repos = (r.text.strip().replace(' ', '') for r in repos if '/' in r.text)
-# '    - REPO=python/cpython'
-repos = '\n'.join('    - REPO=' + repo for repo in repos if repo not in ignore)
-print(fmt % repos)
