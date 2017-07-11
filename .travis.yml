@@ -3,15 +3,19 @@ dist: trusty
 language: python
 env:
     - REPO=DutchGraa/crackcoin
-    - REPO=probcomp/bayeslite
+    - REPO=anishathalye/seashells
     - REPO=tensorflow/models
+    - REPO=probcomp/bayeslite
     - REPO=AlexiaJM/Deep-learning-with-cats
+    - REPO=meetshah1995/pytorch-semseg
     - REPO=fchollet/keras
-    - REPO=scikit-learn/scikit-learn
-    - REPO=warner/magic-wormhole
-    - REPO=pallets/flask 
+    - REPO=mandatoryprogrammer/TrustTrees
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=biancasubion/jupyshare
+    - REPO=warner/magic-wormhole
+    - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=tensorflow/tensor2tensor
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6.1
