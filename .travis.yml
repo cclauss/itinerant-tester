@@ -7,7 +7,7 @@ env:
     - REPO=williballenthin/python-idb
     - REPO=tensorflow/models
     - REPO=mandatoryprogrammer/TrustTrees
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=josephmisiti/awesome-machine-learning 
     - REPO=fchollet/keras
     - REPO=probcomp/bayeslite
     - REPO=AlexiaJM/Deep-learning-with-cats
