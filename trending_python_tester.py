@@ -9,10 +9,10 @@ import requests
 
 ignore = ['0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor',
           'anishathalye/seashells', 'ansible/ansible',
-          'dizballanze/django-eraserhead', 'django/django', 'iogf/crocs',
-          'jadore801120/attention-is-all-you-need-pytorch', 'jisungk/RIDDLE',
-          'jmathai/elodie', 'jordanpotti/AWSBucketDump', 'lmcinnes/umap',
-          'meetshah1995/pytorch-semseg', 'metachris/logzero',
+          'dizballanze/django-eraserhead', 'django/django', 'fchollet/keras',
+          'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
+          'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
+          'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
           'pfnet-research/chainer-gan-lib', 'python/cpython', 'rg3/youtube-dl',
           'songrotek/Deep-Learning-Papers-Reading-Roadmap',
           'vinta/awesome-python', 'vividvilla/csvtotable']
