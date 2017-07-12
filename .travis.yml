@@ -2,23 +2,18 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=anishathalye/seashells
     - REPO=tensorflow/models
     - REPO=DutchGraa/crackcoin
-    - REPO=meetshah1995/pytorch-semseg
     - REPO=mandatoryprogrammer/TrustTrees
-    - REPO=pfnet-research/chainer-gan-lib
     - REPO=williballenthin/python-idb
     - REPO=fchollet/keras
     - REPO=AlexiaJM/Deep-learning-with-cats
-    - REPO=jmathai/elodie
     - REPO=astorfi/TensorFlow-World
     - REPO=nccgroup/Winpayloads
     - REPO=donnemartin/system-design-primer
     - REPO=XX-net/XX-Net
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=warner/magic-wormhole
-    - REPO=dizballanze/django-eraserhead
     - REPO=jakubroztocil/httpie
     - REPO=https://httpie.org
 python:
@@ -31,9 +26,9 @@ script:
     - git clone --depth=50 --branch=master ${URL} ~/${REPO}
     - cd ~/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    # stop the build if there are Python syntax errors or undefined names
+    - echo stop the build if there are Python syntax errors or undefined names
     - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-    # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+    - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 notifications:
     on_success: change
