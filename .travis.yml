@@ -3,17 +3,18 @@ dist: trusty
 language: python
 env:
     - REPO=tensorflow/models
-    - REPO=DutchGraa/crackcoin
-    - REPO=mandatoryprogrammer/TrustTrees
-    - REPO=williballenthin/python-idb
+    - REPO=reinforceio/tensorforce
+    - REPO=astorfi/TensorFlow-World-Resources
     - REPO=fchollet/keras
-    - REPO=AlexiaJM/Deep-learning-with-cats
-    - REPO=astorfi/TensorFlow-World
     - REPO=nccgroup/Winpayloads
-    - REPO=donnemartin/system-design-primer
-    - REPO=XX-net/XX-Net
+    - REPO=Kaixhin/NoisyNet-A3C
+    - REPO=DarkSand/Sasila
+    - REPO=AlexiaJM/Deep-learning-with-cats
+    - REPO=soimort/you-get
+    - REPO=pallets/flask
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=warner/magic-wormhole
+    - REPO=GirlsFirst/SIP-2017-starter
+    - REPO=requests/requests
     - REPO=jakubroztocil/httpie
     - REPO=https://httpie.org
 python:
