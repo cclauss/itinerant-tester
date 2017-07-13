@@ -13,7 +13,8 @@ ignore = ['0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor',
           'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
           'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
           'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
-          'pfnet-research/chainer-gan-lib', 'python/cpython', 'rg3/youtube-dl',
+          'Kaixhin/NoisyNet-A3C', 'pfnet-research/chainer-gan-lib',
+          'python/cpython', 'rg3/youtube-dl',
           'songrotek/Deep-Learning-Papers-Reading-Roadmap',
           'vinta/awesome-python', 'vividvilla/csvtotable']
 
