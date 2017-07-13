@@ -16,7 +16,9 @@ ignore = ['0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor',
           'Kaixhin/NoisyNet-A3C', 'pfnet-research/chainer-gan-lib',
           'python/cpython', 'reiinakano/xcessiv', 'rg3/youtube-dl', 'sensepost/objection',
           'songrotek/Deep-Learning-Papers-Reading-Roadmap', 'StevenBlack/hosts',
-          'vinta/awesome-python', 'vividvilla/csvtotable']
+          'vinta/awesome-python', 'vividvilla/csvtotable', 'mitmproxy/mitmproxy',
+          'friggog/tree-gen', 'reinforceio/tensorforce'
+]
 
 fmt = """sudo: false
 dist: trusty
