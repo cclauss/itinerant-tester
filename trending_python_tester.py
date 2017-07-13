@@ -12,10 +12,10 @@ ignore = ['0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor',
           'dizballanze/django-eraserhead', 'django/django', 'fchollet/keras',
           'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
           'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
-          'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
+          'lanpa/tensorboard-pytorch', 'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
           'Kaixhin/NoisyNet-A3C', 'pfnet-research/chainer-gan-lib',
-          'python/cpython', 'rg3/youtube-dl',
-          'songrotek/Deep-Learning-Papers-Reading-Roadmap',
+          'python/cpython', 'reiinakano/xcessiv', 'rg3/youtube-dl', 'sensepost/objection',
+          'songrotek/Deep-Learning-Papers-Reading-Roadmap', 'StevenBlack/hosts',
           'vinta/awesome-python', 'vividvilla/csvtotable']
 
 fmt = """sudo: false
