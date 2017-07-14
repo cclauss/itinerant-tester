@@ -7,18 +7,38 @@ import requests
     tests on the top 25 GitHub Trending Python repos.
 """
 
-ignore = ['0x4D31/honeyLambda', 'andreiapostoae/dota2-predictor',
-          'anishathalye/seashells', 'ansible/ansible',
-          'dizballanze/django-eraserhead', 'django/django', 'fchollet/keras',
-          'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
-          'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
-          'lanpa/tensorboard-pytorch', 'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
-          'Kaixhin/NoisyNet-A3C', 'pfnet-research/chainer-gan-lib',
-          'python/cpython', 'reiinakano/xcessiv', 'rg3/youtube-dl', 'sensepost/objection',
-          'songrotek/Deep-Learning-Papers-Reading-Roadmap', 'StevenBlack/hosts',
-          'vinta/awesome-python', 'vividvilla/csvtotable', 'mitmproxy/mitmproxy',
-          'friggog/tree-gen', 'reinforceio/tensorforce'
-]
+ignore = ['0x4D31/honeyLambda',
+          'Kaixhin/NoisyNet-A3C',
+          'PyCQA/flake8',
+          'StevenBlack/hosts',
+          'andreiapostoae/dota2-predictor',
+          'anishathalye/seashells',
+          'ansible/ansible',
+          'benjaminp/six',
+          'dizballanze/django-eraserhead',
+          'django/django',
+          'fchollet/keras',
+          'friggog/tree-gen',
+          'iogf/crocs',
+          'jadore801120/attention-is-all-you-need-pytorch',
+          'jisungk/RIDDLE',
+          'jmathai/elodie',
+          'jordanpotti/AWSBucketDump',
+          'lanpa/tensorboard-pytorch',
+          'lmcinnes/umap',
+          'meetshah1995/pytorch-semseg',
+          'metachris/logzero',
+          'mitmproxy/mitmproxy',
+          'pfnet-research/chainer-gan-lib',
+          'python/cpython',
+          'reiinakano/xcessiv',
+          'reinforceio/tensorforce',
+          'rg3/youtube-dl',
+          'sensepost/objection',
+          'songrotek/Deep-Learning-Papers-Reading-Roadmap',
+          'vinta/awesome-python',
+          'vividvilla/csvtotable',
+          'yeleman/py3compat']
 
 fmt = """sudo: false
 dist: trusty
