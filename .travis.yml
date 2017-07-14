@@ -2,6 +2,7 @@ sudo: false
 dist: trusty
 language: python
 env:
+    - REPO=ethereum/pyethereum
     # - REPO=benjaminp/six
     - REPO=pallets/jinja
     - REPO=yeleman/py3compat
