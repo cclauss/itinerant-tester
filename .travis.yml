@@ -2,10 +2,11 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=benjaminp/six
+    # - REPO=benjaminp/six
+    - REPO=yeleman/py3compat
     - REPO=google/yapf
     - REPO=pypa/setuptools
-    - REPO=PyCQA/flake8
+    # - REPO=PyCQA/flake8
     - REPO=python/cpython
     - REPO=tensorflow/nmt
     - REPO=tensorflow/models
