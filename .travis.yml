@@ -3,6 +3,7 @@ dist: trusty
 language: python
 env:
     # - REPO=benjaminp/six
+    - REPO=pallets/jinja
     - REPO=yeleman/py3compat
     - REPO=google/yapf
     - REPO=pypa/setuptools
