@@ -2,6 +2,7 @@ sudo: false
 dist: trusty
 language: python
 env:
+    - REPO=pypi/six
     - REPO=google/yapf
     - REPO=pypa/setuptools
     - REPO=PyCQA/flake8
