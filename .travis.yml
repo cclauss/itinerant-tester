@@ -5,7 +5,8 @@ env:
     - REPO=ethereum/pyethereum
     # - REPO=benjaminp/six
     - REPO=pallets/jinja
-    - REPO=yeleman/py3compat 
+    # - REPO=yeleman/py3compat
+    - REPO=yeleman/hamed-advanced
     - REPO=google/yapf
     - REPO=pypa/setuptools
     # - REPO=PyCQA/flake8
