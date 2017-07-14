@@ -3,14 +3,11 @@ dist: trusty
 language: python
 env:
     - REPO=ethereum/pyethereum
-    # - REPO=benjaminp/six
     - REPO=pallets/jinja
-    # - REPO=yeleman/py3compat
     - REPO=yeleman/hamed-advanced
     - REPO=rgaudin/django-orangeapisms
     - REPO=google/yapf
     - REPO=pypa/setuptools
-    # - REPO=PyCQA/flake8
     - REPO=python/cpython
     - REPO=tensorflow/nmt
     - REPO=tensorflow/models
