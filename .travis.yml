@@ -2,6 +2,10 @@ sudo: false
 dist: trusty
 language: python
 env:
+    - REPO=watson-developer-cloud/personality-insights-twitter-python
+    - REPO=watson-developer-cloud/python-sdk
+    - REPO=watson-developer-cloud/python-primer-companion-code
+    - REPO=watson-developer-cloud/speech-to-text-websockets-python
     - REPO=tensorflow/nmt
     - REPO=iogf/sukhoi
     - REPO=HelloZeroNet/ZeroNet
