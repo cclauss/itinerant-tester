@@ -1,0 +1,35 @@
+sudo: false
+dist: trusty
+language: python
+env:
+    - REPO=tensorflow/nmt
+    - REPO=iogf/sukhoi
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=tensorflow/models
+    - REPO=standupmaths/rolling_shutter
+    - REPO=neufv/put-me-on-a-watchlist
+    - REPO=channelcat/sanic
+    - REPO=scikit-learn/scikit-learn
+    - REPO=suraj-root/smap
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=pallets/flask
+    - REPO=DutchGraa/crackcoin
+    - REPO=XX-net/XX-Net
+    - REPO=requests/requests
+python:
+    - 2.7.13
+    - 3.6.1
+install:
+    - pip install flake8  # pytest  # add some test later
+script:
+    - URL=https://github.com/${REPO}
+    - git clone --depth=50 --branch=master ${URL} ~/${REPO}
+    - cd ~/${REPO}
+    - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+    - echo stop the build if there are Python syntax errors or undefined names
+    - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+notifications:
+    on_success: change
+    on_failure: change  # `always` will be the setting once code changes slow down
