@@ -2,23 +2,24 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=standupmaths/rolling_shutter
     - REPO=iogf/sukhoi
     - REPO=tensorflow/nmt
     - REPO=quiltdata/quilt
     - REPO=tensorflow/models
-    - REPO=neufv/put-me-on-a-watchlist
-    - REPO=HelloZeroNet/ZeroNet
+    - REPO=postmarketOS/pmbootstrap
     - REPO=bethgelab/foolbox
+    - REPO=neufv/put-me-on-a-watchlist
     - REPO=scikit-learn/scikit-learn
-    - REPO=channelcat/sanic
+    - REPO=pandas-dev/pandas
+    - REPO=HelloZeroNet/ZeroNet
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=pallets/flask
     - REPO=donnemartin/system-design-primer
-    - REPO=XX-net/XX-Net
-    - REPO=suraj-root/smap
-    - REPO=warner/magic-wormhole
+    - REPO=pallets/flask
+    - REPO=requests/requests
+    - REPO=jakubroztocil/httpie
+    - REPO=https://httpie.org
     - REPO=geekcomputers/Python
+    - REPO=suraj-root/smap
 python:
     - 2.7.13
     - 3.6.1
@@ -36,3 +37,4 @@ script:
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
+
