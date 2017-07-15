@@ -2,24 +2,23 @@ sudo: false
 dist: trusty
 language: python
 env:
-    - REPO=watson-developer-cloud/personality-insights-twitter-python
-    - REPO=watson-developer-cloud/python-sdk
-    - REPO=watson-developer-cloud/python-primer-companion-code
-    - REPO=watson-developer-cloud/speech-to-text-websockets-python
-    - REPO=tensorflow/nmt
-    - REPO=iogf/sukhoi
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=tensorflow/models
     - REPO=standupmaths/rolling_shutter
+    - REPO=iogf/sukhoi
+    - REPO=tensorflow/nmt
+    - REPO=quiltdata/quilt
+    - REPO=tensorflow/models
     - REPO=neufv/put-me-on-a-watchlist
-    - REPO=channelcat/sanic
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=bethgelab/foolbox
     - REPO=scikit-learn/scikit-learn
-    - REPO=suraj-root/smap
+    - REPO=channelcat/sanic
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=pallets/flask
-    - REPO=DutchGraa/crackcoin
+    - REPO=donnemartin/system-design-primer
     - REPO=XX-net/XX-Net
-    - REPO=requests/requests
+    - REPO=suraj-root/smap
+    - REPO=warner/magic-wormhole
+    - REPO=geekcomputers/Python
 python:
     - 2.7.13
     - 3.6.1
