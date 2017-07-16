@@ -1,19 +1,21 @@
 language: python
 env:
     - REPO=iogf/sukhoi
-    - REPO=tensorflow/nmt
     - REPO=postmarketOS/pmbootstrap
+    - REPO=tensorflow/nmt
     - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
     - REPO=pandas-dev/pandas
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=requests/requests
-    - REPO=donnemartin/system-design-primer
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=geekcomputers/Python
+    - REPO=scikit-learn/scikit-learn
     - REPO=suraj-root/smap
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=astorfi/3D-convolutional-Audio-Visual
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=pallets/flask
-    - REPO=jrg365/gpytorch
+    - REPO=XX-net/XX-Net
+    - REPO=geekcomputers/Python
+    - REPO=donnemartin/system-design-primer
+    - REPO=warner/magic-wormhole
+    - REPO=requests/requests
 python:
     - 2.7.13
     - 3.6.1
