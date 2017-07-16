@@ -3,19 +3,20 @@ env:
     - REPO=HelloZeroNet/ZeroNet
     - REPO=iogf/sukhoi
     - REPO=tensorflow/nmt
-    - REPO=postmarketOS/pmbootstrap
     - REPO=tensorflow/models
+    - REPO=postmarketOS/pmbootstrap
+    - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
     - REPO=pandas-dev/pandas
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=mxdg/passbytcp
     - REPO=pallets/flask
-    - REPO=scikit-learn/scikit-learn
     - REPO=donnemartin/system-design-primer
-    - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
+    - REPO=scikit-learn/scikit-learn
     - REPO=XX-net/XX-Net
-    - REPO=warner/magic-wormhole
-    - REPO=redapple0204/my-boring-python
+    - REPO=littlecodersh/ItChat
     - REPO=strizhechenko/netutils-linux
+    - REPO=warner/magic-wormhole
+    - REPO=home-assistant/home-assistant
 python:
     - 2.7.13
     - 3.6.1
