@@ -1,21 +1,21 @@
 language: python
 env:
+    - REPO=HelloZeroNet/ZeroNet
     - REPO=iogf/sukhoi
-    - REPO=postmarketOS/pmbootstrap
     - REPO=tensorflow/nmt
+    - REPO=postmarketOS/pmbootstrap
     - REPO=tensorflow/models
     - REPO=pandas-dev/pandas
-    - REPO=scikit-learn/scikit-learn
-    - REPO=suraj-root/smap
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=astorfi/3D-convolutional-Audio-Visual
     - REPO=josephmisiti/awesome-machine-learning
+    - REPO=mxdg/passbytcp
     - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
-    - REPO=geekcomputers/Python
+    - REPO=scikit-learn/scikit-learn
     - REPO=donnemartin/system-design-primer
+    - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
+    - REPO=XX-net/XX-Net
     - REPO=warner/magic-wormhole
-    - REPO=requests/requests
+    - REPO=redapple0204/my-boring-python
+    - REPO=strizhechenko/netutils-linux
 python:
     - 2.7.13
     - 3.6.1
