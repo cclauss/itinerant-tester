@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=pandas-dev/pandas
+    - REPO=cclauss/pandas
 python:
     - 2.7.13
     - 3.6.1
