@@ -15,7 +15,7 @@ env:
     - REPO=warner/magic-wormhole
 python:
     - 2.7.13
-    - 3.6.1
+    - 3.6.2
 install:
     - pip install flake8  # pytest  # add some test later
 script:
