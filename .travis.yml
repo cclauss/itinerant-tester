@@ -1,15 +1,31 @@
 language: python
 env:
-    - REPO=cclauss/pandas
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=astorfi/lip-reading-deeplearning
+    - REPO=iogf/sukhoi
+    - REPO=tensorflow/models
+    - REPO=tensorflow/nmt
+    - REPO=yinkaisheng/Python-UIAutomation-for-Windows
+    - REPO=strizhechenko/netutils-linux
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=donnemartin/system-design-primer
+    - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
+    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
+    - REPO=fxsjy/jieba
+    - REPO=home-assistant/home-assistant
+    - REPO=soimort/you-get
+    - REPO=postmarketOS/pmbootstrap
 python:
     - 2.7.13
-    - 3.6
+    - 3.6.1
 install:
     - pip install flake8  # pytest  # add some test later
 script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 --branch=patch-1 ${URL} ~/${REPO}
+    - git clone --depth=50 --branch=master ${URL} ~/${REPO}
     - cd ~/${REPO}
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
