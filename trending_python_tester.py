@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """
     Update the repo's '.travis.yml' to trigger Travis CI to run flake8 tests on
     the top 25 GitHub Trending Python repos.
@@ -24,7 +23,8 @@ url = 'https://github.com/trending?l=Python'  # GitHub Trending top 25 repos
 ignore = [
     '0x4D31/honeyLambda', 'Kaixhin/NoisyNet-A3C', 'PyCQA/flake8',
     'StevenBlack/hosts', 'andreiapostoae/dota2-predictor',
-    'anishathalye/seashells', 'ansible/ansible', 'benjaminp/six',
+    'anishathalye/seashells', 'ansible/ansible',
+    'appsecco/bugcrowd-levelup-subdomain-enumeration', 'benjaminp/six',
     'bethgelab/foolbox', 'dizballanze/django-eraserhead', 'django/django',
     'fchollet/keras', 'friggog/tree-gen', 'iogf/crocs',
     'jadore801120/attention-is-all-you-need-pytorch', 'jisungk/RIDDLE',
@@ -34,7 +34,8 @@ ignore = [
     'pfnet-research/chainer-gan-lib', 'python/cpython', 'quiltdata/quilt',
     'reiinakano/xcessiv', 'reinforceio/tensorforce', 'rg3/youtube-dl',
     'sensepost/objection', 'songrotek/Deep-Learning-Papers-Reading-Roadmap',
-    'vinta/awesome-python', 'vividvilla/csvtotable', 'yeleman/py3compat'
+    'strizhechenko/netutils-linux', 'vinta/awesome-python',
+    'vividvilla/csvtotable', 'yeleman/py3compat'
 ]
 
 # the boilerplate content of the .travis.yml file
@@ -53,9 +54,9 @@ script:
     - cd ~/${REPO}
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
