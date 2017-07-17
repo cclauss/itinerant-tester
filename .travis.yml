@@ -6,17 +6,14 @@ env:
     - REPO=tensorflow/models
     - REPO=tensorflow/nmt
     - REPO=yinkaisheng/Python-UIAutomation-for-Windows
-    - REPO=strizhechenko/netutils-linux
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=donnemartin/system-design-primer
-    - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
+    - REPO=aboul3la/Sublist3r
     - REPO=fxsjy/jieba
-    - REPO=home-assistant/home-assistant
+    - REPO=scikit-learn/scikit-learn
+    - REPO=XX-net/XX-Net
     - REPO=soimort/you-get
-    - REPO=postmarketOS/pmbootstrap
+    - REPO=littlecodersh/ItChat
 python:
     - 2.7.13
     - 3.6.1
