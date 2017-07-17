@@ -1,19 +1,21 @@
 language: python
 env:
-    - REPO=HelloZeroNet/ZeroNet
     - REPO=astorfi/lip-reading-deeplearning
-    - REPO=iogf/sukhoi
+    - REPO=HelloZeroNet/ZeroNet
     - REPO=tensorflow/models
-    - REPO=tensorflow/nmt
-    - REPO=yinkaisheng/Python-UIAutomation-for-Windows
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=donnemartin/system-design-primer
+    - REPO=iogf/sukhoi
     - REPO=aboul3la/Sublist3r
+    - REPO=tensorflow/nmt
+    - REPO=donnemartin/system-design-primer
+    - REPO=leesoh/yams
+    - REPO=yinkaisheng/Python-UIAutomation-for-Windows
     - REPO=fxsjy/jieba
+    - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
-    - REPO=XX-net/XX-Net
-    - REPO=soimort/you-get
     - REPO=littlecodersh/ItChat
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=XX-net/XX-Net
+    - REPO=warner/magic-wormhole
 python:
     - 2.7.13
     - 3.6.1
