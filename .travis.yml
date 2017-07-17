@@ -1,22 +1,6 @@
 language: python
 env:
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=iogf/sukhoi
-    - REPO=tensorflow/nmt
-    - REPO=tensorflow/models
-    - REPO=postmarketOS/pmbootstrap
-    - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
     - REPO=pandas-dev/pandas
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=mxdg/passbytcp
-    - REPO=pallets/flask
-    - REPO=donnemartin/system-design-primer
-    - REPO=scikit-learn/scikit-learn
-    - REPO=XX-net/XX-Net
-    - REPO=littlecodersh/ItChat
-    - REPO=strizhechenko/netutils-linux
-    - REPO=warner/magic-wormhole
-    - REPO=home-assistant/home-assistant
 python:
     - 2.7.13
     - 3.6.1
@@ -25,7 +9,7 @@ install:
 script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 --branch=master ${URL} ~/${REPO}
+    - git clone --depth=50 --branch=patch-1 ${URL} ~/${REPO}
     - cd ~/${REPO}
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
