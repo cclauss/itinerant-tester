@@ -1,8 +1,8 @@
 language: python
 env:
-    - REPO=astorfi/lip-reading-deeplearning
     - REPO=Cisco-Talos/pyrebox
     - REPO=HelloZeroNet/ZeroNet
+    - REPO=astorfi/lip-reading-deeplearning
     - REPO=tensorflow/models
     - REPO=iogf/sukhoi
     - REPO=warner/magic-wormhole
@@ -10,11 +10,11 @@ env:
     - REPO=astorfi/pythonic-automatic-email
     - REPO=nahamsec/JSParser
     - REPO=renmengye/revnet-public
-    - REPO=tensorflow/nmt
     - REPO=scikit-learn/scikit-learn
+    - REPO=tensorflow/nmt
     - REPO=fxsjy/jieba
-    - REPO=donnemartin/system-design-primer
     - REPO=shadowsocksr/shadowsocksr
+    - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6.2
