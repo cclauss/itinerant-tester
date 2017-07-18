@@ -1,18 +1,20 @@
 language: python
 env:
-    - REPO=astorfi/lip-reading-deeplearning
     - REPO=HelloZeroNet/ZeroNet
+    - REPO=astorfi/lip-reading-deeplearning
     - REPO=tensorflow/models
     - REPO=iogf/sukhoi
-    - REPO=tensorflow/nmt
+    - REPO=Cisco-Talos/pyrebox
+    - REPO=warner/magic-wormhole
+    - REPO=XX-net/XX-Net
+    - REPO=jrg365/gpytorch
     - REPO=donnemartin/system-design-primer
-    - REPO=yinkaisheng/Python-UIAutomation-for-Windows
-    - REPO=fxsjy/jieba
+    - REPO=tensorflow/nmt
+    - REPO=nahamsec/JSParser
     - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=XX-net/XX-Net
-    - REPO=warner/magic-wormhole
+    - REPO=fxsjy/jieba
+    - REPO=renmengye/revnet-public
 python:
     - 2.7.13
     - 3.6.2
