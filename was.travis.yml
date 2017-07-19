@@ -1,4 +1,4 @@
-language: python
+language: python 
 env:
     - REPO=ethereum/pyethereum
     - REPO=pallets/jinja
