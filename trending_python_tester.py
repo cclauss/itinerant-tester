@@ -38,7 +38,7 @@ ignore = [
     'sensepost/objection', 'shadowsocksr/shadowsocksr',
     'songrotek/Deep-Learning-Papers-Reading-Roadmap',
     'strizhechenko/netutils-linux', 'vinta/awesome-python',
-    'vividvilla/csvtotable', 'yeleman/py3compat'
+    'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat'
 ]
 
 # the boilerplate content of the .travis.yml file
