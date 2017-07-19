@@ -5,16 +5,17 @@ env:
     - REPO=astorfi/lip-reading-deeplearning
     - REPO=tensorflow/models
     - REPO=iogf/sukhoi
-    - REPO=warner/magic-wormhole
-    - REPO=XX-net/XX-Net
     - REPO=astorfi/pythonic-automatic-email
-    - REPO=nahamsec/JSParser
     - REPO=renmengye/revnet-public
-    - REPO=scikit-learn/scikit-learn
-    - REPO=tensorflow/nmt
-    - REPO=fxsjy/jieba
+    - REPO=XX-net/XX-Net
+    - REPO=warner/magic-wormhole
+    - REPO=nahamsec/JSParser
     - REPO=shadowsocksr/shadowsocksr
-    - REPO=scrapy/scrapy
+    - REPO=tensorflow/nmt
+    - REPO=worawit/MS17-010
+    - REPO=scikit-learn/scikit-learn
+    - REPO=requests/requests
+    - REPO=fxsjy/jieba
 python:
     - 2.7.13
     - 3.6.2
