@@ -25,15 +25,17 @@ ignore = [
     'StevenBlack/hosts', 'aboul3la/Sublist3r',
     'andreiapostoae/dota2-predictor', 'anishathalye/seashells',
     'ansible/ansible', 'appsecco/bugcrowd-levelup-subdomain-enumeration',
-    'benjaminp/six', 'bethgelab/foolbox', 'dizballanze/django-eraserhead',
-    'django/django', 'fchollet/keras', 'friggog/tree-gen', 'iogf/crocs',
+    'astorfi/pythonic-automatic-email', 'benjaminp/six', 'bethgelab/foolbox',
+    'dizballanze/django-eraserhead', 'django/django', 'fchollet/keras',
+    'friggog/tree-gen', 'iogf/crocs',
     'jadore801120/attention-is-all-you-need-pytorch', 'jisungk/RIDDLE',
-    'jmathai/elodie', 'jordanpotti/AWSBucketDump', 'lanpa/tensorboard-pytorch',
-    'leesoh/yams', 'littlecodersh/ItChat', 'lmcinnes/umap',
-    'meetshah1995/pytorch-semseg', 'metachris/logzero', 'mitmproxy/mitmproxy',
-    'neufv/put-me-on-a-watchlist', 'pfnet-research/chainer-gan-lib',
-    'python/cpython', 'quiltdata/quilt', 'reiinakano/xcessiv',
-    'reinforceio/tensorforce', 'rg3/youtube-dl', 'sensepost/objection',
+    'jmathai/elodie', 'jordanpotti/AWSBucketDump', 'jrg365/gpytorch',
+    'lanpa/tensorboard-pytorch', 'leesoh/yams', 'littlecodersh/ItChat',
+    'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
+    'mitmproxy/mitmproxy', 'neufv/put-me-on-a-watchlist',
+    'pfnet-research/chainer-gan-lib', 'python/cpython', 'quiltdata/quilt',
+    'reiinakano/xcessiv', 'reinforceio/tensorforce', 'rg3/youtube-dl',
+    'sensepost/objection', 'shadowsocksr/shadowsocksr',
     'songrotek/Deep-Learning-Papers-Reading-Roadmap',
     'strizhechenko/netutils-linux', 'vinta/awesome-python',
     'vividvilla/csvtotable', 'yeleman/py3compat'
@@ -45,14 +47,15 @@ env:
 %s
 python:
     - 2.7.13
-    - 3.6.1
+    - 3.6.2
 install:
     - pip install flake8  # pytest  # add some test later
-script:
+before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - git clone --depth=50 --branch=master ${URL} ~/${REPO}
     - cd ~/${REPO}
+script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
