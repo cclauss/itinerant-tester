@@ -4,13 +4,14 @@ env:
     - REPO=HelloZeroNet/ZeroNet
     - REPO=tensorflow/models
     - REPO=XX-net/XX-Net
-    - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=iogf/sukhoi
     - REPO=scikit-learn/scikit-learn
     - REPO=warner/magic-wormhole
-    - REPO=cbfinn/maml_rl
+    - REPO=pallets/flask
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=cbfinn/maml
+    - REPO=kensho-technologies/graphql-compiler
+    - REPO=iogf/sukhoi
+    - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6.2
