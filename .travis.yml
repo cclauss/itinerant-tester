@@ -1,21 +1,16 @@
 language: python
 env:
     - REPO=kragniz/anyprint
-    - REPO=Cisco-Talos/pyrebox
     - REPO=HelloZeroNet/ZeroNet
     - REPO=tensorflow/models
-    - REPO=astrofrog/mpl-scatter-density
     - REPO=XX-net/XX-Net
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=iogf/sukhoi
     - REPO=scikit-learn/scikit-learn
-    - REPO=cloudflare/receipt-printer
     - REPO=pallets/flask
     - REPO=warner/magic-wormhole
     - REPO=cbfinn/maml_rl
     - REPO=cbfinn/maml
-    - REPO=jakubroztocil/httpie
-    - REPO=https://httpie.org
 python:
     - 2.7.13
     - 3.6.2
