@@ -20,23 +20,24 @@ gh = github3_login(username, getpass.getpass())
 url = 'https://github.com/trending?l=Python'  # GitHub Trending top 25 repos
 
 # these repos pass tests, have pull requests to pass tests, or are Py3 only
+
 ignore = [
-    '0x4D31/honeyLambda', 'Kaixhin/NoisyNet-A3C', 'PyCQA/flake8',
-    'StevenBlack/hosts', 'aboul3la/Sublist3r',
+    '0x4D31/honeyLambda', 'Cisco-Talos/pyrebox', 'Kaixhin/NoisyNet-A3C',
+    'PyCQA/flake8', 'StevenBlack/hosts', 'aboul3la/Sublist3r',
     'andreiapostoae/dota2-predictor', 'anishathalye/seashells',
-    'ansible/ansible', 'astrofrog/fast-histogram',
-    'appsecco/bugcrowd-levelup-subdomain-enumeration',
-    'astorfi/pythonic-automatic-email', 'benjaminp/six', 'bethgelab/foolbox',
+    'ansible/ansible', 'appsecco/bugcrowd-levelup-subdomain-enumeration',
+    'astorfi/pythonic-automatic-email', 'astrofrog/mpl-scatter-density',
+    'benjaminp/six', 'bethgelab/foolbox', 'cloudflare/receipt-printer',
     'dizballanze/django-eraserhead', 'django/django', 'fchollet/keras',
-    'friggog/tree-gen', 'iogf/crocs',
-    'jadore801120/attention-is-all-you-need-pytorch', 'jisungk/RIDDLE',
-    'jmathai/elodie', 'jordanpotti/AWSBucketDump', 'jrg365/gpytorch',
-    'lanpa/tensorboard-pytorch', 'leesoh/yams', 'littlecodersh/ItChat',
-    'lmcinnes/umap', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
-    'mitmproxy/mitmproxy', 'neufv/put-me-on-a-watchlist',
+    'friggog/tree-gen', 'https://httpie.org', 'iogf/crocs',
+    'jadore801120/attention-is-all-you-need-pytorch', 'jakubroztocil/httpie',
+    'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
+    'jrg365/gpytorch', 'lanpa/tensorboard-pytorch', 'leesoh/yams',
+    'littlecodersh/ItChat', 'lmcinnes/umap', 'meetshah1995/pytorch-semseg',
+    'metachris/logzero', 'mitmproxy/mitmproxy', 'neufv/put-me-on-a-watchlist',
     'pfnet-research/chainer-gan-lib', 'python/cpython', 'quiltdata/quilt',
-    'reiinakano/xcessiv', 'reinforceio/tensorforce', 'rg3/youtube-dl',
-    'sensepost/objection', 'shadowsocksr/shadowsocksr',
+    'reiinakano/xcessiv', 'reinforceio/tensorforce', 'requests/requests',
+    'rg3/youtube-dl', 'sensepost/objection', 'shadowsocksr/shadowsocksr',
     'songrotek/Deep-Learning-Papers-Reading-Roadmap',
     'strizhechenko/netutils-linux', 'vinta/awesome-python',
     'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat'
