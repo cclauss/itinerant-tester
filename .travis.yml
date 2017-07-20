@@ -1,21 +1,16 @@
 language: python
 env:
     - REPO=Cisco-Talos/pyrebox
-    - REPO=kragniz/anyprint
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=tensorflow/models
-    - REPO=iogf/sukhoi
-    - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=scikit-learn/scikit-learn
-    - REPO=astorfi/lip-reading-deeplearning
-    - REPO=warner/magic-wormhole
-    - REPO=XX-net/XX-Net
-    - REPO=tensorflow/nmt
-    - REPO=astrofrog/fast-histogram
-    - REPO=renmengye/revnet-public
-    - REPO=jakubroztocil/httpie
-    - REPO=https://httpie.org
+    - REPO=Cisco-Talos/dotNET_WinDBG
+    - REPO=Cisco-Talos/CASC
+    - REPO=Cisco-Talos/BASS
+    - REPO=Cisco-Talos/fnc-1
+    - REPO=Cisco-Talos/Decept
+    - REPO=Cisco-Talos/clamav-faq
+    - REPO=Cisco-Talos/smi_check
+    - REPO=Cisco-Talos/flokibot
+    - REPO=Cisco-Talos/goznym
+    - REPO=Cisco-Talos/ROPMEMU
 python:
     - 2.7.13
     - 3.6.2
