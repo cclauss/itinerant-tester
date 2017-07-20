@@ -4,10 +4,10 @@ env:
     - REPO=HelloZeroNet/ZeroNet
     - REPO=tensorflow/models
     - REPO=XX-net/XX-Net
+    - REPO=pallets/flask
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=iogf/sukhoi
     - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
     - REPO=warner/magic-wormhole
     - REPO=cbfinn/maml_rl
     - REPO=cbfinn/maml
