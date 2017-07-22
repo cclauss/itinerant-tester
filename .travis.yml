@@ -1,22 +1,22 @@
 language: python
 env:
-    - REPO=shadowsocks/shadowsocks
     - REPO=polyaxon/polyaxon
+    - REPO=maciejkula/spotlight
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=openai/baselines
+    - REPO=shadowsocks/shadowsocks
     - REPO=tensorflow/models
-    - REPO=pallets/flask
+    - REPO=openai/baselines
+    - REPO=ethereum/viper
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=mingyuliutw/UNIT
     - REPO=XX-net/XX-Net
-    - REPO=iogf/sukhoi
-    - REPO=scikit-learn/scikit-learn
-    - REPO=kensho-technologies/graphql-compiler
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=kragniz/anyprint
+    - REPO=pallets/flask
     - REPO=awslabs/sockeye
-    - REPO=tensorflow/nmt
-    - REPO=ethereum/viper
+    - REPO=leviathan-framework/leviathan
+    - REPO=scikit-learn/scikit-learn
+    - REPO=scrapy/scrapy
     - REPO=donnemartin/system-design-primer
+    - REPO=iogf/sukhoi
 python:
     - 2.7.13
     - 3.6.2
