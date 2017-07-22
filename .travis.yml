@@ -3,20 +3,20 @@ env:
     - REPO=polyaxon/polyaxon
     - REPO=maciejkula/spotlight
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=shadowsocks/shadowsocks
     - REPO=tensorflow/models
-    - REPO=openai/baselines
-    - REPO=ethereum/viper
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=mingyuliutw/UNIT
+    - REPO=shadowsocks/shadowsocks
     - REPO=XX-net/XX-Net
+    - REPO=openai/baselines
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=pallets/flask
-    - REPO=awslabs/sockeye
+    - REPO=ctf-wiki/ctf-wiki
+    - REPO=ethereum/viper
     - REPO=leviathan-framework/leviathan
     - REPO=scikit-learn/scikit-learn
     - REPO=scrapy/scrapy
-    - REPO=donnemartin/system-design-primer
-    - REPO=iogf/sukhoi
+    - REPO=soimort/you-get
+    - REPO=mingyuliutw/UNIT
+    - REPO=tensorflow/nmt
 python:
     - 2.7.13
     - 3.6.2
