@@ -1,16 +1,6 @@
 language: python
 env:
-    - REPO=HelloZeroNet/ZeroNet
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=tensorflow/models
-    - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
-    - REPO=securestate/king-phisher
-    - REPO=scrapy/scrapy
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=ctf-wiki/ctf-wiki
-    - REPO=thumbor/thumbor
-    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6.2
@@ -19,7 +9,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 --branch=master ${URL} ~/${REPO}
+    - git clone --depth=50 --branch=develop ${URL} ~/${REPO}
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
