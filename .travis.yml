@@ -1,16 +1,16 @@
 language: python
 env:
-    - REPO=HelloZeroNet/ZeroNet
     - REPO=bitcoinbook/bitcoinbook
     - REPO=tensorflow/models
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=thumbor/thumbor
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=pallets/flask
-    - REPO=thumbor/thumbor
-    - REPO=securestate/king-phisher
-    - REPO=XX-net/XX-Net
-    - REPO=ctf-wiki/ctf-wiki
     - REPO=scrapy/scrapy
     - REPO=scikit-learn/scikit-learn
+    - REPO=securestate/king-phisher
+    - REPO=csxeba/brainforge
+    - REPO=XX-net/XX-Net
 python:
     - 2.7.13
     - 3.6.2
