@@ -1,14 +1,8 @@
 language: python
 env:
-    - REPO=polyaxon/polyaxon
-    - REPO=maciejkula/spotlight
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=UltimateHackers/Hash-Buster
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=shadowsocks/shadowsocks
     - REPO=tensorflow/models
-    - REPO=jaesik817/visual-interaction-networks_tensorflow
-    - REPO=chenjiandongx/pyecharts
     - REPO=pallets/flask
     - REPO=XX-net/XX-Net
     - REPO=securestate/king-phisher
@@ -17,7 +11,6 @@ env:
     - REPO=ctf-wiki/ctf-wiki
     - REPO=thumbor/thumbor
     - REPO=scikit-learn/scikit-learn
-    - REPO=home-assistant/home-assistant
 python:
     - 2.7.13
     - 3.6.2
