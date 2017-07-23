@@ -3,20 +3,21 @@ env:
     - REPO=polyaxon/polyaxon
     - REPO=maciejkula/spotlight
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=tensorflow/models
+    - REPO=UltimateHackers/Hash-Buster
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=shadowsocks/shadowsocks
-    - REPO=XX-net/XX-Net
-    - REPO=openai/baselines
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=tensorflow/models
+    - REPO=jaesik817/visual-interaction-networks_tensorflow
+    - REPO=chenjiandongx/pyecharts
     - REPO=pallets/flask
-    - REPO=ctf-wiki/ctf-wiki
-    - REPO=ethereum/viper
-    - REPO=leviathan-framework/leviathan
-    - REPO=scikit-learn/scikit-learn
+    - REPO=XX-net/XX-Net
+    - REPO=securestate/king-phisher
     - REPO=scrapy/scrapy
-    - REPO=soimort/you-get
-    - REPO=mingyuliutw/UNIT
-    - REPO=tensorflow/nmt
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=ctf-wiki/ctf-wiki
+    - REPO=thumbor/thumbor
+    - REPO=scikit-learn/scikit-learn
+    - REPO=home-assistant/home-assistant
 python:
     - 2.7.13
     - 3.6.2
