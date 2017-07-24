@@ -28,7 +28,7 @@ ignore = [
     'appsecco/bugcrowd-levelup-subdomain-enumeration',
     'astorfi/pythonic-automatic-email', 'astrofrog/mpl-scatter-density',
     'benjaminp/six', 'bethgelab/foolbox', 'chenjiandongx/pyecharts',
-    'cloudflare/receipt-printer', 'dizballanze/django-eraserhead',
+    'cloudflare/receipt-printer', 'csxeba/brainforge', 'dizballanze/django-eraserhead',
     'django/django', 'fchollet/keras', 'friggog/tree-gen',
     'home-assistant/home-assistant', 'https://httpie.org', 'iogf/crocs',
     'jadore801120/attention-is-all-you-need-pytorch',
