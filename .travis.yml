@@ -4,7 +4,6 @@ env:
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=HelloZeroNet/ZeroNet
     - REPO=thumbor/thumbor
-    - REPO=csxeba/brainforge
     - REPO=bitcoinbook/bitcoinbook
     - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
