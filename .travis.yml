@@ -1,16 +1,17 @@
 language: python
 env:
-    - REPO=tensorflow/models
     - REPO=gpleiss/efficient_densenet_pytorch
+    - REPO=tensorflow/models
     - REPO=HelloZeroNet/ZeroNet
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=scikit-learn/scikit-learn
-    - REPO=frappe/erpnext
     - REPO=tensorflow/nmt
     - REPO=pallets/flask
     - REPO=soimort/you-get
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=XX-net/XX-Net
+    - REPO=donnemartin/system-design-primer
+    - REPO=trustedsec/nps_payload
 python:
     - 2.7.13
     - 3.6.2
