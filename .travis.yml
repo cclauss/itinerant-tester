@@ -2,16 +2,17 @@ language: python
 env:
     - REPO=madeye/sssniff
     - REPO=tensorflow/models
-    - REPO=gpleiss/efficient_densenet_pytorch
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=airbnb/binaryalert
     - REPO=bsmali4/xssfork
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=gjcarneiro/yacron
+    - REPO=gpleiss/efficient_densenet_pytorch
     - REPO=pallets/flask
     - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
-    - REPO=gjcarneiro/yacron
-    - REPO=channelcat/sanic
     - REPO=warner/magic-wormhole
+    - REPO=salesforce/ja3
+    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6.2
