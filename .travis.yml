@@ -1,18 +1,18 @@
 language: python
 env:
+    - REPO=facebookresearch/DrQA
     - REPO=madeye/sssniff
-    - REPO=tensorflow/models
     - REPO=airbnb/binaryalert
-    - REPO=bsmali4/xssfork
-    - REPO=salesforce/ja3
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=gjcarneiro/yacron
+    - REPO=tensorflow/models
+    - REPO=521xueweihan/HelloGitHub
     - REPO=warner/magic-wormhole
+    - REPO=salesforce/ja3
     - REPO=XX-net/XX-Net
-    - REPO=josephmisiti/awesome-machine-learning
     - REPO=scikit-learn/scikit-learn
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=plotly/dash
+    - REPO=bsmali4/xssfork
     - REPO=pallets/flask
-    - REPO=gpleiss/efficient_densenet_pytorch
     - REPO=scrapy/scrapy
 python:
     - 2.7.13
