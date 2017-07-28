@@ -1,28 +1,22 @@
 language: python
 env:
-    - REPO=facebookresearch/DrQA
     - REPO=521xueweihan/HelloGitHub
+    - REPO=tensorflow/models
     - REPO=brightmart/text_classification
-    - REPO=frappe/erpnext
-    - REPO=channelcat/sanic
     - REPO=madeye/sssniff
-    - REPO=airbnb/binaryalert
-    - REPO=pallets/flask
     - REPO=mame82/P4wnP1
     - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding
-    - REPO=ageitgey/face_recognition
-    - REPO=josephmisiti/awesome-machine-learning
     - REPO=neozhaoliang/pywonderland
-    - REPO=plotly/dash
+    - REPO=scikit-learn/scikit-learn
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6.2
 install:
-    - pip install flake8==3.3.0
+    - pip install flake8  # pytest  # add another test harness later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
