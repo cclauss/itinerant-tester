@@ -21,17 +21,20 @@ url = 'https://github.com/trending?l=Python'  # GitHub Trending top 25 repos
 
 # these repos pass tests, have pull requests to pass tests, or are Py3 only
 ignore = [
-    '0x4D31/honeyLambda', 'Cisco-Talos/pyrebox', 'Kaixhin/NoisyNet-A3C',
-    'PyCQA/flake8', 'StevenBlack/hosts', 'UltimateHackers/Hash-Buster',
-    'aboul3la/Sublist3r', 'andreiapostoae/dota2-predictor',
-    'anishathalye/seashells', 'ansible/ansible',
-    'appsecco/bugcrowd-levelup-subdomain-enumeration',
+    '0x4D31/honeyLambda', 'Cisco-Talos/pyrebox',
+    'ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding',
+    'Kaixhin/NoisyNet-A3C', 'PyCQA/flake8', 'StevenBlack/hosts',
+    'UltimateHackers/Hash-Buster', 'aboul3la/Sublist3r',
+    'ageitgey/face_recognition', 'airbnb/binaryalert',
+    'andreiapostoae/dota2-predictor', 'anishathalye/seashells',
+    'ansible/ansible', 'appsecco/bugcrowd-levelup-subdomain-enumeration',
     'astorfi/pythonic-automatic-email', 'astrofrog/mpl-scatter-density',
-    'benjaminp/six', 'bethgelab/foolbox', 'chenjiandongx/pyecharts',
-    'cloudflare/receipt-printer', 'csxeba/brainforge',
-    'dizballanze/django-eraserhead', 'django/django', 'fchollet/keras',
-    'friggog/tree-gen', 'home-assistant/home-assistant', 'https://httpie.org',
-    'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
+    'benjaminp/six', 'bethgelab/foolbox', 'channelcat/sanic',
+    'chenjiandongx/pyecharts', 'cloudflare/receipt-printer',
+    'csxeba/brainforge', 'dizballanze/django-eraserhead', 'django/django',
+    'facebookresearch/DrQA', 'fchollet/keras', 'friggog/tree-gen',
+    'home-assistant/home-assistant', 'https://httpie.org', 'iogf/crocs',
+    'jadore801120/attention-is-all-you-need-pytorch',
     'jaesik817/visual-interaction-networks_tensorflow', 'jakubroztocil/httpie',
     'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
     'jrg365/gpytorch', 'lanpa/tensorboard-pytorch', 'leesoh/yams',
@@ -55,7 +58,7 @@ python:
     - 2.7.13
     - 3.6.2
 install:
-    - pip install flake8  # pytest  # add some test later
+    - pip install flake8  # pytest  # add another test harness later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
