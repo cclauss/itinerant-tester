@@ -1,21 +1,22 @@
 language: python
 env:
     - REPO=facebookresearch/DrQA
-    - REPO=jachris/cook
-    - REPO=madeye/sssniff
+    - REPO=521xueweihan/HelloGitHub
     - REPO=brightmart/text_classification
     - REPO=tensorflow/models
+    - REPO=madeye/sssniff
     - REPO=airbnb/binaryalert
     - REPO=pallets/flask
     - REPO=mame82/P4wnP1
-    - REPO=ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding
     - REPO=XX-net/XX-Net
     - REPO=scikit-learn/scikit-learn
-    - REPO=josephmisiti/awesome-machine-learning
     - REPO=HelloZeroNet/ZeroNet
+    - REPO=ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding
+    - REPO=ageitgey/face_recognition
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=neozhaoliang/pywonderland
     - REPO=plotly/dash
     - REPO=scrapy/scrapy
-    - REPO=neozhaoliang/pywonderland
 python:
     - 2.7.13
     - 3.6.2
