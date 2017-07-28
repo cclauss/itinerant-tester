@@ -1,7 +1,7 @@
 language: python
 env:
     - REPO=facebookresearch/DrQA
-    - REPO=521xueweihan/HelloGitHub
+    - REPO=jachris/cook
     - REPO=madeye/sssniff
     - REPO=brightmart/text_classification
     - REPO=tensorflow/models
