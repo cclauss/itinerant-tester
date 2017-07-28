@@ -1,17 +1,6 @@
 language: python
 env:
-    - REPO=521xueweihan/HelloGitHub
-    - REPO=tensorflow/models
-    - REPO=brightmart/text_classification
-    - REPO=madeye/sssniff
-    - REPO=mame82/P4wnP1
-    - REPO=XX-net/XX-Net
-    - REPO=pallets/flask
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=neozhaoliang/pywonderland
-    - REPO=scikit-learn/scikit-learn
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=scrapy/scrapy
+    - REPO=jachris/cook
 python:
     - 2.7.13
     - 3.6.2
