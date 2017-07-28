@@ -3,7 +3,8 @@ env:
     - REPO=facebookresearch/DrQA
     - REPO=521xueweihan/HelloGitHub
     - REPO=brightmart/text_classification
-    - REPO=tensorflow/models
+    - REPO=frappe/erpnext
+    - REPO=channelcat/sanic
     - REPO=madeye/sssniff
     - REPO=airbnb/binaryalert
     - REPO=pallets/flask
@@ -21,7 +22,7 @@ python:
     - 2.7.13
     - 3.6.2
 install:
-    - pip install flake8  # pytest  # add some test later
+    - pip install flake8==3.3.0
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
