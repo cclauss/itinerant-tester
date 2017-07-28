@@ -1,19 +1,20 @@
 language: python
 env:
     - REPO=521xueweihan/HelloGitHub
-    - REPO=WooSoftware/shadowsocksr-origin
     - REPO=shadowsocksr-backup/shadowsocksr
+    - REPO=dmulholland/ivy
+    - REPO=WooSoftware/shadowsocksr-origin
+    - REPO=tensorflow/models
     - REPO=shadowsocksr-rm/shadowsocksr
     - REPO=koolshare/shadowsocksr
-    - REPO=tensorflow/models
     - REPO=brightmart/text_classification
-    - REPO=mame82/P4wnP1
-    - REPO=madeye/sssniff
     - REPO=XX-net/XX-Net
+    - REPO=mame82/P4wnP1
     - REPO=pallets/flask
-    - REPO=HelloZeroNet/ZeroNet
+    - REPO=madeye/sssniff
     - REPO=neozhaoliang/pywonderland
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6.2
