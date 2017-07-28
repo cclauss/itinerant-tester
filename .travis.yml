@@ -7,13 +7,15 @@ env:
     - REPO=tensorflow/models
     - REPO=airbnb/binaryalert
     - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=mame82/P4wnP1
     - REPO=ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding
     - REPO=XX-net/XX-Net
     - REPO=scikit-learn/scikit-learn
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=HelloZeroNet/ZeroNet
     - REPO=plotly/dash
     - REPO=scrapy/scrapy
-    - REPO=mame82/P4wnP1
+    - REPO=neozhaoliang/pywonderland
 python:
     - 2.7.13
     - 3.6.2
