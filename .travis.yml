@@ -8,6 +8,7 @@ env:
     - REPO=pallets/flask
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=donnemartin/system-design-primer
+    - REPO=bsmali4/xssfork
 python:
     - 2.7.13
     - 3.6.2
