@@ -21,7 +21,7 @@ url = 'https://github.com/trending?l=Python'  # GitHub Trending top 25 repos
 
 # these repos pass tests, have pull requests to pass tests, or are Py3 only
 ignore = [
-    '0x4D31/honeyLambda', 'Cisco-Talos/pyrebox',
+    '0x4D31/honeyLambda', '521xueweihan/HelloGitHub', 'Cisco-Talos/pyrebox',
     'ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding',
     'Kaixhin/NoisyNet-A3C', 'PyCQA/flake8', 'StevenBlack/hosts',
     'UltimateHackers/Hash-Buster', 'aboul3la/Sublist3r',
@@ -32,19 +32,18 @@ ignore = [
     'benjaminp/six', 'bethgelab/foolbox', 'channelcat/sanic',
     'chenjiandongx/pyecharts', 'cloudflare/receipt-printer',
     'csxeba/brainforge', 'dizballanze/django-eraserhead', 'django/django',
-    'facebookresearch/DrQA', 'fchollet/keras', 'friggog/tree-gen',
-    'home-assistant/home-assistant', 'https://httpie.org', 'iogf/crocs',
-    'jadore801120/attention-is-all-you-need-pytorch',
+    'dmulholland/ivy', 'facebookresearch/DrQA', 'fchollet/keras',
+    'friggog/tree-gen', 'home-assistant/home-assistant', 'https://httpie.org',
+    'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
     'jaesik817/visual-interaction-networks_tensorflow', 'jakubroztocil/httpie',
     'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
     'jrg365/gpytorch', 'lanpa/tensorboard-pytorch', 'leesoh/yams',
     'littlecodersh/ItChat', 'lmcinnes/umap', 'maciejkula/spotlight',
-    'meetshah1995/pytorch-semseg', 'metachris/logzero', 'mitmproxy/mitmproxy',
-    'neufv/put-me-on-a-watchlist', 'openai/baselines',
+    'madeye/sssniff', 'meetshah1995/pytorch-semseg', 'metachris/logzero',
+    'mitmproxy/mitmproxy', 'neufv/put-me-on-a-watchlist', 'openai/baselines',
     'pfnet-research/chainer-gan-lib', 'polyaxon/polyaxon', 'python/cpython',
     'quiltdata/quilt', 'reiinakano/xcessiv', 'reinforceio/tensorforce',
     'requests/requests', 'rg3/youtube-dl', 'sensepost/objection',
-    'shadowsocks/shadowsocks', 'shadowsocksr/shadowsocksr',
     'songrotek/Deep-Learning-Papers-Reading-Roadmap',
     'strizhechenko/netutils-linux', 'vinta/awesome-python',
     'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat'
@@ -58,7 +57,7 @@ python:
     - 2.7.13
     - 3.6.2
 install:
-    - pip install flake8  # pytest  # add another test harness later
+    - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -83,7 +82,8 @@ repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
 # 'python/cpython'
 repos = (r.text.strip().replace(' ', '') for r in repos if '/' in r.text)
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
-repos = '\n'.join('    - REPO=' + repo for repo in repos if repo not in ignore)
+repos = '\n'.join('    - REPO=' + repo for repo in repos
+                  if 'shadowsocks' not in repo and repo not in ignore)
 travis_text = fmt % repos
 
 # log into GitHub and commit an update to .travis.yml which will trigger tests
