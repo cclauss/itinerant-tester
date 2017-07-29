@@ -1,25 +1,18 @@
 language: python
 env:
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=dmulholland/ivy
-    - REPO=shadowsocksr-backup/shadowsocksr
-    - REPO=521xueweihan/HelloGitHub
     - REPO=tensorflow/models
     - REPO=brightmart/text_classification
-    - REPO=WooSoftware/shadowsocksr-origin
-    - REPO=shadowsocksr-rm/shadowsocksr
-    - REPO=nanqinlang/shadowsocksr
     - REPO=XX-net/XX-Net
     - REPO=scrapy/scrapy
     - REPO=pallets/flask
-    - REPO=madeye/sssniff
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6.2
 install:
-    - pip install flake8  # pytest  # add another test harness later
+    - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
