@@ -1,14 +1,18 @@
 language: python
 env:
     - REPO=xoreaxeaxeax/sandsifter
+    - REPO=neozhaoliang/pywonderland
+    - REPO=huwwp/cryptop
+    - REPO=PlasmaPy/PlasmaPy
     - REPO=tensorflow/models
-    - REPO=brightmart/text_classification
-    - REPO=XX-net/XX-Net
+    - REPO=persepolisdm/persepolis
+    - REPO=miloyip/game-programmer
+    - REPO=monoxgas/sRDI
+    - REPO=scikit-learn/scikit-learn
+    - REPO=tzutalin/labelImg
     - REPO=scrapy/scrapy
-    - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=donnemartin/system-design-primer
-    - REPO=bsmali4/xssfork
+    - REPO=soimort/you-get
+    - REPO=zsdonghao/tensorlayer
 python:
     - 2.7.13
     - 3.6.2
