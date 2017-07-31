@@ -1,8 +1,5 @@
 language: python
 env:
-    - REPO=vbuterin/pybitcointools
-    - REPO=mame82/duckencoder.py
-    - REPO=mame82/P4wnP1
     - REPO=xoreaxeaxeax/sandsifter
     - REPO=neozhaoliang/pywonderland
     - REPO=zerosum0x0/koadic
