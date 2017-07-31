@@ -2,6 +2,7 @@ language: python
 env:
     - REPO=HelloZeroNet/ZeroNet
     - REPO=mame82/duckencoder.py
+    - REPO=XX-net/XX-Net
 python:
     - 2.7.13
     - 3.6.2
