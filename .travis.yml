@@ -1,5 +1,11 @@
 language: python
 env:
+    - REPO=zsdonghao/tensorlayer
+    - REPO=PlasmaPy/PlasmaPy 
+    - REPO=Seanld/Latte
+    - REPO=juanjux/client-python
+    - REPO=erocarrera/pefile
+    - REPO= vbuterin/pybitcointools
     - REPO=xoreaxeaxeax/sandsifter
     - REPO=neozhaoliang/pywonderland
     - REPO=zerosum0x0/koadic
