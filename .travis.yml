@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=erocarrera/pefile
     - REPO=xoreaxeaxeax/sandsifter
     - REPO=neozhaoliang/pywonderland
     - REPO=zerosum0x0/koadic
