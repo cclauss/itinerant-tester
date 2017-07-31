@@ -1,7 +1,9 @@
 language: python
 env:
     - REPO=HelloZeroNet/ZeroNet
+    - REPO=vbuterin/pybitcointools
     - REPO=mame82/duckencoder.py
+    - REPO=mame82/P4wnP1
     - REPO=XX-net/XX-Net
 python:
     - 2.7.13
