@@ -4,17 +4,16 @@ env:
     - REPO=neozhaoliang/pywonderland
     - REPO=alexellis/docker-blinkt-workshop
     - REPO=huwwp/cryptop
-    - REPO=monoxgas/sRDI
+    - REPO=zerosum0x0/koadic
     - REPO=tensorflow/models
-    - REPO=persepolisdm/persepolis
+    - REPO=monoxgas/sRDI
     - REPO=bugcrowdlabs/HUNT
-    - REPO=scikit-learn/scikit-learn
+    - REPO=persepolisdm/persepolis
     - REPO=pallets/flask
-    - REPO=EthVentures/CryptoTracker
+    - REPO=scikit-learn/scikit-learn
+    - REPO=fendouai/FaceRank
     - REPO=HelloZeroNet/ZeroNet
     - REPO=UltimateHackers/XSStrike
-    - REPO=fendouai/FaceRank
-    - REPO=miloyip/game-programmer
 python:
     - 2.7.13
     - 3.6.2
