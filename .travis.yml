@@ -1,19 +1,6 @@
 language: python
 env:
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=neozhaoliang/pywonderland
-    - REPO=alexellis/docker-blinkt-workshop
-    - REPO=huwwp/cryptop
-    - REPO=zerosum0x0/koadic
-    - REPO=tensorflow/models
-    - REPO=monoxgas/sRDI
-    - REPO=bugcrowdlabs/HUNT
-    - REPO=persepolisdm/persepolis
-    - REPO=pallets/flask
-    - REPO=scikit-learn/scikit-learn
-    - REPO=fendouai/FaceRank
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=UltimateHackers/XSStrike
 python:
     - 2.7.13
     - 3.6.2
