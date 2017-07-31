@@ -1,22 +1,20 @@
 language: python
 env:
-    - REPO=erocarrera/pefile
     - REPO=xoreaxeaxeax/sandsifter
     - REPO=neozhaoliang/pywonderland
     - REPO=zerosum0x0/koadic
-    - REPO=alexellis/docker-blinkt-workshop
-    - REPO=tensorflow/models
     - REPO=bugcrowdlabs/HUNT
+    - REPO=tensorflow/models
     - REPO=fendouai/FaceRank
-    - REPO=huwwp/cryptop
-    - REPO=scikit-learn/scikit-learn
     - REPO=persepolisdm/persepolis
-    - REPO=monoxgas/sRDI
     - REPO=pallets/flask
     - REPO=HelloZeroNet/ZeroNet
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=scikit-learn/scikit-learn
+    - REPO=huwwp/cryptop
     - REPO=brightmart/text_classification
-    - REPO=XX-net/XX-Net
+    - REPO=alexellis/docker-blinkt-workshop
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=monoxgas/sRDI
 python:
     - 2.7.13
     - 3.6.2
