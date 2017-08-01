@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=nccgroup/redsnarf
     - REPO=volatilityfoundation/volatility
     - REPO=AlessandroZ/LaZagne
     - REPO=n1nj4sec/pupy
