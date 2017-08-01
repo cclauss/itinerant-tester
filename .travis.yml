@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=andresriancho/w3af
     - REPO=libkeepass/libkeepass
     - REPO=nccgroup/redsnarf
     - REPO=volatilityfoundation/volatility
