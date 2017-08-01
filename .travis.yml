@@ -1,5 +1,7 @@
 language: python
 env:
+    - REPO=n1nj4sec/pupy
+    - REPO=endgameinc/gym-malware
     - REPO=zsdonghao/tensorlayer
     - REPO=PlasmaPy/PlasmaPy 
     - REPO=Seanld/Latte
