@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=jtolds/pynarcissus
     - REPO=andresriancho/w3af
     - REPO=libkeepass/libkeepass
     - REPO=nccgroup/redsnarf
@@ -12,7 +13,7 @@ env:
     - REPO=Seanld/Latte
     - REPO=juanjux/client-python
     - REPO=erocarrera/pefile
-    - REPO= vbuterin/pybitcointools
+    - REPO=vbuterin/pybitcointools
     - REPO=xoreaxeaxeax/sandsifter
     - REPO=neozhaoliang/pywonderland
     - REPO=zerosum0x0/koadic
