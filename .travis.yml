@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=AlessandroZ/LaZagne
     - REPO=n1nj4sec/pupy
     - REPO=endgameinc/gym-malware
     - REPO=zsdonghao/tensorlayer
@@ -42,4 +43,3 @@ script:
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
-
