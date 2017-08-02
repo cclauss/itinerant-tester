@@ -1,35 +1,35 @@
 language: python
 env:
-    -REPO=apache/allura
-    -REPO=apache/bloodhound
-    -REPO=apache/cassandra-dtest
-    -REPO=apache/chemistry-cmislib
-    -REPO=apache/climate
-    -REPO=apache/cloudstack-cloudmonkey
-    -REPO=apache/cloudstack-docs-rn
-    -REPO=apache/cloudstack-ec2stack
-    -REPO=apache/cloudstack-gcestack
-    -REPO=apache/couchdb-documentation
-    -REPO=apache/incubator-airflow
-    -REPO=apache/incubator-airflow-old
-    -REPO=apache/incubator-allura
-    -REPO=apache/incubator-ariatosca
-    -REPO=apache/incubator-cotton
-    -REPO=apache/incubator-milagro-mfa-server
-    -REPO=apache/incubator-openwhisk-utilities
-    -REPO=apache/incubator-predictionio-sdk-python
-    -REPO=apache/incubator-senssoft-distill
-    -REPO=apache/incubator-senssoft-userale-pyqt5
-    -REPO=apache/incubator-superset
-    -REPO=apache/incubator-wave-docs
-    -REPO=apache/infrastructure-puppet
-    -REPO=apache/libcloud
-    -REPO=apache/qpid-interop-test
-    -REPO=apache/qpid-python
-    -REPO=apache/steve
-    -REPO=apache/tashi
-    -REPO=apache/trafficserver-qa
-    -REPO=apache/usergrid-python
+    - REPO=apache/allura
+    - REPO=apache/bloodhound
+    - REPO=apache/cassandra-dtest
+    - REPO=apache/chemistry-cmislib
+    - REPO=apache/climate
+    - REPO=apache/cloudstack-cloudmonkey
+    - REPO=apache/cloudstack-docs-rn
+    - REPO=apache/cloudstack-ec2stack
+    - REPO=apache/cloudstack-gcestack
+    - REPO=apache/couchdb-documentation
+    - REPO=apache/incubator-airflow
+    - REPO=apache/incubator-airflow-old
+    - REPO=apache/incubator-allura
+    - REPO=apache/incubator-ariatosca
+    - REPO=apache/incubator-cotton
+    - REPO=apache/incubator-milagro-mfa-server
+    - REPO=apache/incubator-openwhisk-utilities
+    - REPO=apache/incubator-predictionio-sdk-python
+    - REPO=apache/incubator-senssoft-distill
+    - REPO=apache/incubator-senssoft-userale-pyqt5
+    - REPO=apache/incubator-superset
+    - REPO=apache/incubator-wave-docs
+    - REPO=apache/infrastructure-puppet
+    - REPO=apache/libcloud
+    - REPO=apache/qpid-interop-test
+    - REPO=apache/qpid-python
+    - REPO=apache/steve
+    - REPO=apache/tashi
+    - REPO=apache/trafficserver-qa
+    - REPO=apache/usergrid-python
 python:
     - 2.7
     - 3.6
