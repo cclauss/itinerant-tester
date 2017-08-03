@@ -1,7 +1,7 @@
 language: python
 env:
     - REPO=XX-net/XX-Net
-    - REpO=cloudviz/psvmi
+    - REPO=cloudviz/psvmi
 python:
     - 2.7.13
     - 3.6.2
@@ -12,6 +12,8 @@ before_script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - git clone --depth=50 --branch=master ${URL} ~/${REPO}
     - cd ~/${REPO}
+    - ls -R home/travis
+    - mv home/travis home/was_travis
 script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
