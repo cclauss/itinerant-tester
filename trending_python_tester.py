@@ -46,7 +46,10 @@ ignore = [
     'requests/requests', 'rg3/youtube-dl', 'sensepost/objection',
     'songrotek/Deep-Learning-Papers-Reading-Roadmap',
     'strizhechenko/netutils-linux', 'vinta/awesome-python',
-    'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat'
+    'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat',
+    'CQFIO/PhotographicImageSynthesis', 'hylang/hy', 'liangliangyy/DjangoBlog',
+    'neozhaoliang/pywonderland', 'warner/magic-wormhole', 'bugcrowdlabs/HUNT',
+    'fendouai/FaceRank'
 ]
 
 # the boilerplate content of the .travis.yml file
@@ -84,6 +87,7 @@ repos = (r.text.strip().replace(' ', '') for r in repos if '/' in r.text)
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
 repos = '\n'.join('    - REPO=' + repo for repo in repos
                   if 'shadowsocks' not in repo and repo not in ignore)
+print(repos)
 travis_text = fmt % repos
 
 # log into GitHub and commit an update to .travis.yml which will trigger tests
