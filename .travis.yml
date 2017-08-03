@@ -1,19 +1,20 @@
 language: python
 env:
     - REPO=CQFIO/PhotographicImageSynthesis
-    - REPO=bachkukkik/awesome-thai-girls
+    - REPO=tensorflow/models
+    - REPO=hylang/hy
     - REPO=fendouai/FaceRank
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
     - REPO=brightmart/text_classification
-    - REPO=zerosum0x0/koadic
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=scikit-learn/scikit-learn
+    - REPO=neozhaoliang/pywonderland
     - REPO=warner/magic-wormhole
-    - REPO=bugcrowdlabs/HUNT
-    - REPO=endgameinc/gym-malware
-    - REPO=pallets/flask
     - REPO=liangliangyy/DjangoBlog
+    - REPO=zerosum0x0/koadic
+    - REPO=pwning/defcon25-public
+    - REPO=bugcrowdlabs/HUNT
+    - REPO=pallets/flask
+    - REPO=josephmisiti/awesome-machine-learning
 python:
     - 2.7.13
     - 3.6.2
