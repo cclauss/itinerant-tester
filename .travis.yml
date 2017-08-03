@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=XX-net/XX-Net
+    #- REPO=XX-net/XX-Net
     - REPO=cloudviz/psvmi
 python:
     - 2.7.13
@@ -12,12 +12,13 @@ before_script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - git clone --depth=50 --branch=master ${URL} ~/${REPO}
     - cd ~/${REPO}
-    - ls -R home/travis
-    - mv home/travis home/was_travis
+    - ls -R
+    #- mv home/travis home/was_travis
 script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - EXCLUDE="./code/default/python27/1.0/lib/,./code/default/gae_proxy"
+    - EXCLUDE=""
     - time flake8 . --count --exclude=$EXCLUDE --select=E901,E999,F821,F822,F823 --show-source --statistics
     # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exclude=$EXCLUDE --exit-zero --max-complexity=10 --max-line-length=127 --statistics
