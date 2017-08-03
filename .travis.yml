@@ -1,6 +1,15 @@
 language: python
 env:
-    - REPO=IBM/pytorch-seq2seq
+    - REPO=tensorflow/models
+    - REPO=scikit-learn/scikit-learn
+    - REPO=xoreaxeaxeax/sandsifter
+    - REPO=00111000/Imports-in-Python
+    - REPO=zerosum0x0/koadic
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=XX-net/XX-Net
+    - REPO=zsdonghao/tensorlayer
+    - REPO=brightmart/text_classification
+    - REPO=pallets/flask
 python:
     - 2.7.13
     - 3.6.2
