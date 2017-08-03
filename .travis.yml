@@ -1,6 +1,7 @@
 language: python
 env:
     - REPO=XX-net/XX-Net
+    - REpO=cloudviz/psvmi
 python:
     - 2.7.13
     - 3.6.2
