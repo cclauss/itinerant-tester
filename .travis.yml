@@ -1,15 +1,6 @@
 language: python
 env:
-    - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=00111000/Imports-in-Python
-    - REPO=zerosum0x0/koadic
-    - REPO=josephmisiti/awesome-machine-learning
     - REPO=XX-net/XX-Net
-    - REPO=zsdonghao/tensorlayer
-    - REPO=brightmart/text_classification
-    - REPO=pallets/flask
 python:
     - 2.7.13
     - 3.6.2
@@ -23,9 +14,10 @@ before_script:
 script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-    - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    EXCLUED="./code/default/python27/1.0/lib/,./code/default/gae_proxy/server/lib/"
+    - time flake8 . --count --exclude=$EXCLUED --select=E901,E999,F821,F822,F823 --show-source --statistics
+    # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+    - time flake8 . --count --exclude=$EXCLUDE --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
