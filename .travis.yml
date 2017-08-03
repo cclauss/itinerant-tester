@@ -1,23 +1,6 @@
 language: python
 env:
-    - REPO=CQFIO/PhotographicImageSynthesis
-    - REPO=hylang/hy
-    - REPO=tensorflow/models
-    - REPO=liangliangyy/DjangoBlog
-    - REPO=neozhaoliang/pywonderland
-    - REPO=warner/magic-wormhole
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=scikit-learn/scikit-learn
-    - REPO=bugcrowdlabs/HUNT
-    - REPO=brightmart/text_classification
-    - REPO=zerosum0x0/koadic
-    - REPO=fendouai/FaceRank
-    - REPO=XX-net/XX-Net
-    - REPO=pwning/defcon25-public
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=00111000/Imports-in-Python
-    - REPO=pallets/flask
-    - REPO=zsdonghao/tensorlayer
+    - REPO=IBM/pytorch-seq2seq
 python:
     - 2.7.13
     - 3.6.2
