@@ -1,19 +1,18 @@
 language: python
 env:
+    - REPO=nottombrown/rl-teacher
     - REPO=TailorDev/Watson
-    - REPO=00111000/Imports-in-Python
     - REPO=tensorflow/models
+    - REPO=00111000/Imports-in-Python
     - REPO=scikit-learn/scikit-learn
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=nottombrown/rl-teacher
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=scrapy/scrapy
-    - REPO=pallets/flask
-    - REPO=zsdonghao/tensorlayer
-    - REPO=zerosum0x0/koadic
     - REPO=XX-net/XX-Net
-    - REPO=brightmart/text_classification
     - REPO=donnemartin/system-design-primer
+    - REPO=scrapy/scrapy
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=pallets/flask
+    - REPO=zerosum0x0/koadic
+    - REPO=HelloZeroNet/ZeroNet
 python:
     - 2.7.13
     - 3.6.2
