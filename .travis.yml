@@ -1,7 +1,6 @@
 language: python
 env:
-    - REPO=nottombrown/rl-teacher
-    - REPO=TailorDev/Watson
+    - REPO=brython-dev/brython
     - REPO=tensorflow/models
     - REPO=00111000/Imports-in-Python
     - REPO=scikit-learn/scikit-learn
