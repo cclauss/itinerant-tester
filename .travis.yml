@@ -1,14 +1,16 @@
 language: python
 env:
     - REPO=tensorflow/models
-    - REPO=00111000/Imports-in-Python
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=scrapy/scrapy
-    - REPO=XX-net/XX-Net
+    - REPO=operatorequals/covertutils
     - REPO=pallets/flask
+    - REPO=wizyoung/googletranslate.popclipext
     - REPO=scikit-learn/scikit-learn
+    - REPO=XX-net/XX-Net
     - REPO=josephmisiti/awesome-machine-learning
+    - REPO=xoreaxeaxeax/sandsifter
+    - REPO=00111000/Imports-in-Python
+    - REPO=scrapy/scrapy
     - REPO=HelloZeroNet/ZeroNet
 python:
     - 2.7.13
