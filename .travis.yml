@@ -1,18 +1,19 @@
 language: python
 env:
+    - REPO=operatorequals/covertutils
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=zerosum0x0/koadic
-    - REPO=operatorequals/covertutils
-    - REPO=wizyoung/googletranslate.popclipext
-    - REPO=XX-net/XX-Net
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=Udzu/pudzu
     - REPO=scikit-learn/scikit-learn
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=00111000/Imports-in-Python
-    - REPO=scrapy/scrapy
     - REPO=explosion/spaCy
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=wizyoung/googletranslate.popclipext
+    - REPO=facebookresearch/ParlAI
+    - REPO=xoreaxeaxeax/sandsifter
+    - REPO=Tonexus/poe-scambot
+    - REPO=pallets/flask
+    - REPO=zerosum0x0/koadic
 python:
     - 2.7.13
     - 3.6.2
