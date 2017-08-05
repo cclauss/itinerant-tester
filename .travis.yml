@@ -5,13 +5,14 @@ env:
     - REPO=operatorequals/covertutils
     - REPO=pallets/flask
     - REPO=wizyoung/googletranslate.popclipext
-    - REPO=scikit-learn/scikit-learn
     - REPO=XX-net/XX-Net
     - REPO=josephmisiti/awesome-machine-learning
+    - REPO=scikit-learn/scikit-learn
+    - REPO=HelloZeroNet/ZeroNet
     - REPO=xoreaxeaxeax/sandsifter
     - REPO=00111000/Imports-in-Python
     - REPO=scrapy/scrapy
-    - REPO=HelloZeroNet/ZeroNet
+    - REPO=explosion/spaCy
 python:
     - 2.7.13
     - 3.6.2
