@@ -2,8 +2,8 @@ language: python
 env:
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=zerosum0x0/koadic
     - REPO=operatorequals/covertutils
-    - REPO=pallets/flask
     - REPO=wizyoung/googletranslate.popclipext
     - REPO=XX-net/XX-Net
     - REPO=josephmisiti/awesome-machine-learning
