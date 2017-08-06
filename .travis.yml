@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=operatorequals/covertutils
+    - REPO=nccgroup/redsnarf
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=Udzu/pudzu
