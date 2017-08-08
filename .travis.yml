@@ -1,19 +1,22 @@
 language: python
 env:
-    - REPO=nccgroup/redsnarf
+    - REPO=jamesob/tinychain
+    - REPO=OmkarPathak/pygorithm
+    - REPO=aaronduino/asciidots
+    - REPO=TorchCraft/StarData
+    - REPO=pytorch/pytorch
+    - REPO=LouieYang/deep-photo-styletransfer-tf
     - REPO=tensorflow/models
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=Udzu/pudzu
+    - REPO=donnemartin/system-design-primer
+    - REPO=0x4D31/burpa
+    - REPO=JuanPotato/Tofu
+    - REPO=pytorch/examples
     - REPO=scikit-learn/scikit-learn
-    - REPO=explosion/spaCy
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=wizyoung/googletranslate.popclipext
-    - REPO=facebookresearch/ParlAI
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=Tonexus/poe-scambot
+    - REPO=cvzoya/visimportance
+    - REPO=XX-net/XX-Net
+    - REPO=szq0214/DSOD
     - REPO=pallets/flask
-    - REPO=zerosum0x0/koadic
 python:
     - 2.7.13
     - 3.6.2
