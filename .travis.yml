@@ -1,22 +1,23 @@
 language: python
 env:
-    - REPO=jamesob/tinychain
     - REPO=OmkarPathak/pygorithm
-    - REPO=aaronduino/asciidots
+    - REPO=jamesob/tinychain
     - REPO=TorchCraft/StarData
+    - REPO=aaronduino/asciidots
     - REPO=pytorch/pytorch
-    - REPO=LouieYang/deep-photo-styletransfer-tf
     - REPO=tensorflow/models
-    - REPO=donnemartin/system-design-primer
-    - REPO=0x4D31/burpa
-    - REPO=JuanPotato/Tofu
-    - REPO=pytorch/examples
-    - REPO=scikit-learn/scikit-learn
+    - REPO=nccgroup/demiguise
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=cvzoya/visimportance
+    - REPO=0x4D31/burpa
+    - REPO=donnemartin/system-design-primer
+    - REPO=scikit-learn/scikit-learn
     - REPO=XX-net/XX-Net
-    - REPO=szq0214/DSOD
+    - REPO=codezjx/netease-cloud-music-dl
     - REPO=pallets/flask
+    - REPO=LouieYang/deep-photo-styletransfer-tf
+    - REPO=minimaxir/textgenrnn
+    - REPO=pytorch/examples
+    - REPO=apache/incubator-superset
 python:
     - 2.7.13
     - 3.6.2
