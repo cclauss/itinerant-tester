@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=AlessandroZ/LaZagne
     - REPO=deepmind/pysc2
     - REPO=tensorflow/models
     - REPO=fossasia/query-server
