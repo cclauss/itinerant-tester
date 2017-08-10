@@ -4,12 +4,12 @@ env:
     - REPO=tensorflow/models
     - REPO=fossasia/query-server
     - REPO=https://query-server.herokuapp.com
-    - REPO=pallets/flask
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
     - REPO=bitcoinbook/bitcoinbook
     - REPO=XX-net/XX-Net
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
 python:
     - 2.7.13
     - 3.6.2
