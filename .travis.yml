@@ -3,13 +3,12 @@ env:
     - REPO=deepmind/pysc2
     - REPO=tensorflow/models
     - REPO=fossasia/query-server
-    - REPO=https://query-server.herokuapp.com
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=bitcoinbook/bitcoinbook
     - REPO=XX-net/XX-Net
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
 python:
     - 2.7.13
     - 3.6.2
