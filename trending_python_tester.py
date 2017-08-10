@@ -49,7 +49,10 @@ ignore = [
     'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat',
     'CQFIO/PhotographicImageSynthesis', 'hylang/hy', 'liangliangyy/DjangoBlog',
     'neozhaoliang/pywonderland', 'warner/magic-wormhole', 'bugcrowdlabs/HUNT',
-    'fendouai/FaceRank'
+    'fendouai/FaceRank', 'nottombrown/rl-teacher', 'TailorDev/Watson',
+    'OmkarPathak/pygorithm', 'jamesob/tinychain', 'TorchCraft/StarData',
+    'aaronduino/asciidots', 'nccgroup/demiguise', 'alexhude/uEmu',
+    'codezjx/netease-cloud-music-dl', 'pytorch/pytorch', 'pennsignals/aptos'
 ]
 
 # the boilerplate content of the .travis.yml file
