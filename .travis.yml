@@ -1,23 +1,24 @@
 language: python
 env:
     - REPO=OmkarPathak/pygorithm
-    - REPO=jamesob/tinychain
-    - REPO=aaronduino/asciidots
-    - REPO=TorchCraft/StarData
     - REPO=deepmind/pysc2
+    - REPO=jamesob/tinychain
+    - REPO=TorchCraft/StarData
+    - REPO=aaronduino/asciidots
     - REPO=tensorflow/models
-    - REPO=nccgroup/demiguise
     - REPO=alexhude/uEmu
-    - REPO=codezjx/netease-cloud-music-dl
     - REPO=fossasia/query-server
     - REPO=https://query-server.herokuapp.com
-    - REPO=pytorch/pytorch
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=pennsignals/aptos
-    - REPO=scikit-learn/scikit-learn
+    - REPO=nccgroup/demiguise
+    - REPO=codezjx/netease-cloud-music-dl
     - REPO=pallets/flask
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pytorch/pytorch
+    - REPO=pennsignals/aptos
     - REPO=XX-net/XX-Net
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6.2
