@@ -1,18 +1,20 @@
 language: python
 env:
     - REPO=deepmind/pysc2
-    - REPO=zrzka/pythonista-site-packages-3
+    - REPO=vahidk/EffectiveTensorflow
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=scikit-learn/scikit-learn
     - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
     - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
     - REPO=scrapy/scrapy
+    - REPO=easylist/easylist
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=MisterBianco/BoopSuite
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
-    - 3.6.2
+    - 3.6
 install:
     - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
@@ -25,7 +27,7 @@ script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - time flake8 . --count --exit-zero --ignore=E226,E703 --max-complexity=10 --max-line-length=127 --statistics
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
