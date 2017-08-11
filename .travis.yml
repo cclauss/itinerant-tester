@@ -1,14 +1,14 @@
 language: python
 env:
     - REPO=deepmind/pysc2
-    - REPO=tensorflow/models
     - REPO=brendan-rius/jupyter-c-kernel
-    - REPO=scikit-learn/scikit-learn
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=pallets/flask
+    - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=scrapy/scrapy
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=XX-net/XX-Net
+    - REPO=scrapy/scrapy
     - REPO=MisterBianco/BoopSuite
 python:
     - 2.7.13
