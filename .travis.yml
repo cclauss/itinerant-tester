@@ -5,13 +5,14 @@ env:
     - REPO=easylist/easylist
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=scikit-learn/scikit-learn
-    - REPO=scrapy/scrapy
-    - REPO=XX-net/XX-Net
-    - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
     - REPO=openai/gym
+    - REPO=scikit-learn/scikit-learn
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=pallets/flask
+    - REPO=DataSploit/datasploit
+    - REPO=donnemartin/system-design-primer
+    - REPO=XX-net/XX-Net
+    - REPO=MisterBianco/BoopSuite
 python:
     - 2.7.13
     - 3.6
