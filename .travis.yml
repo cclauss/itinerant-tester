@@ -6,13 +6,12 @@ env:
     - REPO=openai/gym
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=josephmisiti/awesome-machine-learning
     - REPO=scikit-learn/scikit-learn
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=donnemartin/system-design-primer
-    - REPO=DataSploit/datasploit
-    - REPO=pallets/flask
     - REPO=3b1b/manim
-    - REPO=scrapy/scrapy
+    - REPO=huwwp/cryptop
+    - REPO=pallets/flask
 python:
     - 2.7.13
     - 3.6
