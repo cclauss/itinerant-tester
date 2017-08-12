@@ -3,16 +3,16 @@ env:
     - REPO=vahidk/EffectiveTensorflow
     - REPO=deepmind/pysc2
     - REPO=easylist/easylist
+    - REPO=openai/gym
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=openai/gym
-    - REPO=scikit-learn/scikit-learn
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=pallets/flask
-    - REPO=DataSploit/datasploit
+    - REPO=scikit-learn/scikit-learn
     - REPO=donnemartin/system-design-primer
-    - REPO=XX-net/XX-Net
-    - REPO=MisterBianco/BoopSuite
+    - REPO=DataSploit/datasploit
+    - REPO=pallets/flask
+    - REPO=3b1b/manim
+    - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6
