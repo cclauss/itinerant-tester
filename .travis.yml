@@ -1,17 +1,17 @@
 language: python
 env:
-    - REPO=deepmind/pysc2
     - REPO=vahidk/EffectiveTensorflow
+    - REPO=deepmind/pysc2
+    - REPO=easylist/easylist
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
+    - REPO=josephmisiti/awesome-machine-learning
     - REPO=scikit-learn/scikit-learn
     - REPO=scrapy/scrapy
-    - REPO=easylist/easylist
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=MisterBianco/BoopSuite
+    - REPO=XX-net/XX-Net
     - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
+    - REPO=openai/gym
 python:
     - 2.7.13
     - 3.6
