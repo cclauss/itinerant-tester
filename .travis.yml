@@ -3,16 +3,17 @@ env:
     - REPO=vahidk/EffectiveTensorflow
     - REPO=deepmind/pysc2
     - REPO=openai/gym
+    - REPO=apache/incubator-superset
     - REPO=tensorflow/models
     - REPO=scikit-learn/scikit-learn
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=apache/incubator-superset
     - REPO=geekcomputers/Python
-    - REPO=seanhuai/tumblr-source-list
-    - REPO=donnemartin/system-design-primer
-    - REPO=huwwp/cryptop
-    - REPO=scrapy/scrapy
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=pallets/flask
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=XX-net/XX-Net
+    - REPO=ActiveState/code
+    - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6
