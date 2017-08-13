@@ -4,15 +4,15 @@ env:
     - REPO=deepmind/pysc2
     - REPO=openai/gym
     - REPO=tensorflow/models
-    - REPO=huwwp/cryptop
     - REPO=scikit-learn/scikit-learn
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=seanhuai/tumblr-source-list
-    - REPO=3b1b/manim
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=apache/incubator-superset
     - REPO=geekcomputers/Python
-    - REPO=XX-net/XX-Net
+    - REPO=seanhuai/tumblr-source-list
     - REPO=donnemartin/system-design-primer
+    - REPO=huwwp/cryptop
+    - REPO=scrapy/scrapy
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
 python:
     - 2.7.13
     - 3.6
