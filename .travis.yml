@@ -2,16 +2,17 @@ language: python
 env:
     - REPO=vahidk/EffectiveTensorflow
     - REPO=deepmind/pysc2
-    - REPO=easylist/easylist
     - REPO=openai/gym
     - REPO=tensorflow/models
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=huwwp/cryptop
     - REPO=scikit-learn/scikit-learn
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=donnemartin/system-design-primer
+    - REPO=seanhuai/tumblr-source-list
     - REPO=3b1b/manim
-    - REPO=huwwp/cryptop
-    - REPO=pallets/flask
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=geekcomputers/Python
+    - REPO=XX-net/XX-Net
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6
