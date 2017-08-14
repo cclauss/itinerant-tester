@@ -2,18 +2,21 @@ language: python
 env:
     - REPO=vahidk/EffectiveTensorflow
     - REPO=deepmind/pysc2
+    - REPO=jiajunhuang/blog
     - REPO=muammar/mkchromecast
-    - REPO=openai/gym
-    - REPO=apache/incubator-superset
     - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=honeynet/droidbot
-    - REPO=pallets/flask
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=m4ll0k/Spaghetti
+    - REPO=apache/incubator-superset
+    - REPO=bugcrowd/HUNT
+    - REPO=openai/gym
+    - REPO=facebookresearch/SentEval
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=scrapy/scrapy
-    - REPO=XX-net/XX-Net
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=aydwi/explainxkcdbot
+    - REPO=alephsecurity/abootool
+    - REPO=libratbag/piper
+    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6
