@@ -3,20 +3,20 @@ env:
     - REPO=vahidk/EffectiveTensorflow
     - REPO=deepmind/pysc2
     - REPO=jiajunhuang/blog
-    - REPO=muammar/mkchromecast
     - REPO=tensorflow/models
     - REPO=honeynet/droidbot
+    - REPO=muammar/mkchromecast
     - REPO=m4ll0k/Spaghetti
     - REPO=apache/incubator-superset
+    - REPO=facebookresearch/SentEval
     - REPO=bugcrowd/HUNT
     - REPO=openai/gym
-    - REPO=facebookresearch/SentEval
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=aydwi/explainxkcdbot
-    - REPO=alephsecurity/abootool
+    - REPO=maldevel/canisrufus
+    - REPO=donnemartin/system-design-primer
     - REPO=libratbag/piper
-    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6
