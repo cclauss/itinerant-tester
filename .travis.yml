@@ -2,22 +2,21 @@ language: python
 env:
     - REPO=vahidk/EffectiveTensorflow
     - REPO=deepmind/pysc2
-    - REPO=jiajunhuang/blog
     - REPO=tensorflow/models
-    - REPO=honeynet/droidbot
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=apache/incubator-superset
+    - REPO=jiajunhuang/blog
     - REPO=m4ll0k/Spaghetti
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=apache/incubator-superset
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=honeynet/droidbot
     - REPO=openai/gym
-    - REPO=bugcrowd/HUNT
-    - REPO=mil-tokyo/webdnn
     - REPO=maldevel/canisrufus
-    - REPO=scikit-learn/scikit-learn
-    - REPO=muammar/mkchromecast
     - REPO=XX-net/XX-Net
-    - REPO=donnemartin/system-design-primer
+    - REPO=bugcrowd/HUNT
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=scikit-learn/scikit-learn
+    - REPO=mil-tokyo/webdnn
     - REPO=pallets/flask
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6
