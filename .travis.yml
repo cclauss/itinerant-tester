@@ -4,12 +4,12 @@ env:
     - REPO=tensorflow/models
     - REPO=XX-net/XX-Net
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=m4ll0k/Spaghetti
     - REPO=openai/gym
+    - REPO=m4ll0k/Spaghetti
+    - REPO=donnemartin/system-design-primer
+    - REPO=scikit-learn/scikit-learn
     - REPO=maldevel/canisrufus
     - REPO=honeynet/droidbot
-    - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6
