@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=deepmind/pysc2
+    - REPO=soimort/you-get
     - REPO=tensorflow/models
     - REPO=XX-net/XX-Net
     - REPO=chiphuyen/stanford-tensorflow-tutorials
