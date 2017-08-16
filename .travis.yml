@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=deepmind/pysc2
+    - REPO=facebookresearch/ParlAI
     - REPO=tensorflow/models
     - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=XX-net/XX-Net
