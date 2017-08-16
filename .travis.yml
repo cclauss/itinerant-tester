@@ -1,15 +1,16 @@
 language: python
 env:
-    - REPO=sjvasquez/quora-duplicate-questions
+    - REPO=deepmind/pysc2
     - REPO=tensorflow/models
     - REPO=sjvasquez/instacart-basket-prediction
     - REPO=XX-net/XX-Net
+    - REPO=chrisranderson/beholder
     - REPO=scikit-learn/scikit-learn
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=donnemartin/system-design-primer
     - REPO=chainer/chainercv
     - REPO=openai/gym
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=pallets/flask
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6
