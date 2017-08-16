@@ -1,14 +1,15 @@
 language: python
 env:
-    - REPO=facebookresearch/ParlAI
+    - REPO=deepmind/pysc2
     - REPO=tensorflow/models
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=sjvasquez/instacart-basket-prediction
     - REPO=XX-net/XX-Net
-    - REPO=openai/gym
-    - REPO=donnemartin/system-design-primer
     - REPO=scikit-learn/scikit-learn
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=donnemartin/system-design-primer
+    - REPO=chainer/chainercv
+    - REPO=openai/gym
     - REPO=pallets/flask
-    - REPO=m4ll0k/Spaghetti
 python:
     - 2.7.13
     - 3.6
