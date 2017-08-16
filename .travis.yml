@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=deepmind/pysc2
+    - REPO=sjvasquez/quora-duplicate-questions
     - REPO=tensorflow/models
     - REPO=sjvasquez/instacart-basket-prediction
     - REPO=XX-net/XX-Net
