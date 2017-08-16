@@ -2,14 +2,14 @@ language: python
 env:
     - REPO=deepmind/pysc2
     - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
     - REPO=jmespath/jmespath.py
     - REPO=Plazmaz/LNKUp
+    - REPO=encode/apistar
+    - REPO=scikit-learn/scikit-learn
     - REPO=XX-net/XX-Net
-    - REPO=pallets/flask
-    - REPO=KazukiOnodera/Instacart
     - REPO=miyuchina/mistletoe
-    - REPO=sjvasquez/instacart-basket-prediction
+    - REPO=pallets/flask
+    - REPO=donnemartin/system-design-primer
 python:
     - 2.7.13
     - 3.6
