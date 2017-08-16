@@ -1,6 +1,5 @@
-sudo: false
-dist: trusty
 language: python
+cache: pip
 env:
     - REPO=IBM-Bluemix/get-started-python
     - REPO=IBM-Bluemix/gp-python-client
