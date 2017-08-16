@@ -33,8 +33,8 @@ ignore = [
     'chenjiandongx/pyecharts', 'cloudflare/receipt-printer',
     'csxeba/brainforge', 'dizballanze/django-eraserhead', 'django/django',
     'dmulholland/ivy', 'facebookresearch/DrQA', 'fchollet/keras',
-    'friggog/tree-gen', 'home-assistant/home-assistant', 'https://httpie.org',
-    'iogf/crocs', 'jadore801120/attention-is-all-you-need-pytorch',
+    'friggog/tree-gen', 'home-assistant/home-assistant', 'iogf/crocs',
+    'jadore801120/attention-is-all-you-need-pytorch',
     'jaesik817/visual-interaction-networks_tensorflow', 'jakubroztocil/httpie',
     'jisungk/RIDDLE', 'jmathai/elodie', 'jordanpotti/AWSBucketDump',
     'jrg365/gpytorch', 'lanpa/tensorboard-pytorch', 'leesoh/yams',
@@ -52,7 +52,11 @@ ignore = [
     'fendouai/FaceRank', 'nottombrown/rl-teacher', 'TailorDev/Watson',
     'OmkarPathak/pygorithm', 'jamesob/tinychain', 'TorchCraft/StarData',
     'aaronduino/asciidots', 'nccgroup/demiguise', 'alexhude/uEmu',
-    'codezjx/netease-cloud-music-dl', 'pytorch/pytorch', 'pennsignals/aptos'
+    'codezjx/netease-cloud-music-dl', 'pytorch/pytorch', 'pennsignals/aptos',
+    'brendan-rius/jupyter-c-kernel', 'vahidk/EffectiveTensorflow',
+    'jiajunhuang/blog', 'apache/incubator-superset',
+    'josephmisiti/awesome-machine-learning', 'bugcrowd/HUNT',
+    'mil-tokyo/webdnn', 'chrisranderson/beholder', 'chainer/chainercv'
 ]
 
 # the boilerplate content of the .travis.yml file
@@ -61,7 +65,8 @@ env:
 %s
 python:
     - 2.7.13
-    - 3.6.2
+    - 3.6
+cache: pip
 install:
     - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
@@ -86,7 +91,8 @@ soup = bs4.BeautifulSoup(requests.get(url).content, 'lxml')  # or 'html5lib'
 # 'python / cpython'
 repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
 # 'python/cpython'
-repos = (r.text.strip().replace(' ', '') for r in repos if '/' in r.text)
+repos = (repo.text.strip().replace(' ', '') for repo in repos
+         if '/' in repo.text and '://' not in repo.text)
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
 repos = '\n'.join('    - REPO=' + repo for repo in repos
                   if 'shadowsocks' not in repo and repo not in ignore)
