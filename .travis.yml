@@ -1,14 +1,14 @@
 language: python
 env:
-    - REPO=deepmind/pysc2
     - REPO=RUB-SysSec/kAFL
+    - REPO=deepmind/pysc2
     - REPO=GoogleCloudPlatform/distroless
     - REPO=jtoy/sketchnet
+    - REPO=ent1c3d/Python-Synopsis
     - REPO=tensorflow/models
     - REPO=pallets/flask
-    - REPO=ent1c3d/Python-Synopsis
-    - REPO=jmespath/jmespath.py
-    - REPO=scikit-learn/scikit-learn
+    - REPO=operatorequals/covertutils
+    - REPO=openai/gym
 python:
     - 2.7.13
     - 3.6
