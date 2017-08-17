@@ -1,13 +1,6 @@
 language: python
 env:
-    - REPO=deepmind/pysc2
-    - REPO=jmespath/jmespath.py
-    - REPO=tensorflow/models
-    - REPO=GoogleCloudPlatform/distroless
-    - REPO=RUB-SysSec/kAFL
-    - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
+    - REPO=bazelbuild/bazel
 python:
     - 2.7.13
     - 3.6
