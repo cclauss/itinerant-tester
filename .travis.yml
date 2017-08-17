@@ -1,15 +1,16 @@
 language: python
 env:
     - REPO=deepmind/pysc2
-    - REPO=tensorflow/models
-    - REPO=jmespath/jmespath.py
-    - REPO=Plazmaz/LNKUp
     - REPO=encode/apistar
-    - REPO=scikit-learn/scikit-learn
-    - REPO=XX-net/XX-Net
-    - REPO=miyuchina/mistletoe
+    - REPO=jmespath/jmespath.py
+    - REPO=tensorflow/models
+    - REPO=Plazmaz/LNKUp
+    - REPO=GoogleCloudPlatform/distroless
+    - REPO=RUB-SysSec/kAFL
     - REPO=pallets/flask
-    - REPO=donnemartin/system-design-primer
+    - REPO=miyuchina/mistletoe
+    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6
