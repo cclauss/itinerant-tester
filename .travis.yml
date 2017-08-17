@@ -1,6 +1,7 @@
 language: python
 env:
     - REPO=bazelbuild/bazel
+    - REPO=google/protobuf
 python:
     - 2.7.13
     - 3.6
