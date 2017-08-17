@@ -1,8 +1,14 @@
 language: python
 env:
-    - REPO=bazelbuild/bazel
-    - REPO=google/protobuf
-    - REPO=maebert/jrnl
+    - REPO=deepmind/pysc2
+    - REPO=RUB-SysSec/kAFL
+    - REPO=GoogleCloudPlatform/distroless
+    - REPO=jtoy/sketchnet
+    - REPO=tensorflow/models
+    - REPO=pallets/flask
+    - REPO=ent1c3d/Python-Synopsis
+    - REPO=jmespath/jmespath.py
+    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6
