@@ -1,16 +1,14 @@
 language: python
 env:
-    - REPO=jtoy/sketchnet
-    - REPO=ent1c3d/Python-Synopsis
-    - REPO=deepmind/pysc2
-    - REPO=RUB-SysSec/kAFL
     - REPO=tensorflow/models
-    - REPO=GoogleCloudPlatform/distroless
-    - REPO=operatorequals/covertutils
+    - REPO=msracver/Flow-Guided-Feature-Aggregation
+    - REPO=deepmind/pysc2
+    - REPO=reswitched/CageTheUnicorn
     - REPO=pallets/flask
-    - REPO=openai/gym
-    - REPO=m4ll0k/Spaghetti
     - REPO=scikit-learn/scikit-learn
+    - REPO=operatorequals/covertutils
+    - REPO=RUB-SysSec/kAFL
+    - REPO=m4ll0k/Spaghetti
 python:
     - 2.7.13
     - 3.6
