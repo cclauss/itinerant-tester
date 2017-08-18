@@ -1,6 +1,15 @@
 language: python
 env:
-    - REPO=xfxyjwf/bazel_proto_examples
+    - REPO=jtoy/sketchnet
+    - REPO=deepmind/pysc2
+    - REPO=ent1c3d/Python-Synopsis
+    - REPO=RUB-SysSec/kAFL
+    - REPO=tensorflow/models
+    - REPO=GoogleCloudPlatform/distroless
+    - REPO=operatorequals/covertutils
+    - REPO=pallets/flask
+    - REPO=openai/gym
+    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6
