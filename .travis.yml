@@ -1,6 +1,16 @@
 language: python
 env:
-    - REPO=yuyuz/FLASH
+    - REPO=jtoy/sketchnet
+    - REPO=ent1c3d/Python-Synopsis
+    - REPO=deepmind/pysc2
+    - REPO=RUB-SysSec/kAFL
+    - REPO=tensorflow/models
+    - REPO=GoogleCloudPlatform/distroless
+    - REPO=operatorequals/covertutils
+    - REPO=pallets/flask
+    - REPO=openai/gym
+    - REPO=m4ll0k/Spaghetti
+    - REPO=scikit-learn/scikit-learn
 python:
     - 2.7.13
     - 3.6
