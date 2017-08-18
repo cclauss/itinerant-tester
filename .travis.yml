@@ -4,11 +4,10 @@ env:
     - REPO=msracver/Flow-Guided-Feature-Aggregation
     - REPO=deepmind/pysc2
     - REPO=reswitched/CageTheUnicorn
-    - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
     - REPO=operatorequals/covertutils
     - REPO=RUB-SysSec/kAFL
-    - REPO=m4ll0k/Spaghetti
 python:
     - 2.7.13
     - 3.6
