@@ -1,16 +1,16 @@
 language: python
 env:
-    - REPO=ajbrock/SMASH
-    - REPO=tensorflow/models
     - REPO=theocean154/algo-coin
-    - REPO=pallets/flask
+    - REPO=ajbrock/SMASH
     - REPO=deepmind/pysc2
+    - REPO=pallets/flask
+    - REPO=tensorflow/models
+    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
+    - REPO=ctf-wiki/ctf-wiki
     - REPO=scikit-learn/scikit-learn
     - REPO=reswitched/CageTheUnicorn
-    - REPO=msracver/Flow-Guided-Feature-Aggregation
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=roxma/nvim-completion-manager
-    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
+    - REPO=scrapy/scrapy
+    - REPO=graphistry/pygraphistry
 python:
     - 2.7.13
     - 3.6
