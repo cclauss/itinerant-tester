@@ -1,13 +1,15 @@
 language: python
 env:
     - REPO=tensorflow/models
-    - REPO=msracver/Flow-Guided-Feature-Aggregation
-    - REPO=deepmind/pysc2
+    - REPO=ajbrock/SMASH
     - REPO=reswitched/CageTheUnicorn
-    - REPO=scikit-learn/scikit-learn
     - REPO=pallets/flask
-    - REPO=operatorequals/covertutils
-    - REPO=RUB-SysSec/kAFL
+    - REPO=deepmind/pysc2
+    - REPO=msracver/Flow-Guided-Feature-Aggregation
+    - REPO=scikit-learn/scikit-learn
+    - REPO=roxma/nvim-completion-manager
+    - REPO=getsentry/sentry
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
 python:
     - 2.7.13
     - 3.6
