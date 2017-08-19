@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=tensorflow/models
+    - REPO=graphistry/pygraphistry
     - REPO=ajbrock/SMASH
     - REPO=reswitched/CageTheUnicorn
     - REPO=pallets/flask
