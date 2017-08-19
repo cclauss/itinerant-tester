@@ -11,12 +11,15 @@ env:
     - REPO=reswitched/CageTheUnicorn
     - REPO=scrapy/scrapy
     - REPO=graphistry/pygraphistry
+    - REPO=msracver/Flow-Guided-Feature-Aggregation
+    - REPO=google/protobuf
+    - REPO=zrzka/blackmamba
 python:
     - 2.7.13
     - 3.6
 cache: pip
 install:
-    - pip install flake8  # pytest  # add other testing frameworks later
+    - pip install flake8 pylint coveralls  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -28,6 +31,9 @@ script:
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+after_success:
+    - coveralls
+    - pylint
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
