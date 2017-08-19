@@ -33,7 +33,7 @@ script:
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 after_success:
     - coveralls
-    - pylint
+    - pylint .
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
