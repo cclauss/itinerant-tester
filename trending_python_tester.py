@@ -129,7 +129,7 @@ python:
     - 3.6
 cache: pip
 install:
-    - pip install coveralls flake8 pylint # pytest  # add other testing frameworks later
+    - pip install coveralls hacking pylint # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -142,11 +142,13 @@ script:
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 after_success:
+    - cd ~/${REPO}  # so pylint does not halt on invalid module name
+    - touch __init__.py  # so that pylint does not claim to be lost
     - pylint .
     # - coveralls
 notifications:
     on_success: change
-    on_failure: change  # `always` will be the setting once code changes slow down
+on_failure: change  # `always` will be the setting once code changes slow down
 
 """
 
