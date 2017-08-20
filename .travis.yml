@@ -1,17 +1,18 @@
 language: python
 env:
     - REPO=csurfer/pyheatmagic
-    - REPO=theocean154/algo-coin
-    - REPO=ctf-wiki/ctf-wiki
-    - REPO=unsky/focal-loss
-    - REPO=ajbrock/SMASH
-    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
-    - REPO=tensorflow/models
-    - REPO=deepmind/pysc2
     - REPO=crazyguitar/pysheeet
+    - REPO=unsky/focal-loss
+    - REPO=ctf-wiki/ctf-wiki
+    - REPO=tensorflow/models
+    - REPO=theocean154/algo-coin
     - REPO=graphistry/pygraphistry
+    - REPO=deepmind/pysc2
+    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
     - REPO=pallets/flask
     - REPO=scrapy/scrapy
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ajbrock/SMASH
 python:
     - 2.7.13
     - 3.6
@@ -36,5 +37,5 @@ after_success:
     # - coveralls
 notifications:
     on_success: change
-    on_failure: change  # `always` will be the setting once code changes slow down
+on_failure: change  # `always` will be the setting once code changes slow down
 
