@@ -30,6 +30,7 @@ script:
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 after_success:
+    - cd ~/${REPO}  # so pylint does not halt on invalid module name
     - touch __init__.py  # so that pylint does not claim to be lost
     - pylint .
     # - coveralls
