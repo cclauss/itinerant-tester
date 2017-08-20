@@ -1,18 +1,14 @@
 language: python
 env:
-    - REPO=csurfer/pyheatmagic
-    - REPO=crazyguitar/pysheeet
-    - REPO=unsky/focal-loss
     - REPO=ctf-wiki/ctf-wiki
     - REPO=tensorflow/models
-    - REPO=theocean154/algo-coin
     - REPO=graphistry/pygraphistry
-    - REPO=deepmind/pysc2
     - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
-    - REPO=pallets/flask
     - REPO=scrapy/scrapy
+    - REPO=pallets/flask
+    - REPO=deepmind/pysc2
     - REPO=scikit-learn/scikit-learn
-    - REPO=ajbrock/SMASH
+    - REPO=XX-net/XX-Net
 python:
     - 2.7.13
     - 3.6
