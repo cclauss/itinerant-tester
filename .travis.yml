@@ -2,22 +2,22 @@ language: python
 env:
     - REPO=csurfer/pyheatmagic
     - REPO=theocean154/algo-coin
-    - REPO=ajbrock/SMASH
-    - REPO=tensorflow/models
-    - REPO=unsky/focal-loss
     - REPO=ctf-wiki/ctf-wiki
-    - REPO=deepmind/pysc2
-    - REPO=pallets/flask
+    - REPO=unsky/focal-loss
+    - REPO=ajbrock/SMASH
     - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
+    - REPO=tensorflow/models
+    - REPO=deepmind/pysc2
+    - REPO=crazyguitar/pysheeet
     - REPO=graphistry/pygraphistry
+    - REPO=pallets/flask
     - REPO=scrapy/scrapy
-    - REPO=reswitched/CageTheUnicorn
 python:
     - 2.7.13
     - 3.6
 cache: pip
 install:
-    - pip install flake8  # pytest  # add other testing frameworks later
+    - pip install coveralls flake8 pylint # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -29,6 +29,9 @@ script:
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+after_success:
+    - pylint .
+    # - coveralls
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
