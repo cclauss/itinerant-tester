@@ -1,16 +1,16 @@
 language: python
 env:
-    - REPO=LewisVo/Awesome-Linux-Software
     - REPO=tensorflow/models
-    - REPO=ctf-wiki/ctf-wiki
+    - REPO=deibit/cansina
     - REPO=pallets/flask
-    - REPO=kuangliu/pytorch-retinanet
+    - REPO=ctf-wiki/ctf-wiki
     - REPO=scikit-learn/scikit-learn
+    - REPO=deepmind/pysc2
     - REPO=XX-net/XX-Net
     - REPO=scrapy/scrapy
-    - REPO=deibit/cansina
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=deepmind/pysc2
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
 python:
     - 2.7.13
     - 3.6
