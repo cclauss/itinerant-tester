@@ -2,17 +2,16 @@ language: python
 env:
     - REPO=tensorflow/models
     - REPO=deibit/cansina
-    - REPO=FanhuaandLuomu/geetest_break
+    - REPO=johnmcfarlane/unformat
     - REPO=deepmind/pysc2
-    - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
-    - REPO=ctf-wiki/ctf-wiki
+    - REPO=pallets/flask
     - REPO=XX-net/XX-Net
-    - REPO=scrapy/scrapy
     - REPO=bitcoinbook/bitcoinbook
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
     - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
 python:
     - 2.7.13
     - 3.6
