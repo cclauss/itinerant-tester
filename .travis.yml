@@ -2,10 +2,11 @@ language: python
 env:
     - REPO=tensorflow/models
     - REPO=deibit/cansina
-    - REPO=pallets/flask
-    - REPO=ctf-wiki/ctf-wiki
-    - REPO=scikit-learn/scikit-learn
+    - REPO=FanhuaandLuomu/geetest_break
     - REPO=deepmind/pysc2
+    - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ctf-wiki/ctf-wiki
     - REPO=XX-net/XX-Net
     - REPO=scrapy/scrapy
     - REPO=bitcoinbook/bitcoinbook
