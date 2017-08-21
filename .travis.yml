@@ -1,16 +1,16 @@
 language: python
 env:
+    - REPO=LewisVo/Awesome-Linux-Software
     - REPO=tensorflow/models
     - REPO=ctf-wiki/ctf-wiki
     - REPO=pallets/flask
-    - REPO=scrapy/scrapy
-    - REPO=scikit-learn/scikit-learn
-    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
-    - REPO=deepmind/pysc2
-    - REPO=graphistry/pygraphistry
-    - REPO=XX-net/XX-Net
     - REPO=kuangliu/pytorch-retinanet
+    - REPO=scikit-learn/scikit-learn
+    - REPO=XX-net/XX-Net
+    - REPO=scrapy/scrapy
+    - REPO=deibit/cansina
     - REPO=bitcoinbook/bitcoinbook
+    - REPO=deepmind/pysc2
 python:
     - 2.7.13
     - 3.6
