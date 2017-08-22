@@ -2,16 +2,18 @@ language: python
 env:
     - REPO=tensorflow/models
     - REPO=johnmcfarlane/unformat
-    - REPO=deibit/cansina
     - REPO=scikit-learn/scikit-learn
     - REPO=salesforce/awd-lstm-lm
     - REPO=pallets/flask
     - REPO=XX-net/XX-Net
     - REPO=deepmind/pysc2
+    - REPO=getsentry/sentry
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
     - REPO=gevent/gevent
     - REPO=facebookresearch/ParlAI
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/pymavlink
 python:
     - 2.7.13
     - 3.6
