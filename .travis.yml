@@ -1,13 +1,13 @@
 language: python
 env:
     - REPO=tensorflow/models
-    - REPO=deibit/cansina
     - REPO=johnmcfarlane/unformat
-    - REPO=deepmind/pysc2
+    - REPO=deibit/cansina
     - REPO=scikit-learn/scikit-learn
+    - REPO=salesforce/awd-lstm-lm
     - REPO=pallets/flask
     - REPO=XX-net/XX-Net
-    - REPO=bitcoinbook/bitcoinbook
+    - REPO=deepmind/pysc2
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
     - REPO=gevent/gevent
