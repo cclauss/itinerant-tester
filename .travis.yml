@@ -1,12 +1,14 @@
 language: python
 env:
+    - REPO=minimaxir/reactionrnn
     - REPO=tensorflow/models
     - REPO=johnmcfarlane/unformat
-    - REPO=scikit-learn/scikit-learn
     - REPO=chaitanyamalaviya/lang-reps
-    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
     - REPO=pallets/flask
     - REPO=flomlo/ntm_keras
+    - REPO=yihui-he/channel-pruning
+    - REPO=XX-net/XX-Net
     - REPO=soravux/pytorch_tutorial
     - REPO=getsentry/sentry
     - REPO=PythonCharmers/python-future
@@ -15,7 +17,7 @@ env:
     - REPO=facebookresearch/ParlAI
     - REPO=scrapy/scrapy
     - REPO=ArduPilot/pymavlink
-    - REPO=GraylinKim/sc2reader
+    - REPO=ggtracker/sc2reader
 python:
     - 2.7.13
     - 3.6
