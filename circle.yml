@@ -3,7 +3,11 @@ machine:
     - pyenv global 2.7.12 3.6.2
 dependencies:
   pre:
+    - pip install --upgrade pip
+    - pip3 install --upgrade pip
+    - python3.6 -m pip install --upgrade pip
     - pip install hacking
+    - python3.6 -m pip install hacking
 test:
   override:
     - REPO=PythonCharmers/python-future
