@@ -2,10 +2,11 @@ language: python
 env:
     - REPO=tensorflow/models
     - REPO=johnmcfarlane/unformat
-    - REPO=scikit-learn/scikit-learn
     - REPO=salesforce/awd-lstm-lm
-    - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=chaitanyamalaviya/lang-reps
     - REPO=XX-net/XX-Net
+    - REPO=pallets/flask
     - REPO=deepmind/pysc2
     - REPO=getsentry/sentry
     - REPO=PythonCharmers/python-future
