@@ -1,5 +1,22 @@
 language: python
 env:
+    - REPO=minimaxir/reactionrnn
+    - REPO=tensorflow/models
+    - REPO=johnmcfarlane/unformat
+    - REPO=lk-geimfari/mimesis
+    - REPO=flomlo/ntm_keras
+    - REPO=yihui-he/channel-pruning
+    - REPO=soravux/pytorch_tutorial
+    - REPO=chaitanyamalaviya/lang-reps
+    - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=getsentry/sentry
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/pymavlink
     - REPO=ggtracker/sc2reader
 python:
     - 2.7.13
@@ -10,7 +27,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO}
+    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
