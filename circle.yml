@@ -1,6 +1,9 @@
 machine:
   post:
     - pyenv global 2.7.12 3.6.2
+dependencies:
+  pre:
+    - pip install hacking
 test:
   override:
     - REPO=PythonCharmers/python-future
