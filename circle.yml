@@ -12,7 +12,7 @@ test:
     - REPO=PythonCharmers/python-future
     - URL=https://github.com/${REPO}
     - echo "${URL} --> ./${REPO}..."
-    - git clone --depth=50 ${URL} ./${REPO}  # --branch=master
+    # - git clone --depth=50 ${URL} ./${REPO}  # --branch=master
     - pwd
     - cd ./${REPO}
     - pwd
