@@ -1,16 +1,17 @@
 language: python
 env:
+    - REPO=lk-geimfari/mimesis
     - REPO=minimaxir/reactionrnn
     - REPO=tensorflow/models
-    - REPO=lk-geimfari/mimesis
     - REPO=flomlo/ntm_keras
-    - REPO=johnmcfarlane/unformat
-    - REPO=yihui-he/channel-pruning
-    - REPO=pallets/flask
-    - REPO=chaitanyamalaviya/lang-reps
-    - REPO=scikit-learn/scikit-learn
-    - REPO=soravux/pytorch_tutorial
     - REPO=kotajacob/wal_steam
+    - REPO=johnmcfarlane/unformat
+    - REPO=pallets/flask
+    - REPO=yihui-he/channel-pruning
+    - REPO=scikit-learn/scikit-learn
+    - REPO=chaitanyamalaviya/lang-reps
+    - REPO=soravux/pytorch_tutorial
+    - REPO=XX-net/XX-Net
     - REPO=getsentry/sentry
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
