@@ -5,15 +5,17 @@ dependencies:
   pre:
     - pip install --upgrade pip
     - pip3 install --upgrade pip
-    - python3.6 -m pip install --upgrade pip
     - pip install hacking
-    - python3.6 -m pip install hacking
+    - pip3 install hacking
 test:
   override:
     - REPO=PythonCharmers/python-future
     - URL=https://github.com/${REPO}
+    - echo "${URL} --> ./${REPO}..."
     - git clone --depth=50 ${URL} ./${REPO}  # --branch=master
+    - pwd
     - cd ./${REPO}
+    - pwd
     - python2.7 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - python2.7 -m flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - python3.6 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
