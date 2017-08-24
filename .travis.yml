@@ -23,7 +23,7 @@ python:
     - 3.6
 cache: pip
 install:
-    - pip install coveralls hacking pylint # pytest  # add other testing frameworks later
+    - pip install flake8  # pytest  # add other testing frameworks later
     - pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
     # https://github.com/PyCQA/pyflakes/blob/master/NEWS.txt
 before_script:
@@ -37,12 +37,7 @@ script:
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-after_success:
-    - cd ~/${REPO}  # so pylint does not halt on invalid module name
-    - touch __init__.py  # so that pylint does not claim to be lost
-    - pylint .
-    # - coveralls
 notifications:
     on_success: change
-on_failure: change  # `always` will be the setting once code changes slow down
+    on_failure: change  # `always` will be the setting once code changes slow down
 
