@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=google/roboto
+    - REPO=spiro/curves
 python:
     - 2.7.13
     - 3.6
