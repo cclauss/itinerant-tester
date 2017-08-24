@@ -24,7 +24,7 @@ python:
 cache: pip
 install:
     - pip install coveralls hacking pylint # pytest  # add other testing frameworks later
-    - pip install pyflakes  # temporary because of pyflakes v1.6 changes at...
+    - pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
     # https://github.com/PyCQA/pyflakes/blob/master/NEWS.txt
 before_script:
     - URL=https://github.com/${REPO}
