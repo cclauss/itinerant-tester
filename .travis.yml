@@ -4,7 +4,6 @@ env:
     - REPO=tensorflow/models
     - REPO=XX-net/XX-Net
     - REPO=scikit-learn/scikit-learn
-    - REPO=elifesciences/sciencebeam
     - REPO=pallets/flask
     - REPO=0x09AL/raven
     - REPO=deepmind/pysc2
@@ -25,6 +24,8 @@ python:
 cache: pip
 install:
     - pip install coveralls hacking pylint # pytest  # add other testing frameworks later
+    - pip install pyflakes  # temporary because of pyflakes v1.6 changes at...
+    # https://github.com/PyCQA/pyflakes/blob/master/NEWS.txt
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
