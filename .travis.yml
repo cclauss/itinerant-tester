@@ -3,12 +3,12 @@ env:
     - REPO=rsms/interface
     - REPO=tensorflow/models
     - REPO=XX-net/XX-Net
+    - REPO=0x09AL/raven
     - REPO=scikit-learn/scikit-learn
     - REPO=pallets/flask
-    - REPO=0x09AL/raven
     - REPO=deepmind/pysc2
     - REPO=concept-to-clinic/concept-to-clinic
-    - REPO=scrapy/scrapy
+    - REPO=Spandan-Madan/Pytorch_fine_tuning_Tutorial
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
     - REPO=google/roboto
@@ -33,6 +33,9 @@ before_script:
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
+    - echo ; echo -n "pyflakes testing of ${URL} on " ; python -V
+    - pyflakes --version
+    - pyflakes .
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
