@@ -1,26 +1,6 @@
 language: python
 env:
-    - REPO=rsms/interface
-    - REPO=lk-geimfari/mimesis
-    - REPO=facebook/codemod
-    - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
-    - REPO=XX-net/XX-Net
-    - REPO=concept-to-clinic/concept-to-clinic
-    - REPO=pallets/flask
-    - REPO=minimaxir/reactionrnn
-    - REPO=deepmind/pysc2
-    - REPO=yihui-he/channel-pruning
-    - REPO=tensorflow/cleverhans
-    - REPO=flomlo/ntm_keras
-    - REPO=getsentry/sentry
-    - REPO=PythonCharmers/python-future
-    - REPO=google/protobuf
-    - REPO=gevent/gevent
-    - REPO=facebookresearch/ParlAI
-    - REPO=scrapy/scrapy
-    - REPO=ArduPilot/pymavlink
-    - REPO=ggtracker/sc2reader
+    - REPO=google/roboto
 python:
     - 2.7.13
     - 3.6
