@@ -2,16 +2,17 @@ language: python
 env:
     - REPO=rsms/interface
     - REPO=lk-geimfari/mimesis
-    - REPO=minimaxir/reactionrnn
+    - REPO=facebook/codemod
     - REPO=tensorflow/models
-    - REPO=yihui-he/channel-pruning
     - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
-    - REPO=flomlo/ntm_keras
-    - REPO=kotajacob/wal_steam
     - REPO=XX-net/XX-Net
+    - REPO=concept-to-clinic/concept-to-clinic
+    - REPO=pallets/flask
+    - REPO=minimaxir/reactionrnn
     - REPO=deepmind/pysc2
-    - REPO=soravux/pytorch_tutorial
+    - REPO=yihui-he/channel-pruning
+    - REPO=tensorflow/cleverhans
+    - REPO=flomlo/ntm_keras
     - REPO=getsentry/sentry
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
