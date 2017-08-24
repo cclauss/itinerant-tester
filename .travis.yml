@@ -1,6 +1,24 @@
 language: python
 env:
-    - REPO=googlefonts/fontbakery
+    - REPO=rsms/interface
+    - REPO=tensorflow/models
+    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
+    - REPO=elifesciences/sciencebeam
+    - REPO=pallets/flask
+    - REPO=0x09AL/raven
+    - REPO=deepmind/pysc2
+    - REPO=concept-to-clinic/concept-to-clinic
+    - REPO=scrapy/scrapy
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=google/roboto
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=getsentry/sentry
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/pymavlink
+    - REPO=ggtracker/sc2reader
 python:
     - 2.7.13
     - 3.6
