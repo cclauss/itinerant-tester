@@ -1,6 +1,27 @@
 language: python
 env:
-    - REPO=ArduPilot/ardupilot
+    - REPO=rsms/interface
+    - REPO=justdoit0823/pywxclient
+    - REPO=eldraco/Salamandra
+    - REPO=Kyubyong/neural_chinese_transliterator
+    - REPO=0x09AL/raven
+    - REPO=tensorflow/models
+    - REPO=jmhessel/fmpytorch
+    - REPO=pallets/flask
+    - REPO=masasin/latexipy
+    - REPO=AndreaOm/xiaomiquan_bak
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=deepmind/pysc2
+    - REPO=SpektroAudio/Patchbook
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=google/roboto
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=getsentry/sentry
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/pymavlink
+    - REPO=ggtracker/sc2reader
 python:
     - 2.7.13
     - 3.6
