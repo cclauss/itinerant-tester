@@ -2,7 +2,7 @@ language: python
 env:
     - REPO=cclauss/pymavlink
 python:
-    - 2.7.13
+    - 2.7.13 
     - 3.6
 cache: pip
 install:
