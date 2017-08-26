@@ -1,10 +1,32 @@
 language: python
 env:
-    - REPO=cclauss/pymavlink
+    - REPO=rsms/interface
+    - REPO=zalandoresearch/fashion-mnist
+    - REPO=sdispater/pendulum
+    - REPO=tensorflow/models
+    - REPO=0x09AL/raven
+    - REPO=eldraco/Salamandra
+    - REPO=woozzu/dong_iccv_2017
+    - REPO=scikit-learn/scikit-learn
+    - REPO=justdoit0823/pywxclient
+    - REPO=pallets/flask
+    - REPO=deepmind/pysc2
+    - REPO=donnemartin/system-design-primer
+    - REPO=jmhessel/fmpytorch
+    - REPO=kryptxy/torrench
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=google/roboto
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=getsentry/sentry
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/pymavlink
+    - REPO=ggtracker/sc2reader
 python:
-    - 2.7.13 
+    - 2.7.13
     - 3.6
-# cache: pip
+cache: pip
 install:
     - pip install flake8  # pytest  # add other testing frameworks later
     #- pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
@@ -12,7 +34,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --branch=patch-9 --depth=50 ${URL} ~/${REPO}  # --branch=master
+    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
@@ -22,9 +44,7 @@ script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - SELECT=C,E10,E11,E401,E502,E703,E8,E9,F,W191,W292,W391
-    - flake8 . --count --exit-zero --select=${SELECT} --max-complexity=10 --max-line-length=127 --statistics
-    #- time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
