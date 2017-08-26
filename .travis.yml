@@ -1,19 +1,14 @@
 language: python
 env:
     - REPO=rsms/interface
-    - REPO=zalandoresearch/fashion-mnist
     - REPO=sdispater/pendulum
     - REPO=tensorflow/models
     - REPO=0x09AL/raven
-    - REPO=eldraco/Salamandra
-    - REPO=woozzu/dong_iccv_2017
-    - REPO=scikit-learn/scikit-learn
-    - REPO=justdoit0823/pywxclient
     - REPO=pallets/flask
-    - REPO=deepmind/pysc2
+    - REPO=googlei18n/noto-emoji
+    - REPO=scikit-learn/scikit-learn
     - REPO=donnemartin/system-design-primer
-    - REPO=jmhessel/fmpytorch
-    - REPO=kryptxy/torrench
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
     - REPO=google/roboto
