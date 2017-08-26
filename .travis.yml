@@ -1,18 +1,19 @@
 language: python
 env:
     - REPO=rsms/interface
-    - REPO=justdoit0823/pywxclient
     - REPO=eldraco/Salamandra
-    - REPO=Kyubyong/neural_chinese_transliterator
-    - REPO=0x09AL/raven
+    - REPO=sdispater/pendulum
     - REPO=tensorflow/models
+    - REPO=justdoit0823/pywxclient
+    - REPO=0x09AL/raven
     - REPO=jmhessel/fmpytorch
-    - REPO=pallets/flask
-    - REPO=masasin/latexipy
-    - REPO=AndreaOm/xiaomiquan_bak
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=deepmind/pysc2
+    - REPO=AndreaOm/xiaomiquan_bak
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
+    - REPO=Kyubyong/neural_chinese_transliterator
     - REPO=SpektroAudio/Patchbook
+    - REPO=donnemartin/system-design-primer
     - REPO=PythonCharmers/python-future
     - REPO=google/protobuf
     - REPO=google/roboto
