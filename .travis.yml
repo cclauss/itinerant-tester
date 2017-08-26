@@ -1,23 +1,6 @@
 language: python
 env:
-    - REPO=rsms/interface
-    - REPO=sdispater/pendulum
-    - REPO=tensorflow/models
-    - REPO=0x09AL/raven
-    - REPO=pallets/flask
-    - REPO=googlei18n/noto-emoji
-    - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=PythonCharmers/python-future
-    - REPO=google/protobuf
-    - REPO=google/roboto
-    - REPO=gevent/gevent
-    - REPO=facebookresearch/ParlAI
-    - REPO=getsentry/sentry
-    - REPO=scrapy/scrapy
-    - REPO=ArduPilot/pymavlink
-    - REPO=ggtracker/sc2reader
+    - REPO=m4ll0k/Spaghetti
 python:
     - 2.7.13
     - 3.6
