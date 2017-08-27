@@ -1,9 +1,28 @@
 language: python
 env:
-    - REPO=m4ll0k/Spaghetti
+    - REPO=rsms/interface
+    - REPO=googlei18n/noto-emoji
+    - REPO=tensorflow/models
+    - REPO=0x09AL/raven
+    - REPO=pallets/flask
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=getsentry/sentry
+    - REPO=donnemartin/system-design-primer
+    - REPO=sdispater/pendulum
+    - REPO=pirate/bookmark-archiver
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=google/roboto
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=getsentry/sentry
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/pymavlink
+    - REPO=ggtracker/sc2reader
 python:
     - 2.7.13
     - 3.6
+cache: pip
 install:
     - pip install flake8  # pytest  # add other testing frameworks later
     #- pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
