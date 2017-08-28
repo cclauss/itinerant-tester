@@ -16,6 +16,7 @@ env:
     - REPO=facebookresearch/ParlAI
     - REPO=getsentry/sentry
     - REPO=scrapy/scrapy
+    - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=ggtracker/sc2reader
 python:
