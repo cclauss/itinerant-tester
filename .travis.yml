@@ -1,7 +1,27 @@
 language: python
 env:
+    - REPO=rsms/interface
+    - REPO=beaston02/ChaturbateRecorder
+    - REPO=hwalsuklee/tensorflow-generative-model-collections
+    - REPO=lufficc/flask_ishuhui
+    - REPO=tensorflow/models
+    - REPO=parrt/lolviz
+    - REPO=nicolargo/glances
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=googlei18n/noto-emoji
-    - REPO=ArduPilot/ardupilot
+    - REPO=donnemartin/system-design-primer
+    - REPO=explosion/spaCy
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ealter/vim_turing_machine
+    - REPO=pallets/flask
+    - REPO=NoneGG/aredis
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=google/roboto
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=getsentry/sentry
+    - REPO=scrapy/scrapy
     - REPO=ArduPilot/pymavlink
     - REPO=ggtracker/sc2reader
 python:
