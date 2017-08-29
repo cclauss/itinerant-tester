@@ -1,7 +1,6 @@
 language: python
 env:
-    - REPO=m4ll0k/Spaghetti#A
-    - REPO=m4ll0k/Spaghetti #A    
+    - REPO=thumbor/thumbor   
 python:
     - 2.7.13
     - 3.6
