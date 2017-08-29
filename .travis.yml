@@ -2,23 +2,19 @@ language: python
 env:
     - REPO=rsms/interface
     - REPO=tensorflow/models
+    - REPO=scrapy/scrapy
     - REPO=scikit-learn/scikit-learn
-    - REPO=sanyam5/arc-pytorch
-    - REPO=scrapy/scrapy
-    - REPO=corna/me_cleaner
-    - REPO=beaston02/MFCRecorder
-    - REPO=NoneGG/aredis
+    - REPO=ResolveWang/weibospider
+    - REPO=jhao104/proxy_pool
     - REPO=pallets/flask
-    - REPO=PythonCharmers/python-future
-    - REPO=google/protobuf
-    - REPO=google/roboto
-    - REPO=gevent/gevent
-    - REPO=facebookresearch/ParlAI
-    - REPO=getsentry/sentry
-    - REPO=scrapy/scrapy
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
     - REPO=ggtracker/sc2reader
+    - REPO=scrapy/scrapy
 python:
     - 2.7.13
     - 3.6
