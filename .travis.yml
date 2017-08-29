@@ -1,24 +1,6 @@
 language: python
 env:
-    - REPO=rsms/interface
-    - REPO=tensorflow/models
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=googlei18n/noto-emoji
-    - REPO=scikit-learn/scikit-learn
-    - REPO=NoneGG/aredis
-    - REPO=explosion/spaCy
-    - REPO=0x09AL/raven
-    - REPO=pallets/flask
-    - REPO=PythonCharmers/python-future
-    - REPO=google/protobuf
-    - REPO=google/roboto
-    - REPO=gevent/gevent
-    - REPO=facebookresearch/ParlAI
-    - REPO=getsentry/sentry
-    - REPO=scrapy/scrapy
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=ggtracker/sc2reader
+    - REPO=kennethreitz/setup.py
 python:
     - 2.7.13
     - 3.6
