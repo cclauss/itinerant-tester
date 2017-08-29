@@ -20,7 +20,7 @@ gh = github3_login(username, getpass.getpass())
 url = 'https://github.com/trending?l=Python'  # GitHub Trending top 25 repos
 
 # these repos pass tests, have pull requests to pass tests, or are Py3 only
-ignore = [
+ignore = sorted([
     '0x4D31/honeyLambda', '521xueweihan/HelloGitHub', 'Cisco-Talos/pyrebox',
     'ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding',
     'Kaixhin/NoisyNet-A3C', 'PyCQA/flake8', 'StevenBlack/hosts',
@@ -63,8 +63,15 @@ ignore = [
     'theocean154/algo-coin', 'ajbrock/SMASH', 'graphistry/pygraphistry',
     'LewisVo/Awesome-Linux-Software', 'kuangliu/pytorch-retinanet',
     'deibit/cansina', 'salesforce/awd-lstm-lm', 'facebook/codemod',
-    'lk-geimfari/mimesis', 'minimaxir/reactionrnn', 'tensorflow/cleverhans', ''
-]
+    'lk-geimfari/mimesis', 'minimaxir/reactionrnn', 'tensorflow/cleverhans',
+    'elifesciences/sciencebeam', 'zalandoresearch/fashion-mnist',
+    'eldraco/Salamandra', 'woozzu/dong_iccv_2017', 'justdoit0823/pywxclient',
+    'jmhessel/fmpytorch', 'kryptxy/torrench', 'beaston02/ChaturbateRecorder',
+    'hwalsuklee/tensorflow-generative-model-collections',
+    'lufficc/flask_ishuhui', 'parrt/lolviz', 'nicolargo/glances',
+    'sanyam5/arc-pytorch', 'corna/me_cleaner', 'beaston02/MFCRecorder',
+    'NoneGG/aredis'
+])
 
 # the boilerplate content of the .travis.yml file
 fmt = """language: python
@@ -75,7 +82,9 @@ python:
     - 3.6
 cache: pip
 install:
-    - pip install coveralls hacking pylint # pytest  # add other testing frameworks later
+    - pip install flake8  # pytest  # add other testing frameworks later
+    #- pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
+    # https://github.com/PyCQA/pyflakes/blob/master/NEWS.txt
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -83,18 +92,16 @@ before_script:
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
+    #- echo ; echo -n "pyflakes testing of ${URL} on " ; python -V
+    #- pyflakes --version
+    #- pyflakes .
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-after_success:
-    - cd ~/${REPO}  # so pylint does not halt on invalid module name
-    - touch __init__.py  # so that pylint does not claim to be lost
-    - pylint .
-    # - coveralls
 notifications:
     on_success: change
-on_failure: change  # `always` will be the setting once code changes slow down
+    on_failure: change  # `always` will be the setting once code changes slow down
 
 """
 
@@ -106,9 +113,9 @@ repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
 repos = (repo.text.strip().replace(' ', '') for repo in repos
          if '/' in repo.text and '://' not in repo.text)
 repos = list(repos) + [
-    'PythonCharmers/python-future', 'google/protobuf', 'google/roboto',
-    'gevent/gevent', 'facebookresearch/ParlAI', 'getsentry/sentry',
-    'scrapy/scrapy', 'ArduPilot/pymavlink', 'ggtracker/sc2reader'
+    'ArduPilot/ardupilot', 'ArduPilot/pymavlink',
+    'PythonCharmers/python-future', 'facebookresearch/ParlAI', 'gevent/gevent',
+    'getsentry/sentry', 'ggtracker/sc2reader', 'scrapy/scrapy'
 ]
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
 repos = '\n'.join('    - REPO=' + repo for repo in repos
