@@ -1,6 +1,24 @@
 language: python
 env:
-    - REPO=kennethreitz/setup.py
+    - REPO=rsms/interface
+    - REPO=tensorflow/models
+    - REPO=scikit-learn/scikit-learn
+    - REPO=sanyam5/arc-pytorch
+    - REPO=scrapy/scrapy
+    - REPO=corna/me_cleaner
+    - REPO=beaston02/MFCRecorder
+    - REPO=NoneGG/aredis
+    - REPO=pallets/flask
+    - REPO=PythonCharmers/python-future
+    - REPO=google/protobuf
+    - REPO=google/roboto
+    - REPO=gevent/gevent
+    - REPO=facebookresearch/ParlAI
+    - REPO=getsentry/sentry
+    - REPO=scrapy/scrapy
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=ggtracker/sc2reader
 python:
     - 2.7.13
     - 3.6
@@ -22,7 +40,7 @@ script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - time flake8 . --count --exit-zero --max-complexity=10 --show-source --statistics
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
