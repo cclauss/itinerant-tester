@@ -2,6 +2,7 @@ language: python
 env:
     - REPO=thumbor/thumbor
     - REPO=googlefonts/fontbakery
+    - REPO=ArduPilot/pymavlink
 python:
     - 2.7.13
     - 3.6
