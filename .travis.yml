@@ -1,6 +1,7 @@
 language: python
 env:
-    - REPO=thumbor/thumbor   
+    - REPO=thumbor/thumbor
+    - REPO=googlefonts/fontbakery
 python:
     - 2.7.13
     - 3.6
