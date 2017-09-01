@@ -1,25 +1,7 @@
 language: python
 env:
-    - REPO=kennethreitz/setup.py
-    - REPO=ResolveWang/weibospider
-    - REPO=abaldwin88/roamer
-    - REPO=likedan/Awesome-CoreML-Models
-    - REPO=tensorflow/models
-    - REPO=rsms/interface
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=pallets/flask
-    - REPO=Seedarchangel/TuChart
-    - REPO=niloofarkheirkhah/nili
-    - REPO=soimort/you-get
-    - REPO=scikit-learn/scikit-learn
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=scrapy/scrapy
+    - REPO=100/Solid
+    - REPO=XX-net/XX-Net
 python:
     - 2.7.13
     - 3.6
@@ -45,4 +27,3 @@ script:
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
-
