@@ -1,27 +1,6 @@
 language: python
 env:
-    - REPO=satwikkansal/wtfPython
-    - REPO=kennethreitz/setup.py
-    - REPO=ResolveWang/weibospider
-    - REPO=abaldwin88/roamer
-    - REPO=tensorflow/models
-    - REPO=QUVA-Lab/artemis
-    - REPO=likedan/Awesome-CoreML-Models
-    - REPO=tensorflow/tensor2tensor
-    - REPO=scikit-learn/scikit-learn
-    - REPO=kennethreitz/pipenv
-    - REPO=rsms/interface
-    - REPO=XX-net/XX-Net
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=pallets/flask
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=scrapy/scrapy
+    - REPO=apache/thrift
 python:
     - 2.7.13
     - 3.6
