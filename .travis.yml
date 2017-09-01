@@ -1,19 +1,18 @@
 language: python
 env:
-    - REPO=satwikkansal/wtfPython
+    - REPO=satwikkansal/wtfpython
     - REPO=kennethreitz/setup.py
-    - REPO=ResolveWang/weibospider
     - REPO=tensorflow/tensor2tensor
-    - REPO=tensorflow/models
+    - REPO=ResolveWang/weibospider
     - REPO=QUVA-Lab/artemis
-    - REPO=abaldwin88/roamer
-    - REPO=likedan/Awesome-CoreML-Models
-    - REPO=kennethreitz/pipenv
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pythad/selenium_extensions
+    - REPO=tensorflow/models
     - REPO=Hironsan/anago
-    - REPO=rsms/interface
+    - REPO=kennethreitz/pipenv
+    - REPO=likedan/Awesome-CoreML-Models
+    - REPO=GuozhuHe/webspider
+    - REPO=abaldwin88/roamer
+    - REPO=scikit-learn/scikit-learn
+    - REPO=XX-net/XX-Net
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=PythonCharmers/python-future
