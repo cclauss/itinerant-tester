@@ -28,6 +28,7 @@ env:
     - REPO=apache/qpid-python
     - REPO=apache/steve
     - REPO=apache/tashi
+    - REPO=apache/thrift
     - REPO=apache/trafficserver-qa
     - REPO=apache/usergrid-python
 python:
