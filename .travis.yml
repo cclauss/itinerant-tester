@@ -1,12 +1,13 @@
 language: python
 env:
     - REPO=apache/thrift
-    - REPO=zeromq/pyzmq
-    - REPO=zeromq/zyre
-    - REPO=zeromq/pyre
-    - REPO=zeromq/pyczmq
-    - REPO=zeromq/cookbook
-    - REPO=zeromq/zeromq-buildbot
+    - REPO=rtfd/readthedocs-sphinx-ext
+    # - REPO=zeromq/pyzmq
+    #- REPO=zeromq/zyre
+    #- REPO=zeromq/pyre
+    #- REPO=zeromq/pyczmq
+    #- REPO=zeromq/cookbook
+    #- REPO=zeromq/zeromq-buildbot
 python:
     - 2.7.13
     - 3.6
