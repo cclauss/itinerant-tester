@@ -1,8 +1,6 @@
 language: python
 env:
-    - REPO=ponty/PyVirtualDisplay
-    - REPO=dronekit/dronekit-python
-    - REPO=scrapy/scrapy
+    - REPO=kelseyhightower/pycon
 python:
     - 2.7.13
     - 3.6
