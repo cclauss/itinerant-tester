@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=zeromq/pyzmq
+    - REPO=cclauss/pyzmq
 python:
     - 2.7.13
     - 3.6
