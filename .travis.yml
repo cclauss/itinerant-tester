@@ -1,33 +1,6 @@
 language: python
 env:
-    - REPO=satwikkansal/wtfpython
-    - REPO=kennethreitz/setup.py
-    - REPO=fendouai/Awesome-Chatbot
-    - REPO=reddit/reddit
-    - REPO=HypothesisWorks/hypothesis-python
-    - REPO=tensorflow/tensor2tensor
-    - REPO=fendouai/Awesome-TensorFlow-Chinese
-    - REPO=tensorflow/models
-    - REPO=GuozhuHe/webspider
-    - REPO=QUVA-Lab/artemis
-    - REPO=Hironsan/anago
-    - REPO=getredash/redash
-    - REPO=rsms/interface
-    - REPO=likedan/Awesome-CoreML-Models
-    - REPO=scikit-learn/scikit-learn
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=scrapy/scrapy
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=QUVA-Lab/artemis
-    - REPO=swisskyrepo/Wordpresscan
+    - REPO=zeromq/pyzmq
 python:
     - 2.7.13
     - 3.6
@@ -39,7 +12,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+    - git clone --depth=50 ${URL} ~/${REPO}  --branch=patch-1
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
