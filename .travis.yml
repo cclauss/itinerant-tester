@@ -1,6 +1,7 @@
 language: python
 env:
-    - REPO=kelseyhightower/pycon
+    - REPO=Deeplocal/mocktailsmixer
+    - REPO=jtauber/applepy
 python:
     - 2.7.13
     - 3.6
