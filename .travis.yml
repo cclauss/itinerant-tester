@@ -1,7 +1,33 @@
 language: python
 env:
-    - REPO=Deeplocal/mocktailsmixer
-    - REPO=jtauber/applepy
+    - REPO=satwikkansal/wtfpython
+    - REPO=kennethreitz/setup.py
+    - REPO=fendouai/Awesome-Chatbot
+    - REPO=tensorflow/tensor2tensor
+    - REPO=GuozhuHe/webspider
+    - REPO=HypothesisWorks/hypothesis-python
+    - REPO=reddit/reddit
+    - REPO=QUVA-Lab/artemis
+    - REPO=tensorflow/models
+    - REPO=ResolveWang/weibospider
+    - REPO=scikit-learn/scikit-learn
+    - REPO=Hironsan/anago
+    - REPO=znxlwm/pytorch-generative-model-collections
+    - REPO=likedan/Awesome-CoreML-Models
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=scrapy/scrapy
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=QUVA-Lab/artemis
+    - REPO=swisskyrepo/Wordpresscan
 python:
     - 2.7.13
     - 3.6
