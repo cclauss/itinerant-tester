@@ -3,17 +3,16 @@ env:
     - REPO=satwikkansal/wtfpython
     - REPO=kennethreitz/setup.py
     - REPO=fendouai/Awesome-Chatbot
-    - REPO=reddit/reddit
     - REPO=localstack/localstack
     - REPO=tensorflow/models
-    - REPO=secretsquirrel/SigThief
-    - REPO=HypothesisWorks/hypothesis-python
-    - REPO=snwh/suru-icon-theme
-    - REPO=fendouai/Awesome-TensorFlow-Chinese
-    - REPO=pallets/flask
+    - REPO=reddit/reddit
     - REPO=scikit-learn/scikit-learn
+    - REPO=snwh/suru-icon-theme
+    - REPO=secretsquirrel/SigThief
+    - REPO=postmarketOS/pmbootstrap
     - REPO=rsms/interface
-    - REPO=tensorflow/tensor2tensor
+    - REPO=fendouai/Awesome-TensorFlow-Chinese
+    - REPO=XX-net/XX-Net
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
@@ -23,10 +22,12 @@ env:
     - REPO=getsentry/sentry
     - REPO=ggtracker/sc2reader
     - REPO=scrapy/scrapy
+    - REPO=apache/beam
     - REPO=bl4de/security-tools
     - REPO=Seedarchangel/TuChart
     - REPO=QUVA-Lab/artemis
     - REPO=swisskyrepo/Wordpresscan
+    - REPO=GoogleCloudPlatform/DataflowPythonSDK
 python:
     - 2.7.13
     - 3.6
