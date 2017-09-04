@@ -7,6 +7,7 @@
         If lxml is not available, html5lib should be a workable substitute
 """
 
+# self._put_long_string("%s=%s" % (key, val))  # self, key, val: undefined names
 import bs4  # will require lxml or html5lib
 import getpass
 import requests
@@ -70,21 +71,31 @@ ignore = sorted([
     'hwalsuklee/tensorflow-generative-model-collections',
     'lufficc/flask_ishuhui', 'parrt/lolviz', 'nicolargo/glances',
     'sanyam5/arc-pytorch', 'corna/me_cleaner', 'beaston02/MFCRecorder',
-    'NoneGG/aredis'
+    'NoneGG/aredis', 'satwikkansal/wtfpython', 'mli/gluon-tutorials-zh',
+    'fendouai/Awesome-Chatbot', 'gavin66/proxy_list',
+    'pshah123/console-logging', 'postmarketOS/pmbootstrap',
+    'fendouai/Awesome-TensorFlow-Chinese'
 ])
 
 # the boilerplate content of the .travis.yml file
 fmt = """language: python
 env:
 %s
-python:
-    - 2.7.13
-    - 3.6
 cache: pip
+python:
+    - 2.7
+    - 3.6
+    #- nightly
+    #- pypy
+    #- pypy3
+matrix:
+    allow_failures:
+        - python: nightly
+        - python: pypy
+        - python: pypy3
 install:
+    #- pip install -r requirements.txt
     - pip install flake8  # pytest  # add other testing frameworks later
-    #- pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
-    # https://github.com/PyCQA/pyflakes/blob/master/NEWS.txt
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -92,17 +103,14 @@ before_script:
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
-    #- echo ; echo -n "pyflakes testing of ${URL} on " ; python -V
-    #- pyflakes --version
-    #- pyflakes .
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    #- true  # pytest --capture=sys
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
-
 """
 
 # extract the repo names of GitHub's Top 25 Trending Python list
@@ -113,9 +121,11 @@ repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
 repos = (repo.text.strip().replace(' ', '') for repo in repos
          if '/' in repo.text and '://' not in repo.text)
 repos = list(repos) + [
-    'ArduPilot/ardupilot', 'ArduPilot/pymavlink',
+    'ArduPilot/ardupilot', 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
     'PythonCharmers/python-future', 'facebookresearch/ParlAI', 'gevent/gevent',
-    'getsentry/sentry', 'ggtracker/sc2reader', 'scrapy/scrapy'
+    'getsentry/sentry', 'ggtracker/sc2reader', 'apache/beam',
+    'bl4de/security-tools', 'Seedarchangel/TuChart', 'QUVA-Lab/artemis',
+    'swisskyrepo/Wordpresscan'
 ]
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
 repos = '\n'.join('    - REPO=' + repo for repo in repos
