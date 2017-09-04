@@ -1,18 +1,49 @@
 language: python
 env:
+    - REPO=satwikkansal/wtfpython
+    - REPO=mli/gluon-tutorials-zh
+    - REPO=fendouai/Awesome-Chatbot
+    - REPO=gavin66/proxy_list
+    - REPO=kennethreitz/setup.py
+    - REPO=kennethreitz/background
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
+    - REPO=pshah123/console-logging
+    - REPO=postmarketOS/pmbootstrap
+    - REPO=fendouai/Awesome-TensorFlow-Chinese
+    - REPO=scikit-learn/scikit-learn
+    - REPO=localstack/localstack
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=reddit/reddit
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
     - REPO=scrapy/scrapy
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=QUVA-Lab/artemis
+    - REPO=swisskyrepo/Wordpresscan
+cache: pip
 python:
     - 2.7
     - 3.6
-    - nightly
+    #- nightly
+    #- pypy
+    #- pypy3
 matrix:
     allow_failures:
         - python: nightly
-cache: pip
+        - python: pypy
+        - python: pypy3
 install:
+    #- pip install -r requirements.txt
     - pip install flake8  # pytest  # add other testing frameworks later
-    #- pip install pyflakes==1.6.0  # temporary because of pyflakes v1.6 changes at...
-    # https://github.com/PyCQA/pyflakes/blob/master/NEWS.txt
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -20,13 +51,11 @@ before_script:
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
-    #- echo ; echo -n "pyflakes testing of ${URL} on " ; python -V
-    #- pyflakes --version
-    #- pyflakes .
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    #- true  # pytest --capture=sys
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
