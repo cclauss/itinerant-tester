@@ -1,34 +1,6 @@
 language: python
 env:
-    - REPO=satwikkansal/wtfpython
-    - REPO=mli/gluon-tutorials-zh
-    - REPO=fendouai/Awesome-Chatbot
-    - REPO=kennethreitz/setup.py
-    - REPO=gavin66/proxy_list
-    - REPO=kennethreitz/background
-    - REPO=donnemartin/system-design-primer
-    - REPO=tensorflow/models
-    - REPO=postmarketOS/pmbootstrap
-    - REPO=pshah123/console-logging
-    - REPO=fendouai/Awesome-TensorFlow-Chinese
-    - REPO=localstack/localstack
-    - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=reddit/reddit
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=scrapy/scrapy
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=QUVA-Lab/artemis
-    - REPO=swisskyrepo/Wordpresscan
+    - REPO=sdispater/pendulum
 python:
     - 2.7.13
     - 3.6
