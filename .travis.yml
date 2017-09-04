@@ -1,18 +1,20 @@
 language: python
 env:
     - REPO=satwikkansal/wtfpython
-    - REPO=kennethreitz/setup.py
+    - REPO=mli/gluon-tutorials-zh
     - REPO=fendouai/Awesome-Chatbot
-    - REPO=localstack/localstack
+    - REPO=kennethreitz/setup.py
+    - REPO=gavin66/proxy_list
+    - REPO=kennethreitz/background
+    - REPO=donnemartin/system-design-primer
     - REPO=tensorflow/models
-    - REPO=reddit/reddit
-    - REPO=scikit-learn/scikit-learn
-    - REPO=snwh/suru-icon-theme
-    - REPO=secretsquirrel/SigThief
     - REPO=postmarketOS/pmbootstrap
-    - REPO=rsms/interface
+    - REPO=pshah123/console-logging
     - REPO=fendouai/Awesome-TensorFlow-Chinese
-    - REPO=XX-net/XX-Net
+    - REPO=localstack/localstack
+    - REPO=scikit-learn/scikit-learn
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=reddit/reddit
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
@@ -27,7 +29,6 @@ env:
     - REPO=Seedarchangel/TuChart
     - REPO=QUVA-Lab/artemis
     - REPO=swisskyrepo/Wordpresscan
-    - REPO=GoogleCloudPlatform/DataflowPythonSDK
 python:
     - 2.7.13
     - 3.6
