@@ -3,14 +3,13 @@ env:
     - REPO=cclauss/sentry
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
-    - nightly
-    - pypy
-    - pypy3
+    #- nightly
+    #- pypy
+    #- pypy3
 matrix:
     allow_failures:
-        - python: 3.6
         - python: nightly
         - python: pypy
         - python: pypy3
