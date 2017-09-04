@@ -1,35 +1,16 @@
 language: python
 env:
-    - REPO=kennethreitz/setup.py
-    - REPO=kennethreitz/background
-    - REPO=donnemartin/system-design-primer
-    - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
-    - REPO=localstack/localstack
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=reddit/reddit
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=QUVA-Lab/artemis
-    - REPO=swisskyrepo/Wordpresscan
+    - REPO=cclauss/sentry
 cache: pip
 python:
     - 2.7
     - 3.6
-    #- nightly
-    #- pypy
-    #- pypy3
+    - nightly
+    - pypy
+    - pypy3
 matrix:
     allow_failures:
+        - python: 3.6
         - python: nightly
         - python: pypy
         - python: pypy3
@@ -39,7 +20,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+    - git clone --depth=50 --branch=patch-1 ${URL} ~/${REPO}
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
