@@ -1,16 +1,9 @@
 language: python
 env:
-    - REPO=satwikkansal/wtfpython
-    - REPO=mli/gluon-tutorials-zh
-    - REPO=fendouai/Awesome-Chatbot
-    - REPO=gavin66/proxy_list
     - REPO=kennethreitz/setup.py
     - REPO=kennethreitz/background
     - REPO=donnemartin/system-design-primer
     - REPO=tensorflow/models
-    - REPO=pshah123/console-logging
-    - REPO=postmarketOS/pmbootstrap
-    - REPO=fendouai/Awesome-TensorFlow-Chinese
     - REPO=scikit-learn/scikit-learn
     - REPO=localstack/localstack
     - REPO=bitcoinbook/bitcoinbook
@@ -23,7 +16,6 @@ env:
     - REPO=gevent/gevent
     - REPO=getsentry/sentry
     - REPO=ggtracker/sc2reader
-    - REPO=scrapy/scrapy
     - REPO=apache/beam
     - REPO=bl4de/security-tools
     - REPO=Seedarchangel/TuChart
