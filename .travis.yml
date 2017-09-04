@@ -2,8 +2,8 @@ language: python
 env:
     - REPO=sdispater/pendulum
 python:
-    - 2.7.13
-    - 3.6
+    - 2
+    - 3
 cache: pip
 install:
     - pip install flake8  # pytest  # add other testing frameworks later
