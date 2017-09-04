@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=studioimaginaire/phue
+    - REPO=fabric/fabric
 cache: pip
 python:
     - 2.7
