@@ -1,6 +1,30 @@
 language: python
 env:
-    - REPO=python-modernize/python-modernize
+    - REPO=ofek/hatch
+    - REPO=facebookresearch/loop
+    - REPO=eldraco/domain_analyzer
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
+    - REPO=Hironsan/anago
+    - REPO=kennethreitz/setup.py
+    - REPO=wufeifei/cobra
+    - REPO=requests/requests-threads
+    - REPO=kennethreitz/background
+    - REPO=astorfi/TensorFlow-World-Resources
+    - REPO=harleyQu1nn/AggressorScripts
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=QUVA-Lab/artemis
+    - REPO=swisskyrepo/Wordpresscan
 cache: pip
 python:
     - 2.7
