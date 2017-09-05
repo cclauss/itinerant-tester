@@ -1,23 +1,26 @@
-group: edge
 language: python
 env:
-    - REPO=geoadmin/tool-mbutil  # Forked from mapbox/mbutil
-    - REPO=geoadmin/service-sphinxsearch
-    - REPO=geoadmin/mf-chsdi3
-    - REPO=geoadmin/lib-gatilegrid
-    - REPO=geoadmin/service-print
-    - REPO=geoadmin/service-mapproxy
-    - REPO=geoadmin/tool-aws
-    - REPO=geoadmin/lib-esrijson
-    - REPO=geoadmin/service-owschecker
-    - REPO=geoadmin/lib-poolmanager
-    - REPO=geoadmin/service-alti
-    - REPO=geoadmin/service-image
-    - REPO=geoadmin/deploy-1  # Forked from camptocamp/deploy
-    - REPO=geoadmin/dynamodump
-    - REPO=geoadmin/geopackage-python  # Forked from GitHubRGI/geopackage-python
-    - REPO=geoadmin/3d-forge
-    - REPO=geoadmin/mapproxy  # Forked from mapproxy/mapproxy
+    - REPO=eldraco/domain_analyzer
+    - REPO=facebookresearch/loop
+    - REPO=tensorflow/models
+    - REPO=kennethreitz/background
+    - REPO=kennethreitz/setup.py
+    - REPO=Hironsan/anago
+    - REPO=wufeifei/cobra
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=QUVA-Lab/artemis
+    - REPO=swisskyrepo/Wordpresscan
 cache: pip
 python:
     - 2.7
