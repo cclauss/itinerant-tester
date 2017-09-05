@@ -1,7 +1,23 @@
 group: edge
 language: python
 env:
-    - REPO=zdavatz/fachinfo_ai
+    - REPO=geoadmin/tool-mbutil  # Forked from mapbox/mbutil
+    - REPO=geoadmin/service-sphinxsearch
+    - REPO=geoadmin/mf-chsdi3
+    - REPO=geoadmin/lib-gatilegrid
+    - REPO=geoadmin/service-print
+    - REPO=geoadmin/service-mapproxy
+    - REPO=geoadmin/tool-aws
+    - REPO=geoadmin/lib-esrijson
+    - REPO=geoadmin/service-owschecker
+    - REPO=geoadmin/lib-poolmanager
+    - REPO=geoadmin/service-alti
+    - REPO=geoadmin/service-image
+    - REPO=geoadmin/deploy-1  # Forked from camptocamp/deploy
+    - REPO=geoadmin/dynamodump
+    - REPO=geoadmin/geopackage-python  # Forked from GitHubRGI/geopackage-python
+    - REPO=geoadmin/3d-forge
+    - REPO=geoadmin/mapproxy  # Forked from mapproxy/mapproxy
 cache: pip
 python:
     - 2.7
