@@ -1,17 +1,13 @@
 language: python
 env:
-    - REPO=ofek/hatch
-    - REPO=facebookresearch/loop
     - REPO=eldraco/domain_analyzer
     - REPO=donnemartin/system-design-primer
     - REPO=tensorflow/models
-    - REPO=Hironsan/anago
-    - REPO=kennethreitz/setup.py
     - REPO=wufeifei/cobra
-    - REPO=requests/requests-threads
+    - REPO=kennethreitz/setup.py
     - REPO=kennethreitz/background
     - REPO=astorfi/TensorFlow-World-Resources
-    - REPO=harleyQu1nn/AggressorScripts
+    - REPO=requests/requests-threads
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
