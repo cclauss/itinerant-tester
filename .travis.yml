@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=zeromq/pyzmq
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     - 2.7
