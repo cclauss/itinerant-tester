@@ -1,17 +1,18 @@
 language: python
 env:
+    - REPO=ansible/awx
     - REPO=eldraco/domain_analyzer
     - REPO=pkmital/pycadl
     - REPO=tensorflow/models
     - REPO=zsdonghao/seq2seq-chatbot
-    - REPO=Yorko/mlcourse_open
-    - REPO=soimort/you-get
+    - REPO=nearai/pytorch-tools
     - REPO=bfelbo/DeepMoji
-    - REPO=emeryberger/CSrankings
+    - REPO=RhinoSecurityLabs/Security-Research
+    - REPO=kevthehermit/PasteHunter
+    - REPO=soimort/you-get
     - REPO=pallets/flask
-    - REPO=astorfi/TensorFlow-World
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
+    - REPO=Yorko/mlcourse_open
+    - REPO=scrapy/scrapy
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
