@@ -2,16 +2,15 @@ language: python
 env:
     - REPO=eldraco/domain_analyzer
     - REPO=pkmital/pycadl
-    - REPO=soimort/you-get
-    - REPO=skywind3000/emake
+    - REPO=zsdonghao/seq2seq-chatbot
     - REPO=tensorflow/models
+    - REPO=soimort/you-get
     - REPO=Yorko/mlcourse_open
-    - REPO=kennethreitz/background
-    - REPO=scikit-learn/scikit-learn
     - REPO=emeryberger/CSrankings
-    - REPO=deepmind/pysc2
-    - REPO=kennethreitz/pipenv
+    - REPO=bfelbo/DeepMoji
+    - REPO=scikit-learn/scikit-learn
     - REPO=pallets/flask
+    - REPO=astorfi/TensorFlow-World
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
