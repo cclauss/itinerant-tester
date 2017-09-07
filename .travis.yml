@@ -1,6 +1,30 @@
 language: python
 env:
-    - REPO=zeromq/pyzmq
+    - REPO=eldraco/domain_analyzer
+    - REPO=pkmital/pycadl
+    - REPO=tensorflow/models
+    - REPO=zsdonghao/seq2seq-chatbot
+    - REPO=Yorko/mlcourse_open
+    - REPO=soimort/you-get
+    - REPO=bfelbo/DeepMoji
+    - REPO=emeryberger/CSrankings
+    - REPO=pallets/flask
+    - REPO=astorfi/TensorFlow-World
+    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=QUVA-Lab/artemis
+    - REPO=swisskyrepo/Wordpresscan
 cache: pip
 python:
     - 2.7
