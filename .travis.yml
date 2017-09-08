@@ -2,17 +2,17 @@ language: python
 env:
     - REPO=ansible/awx
     - REPO=eldraco/domain_analyzer
-    - REPO=pkmital/pycadl
+    - REPO=xoreaxeaxeax/sandsifter
     - REPO=tensorflow/models
-    - REPO=zsdonghao/seq2seq-chatbot
-    - REPO=nearai/pytorch-tools
-    - REPO=bfelbo/DeepMoji
     - REPO=RhinoSecurityLabs/Security-Research
+    - REPO=bfelbo/DeepMoji
+    - REPO=onnx/onnx-caffe2
+    - REPO=nearai/pytorch-tools
     - REPO=kevthehermit/PasteHunter
+    - REPO=scrapy/scrapy
+    - REPO=pkmital/pycadl
     - REPO=soimort/you-get
     - REPO=pallets/flask
-    - REPO=Yorko/mlcourse_open
-    - REPO=scrapy/scrapy
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
