@@ -1,16 +1,39 @@
 language: python
 env:
+    - REPO=ansible/awx
+    - REPO=allenai/allennlp
+    - REPO=khanrc/tf.gans-comparison
+    - REPO=vulnersCom/api
+    - REPO=thumbor/thumbor
+    - REPO=pubref/rules_kotlin
+    - REPO=xoreaxeaxeax/sandsifter
+    - REPO=tensorflow/models
+    - REPO=scrapy/scrapy
+    - REPO=aviaryan/python-gsearch
+    - REPO=eldraco/domain_analyzer
+    - REPO=pallets/flask
+    - REPO=RhinoSecurityLabs/Security-Research
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
     - REPO=QUVA-Lab/artemis
     - REPO=QUVA-Lab/lang-tracker
+    - REPO=swisskyrepo/Wordpresscan
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
-    - pypy3
-env:
-  - DJANGO_VERSION>=2
+    #- pypy3
 matrix:
     allow_failures:
         - python: nightly
@@ -18,7 +41,7 @@ matrix:
         - python: pypy3
 install:
     #- pip install -r requirements.txt
-    - pip install flake8  django # pytest  # add other testing frameworks later
+    - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
