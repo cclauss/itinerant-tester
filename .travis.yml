@@ -1,18 +1,18 @@
 language: python
 env:
-    - REPO=ansible/awx
     - REPO=allenai/allennlp
+    - REPO=ansible/awx
+    - REPO=tensorflow/agents
     - REPO=khanrc/tf.gans-comparison
     - REPO=vulnersCom/api
-    - REPO=thumbor/thumbor
-    - REPO=pubref/rules_kotlin
+    - REPO=NVIDIA/DeepRecommender
     - REPO=xoreaxeaxeax/sandsifter
+    - REPO=thumbor/thumbor
     - REPO=tensorflow/models
-    - REPO=scrapy/scrapy
-    - REPO=aviaryan/python-gsearch
-    - REPO=eldraco/domain_analyzer
-    - REPO=pallets/flask
-    - REPO=RhinoSecurityLabs/Security-Research
+    - REPO=soimort/you-get
+    - REPO=XX-net/XX-Net
+    - REPO=mkocaoglu/CausalGAN
+    - REPO=pubref/rules_kotlin
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
