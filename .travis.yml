@@ -4,11 +4,13 @@ env:
     - REPO=QUVA-Lab/lang-tracker
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
-    - pypy
+    #- pypy
     - pypy3
+env:
+  - DJANGO_VERSION>=2
 matrix:
     allow_failures:
         - python: nightly
