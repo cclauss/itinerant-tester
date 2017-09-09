@@ -3,13 +3,13 @@ env:
     - REPO=ansible/awx
     - REPO=eldraco/domain_analyzer
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=onnx/onnx-caffe2
+    - REPO=vulnersCom/api
     - REPO=tensorflow/models
     - REPO=RhinoSecurityLabs/Security-Research
-    - REPO=bfelbo/DeepMoji
     - REPO=scrapy/scrapy
-    - REPO=nearai/pytorch-tools
-    - REPO=kevthehermit/PasteHunter
+    - REPO=khanrc/tf.gans-comparison
+    - REPO=onnx/onnx-caffe2
+    - REPO=aviaryan/python-gsearch
     - REPO=pallets/flask
     - REPO=soimort/you-get
     - REPO=ArduPilot/ardupilot
