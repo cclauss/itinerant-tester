@@ -1,26 +1,8 @@
 language: python
 env:
-    - REPO=allenai/allennlp
+    - REPO=m4ll0k/Spaghetti
     - REPO=ansible/awx
     - REPO=khanrc/tf.gans-comparison
-    - REPO=xoreaxeaxeax/sandsifter
-    - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
-    - REPO=studioml/studio
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/awx
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=QUVA-Lab/artemis
     - REPO=swisskyrepo/Wordpresscan
 cache: pip
 python:
