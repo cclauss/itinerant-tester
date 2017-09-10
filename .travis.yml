@@ -1,18 +1,20 @@
 language: python
 env:
     - REPO=allenai/allennlp
-    - REPO=ansible/awx
     - REPO=tensorflow/agents
-    - REPO=khanrc/tf.gans-comparison
-    - REPO=vulnersCom/api
     - REPO=NVIDIA/DeepRecommender
+    - REPO=ansible/awx
+    - REPO=khanrc/tf.gans-comparison
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=thumbor/thumbor
+    - REPO=mazen160/struts-pwn_CVE-2017-9805
+    - REPO=vulnersCom/api
     - REPO=tensorflow/models
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ablator/ablator
     - REPO=soimort/you-get
     - REPO=XX-net/XX-Net
-    - REPO=mkocaoglu/CausalGAN
-    - REPO=pubref/rules_kotlin
+    - REPO=donnemartin/system-design-primer
+    - REPO=studioml/studio
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
