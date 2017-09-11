@@ -1,6 +1,8 @@
 language: python
 env:
-    - REPO=Manuel83/craftbeerpi
+    - REPO=IBM/chatbot-deployer
+    - REPO=khanrc/tf.gans-comparison
+    - REPO=alexanderepstein/cryptowatch
 cache: pip
 python:
     - 2.7
