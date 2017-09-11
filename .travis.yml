@@ -1,14 +1,13 @@
 language: python
 env:
-    - REPO=ansible/awx
     - REPO=taolei87/sru
+    - REPO=ansible/awx
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=tensorflow/models
     - REPO=alexanderepstein/cryptowatch
+    - REPO=tensorflow/models
     - REPO=tensorly/tensorly
     - REPO=donnemartin/system-design-primer
-    - REPO=khanrc/tf.gans-comparison
-    - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
