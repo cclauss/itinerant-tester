@@ -2,12 +2,12 @@ language: python
 env:
     - REPO=taolei87/sru
     - REPO=ansible/awx
-    - REPO=alexanderepstein/cryptowatch
+    - REPO=fyu/drn
     - REPO=xoreaxeaxeax/sandsifter
-    - REPO=tensorflow/models
-    - REPO=scikit-learn/scikit-learn
     - REPO=sniklaus/pytorch-sepconv
-    - REPO=tensorly/tensorly
+    - REPO=tensorflow/models
+    - REPO=alexanderepstein/cryptowatch
+    - REPO=scikit-learn/scikit-learn
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
