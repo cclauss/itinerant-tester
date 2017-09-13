@@ -1,14 +1,12 @@
 language: python
 env:
-    - REPO=taolei87/sru
     - REPO=ansible/awx
     - REPO=tensorflow/models
-    - REPO=cujanovic/SSRF-Testing
+    - REPO=eriklindernoren/ML-From-Scratch
     - REPO=bottlepy/bottle
     - REPO=asottile/future-fstrings
     - REPO=scikit-learn/scikit-learn
     - REPO=fyu/drn
-    - REPO=scrapy/scrapy
     - REPO=apache/incubator-mxnet
     - REPO=pallets/flask
     - REPO=ArduPilot/ardupilot
@@ -22,8 +20,9 @@ env:
     - REPO=apache/beam
     - REPO=bl4de/security-tools
     - REPO=Seedarchangel/TuChart
-    - REPO=QUVA-Lab/artemis
     - REPO=swisskyrepo/Wordpresscan
+    - REPO=Yorko/mlcourse_open
+    - REPO=
 cache: pip
 python:
     - 2.7
