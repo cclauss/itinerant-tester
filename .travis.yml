@@ -2,16 +2,16 @@ language: python
 env:
     - REPO=openaps/openaps
     - REPO=openaps/oref0
-    - REPO=openaps/docs
-    - REPO=openaps/openomni
+    #- REPO=openaps/docs
+    #- REPO=openaps/openomni
     - REPO=openaps/decocare
-    - REPO=openaps/stdprojectexample
+    #- REPO=openaps/stdprojectexample
     - REPO=openaps/dexcom_reader
     - REPO=openaps/openxshareble
     - REPO=openaps/openaps-contrib
-    - REPO=openaps/openaps-js
+    #- REPO=openaps/openaps-js
     - REPO=openaps/oacids
-    - REPO=openaps/resinio-container
+    #- REPO=openaps/resinio-container
     - REPO=openaps/openaps-agp
 cache: pip
 python:
