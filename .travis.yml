@@ -1,6 +1,7 @@
 language: python
 env:
     - REPO=openaps/openaps
+    - REPO=IBM/pytorch-seq2seq
 cache: pip
 python:
     - 2.7
