@@ -4,9 +4,10 @@ env:
     - REPO=tensorflow/models
     - REPO=ansible/awx
     - REPO=scikit-learn/scikit-learn
-    - REPO=bottlepy/bottle
+    - REPO=ajbouh/tfi
     - REPO=vy007vikas/PyTorch-ActorCriticRL
-    - REPO=apache/incubator-mxnet
+    - REPO=donnemartin/system-design-primer
+    - REPO=bottlepy/bottle
     - REPO=pallets/flask
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
