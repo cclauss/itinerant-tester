@@ -1,12 +1,11 @@
 language: python
 env:
-    - REPO=ansible/awx
-    - REPO=tensorflow/models
     - REPO=eriklindernoren/ML-From-Scratch
-    - REPO=bottlepy/bottle
-    - REPO=asottile/future-fstrings
+    - REPO=tensorflow/models
+    - REPO=ansible/awx
     - REPO=scikit-learn/scikit-learn
-    - REPO=fyu/drn
+    - REPO=bottlepy/bottle
+    - REPO=vy007vikas/PyTorch-ActorCriticRL
     - REPO=apache/incubator-mxnet
     - REPO=pallets/flask
     - REPO=ArduPilot/ardupilot
