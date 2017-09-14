@@ -3,12 +3,12 @@ env:
     - REPO=eriklindernoren/ML-From-Scratch
     - REPO=tensorflow/models
     - REPO=ansible/awx
-    - REPO=scikit-learn/scikit-learn
-    - REPO=ajbouh/tfi
-    - REPO=vy007vikas/PyTorch-ActorCriticRL
     - REPO=donnemartin/system-design-primer
-    - REPO=bottlepy/bottle
+    - REPO=Mr-Un1k0d3r/ThunderShell
     - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=vy007vikas/PyTorch-ActorCriticRL
+    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
@@ -21,8 +21,6 @@ env:
     - REPO=bl4de/security-tools
     - REPO=Seedarchangel/TuChart
     - REPO=swisskyrepo/Wordpresscan
-    - REPO=Yorko/mlcourse_open
-    - REPO=
 cache: pip
 python:
     - 2.7
