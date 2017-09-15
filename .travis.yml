@@ -1,15 +1,17 @@
 language: python
 env:
     - REPO=eriklindernoren/ML-From-Scratch
-    - REPO=astorfi/speechpy
-    - REPO=tensorflow/models
+    - REPO=source-foundry/Hack
     - REPO=donnemartin/system-design-primer
-    - REPO=ansible/awx
+    - REPO=tensorflow/models
     - REPO=Cloud-CV/EvalAI
-    - REPO=qwIvan/microMsg-bot
+    - REPO=ansible/awx
+    - REPO=astorfi/speechpy
     - REPO=mikeckennedy/python-switch
+    - REPO=qwIvan/microMsg-bot
+    - REPO=bhdresh/CVE-2017-8759
     - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
-    - REPO=pallets/flask
+    - REPO=m4ll0k/Spaghetti
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
