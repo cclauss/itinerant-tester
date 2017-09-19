@@ -1,9 +1,34 @@
 language: python
 env:
-    - REPO=fchollet/keras
+    - REPO=facebookresearch/fairseq-py
+    - REPO=yidao620c/python3-cookbook
+    - REPO=tensorflow/models
+    - REPO=source-foundry/Hack
+    - REPO=eriklindernoren/ML-From-Scratch
+    - REPO=ansible/awx
+    - REPO=laixintao/python-parallel-programming-cookbook-cn
+    - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
+    - REPO=epickrram/grav
+    - REPO=nccgroup/idahunt
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ClementPinard/DepthNet
+    - REPO=bhdresh/CVE-2017-8759
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
 cache: pip
 python:
-    - 3.5
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
