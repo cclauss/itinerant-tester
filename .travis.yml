@@ -1,14 +1,15 @@
 language: python
 env:
     - REPO=tensorflow/models
-    - REPO=yidao620c/python3-cookbook
-    - REPO=epickrram/grav
-    - REPO=scikit-learn/scikit-learn
     - REPO=thu-ml/zhusuan
     - REPO=donnemartin/system-design-primer
-    - REPO=VirtueSecurity/aws-extender
-    - REPO=odoo/odoo
+    - REPO=fireeye/pywintrace
+    - REPO=epickrram/grav
+    - REPO=ansible/awx
+    - REPO=yidao620c/python3-cookbook
     - REPO=kennethreitz/pipenv
+    - REPO=odoo/odoo
+    - REPO=scikit-learn/scikit-learn
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
