@@ -1,18 +1,14 @@
 language: python
 env:
-    - REPO=facebookresearch/fairseq-py
-    - REPO=yidao620c/python3-cookbook
     - REPO=tensorflow/models
+    - REPO=yidao620c/python3-cookbook
     - REPO=epickrram/grav
-    - REPO=hannob/optionsbleed
     - REPO=scikit-learn/scikit-learn
-    - REPO=eriklindernoren/ML-From-Scratch
-    - REPO=1adrianb/face-alignment
-    - REPO=VirtueSecurity/aws-extender
+    - REPO=thu-ml/zhusuan
     - REPO=donnemartin/system-design-primer
-    - REPO=ansible/awx
-    - REPO=Lz1y/CVE-2017-8759
-    - REPO=laixintao/python-parallel-programming-cookbook-cn
+    - REPO=VirtueSecurity/aws-extender
+    - REPO=odoo/odoo
+    - REPO=kennethreitz/pipenv
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
@@ -25,6 +21,13 @@ env:
     - REPO=bl4de/security-tools
     - REPO=Seedarchangel/TuChart
     - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=hyperledger/fabric-sdk-py
+    - REPO=hyperledger/iroha-python
 cache: pip
 python:
     - 2.7
