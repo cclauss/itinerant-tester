@@ -1,35 +1,20 @@
 language: python
 env:
-    - REPO=tensorflow/models
-    - REPO=thu-ml/zhusuan
-    - REPO=ansible/awx
-    - REPO=donnemartin/system-design-primer
-    - REPO=scikit-learn/scikit-learn
-    - REPO=AbenezerMamo/crypto-signal
-    - REPO=fireeye/pywintrace
-    - REPO=odoo/odoo
-    - REPO=kennethreitz/pipenv
-    - REPO=m4ll0k/Spaghetti
-    - REPO=inejc/paragraph-vectors
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=hyperledger/fabric-sdk-py
-    - REPO=hyperledger/iroha-python
+    - REPO=fiware/context.Ckan
+    - REPO=fiware/dataModels
+    - REPO=fiware/ops.Health
+    - REPO=fiware/ops.Skuld
+    - REPO=fiware/ops.Glancesync
+    - REPO=fiware/cloud.Cloto
+    - REPO=fiware/cloud.Facts
+    - REPO=fiware/ops.Flavor-sync
+    - REPO=fiware/apps.Wstore
+    - REPO=fiware/ops.Sla-dashboard
+    - REPO=fiware/tools.Md2pdf
+    - REPO=fiware/ops.Maintenance-calendar
+    - REPO=fiware/ops.Fuel-main-dev
+    - REPO=fiware/ops.Validator
+    - REPO=fiware/i2nd.Robotics
 cache: pip
 python:
     - 2.7
