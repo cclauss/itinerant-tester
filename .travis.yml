@@ -1,20 +1,6 @@
 language: python
 env:
-    - REPO=fiware/context.Ckan
-    - REPO=fiware/dataModels
-    - REPO=fiware/ops.Health
-    - REPO=fiware/ops.Skuld
-    - REPO=fiware/ops.Glancesync
-    - REPO=fiware/cloud.Cloto
-    - REPO=fiware/cloud.Facts
-    - REPO=fiware/ops.Flavor-sync
-    - REPO=fiware/apps.Wstore
-    - REPO=fiware/ops.Sla-dashboard
-    - REPO=fiware/tools.Md2pdf
-    - REPO=fiware/ops.Maintenance-calendar
-    - REPO=fiware/ops.Fuel-main-dev
-    - REPO=fiware/ops.Validator
-    - REPO=fiware/i2nd.Robotics
+    - REPO=ckan/ckan
 cache: pip
 python:
     - 2.7
