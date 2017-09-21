@@ -2,14 +2,15 @@ language: python
 env:
     - REPO=tensorflow/models
     - REPO=thu-ml/zhusuan
-    - REPO=donnemartin/system-design-primer
     - REPO=ansible/awx
+    - REPO=donnemartin/system-design-primer
+    - REPO=scikit-learn/scikit-learn
+    - REPO=AbenezerMamo/crypto-signal
     - REPO=fireeye/pywintrace
     - REPO=odoo/odoo
-    - REPO=scikit-learn/scikit-learn
     - REPO=kennethreitz/pipenv
     - REPO=m4ll0k/Spaghetti
-    - REPO=yidao620c/python3-cookbook
+    - REPO=inejc/paragraph-vectors
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
