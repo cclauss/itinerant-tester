@@ -3,13 +3,13 @@ env:
     - REPO=tensorflow/models
     - REPO=thu-ml/zhusuan
     - REPO=donnemartin/system-design-primer
-    - REPO=fireeye/pywintrace
-    - REPO=epickrram/grav
     - REPO=ansible/awx
-    - REPO=yidao620c/python3-cookbook
-    - REPO=kennethreitz/pipenv
+    - REPO=fireeye/pywintrace
     - REPO=odoo/odoo
     - REPO=scikit-learn/scikit-learn
+    - REPO=kennethreitz/pipenv
+    - REPO=m4ll0k/Spaghetti
+    - REPO=yidao620c/python3-cookbook
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
