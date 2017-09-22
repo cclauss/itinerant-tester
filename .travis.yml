@@ -1,14 +1,16 @@
 language: python
 env:
-    - REPO=nemanja-m/gaps
     - REPO=znxlwm/pytorch-generative-model-collections
-    - REPO=AbenezerMamo/crypto-signal
+    - REPO=ojasookert/CVE-2017-0785
+    - REPO=nemanja-m/gaps
     - REPO=tensorflow/models
     - REPO=thu-ml/zhusuan
-    - REPO=ansible/awx
-    - REPO=inejc/paragraph-vectors
-    - REPO=scikit-learn/scikit-learn
     - REPO=donnemartin/system-design-primer
+    - REPO=inejc/paragraph-vectors
+    - REPO=ansible/awx
+    - REPO=AbenezerMamo/crypto-signal
+    - REPO=scikit-learn/scikit-learn
+    - REPO=numba/numba
     - REPO=kennethreitz/pipenv
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
