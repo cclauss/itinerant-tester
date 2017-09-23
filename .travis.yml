@@ -1,17 +1,18 @@
 language: python
 env:
-    - REPO=znxlwm/pytorch-generative-model-collections
+    - REPO=google/domato
+    - REPO=tonybeltramelli/pix2code
     - REPO=ojasookert/CVE-2017-0785
-    - REPO=nemanja-m/gaps
     - REPO=tensorflow/models
-    - REPO=thu-ml/zhusuan
+    - REPO=znxlwm/pytorch-generative-model-collections
+    - REPO=SerpentAI/SerpentAI
+    - REPO=nemanja-m/gaps
     - REPO=donnemartin/system-design-primer
-    - REPO=inejc/paragraph-vectors
+    - REPO=pyinstaller/pyinstaller
     - REPO=ansible/awx
-    - REPO=AbenezerMamo/crypto-signal
     - REPO=scikit-learn/scikit-learn
-    - REPO=numba/numba
-    - REPO=kennethreitz/pipenv
+    - REPO=thu-ml/zhusuan
+    - REPO=gmarull/qtmodern
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
