@@ -1,34 +1,13 @@
 language: python
 env:
-    - REPO=tonybeltramelli/pix2code
-    - REPO=SerpentAI/SerpentAI
-    - REPO=google/domato
-    - REPO=ojasookert/CVE-2017-0785
-    - REPO=tensorflow/models
-    - REPO=donnemartin/system-design-primer
-    - REPO=nemanja-m/gaps
-    - REPO=znxlwm/pytorch-generative-model-collections
-    - REPO=pyinstaller/pyinstaller
-    - REPO=ansible/awx
-    - REPO=scikit-learn/scikit-learn
-    - REPO=thu-ml/zhusuan
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=apple/swift-source-compat-suite
+    - REPO=apple/swift-integration-tests
+    - REPO=apple/ccs-calendarserver
+    - REPO=apple/ccs-pyosxframeworks
+    - REPO=apple/ccs-pysecuretransport
+    - REPO=apple/ccs-pycalendar
+    - REPO=apple/ccs-twistedextensions
+    - REPO=apple/ccs-caldavtester
 cache: pip
 python:
     - 2.7
