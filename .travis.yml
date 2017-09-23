@@ -1,13 +1,34 @@
 language: python
 env:
-    - REPO=apple/swift-source-compat-suite
-    - REPO=apple/swift-integration-tests
-    - REPO=apple/ccs-calendarserver
-    - REPO=apple/ccs-pyosxframeworks
-    - REPO=apple/ccs-pysecuretransport
-    - REPO=apple/ccs-pycalendar
-    - REPO=apple/ccs-twistedextensions
-    - REPO=apple/ccs-caldavtester
+    - REPO=SerpentAI/SerpentAI
+    - REPO=tonybeltramelli/pix2code
+    - REPO=google/domato
+    - REPO=tensorflow/models
+    - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
+    - REPO=pyinstaller/pyinstaller
+    - REPO=thu-ml/zhusuan
+    - REPO=ojasookert/CVE-2017-0785
+    - REPO=source-foundry/Hack
+    - REPO=ansible/awx
+    - REPO=znxlwm/pytorch-generative-model-collections
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7
