@@ -2,16 +2,15 @@ language: python
 env:
     - REPO=SerpentAI/SerpentAI
     - REPO=tonybeltramelli/pix2code
+    - REPO=nopernik/sshpry
     - REPO=google/domato
-    - REPO=tensorflow/models
-    - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
-    - REPO=pyinstaller/pyinstaller
     - REPO=thu-ml/zhusuan
-    - REPO=ojasookert/CVE-2017-0785
-    - REPO=source-foundry/Hack
-    - REPO=ansible/awx
-    - REPO=znxlwm/pytorch-generative-model-collections
+    - REPO=tensorflow/models
+    - REPO=ligurio/free-software-testing-books
+    - REPO=evilsocket/bleah
+    - REPO=fregu856/2D_detection
+    - REPO=pallets/flask
+    - REPO=donnemartin/system-design-primer
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
