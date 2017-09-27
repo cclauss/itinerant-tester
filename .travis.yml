@@ -1,19 +1,18 @@
 language: python
 env:
-    - REPO=yidao620c/python3-cookbook
-    - REPO=evilsocket/bleah
+    - REPO=SerpentAI/SerpentAI
     - REPO=Cloud-CV/Fabrik
-    - REPO=nopernik/sshpry
-    - REPO=google/domato
-    - REPO=tonybeltramelli/pix2code
+    - REPO=evilsocket/bleah
     - REPO=tensorflow/models
-    - REPO=BeetleChunks/redsails
-    - REPO=thu-ml/zhusuan
+    - REPO=hsoft/icemu
     - REPO=kennethreitz/pipenv
-    - REPO=donnemartin/system-design-primer
-    - REPO=tmthyjames/Achoo
+    - REPO=abseil/abseil-py
+    - REPO=google/domato
     - REPO=pallets/flask
-    - REPO=apache/incubator-mxnet
+    - REPO=scikit-learn/scikit-learn
+    - REPO=baverman/vial-http
+    - REPO=tonybeltramelli/pix2code
+    - REPO=secretsquirrel/SigThief
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
