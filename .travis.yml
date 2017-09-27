@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=SerpentAI/SerpentAI
+    - REPO=yidao620c/python3-cookbook
     - REPO=evilsocket/bleah
     - REPO=Cloud-CV/Fabrik
     - REPO=nopernik/sshpry
