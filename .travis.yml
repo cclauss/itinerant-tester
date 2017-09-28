@@ -2,16 +2,17 @@ language: python
 env:
     - REPO=SerpentAI/SerpentAI
     - REPO=Cloud-CV/Fabrik
-    - REPO=lucianopuccio/golem
     - REPO=abseil/abseil-py
-    - REPO=evilsocket/bleah
     - REPO=kennethreitz/pipenv
     - REPO=secretsquirrel/SigThief
-    - REPO=tensorflow/models
     - REPO=EvilCult/moviecatcher
-    - REPO=hsoft/icemu
-    - REPO=baverman/vial-http
+    - REPO=lucianopuccio/golem
+    - REPO=tensorflow/models
+    - REPO=evilsocket/bleah
     - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=hsoft/icemu
+    - REPO=donnemartin/system-design-primer
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
