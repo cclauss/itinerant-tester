@@ -1,5 +1,6 @@
 language: python
 env:
+    - REPO=PX4/Firmware
     - REPO=ArduPilot/PX4Firmware
     - REPO=ArduPilot/uavcan
     - REPO=ArduPilot/ardupilot
