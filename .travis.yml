@@ -1,22 +1,24 @@
 language: python
 env:
+    - REPO=dvf/blockchain
     - REPO=OpenMined/PySyft
     - REPO=SerpentAI/SerpentAI
-    - REPO=dvf/blockchain
+    - REPO=csurfer/gitsuggest
     - REPO=tensorflow/models
-    - REPO=CppCon/CppCon2017
-    - REPO=Ivoah/minimap
-    - REPO=TheAlgorithms/Python
-    - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
     - REPO=kennethreitz/pipenv
-    - REPO=Mr-Un1k0d3r/ThunderShell
+    - REPO=TheAlgorithms/Python
+    - REPO=MBRO95/PortableCellNetwork
+    - REPO=IntelLabs/hpat
+    - REPO=angr/angr
+    - REPO=Yukinoshita47/Yuki-Chan-The-Auto-Pentest
+    - REPO=singlasahil14/sortpool2d
+    - REPO=CppCon/CppCon2017
+    - REPO=scikit-learn/scikit-learn
     - REPO=bitcoinbook/bitcoinbook
+    - REPO=Ivoah/minimap
+    - REPO=Mr-Un1k0d3r/ThunderShell
     - REPO=isocpp/CppCoreGuidelines
     - REPO=pallets/flask
-    - REPO=angr/angr
-    - REPO=clcarwin/sphereface_pytorch
-    - REPO=MBRO95/PortableCellNetwork
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
