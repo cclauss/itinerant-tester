@@ -26,7 +26,7 @@ script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - time flake8 . --count --exit-zero --ignore=E111,E114 --max-complexity=10 --max-line-length=127 --statistics
     #- true  # pytest --capture=sys
 notifications:
     on_success: change
