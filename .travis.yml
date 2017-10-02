@@ -1,41 +1,6 @@
 language: python
 env:
-    - REPO=dvf/blockchain
-    - REPO=OpenMined/PySyft
-    - REPO=SerpentAI/SerpentAI
-    - REPO=csurfer/gitsuggest
-    - REPO=tensorflow/models
-    - REPO=kennethreitz/pipenv
-    - REPO=TheAlgorithms/Python
-    - REPO=MBRO95/PortableCellNetwork
-    - REPO=IntelLabs/hpat
-    - REPO=angr/angr
-    - REPO=Yukinoshita47/Yuki-Chan-The-Auto-Pentest
-    - REPO=singlasahil14/sortpool2d
-    - REPO=CppCon/CppCon2017
-    - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=Ivoah/minimap
-    - REPO=Mr-Un1k0d3r/ThunderShell
-    - REPO=isocpp/CppCoreGuidelines
-    - REPO=pallets/flask
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=Fiware/dataModels
 cache: pip
 python:
     - 2.7.14
