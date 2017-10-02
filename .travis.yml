@@ -1,7 +1,39 @@
 language: python
 env:
-    - REPO=PyCQA/pylint
-    - REPO=houndci/python
+    - REPO=ManrajGrover/halo
+    - REPO=dvf/blockchain
+    - REPO=csurfer/gitsuggest
+    - REPO=OpenMined/PySyft
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=IntelLabs/hpat
+    - REPO=SerpentAI/SerpentAI
+    - REPO=kennethreitz/pipenv
+    - REPO=tensorflow/models
+    - REPO=scikit-learn/scikit-learn
+    - REPO=TheAlgorithms/Python
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=MBRO95/PortableCellNetwork
+    - REPO=CppCon/CppCon2017
+    - REPO=codingo/VHostScan
+    - REPO=donnemartin/system-design-primer
+    - REPO=singlasahil14/sortpool2d
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
@@ -27,7 +59,7 @@ script:
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - time flake8 . --count --exit-zero --ignore=E111,E114 --max-complexity=10 --max-line-length=127 --statistics
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     #- true  # pytest --capture=sys
 notifications:
     on_success: change
