@@ -1,6 +1,7 @@
 language: python
 env:
     - REPO=PyCQA/pylint
+    - REPO=houndci/python
 cache: pip
 python:
     - 2.7.14
