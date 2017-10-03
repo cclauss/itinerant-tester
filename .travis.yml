@@ -1,6 +1,9 @@
 language: python
 env:
-    - REPO=amercader/newcastle-libraries-data
+    - REPO=frictionlessdata/goodtables-py
+    - REPO=frictionlessdata/datapackage-py
+    - REPO=frictionlessdata/tableschema-py
+    - REPO=frictionlessdata/tabulator-py
 cache: pip
 python:
     - 2.7.14
