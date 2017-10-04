@@ -1,7 +1,6 @@
 language: python
 env:
-    - REPO=omz/PythonistaAppTemplate
-    - REPO=chriswilson1982/BlackAndWhite
+    - REPO=tensorflow/tensorflow
 cache: pip
 python:
     - 2.7.14
