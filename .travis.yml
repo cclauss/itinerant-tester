@@ -4,7 +4,7 @@ env:
 cache: pip
 python:
     - 2.7.14
-    - 3.6
+    - 3.6.3
     #- nightly
     #- pypy
     #- pypy3
