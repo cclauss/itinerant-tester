@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=timgrossmann/InstaPy
+    - REPO=mikaelho/pythonista-gestures
 cache: pip
 python:
     - 2.7
