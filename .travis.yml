@@ -1,21 +1,18 @@
 language: python
 env:
     - REPO=hackerkid/Mind-Expanding-Books
-    - REPO=apple/coremltools
-    - REPO=jullrich/pcap2curl
-    - REPO=ManrajGrover/halo
-    - REPO=mingyuliutw/UNIT
-    - REPO=tensorflow/models
-    - REPO=RasaHQ/rasa_core
     - REPO=hunkim/PyTorchZeroToAll
-    - REPO=3b1b/manim
-    - REPO=TheAlgorithms/Python
-    - REPO=dvf/blockchain
+    - REPO=ManrajGrover/halo
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
+    - REPO=rivermont/spidy
     - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
-    - REPO=concept-to-clinic/concept-to-clinic
-    - REPO=cupy/cupy
+    - REPO=openai/gym
+    - REPO=kennethreitz/pipenv
+    - REPO=apple/coremltools
+    - REPO=dvf/blockchain
+    - REPO=SerpentAI/SerpentAI
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
