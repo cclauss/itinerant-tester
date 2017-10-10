@@ -1,21 +1,22 @@
 language: python
 env:
-    - REPO=hunkim/PyTorchZeroToAll
-    - REPO=hackerkid/Mind-Expanding-Books
     - REPO=sloria/doitlive
+    - REPO=hackerkid/Mind-Expanding-Books
+    - REPO=hunkim/PyTorchZeroToAll
     - REPO=salesforce/pytorch-qrnn
     - REPO=cyberheartmi9/CVE-2017-12617
     - REPO=kz26/mailproxy
-    - REPO=ManrajGrover/halo
-    - REPO=tensorflow/models
+    - REPO=TophantTechnology/osprey
     - REPO=narimiran/tably
     - REPO=xiyouMc/WebHubBot
-    - REPO=hangzhaomit/semantic-segmentation-pytorch
-    - REPO=abseil/abseil-py
-    - REPO=joxeankoret/diaphora
+    - REPO=tensorflow/models
     - REPO=TheAlgorithms/Python
-    - REPO=codingo/VHostScan
+    - REPO=joxeankoret/diaphora
+    - REPO=ManrajGrover/halo
+    - REPO=scikit-learn/scikit-learn
     - REPO=pallets/flask
+    - REPO=abseil/abseil-py
+    - REPO=miiton/Cica
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
