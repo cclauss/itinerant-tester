@@ -8,13 +8,12 @@ env:
     - REPO=tensorflow/models
     - REPO=sloria/doitlive
     - REPO=scikit-learn/scikit-learn
-    - REPO=kennethreitz/pipenv
     - REPO=bnajafi/Python4ScientificComputing_Fundamentals
+    - REPO=kennethreitz/pipenv
     - REPO=yu961549745/WeiboBlackList
-    - REPO=hackerkid/Mind-Expanding-Books
     - REPO=Lucifer1993/struts-scan
+    - REPO=hackerkid/Mind-Expanding-Books
     - REPO=hunkim/PyTorchZeroToAll
-    - REPO=donnemartin/system-design-primer
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
