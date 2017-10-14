@@ -1,19 +1,18 @@
 language: python
 env:
-    - REPO=mricon/rev-proxy-grapher
     - REPO=ikostrikov/pytorch-a2c-ppo-acktr
     - REPO=IntelLabs/hpat
-    - REPO=tryolabs/luminoth
-    - REPO=qutebrowser/qutebrowser
+    - REPO=mricon/rev-proxy-grapher
     - REPO=tensorflow/models
-    - REPO=apache/incubator-mxnet
-    - REPO=pallets/flask
+    - REPO=tryolabs/luminoth
     - REPO=scikit-learn/scikit-learn
-    - REPO=kennethreitz/pipenv
-    - REPO=donnemartin/system-design-primer
-    - REPO=yu961549745/WeiboBlackList
-    - REPO=tensorflow/lattice
     - REPO=openai/multiagent-particle-envs
+    - REPO=pallets/flask
+    - REPO=qutebrowser/qutebrowser
+    - REPO=apache/incubator-mxnet
+    - REPO=kennethreitz/pipenv
+    - REPO=hackerkid/Mind-Expanding-Books
+    - REPO=ansible/awx
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
