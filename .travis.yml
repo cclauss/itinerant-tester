@@ -1,9 +1,6 @@
 language: python
 env:
-    - REPO=opendatasoft/ods-documentation
-    - REPO=opendatasoft/django-celery
-    - REPO=opendatasoft/fastkml
-    - REPO=opendatasoft/overpass-query-box
+    - REPO=fossasia/badgeyay
 cache: pip
 python:
     - 2.7.14
