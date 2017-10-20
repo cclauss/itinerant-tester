@@ -1,35 +1,9 @@
 language: python
 env:
-    - REPO=vanhoefm/krackattacks-test-ap-ft
-    - REPO=nanohop/sketch-to-react-native
-    - REPO=tensorflow/models
-    - REPO=statico/dotfiles
-    - REPO=DragonComputer/Dragonfire
-    - REPO=bnajafi/Scientific_Python_Assignments_POLIMI_EETBS
-    - REPO=scikit-learn/scikit-learn
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=TryCatchHCF/DumpsterFire
-    - REPO=openai/gym
-    - REPO=pallets/flask
-    - REPO=m4ll0k/Spaghetti
-    - REPO=donnemartin/system-design-primer
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=opendatasoft/ods-documentation
+    - REPO=opendatasoft/django-celery
+    - REPO=opendatasoft/fastkml
+    - REPO=opendatasoft/overpass-query-box
 cache: pip
 python:
     - 2.7.14
