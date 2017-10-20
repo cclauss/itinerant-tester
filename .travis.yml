@@ -2,19 +2,17 @@ language: python
 env:
     - REPO=vanhoefm/krackattacks-test-ap-ft
     - REPO=nanohop/sketch-to-react-native
-    - REPO=DragonComputer/Dragonfire
     - REPO=tensorflow/models
-    - REPO=1111joe1111/ida_ea
     - REPO=statico/dotfiles
+    - REPO=DragonComputer/Dragonfire
     - REPO=bnajafi/Scientific_Python_Assignments_POLIMI_EETBS
-    - REPO=m4ll0k/Spaghetti
-    - REPO=hacktoolkit/django-htk
-    - REPO=isocpp/CppCoreGuidelines
     - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
     - REPO=HelloZeroNet/ZeroNet
+    - REPO=TryCatchHCF/DumpsterFire
+    - REPO=openai/gym
+    - REPO=pallets/flask
+    - REPO=m4ll0k/Spaghetti
     - REPO=donnemartin/system-design-primer
-    - REPO=crocs-muni/roca
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
