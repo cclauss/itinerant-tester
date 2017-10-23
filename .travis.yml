@@ -1,18 +1,20 @@
 language: python
 env:
-    - REPO=RaRe-Technologies/bounter
     - REPO=NervanaSystems/coach
+    - REPO=RaRe-Technologies/bounter
     - REPO=tensorflow/models
     - REPO=vanhoefm/krackattacks-test-ap-ft
     - REPO=scikit-learn/scikit-learn
+    - REPO=Qirky/FoxDot
+    - REPO=eragonruan/text-detection-ctpn
     - REPO=mnielsen/neural-networks-and-deep-learning
-    - REPO=openai/gym
     - REPO=donnemartin/system-design-primer
-    - REPO=code-terminator/DilatedRNN
-    - REPO=hacktoolkit/django-htk
-    - REPO=nanohop/sketch-to-react-native
-    - REPO=isocpp/CppCoreGuidelines
     - REPO=pallets/flask
+    - REPO=euske/pyrexecd
+    - REPO=rhiever/tpot
+    - REPO=nanohop/sketch-to-react-native
+    - REPO=ArmisSecurity/blueborne
+    - REPO=openai/gym
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
