@@ -1,21 +1,19 @@
 language: python
 env:
-    - REPO=NervanaSystems/coach
     - REPO=arxiv-vanity/arxiv-vanity
-    - REPO=tensorflow/models
-    - REPO=euske/pyrexecd
-    - REPO=scikit-learn/scikit-learn
-    - REPO=vanhoefm/krackattacks-test-ap-ft
-    - REPO=mirceamironenco/BayesianRecurrentNN
-    - REPO=RaRe-Technologies/bounter
-    - REPO=ArmisSecurity/blueborne
-    - REPO=openai/gym
     - REPO=quantumlib/OpenFermion
-    - REPO=TophantTechnology/osprey
-    - REPO=Qirky/FoxDot
-    - REPO=eragonruan/text-detection-ctpn
-    - REPO=rhiever/tpot
+    - REPO=tensorflow/models
+    - REPO=EliotAndres/pretrained.ml
+    - REPO=nanohop/sketch-to-react-native
+    - REPO=scikit-learn/scikit-learn
+    - REPO=TryCatchHCF/DumpsterFire
+    - REPO=openai/gym
     - REPO=donnemartin/system-design-primer
+    - REPO=mirceamironenco/BayesianRecurrentNN
+    - REPO=CharlesShang/FastMaskRCNN
+    - REPO=vanhoefm/krackattacks-test-ap-ft
+    - REPO=NervanaSystems/coach
+    - REPO=rigetticomputing/forestopenfermion
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
