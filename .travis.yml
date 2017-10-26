@@ -1,17 +1,19 @@
 language: python
 env:
+    - REPO=ecthros/uncaptcha
     - REPO=TuSimple/mx-maskrcnn
-    - REPO=EliotAndres/pretrained.ml
-    - REPO=arxiv-vanity/arxiv-vanity
-    - REPO=quantumlib/OpenFermion
+    - REPO=MechanicalSoup/MechanicalSoup
+    - REPO=kragen/dumpulse
     - REPO=nanohop/sketch-to-react-native
     - REPO=tensorflow/models
+    - REPO=scipy/scipy
     - REPO=scikit-learn/scikit-learn
-    - REPO=MechanicalSoup/MechanicalSoup
+    - REPO=pallets/flask
+    - REPO=EliotAndres/pretrained.ml
     - REPO=kennethreitz/pipenv
     - REPO=CharlesShang/FastMaskRCNN
-    - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
+    - REPO=quantumlib/OpenFermion
+    - REPO=hanzhanggit/StackGAN-Pytorch
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
