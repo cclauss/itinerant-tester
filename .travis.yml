@@ -4,7 +4,7 @@ env:
     - REPO=elephantworks/DLND_Project_2
     - REPO=elephantworks/DLND_Project_3
     - REPO=elephantworks/DLND_Project_4
-    - REPO=elephantworks/DLND_Project_4_v2
+    - REPO=elephantworks/DLND_Project_4_v2 
     - REPO=elephantworks/DLND_Project_5
 cache: pip
 python:
