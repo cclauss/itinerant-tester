@@ -1,36 +1,6 @@
 language: python
 env:
-    - REPO=ecthros/uncaptcha
-    - REPO=TuSimple/mx-maskrcnn
-    - REPO=MechanicalSoup/MechanicalSoup
-    - REPO=kragen/dumpulse
-    - REPO=nanohop/sketch-to-react-native
-    - REPO=tensorflow/models
-    - REPO=scipy/scipy
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
-    - REPO=EliotAndres/pretrained.ml
-    - REPO=kennethreitz/pipenv
-    - REPO=CharlesShang/FastMaskRCNN
-    - REPO=quantumlib/OpenFermion
-    - REPO=hanzhanggit/StackGAN-Pytorch
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=tjferry14/Cloud-Jump-2
 cache: pip
 python:
     - 2.7.14
