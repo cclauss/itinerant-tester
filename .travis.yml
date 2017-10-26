@@ -1,11 +1,11 @@
 language: python
 env:
-    - REPO=https://github.com/elephantworks/DLND_Project_1
-    - REPO=https://github.com/elephantworks/DLND_Project_2
-    - REPO=https://github.com/elephantworks/DLND_Project_3
-    - REPO=https://github.com/elephantworks/DLND_Project_4
-    - REPO=https://github.com/elephantworks/DLND_Project_4_v2
-    - REPO=https://github.com/elephantworks/DLND_Project_5
+    - REPO=elephantworks/DLND_Project_1
+    - REPO=elephantworks/DLND_Project_2
+    - REPO=elephantworks/DLND_Project_3
+    - REPO=elephantworks/DLND_Project_4
+    - REPO=elephantworks/DLND_Project_4_v2
+    - REPO=elephantworks/DLND_Project_5
 cache: pip
 python:
     - 2.7.14
