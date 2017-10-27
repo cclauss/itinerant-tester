@@ -1,11 +1,6 @@
 language: python
 env:
-    - REPO=elephantworks/DLND_Project_1
-    - REPO=elephantworks/DLND_Project_2
-    - REPO=elephantworks/DLND_Project_3
-    - REPO=elephantworks/DLND_Project_4
-    - REPO=elephantworks/DLND_Project_4_v2 
-    - REPO=elephantworks/DLND_Project_5
+    - REPO=sudheesh001/loklak_api_python
 cache: pip
 python:
     - 2.7.14
