@@ -1,10 +1,44 @@
 language: python
 env:
-    - REPO=sudheesh001/loklak_api_python
+    - REPO=tkarras/progressive_growing_of_gans
+    - REPO=ecthros/uncaptcha
+    - REPO=rsms/inter
+    - REPO=scikit-learn/scikit-learn
+    - REPO=kennethreitz/pipenv
+    - REPO=nanohop/sketch-to-react-native
+    - REPO=cdubz/babybuddy
+    - REPO=thunlp/OpenNE
+    - REPO=csurfer/pypette
+    - REPO=tkipf/pygcn
+    - REPO=tensorflow/models
+    - REPO=TuSimple/mx-maskrcnn
+    - REPO=ahmetb/kubectl-aliases
+    - REPO=0xdea/tactical-exploitation
+    - REPO=trustedsec/trevorc2
+    - REPO=pallets/flask
+    - REPO=tmulc18/Distributed-TensorFlow-Guide
+    - REPO=DragonComputer/Dragonfire
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
-    - 3.6.3
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
