@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=vbarbaresi/offshore-generator
+    - REPO=google/googletest
 cache: pip
 python:
     - 2.7.14
