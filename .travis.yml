@@ -1,23 +1,22 @@
 language: python
 env:
     - REPO=tkarras/progressive_growing_of_gans
+    - REPO=the-Infected-Drake/TIDoS-Framework
     - REPO=ecthros/uncaptcha
-    - REPO=rsms/inter
-    - REPO=scikit-learn/scikit-learn
-    - REPO=kennethreitz/pipenv
-    - REPO=nanohop/sketch-to-react-native
-    - REPO=cdubz/babybuddy
-    - REPO=thunlp/OpenNE
-    - REPO=csurfer/pypette
-    - REPO=tkipf/pygcn
+    - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=ptrblck/prog_gans_pytorch_inference
+    - REPO=astorfi/CNTK-World
+    - REPO=UltimateHackers/Blazy
     - REPO=tensorflow/models
-    - REPO=TuSimple/mx-maskrcnn
-    - REPO=ahmetb/kubectl-aliases
-    - REPO=0xdea/tactical-exploitation
+    - REPO=rsms/inter
     - REPO=trustedsec/trevorc2
-    - REPO=pallets/flask
-    - REPO=tmulc18/Distributed-TensorFlow-Guide
-    - REPO=DragonComputer/Dragonfire
+    - REPO=TuSimple/mx-maskrcnn
+    - REPO=1111joe1111/ida_ea
+    - REPO=kennethreitz/pipenv
+    - REPO=scikit-learn/scikit-learn
+    - REPO=csurfer/pypette
+    - REPO=jfkirk/tensorrec
+    - REPO=ahmetb/kubectl-aliases
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
