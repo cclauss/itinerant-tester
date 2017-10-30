@@ -1,6 +1,7 @@
 language: python
 env:
     - REPO=google/googletest
+    - REPO=ArduPilot/googletest
 cache: pip
 python:
     - 2.7.14
