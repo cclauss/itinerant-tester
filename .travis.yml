@@ -1,39 +1,6 @@
 language: python
 env:
-    - REPO=tkarras/progressive_growing_of_gans
-    - REPO=the-Infected-Drake/TIDoS-Framework
-    - REPO=ecthros/uncaptcha
-    - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=ptrblck/prog_gans_pytorch_inference
-    - REPO=astorfi/CNTK-World
-    - REPO=UltimateHackers/Blazy
-    - REPO=tensorflow/models
-    - REPO=rsms/inter
-    - REPO=trustedsec/trevorc2
-    - REPO=TuSimple/mx-maskrcnn
-    - REPO=1111joe1111/ida_ea
-    - REPO=kennethreitz/pipenv
-    - REPO=scikit-learn/scikit-learn
-    - REPO=csurfer/pypette
-    - REPO=jfkirk/tensorrec
-    - REPO=ahmetb/kubectl-aliases
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=vbarbaresi/offshore-generator
 cache: pip
 python:
     - 2.7.14
