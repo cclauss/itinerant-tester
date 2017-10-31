@@ -1,19 +1,19 @@
 language: python
 env:
-    - REPO=tkarras/progressive_growing_of_gans
     - REPO=ecthros/uncaptcha
-    - REPO=astorfi/CNTK-World
+    - REPO=tkarras/progressive_growing_of_gans
     - REPO=vicariousinc/science_rcn
-    - REPO=0xdeadbeefJERKY/Office-DDE-Payloads
-    - REPO=the-Infected-Drake/TIDoS-Framework
-    - REPO=tensorflow/models
     - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=jordanhillis/canvastodo
+    - REPO=0xdeadbeefJERKY/Office-DDE-Payloads
+    - REPO=tensorflow/models
+    - REPO=astorfi/CNTK-World
+    - REPO=the-Infected-Drake/TIDoS-Framework
     - REPO=scikit-learn/scikit-learn
+    - REPO=jordanhillis/canvastodo
     - REPO=koz4k/dni-pytorch
     - REPO=haccer/tweep
-    - REPO=rsms/inter
     - REPO=msracver/Deformable-ConvNets
+    - REPO=kennethreitz/pipenv
     - REPO=TuSimple/mx-maskrcnn
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
