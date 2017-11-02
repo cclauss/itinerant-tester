@@ -2,17 +2,17 @@ language: python
 env:
     - REPO=andabi/deep-voice-conversion
     - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=asciimoo/drawille
     - REPO=ecthros/uncaptcha
-    - REPO=llSourcell/capsule_networks
     - REPO=tensorflow/models
     - REPO=tkarras/progressive_growing_of_gans
+    - REPO=llSourcell/capsule_networks
+    - REPO=XifengGuo/CapsNet-Keras
     - REPO=vicariousinc/science_rcn
-    - REPO=AlanCristhian/statically
-    - REPO=MechanicalSoup/MechanicalSoup
     - REPO=scikit-learn/scikit-learn
+    - REPO=MechanicalSoup/MechanicalSoup
+    - REPO=AlanCristhian/statically
     - REPO=TuSimple/mx-maskrcnn
-    - REPO=guyskk/curequests
-    - REPO=0xdeadbeefJERKY/Office-DDE-Payloads
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
