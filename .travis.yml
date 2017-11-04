@@ -1,22 +1,21 @@
 language: python
 env:
+    - REPO=uber/pyro
     - REPO=timomernick/pytorch-capsule
     - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=gram-ai/capsule-networks
+    - REPO=tensorflow/models
+    - REPO=XifengGuo/CapsNet-Keras
     - REPO=andabi/deep-voice-conversion
     - REPO=taehoonlee/tensornets
-    - REPO=bigchaindb/bigchaindb
-    - REPO=XifengGuo/CapsNet-Keras
-    - REPO=tensorflow/models
-    - REPO=asciimoo/drawille
     - REPO=scikit-learn/scikit-learn
-    - REPO=llSourcell/capsule_networks
-    - REPO=dyhan0920/PyramidNet-PyTorch
-    - REPO=ecthros/uncaptcha
+    - REPO=the-Infected-Drake/TIDoS-Framework
     - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
-    - REPO=tkarras/progressive_growing_of_gans
-    - REPO=littlecodersh/trip
-    - REPO=kovidgoyal/calibre
+    - REPO=ecthros/uncaptcha
+    - REPO=bigchaindb/bigchaindb
+    - REPO=welchbj/tt
+    - REPO=OpenNMT/OpenNMT-tf
+    - REPO=neil-tan/uTensor
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
