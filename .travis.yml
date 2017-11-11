@@ -1,23 +1,19 @@
 language: python
 env:
-    - REPO=explosion/spaCy
-    - REPO=google/tangent
-    - REPO=hunkim/deep_architecture_genealogy
-    - REPO=TuSimple/TuSimple-DUC
-    - REPO=tensorflow/models
     - REPO=uber/pyro
-    - REPO=ShangtongZhang/reinforcement-learning-an-introduction
-    - REPO=sc0tfree/mentalist
-    - REPO=ninijay/pycurity
-    - REPO=x0rz/phishing_catcher
-    - REPO=pallets/jinja
-    - REPO=0011001011/vizuka
-    - REPO=scikit-learn/scikit-learn
+    - REPO=explosion/spaCy
+    - REPO=tensorflow/models
+    - REPO=vi3k6i5/flashtext
+    - REPO=MalwareTech/TrickBot-Toolkit
+    - REPO=karandesai-96/lang-emerge-parlai
     - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=Roshanson/TextInfoExp
-    - REPO=pallets/flask
-    - REPO=bearpaw/pytorch-pose
-    - REPO=llSourcell/Pokemon_GAN
+    - REPO=Microsoft/vscode-python
+    - REPO=google/tangent
+    - REPO=scikit-learn/scikit-learn
+    - REPO=checkyfuntime/iMessagesBackdoor
+    - REPO=XifengGuo/CapsNet-Keras
+    - REPO=mhelwig/apk-anal
+    - REPO=fendouai/Chinese-Text-Classification
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
