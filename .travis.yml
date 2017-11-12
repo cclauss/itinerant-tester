@@ -1,19 +1,18 @@
 language: python
 env:
+    - REPO=OsciiArt/DeepAA
     - REPO=uber/pyro
-    - REPO=explosion/spaCy
     - REPO=tensorflow/models
-    - REPO=vi3k6i5/flashtext
-    - REPO=MalwareTech/TrickBot-Toolkit
-    - REPO=karandesai-96/lang-emerge-parlai
     - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=Microsoft/vscode-python
+    - REPO=gram-ai/capsule-networks
+    - REPO=vi3k6i5/flashtext
+    - REPO=explosion/spaCy
+    - REPO=pallets/flask
     - REPO=google/tangent
-    - REPO=scikit-learn/scikit-learn
-    - REPO=checkyfuntime/iMessagesBackdoor
-    - REPO=XifengGuo/CapsNet-Keras
-    - REPO=mhelwig/apk-anal
-    - REPO=fendouai/Chinese-Text-Classification
+    - REPO=UltimateHackers/Striker
+    - REPO=openai/gym
+    - REPO=getsentry/sentry
+    - REPO=QISKit/qiskit-sdk-py
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
