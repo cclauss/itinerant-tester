@@ -1,19 +1,19 @@
 language: python
 env:
     - REPO=OsciiArt/DeepAA
-    - REPO=naturomics/CapsNet-Tensorflow
     - REPO=uber/pyro
+    - REPO=naturomics/CapsNet-Tensorflow
     - REPO=tensorflow/models
     - REPO=bourdakos1/capsule-networks
     - REPO=google/tangent
-    - REPO=gram-ai/capsule-networks
-    - REPO=vi3k6i5/flashtext
     - REPO=explosion/spaCy
-    - REPO=XifengGuo/CapsNet-Keras
+    - REPO=vi3k6i5/flashtext
     - REPO=scikit-learn/scikit-learn
+    - REPO=XifengGuo/CapsNet-Keras
+    - REPO=gram-ai/capsule-networks
     - REPO=pallets/flask
-    - REPO=openai/gym
-    - REPO=eldraco/domain_analyzer
+    - REPO=UltimateHackers/Striker
+    - REPO=hunkim/deep_architecture_genealogy
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
