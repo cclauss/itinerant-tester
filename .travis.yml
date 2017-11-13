@@ -1,38 +1,9 @@
 language: python
 env:
-    - REPO=OsciiArt/DeepAA
-    - REPO=asciimoo/searx
-    - REPO=Bogdanp/dramatiq
-    - REPO=tensorflow/models
-    - REPO=Kaixhin/Rainbow
-    - REPO=google/tangent
-    - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=explosion/spaCy
-    - REPO=uber/pyro
-    - REPO=bourdakos1/capsule-networks
-    - REPO=scikit-learn/scikit-learn
-    - REPO=vi3k6i5/flashtext
-    - REPO=XifengGuo/CapsNet-Keras
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=philiplessner/PhotoEditor
 cache: pip
 python:
-    - 2.7.14
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
