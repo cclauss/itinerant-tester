@@ -1,6 +1,6 @@
 language: python
 env:
-    - REPO=nodejs/node-gyp
+    - REPO=owenmorris/chandler
 cache: pip
 python:
     - 2.7.14
