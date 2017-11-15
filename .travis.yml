@@ -2,6 +2,8 @@ language: python
 env:
     - REPO=beetbox/audioread
     - REPO=beetbox/beets
+    - REPO=beetbox/mediafile
+    - REPO=beetbox/pyacoustid
     - REPO=beetbox/pylastfp
     - REPO=QISKit/qiskit-sdk-py
 cache: pip
