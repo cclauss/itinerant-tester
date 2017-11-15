@@ -1,11 +1,38 @@
 language: python
 env:
-    - REPO=beetbox/audioread
-    - REPO=beetbox/beets
-    - REPO=beetbox/mediafile
-    - REPO=beetbox/pyacoustid
-    - REPO=beetbox/pylastfp
-    - REPO=QISKit/qiskit-sdk-py
+    - REPO=D4Vinci/Cr3dOv3r
+    - REPO=jeffmer/micropython-upyphone
+    - REPO=tensorflow/models
+    - REPO=OsciiArt/DeepAA
+    - REPO=vi3k6i5/flashtext
+    - REPO=XifengGuo/CapsNet-Keras
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=donnemartin/system-design-primer
+    - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=kennethreitz/pipenv
+    - REPO=Bogdanp/dramatiq
+    - REPO=scikit-learn/scikit-learn
+    - REPO=uber/pyro
+    - REPO=szagoruyko/diracnets
+    - REPO=explosion/spaCy
+    - REPO=pallets/flask
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
