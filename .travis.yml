@@ -2,20 +2,19 @@ language: python
 env:
     - REPO=D4Vinci/Cr3dOv3r
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=jeffmer/micropython-upyphone
+    - REPO=dropbox/pyannotate
     - REPO=tensorflow/models
     - REPO=vi3k6i5/flashtext
-    - REPO=OsciiArt/DeepAA
-    - REPO=XifengGuo/CapsNet-Keras
-    - REPO=Bogdanp/dramatiq
+    - REPO=DeNA/Chainer_Realtime_Multi-Person_Pose_Estimation
     - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=scikit-learn/scikit-learn
-    - REPO=kennethreitz/pipenv
+    - REPO=Bogdanp/dramatiq
     - REPO=pallets/flask
+    - REPO=guyecode/python_camp
+    - REPO=XifengGuo/CapsNet-Keras
+    - REPO=JianyangZhang/Self-Driving-Car-AI
     - REPO=uber/pyro
+    - REPO=isocpp/CppCoreGuidelines
     - REPO=explosion/spaCy
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=inueni/django-subadmin
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
