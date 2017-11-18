@@ -1,20 +1,21 @@
 language: python
 env:
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=tensorflow/models
-    - REPO=prkumar/uplink
-    - REPO=dropbox/pyannotate
-    - REPO=chenjiandongx/torrent-cli
-    - REPO=naturomics/CapsNet-Tensorflow
     - REPO=kren1/tosheets
-    - REPO=llSourcell/YOLO_Object_Detection
+    - REPO=tensorflow/models
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=scikit-learn/scikit-learn
-    - REPO=snwh/suru-icon-theme
-    - REPO=explosion/spaCy
+    - REPO=dropbox/pyannotate
+    - REPO=prkumar/uplink
+    - REPO=chenjiandongx/torrent-cli
+    - REPO=llSourcell/YOLO_Object_Detection
     - REPO=pallets/flask
+    - REPO=naturomics/CapsNet-Tensorflow
     - REPO=openai/gym
-    - REPO=vi3k6i5/flashtext
-    - REPO=D4Vinci/Cr3dOv3r
+    - REPO=lujqme/proxy_pool
+    - REPO=explosion/spaCy
+    - REPO=snwh/suru-icon-theme
+    - REPO=uber/pyro
+    - REPO=pandas-dev/pandas
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
