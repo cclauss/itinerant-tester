@@ -1,19 +1,18 @@
 language: python
 env:
-    - REPO=lcatro/Machine-Learning-Note
     - REPO=tensorflow/models
-    - REPO=kren1/tosheets
-    - REPO=LCTF/LCTF2017
+    - REPO=lcatro/Machine-Learning-Note
     - REPO=rossumai/nochi
-    - REPO=rushter/data-science-blogs
+    - REPO=LCTF/LCTF2017
+    - REPO=kren1/tosheets
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=vi3k6i5/flashtext
-    - REPO=naturomics/CapsNet-Tensorflow
-    - REPO=pallets/flask
-    - REPO=scikit-learn/scikit-learn
-    - REPO=uber/pyro
-    - REPO=donnemartin/system-design-primer
     - REPO=explosion/spaCy
+    - REPO=vi3k6i5/flashtext
+    - REPO=ZhengyaoJiang/PGPortfolio
+    - REPO=scikit-learn/scikit-learn
+    - REPO=donnemartin/system-design-primer
+    - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=rushter/data-science-blogs
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
