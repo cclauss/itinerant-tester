@@ -1,18 +1,20 @@
 language: python
 env:
     - REPO=ActivityWatch/activitywatch
-    - REPO=embedi/CVE-2017-11882
+    - REPO=hegusung/AVSignSeek
     - REPO=tensorflow/models
-    - REPO=Ridter/CVE-2017-11882
     - REPO=UnkL4b/GitMiner
-    - REPO=ZhengyaoJiang/PGPortfolio
+    - REPO=tryolabs/requestium
+    - REPO=clcarwin/SFD_pytorch
+    - REPO=waditu/tushare
+    - REPO=embedi/CVE-2017-11882
     - REPO=donnemartin/system-design-primer
-    - REPO=shmuelamar/cbox
-    - REPO=google/tangent
-    - REPO=DLTK/DLTK
-    - REPO=scikit-learn/scikit-learn
-    - REPO=dropbox/pyannotate
+    - REPO=Ridter/CVE-2017-11882
+    - REPO=pallets/flask
+    - REPO=TheAlgorithms/Python
+    - REPO=davidsandberg/facenet
     - REPO=kennethreitz/pipenv
+    - REPO=google/tangent
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
