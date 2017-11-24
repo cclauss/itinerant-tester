@@ -1,6 +1,35 @@
 language: python
 env:
-    - REPO=fossasia/open-event-api-server
+    - REPO=ActivityWatch/activitywatch
+    - REPO=tensorflow/models
+    - REPO=donnemartin/data-science-ipython-notebooks
+    - REPO=tryolabs/requestium
+    - REPO=flyyufelix/Direct-Future-Prediction-Keras
+    - REPO=vi3k6i5/flashtext
+    - REPO=jtushman/state_machine
+    - REPO=terrychenism/Deformable-ConvNets
+    - REPO=pallets/flask
+    - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=scikit-learn/scikit-learn
+    - REPO=TheAlgorithms/Python
+    - REPO=shagunsodhani/pregel
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
@@ -19,7 +48,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO} --branch=development
+    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
