@@ -1,18 +1,20 @@
 language: python
 env:
+    - REPO=KupynOrest/DeblurGAN
     - REPO=ActivityWatch/activitywatch
     - REPO=tensorflow/models
-    - REPO=donnemartin/data-science-ipython-notebooks
-    - REPO=tryolabs/requestium
-    - REPO=flyyufelix/Direct-Future-Prediction-Keras
-    - REPO=vi3k6i5/flashtext
-    - REPO=jtushman/state_machine
-    - REPO=terrychenism/Deformable-ConvNets
     - REPO=pallets/flask
-    - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=vi3k6i5/flashtext
+    - REPO=donnemartin/data-science-ipython-notebooks
     - REPO=scikit-learn/scikit-learn
-    - REPO=TheAlgorithms/Python
+    - REPO=naturomics/CapsNet-Tensorflow
+    - REPO=XifengGuo/CapsNet-Keras
+    - REPO=openai/gym
+    - REPO=jtushman/state_machine
+    - REPO=kennethreitz/pipenv
     - REPO=shagunsodhani/pregel
+    - REPO=uber/pyro
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
