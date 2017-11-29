@@ -1,18 +1,20 @@
 language: python
 env:
-    - REPO=KupynOrest/DeblurGAN
-    - REPO=tensorflow/models
-    - REPO=sharkdp/shell-functools
+    - REPO=yunjey/StarGAN
     - REPO=tryolabs/requestium
-    - REPO=pallets/flask
+    - REPO=tensorflow/models
+    - REPO=RiotGames/cloud-inquisitor
+    - REPO=KupynOrest/DeblurGAN
+    - REPO=ShichenLiu/CondenseNet
+    - REPO=kennethreitz/pipenv
+    - REPO=sharkdp/shell-functools
+    - REPO=jarun/ddgr
+    - REPO=intohole/moodstyle
     - REPO=scikit-learn/scikit-learn
-    - REPO=openai/gym
-    - REPO=pytorch/ignite
     - REPO=donnemartin/system-design-primer
-    - REPO=theveloped/ThreadTone
-    - REPO=vi3k6i5/flashtext
-    - REPO=Zeta36/chess-alpha-zero
-    - REPO=DeNA/Chainer_Realtime_Multi-Person_Pose_Estimation
+    - REPO=paulbrodersen/netgraph
+    - REPO=openeventdata/mordecai
+    - REPO=fossasia/open-event-server
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
