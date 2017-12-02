@@ -1,18 +1,17 @@
 language: python
 env:
     - REPO=DmitryUlyanov/deep-image-prior
-    - REPO=yunjey/StarGAN
     - REPO=eth0izzle/bucket-stream
+    - REPO=yunjey/StarGAN
     - REPO=HoME-Platform/home-platform
     - REPO=payatu/Tiredful-API
+    - REPO=maebert/jrnl
     - REPO=tensorflow/models
     - REPO=natanielruiz/deep-head-pose
     - REPO=mitre/caldera
-    - REPO=scikit-learn/scikit-learn
     - REPO=armory3d/armory
+    - REPO=scikit-learn/scikit-learn
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=kennethreitz/pipenv
-    - REPO=tryolabs/requestium
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
