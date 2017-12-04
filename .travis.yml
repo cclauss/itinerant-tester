@@ -1,6 +1,41 @@
 language: python
 env:
+    - REPO=michael-lazar/rtv
+    - REPO=DmitryUlyanov/deep-image-prior
+    - REPO=gaojiuli/toapi
+    - REPO=eth0izzle/bucket-stream
+    - REPO=probtorch/probtorch
     - REPO=tensorflow/models
+    - REPO=progrmoiz/python-snippets
+    - REPO=raghakot/keras-text
+    - REPO=cclabsInc/RFCrack
+    - REPO=junyanz/BicycleGAN
+    - REPO=yunjey/StarGAN
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
+    - REPO=brndnmtthws/optimal-buy-gdax
+    - REPO=keon/seq2seq
+    - REPO=HaloOrangeWang/NoiseMaker
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=fanout/python-faas-grip
+    - REPO=openai/gym
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
@@ -22,9 +57,9 @@ before_script:
     - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
-    - echo stop the build if there are Python syntax errors
+    - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - time flake8 . --count --select=E999 --show-source --statistics
+    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     #- true  # pytest --capture=sys
