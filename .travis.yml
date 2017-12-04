@@ -1,24 +1,21 @@
 language: python
 env:
     - REPO=michael-lazar/rtv
-    - REPO=DmitryUlyanov/deep-image-prior
     - REPO=gaojiuli/toapi
+    - REPO=DmitryUlyanov/deep-image-prior
     - REPO=eth0izzle/bucket-stream
     - REPO=probtorch/probtorch
     - REPO=tensorflow/models
-    - REPO=progrmoiz/python-snippets
-    - REPO=raghakot/keras-text
     - REPO=cclabsInc/RFCrack
-    - REPO=junyanz/BicycleGAN
-    - REPO=yunjey/StarGAN
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
-    - REPO=brndnmtthws/optimal-buy-gdax
+    - REPO=progrmoiz/python-snippets
+    - REPO=chakki-works/sumeval
     - REPO=keon/seq2seq
-    - REPO=HaloOrangeWang/NoiseMaker
-    - REPO=bitcoinbook/bitcoinbook
+    - REPO=yunjey/StarGAN
+    - REPO=raghakot/keras-text
+    - REPO=junyanz/BicycleGAN
+    - REPO=pallets/flask
     - REPO=fanout/python-faas-grip
-    - REPO=openai/gym
+    - REPO=scikit-learn/scikit-learn
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
