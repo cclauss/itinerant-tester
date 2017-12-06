@@ -1,22 +1,20 @@
 language: python
 env:
     - REPO=kendricktan/misocoin
-    - REPO=NVIDIA/pix2pixHD
     - REPO=google/deepvariant
+    - REPO=NVIDIA/pix2pixHD
+    - REPO=NVIDIA/sentiment-discovery
     - REPO=faneshion/MatchZoo
-    - REPO=facebookresearch/FaderNetworks
-    - REPO=NVIDIA/flownet2-pytorch
-    - REPO=gaojiuli/toapi
     - REPO=tensorflow/models
+    - REPO=gaojiuli/toapi
+    - REPO=tf-coreml/tf-coreml
+    - REPO=facebookresearch/FaderNetworks
+    - REPO=geek-ai/MAgent
+    - REPO=NVIDIA/flownet2-pytorch
     - REPO=DmitryUlyanov/deep-image-prior
     - REPO=mingyuliutw/UNIT
-    - REPO=NVIDIA/sentiment-discovery
-    - REPO=michael-lazar/rtv
-    - REPO=tf-coreml/tf-coreml
-    - REPO=geek-ai/MAgent
-    - REPO=victordibia/handtracking
     - REPO=scikit-learn/scikit-learn
-    - REPO=eth0izzle/bucket-stream
+    - REPO=michael-lazar/rtv
     - REPO=pallets/flask
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
