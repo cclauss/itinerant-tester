@@ -1,21 +1,20 @@
 language: python
 env:
-    - REPO=kendricktan/misocoin
+    - REPO=NVIDIA/sentiment-discovery
+    - REPO=google/kubeflow
+    - REPO=tensorflow/models
     - REPO=google/deepvariant
     - REPO=NVIDIA/pix2pixHD
-    - REPO=NVIDIA/sentiment-discovery
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=faneshion/MatchZoo
-    - REPO=tensorflow/models
-    - REPO=gaojiuli/toapi
+    - REPO=kendricktan/misocoin
+    - REPO=mingyuliutw/UNIT
+    - REPO=geek-ai/MAgent
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
+    - REPO=pypa/pipenv
     - REPO=tf-coreml/tf-coreml
     - REPO=facebookresearch/FaderNetworks
-    - REPO=geek-ai/MAgent
-    - REPO=NVIDIA/flownet2-pytorch
-    - REPO=DmitryUlyanov/deep-image-prior
-    - REPO=mingyuliutw/UNIT
-    - REPO=scikit-learn/scikit-learn
-    - REPO=michael-lazar/rtv
-    - REPO=pallets/flask
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
