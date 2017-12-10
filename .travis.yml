@@ -1,36 +1,7 @@
+group: travis-latest
 language: python
 env:
-    - REPO=dnouri/skorch
-    - REPO=google/kubeflow
-    - REPO=tensorflow/models
-    - REPO=google/deepvariant
-    - REPO=geek-ai/MAgent
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=openai/gym
-    - REPO=locuslab/lcp-physics
-    - REPO=Cisco-Talos/Decept
-    - REPO=Cisco-Talos/mutiny-fuzzer
-    - REPO=pallets/flask
-    - REPO=pandas-dev/pandas
-    - REPO=scikit-learn/scikit-learn
-    - REPO=quantOS-org/JAQS
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=uber/pyflame
 cache: pip
 python:
     - 2.7.14
