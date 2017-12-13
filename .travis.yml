@@ -1,39 +1,6 @@
 language: python
 env:
-    - REPO=dnouri/skorch
-    - REPO=google/kubeflow
-    - REPO=yidao620c/python3-cookbook
-    - REPO=tensorflow/models
-    - REPO=jwyang/faster-rcnn.pytorch
-    - REPO=google/deepvariant
-    - REPO=faneshion/MatchZoo
-    - REPO=PhilipTrauner/cmus-osx
-    - REPO=apachecn/scikit-learn-doc-zh
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=RaRe-Technologies/gensim
-    - REPO=wifiphisher/wifiphisher
-    - REPO=IOActive/XDiFF
-    - REPO=scikit-learn/scikit-learn
-    - REPO=V-E-O/PoC
-    - REPO=scikit-learn-contrib/imbalanced-learn
-    - REPO=NVIDIA/pix2pixHD
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=XX-net/XX-Net
 cache: pip
 python:
     - 2.7.14
