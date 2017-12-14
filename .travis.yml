@@ -1,22 +1,19 @@
 language: python
 env:
-    - REPO=vi3k6i5/flashtext
+    - REPO=bernhard2202/improved-video-gan
+    - REPO=jonluca/Anubis
     - REPO=google/kubeflow
     - REPO=tensorflow/models
+    - REPO=vi3k6i5/flashtext
     - REPO=keras-team/keras
-    - REPO=jonluca/Anubis
-    - REPO=bernhard2202/improved-video-gan
-    - REPO=firmianay/CTF-All-In-One
     - REPO=robotattackorg/robot-detect
-    - REPO=mingyuliutw/UNIT
-    - REPO=dbcli/mssql-cli
+    - REPO=firmianay/CTF-All-In-One
     - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
-    - REPO=IOActive/XDiFF
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=NVIDIA/sentiment-discovery
-    - REPO=xingyizhou/pytorch-pose-hg-3d
     - REPO=pallets/flask
+    - REPO=dbcli/mssql-cli
+    - REPO=donnemartin/system-design-primer
+    - REPO=mingyuliutw/UNIT
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
