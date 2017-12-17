@@ -1,7 +1,37 @@
 language: python
 env:
-    - REPO=RasaHQ/rasa_core
-    - REPO=RasaHQ/rasa_nlu
+    - REPO=SteliosTymvios/Datastructures-and-Algorithms-notes
+    - REPO=joshua-wu/deepfakes_faceswap
+    - REPO=qutebrowser/qutebrowser
+    - REPO=Instagram/MonkeyType
+    - REPO=keras-team/keras
+    - REPO=tensorflow/models
+    - REPO=Eloston/ungoogled-chromium
+    - REPO=scikit-learn/scikit-learn
+    - REPO=vi3k6i5/flashtext
+    - REPO=EntilZha/PyFunctional
+    - REPO=openai/gym
+    - REPO=google/kubeflow
+    - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
+    - REPO=D4Vinci/Cr3dOv3r
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
