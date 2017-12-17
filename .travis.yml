@@ -1,24 +1,21 @@
 language: python
 env:
-    - REPO=EntilZha/PyFunctional
+    - REPO=joshua-wu/deepfakes_faceswap
+    - REPO=SteliosTymvios/Datastructures-and-Algorithms-notes
     - REPO=Instagram/MonkeyType
-    - REPO=jonluca/Anubis
-    - REPO=vi3k6i5/flashtext
     - REPO=tensorflow/models
-    - REPO=google/kubeflow
+    - REPO=qutebrowser/qutebrowser
     - REPO=keras-team/keras
-    - REPO=NVIDIA/pix2pixHD
-    - REPO=Featuretools/featuretools
-    - REPO=faneshion/MatchZoo
-    - REPO=dnouri/skorch
-    - REPO=pallets/flask
+    - REPO=EntilZha/PyFunctional
     - REPO=scikit-learn/scikit-learn
+    - REPO=google/kubeflow
+    - REPO=Eloston/ungoogled-chromium
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=jwyang/faster-rcnn.pytorch
-    - REPO=CFSworks/wavebird-reversing
-    - REPO=google/deepvariant
-    - REPO=linroid/sadb
-    - REPO=tensorflow/magenta
+    - REPO=pallets/flask
+    - REPO=openai/gym
+    - REPO=vi3k6i5/flashtext
+    - REPO=dnouri/skorch
+    - REPO=donnemartin/system-design-primer
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
