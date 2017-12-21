@@ -1,20 +1,22 @@
 language: python
 env:
-    - REPO=SteliosTymvios/Datastructures-and-Algorithms-notes
-    - REPO=joshua-wu/deepfakes_faceswap
-    - REPO=qutebrowser/qutebrowser
-    - REPO=Instagram/MonkeyType
-    - REPO=keras-team/keras
+    - REPO=philipperemy/tensorflow-1.4-billion-password-analysis
+    - REPO=turicas/salarios-magistrados
+    - REPO=brannondorsey/PassGAN
+    - REPO=orppra/ropa
+    - REPO=pypa/pipenv
     - REPO=tensorflow/models
-    - REPO=Eloston/ungoogled-chromium
-    - REPO=scikit-learn/scikit-learn
+    - REPO=keras-team/keras
     - REPO=vi3k6i5/flashtext
-    - REPO=EntilZha/PyFunctional
+    - REPO=mehdidc/pomodoro
+    - REPO=scikit-learn/scikit-learn
+    - REPO=bloomberg/powerfulseal
+    - REPO=burningion/poor-mans-deep-learning-camera
+    - REPO=RJT1990/pyflux
     - REPO=openai/gym
-    - REPO=google/kubeflow
-    - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
-    - REPO=D4Vinci/Cr3dOv3r
+    - REPO=HDI-Project/ATM
+    - REPO=joshua-wu/deepfakes_faceswap
+    - REPO=yunjey/pytorch-tutorial
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
