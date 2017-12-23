@@ -1,22 +1,22 @@
 language: python
 env:
     - REPO=zhoubear/open-paperless
-    - REPO=Instagram/MonkeyType
     - REPO=facebookresearch/MUSE
-    - REPO=philipperemy/tensorflow-1.4-billion-password-analysis
-    - REPO=tensorflow/models
+    - REPO=Instagram/MonkeyType
+    - REPO=hengyuan-hu/bottom-up-attention-vqa
     - REPO=yunjey/pytorch-tutorial
-    - REPO=Ekultek/WhatWaf
-    - REPO=keras-team/keras
+    - REPO=tensorflow/models
+    - REPO=dbcli/pgcli
+    - REPO=oliver006/elasticsearch-gmail
+    - REPO=guedou/jupyter-radare2
     - REPO=scikit-learn/scikit-learn
-    - REPO=facebookresearch/visdom
-    - REPO=joshua-wu/deepfakes_faceswap
-    - REPO=openai/gym
-    - REPO=DongjunLee/transformer-tensorflow
-    - REPO=brannondorsey/PassGAN
-    - REPO=turicas/salarios-magistrados
     - REPO=google/kubeflow
+    - REPO=dbcli/mycli
+    - REPO=openai/gym
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=keras-team/keras
     - REPO=pallets/flask
+    - REPO=mehdidc/pomodoro
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
