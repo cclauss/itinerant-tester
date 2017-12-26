@@ -1,6 +1,44 @@
 language: python
 env:
+    - REPO=liiight/notifiers
+    - REPO=pypa/pipenv
+    - REPO=zhoubear/open-paperless
+    - REPO=glample/Arnold
+    - REPO=tensorflow/models
+    - REPO=EpistasisLab/penn-ml-benchmarks
+    - REPO=gaojiuli/toapi
     - REPO=anfederico/cryptoview
+    - REPO=keras-team/keras
+    - REPO=toyakula/luna
+    - REPO=sdispater/pendulum
+    - REPO=yeasy/docker_practice
+    - REPO=scikit-learn-contrib/imbalanced-learn
+    - REPO=JasonLiTW/simple-railway-captcha-solver
+    - REPO=rockyzhengwu/FoolNLTK
+    - REPO=ruiminshen/yolo2-pytorch
+    - REPO=facebookresearch/MUSE
+    - REPO=pandas-dev/pandas
+    - REPO=yunjey/pytorch-tutorial
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=junxiaosong/AlphaZero_Gomoku
+    - REPO=LiuXiaolong19920720/Add-Christmas-Hat
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
