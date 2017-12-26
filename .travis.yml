@@ -1,6 +1,41 @@
 language: python
 env:
-    - REPO=Gallopsled/pwntools
+    - REPO=glample/Arnold
+    - REPO=liiight/notifiers
+    - REPO=zhoubear/open-paperless
+    - REPO=ruiminshen/yolo2-pytorch
+    - REPO=tensorflow/models
+    - REPO=Instagram/MonkeyType
+    - REPO=keras-team/keras
+    - REPO=LiuXiaolong19920720/Add-Christmas-Hat
+    - REPO=facebookresearch/MUSE
+    - REPO=scikit-learn/scikit-learn
+    - REPO=kutoga/going_deeper
+    - REPO=hengyuan-hu/bottom-up-attention-vqa
+    - REPO=yunjey/pytorch-tutorial
+    - REPO=yeasy/docker_practice
+    - REPO=anfederico/cryptoview
+    - REPO=aleju/imgaug
+    - REPO=junxiaosong/AlphaZero_Gomoku
+    - REPO=openai/gym
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
 cache: pip
 python:
     - 2.7.14
