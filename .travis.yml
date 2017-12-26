@@ -1,41 +1,6 @@
 language: python
 env:
-    - REPO=zhoubear/open-paperless
-    - REPO=facebookresearch/MUSE
-    - REPO=Instagram/MonkeyType
-    - REPO=LiuXiaolong19920720/Add-Christmas-Hat
-    - REPO=hengyuan-hu/bottom-up-attention-vqa
-    - REPO=keras-team/keras
-    - REPO=egorsmkv/simple-django-login-and-register
-    - REPO=scikit-learn/scikit-learn
-    - REPO=tensorflow/models
-    - REPO=glample/Arnold
-    - REPO=yunjey/pytorch-tutorial
-    - REPO=joshua-wu/deepfakes_faceswap
-    - REPO=bitcoin/bips
-    - REPO=aleju/imgaug
-    - REPO=oliver006/elasticsearch-gmail
-    - REPO=tmrowco/electricitymap
-    - REPO=google/kubeflow
-    - REPO=openai/gym
-    - REPO=brannondorsey/PassGAN
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=Gallopsled/pwntools
 cache: pip
 python:
     - 2.7.14
