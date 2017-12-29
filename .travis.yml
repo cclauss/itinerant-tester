@@ -1,42 +1,6 @@
 language: python
 env:
-    - REPO=gaojiuli/toapi
-    - REPO=pypa/pipenv
-    - REPO=rockyzhengwu/FoolNLTK
-    - REPO=Ekultek/WhatWaf
-    - REPO=liiight/notifiers
-    - REPO=toyakula/luna
-    - REPO=tensorflow/models
-    - REPO=TwoWater/Python
-    - REPO=lionleaf/dwitter
-    - REPO=zhoubear/open-paperless
-    - REPO=JasonLiTW/simple-railway-captcha-solver
-    - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=keras-team/keras
-    - REPO=openai/gym
-    - REPO=getsentry/sentry
-    - REPO=D4Vinci/Cr3dOv3r
-    - REPO=pandas-dev/pandas
-    - REPO=junxiaosong/AlphaZero_Gomoku
-    - REPO=sdispater/pendulum
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
+    - REPO=numpy/numpydoc
 cache: pip
 python:
     - 2.7.14
