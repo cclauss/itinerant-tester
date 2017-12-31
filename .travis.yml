@@ -2,21 +2,20 @@ language: python
 env:
     - REPO=wangshub/wechat_jump_game
     - REPO=sb2nov/mac-setup
-    - REPO=Manisso/fsociety
     - REPO=ray-project/ray
+    - REPO=Manisso/fsociety
     - REPO=gaojiuli/toapi
-    - REPO=rockyzhengwu/FoolNLTK
     - REPO=tensorflow/models
-    - REPO=toddmotto/public-apis
     - REPO=keras-team/keras
+    - REPO=toddmotto/public-apis
     - REPO=scikit-learn/scikit-learn
+    - REPO=pypa/pipenv
     - REPO=bitcoinbook/bitcoinbook
     - REPO=pallets/flask
-    - REPO=zhoubear/open-paperless
-    - REPO=pypa/pipenv
+    - REPO=rockyzhengwu/FoolNLTK
     - REPO=Jiramew/spoon
-    - REPO=ethereum/pyethereum
-    - REPO=dgiese/dustcloud
+    - REPO=zhoubear/open-paperless
+    - REPO=isocpp/CppCoreGuidelines
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
