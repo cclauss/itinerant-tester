@@ -2,20 +2,21 @@ language: python
 env:
     - REPO=wangshub/wechat_jump_game
     - REPO=sb2nov/mac-setup
-    - REPO=ray-project/ray
-    - REPO=rockyzhengwu/FoolNLTK
     - REPO=Manisso/fsociety
-    - REPO=toddmotto/public-apis
-    - REPO=tensorflow/models
+    - REPO=ray-project/ray
     - REPO=gaojiuli/toapi
+    - REPO=rockyzhengwu/FoolNLTK
+    - REPO=tensorflow/models
+    - REPO=toddmotto/public-apis
     - REPO=keras-team/keras
-    - REPO=zhoubear/open-paperless
     - REPO=scikit-learn/scikit-learn
-    - REPO=dgiese/dustcloud
     - REPO=bitcoinbook/bitcoinbook
     - REPO=pallets/flask
+    - REPO=zhoubear/open-paperless
     - REPO=pypa/pipenv
-    - REPO=neocxi/pixelsnail-public
+    - REPO=Jiramew/spoon
+    - REPO=ethereum/pyethereum
+    - REPO=dgiese/dustcloud
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
@@ -33,6 +34,8 @@ env:
     - REPO=hyperledger/indy-node
     - REPO=hyperledger/indy-plenum
     - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7.14
