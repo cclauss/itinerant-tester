@@ -2,24 +2,24 @@ group: travis_latest
 language: python
 env:
     - REPO=wangshub/wechat_jump_game
-    - REPO=deepmind/dm_control
     - REPO=Manisso/fsociety
-    - REPO=sb2nov/mac-setup
+    - REPO=deepmind/dm_control
     - REPO=calclavia/DeepJ
-    - REPO=Honlan/wechat_jump_tensorflow
-    - REPO=lawlite19/MachineLearning_Python
+    - REPO=sb2nov/mac-setup
     - REPO=arnaucode/coffeeMiner
+    - REPO=Prinsphield/Wechat_AutoJump
+    - REPO=lawlite19/MachineLearning_Python
+    - REPO=keras-team/keras
+    - REPO=tensorflow/models
+    - REPO=Honlan/wechat_jump_tensorflow
+    - REPO=yu4u/convnet-drawer
+    - REPO=pypa/pipenv
     - REPO=isocpp/CppCoreGuidelines
     - REPO=danigargu/explodingcan
-    - REPO=tensorflow/models
-    - REPO=pypa/pipenv
-    - REPO=yu4u/convnet-drawer
-    - REPO=keras-team/keras
-    - REPO=UltimateHackers/Striker
-    - REPO=scikit-learn/scikit-learn
     - REPO=AlessandroZ/LaZagne
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=openai/gym
+    - REPO=scikit-learn/scikit-learn
+    - REPO=donnemartin/system-design-primer
+    - REPO=UltimateHackers/Striker
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
