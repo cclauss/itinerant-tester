@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=tensorflow/tpu-demos
+    - REPO=rotula/simplestyle
 cache: pip
 python:
     - 2.7.14
