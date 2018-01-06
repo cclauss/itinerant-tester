@@ -1,44 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=wangshub/wechat_jump_game
-    - REPO=Prinsphield/Wechat_AutoJump
-    - REPO=Manisso/fsociety
-    - REPO=arnaucode/coffeeMiner
-    - REPO=deepmind/dm_control
-    - REPO=tensorflow/magenta
-    - REPO=tensorflow/models
-    - REPO=oarriaga/face_classification
-    - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
-    - REPO=lengstrom/fast-style-transfer
-    - REPO=calclavia/DeepJ
-    - REPO=sb2nov/mac-setup
-    - REPO=UltimateHackers/Striker
-    - REPO=keras-team/keras
-    - REPO=pallets/flask
-    - REPO=Microsoft/MMdnn
-    - REPO=pypa/pipenv
-    - REPO=TheAlgorithms/Python
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=tensorflow/tpu-demos
 cache: pip
 python:
     - 2.7.14
