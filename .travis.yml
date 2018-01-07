@@ -1,45 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ChrisKnott/Eel
-    - REPO=wangshub/wechat_jump_game
-    - REPO=Prinsphield/Wechat_AutoJump
-    - REPO=Manisso/fsociety
-    - REPO=keras-team/keras
-    - REPO=arnaucode/coffeeMiner
-    - REPO=dddomodossola/remi
-    - REPO=tensorflow/models
-    - REPO=cookieY/Yearning
-    - REPO=pypa/pipenv
-    - REPO=scikit-learn/scikit-learn
-    - REPO=tensorflow/magenta
-    - REPO=donnemartin/system-design-primer
-    - REPO=leviswind/pytorch-transformer
-    - REPO=lengstrom/fast-style-transfer
-    - REPO=sammchardy/python-binance
-    - REPO=openai/gym
-    - REPO=sb2nov/mac-setup
-    - REPO=ray-project/ray
-    - REPO=deepmind/dm_control
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=loklak/loklak_python_api
 cache: pip
 python:
     - 2.7.14
