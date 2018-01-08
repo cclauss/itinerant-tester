@@ -1,24 +1,25 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ChrisKnott/Eel
     - REPO=wangshub/wechat_jump_game
+    - REPO=ChrisKnott/Eel
     - REPO=Prinsphield/Wechat_AutoJump
     - REPO=Manisso/fsociety
     - REPO=arnaucode/coffeeMiner
-    - REPO=dddomodossola/remi
-    - REPO=tensorflow/models
     - REPO=keras-team/keras
-    - REPO=scikit-learn/scikit-learn
-    - REPO=lengstrom/fast-style-transfer
-    - REPO=pypa/pipenv
-    - REPO=tensorflow/magenta
-    - REPO=sammchardy/python-binance
-    - REPO=openai/gym
+    - REPO=tensorflow/models
+    - REPO=dddomodossola/remi
     - REPO=cookieY/Yearning
+    - REPO=tensorflow/magenta
+    - REPO=lengstrom/fast-style-transfer
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pypa/pipenv
+    - REPO=ray-project/ray
+    - REPO=sammchardy/python-binance
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=uber/pyro
+    - REPO=sb2nov/mac-setup
     - REPO=pallets/flask
-    - REPO=toddmotto/public-apis
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
