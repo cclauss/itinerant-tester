@@ -12,6 +12,7 @@ import bs4  # will require lxml or html5lib
 import getpass
 import requests
 import webbrowser
+from datetime import datetime as dt
 from github3 import login as github3_login
 
 username = getpass.getuser()  # Does local username == GitHub username?
@@ -25,12 +26,12 @@ ignore = sorted([
     '0x4D31/honeyLambda', '521xueweihan/HelloGitHub', 'Cisco-Talos/pyrebox',
     'ExplorerFreda/Structured-Self-Attentive-Sentence-Embedding',
     'Kaixhin/NoisyNet-A3C', 'PyCQA/flake8', 'StevenBlack/hosts',
-    'UltimateHackers/Hash-Buster', 'aboul3la/Sublist3r',
-    'ageitgey/face_recognition', 'airbnb/binaryalert',
+    'UltimateHackers/Hash-Buster', 'aboul3la/Sublist3r', 'allenai/allennlp',
+    'ageitgey/face_recognition', 'airbnb/binaryalert', 'munificent/vigil',
     'andreiapostoae/dota2-predictor', 'anishathalye/seashells',
     'ansible/ansible', 'appsecco/bugcrowd-levelup-subdomain-enumeration',
     'astorfi/pythonic-automatic-email', 'astrofrog/mpl-scatter-density',
-    'benjaminp/six', 'bethgelab/foolbox', 'channelcat/sanic',
+    'benjaminp/six', 'bethgelab/foolbox', 'channelcat/sanic', 'scrapy/scrapy',
     'chenjiandongx/pyecharts', 'cloudflare/receipt-printer',
     'csxeba/brainforge', 'dizballanze/django-eraserhead', 'django/django',
     'dmulholland/ivy', 'facebookresearch/DrQA', 'fchollet/keras',
@@ -45,8 +46,8 @@ ignore = sorted([
     'pfnet-research/chainer-gan-lib', 'polyaxon/polyaxon', 'python/cpython',
     'quiltdata/quilt', 'reiinakano/xcessiv', 'reinforceio/tensorforce',
     'requests/requests', 'rg3/youtube-dl', 'sensepost/objection',
-    'songrotek/Deep-Learning-Papers-Reading-Roadmap',
-    'strizhechenko/netutils-linux', 'vinta/awesome-python',
+    'songrotek/Deep-Learning-Papers-Reading-Roadmap', 'cujanovic/SSRF-Testing',
+    'strizhechenko/netutils-linux', 'vinta/awesome-python', 'QUVA-Lab/artemis',
     'vividvilla/csvtotable', 'worawit/MS17-010', 'yeleman/py3compat',
     'CQFIO/PhotographicImageSynthesis', 'hylang/hy', 'liangliangyy/DjangoBlog',
     'neozhaoliang/pywonderland', 'warner/magic-wormhole', 'bugcrowdlabs/HUNT',
@@ -55,8 +56,8 @@ ignore = sorted([
     'aaronduino/asciidots', 'nccgroup/demiguise', 'alexhude/uEmu',
     'codezjx/netease-cloud-music-dl', 'pytorch/pytorch', 'pennsignals/aptos',
     'brendan-rius/jupyter-c-kernel', 'vahidk/EffectiveTensorflow',
-    'jiajunhuang/blog', 'apache/incubator-superset',
-    'josephmisiti/awesome-machine-learning', 'bugcrowd/HUNT',
+    'jiajunhuang/blog', 'apache/incubator-superset', 'lllyasviel/style2paints',
+    'josephmisiti/awesome-machine-learning', 'bugcrowd/HUNT', 'taolei87/sru',
     'mil-tokyo/webdnn', 'chrisranderson/beholder', 'chainer/chainercv',
     'encode/apistar', 'Plazmaz/LNKUp', 'miyuchina/mistletoe', 'jtoy/sketchnet',
     'ent1c3d/Python-Synopsis', 'GoogleCloudPlatform/distroless',
@@ -68,23 +69,32 @@ ignore = sorted([
     'elifesciences/sciencebeam', 'zalandoresearch/fashion-mnist',
     'eldraco/Salamandra', 'woozzu/dong_iccv_2017', 'justdoit0823/pywxclient',
     'jmhessel/fmpytorch', 'kryptxy/torrench', 'beaston02/ChaturbateRecorder',
-    'hwalsuklee/tensorflow-generative-model-collections',
+    'hwalsuklee/tensorflow-generative-model-collections', 'reddit/reddit',
     'lufficc/flask_ishuhui', 'parrt/lolviz', 'nicolargo/glances',
     'sanyam5/arc-pytorch', 'corna/me_cleaner', 'beaston02/MFCRecorder',
     'NoneGG/aredis', 'satwikkansal/wtfpython', 'mli/gluon-tutorials-zh',
-    'fendouai/Awesome-Chatbot', 'gavin66/proxy_list',
-    'pshah123/console-logging', 'postmarketOS/pmbootstrap',
-    'fendouai/Awesome-TensorFlow-Chinese'
+    'fendouai/Awesome-Chatbot', 'gavin66/proxy_list', 'chainside/btcpy',
+    'pshah123/console-logging', 'postmarketOS/pmbootstrap', 'ofek/hatch',
+    'facebookresearch/loop', 'fendouai/Awesome-TensorFlow-Chinese',
+    'localstack/localstack', 'Hironsan/anago', 'harleyQu1nn/AggressorScripts',
+    'tensorflow/agents', 'NVIDIA/DeepRecommender', 'vulnersCom/api',
+    'mazen160/struts-pwn_CVE-2017-9805', 'ablator/ablator', 'soimort/you-get',
+    'XX-net/XX-Net', 'ajbouh/tfi', 'facebookresearch/fairseq-py',
+    'hannob/optionsbleed', 'eriklindernoren/ML-From-Scratch',
+    '1adrianb/face-alignment', 'Lz1y/CVE-2017-8759',
+    'laixintao/python-parallel-programming-cookbook-cn'
+
 ])
 
 # the boilerplate content of the .travis.yml file
-fmt = """language: python
+fmt = """group: travis_latest
+language: python
 env:
 %s
 cache: pip
 python:
-    - 2.7
-    - 3.6
+    - 2.7.14
+    - 3.6.4
     #- nightly
     #- pypy
     #- pypy3
@@ -113,6 +123,7 @@ notifications:
     on_failure: change  # `always` will be the setting once code changes slow down
 """
 
+print(f'{dt.now():%a %b %d %H:%M:%S %Z %Y}')
 # extract the repo names of GitHub's Top 25 Trending Python list
 soup = bs4.BeautifulSoup(requests.get(url).content, 'lxml')  # or 'html5lib'
 # 'python / cpython'
@@ -122,10 +133,14 @@ repos = (repo.text.strip().replace(' ', '') for repo in repos
          if '/' in repo.text and '://' not in repo.text)
 repos = list(repos) + [
     'ArduPilot/ardupilot', 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
-    'PythonCharmers/python-future', 'facebookresearch/ParlAI', 'gevent/gevent',
-    'getsentry/sentry', 'ggtracker/sc2reader', 'apache/beam',
-    'bl4de/security-tools', 'Seedarchangel/TuChart', 'QUVA-Lab/artemis',
-    'swisskyrepo/Wordpresscan'
+    'PythonCharmers/python-future', 'ansible/ansible',  # 'ansible/awx',
+    'facebookresearch/ParlAI', 'gevent/gevent', 'getsentry/sentry',
+    'ggtracker/sc2reader', 'apache/beam', 'bl4de/security-tools',
+    'Seedarchangel/TuChart', 'QUVA-Lab/artemis', 'swisskyrepo/Wordpresscan',
+    'hyperledger/fabric', 'hyperledger/sawtooth-core', 'hyperledger/indy-node',
+    'hyperledger/indy-plenum', 'hyperledger/indy-anoncreds', 'httplib2/httplib2',
+    'Supervisor/supervisor'
+    # 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python'
 ]
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
 repos = '\n'.join('    - REPO=' + repo for repo in repos
