@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=tensorflow/transform
-    - REPO=apache/beam
+    - REPO=cloudviz/agentless-system-crawler
 cache: pip
 python:
     - 2.7.14
