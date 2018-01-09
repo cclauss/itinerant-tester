@@ -2,10 +2,14 @@ group: travis_latest
 language: python
 env:
     - REPO=anthony-tuininga/cx_Freeze
+    - REPO=anthony-tuininga/cx_OracleTools
+    - REPO=anthony-tuininga/cx_PyOracleLib
+    - REPO=anthony-tuininga/cx_PyGenLib
+    - REPO-anthony-tuininga/deacons
 cache: pip
 python:
     - 2.7.14
-    - 3.6
+    - 3.6.4
     #- nightly
     #- pypy
     #- pypy3
