@@ -1,15 +1,47 @@
 group: travis_latest
 language: python
 env:
-    - REPO=anthony-tuininga/cx_Freeze
-    - REPO=anthony-tuininga/cx_OracleTools
-    - REPO=anthony-tuininga/cx_PyOracleLib
-    - REPO=anthony-tuininga/cx_PyGenLib
-    - REPO-anthony-tuininga/deacons
+    - REPO=wangshub/wechat_jump_game
+    - REPO=ChrisKnott/Eel
+    - REPO=LuminosoInsight/python-ftfy
+    - REPO=Prinsphield/Wechat_AutoJump
+    - REPO=Manisso/fsociety
+    - REPO=tensorflow/models
+    - REPO=arnaucode/coffeeMiner
+    - REPO=tensorlang/tensorlang
+    - REPO=toddmotto/public-apis
+    - REPO=keras-team/keras
+    - REPO=se4/cddh
+    - REPO=lepture/authlib
+    - REPO=scikit-learn/scikit-learn
+    - REPO=tensorflow/magenta
+    - REPO=pallets/flask
+    - REPO=1N3/BlackWidow
+    - REPO=facebookresearch/py2bpf
+    - REPO=lengstrom/fast-style-transfer
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7.14
-    - 3.6.4
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
