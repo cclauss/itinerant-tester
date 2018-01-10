@@ -2,24 +2,24 @@ group: travis_latest
 language: python
 env:
     - REPO=wangshub/wechat_jump_game
+    - REPO=Skyexu/TopSup
     - REPO=plaitpy/plaitpy
     - REPO=gaojiuli/toapi
-    - REPO=Skyexu/TopSup
-    - REPO=ChrisKnott/Eel
-    - REPO=LuminosoInsight/python-ftfy
     - REPO=ray-project/ray
     - REPO=Manisso/fsociety
-    - REPO=Prinsphield/Wechat_AutoJump
-    - REPO=tensorflow/models
-    - REPO=JunYeopLee/capsule-networks
     - REPO=google/python-fire
-    - REPO=1N3/BlackWidow
-    - REPO=keras-team/keras
+    - REPO=ChrisKnott/Eel
+    - REPO=tensorflow/models
+    - REPO=LuminosoInsight/python-ftfy
+    - REPO=Prinsphield/Wechat_AutoJump
     - REPO=pypa/pipenv
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=devendrachaplot/DeepRL-Grounding
-    - REPO=quantopian/qgrid
-    - REPO=idealspark/ZhiShiWenDa-Helper
+    - REPO=keras-team/keras
+    - REPO=plotly/dash
+    - REPO=1N3/BlackWidow
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=pandas-profiling/pandas-profiling
+    - REPO=JunYeopLee/capsule-networks
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
