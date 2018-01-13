@@ -1,13 +1,61 @@
 group: travis_latest
 language: python
 env:
-    - REPO=TheAlgorithms/Python
-    - REPO=harshildarji/Algorithms-HackerRank
+    - REPO=rrdssfgcs/wenda-helper
+    - REPO=wangshub/wechat_jump_game
+    - REPO=Skyexu/TopSup
+    - REPO=astorfi/TensorFlow-World-Resources
+    - REPO=toddmotto/public-apis
+    - REPO=smileboywtu/MillionHeroAssistant
+    - REPO=ChrisKnott/Eel
+    - REPO=pypa/pipenv
+    - REPO=keras-team/keras
+    - REPO=ray-project/ray
+    - REPO=google/python-fire
+    - REPO=simonmulser/simcoin
+    - REPO=tensorflow/models
+    - REPO=arnaucode/coffeeMiner
+    - REPO=donnemartin/system-design-primer
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=Busimus/cutelog
+    - REPO=wuditken/MillionHeroes
+    - REPO=TwoWater/Python
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=plotly/dash
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
-    - 3.6
+    - 3.6.4
+    #- nightly
+    #- pypy
+    #- pypy3
+matrix:
+    allow_failures:
+        - python: nightly
+        - python: pypy
+        - python: pypy3
 install:
+    #- pip install -r requirements.txt
     - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
