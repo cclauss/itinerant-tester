@@ -1,7 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=rtfd/readthedocs.org
+    - REPO=rrdssfgcs/wenda-helper
+    - REPO=wangshub/wechat_jump_game
+    - REPO=Skyexu/TopSup
+    - REPO=astorfi/TensorFlow-World-Resources
+    - REPO=toddmotto/public-apis
+    - REPO=smileboywtu/MillionHeroAssistant
+    - REPO=ChrisKnott/Eel
+    - REPO=keras-team/keras
+    - REPO=ray-project/ray
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=pypa/pipenv
+    - REPO=tensorflow/models
+    - REPO=google/python-fire
+    - REPO=arnaucode/coffeeMiner
+    - REPO=donnemartin/system-design-primer
+    - REPO=simonmulser/simcoin
+    - REPO=TwoWater/Python
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=wuditken/MillionHeroes
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
