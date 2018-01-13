@@ -2,6 +2,7 @@ group: travis_latest
 language: python
 env:
     - REPO=TheAlgorithms/Python
+    - REPO=harshildarji/Algorithms-HackerRank
 cache: pip
 python:
     - 2.7
