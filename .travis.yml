@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=pypa/wheel
+    - REPO=billbris/picmove
 cache: pip
 python:
     - 2.7
