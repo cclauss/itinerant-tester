@@ -1,25 +1,25 @@
 group: travis_latest
 language: python
 env:
-    - REPO=FeeiCN/GSIL
     - REPO=uber-common/deep-neuroevolution
+    - REPO=wangshub/wechat_jump_game
+    - REPO=FeeiCN/GSIL
+    - REPO=huyingxi/Synonyms
     - REPO=openai/gradient-checkpointing
     - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=wangshub/wechat_jump_game
     - REPO=tensorflow/models
     - REPO=D4Vinci/One-Lin3r
-    - REPO=google/yapf
-    - REPO=huyingxi/Synonyms
-    - REPO=jwyang/faster-rcnn.pytorch
-    - REPO=Prinsphield/Wechat_AutoJump
+    - REPO=DeNA/Chainer_Mask_R-CNN
     - REPO=toddmotto/public-apis
-    - REPO=keras-team/keras
-    - REPO=plotly/dash
+    - REPO=google/yapf
     - REPO=scikit-learn/scikit-learn
     - REPO=pypa/pipenv
-    - REPO=liiight/notifiers
+    - REPO=jwyang/faster-rcnn.pytorch
+    - REPO=Manisso/fsociety
     - REPO=Skyexu/TopSup
-    - REPO=wagoodman/bridgy
+    - REPO=keras-team/keras
+    - REPO=plotly/dash
+    - REPO=pallets/flask
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
