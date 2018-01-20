@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=karmel/vespucci
+    - REPO=karmel/glasslab
 cache: pip
 python:
     - 2.7
