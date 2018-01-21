@@ -1,11 +1,43 @@
 group: travis_latest
 language: python
 env:
-    - REPO=cocodataset/cocoapi
+    - REPO=will8211/unimatrix
+    - REPO=cosme12/SimpleCoin
+    - REPO=wangshub/wechat_jump_game
+    - REPO=tensorflow/models
+    - REPO=Games-and-Simulations/sc-docker
+    - REPO=sgayou/medfusion-4000-research
+    - REPO=scikit-learn/scikit-learn
+    - REPO=tschellenbach/Stream-Framework
+    - REPO=toddmotto/public-apis
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=keras-team/keras
+    - REPO=chxj1992/hortor_cheater
+    - REPO=guyecode/tigereye
+    - REPO=google/kubeflow
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
-    - 3.6
+    - 3.6.4
     #- nightly
     #- pypy
     #- pypy3
