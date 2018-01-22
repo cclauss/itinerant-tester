@@ -2,21 +2,22 @@ group: travis_latest
 language: python
 env:
     - REPO=NicolasLM/bplustree
-    - REPO=will8211/unimatrix
     - REPO=cosme12/SimpleCoin
+    - REPO=will8211/unimatrix
     - REPO=wangshub/wechat_jump_game
     - REPO=tensorflow/models
     - REPO=sgayou/medfusion-4000-research
     - REPO=keras-team/keras
     - REPO=scikit-learn/scikit-learn
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=dbcli/mssql-cli
     - REPO=pallets/flask
     - REPO=toddmotto/public-apis
+    - REPO=dbcli/mssql-cli
     - REPO=huyingxi/Synonyms
-    - REPO=donnemartin/system-design-primer
-    - REPO=plotly/dash
     - REPO=openai/gradient-checkpointing
+    - REPO=plotly/dash
+    - REPO=donnemartin/system-design-primer
+    - REPO=gunthercox/ChatterBot
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
