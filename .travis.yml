@@ -1,42 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=NicolasLM/bplustree
-    - REPO=cosme12/SimpleCoin
-    - REPO=will8211/unimatrix
-    - REPO=wangshub/wechat_jump_game
-    - REPO=tensorflow/models
-    - REPO=dot-osk/monitor_ctrl
-    - REPO=keras-team/keras
-    - REPO=sgayou/medfusion-4000-research
-    - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=toddmotto/public-apis
-    - REPO=pallets/flask
-    - REPO=huyingxi/Synonyms
-    - REPO=openai/gradient-checkpointing
-    - REPO=dbcli/mssql-cli
-    - REPO=christophetd/CloudFlair
-    - REPO=donnemartin/system-design-primer
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=Microsoft/vscode-python
 cache: pip
 python:
     - 2.7
