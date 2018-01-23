@@ -1,12 +1,41 @@
 group: travis_latest
 language: python
 env:
-    - REPO=cognitive-catalyst/watson-beat
-    - REPO=cognitive-catalyst/themis
-    - REPO=cognitive-catalyst/rr_custom_scorers
-    - REPO=cognitive-catalyst/rr_custom_scorers_proxy_app
-    - REPO=cognitive-catalyst/Lightning
-    - REPO=vishnubob/python-midi
+    - REPO=facebookresearch/Detectron
+    - REPO=christophetd/CloudFlair
+    - REPO=NicolasLM/bplustree
+    - REPO=tensorflow/models
+    - REPO=cosme12/SimpleCoin
+    - REPO=keras-team/keras
+    - REPO=wangshub/wechat_jump_game
+    - REPO=MasterScrat/Chatistics
+    - REPO=openai/gradient-checkpointing
+    - REPO=scikit-learn/scikit-learn
+    - REPO=toddmotto/public-apis
+    - REPO=pytorch/examples
+    - REPO=pypa/pipenv
+    - REPO=dragen1860/LearningToCompare-Pytorch
+    - REPO=kacperszurek/burp_wp
+    - REPO=pallets/flask
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
