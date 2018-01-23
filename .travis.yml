@@ -1,7 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=pietrodn/pywikipedia-pietrodn
+    - REPO=jython/devguide
+    - REPO=jython/jython3
+    - REPO=jython/swingutils
 cache: pip
 python:
     - 2.7
