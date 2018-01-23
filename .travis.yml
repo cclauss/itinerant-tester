@@ -6,6 +6,7 @@ env:
     - REPO=cognitive-catalyst/rr_custom_scorers
     - REPO=cognitive-catalyst/rr_custom_scorers_proxy_app
     - REPO=cognitive-catalyst/Lightning
+    - REPO=vishnubob/python-midi
 cache: pip
 python:
     - 2.7
