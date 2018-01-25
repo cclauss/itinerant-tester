@@ -2,21 +2,22 @@ group: travis_latest
 language: python
 env:
     - REPO=facebookresearch/Detectron
-    - REPO=posativ/isso
     - REPO=facebookresearch/poincare-embeddings
+    - REPO=posativ/isso
+    - REPO=cls1991/leetcode
     - REPO=tensorflow/models
-    - REPO=farzaa/DeepLeague
     - REPO=wangshub/wechat_jump_game
-    - REPO=deepinsight/insightface
     - REPO=keras-team/keras
+    - REPO=geekcomputers/Python
     - REPO=bitcoinbook/bitcoinbook
     - REPO=scikit-learn/scikit-learn
-    - REPO=cosme12/SimpleCoin
-    - REPO=geekcomputers/Python
-    - REPO=odboy/shadowProxy
+    - REPO=farzaa/DeepLeague
     - REPO=toddmotto/public-apis
-    - REPO=donnemartin/system-design-primer
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=yangyanli/PointCNN
+    - REPO=deepfakes/faceswap
+    - REPO=odboy/shadowProxy
+    - REPO=pallets/flask
+    - REPO=deepinsight/insightface
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
