@@ -1,7 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=pandas-dev/pandas
+    #- REPO=pandas-dev/pandas
+    - REPO=sphinx-doc/sphinx
 cache: pip
 python:
     - 2.7
