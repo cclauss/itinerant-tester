@@ -1,42 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=facebookresearch/Detectron
-    - REPO=facebookresearch/poincare-embeddings
-    - REPO=posativ/isso
-    - REPO=cls1991/leetcode
-    - REPO=tensorflow/models
-    - REPO=wangshub/wechat_jump_game
-    - REPO=keras-team/keras
-    - REPO=geekcomputers/Python
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=scikit-learn/scikit-learn
-    - REPO=farzaa/DeepLeague
-    - REPO=toddmotto/public-apis
-    - REPO=yangyanli/PointCNN
-    - REPO=deepfakes/faceswap
-    - REPO=odboy/shadowProxy
-    - REPO=pallets/flask
-    - REPO=deepinsight/insightface
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=pandas-dev/pandas
 cache: pip
 python:
     - 2.7
