@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=farzaa/DeepLeague
+    - REPO=yifeif/cs231n_project
 cache: pip
 python:
     - 2.7
