@@ -1,8 +1,41 @@
 group: travis_latest
 language: python
 env:
-    - REPO=charlesq34/pointnet2
-    - REPO=yangyanli/PointCNN
+    - REPO=facebookresearch/Detectron
+    - REPO=rmusser01/Infosec_Reference
+    - REPO=DiegoVicen/som-tsp
+    - REPO=chrisstroemel/Simple
+    - REPO=keras-team/keras
+    - REPO=tensorflow/models
+    - REPO=NifTK/NiftyNet
+    - REPO=facebookresearch/adversarial_image_defenses
+    - REPO=riannevdberg/gc-mc
+    - REPO=deepfakes/faceswap
+    - REPO=251321639/wechat_brain
+    - REPO=wangshub/wechat_jump_game
+    - REPO=toddmotto/public-apis
+    - REPO=scikit-learn/scikit-learn
+    - REPO=facebookresearch/poincare-embeddings
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
