@@ -1,18 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=IBM-Cloud/kube-samples
-    - REPO=IBM-Cloud/logistics-wizard-controller
-    - REPO=IBM-Cloud/Bluemix-onprem-data
-    - REPO=IBM-Cloud/get-started-python
-    - REPO=IBM-Cloud/gp-python-client
-    - REPO=IBM-Cloud/key-protect-helloworld-python
-    - REPO=IBM-Cloud/python-iot-raspberry-pi
-    - REPO=IBM-Cloud/Bluemix-ServiceBroker
-    - REPO=IBM-Cloud/service-discovery-client-python
-    - REPO=IBM-Cloud/django-boilerplate
-    - REPO=IBM-Cloud/concept-insights-eclipse-faq
-    - REPO=IBM-Cloud/HackMETU-15cache: pip
+    - REPO=IBM-Cloud/HackMETU-15
+cache: pip
 python:
     - 2.7
     - 3.6
