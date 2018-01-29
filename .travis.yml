@@ -1,46 +1,21 @@
 group: travis_latest
 language: python
 env:
-    - REPO=facebookresearch/Detectron
-    - REPO=keras-team/keras
-    - REPO=eriklindernoren/NapkinML
-    - REPO=rmusser01/Infosec_Reference
-    - REPO=tensorflow/models
-    - REPO=wangshub/wechat_jump_game
-    - REPO=NifTK/NiftyNet
-    - REPO=lefnire/tforce_btc_trader
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=deepfakes/faceswap
-    - REPO=liuziwei7/aerial-recognition
-    - REPO=Kyubyong/dc_tts
-    - REPO=3b1b/manim
-    - REPO=scikit-learn/scikit-learn
-    - REPO=dantaki/vapeplot
-    - REPO=openai/gym
-    - REPO=toddmotto/public-apis
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
-cache: pip
+    - REPO=IBM-Cloud/kube-samples
+    - REPO=IBM-Cloud/logistics-wizard-controller
+    - REPO=IBM-Cloud/Bluemix-onprem-data
+    - REPO=IBM-Cloud/get-started-python
+    - REPO=IBM-Cloud/gp-python-client
+    - REPO=IBM-Cloud/key-protect-helloworld-python
+    - REPO=IBM-Cloud/python-iot-raspberry-pi
+    - REPO=IBM-Cloud/Bluemix-ServiceBroker
+    - REPO=IBM-Cloud/service-discovery-client-python
+    - REPO=IBM-Cloud/django-boilerplate
+    - REPO=IBM-Cloud/concept-insights-eclipse-faq
+    - REPO=IBM-Cloud/HackMETU-15cache: pip
 python:
     - 2.7
-    - 3.6.4
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
