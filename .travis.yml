@@ -3,18 +3,19 @@ language: python
 env:
     - REPO=facebookresearch/Detectron
     - REPO=toddmotto/public-apis
-    - REPO=keras-team/keras
-    - REPO=yangyanli/PointCNN
     - REPO=tensorflow/models
+    - REPO=yangyanli/PointCNN
+    - REPO=keras-team/keras
+    - REPO=donnemartin/interactive-coding-challenges
     - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=Yorko/mlcourse_open
     - REPO=deepfakes/faceswap
+    - REPO=bitcoinbook/bitcoinbook
     - REPO=wangshub/wechat_jump_game
     - REPO=pallets/flask
-    - REPO=lengstrom/fast-style-transfer
-    - REPO=pypa/pipenv
-    - REPO=rmusser01/Infosec_Reference
+    - REPO=dmarnerides/pydlt
+    - REPO=keon/algorithms
+    - REPO=expectocode/captivox
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
