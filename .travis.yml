@@ -2,22 +2,21 @@ group: travis_latest
 language: python
 env:
     - REPO=facebookresearch/Detectron
-    - REPO=keras-team/keras
-    - REPO=eriklindernoren/NapkinML
-    - REPO=tensorflow/models
     - REPO=toddmotto/public-apis
-    - REPO=rmusser01/Infosec_Reference
+    - REPO=keras-team/keras
+    - REPO=tensorflow/models
+    - REPO=eriklindernoren/NapkinML
     - REPO=wangshub/wechat_jump_game
     - REPO=dantaki/vapeplot
+    - REPO=rmusser01/Infosec_Reference
     - REPO=bitcoinbook/bitcoinbook
     - REPO=scikit-learn/scikit-learn
-    - REPO=lefnire/tforce_btc_trader
+    - REPO=yangyanli/PointCNN
     - REPO=deepfakes/faceswap
     - REPO=liuziwei7/aerial-recognition
+    - REPO=lefnire/tforce_btc_trader
     - REPO=NifTK/NiftyNet
-    - REPO=Kyubyong/dc_tts
     - REPO=openai/gym
-    - REPO=3b1b/manim
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
