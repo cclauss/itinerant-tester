@@ -1,17 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=donnemartin/interactive-coding-challenges
-    - REPO=donnemartin/gitsome
-    - REPO=donnemartin/awesome-aws
-    - REPO=donnemartin/haxor-news
-    - REPO=donnemartin/system-design-primer
-    - REPO=donnemartin/viz
-    - REPO=donnemartin/data-science-ipython-notebooks
-    - REPO=donnemartin/saws
-    - REPO=donnemartin/spiders
-    - REPO=donnemartin/dev-setup
-    - REPO=donnemartin/gh
+    - REPO=xonsh/xonsh
 cache: pip
 python:
     - 2.7
