@@ -1,19 +1,41 @@
 group: travis_latest
 language: python
 env:
-    - REPO=xonsh/xonsh
-    - REPO=dabeaz/ply
-    - REPO=dabeaz/curio
-    - REPO=dabeaz/sly
-    - REPO=dabeaz/python-cookbook
-    - REPO=dabeaz/bitey
-    - REPO=dabeaz/pythonprog
-    - REPO=dabeaz/typemap
-    - REPO=dabeaz/concurrent
-    - REPO=dabeaz/concurrencylive
-    - REPO=dabeaz/modulepackage
-    - REPO=dabeaz/me-al
-    - REPO=dabeaz/moonbeam
+    - REPO=tensorflow/minigo
+    - REPO=facebookresearch/Detectron
+    - REPO=toddmotto/public-apis
+    - REPO=deepfakes/faceswap
+    - REPO=tensorflow/models
+    - REPO=donnemartin/interactive-coding-challenges
+    - REPO=keras-team/keras
+    - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
+    - REPO=mxbi/mlcrate
+    - REPO=pypa/pipenv
+    - REPO=scikit-learn/scikit-learn
+    - REPO=wangshub/wechat_jump_game
+    - REPO=MentatInnovations/datastream.io
+    - REPO=Yorko/mlcourse_open
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
