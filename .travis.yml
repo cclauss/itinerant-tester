@@ -2,6 +2,18 @@ group: travis_latest
 language: python
 env:
     - REPO=xonsh/xonsh
+    - REPO=dabeaz/ply
+    - REPO=dabeaz/curio
+    - REPO=dabeaz/sly
+    - REPO=dabeaz/python-cookbook
+    - REPO=dabeaz/bitey
+    - REPO=dabeaz/pythonprog
+    - REPO=dabeaz/typemap
+    - REPO=dabeaz/concurrent
+    - REPO=dabeaz/concurrencylive
+    - REPO=dabeaz/modulepackage
+    - REPO=dabeaz/me-al
+    - REPO=dabeaz/moonbeam
 cache: pip
 python:
     - 2.7
