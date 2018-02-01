@@ -1,22 +1,23 @@
 group: travis_latest
 language: python
 env:
+    - REPO=NullArray/AutoSploit
     - REPO=tensorflow/minigo
     - REPO=facebookresearch/Detectron
-    - REPO=toddmotto/public-apis
     - REPO=deepfakes/faceswap
+    - REPO=toddmotto/public-apis
     - REPO=tensorflow/models
-    - REPO=donnemartin/interactive-coding-challenges
-    - REPO=keras-team/keras
     - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
+    - REPO=keras-team/keras
+    - REPO=MentatInnovations/datastream.io
     - REPO=mxbi/mlcrate
     - REPO=pypa/pipenv
+    - REPO=oilshell/oil
+    - REPO=donnemartin/interactive-coding-challenges
+    - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
+    - REPO=lukalabs/cakechat
     - REPO=wangshub/wechat_jump_game
-    - REPO=MentatInnovations/datastream.io
-    - REPO=Yorko/mlcourse_open
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
