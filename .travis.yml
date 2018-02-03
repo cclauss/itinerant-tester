@@ -1,7 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=akevdp/pdvega
+    - REPO=deepfakes/faceswap
+    - REPO=Sarasra/models
+    - REPO=NullArray/AutoSploit
+    - REPO=Intoli/exodus
+    - REPO=tensorflow/models
+    - REPO=facebookresearch/Detectron
+    - REPO=iawia002/Lulu
+    - REPO=llSourcell/deepfakes
+    - REPO=pfnet-research/sngan_projection
+    - REPO=joshua-wu/deepfakes_faceswap
+    - REPO=wetw0rk/Sickle
+    - REPO=hannw/nlstm
+    - REPO=keras-team/keras
+    - REPO=Mrgemy95/visual-interaction-networks-pytorch
+    - REPO=toddmotto/public-apis
+    - REPO=Kaggle/kaggle-api
+    - REPO=MG2033/MobileNet-V2
+    - REPO=lukalabs/cakechat
+    - REPO=tensorflow/minigo
+    - REPO=Yorko/mlcourse_open
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=Seedarchangel/TuChart
+    - REPO=swisskyrepo/Wordpresscan
+    - REPO=hyperledger/fabric
+    - REPO=hyperledger/sawtooth-core
+    - REPO=hyperledger/indy-node
+    - REPO=hyperledger/indy-plenum
+    - REPO=hyperledger/indy-anoncreds
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
