@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=altair-viz/altair
+    - REPO=openai/gym
 cache: pip
 python:
     - 2.7
