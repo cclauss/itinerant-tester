@@ -1,7 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=shazow/urllib3
+    - REPO=ansible/ansible
+    - REPO=ansible/awx
+    - REPO=ansible/galaxy
+    - REPO=ansible/ansible-container
 cache: pip
 python:
     - 2.7
