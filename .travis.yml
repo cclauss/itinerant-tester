@@ -1,25 +1,24 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Zulko/moviepy
-    - REPO=deepfakes/faceswap
-    - REPO=Sarasra/models
-    - REPO=NullArray/AutoSploit
+    - REPO=chinese-poetry/chinese-poetry
     - REPO=Mrgemy95/Tensorflow-Project-Template
-    - REPO=facebookresearch/Detectron
+    - REPO=deepfakes/faceswap
+    - REPO=NullArray/AutoSploit
+    - REPO=louisabraham/algnuth
+    - REPO=Zulko/moviepy
+    - REPO=Sarasra/models
     - REPO=tensorflow/models
+    - REPO=facebookresearch/Detectron
+    - REPO=toddmotto/public-apis
     - REPO=tensorflow/minigo
     - REPO=keras-team/keras
-    - REPO=Yorko/mlcourse_open
     - REPO=lukalabs/cakechat
-    - REPO=toddmotto/public-apis
-    - REPO=pypa/pipenv
-    - REPO=shaypal5/skift
-    - REPO=donnemartin/system-design-primer
+    - REPO=Yorko/mlcourse_open
     - REPO=pallets/flask
-    - REPO=RussBaz/enforce
-    - REPO=wangshub/wechat_jump_game
-    - REPO=intoli/exodus
+    - REPO=scikit-learn/scikit-learn
+    - REPO=donnemartin/system-design-primer
+    - REPO=pypa/pipenv
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
