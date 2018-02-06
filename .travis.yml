@@ -1,43 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=Mrgemy95/Tensorflow-Project-Template
-    - REPO=deepfakes/faceswap
-    - REPO=NullArray/AutoSploit
-    - REPO=louisabraham/algnuth
-    - REPO=Zulko/moviepy
-    - REPO=Sarasra/models
-    - REPO=tensorflow/models
-    - REPO=facebookresearch/Detectron
-    - REPO=toddmotto/public-apis
-    - REPO=tensorflow/minigo
-    - REPO=keras-team/keras
-    - REPO=lukalabs/cakechat
-    - REPO=Yorko/mlcourse_open
-    - REPO=pallets/flask
-    - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
-    - REPO=pypa/pipenv
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=shazow/urllib3
 cache: pip
 python:
     - 2.7
