@@ -1,17 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=talkpython/consuming_services_python_demos
-    - REPO=talkpython/cookiecutter-course
-    - REPO=talkpython/managing-python-dependencies-materials
-    - REPO=talkpython/mastering-pycharm-course
-    - REPO=talkpython/mongodb-for-python-developers
-    - REPO=talkpython/mongodb-quickstart-course
-    - REPO=talkpython/python-for-entrepreneurs-course-demos
-    - REPO=talkpython/python-jumpstart-course-demos
-    - REPO=talkpython/restful-services-in-pyramid
-    - REPO=talkpython/talk-python-transcripts
-    - REPO=talkpython/write-pythonic-code-demos
+    - REPO=Pylons/waitress
 cache: pip
 python:
     - 2.7
