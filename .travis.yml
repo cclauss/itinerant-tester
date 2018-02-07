@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Pylons/waitress
+    - REPO=iawia002/Lulu
 cache: pip
 python:
     - 2.7
