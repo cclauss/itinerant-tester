@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=cheshirekow/cmake_format
+    - REPO=NREL/OpenDSSDirect.py
 cache: pip
 python:
     - 2.7
