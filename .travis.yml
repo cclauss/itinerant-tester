@@ -1,10 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ansible/ansible
-    - REPO=ansible/awx
-    - REPO=ansible/galaxy
-    - REPO=ansible/ansible-container
+    - REPO=Lasagne/Lasagne
 cache: pip
 python:
     - 2.7
