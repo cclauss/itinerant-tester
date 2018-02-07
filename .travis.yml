@@ -1,45 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=mherrmann/fbs
-    - REPO=Mrgemy95/Tensorflow-Project-Template
-    - REPO=NullArray/AutoSploit
-    - REPO=deepfakes/faceswap
-    - REPO=tensorflow/models
-    - REPO=Sarasra/models
-    - REPO=mherrmann/fbs-tutorial
-    - REPO=facebookresearch/Detectron
-    - REPO=tensorflow/minigo
-    - REPO=Zulko/moviepy
-    - REPO=toddmotto/public-apis
-    - REPO=keras-team/keras
-    - REPO=donnemartin/system-design-primer
-    - REPO=hellerve/programming-talks
-    - REPO=louisabraham/algnuth
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=intoli/exodus
-    - REPO=wangshub/wechat_jump_game
-    - REPO=scikit-learn/scikit-learn
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
-    - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=matplotlib/matplotlib
 cache: pip
 python:
     - 2.7
