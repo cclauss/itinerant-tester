@@ -2,24 +2,24 @@ group: travis_latest
 language: python
 env:
     - REPO=chinese-poetry/chinese-poetry
-    - REPO=mherrmann/fbs
     - REPO=deepfakes/faceswap
+    - REPO=mherrmann/fbs
     - REPO=MrGemy95/Tensorflow-Project-Template
     - REPO=facebookresearch/Detectron
     - REPO=NullArray/AutoSploit
-    - REPO=tensorflow/minigo
-    - REPO=tensorflow/models
-    - REPO=mherrmann/fbs-tutorial
-    - REPO=Sarasra/models
-    - REPO=keras-team/keras
+    - REPO=giving-a-fuck-about-climate-change/carbondoomsday
     - REPO=geek-ai/Texygen
-    - REPO=wohlert/semi-supervised-pytorch
-    - REPO=donnemartin/system-design-primer
-    - REPO=toddmotto/public-apis
-    - REPO=cheshirekow/cmake_format
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pallets/flask
+    - REPO=tensorflow/models
+    - REPO=keras-team/keras
+    - REPO=tensorflow/minigo
+    - REPO=openai/deeptype
     - REPO=fireeye/ReelPhish
+    - REPO=toddmotto/public-apis
+    - REPO=donnemartin/system-design-primer
+    - REPO=pallets/flask
+    - REPO=scikit-learn/scikit-learn
+    - REPO=wohlert/semi-supervised-pytorch
+    - REPO=Sarasra/models
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
