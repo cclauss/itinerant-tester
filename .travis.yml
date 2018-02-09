@@ -20,6 +20,9 @@ env:
     - REPO=scikit-learn/scikit-learn
     - REPO=wohlert/semi-supervised-pytorch
     - REPO=Sarasra/models
+    - REPO=matplotlib/matplotlib
+    - REPO=ansible/awx
+    - REPO=cheshirekow/cmake_format
     - REPO=ArduPilot/ardupilot
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
@@ -30,13 +33,7 @@ env:
     - REPO=ggtracker/sc2reader
     - REPO=apache/beam
     - REPO=bl4de/security-tools
-    - REPO=Seedarchangel/TuChart
-    - REPO=swisskyrepo/Wordpresscan
     - REPO=hyperledger/fabric
-    - REPO=hyperledger/sawtooth-core
-    - REPO=hyperledger/indy-node
-    - REPO=hyperledger/indy-plenum
-    - REPO=hyperledger/indy-anoncreds
     - REPO=httplib2/httplib2
     - REPO=Supervisor/supervisor
 cache: pip
