@@ -3,21 +3,21 @@ language: python
 env:
     - REPO=chinese-poetry/chinese-poetry
     - REPO=deepfakes/faceswap
+    - REPO=Cartucho/yolo-boundingbox-labeler-GUI
+    - REPO=orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch
     - REPO=giving-a-fuck-about-climate-change/carbondoomsday
     - REPO=mherrmann/fbs
-    - REPO=Cartucho/yolo-boundingbox-labeler-GUI
     - REPO=keras-team/keras
     - REPO=tensorflow/models
-    - REPO=NullArray/AutoSploit
     - REPO=facebookresearch/Detectron
-    - REPO=orobix/Prototypical-Networks-for-Few-shot-Learning-PyTorch
+    - REPO=NullArray/AutoSploit
     - REPO=scikit-learn/scikit-learn
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=pallets/flask
     - REPO=Zulko/moviepy
     - REPO=toddmotto/public-apis
-    - REPO=MrGemy95/Tensorflow-Project-Template
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=pallets/flask
     - REPO=fireeye/ReelPhish
+    - REPO=MrGemy95/Tensorflow-Project-Template
     - REPO=ctf-wiki/ctf-wiki
     - REPO=donnemartin/system-design-primer
     - REPO=matplotlib/matplotlib
@@ -27,6 +27,7 @@ env:
     - REPO=ArduPilot/pymavlink
     - REPO=dronekit/dronekit-python
     - REPO=PythonCharmers/python-future
+    - REPO=/ckan/ckan
     - REPO=facebookresearch/ParlAI
     - REPO=gevent/gevent
     - REPO=getsentry/sentry
