@@ -1,41 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=deepfakes/faceswap
-    - REPO=MrGemy95/Tensorflow-Project-Template
-    - REPO=tensorflow/models
-    - REPO=facebookresearch/Detectron
-    - REPO=deepinsight/insightface
-    - REPO=keras-team/keras
-    - REPO=scikit-learn/scikit-learn
-    - REPO=toddmotto/public-apis
-    - REPO=Yorko/mlcourse_open
-    - REPO=NullArray/AutoSploit
-    - REPO=llSourcell/3D_Pose_Estimation
-    - REPO=donnemartin/system-design-primer
-    - REPO=openai/gym
-    - REPO=pallets/flask
-    - REPO=wangshub/wechat_jump_game
-    - REPO=micahflee/onionshare
-    - REPO=phildini/thanks
-    - REPO=matplotlib/matplotlib
-    - REPO=ansible/awx
-    - REPO=cheshirekow/cmake_format
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=/ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=hyperledger/fabric
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=watson-developer-cloud/personality-insights-twitter-python
+    - REPO=watson-developer-cloud/python-sdk
 cache: pip
 python:
     - 2.7
