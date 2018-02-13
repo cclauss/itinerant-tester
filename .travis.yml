@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=watson-developer-cloud/personality-insights-twitter-python
-    - REPO=watson-developer-cloud/python-sdk
+    - REPO=HDI-Project/ATM
 cache: pip
 python:
     - 2.7
