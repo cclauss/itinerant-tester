@@ -1,23 +1,25 @@
 group: travis_latest
 language: python
 env:
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=deepfakes/faceswap
-    - REPO=MrGemy95/Tensorflow-Project-Template
     - REPO=facebookresearch/Detectron
     - REPO=tensorflow/models
-    - REPO=tensorflow/tpu
+    - REPO=Eplox/TCP-Starvation
+    - REPO=deepfakes/faceswap
+    - REPO=chinese-poetry/chinese-poetry
+    - REPO=DanMcInerney/icebreaker
+    - REPO=mherrmann/fbs
     - REPO=keras-team/keras
     - REPO=toddmotto/public-apis
+    - REPO=brendandburns/kubesanity
+    - REPO=tensorflow/magenta
+    - REPO=aviaryan/VSCodeNotebook
     - REPO=donnemartin/system-design-primer
-    - REPO=pallets/flask
+    - REPO=tensorflow/tpu
+    - REPO=MrGemy95/Tensorflow-Project-Template
     - REPO=phildini/thanks
-    - REPO=ubernostrum/django-registration
-    - REPO=NullArray/AutoSploit
+    - REPO=pallets/flask
+    - REPO=shinseung428/GlobalLocalImageCompletion_TF
     - REPO=scikit-learn/scikit-learn
-    - REPO=wangshub/wechat_jump_game
-    - REPO=micahflee/onionshare
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=matplotlib/matplotlib
     - REPO=ansible/awx
     - REPO=cheshirekow/cmake_format
