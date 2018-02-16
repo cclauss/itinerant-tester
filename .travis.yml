@@ -1,21 +1,20 @@
 group: travis_latest
 language: python
 env:
+    - REPO=keredson/gnomecast
+    - REPO=carpedm20/ENAS-pytorch
     - REPO=gruns/icecream
     - REPO=aviaryan/VSCodeNotebook
     - REPO=facebookresearch/Detectron
     - REPO=tensorflow/models
     - REPO=toddmotto/public-apis
-    - REPO=keras-team/keras
-    - REPO=mherrmann/fbs
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=NullArray/AutoSploit
-    - REPO=pallets/flask
     - REPO=scikit-learn/scikit-learn
     - REPO=deepfakes/faceswap
+    - REPO=keras-team/keras
+    - REPO=pallets/flask
     - REPO=openai/gym
-    - REPO=3b1b/manim
-    - REPO=pypa/pipenv
+    - REPO=explosion/spaCy
+    - REPO=MrGemy95/Tensorflow-Project-Template
     - REPO=matplotlib/matplotlib
     - REPO=ansible/awx
     - REPO=cheshirekow/cmake_format
