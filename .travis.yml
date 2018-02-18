@@ -1,25 +1,27 @@
 group: travis_latest
 language: python
 env:
+    - REPO=schollz/raspberry-pi-turnkey
+    - REPO=colour-science/colour
     - REPO=keredson/gnomecast
-    - REPO=quentinhardy/msdat
-    - REPO=facebookresearch/Detectron
-    - REPO=carpedm20/ENAS-pytorch
     - REPO=kevinzakka/hyperband
-    - REPO=toddmotto/public-apis
-    - REPO=erezsh/lark
-    - REPO=malja/zroya
-    - REPO=tensorflow/models
+    - REPO=facebookresearch/Detectron
+    - REPO=quentinhardy/msdat
     - REPO=keras-team/keras
-    - REPO=MultiAgentLearning/playground
-    - REPO=deepfakes/faceswap
-    - REPO=EmbersArc/gym
+    - REPO=tensorflow/models
+    - REPO=erezsh/lark
+    - REPO=toddmotto/public-apis
+    - REPO=carpedm20/ENAS-pytorch
     - REPO=pypa/pipenv
+    - REPO=deepfakes/faceswap
     - REPO=kentsyx/Neural-IMage-Assessment
+    - REPO=openai/gym
+    - REPO=MultiAgentLearning/playground
+    - REPO=pandas-dev/pandas
     - REPO=IronLanguages/ironpython2
+    - REPO=scikit-learn/scikit-learn
+    - REPO=malja/zroya
     - REPO=MrGemy95/Tensorflow-Project-Template
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=donnemartin/system-design-primer
     - REPO=matplotlib/matplotlib
     - REPO=ansible/awx
     - REPO=cheshirekow/cmake_format
