@@ -1,27 +1,25 @@
 group: travis_latest
 language: python
 env:
-    - REPO=colour-science/colour
-    - REPO=schollz/raspberry-pi-turnkey
+    - REPO=Srinivas11789/PcapXray
+    - REPO=kriadmin/30-seconds-of-python-code
     - REPO=facebookresearch/Detectron
-    - REPO=keredson/gnomecast
-    - REPO=aniketpanjwani/chomper
-    - REPO=tensorflow/models
-    - REPO=MrGemy95/Tensorflow-Project-Template
-    - REPO=asciinema/asciinema
     - REPO=deepfakes/faceswap
-    - REPO=keras-team/keras
-    - REPO=kevinzakka/hyperband
-    - REPO=carpedm20/ENAS-pytorch
-    - REPO=donnemartin/system-design-primer
+    - REPO=schollz/raspberry-pi-turnkey
+    - REPO=tensorflow/models
+    - REPO=creafz/pytorch-cnn-finetune
+    - REPO=keredson/gnomecast
+    - REPO=MrGemy95/Tensorflow-Project-Template
+    - REPO=ZoomerAnalytics/git-xltrail
     - REPO=toddmotto/public-apis
-    - REPO=openai/gym
-    - REPO=pypa/pipenv
+    - REPO=imbal/safeyaml
+    - REPO=donnemartin/system-design-primer
+    - REPO=keras-team/keras
+    - REPO=colour-science/colour
+    - REPO=narrowfail/django-channels-chat
+    - REPO=asciinema/asciinema
+    - REPO=carpedm20/ENAS-pytorch
     - REPO=scikit-learn/scikit-learn
-    - REPO=quentinhardy/msdat
-    - REPO=erezsh/lark
-    - REPO=tensorflow/minigo
-    - REPO=markclayton/bumpster
     - REPO=matplotlib/matplotlib
     - REPO=ansible/awx
     - REPO=cheshirekow/cmake_format
