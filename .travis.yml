@@ -1,43 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=mfitzp/15-minute-apps
-    - REPO=Marten4n6/EvilOSX
-    - REPO=facebookresearch/Detectron
-    - REPO=minimaxir/big-list-of-naughty-strings
-    - REPO=kennethreitz/s3monkey
-    - REPO=tensorflow/models
-    - REPO=smoqadam/PyFladesk
-    - REPO=deepfakes/faceswap
-    - REPO=keras-team/keras
-    - REPO=pypa/pipenv
-    - REPO=donnemartin/system-design-primer
-    - REPO=openai/gym
-    - REPO=toddmotto/public-apis
-    - REPO=scikit-learn/scikit-learn
-    - REPO=kriadmin/30-seconds-of-python-code
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=shinseung428/ImageCompletion_IncompleteData
-    - REPO=omergunal/PoT
-    - REPO=llSourcell/Landing-a-SpaceX-Falcon-Heavy-Rocket
-    - REPO=matplotlib/matplotlib
-    - REPO=ansible/awx
-    - REPO=cheshirekow/cmake_format
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=/ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=hyperledger/fabric
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=luke-zhu/mdl-recs
+    - REPO=luke-zhu/mdl-web-scraping
 cache: pip
 python:
     - 2.7
