@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=python-modernize/python-modernize
+    - REPO=pypa/wheel
 cache: pip
 python:
     - 2.7
