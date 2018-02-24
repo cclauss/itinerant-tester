@@ -1,7 +1,39 @@
 group: travis_latest
 language: python
 env:
+    - REPO=chardet/chardet
+    - REPO=pypa/setuptools
+    - REPO=pypa/manylinux
+    - REPO=pypa/warehouse
+    - REPO=pypa/pipenv
+    - REPO=pypa/twine
+    - REPO=pypa/python-packaging-user-guide
+    - REPO=pypa/virtualenv
+    - REPO=pypa/sampleproject
     - REPO=pypa/wheel
+    - REPO=pypa/pip
+    - REPO=pypa/pypi-legacy
+    - REPO=pypa/pypa.io
+    - REPO=pypa/auditwheel
+    - REPO=pypa/setuptools_scm
+    - REPO=pypa/readme_renderer
+    - REPO=pypa/pypa-docs-theme
+    - REPO=pypa/packaging
+    - REPO=pypa/pep517
+    - REPO=pypa/pipfile
+    - REPO=pypa/sample-namespace-packages
+    - REPO=pypa/get-pip
+    - REPO=pypa/browntruck
+    - REPO=pypa/linehaul
+    - REPO=pypa/ssl
+    - REPO=pypa/pkg_resources
+    - REPO=pypa/interoperability-peps
+    - REPO=pypa/conveyor
+    - REPO=pypa/scripttest
+    - REPO=pypa/forklift
+    - REPO=pypa/pep470
+    - REPO=pypa/history
+    - REPO=pypa/pip-test-package
 cache: pip
 python:
     - 2.7
