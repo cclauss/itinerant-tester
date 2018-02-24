@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=benjaminp/six
+    - REPO=python-modernize/python-modernize
 cache: pip
 python:
     - 2.7
