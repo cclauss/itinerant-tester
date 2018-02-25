@@ -3,20 +3,20 @@ language: python
 env:
     - REPO=NVIDIA/FastPhotoStyle
     - REPO=facebookresearch/Detectron
-    - REPO=mfitzp/15-minute-apps
     - REPO=tensorflow/models
-    - REPO=kennethreitz/twitter-scraper
-    - REPO=boy-hack/w9scan
+    - REPO=mfitzp/15-minute-apps
     - REPO=toddmotto/public-apis
-    - REPO=deepfakes/faceswap
+    - REPO=kennethreitz/twitter-scraper
     - REPO=keras-team/keras
     - REPO=scikit-learn/scikit-learn
-    - REPO=donnemartin/system-design-primer
     - REPO=pypa/pipenv
+    - REPO=deepfakes/faceswap
     - REPO=llSourcell/Progressive_GANs
-    - REPO=minimaxir/big-list-of-naughty-strings
-    - REPO=google/python-fire
+    - REPO=boy-hack/w9scan
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=donnemartin/system-design-primer
     - REPO=wangshub/wechat_jump_game
+    - REPO=PaulSec/metasearch-public
     - REPO=matplotlib/matplotlib
     - REPO=ansible/awx
     - REPO=cheshirekow/cmake_format
