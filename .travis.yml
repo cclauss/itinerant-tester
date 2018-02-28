@@ -2,25 +2,26 @@ group: travis_latest
 language: python
 env:
     - REPO=NVIDIA/FastPhotoStyle
+    - REPO=eriklindernoren/Keras-GAN
     - REPO=deepmipt/DeepPavlov
-    - REPO=sjvasquez/handwriting-synthesis
-    - REPO=facebookresearch/Detectron
+    - REPO=chinese-poetry/chinese-poetry
     - REPO=tensorflow/models
+    - REPO=miyakogi/pyppeteer
+    - REPO=facebookresearch/Detectron
+    - REPO=sjvasquez/handwriting-synthesis
+    - REPO=jcesarstef/dotdotslash
+    - REPO=AtsushiSakai/PythonRobotics
     - REPO=keras-team/keras
     - REPO=pypa/pipenv
-    - REPO=openai/gym
-    - REPO=AtsushiSakai/PythonRobotics
-    - REPO=scikit-learn/scikit-learn
     - REPO=bitcoinbook/bitcoinbook
-    - REPO=fox-it/BloodHound.py
-    - REPO=toddmotto/public-apis
+    - REPO=Microsoft/Quantum
+    - REPO=Microsoft/MMdnn
     - REPO=minimaxir/big-list-of-naughty-strings
+    - REPO=toddmotto/public-apis
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pallets/flask
     - REPO=deepfakes/faceswap
     - REPO=merrychap/shellen
-    - REPO=eriklindernoren/Keras-GAN
-    - REPO=pallets/flask
-    - REPO=Microsoft/Quantum
-    - REPO=donnemartin/system-design-primer
     - REPO=matplotlib/matplotlib
     - REPO=ansible/awx
     - REPO=cheshirekow/cmake_format
