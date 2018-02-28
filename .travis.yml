@@ -1,7 +1,44 @@
 group: travis_latest
 language: python
 env:
-    - REPO=okfn/ofs
+    - REPO=eriklindernoren/Keras-GAN
+    - REPO=chinese-poetry/chinese-poetry
+    - REPO=NVIDIA/FastPhotoStyle
+    - REPO=instacart/lore
+    - REPO=deepmipt/DeepPavlov
+    - REPO=tensorflow/models
+    - REPO=Microsoft/MMdnn
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=miyakogi/pyppeteer
+    - REPO=kevingo/system-design-primer-zh-tw
+    - REPO=keras-team/keras
+    - REPO=facebookresearch/Detectron
+    - REPO=donnemartin/system-design-primer
+    - REPO=sjvasquez/handwriting-synthesis
+    - REPO=toddmotto/public-apis
+    - REPO=Microsoft/Quantum
+    - REPO=deepfakes/faceswap
+    - REPO=scikit-learn/scikit-learn
+    - REPO=TwoWater/Python
+    - REPO=pallets/flask
+    - REPO=pypa/pipenv
+    - REPO=matplotlib/matplotlib
+    - REPO=ansible/awx
+    - REPO=cheshirekow/cmake_format
+    - REPO=ArduPilot/ardupilot
+    - REPO=ArduPilot/pymavlink
+    - REPO=dronekit/dronekit-python
+    - REPO=PythonCharmers/python-future
+    - REPO=/ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=bl4de/security-tools
+    - REPO=hyperledger/fabric
+    - REPO=httplib2/httplib2
+    - REPO=Supervisor/supervisor
 cache: pip
 python:
     - 2.7
