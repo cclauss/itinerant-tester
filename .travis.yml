@@ -1,14 +1,27 @@
 group: travis_latest
 language: python
 env:
-    - REPO=sirex/gramtool
-    - REPO=sirex/databot
-    - REPO=sirex/atviriduomenys.lt
-    - REPO=sirex/databot-bots
-    - REPO=sirex/manopozicija.lt
+    #- REPO=sirex/gramtool
+    #- REPO=sirex/databot
+    #- REPO=sirex/atviriduomenys.lt
+    #- REPO=sirex/databot-bots
+    #- REPO=sirex/manopozicija.lt
+    - REPO=sirex/atviru-duomenu-poreikio-tyrimas
+    - REPO=sirex/ubuntu.lt
+    - REPO=sirex/duomenu-poreikio-tyrimas
+    - REPO=sirex/distaff
+    - REPO=sirex/savanoriai
+    - REPO=sirex/internet-voting-registration
+    - REPO=sirex/internet-voting-log-server
+    - REPO=sirex/wam
+    - REPO=sirex/passcheck
+    - REPO=sirex/rng
+    - REPO=sirex/exportrecipe
+    - REPO=sirex/cleanpyc
+    - REPO=sirex/configlog
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6.4
     #- nightly
     #- pypy
