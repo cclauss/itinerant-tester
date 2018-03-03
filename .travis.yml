@@ -1,8 +1,27 @@
 group: travis_latest
 language: python
 env:
-    - REPO=spyder-ide/spyder
-    - REPO=ansible/ansible
+    - REPO=Netflix-Skunkworks/aardvark
+    - REPO=Netflix-Skunkworks/bucketsnake
+    - REPO=Netflix-Skunkworks/cloudaux
+    - REPO=Netflix-Skunkworks/cloudy-kraken
+    - REPO=Netflix-Skunkworks/flagpole
+    - REPO=Netflix-Skunkworks/gcviz
+    - REPO=Netflix-Skunkworks/historical
+    - REPO=Netflix-Skunkworks/historical-reports
+    - REPO=Netflix-Skunkworks/napalm
+    - REPO=Netflix-Skunkworks/napalm-base
+    - REPO=Netflix-Skunkworks/napalm-eos
+    - REPO=Netflix-Skunkworks/napalm-iosxr
+    - REPO=Netflix-Skunkworks/napalm-junos
+    - REPO=Netflix-Skunkworks/policyuniverse
+    - REPO=Netflix-Skunkworks/raven-python-lambda
+    - REPO=Netflix-Skunkworks/raven-sqs-proxy
+    - REPO=Netflix-Skunkworks/repulsive-grizzly
+    - REPO=Netflix-Skunkworks/scumblr-spillguard
+    - REPO=Netflix-Skunkworks/swag-client
+    - REPO=Netflix-Skunkworks/swag-functions
+    - REPO=Netflix-Skunkworks/zerotodocker
 cache: pip
 python:
     - 2.7
