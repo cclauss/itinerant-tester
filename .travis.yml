@@ -1,44 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=merrychap/shellen
-    - REPO=Netflix/security_monkey
-    - REPO=asciinema/asciinema
-    - REPO=tensorflow/models
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=kennethreitz/twitter-scraper
-    - REPO=Zeta36/chess-alpha-zero
-    - REPO=keras-team/keras
-    - REPO=zalandoresearch/pt-dilate-rnn
-    - REPO=minimaxir/big-list-of-naughty-strings
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=instacart/lore
-    - REPO=robinsloan/sentencespace
-    - REPO=jhjacobsen/pytorch-i-revnet
-    - REPO=deepfakes/faceswap
-    - REPO=donnemartin/system-design-primer
-    - REPO=toddmotto/public-apis
-    - REPO=Viralmaniar/Passhunt
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=deepmipt/DeepPavlov
-    - REPO=bshaw19/Crypto_Trader
-    - REPO=matplotlib/matplotlib
-    - REPO=ansible/awx
-    - REPO=cheshirekow/cmake_format
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
-    - REPO=PythonCharmers/python-future
-    - REPO=/ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=bl4de/security-tools
-    - REPO=hyperledger/fabric
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
+    - REPO=mariapython/simple_chat
 cache: pip
 python:
     - 2.7
