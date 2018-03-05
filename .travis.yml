@@ -3,29 +3,26 @@ language: python
 env:
     - REPO=Zeta36/chess-alpha-zero
     - REPO=ray-project/ray
-    - REPO=omikun/MyAppNap
     - REPO=Viralmaniar/Passhunt
-    - REPO=kennethreitz/twitter-scraper
+    - REPO=omikun/MyAppNap
     - REPO=chinese-poetry/chinese-poetry
-    - REPO=asciinema/asciinema
     - REPO=tensorflow/models
-    - REPO=merrychap/shellen
+    - REPO=NVIDIA/FastPhotoStyle
     - REPO=keras-team/keras
+    - REPO=kennethreitz/twitter-scraper
+    - REPO=asciinema/asciinema
     - REPO=Microsoft/MMdnn
     - REPO=scikit-learn/scikit-learn
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=donnemartin/system-design-primer
-    - REPO=minimaxir/big-list-of-naughty-strings
-    - REPO=EvilPort2/Simple-OpenCV-Calculator
-    - REPO=pypa/pipenv
-    - REPO=bitcoinbook/bitcoinbook
     - REPO=facebookresearch/Detectron
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=donnemartin/system-design-primer
+    - REPO=pypa/pipenv
+    - REPO=merrychap/shellen
+    - REPO=pallets/flask
+    - REPO=initstring/linkedin2username
+    - REPO=mokemokechicken/reversi-alpha-zero
+    - REPO=deepfakes/faceswap
     - REPO=matplotlib/matplotlib
-    - REPO=ansible/awx
-    - REPO=cheshirekow/cmake_format
-    - REPO=ArduPilot/ardupilot
-    - REPO=ArduPilot/pymavlink
-    - REPO=dronekit/dronekit-python
     - REPO=PythonCharmers/python-future
     - REPO=/ckan/ckan
     - REPO=facebookresearch/ParlAI
@@ -35,12 +32,10 @@ env:
     - REPO=apache/beam
     - REPO=bl4de/security-tools
     - REPO=hyperledger/fabric
-    - REPO=httplib2/httplib2
-    - REPO=Supervisor/supervisor
 cache: pip
 python:
-    - 2.7
-    - 3.6.4
+    #- 2.7
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
