@@ -1,27 +1,28 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Zeta36/chess-alpha-zero
     - REPO=ray-project/ray
     - REPO=Viralmaniar/Passhunt
-    - REPO=omikun/MyAppNap
     - REPO=chinese-poetry/chinese-poetry
     - REPO=tensorflow/models
     - REPO=NVIDIA/FastPhotoStyle
+    - REPO=omikun/ForceNap
     - REPO=keras-team/keras
-    - REPO=kennethreitz/twitter-scraper
     - REPO=asciinema/asciinema
-    - REPO=Microsoft/MMdnn
-    - REPO=scikit-learn/scikit-learn
-    - REPO=facebookresearch/Detectron
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=donnemartin/system-design-primer
-    - REPO=pypa/pipenv
-    - REPO=merrychap/shellen
-    - REPO=pallets/flask
     - REPO=initstring/linkedin2username
-    - REPO=mokemokechicken/reversi-alpha-zero
+    - REPO=facebookresearch/Detectron
+    - REPO=Microsoft/MMdnn
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=scikit-learn/scikit-learn
+    - REPO=donnemartin/system-design-primer
+    - REPO=toddmotto/public-apis
     - REPO=deepfakes/faceswap
+    - REPO=merrychap/shellen
+    - REPO=eriklindernoren/Keras-GAN
+    - REPO=kennethreitz/twitter-scraper
+    - REPO=pypa/pipenv
+    - REPO=bystc/FaceRecognition
+    - REPO=mokemokechicken/reversi-alpha-zero
     - REPO=matplotlib/matplotlib
     - REPO=PythonCharmers/python-future
     - REPO=/ckan/ckan
