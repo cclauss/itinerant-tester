@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=httplib2/httplib2
+    - REPO=gabrielfalcao/HTTPretty
 cache: pip
 python:
     #- 2.7
