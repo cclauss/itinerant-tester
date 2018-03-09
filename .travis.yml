@@ -1,21 +1,44 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Netflix/repokid
-    - REPO=Netflix/lemur
-    - REPO=Netflix/security_monkey
-    - REPO=Netflix/codec_compare
-    - REPO=Netflix/stethoscope
-    - REPO=Netflix/hubcommander
-    - REPO=Netflix/bless
-    - REPO=Netflix/pygenie
-    - REPO=Netflix/aminator
-    - REPO=Netflix/sureal
-    - REPO=Netflix/lemur-docker
-    - REPO=Netflix/brutal
+    - REPO=isocpp/CppCoreGuidelines
+    - REPO=649/Memcrashed-DDoS-Exploit
+    - REPO=UnaPibaGeek/ctfr
+    - REPO=snipsco/snips-nlu
+    - REPO=tensorflow/models
+    - REPO=keras-team/keras
+    - REPO=vinta/awesome-python
+    - REPO=SpiderClub/haipproxy
+    - REPO=AirtestProject/Poco
+    - REPO=Miserlou/Zappa
+    - REPO=pypa/pipenv
+    - REPO=asciinema/asciinema
+    - REPO=ray-project/ray
+    - REPO=pallets/flask
+    - REPO=matroid/dlwithtf
+    - REPO=facebookresearch/Detectron
+    - REPO=adambielski/siamese-triplet
+    - REPO=ageitgey/face_recognition
+    - REPO=python/cpython
+    - REPO=toddmotto/public-apis
+    - REPO=NVIDIA-Jetson/tf_to_trt_image_classification
+    - REPO=projectchicago/gastoken
+    - REPO=pandas-dev/pandas
+    - REPO=django/django
+    - REPO=scikit-learn/scikit-learn
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
@@ -31,7 +54,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO} --branch=develop
+    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
