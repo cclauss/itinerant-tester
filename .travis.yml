@@ -10,22 +10,22 @@ env:
     - REPO=vinta/awesome-python
     - REPO=SpiderClub/haipproxy
     - REPO=AirtestProject/Poco
-    - REPO=Miserlou/Zappa
-    - REPO=pypa/pipenv
     - REPO=asciinema/asciinema
-    - REPO=ray-project/ray
     - REPO=pallets/flask
     - REPO=matroid/dlwithtf
     - REPO=facebookresearch/Detectron
+    - REPO=ray-project/ray
+    - REPO=Miserlou/Zappa
     - REPO=adambielski/siamese-triplet
-    - REPO=ageitgey/face_recognition
-    - REPO=python/cpython
-    - REPO=toddmotto/public-apis
-    - REPO=NVIDIA-Jetson/tf_to_trt_image_classification
     - REPO=projectchicago/gastoken
+    - REPO=ageitgey/face_recognition
+    - REPO=pypa/pipenv
+    - REPO=python/cpython
     - REPO=pandas-dev/pandas
-    - REPO=django/django
+    - REPO=donnemartin/system-design-primer
+    - REPO=toddmotto/public-apis
     - REPO=scikit-learn/scikit-learn
+    - REPO=django/django
     - REPO=matplotlib/matplotlib
     - REPO=PythonCharmers/python-future
     - REPO=ansible/ansible
@@ -35,6 +35,7 @@ env:
     - REPO=getsentry/sentry
     - REPO=ggtracker/sc2reader
     - REPO=apache/beam
+    - REPO=apache/spark
     - REPO=hyperledger/fabric
 cache: pip
 python:
