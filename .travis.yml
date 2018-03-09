@@ -1,7 +1,18 @@
 group: travis_latest
 language: python
 env:
-    - REPO=gabrielfalcao/HTTPretty
+    - REPO=Netflix/repokid
+    - REPO=Netflix/lemur
+    - REPO=Netflix/security_monkey
+    - REPO=Netflix/codec_compare
+    - REPO=Netflix/stethoscope
+    - REPO=Netflix/hubcommander
+    - REPO=Netflix/bless
+    - REPO=Netflix/pygenie
+    - REPO=Netflix/aminator
+    - REPO=Netflix/sureal
+    - REPO=Netflix/lemur-docker
+    - REPO=Netflix/brutal
 cache: pip
 python:
     #- 2.7
