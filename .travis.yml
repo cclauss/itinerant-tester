@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=deepfakes/faceswap
+    - REPO=spulec/freezegun
 cache: pip
 python:
     #- 2.7
