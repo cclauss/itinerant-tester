@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=https://github.com/osrf/rosbook
+    - REPO=osrf/rosbook
 cache: pip
 python:
     #- 2.7
