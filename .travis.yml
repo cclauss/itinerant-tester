@@ -19,7 +19,8 @@ env:
     - REPO=ros-infrastructure/rosinstall_generator
     - REPO=ros-infrastructure/rospkg
     - REPO=ros-infrastructure/rosrelease-legacy
-    - REPO=ros-infrastructure/superflorecache: pip
+    - REPO=ros-infrastructure/superflore
+cache: pip
 python:
     - 2.7
     - 3.6
@@ -28,7 +29,7 @@ python:
     #- pypy3
 matrix:
     allow_failures:
-        - python: 3.6
+        - python: nightly
         - python: pypy
         - python: pypy3
 install:
