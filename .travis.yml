@@ -2,6 +2,27 @@ group: travis_latest
 language: python
 env:
     - REPO=osrf/rosbook
+    - REPO=ros/rosdistro
+    - REPO=ros/ros_comm
+    - REPO=ros/genmsg
+    - REPO=ros/ros
+    - REPO=ros/urdf_parser_py
+    - REPO=ros/angles
+    - REPO=ros/xacro
+    - REPO=ros/catkin
+    - REPO=ros/joint_state_publisher
+    - REPO=ros/gencpp
+    - REPO=ros/dynamic_reconfigure
+    - REPO=ros/genpy
+    - REPO=ros/executive_smach
+    - REPO=ros/roslint
+    - REPO=ros/geometry_tutorials
+    - REPO=ros/genlisp
+    - REPO=ros/rosbag_image_compressor
+    - REPO=ros/tf2_visualization
+    - REPO=ros/documentation
+    - REPO=ros/gentypelibxml
+    - REPO=ros/genpybindings
 cache: pip
 python:
     - 2.7
