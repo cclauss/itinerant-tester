@@ -1,31 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=osrf/rosbook
-    - REPO=ros/rosdistro
-    - REPO=ros/ros_comm
-    - REPO=ros/genmsg
-    - REPO=ros/ros
-    - REPO=ros/urdf_parser_py
-    - REPO=ros/angles
-    - REPO=ros/xacro
-    - REPO=ros/catkin
-    - REPO=ros/joint_state_publisher
-    - REPO=ros/gencpp
-    - REPO=ros/dynamic_reconfigure
-    - REPO=ros/genpy
-    - REPO=ros/executive_smach
-    - REPO=ros/roslint
-    - REPO=ros/geometry_tutorials
-    - REPO=ros/genlisp
-    - REPO=ros/rosbag_image_compressor
-    - REPO=ros/tf2_visualization
-    - REPO=ros/documentation
-    - REPO=ros/gentypelibxml
-    - REPO=ros/genpybindings
+    - REPO=snipsco/snips-nlu
+    - REPO=tensorflow/models
+    - REPO=keras-team/keras
+    - REPO=BasioMeusPuga/Lector
+    - REPO=anvaka/word2vec-graph
+    - REPO=kevingo/system-design-primer-zh-tw
+    - REPO=donnemartin/system-design-primer
+    - REPO=vinta/awesome-python
+    - REPO=UnaPibaGeek/ctfr
+    - REPO=SpiderClub/haipproxy
+    - REPO=rg3/youtube-dl
+    - REPO=649/Memcrashed-DDoS-Exploit
+    - REPO=bitcoinbook/bitcoinbook
+    - REPO=facebookresearch/Detectron
+    - REPO=scikit-learn/scikit-learn
+    - REPO=isocpp/CppCoreGuidelines
+    - REPO=UltimateHackers/Arjun
+    - REPO=JacksonWuxs/datapy
+    - REPO=pypa/pipenv
+    - REPO=deepfakes/faceswap
+    - REPO=pytorch/pytorch
+    - REPO=zalando/patroni
+    - REPO=deepinsight/insightface
+    - REPO=XX-net/XX-Net
+    - REPO=toddmotto/public-apis
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
