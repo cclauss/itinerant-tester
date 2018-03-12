@@ -1,52 +1,34 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mzucker/noteshrink
-    - REPO=tensorflow/models
-    - REPO=snipsco/snips-nlu
-    - REPO=anvaka/word2vec-graph
-    - REPO=kevingo/system-design-primer-zh-tw
-    - REPO=mbadry1/DeepLearning.ai-Summary
-    - REPO=deepinsight/insightface
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=donnemartin/system-design-primer
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=BasioMeusPuga/Lector
-    - REPO=UnaPibaGeek/ctfr
-    - REPO=facebookresearch/Detectron
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=SpiderClub/haipproxy
-    - REPO=scikit-learn/scikit-learn
-    - REPO=rg3/youtube-dl
-    - REPO=deepfakes/faceswap
-    - REPO=pytorch/pytorch
-    - REPO=toddmotto/public-apis
-    - REPO=pypa/pipenv
-    - REPO=UltimateHackers/Arjun
-    - REPO=JacksonWuxs/datapy
-    - REPO=django/django
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
-cache: pip
+    - REPO=ros-infrastructure/bloom
+    - REPO=ros-infrastructure/buildfarm
+    - REPO=ros-infrastructure/catkin-sphinx
+    - REPO=ros-infrastructure/catkin_pkg
+    - REPO=ros-infrastructure/catkinize
+    - REPO=ros-infrastructure/dry_prerelease_job_generator
+    - REPO=ros-infrastructure/jenkins_tools
+    - REPO=ros-infrastructure/reprepro-updater
+    - REPO=ros-infrastructure/ros.org_scripts
+    - REPO=ros-infrastructure/ros_buildfarm
+    - REPO=ros-infrastructure/ros_buildfarm_config
+    - REPO=ros-infrastructure/ros_release_python
+    - REPO=ros-infrastructure/rosdep
+    - REPO=ros-infrastructure/rosdistro
+    - REPO=ros-infrastructure/rosdoc_lite
+    - REPO=ros-infrastructure/rosinstall_generator
+    - REPO=ros-infrastructure/rospkg
+    - REPO=ros-infrastructure/rosrelease-legacy
+    - REPO=ros-infrastructure/superflorecache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
     #- pypy3
 matrix:
     allow_failures:
-        - python: nightly
+        - python: 3.6
         - python: pypy
         - python: pypy3
 install:
