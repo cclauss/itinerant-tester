@@ -1,45 +1,21 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mzucker/noteshrink
-    - REPO=tensorflow/models
-    - REPO=snipsco/snips-nlu
-    - REPO=deepinsight/insightface
-    - REPO=keras-team/keras
-    - REPO=anvaka/word2vec-graph
-    - REPO=0xdea/tactical-exploitation
-    - REPO=vinta/awesome-python
-    - REPO=facebookresearch/Detectron
-    - REPO=donnemartin/system-design-primer
-    - REPO=kevingo/system-design-primer-zh-tw
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pypa/pipenv
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=django/django
-    - REPO=ageitgey/face_recognition
-    - REPO=XX-net/XX-Net
-    - REPO=toddmotto/public-apis
-    - REPO=pytorch/pytorch
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=locuslab/TCN
-    - REPO=UnaPibaGeek/ctfr
-    - REPO=requests/requests
-    - REPO=deepmipt/DeepPavlov
-    - REPO=asciinema/asciinema
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=Netflix/aminator
+    - REPO=Netflix/bless
+    - REPO=Netflix/brutal
+    - REPO=Netflix/codec_compare
+    - REPO=Netflix/hubcommander
+    - REPO=Netflix/lemur
+    - REPO=Netflix/lemur-docker
+    - REPO=Netflix/pygenie
+    - REPO=Netflix/repokid
+    - REPO=Netflix/security_monkey
+    - REPO=Netflix/stethoscope
+    - REPO=Netflix/sureal
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
