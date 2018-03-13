@@ -1,28 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ros-infrastructure/bloom
-    - REPO=ros-infrastructure/buildfarm
-    - REPO=ros-infrastructure/catkin-sphinx
-    - REPO=ros-infrastructure/catkin_pkg
-    - REPO=ros-infrastructure/catkinize
-    - REPO=ros-infrastructure/dry_prerelease_job_generator
-    - REPO=ros-infrastructure/jenkins_tools
-    - REPO=ros-infrastructure/reprepro-updater
-    - REPO=ros-infrastructure/ros.org_scripts
-    - REPO=ros-infrastructure/ros_buildfarm
-    - REPO=ros-infrastructure/ros_buildfarm_config
-    - REPO=ros-infrastructure/ros_release_python
-    - REPO=ros-infrastructure/rosdep
-    - REPO=ros-infrastructure/rosdistro
-    - REPO=ros-infrastructure/rosdoc_lite
-    - REPO=ros-infrastructure/rosinstall_generator
-    - REPO=ros-infrastructure/rospkg
-    - REPO=ros-infrastructure/rosrelease-legacy
-    - REPO=ros-infrastructure/superflore
+    - REPO=mzucker/noteshrink
+    - REPO=tensorflow/models
+    - REPO=snipsco/snips-nlu
+    - REPO=deepinsight/insightface
+    - REPO=keras-team/keras
+    - REPO=anvaka/word2vec-graph
+    - REPO=0xdea/tactical-exploitation
+    - REPO=vinta/awesome-python
+    - REPO=facebookresearch/Detectron
+    - REPO=donnemartin/system-design-primer
+    - REPO=kevingo/system-design-primer-zh-tw
+    - REPO=scikit-learn/scikit-learn
+    - REPO=pypa/pipenv
+    - REPO=chinese-poetry/chinese-poetry
+    - REPO=django/django
+    - REPO=ageitgey/face_recognition
+    - REPO=XX-net/XX-Net
+    - REPO=toddmotto/public-apis
+    - REPO=pytorch/pytorch
+    - REPO=NVIDIA/FastPhotoStyle
+    - REPO=locuslab/TCN
+    - REPO=UnaPibaGeek/ctfr
+    - REPO=requests/requests
+    - REPO=deepmipt/DeepPavlov
+    - REPO=asciinema/asciinema
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
