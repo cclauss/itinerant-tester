@@ -1,45 +1,18 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mzucker/noteshrink
-    - REPO=tensorflow/models
-    - REPO=typeintandem/tandem
-    - REPO=snipsco/snips-nlu
-    - REPO=BigNerd95/Chimay-Red
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=donnemartin/system-design-primer
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=facebookresearch/Detectron
-    - REPO=toddmotto/public-apis
-    - REPO=django/django
-    - REPO=anvaka/word2vec-graph
-    - REPO=ageitgey/face_recognition
-    - REPO=scikit-learn/scikit-learn
-    - REPO=certbot/certbot
-    - REPO=XX-net/XX-Net
-    - REPO=deepinsight/insightface
-    - REPO=pypa/pipenv
-    - REPO=asciinema/asciinema
-    - REPO=pytorch/pytorch
-    - REPO=vithursant/MagnetLoss-PyTorch
-    - REPO=locuslab/TCN
-    - REPO=python/cpython
-    - REPO=rg3/youtube-dl
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=uovobw/batmon
+    - REPO=uovobw/dns-python
+    - REPO=uovobw/doaddoad
+    - REPO=uovobw/ec2instancespricing
+    - REPO=uovobw/memory-monitor
+    - REPO=uovobw/nginx-proxy-config
+    - REPO=uovobw/pyql
+    - REPO=uovobw/qualysapi
+    - REPO=uovobw/storm-collectd
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
