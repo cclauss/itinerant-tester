@@ -1,7 +1,18 @@
 group: travis_latest
 language: python
 env:
-    - REPO=dabeaz/ply
+    - REPO=Netflix/aminator
+    - REPO=Netflix/bless  # has .travis.yml file
+    - REPO=Netflix/brutal
+    - REPO=Netflix/codec_compare
+    - REPO=Netflix/hubcommander  # has .travis.yml file
+    - REPO=Netflix/lemur  # has .travis.yml file
+    - REPO=Netflix/lemur-docker
+    - REPO=Netflix/pygenie  # has .travis.yml file
+    - REPO=Netflix/repokid  # has .travis.yml file
+    - REPO=Netflix/security_monkey  # has .travis.yml file
+    - REPO=Netflix/stethoscope  # has .travis.yml file
+    - REPO=Netflix/sureal  # has .travis.yml file
 cache: pip
 python:
     - 2.7
