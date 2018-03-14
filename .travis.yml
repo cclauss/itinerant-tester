@@ -1,15 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=uovobw/batmon
-    - REPO=uovobw/dns-python
-    - REPO=uovobw/doaddoad
-    - REPO=uovobw/ec2instancespricing
-    - REPO=uovobw/memory-monitor
-    - REPO=uovobw/nginx-proxy-config
-    - REPO=uovobw/pyql
-    - REPO=uovobw/qualysapi
-    - REPO=uovobw/storm-collectd
+    - REPO=xonsh/xonsh
 cache: pip
 python:
     - 2.7
