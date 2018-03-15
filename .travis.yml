@@ -1,7 +1,24 @@
 group: travis_latest
 language: python
 env:
-    - REPO=altair-viz/altair
+    - REPO=mariocj89/PyConES-2017  # has .travis.yml file
+    - REPO=mariocj89/core-workflow  # has .travis.yml file
+    - REPO=mariocj89/cpython  # has .travis.yml file
+    - REPO=mariocj89/dateutil  # has .travis.yml file
+    - REPO=mariocj89/dothub  # has .travis.yml file
+    - REPO=mariocj89/echaloasuerte  # has .travis.yml file
+    - REPO=mariocj89/etcaterva-deployment
+    - REPO=mariocj89/github-token  # has .travis.yml file
+    - REPO=mariocj89/gitorg  # has .travis.yml file
+    - REPO=mariocj89/hubsync  # has .travis.yml file
+    - REPO=mariocj89/pandas  # has .travis.yml file
+    - REPO=mariocj89/peps  # has .travis.yml file
+    - REPO=mariocj89/python-devguide  # has .travis.yml file
+    - REPO=mariocj89/python-fire  # has .travis.yml file
+    - REPO=mariocj89/pythondotorg  # has .travis.yml file
+    - REPO=mariocj89/pyvideo-data  # has .travis.yml file
+    - REPO=mariocj89/sealedmock  # has .travis.yml file
+    - REPO=mariocj89/tictactoe
 cache: pip
 python:
     - 2.7
