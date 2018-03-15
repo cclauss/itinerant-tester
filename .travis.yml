@@ -1,27 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mariocj89/PyConES-2017  # has .travis.yml file
-    - REPO=mariocj89/core-workflow  # has .travis.yml file
-    - REPO=mariocj89/cpython  # has .travis.yml file
-    - REPO=mariocj89/dateutil  # has .travis.yml file
-    - REPO=mariocj89/dothub  # has .travis.yml file
-    - REPO=mariocj89/echaloasuerte  # has .travis.yml file
-    - REPO=mariocj89/etcaterva-deployment
-    - REPO=mariocj89/github-token  # has .travis.yml file
-    - REPO=mariocj89/gitorg  # has .travis.yml file
-    - REPO=mariocj89/hubsync  # has .travis.yml file
-    - REPO=mariocj89/pandas  # has .travis.yml file
-    - REPO=mariocj89/peps  # has .travis.yml file
-    - REPO=mariocj89/python-devguide  # has .travis.yml file
-    - REPO=mariocj89/python-fire  # has .travis.yml file
-    - REPO=mariocj89/pythondotorg  # has .travis.yml file
-    - REPO=mariocj89/pyvideo-data  # has .travis.yml file
-    - REPO=mariocj89/sealedmock  # has .travis.yml file
-    - REPO=mariocj89/tictactoe
+    - REPO=mzucker/noteshrink
+    - REPO=typeintandem/tandem
+    - REPO=tensorflow/models
+    - REPO=BigNerd95/Chimay-Red
+    - REPO=snipsco/snips-nlu
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=chinese-poetry/chinese-poetry
+    - REPO=certbot/certbot
+    - REPO=facebookresearch/Detectron
+    - REPO=donnemartin/system-design-primer
+    - REPO=django/django
+    - REPO=uber-common/metta
+    - REPO=ageitgey/face_recognition
+    - REPO=vithursant/MagnetLoss-PyTorch
+    - REPO=deepinsight/insightface
+    - REPO=anvaka/word2vec-graph
+    - REPO=rg3/youtube-dl
+    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
+    - REPO=natasha/natasha
+    - REPO=tensorflow/magenta
+    - REPO=guillaumegenthial/sequence_tagging
+    - REPO=NVIDIA/FastPhotoStyle
+    - REPO=python/cpython
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
