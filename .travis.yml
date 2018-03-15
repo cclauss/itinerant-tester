@@ -1,36 +1,42 @@
 group: travis_latest
 language: python
 env:
-    - REPO=spotify/crtauth  # has .travis.yml file
-    - REPO=spotify/dataprocxy
-    - REPO=spotify/dh-virtualenv  # has .travis.yml file
-    - REPO=spotify/docker-stress
-    - REPO=spotify/docker_interface  # has .travis.yml file
-    - REPO=spotify/gcp-audit
-    - REPO=spotify/gcp-firewall-enforcer
-    - REPO=spotify/gordon  # has .travis.yml file
-    - REPO=spotify/gordon-gcp  # has .travis.yml file
-    - REPO=spotify/gordon-janitor  # has .travis.yml file
-    - REPO=spotify/gordon-janitor-gcp  # has .travis.yml file
-    - REPO=spotify/griffin  # has .travis.yml file
-    - REPO=spotify/luigi  # has .travis.yml file
-    - REPO=spotify/mlockexec
-    - REPO=spotify/postgresql-metrics
-    - REPO=spotify/pyeos
-    - REPO=spotify/pyfg
-    - REPO=spotify/pyschema
-    - REPO=spotify/python-graphwalker  # has .travis.yml file
-    - REPO=spotify/pythonflow  # has .travis.yml file
-    - REPO=spotify/requests-crtauth  # has .travis.yml file
-    - REPO=spotify/shumway  # has .travis.yml file
-    - REPO=spotify/snakebite  # has .travis.yml file
-    - REPO=spotify/sparkey-python
-    - REPO=spotify/spotify-tensorflow
-    - REPO=spotify/spymaster
-    - REPO=spotify/super-smash-brogp
-    - REPO=spotify/testing-game
-    - REPO=spotify/ulogger  # has .travis.yml file
-    - REPO=spotify/vdisk
+    - REPO=ambv/black
+    - REPO=tensorflow/models
+    - REPO=mzucker/noteshrink
+    - REPO=DanMcInerney/icebreaker
+    - REPO=typeintandem/tandem
+    - REPO=NVIDIA/FastPhotoStyle
+    - REPO=batzner/indrnn
+    - REPO=natasha/natasha
+    - REPO=keras-team/keras
+    - REPO=facebookresearch/Detectron
+    - REPO=vinta/awesome-python
+    - REPO=rg3/youtube-dl
+    - REPO=donnemartin/system-design-primer
+    - REPO=snipsco/snips-nlu
+    - REPO=XX-net/XX-Net
+    - REPO=certbot/certbot
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=django/django
+    - REPO=chinese-poetry/chinese-poetry
+    - REPO=tensorflow/magenta
+    - REPO=requests/requests
+    - REPO=ageitgey/face_recognition
+    - REPO=toddmotto/public-apis
+    - REPO=EvilPort2/Sign-Language
+    - REPO=pytorch/pytorch
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
