@@ -1,11 +1,36 @@
 group: travis_latest
 language: python
 env:
-    - REPO=uber-common/deep-neuroevolution
-    - REPO=uber-common/h1-python  # has .travis.yml file
-    - REPO=uber-common/metta
-    - REPO=uber-common/opentracing-python-instrumentation  # has .travis.yml file
-    - REPO=uber-common/snakebite  # has .travis.yml file
+    - REPO=spotify/crtauth  # has .travis.yml file
+    - REPO=spotify/dataprocxy
+    - REPO=spotify/dh-virtualenv  # has .travis.yml file
+    - REPO=spotify/docker-stress
+    - REPO=spotify/docker_interface  # has .travis.yml file
+    - REPO=spotify/gcp-audit
+    - REPO=spotify/gcp-firewall-enforcer
+    - REPO=spotify/gordon  # has .travis.yml file
+    - REPO=spotify/gordon-gcp  # has .travis.yml file
+    - REPO=spotify/gordon-janitor  # has .travis.yml file
+    - REPO=spotify/gordon-janitor-gcp  # has .travis.yml file
+    - REPO=spotify/griffin  # has .travis.yml file
+    - REPO=spotify/luigi  # has .travis.yml file
+    - REPO=spotify/mlockexec
+    - REPO=spotify/postgresql-metrics
+    - REPO=spotify/pyeos
+    - REPO=spotify/pyfg
+    - REPO=spotify/pyschema
+    - REPO=spotify/python-graphwalker  # has .travis.yml file
+    - REPO=spotify/pythonflow  # has .travis.yml file
+    - REPO=spotify/requests-crtauth  # has .travis.yml file
+    - REPO=spotify/shumway  # has .travis.yml file
+    - REPO=spotify/snakebite  # has .travis.yml file
+    - REPO=spotify/sparkey-python
+    - REPO=spotify/spotify-tensorflow
+    - REPO=spotify/spymaster
+    - REPO=spotify/super-smash-brogp
+    - REPO=spotify/testing-game
+    - REPO=spotify/ulogger  # has .travis.yml file
+    - REPO=spotify/vdisk
 cache: pip
 python:
     #- 2.7
