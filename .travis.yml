@@ -2,9 +2,11 @@ group: travis_latest
 language: python
 env:
     - REPO=robofab-developers/robofab
+    - REPO=robofab-developers/fontParts
+    - REPO=robofab-developers/fontPens
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
