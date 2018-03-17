@@ -1,9 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Nickolaim/exp_piservo
-    - REPO=Nickolaim/nick_toy_car
-    - REPO=Nickolaim/refresh_linear_algebra
+    - REPO=apache/beam
 cache: pip
 python:
     - 2.7
