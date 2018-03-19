@@ -1,42 +1,17 @@
 group: travis_latest
 language: python
 env:
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=sunainapai/makesite
-    - REPO=mzucker/noteshrink
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=ambv/black
-    - REPO=rg3/youtube-dl
-    - REPO=keras-team/keras
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=toddmotto/public-apis
-    - REPO=donnemartin/system-design-primer
-    - REPO=asciinema/asciinema
-    - REPO=jerry-git/thug-memes
-    - REPO=django/django
-    - REPO=facebookresearch/Detectron
-    - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=pandas-dev/pandas
-    - REPO=scikit-learn/scikit-learn
-    - REPO=python/cpython
-    - REPO=TheAlgorithms/Python
-    - REPO=requests/requests
-    - REPO=XX-net/XX-Net
-    - REPO=bad-day/TelegramTUI
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=harshildarji/Algorithms-HackerRank
+    - REPO=harshildarji/Compare-two-CSV-files
+    - REPO=harshildarji/Hacking-Ciphers
+    - REPO=harshildarji/Programming-Foundations-with-Python
+    - REPO=harshildarji/Python-HackerRank
+    - REPO=harshildarji/Python-Network-Programming
+    - REPO=harshildarji/anagrams
+    - REPO=harshildarji/country-module
+    - REPO=harshildarji/location_based_cryptography
+    - REPO=harshildarji/python-reverse-shell
+    - REPO=harshildarji/simple-client-server
 cache: pip
 python:
     #- 2.7
