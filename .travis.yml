@@ -1,31 +1,31 @@
 group: travis_latest
 language: python
 env:
+    - REPO=mm-mansour/Fast-Pandas
     - REPO=tensorflow/models
     - REPO=vinta/awesome-python
     - REPO=mzucker/noteshrink
     - REPO=NVIDIA/FastPhotoStyle
     - REPO=PetrochukM/PyTorch-NLP
-    - REPO=sunainapai/makesite
     - REPO=ambv/black
     - REPO=rg3/youtube-dl
+    - REPO=sunainapai/makesite
     - REPO=chinese-poetry/chinese-poetry
     - REPO=keras-team/keras
     - REPO=asciinema/asciinema
-    - REPO=scikit-learn/scikit-learn
+    - REPO=webosose/build-webos
     - REPO=toddmotto/public-apis
-    - REPO=donnemartin/system-design-primer
     - REPO=SpiderClub/haipproxy
+    - REPO=scikit-learn/scikit-learn
     - REPO=facebookresearch/Detectron
+    - REPO=donnemartin/system-design-primer
     - REPO=XX-net/XX-Net
     - REPO=django/django
     - REPO=josephmisiti/awesome-machine-learning
     - REPO=chaijunit/beibq
-    - REPO=pallets/flask
-    - REPO=webosose/build-webos
-    - REPO=requests/requests
     - REPO=deepfakes/faceswap
-    - REPO=pandas-dev/pandas
+    - REPO=pallets/flask
+    - REPO=requests/requests
     - REPO=matplotlib/matplotlib
     - REPO=PythonCharmers/python-future
     - REPO=ansible/ansible
