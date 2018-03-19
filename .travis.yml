@@ -3,6 +3,7 @@ language: python
 env:
     - REPO=numpy/numpy
     - REPO=sphinx-doc/sphinx
+    - REPO=sunainapai/makesite
 cache: pip
 python:
     - 2.7
