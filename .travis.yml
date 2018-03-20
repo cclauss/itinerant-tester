@@ -1,51 +1,23 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mm-mansour/Fast-Pandas
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=mzucker/noteshrink
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=ambv/black
-    - REPO=rg3/youtube-dl
-    - REPO=sunainapai/makesite
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=keras-team/keras
-    - REPO=asciinema/asciinema
-    - REPO=webosose/build-webos
-    - REPO=toddmotto/public-apis
-    - REPO=SpiderClub/haipproxy
-    - REPO=scikit-learn/scikit-learn
-    - REPO=facebookresearch/Detectron
-    - REPO=donnemartin/system-design-primer
-    - REPO=XX-net/XX-Net
-    - REPO=django/django
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=chaijunit/beibq
-    - REPO=deepfakes/faceswap
-    - REPO=pallets/flask
-    - REPO=requests/requests
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+- REPO=martindurant/astrobits
+- REPO=martindurant/ipythonD3
+- REPO=martindurant/misc
+- REPO=martindurant/splunk_connector
+- REPO=martindurant/starclassifier
+- REPO=martindurant/uavro
+- REPO=martindurant/xzarr
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
     #- pypy3
 matrix:
     allow_failures:
+        - python: 3.6
         - python: nightly
         - python: pypy
         - python: pypy3
