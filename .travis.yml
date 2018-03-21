@@ -1,45 +1,18 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ashnkumar/sketch-code
-    - REPO=StevenBlack/hosts
-    - REPO=UltimateHackers/hue
-    - REPO=tensorflow/models
-    - REPO=foolcage/fooltrader
-    - REPO=crista/exercises-in-programming-style
-    - REPO=ambv/black
-    - REPO=crazyguitar/pysheeet
-    - REPO=trailofbits/algo
-    - REPO=SpiderClub/haipproxy
-    - REPO=toddmotto/public-apis
-    - REPO=sa7mon/S3Scanner
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=modestyachts/ARS
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=pallets/flask
     - REPO=endgameinc/RTA
-    - REPO=facebookresearch/Detectron
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=donnemartin/system-design-primer
-    - REPO=mm-mansour/Fast-Pandas
-    - REPO=django/django
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=endgameinc/SANS_THIR16
+    - REPO=endgameinc/dga_predict
+    - REPO=endgameinc/django-piston
+    - REPO=endgameinc/gym-malware
+    - REPO=endgameinc/instegogram
+    - REPO=endgameinc/pehashd
+    - REPO=endgameinc/pyes
+    - REPO=endgameinc/youarespecial
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
