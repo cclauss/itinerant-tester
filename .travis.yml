@@ -1,13 +1,7 @@
 group: travis_latest
 language: python
 env:
-- REPO=martindurant/astrobits
-- REPO=martindurant/ipythonD3
-- REPO=martindurant/misc
-- REPO=martindurant/splunk_connector
-- REPO=martindurant/starclassifier
-- REPO=martindurant/uavro
-- REPO=martindurant/xzarr
+- REPO=andrix/python-snappy
 cache: pip
 python:
     - 2.7
