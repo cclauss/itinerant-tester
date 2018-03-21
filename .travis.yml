@@ -1,23 +1,57 @@
 group: travis_latest
 language: python
 env:
-- REPO=andrix/python-snappy
+    - REPO=ashnkumar/sketch-code
+    - REPO=StevenBlack/hosts
+    - REPO=UltimateHackers/hue
+    - REPO=tensorflow/models
+    - REPO=foolcage/fooltrader
+    - REPO=crista/exercises-in-programming-style
+    - REPO=ambv/black
+    - REPO=crazyguitar/pysheeet
+    - REPO=trailofbits/algo
+    - REPO=SpiderClub/haipproxy
+    - REPO=toddmotto/public-apis
+    - REPO=sa7mon/S3Scanner
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=modestyachts/ARS
+    - REPO=NVIDIA/FastPhotoStyle
+    - REPO=pallets/flask
+    - REPO=endgameinc/RTA
+    - REPO=facebookresearch/Detectron
+    - REPO=XX-net/XX-Net
+    - REPO=scikit-learn/scikit-learn
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=donnemartin/system-design-primer
+    - REPO=mm-mansour/Fast-Pandas
+    - REPO=django/django
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
     #- pypy3
 matrix:
     allow_failures:
-        - python: 3.6
         - python: nightly
         - python: pypy
         - python: pypy3
 install:
     #- pip install -r requirements.txt
-    - pip install flake8 pytest  # add other testing frameworks later
+    - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -29,7 +63,7 @@ script:
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    - pytest --capture=sys test_snappy.py
+    #- true  # pytest --capture=sys
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
