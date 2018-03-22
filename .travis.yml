@@ -1,15 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=endgameinc/RTA
-    - REPO=endgameinc/SANS_THIR16
-    - REPO=endgameinc/dga_predict
-    - REPO=endgameinc/django-piston
-    - REPO=endgameinc/gym-malware
-    - REPO=endgameinc/instegogram
-    - REPO=endgameinc/pehashd
-    - REPO=endgameinc/pyes
-    - REPO=endgameinc/youarespecial
+    - REPO=IBM/serverless-home-automation
 cache: pip
 python:
     - 2.7
