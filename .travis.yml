@@ -1,42 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=orsinium/textdistance
-    - REPO=salesforce/matchbox
-    - REPO=tensorflow/models
-    - REPO=guohongze/adminset
-    - REPO=mdbloice/Augmentor
-    - REPO=ceruleanacg/Personae
-    - REPO=keras-team/keras
-    - REPO=AirtestProject/Airtest
-    - REPO=ageitgey/face_recognition
-    - REPO=SpiderClub/haipproxy
-    - REPO=jiasenlu/NeuralBabyTalk
-    - REPO=vinta/awesome-python
-    - REPO=marcosfede/algorithms
-    - REPO=rg3/youtube-dl
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
-    - REPO=Squarespace/pgbedrock
-    - REPO=ansible/ansible
+    - REPO=cocodataset/cocoapi
     - REPO=billcccheng/instagram-terminal-news-feed
-    - REPO=pytorch/pytorch
-    - REPO=pallets/flask
-    - REPO=facebookresearch/Detectron
-    - REPO=pypa/pipenv
-    - REPO=django/django
-    - REPO=toddmotto/public-apis
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
