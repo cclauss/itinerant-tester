@@ -3,12 +3,12 @@ language: python
 env:
     - REPO=turtlebot/turtlebot_create
     - REPO=turtlebot/turtlebot_rcommander
-    - REPO=irobot/cfn-yaml-tags
-    - REPO=irobot/cfn-transform
-    - REPO=irobot/lambda-packager
-    - REPO=irobot/ssm-ctl
-    - REPO=irobot/cfn-custom-resource
-    - REPO=irobot/cfnlambda
+    - REPO=iRobotCorporation/cfn-yaml-tags
+    - REPO=iRobotCorporation/cfn-transform
+    - REPO=iRobotCorporation/lambda-packager
+    - REPO=iRobotCorporation/ssm-ctl
+    - REPO=iRobotCorporation/cfn-custom-resource
+    - REPO=iRobotCorporation/cfnlambda
 cache: pip
 python:
     - 2.7
