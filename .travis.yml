@@ -1,42 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=minimaxir/person-blocker
-    - REPO=ShivamSarodia/ShivyC
-    - REPO=mdbloice/Augmentor
-    - REPO=google/mozc-devices
-    - REPO=google/nucleus
-    - REPO=tensorflow/models
-    - REPO=tensorflow/hub
-    - REPO=billcccheng/instagram-terminal-news-feed
-    - REPO=dchrastil/ScrapedIn
-    - REPO=keras-team/keras
-    - REPO=orsinium/textdistance
-    - REPO=vinta/awesome-python
-    - REPO=donnemartin/system-design-primer
-    - REPO=toddmotto/public-apis
-    - REPO=bitcoinbook/bitcoinbook
-    - REPO=kamyu104/LeetCode
-    - REPO=ansleliu/LightNet
-    - REPO=python/cpython
-    - REPO=django/django
-    - REPO=Mr-Un1k0d3r/ClickOnceGenerator
-    - REPO=XX-net/XX-Net
-    - REPO=luongvo209/Awesome-Linux-Software
-    - REPO=rg3/youtube-dl
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=pyecharts/pyecharts
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=kamyu104/GoogleCodeJam-2014
+    - REPO=kamyu104/GoogleCodeJam-2015
+    - REPO=kamyu104/GoogleCodeJam-2016
+    - REPO=kamyu104/GoogleCodeJam-2017
 cache: pip
 python:
     #- 2.7
