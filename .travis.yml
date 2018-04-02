@@ -1,8 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=melodyguan/enas
-    - REPO=sharkdp/shell-functools
+    - REPO=Ceruleanacg/Reinforcement-Learning
+    - REPO=danthelion/doc2audiobook
+    - REPO=sdushantha/qr-filetransfer
+    - REPO=iOS-Tips/iOS-tech-set
 cache: pip
 python:
     - 2.7
