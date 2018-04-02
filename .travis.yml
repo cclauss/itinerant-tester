@@ -1,31 +1,31 @@
 group: travis_latest
 language: python
 env:
+    - REPO=Fewbytes/rubber-docker
     - REPO=minimaxir/person-blocker
     - REPO=Prodicode/ann-visualizer
-    - REPO=Fewbytes/rubber-docker
     - REPO=tensorflow/models
-    - REPO=ShivamSarodia/ShivyC
     - REPO=melodyguan/enas
-    - REPO=karpathy/find-birds
+    - REPO=ShivamSarodia/ShivyC
     - REPO=sharkdp/shell-functools
-    - REPO=google/mozc-devices
     - REPO=keras-team/keras
+    - REPO=karpathy/find-birds
+    - REPO=google/mozc-devices
     - REPO=vinta/awesome-python
-    - REPO=Ceruleanacg/Reinforcement-Learning
+    - REPO=localstack/localstack
     - REPO=pallets/flask
+    - REPO=toddmotto/public-apis
     - REPO=ageitgey/face_recognition
     - REPO=django/django
-    - REPO=danthelion/doc2audiobook
-    - REPO=toddmotto/public-apis
     - REPO=endernewton/iter-reason
+    - REPO=danthelion/doc2audiobook
     - REPO=orsinium/textdistance
-    - REPO=sdushantha/qr-filetransfer
-    - REPO=rg3/youtube-dl
-    - REPO=localstack/localstack
-    - REPO=iOS-Tips/iOS-tech-set
     - REPO=tensorflow/hub
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=rg3/youtube-dl
     - REPO=donnemartin/system-design-primer
+    - REPO=iOS-Tips/iOS-tech-set
+    - REPO=sdushantha/qr-filetransfer
     - REPO=matplotlib/matplotlib
     - REPO=PythonCharmers/python-future
     - REPO=ansible/ansible
