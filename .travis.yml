@@ -1,43 +1,36 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Fewbytes/rubber-docker
-    - REPO=minimaxir/person-blocker
-    - REPO=tensorflow/models
-    - REPO=Prodicode/ann-visualizer
-    - REPO=melodyguan/enas
-    - REPO=keras-team/keras
-    - REPO=marvis/pytorch-yolo3
-    - REPO=toddmotto/public-apis
-    - REPO=localstack/localstack
-    - REPO=rg3/youtube-dl
-    - REPO=facebookresearch/Detectron
-    - REPO=django/django
-    - REPO=vinta/awesome-python
-    - REPO=tzutalin/labelImg
-    - REPO=ageitgey/face_recognition
-    - REPO=sharkdp/shell-functools
-    - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
-    - REPO=salesforce/matchbox
-    - REPO=orsinium/textdistance
-    - REPO=donnemartin/system-design-primer
-    - REPO=ansible/ansible
-    - REPO=karpathy/find-birds
-    - REPO=mdbloice/Augmentor
-    - REPO=pytorch/examples
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
-cache: pip
+    - REPO=pypa/auditwheel  # has .travis.yml file
+    - REPO=pypa/browntruck
+    - REPO=pypa/conveyor
+    - REPO=pypa/forklift
+    - REPO=pypa/get-pip
+    - REPO=pypa/interoperability-peps
+    - REPO=pypa/linehaul  # has .travis.yml file
+    - REPO=pypa/manylinux  # has .travis.yml file
+    - REPO=pypa/packaging  # has .travis.yml file
+    - REPO=pypa/pep470
+    - REPO=pypa/pep517  # has .travis.yml file
+    - REPO=pypa/pip  # has .travis.yml file
+    - REPO=pypa/pipenv  # has .travis.yml file
+    - REPO=pypa/pipfile  # has .travis.yml file
+    - REPO=pypa/pkg_resources  # has .travis.yml file
+    - REPO=pypa/pypa-docs-theme
+    - REPO=pypa/pypa.io
+    - REPO=pypa/pypi-legacy
+    - REPO=pypa/python-packaging-user-guide  # has .travis.yml file
+    - REPO=pypa/readme_renderer  # has .travis.yml file
+    - REPO=pypa/sample-namespace-packages
+    - REPO=pypa/sampleproject  # has .travis.yml file
+    - REPO=pypa/scripttest  # has .travis.yml file
+    - REPO=pypa/setuptools  # has .travis.yml file
+    - REPO=pypa/setuptools_scm  # has .travis.yml file
+    - REPO=pypa/ssl  # has .travis.yml file
+    - REPO=pypa/twine  # has .travis.yml file
+    - REPO=pypa/virtualenv  # has .travis.yml file
+    - REPO=pypa/warehouse  # has .travis.yml file
+    - REPO=pypa/wheel  # has .travis.yml filecache: pip
 python:
     #- 2.7
     - 3.6
