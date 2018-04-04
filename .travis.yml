@@ -1,36 +1,43 @@
 group: travis_latest
 language: python
 env:
-    - REPO=pypa/auditwheel  # has .travis.yml file
-    - REPO=pypa/browntruck
-    - REPO=pypa/conveyor
-    - REPO=pypa/forklift
-    - REPO=pypa/get-pip
-    - REPO=pypa/interoperability-peps
-    - REPO=pypa/linehaul  # has .travis.yml file
-    - REPO=pypa/manylinux  # has .travis.yml file
-    - REPO=pypa/packaging  # has .travis.yml file
-    - REPO=pypa/pep470
-    - REPO=pypa/pep517  # has .travis.yml file
-    - REPO=pypa/pip  # has .travis.yml file
-    - REPO=pypa/pipenv  # has .travis.yml file
-    - REPO=pypa/pipfile  # has .travis.yml file
-    - REPO=pypa/pkg_resources  # has .travis.yml file
-    - REPO=pypa/pypa-docs-theme
-    - REPO=pypa/pypa.io
-    - REPO=pypa/pypi-legacy
-    - REPO=pypa/python-packaging-user-guide  # has .travis.yml file
-    - REPO=pypa/readme_renderer  # has .travis.yml file
-    - REPO=pypa/sample-namespace-packages
-    - REPO=pypa/sampleproject  # has .travis.yml file
-    - REPO=pypa/scripttest  # has .travis.yml file
-    - REPO=pypa/setuptools  # has .travis.yml file
-    - REPO=pypa/setuptools_scm  # has .travis.yml file
-    - REPO=pypa/ssl  # has .travis.yml file
-    - REPO=pypa/twine  # has .travis.yml file
-    - REPO=pypa/virtualenv  # has .travis.yml file
-    - REPO=pypa/warehouse  # has .travis.yml file
-    - REPO=pypa/wheel  # has .travis.yml filecache: pip
+    - REPO=Fewbytes/rubber-docker
+    - REPO=tensorflow/models
+    - REPO=minimaxir/person-blocker
+    - REPO=Prodicode/ann-visualizer
+    - REPO=marvis/pytorch-yolo3
+    - REPO=keras-team/keras
+    - REPO=melodyguan/enas
+    - REPO=Kyubyong/expressive_tacotron
+    - REPO=ShivamSarodia/ShivyC
+    - REPO=vinta/awesome-python
+    - REPO=tzutalin/labelImg
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=toddmotto/public-apis
+    - REPO=facebookresearch/Detectron
+    - REPO=rg3/youtube-dl
+    - REPO=home-assistant/home-assistant
+    - REPO=ageitgey/face_recognition
+    - REPO=billcccheng/instagram-terminal-news-feed
+    - REPO=django/django
+    - REPO=requests/requests
+    - REPO=asciinema/asciinema
+    - REPO=scikit-learn/scikit-learn
+    - REPO=donnemartin/system-design-primer
+    - REPO=localstack/localstack
+    - REPO=hugsy/gef
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
+cache: pip
 python:
     #- 2.7
     - 3.6
