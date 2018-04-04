@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=hugsy/gef
+    - REPO=lanjelot/twisted-honeypots
 cache: pip
 python:
     - 2.7
