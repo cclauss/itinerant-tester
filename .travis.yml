@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=jiasenlu/NeuralBabyTalk
+    - REPO=fastai/fastai
 cache: pip
 python:
     - 2.7
