@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=bonlime/keras-deeplab-v3-plus
-    - REPO=apachecn/scikit-learn-doc-zh
+    - REPO=IBM-Cloud/get-started-python
 cache: pip
 python:
     - 2.7
