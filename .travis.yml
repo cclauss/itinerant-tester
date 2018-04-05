@@ -1,7 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=beetbox/beets
+    - REPO=bonlime/keras-deeplab-v3-plus
+    - REPO=apachecn/scikit-learn-doc-zh
 cache: pip
 python:
     - 2.7
