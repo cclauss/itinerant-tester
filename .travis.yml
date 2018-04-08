@@ -21,8 +21,8 @@ matrix:
 #           - python-pip
 install:
     #- pip install -r requirements.txt
+    - sudo python2 -m pip install flake8
     - pip install flake8 future  # pytest  # add other testing frameworks later
-    - python2 -m pip install flake8
 before_script:
     - URL=https://github.com/${REPO}
     - URL=https://github.com/Upgrade-to-Python3/LeetCode
