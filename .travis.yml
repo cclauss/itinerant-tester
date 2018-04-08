@@ -2,9 +2,6 @@ group: travis_latest
 language: python
 env:
     - REPO=apachecn/LeetCode
-    - REPO=apachecn/MachineLearning
-    - REPO=apachecn/pytorch-doc-zh
-    - REPO=apachecn/scikit-learn-doc-zh
 cache: pip
 python:
     #- 2.7
@@ -19,19 +16,25 @@ matrix:
         - python: pypy3
 install:
     #- pip install -r requirements.txt
-    - pip install flake8  # pytest  # add other testing frameworks later
+    - pip install flake8 future  # pytest  # add other testing frameworks later
+    - python2 -m pip install flake8
 before_script:
     - URL=https://github.com/${REPO}
+    - URL=https://github.com/Upgrade-to-Python3/LeetCode
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
-    - echo stop the build if there are Python syntax errors or undefined names
+    - echo stop the build if there are Python 2 syntax errors or undefined names
+    - echo ; echo -n "flake8 testing of ${URL} on " ; python2 -V
+    - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - git remote add upstream https://github.com/${REPO}
+    - git checkout -b modernize-python2-code
+    - futurize --stage1 -w **/*.py
+    - git commit --all -m "Modernize Python 2 code to get ready for Python 3"
+    - git push --set-upstream origin modernize-python2-code
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-    - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    #- true  # pytest --capture=sys
+    - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
