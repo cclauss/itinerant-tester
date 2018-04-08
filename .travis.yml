@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=apachecn/LeetCode
+    - REPO=RUB-SysSec/kAFL
 cache: pip
 python:
     - 2.7
