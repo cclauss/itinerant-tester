@@ -3,7 +3,8 @@ group: travis_latest
 language: python
 env:
     - REPO=apachecn/LeetCode
-cache: pip
+global:
+    secure: X53s05cvse7FxURpdULFVa3JZRkMBLcCiThQLsihyGiSULV4obhXLka5dcbpCULeR7AD9/sLqMQkXAj+H0T7VtuHuHTDYQZl7S+kgn0fAQ7AtZMriS3i6UgyK2aMXwkFXvsAb+zFBXWlqYPfVx0KHinn5ZNzxChSb2waesVvFObCFnbGLuOc6kJeni5Amkf8SWkiEel6FXjs8ivYQOAc2kg4g5Nq3i/1Tvw2lqg+S42loJo2QknPVOaf4R/7qUXpT4VOH8KwCsDUcy8Iy6KaG6oGF789IxZ1soxV4PWhv3aiTxBC/BNTs9bEzLuTYt7g/Hq6eYxmwHK60s5bwE9JMOwZNwJxKIQ/MVnXT99pg+fFZQv2IABdNfrePfc5XsTsK+p0WIsNHt49+yoQopGJ+5kKPiE6x1on1gxoDVwsgzP/nDk282/+ETcLFTZkByXMidzlIKhLs6wsCCLciL+A9X0+VOKIhnIL7D3yDRRDOpgVYfg2yvYl6enDHafHoAT30uxY0x1wgG2aFz0ArCYprcm0IbpSecXKZ5yWbf4essi6nz0zpuRv2n1VOJou0FRE6UsIYkFbrub1HHDdNUbWtR9poZmuLF6bwUWUQ/Ca8DkYNQ8rj2SW/al3p5gk0xVeEsN+SPjm4P2VOcJ+n6+YUDX84fNvtnKTs+oBzvM4pDU=cache: pip
 python:
     #- 2.7
     - 3.6
@@ -32,8 +33,8 @@ before_script:
 script:
     - echo stop the build if there are Python 2 syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python2 -V
-    # - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-    - git remote add upstream https://github.com/${REPO}
+    - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - git remote add upstream https://cclauss:${GITHUB_TOKEN}$@github.com/${REPO}
     - git checkout -b modernize-python2-code
     - futurize --stage1 -w .
     - git commit --all -m "Modernize Python 2 code to get ready for Python 3"
