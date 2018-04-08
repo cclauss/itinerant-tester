@@ -1,45 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=bijection/sistine
-    - REPO=hardikvasa/google-images-download
-    - REPO=UltimateHackers/Decodify
-    - REPO=tensorflow/models
-    - REPO=LijieFan/tvnet
-    - REPO=vinta/awesome-python
-    - REPO=GauravBh1010tt/DeepLearn
-    - REPO=keras-team/keras
-    - REPO=Fewbytes/rubber-docker
-    - REPO=pallets/flask
-    - REPO=apachecn/MachineLearning
-    - REPO=Prodicode/ann-visualizer
-    - REPO=apachecn/scikit-learn-doc-zh
-    - REPO=django/django
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=rg3/youtube-dl
-    - REPO=BoXiao123/py-tiny-yolo-from-scratch
-    - REPO=matterport/Mask_RCNN
-    - REPO=asciinema/asciinema
-    - REPO=scikit-learn/scikit-learn
-    - REPO=ageitgey/face_recognition
-    - REPO=chinese-poetry/chinese-poetry
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=flipkart-incubator/Astra
-    - REPO=openai/gym
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=apachecn/LeetCode
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
