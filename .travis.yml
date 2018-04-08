@@ -35,7 +35,7 @@ script:
     # - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - git remote add upstream https://github.com/${REPO}
     - git checkout -b modernize-python2-code
-    - futurize --stage1 -w **/*.py
+    - futurize --stage1 -w .
     - git commit --all -m "Modernize Python 2 code to get ready for Python 3"
     - git push --set-upstream origin modernize-python2-code
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
