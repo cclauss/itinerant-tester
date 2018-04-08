@@ -32,7 +32,7 @@ before_script:
 script:
     - echo stop the build if there are Python 2 syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python2 -V
-    - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    # - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - git remote add upstream https://github.com/${REPO}
     - git checkout -b modernize-python2-code
     - futurize --stage1 -w **/*.py
