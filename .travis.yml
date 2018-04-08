@@ -1,10 +1,43 @@
-sudo: required
 group: travis_latest
 language: python
 env:
-    - REPO=apachecn/LeetCode
-global:
-    secure: X53s05cvse7FxURpdULFVa3JZRkMBLcCiThQLsihyGiSULV4obhXLka5dcbpCULeR7AD9/sLqMQkXAj+H0T7VtuHuHTDYQZl7S+kgn0fAQ7AtZMriS3i6UgyK2aMXwkFXvsAb+zFBXWlqYPfVx0KHinn5ZNzxChSb2waesVvFObCFnbGLuOc6kJeni5Amkf8SWkiEel6FXjs8ivYQOAc2kg4g5Nq3i/1Tvw2lqg+S42loJo2QknPVOaf4R/7qUXpT4VOH8KwCsDUcy8Iy6KaG6oGF789IxZ1soxV4PWhv3aiTxBC/BNTs9bEzLuTYt7g/Hq6eYxmwHK60s5bwE9JMOwZNwJxKIQ/MVnXT99pg+fFZQv2IABdNfrePfc5XsTsK+p0WIsNHt49+yoQopGJ+5kKPiE6x1on1gxoDVwsgzP/nDk282/+ETcLFTZkByXMidzlIKhLs6wsCCLciL+A9X0+VOKIhnIL7D3yDRRDOpgVYfg2yvYl6enDHafHoAT30uxY0x1wgG2aFz0ArCYprcm0IbpSecXKZ5yWbf4essi6nz0zpuRv2n1VOJou0FRE6UsIYkFbrub1HHDdNUbWtR9poZmuLF6bwUWUQ/Ca8DkYNQ8rj2SW/al3p5gk0xVeEsN+SPjm4P2VOcJ+n6+YUDX84fNvtnKTs+oBzvM4pDU=cache: pip
+    - REPO=bijection/sistine
+    - REPO=hardikvasa/google-images-download
+    - REPO=UltimateHackers/Decodify
+    - REPO=tensorflow/models
+    - REPO=LijieFan/tvnet
+    - REPO=vinta/awesome-python
+    - REPO=GauravBh1010tt/DeepLearn
+    - REPO=keras-team/keras
+    - REPO=Fewbytes/rubber-docker
+    - REPO=pallets/flask
+    - REPO=apachecn/MachineLearning
+    - REPO=Prodicode/ann-visualizer
+    - REPO=apachecn/scikit-learn-doc-zh
+    - REPO=django/django
+    - REPO=CSAILVision/semantic-segmentation-pytorch
+    - REPO=rg3/youtube-dl
+    - REPO=BoXiao123/py-tiny-yolo-from-scratch
+    - REPO=matterport/Mask_RCNN
+    - REPO=asciinema/asciinema
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ageitgey/face_recognition
+    - REPO=chinese-poetry/chinese-poetry
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=flipkart-incubator/Astra
+    - REPO=openai/gym
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
+cache: pip
 python:
     #- 2.7
     - 3.6
@@ -16,31 +49,21 @@ matrix:
         - python: nightly
         - python: pypy
         - python: pypy3
-#addons:
-#   apt:
-#       packages:
-#           - python-pip
 install:
     #- pip install -r requirements.txt
-    - sudo python2 -m pip install flake8
-    - pip install flake8 future  # pytest  # add other testing frameworks later
+    - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
     - URL=https://github.com/${REPO}
-    - URL=https://github.com/Upgrade-to-Python3/LeetCode
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
     - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
-    - echo stop the build if there are Python 2 syntax errors or undefined names
-    - echo ; echo -n "flake8 testing of ${URL} on " ; python2 -V
-    - python2 -m flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-    - git remote add upstream https://cclauss:${GITHUB_TOKEN}@github.com/${REPO}
-    - git checkout -b modernize-python2-code
-    - futurize --stage1 -w .
-    - git commit --all -m "Modernize Python 2 code to get ready for Python 3"
-    - git push --set-upstream origin modernize-python2-code
+    - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    #- true  # pytest --capture=sys
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
