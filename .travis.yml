@@ -1,36 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ibm/MAX-Image-Caption-Generator
-    - REPO=ibm/MAX-Inception-ResNet-v2
-    - REPO=ibm/MAX-News-Text-Generator
-    - REPO=ibm/MAX-Object-Detector
-    - REPO=ibm/MAX-Places365-CNN
-    - REPO=ibm/MAX-ResNet-50
-    - REPO=ibm/MAX-Review-Text-Generator
-    - REPO=ibm/MAX-Sports-Video-Classifier
-    - REPO=ibm/Model-Training-and-Serving-using-WML
-    - REPO=ibm/PodcastDownloader
-    - REPO=ibm/Portfolio-Optimize  # has .travis.yml file
-    - REPO=ibm/Portfolio-compute  # has .travis.yml file
-    - REPO=ibm/Predictive-Market-Stress-Testing  # has .travis.yml file
-    - REPO=ibm/adversarial-robustness-toolbox  # has .travis.yml file
-    - REPO=ibm/deploy-ibm-cloud-private
-    - REPO=ibm/dmclient
-    - REPO=ibm/fuse-webhdfs
-    - REPO=ibm/ibm-cos-sdk-python  # has .travis.yml file
-    - REPO=ibm/ibm-cos-sdk-python-core
-    - REPO=ibm/ibm-cos-sdk-python-s3transfer  # has .travis.yml file
-    - REPO=ibm/metrics-collector-client-kubernetes
-    - REPO=ibm/nlc-icd10-demo
-    - REPO=ibm/osslm-ansible-resource-manager
-    - REPO=ibm/osslm-docker-adaptor
-    - REPO=ibm/plex
-    - REPO=ibm/pytorch-seq2seq  # has .travis.yml file
-    - REPO=ibm/pyxcli
-    - REPO=ibm/tensorflow-hangul-recognition  # has .travis.yml file
-    - REPO=ibm/tensorflow-kubernetes-art-classification
-    - REPO=ibm/watson-online-store  # has .travis.yml filecache: pip
+    - REPO=OpenMined/PySyft
 python:
     #- 2.7
     - 3.6
