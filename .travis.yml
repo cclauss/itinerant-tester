@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=RUB-SysSec/kAFL
+    - REPO=ray-project/ray
 cache: pip
 python:
     - 2.7
