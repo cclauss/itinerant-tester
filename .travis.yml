@@ -1,7 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=apachecn/MachineLearning
+    - REPO=hugsy/gef
+    - REPO=hugsy/gef-extras
 cache: pip
 python:
     - 2.7
