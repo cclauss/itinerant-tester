@@ -23,7 +23,7 @@ before_script:
     - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
-    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=100 --statistics
+    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=79 --statistics
     #- true  # pytest --capture=sys
 notifications:
     on_success: change
