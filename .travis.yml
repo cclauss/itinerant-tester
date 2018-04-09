@@ -1,7 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ray-project/ray
+    - REPO=endernewton/iter-reason
+    - REPO=apachecn/LeetCode
+    - REPO=apache/beam
 cache: pip
 python:
     - 2.7
