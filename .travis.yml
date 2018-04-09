@@ -1,9 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=endernewton/iter-reason
-    - REPO=apachecn/LeetCode
-    - REPO=apache/beam
+    - REPO=invictus1306/Workshop-BSidesMunich2018
+    - REPO=jiesutd/NCRFpp
+    - REPO=baverman/vial-http
+    - REPO=vysec/DomLink
 cache: pip
 python:
     - 2.7
