@@ -1,45 +1,31 @@
 group: travis_latest
 language: python
 env:
-    - REPO=KonradIT/gopro-py-api
-    - REPO=hardikvasa/google-images-download
-    - REPO=bijection/sistine
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=vysec/DomLink
-    - REPO=Fewbytes/rubber-docker
-    - REPO=qq547276542/Agriculture_KnowledgeGraph
-    - REPO=donnemartin/system-design-primer
-    - REPO=adamisntdead/QuSimPy
-    - REPO=keras-team/keras
-    - REPO=matterport/Mask_RCNN
-    - REPO=toddmotto/public-apis
-    - REPO=pallets/flask
-    - REPO=django/django
-    - REPO=python/cpython
-    - REPO=apachecn/MachineLearning
-    - REPO=threerocks/studyFiles
-    - REPO=scikit-learn/scikit-learn
-    - REPO=XX-net/XX-Net
-    - REPO=UltimateHackers/Decodify
-    - REPO=ansible/ansible
-    - REPO=StevenBlack/hosts
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=evilsocket/BBFlux
+    - REPO=evilsocket/CVE-2017-0785
+    - REPO=evilsocket/Pynject
+    - REPO=evilsocket/SWG
+    - REPO=evilsocket/SafeInCloud
+    - REPO=evilsocket/Sublime-Text-2-EmotiCODE-Plugin
+    - REPO=evilsocket/altair
+    - REPO=evilsocket/backupbox
+    - REPO=evilsocket/bleah
+    - REPO=evilsocket/coffee
+    - REPO=evilsocket/fang
+    - REPO=evilsocket/fido
+    - REPO=evilsocket/glastopf  # has .travis.yml file
+    - REPO=evilsocket/keras  # has .travis.yml file
+    - REPO=evilsocket/mmdb2json
+    - REPO=evilsocket/octoghost
+    - REPO=evilsocket/opensnitch  # has .travis.yml file
+    - REPO=evilsocket/password_scrambler
+    - REPO=evilsocket/rpi-l298n-motor-driver
+    - REPO=evilsocket/smali_emulator
+    - REPO=invictus1306/Workshop-BSidesMunich2018
+    - REPO=invictus1306/zipfuzz
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
