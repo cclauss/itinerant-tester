@@ -1,30 +1,30 @@
 group: travis_latest
 language: python
 env:
+    - REPO=adamisntdead/QuSimPy
     - REPO=KonradIT/gopro-py-api
+    - REPO=CSAILVision/semantic-segmentation-pytorch
     - REPO=hardikvasa/google-images-download
     - REPO=bijection/sistine
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=adamisntdead/QuSimPy
     - REPO=facebookresearch/video-nonlocal-net
-    - REPO=PetrochukM/PyTorch-NLP
     - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=qq547276542/Agriculture_KnowledgeGraph
+    - REPO=PetrochukM/PyTorch-NLP
+    - REPO=mame82/P4wnP1
     - REPO=neozhaoliang/pywonderland
-    - REPO=Fewbytes/rubber-docker
+    - REPO=vinta/awesome-python
     - REPO=keras-team/keras
     - REPO=matterport/Mask_RCNN
-    - REPO=vysec/DomLink
-    - REPO=pallets/flask
+    - REPO=qq547276542/Agriculture_KnowledgeGraph
     - REPO=threerocks/studyFiles
-    - REPO=donnemartin/system-design-primer
     - REPO=devendrachaplot/Neural-Localization
-    - REPO=wee-slack/wee-slack
+    - REPO=Fewbytes/rubber-docker
+    - REPO=asciinema/asciinema
     - REPO=ansible/ansible
-    - REPO=django/django
     - REPO=scikit-learn/scikit-learn
-    - REPO=apachecn/MachineLearning
+    - REPO=wee-slack/wee-slack
+    - REPO=wting/autojump
+    - REPO=django/django
+    - REPO=pallets/flask
     - REPO=toddmotto/public-apis
     - REPO=matplotlib/matplotlib
     - REPO=PythonCharmers/python-future
