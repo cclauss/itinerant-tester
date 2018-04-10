@@ -1,42 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=adamisntdead/QuSimPy
-    - REPO=KonradIT/gopro-py-api
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=hardikvasa/google-images-download
-    - REPO=bijection/sistine
-    - REPO=facebookresearch/video-nonlocal-net
-    - REPO=tensorflow/models
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=mame82/P4wnP1
-    - REPO=neozhaoliang/pywonderland
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=matterport/Mask_RCNN
-    - REPO=qq547276542/Agriculture_KnowledgeGraph
-    - REPO=threerocks/studyFiles
-    - REPO=devendrachaplot/Neural-Localization
-    - REPO=Fewbytes/rubber-docker
-    - REPO=asciinema/asciinema
-    - REPO=ansible/ansible
-    - REPO=scikit-learn/scikit-learn
-    - REPO=wee-slack/wee-slack
-    - REPO=wting/autojump
-    - REPO=django/django
-    - REPO=pallets/flask
-    - REPO=toddmotto/public-apis
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=apache/incubator-mxnet
 cache: pip
 python:
     #- 2.7
