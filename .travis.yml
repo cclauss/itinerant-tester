@@ -1,42 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=hzy46/Deep-Learning-21-Examples
-    - REPO=adamisntdead/QuSimPy
-    - REPO=Ahmkel/Keras-Project-Template
-    - REPO=tensorflow/models
-    - REPO=facebookresearch/video-nonlocal-net
-    - REPO=uber-common/differentiable-plasticity
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=mame82/P4wnP1
-    - REPO=bijection/sistine
-    - REPO=hannob/snallygaster
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=toddmotto/public-apis
-    - REPO=wting/autojump
-    - REPO=awslabs/serverless-application-model
-    - REPO=hardikvasa/google-images-download
-    - REPO=rg3/youtube-dl
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=matterport/Mask_RCNN
-    - REPO=KonradIT/gopro-py-api
-    - REPO=python/cpython
-    - REPO=outcastofmusic/quick-nlp
-    - REPO=pypa/pipenv
-    - REPO=evilsocket/opensnitch
-    - REPO=scikit-learn/scikit-learn
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=apache/hive
 cache: pip
 python:
     #- 2.7
