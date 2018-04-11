@@ -1,7 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=adamisntdead/QuSimPy
+    - REPO=Ahmkel/Keras-Project-Template
+    - REPO=mame82/P4wnP1
+    - REPO=facebookresearch/video-nonlocal-net
 cache: pip
 python:
     - 2.7
