@@ -1,12 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=hzy46/Deep-Learning-21-Examples
-    - REPO=wting/autojump
+    - REPO=immunIT/drupwn
 cache: pip
 python:
     - 2.7
-    #- 3.6
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
