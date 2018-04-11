@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=apache/incubator-mxnet
+    - REPO=adamisntdead/QuSimPy
 cache: pip
 python:
     - 2.7
