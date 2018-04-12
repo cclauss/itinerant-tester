@@ -1,42 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=hzy46/Deep-Learning-21-Examples
-    - REPO=hannob/snallygaster
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=mame82/P4wnP1
-    - REPO=keras-team/keras
-    - REPO=deepfakes/faceswap
-    - REPO=matterport/Mask_RCNN
-    - REPO=Ahmkel/Keras-Project-Template
-    - REPO=rg3/youtube-dl
-    - REPO=toddmotto/public-apis
-    - REPO=wting/autojump
-    - REPO=evilsocket/opensnitch
-    - REPO=donnemartin/system-design-primer
-    - REPO=ansible/ansible
-    - REPO=scikit-learn/scikit-learn
-    - REPO=uber-common/differentiable-plasticity
-    - REPO=pallets/flask
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=bijection/sistine
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=python/cpython
-    - REPO=facebookresearch/Detectron
-    - REPO=asciinema/asciinema
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=McSinyx/Violympic-Exploit
+    - REPO=McSinyx/basencoding
+    - REPO=McSinyx/brutalmaze
+    - REPO=McSinyx/comp
+    - REPO=McSinyx/slacker-game
 cache: pip
 python:
     #- 2.7
