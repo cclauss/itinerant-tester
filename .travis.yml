@@ -1,25 +1,36 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ActiveState/APy
-    - REPO=ActiveState/appdirs  # has .travis.yml file
-    - REPO=ActiveState/applib
-    - REPO=ActiveState/code
-    - REPO=ActiveState/depgraph
-    - REPO=ActiveState/ez_setup
-    - REPO=ActiveState/fabric
-    - REPO=ActiveState/filearchive
-    - REPO=ActiveState/lxml
-    - REPO=ActiveState/mk
-    - REPO=ActiveState/neuroblast
-    - REPO=ActiveState/pandas  # has .travis.yml file
-    - REPO=ActiveState/paramiko  # has .travis.yml file
-    - REPO=ActiveState/php-buildpack-legacy
-    - REPO=ActiveState/pydoozer
-    - REPO=ActiveState/pythonselect
-    - REPO=ActiveState/simplealchemy
-    - REPO=ActiveState/tensorflask
-cache: pip
+    - REPO=kennethreitz/Zappa  # has .travis.yml file
+    - REPO=kennethreitz/clint  # has .travis.yml file
+    - REPO=kennethreitz/crayons
+    - REPO=kennethreitz/delegator.py
+    - REPO=kennethreitz/dj-database-url  # has .travis.yml file
+    - REPO=kennethreitz/em-keyboard
+    - REPO=kennethreitz/env  # has .travis.yml file
+    - REPO=kennethreitz/flango
+    - REPO=kennethreitz/grequests
+    - REPO=kennethreitz/heroku-platform
+    - REPO=kennethreitz/httpbin  # has .travis.yml file
+    - REPO=kennethreitz/legit  # has .travis.yml file
+    - REPO=kennethreitz/maya  # has .travis.yml file
+    - REPO=kennethreitz/package_control_channel  # has .travis.yml file
+    - REPO=kennethreitz/pipenv-sublime
+    - REPO=kennethreitz/pyfakefs  # has .travis.yml file
+    - REPO=kennethreitz/pysoundcloud
+    - REPO=kennethreitz/pytest-pypi  # has .travis.yml file
+    - REPO=kennethreitz/python-jsonhyperschema-codec  # has .travis.yml file
+    - REPO=kennethreitz/records  # has .travis.yml file
+    - REPO=kennethreitz/requests-core
+    - REPO=kennethreitz/s3contents  # has .travis.yml file
+    - REPO=kennethreitz/s3monkey
+    - REPO=kennethreitz/setup.py
+    - REPO=kennethreitz/showme
+    - REPO=kennethreitz/thanks  # has .travis.yml file
+    - REPO=kennethreitz/twitter-scraper
+    - REPO=kennethreitz/virtualenv-clone  # has .travis.yml file
+    - REPO=kennethreitz/white
+    - REPO=kennethreitz/xeroxcache: pip
 python:
     - 2.7
     - 3.6
