@@ -1,7 +1,24 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ActiveState/appdirs
+    - REPO=ActiveState/APy
+    - REPO=ActiveState/appdirs  # has .travis.yml file
+    - REPO=ActiveState/applib
+    - REPO=ActiveState/code
+    - REPO=ActiveState/depgraph
+    - REPO=ActiveState/ez_setup
+    - REPO=ActiveState/fabric
+    - REPO=ActiveState/filearchive
+    - REPO=ActiveState/lxml
+    - REPO=ActiveState/mk
+    - REPO=ActiveState/neuroblast
+    - REPO=ActiveState/pandas  # has .travis.yml file
+    - REPO=ActiveState/paramiko  # has .travis.yml file
+    - REPO=ActiveState/php-buildpack-legacy
+    - REPO=ActiveState/pydoozer
+    - REPO=ActiveState/pythonselect
+    - REPO=ActiveState/simplealchemy
+    - REPO=ActiveState/tensorflask
 cache: pip
 python:
     - 2.7
