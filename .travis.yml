@@ -1,42 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=GauravBh1010tt/DeepLearn
-    - REPO=hannob/snallygaster
-    - REPO=hzy46/Deep-Learning-21-Examples
-    - REPO=PetrochukM/PyTorch-NLP
-    - REPO=preempt/credssp
-    - REPO=tensorflow/models
-    - REPO=Ahmkel/Keras-Project-Template
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=a2u/CVE-2018-7600
-    - REPO=jonas-koehler/s2cnn
-    - REPO=qq547276542/Agriculture_KnowledgeGraph
-    - REPO=facebookresearch/video-nonlocal-net
-    - REPO=matterport/Mask_RCNN
-    - REPO=keras-team/keras
-    - REPO=ansible/ansible
-    - REPO=vinta/awesome-python
-    - REPO=google/in-silico-labeling
-    - REPO=toddmotto/public-apis
-    - REPO=hardikvasa/google-images-download
-    - REPO=rg3/youtube-dl
-    - REPO=outcastofmusic/quick-nlp
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=Seanld/Latte
 cache: pip
 python:
     #- 2.7
