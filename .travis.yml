@@ -1,45 +1,14 @@
 group: travis_latest
 language: python
 env:
-    - REPO=GauravBh1010tt/DeepLearn
-    - REPO=litl/backoff
-    - REPO=tensorflow/models
-    - REPO=hzy46/Deep-Learning-21-Examples
-    - REPO=hannob/snallygaster
-    - REPO=keras-team/keras
-    - REPO=vinta/awesome-python
-    - REPO=a2u/CVE-2018-7600
-    - REPO=rg3/youtube-dl
-    - REPO=jonas-koehler/s2cnn
-    - REPO=mtobeiyf/keras-flask-deploy-webapp
-    - REPO=Jiramew/spoon
-    - REPO=matterport/Mask_RCNN
-    - REPO=scikit-learn/scikit-learn
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=toddmotto/public-apis
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=Ahmkel/Keras-Project-Template
-    - REPO=python-security/pyt
-    - REPO=asciinema/asciinema
-    - REPO=bugcrowd/HUNT
-    - REPO=openai/gym
-    - REPO=python/cpython
-    - REPO=pandas-dev/pandas
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=niklasf/python-chess
+    - REPO=LordDarkula/chess_py
+    - REPO=doismellburning/chess
+    - REPO=rpdelaney/python-chess-annotator
+    - REPO=fabiobatalha/chess_master
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
