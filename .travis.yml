@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=home-assistant/home-assistant
+    - REPO=bugcrowd/HUNT
 cache: pip
 python:
     #- 2.7
