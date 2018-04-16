@@ -1,10 +1,45 @@
 group: travis_latest
 language: python
 env:
+    - REPO=GauravBh1010tt/DeepLearn
+    - REPO=python-security/pyt
+    - REPO=litl/backoff
+    - REPO=NVlabs/MUNIT
+    - REPO=tensorflow/models
+    - REPO=jhao104/proxy_pool
+    - REPO=hzy46/Deep-Learning-21-Examples
     - REPO=ustayready/CredKing
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=keras-team/keras
+    - REPO=rg3/youtube-dl
+    - REPO=vinta/awesome-python
+    - REPO=roytseng-tw/mask-rcnn.pytorch
+    - REPO=a2u/CVE-2018-7600
+    - REPO=levyben/DeepSuperLearner
+    - REPO=pallets/flask
+    - REPO=matterport/Mask_RCNN
+    - REPO=llSourcell/Make_Money_with_Tensorflow
+    - REPO=CSAILVision/semantic-segmentation-pytorch
+    - REPO=scikit-learn/scikit-learn
+    - REPO=donnemartin/system-design-primer
+    - REPO=django/django
+    - REPO=hannob/snallygaster
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=charlesq34/frustum-pointnets
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
