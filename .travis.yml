@@ -1,31 +1,31 @@
 group: travis_latest
 language: python
 env:
+    - REPO=NVlabs/MUNIT
     - REPO=GauravBh1010tt/DeepLearn
     - REPO=python-security/pyt
     - REPO=litl/backoff
-    - REPO=NVlabs/MUNIT
     - REPO=tensorflow/models
     - REPO=jhao104/proxy_pool
     - REPO=hzy46/Deep-Learning-21-Examples
-    - REPO=ustayready/CredKing
-    - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=keras-team/keras
-    - REPO=rg3/youtube-dl
     - REPO=vinta/awesome-python
-    - REPO=roytseng-tw/mask-rcnn.pytorch
-    - REPO=a2u/CVE-2018-7600
-    - REPO=levyben/DeepSuperLearner
+    - REPO=ustayready/CredKing
+    - REPO=rg3/youtube-dl
+    - REPO=lifeomic/sparkflow
+    - REPO=roytseng-tw/Detectron.pytorch
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
     - REPO=pallets/flask
     - REPO=matterport/Mask_RCNN
-    - REPO=llSourcell/Make_Money_with_Tensorflow
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=scikit-learn/scikit-learn
+    - REPO=a2u/CVE-2018-7600
     - REPO=donnemartin/system-design-primer
-    - REPO=django/django
+    - REPO=levyben/DeepSuperLearner
+    - REPO=hardikvasa/google-images-download
+    - REPO=deepfakes/faceswap
     - REPO=hannob/snallygaster
+    - REPO=django/django
     - REPO=josephmisiti/awesome-machine-learning
-    - REPO=charlesq34/frustum-pointnets
+    - REPO=CSAILVision/semantic-segmentation-pytorch
     - REPO=matplotlib/matplotlib
     - REPO=PythonCharmers/python-future
     - REPO=ansible/ansible
