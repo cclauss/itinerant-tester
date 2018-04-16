@@ -1,14 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=niklasf/python-chess
-    - REPO=LordDarkula/chess_py
-    - REPO=doismellburning/chess
-    - REPO=rpdelaney/python-chess-annotator
-    - REPO=fabiobatalha/chess_master
+    - REPO=GauravBh1010tt/DeepLearn
+    - REPO=litl/backoff
+    - REPO=python-security/pyt
+    - REPO=tensorflow/models
+    - REPO=hzy46/Deep-Learning-21-Examples
+    - REPO=NVlabs/MUNIT
+    - REPO=ustayready/CredKing
+    - REPO=jhao104/proxy_pool
+    - REPO=chiphuyen/stanford-tensorflow-tutorials
+    - REPO=keras-team/keras
+    - REPO=rg3/youtube-dl
+    - REPO=vinta/awesome-python
+    - REPO=roytseng-tw/mask-rcnn.pytorch
+    - REPO=llSourcell/Make_Money_with_Tensorflow
+    - REPO=levyben/DeepSuperLearner
+    - REPO=a2u/CVE-2018-7600
+    - REPO=django/django
+    - REPO=jonas-koehler/s2cnn
+    - REPO=pallets/flask
+    - REPO=Ahmkel/Keras-Project-Template
+    - REPO=scikit-learn/scikit-learn
+    - REPO=CSAILVision/semantic-segmentation-pytorch
+    - REPO=hannob/snallygaster
+    - REPO=matterport/Mask_RCNN
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
