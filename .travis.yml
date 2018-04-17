@@ -1,10 +1,10 @@
 group: travis_latest
 language: python
 env:
-   - REPO=ephes/pythonista_api_client
+   - REPO=certbot/certbot
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
