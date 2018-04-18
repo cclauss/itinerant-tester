@@ -1,7 +1,36 @@
 group: travis_latest
 language: python
 env:
-   - REPO=certbot/certbot
+    - REPO=abingham/ACCUConf_Submission_Web_Application  # has .travis.yml file
+    - REPO=abingham/ACCUConf_Website  # has .travis.yml file
+    - REPO=abingham/RoxarAPI_Examples
+    - REPO=abingham/aiohttp  # has .travis.yml file
+    - REPO=abingham/ao-toolbox
+    - REPO=abingham/appengine-test
+    - REPO=abingham/asq  # has .travis.yml file
+    - REPO=abingham/bespoke
+    - REPO=abingham/brooks
+    - REPO=abingham/categories-for-programmers
+    - REPO=abingham/cython-sphinx-example
+    - REPO=abingham/did-experiments
+    - REPO=abingham/docopt-subcommands  # has .travis.yml file
+    - REPO=abingham/flask-rest-notes
+    - REPO=abingham/image_tool
+    - REPO=abingham/ipytest
+    - REPO=abingham/jupyter-elm-kernel
+    - REPO=abingham/knowit-julekalendar-2015
+    - REPO=abingham/npd-to-csv
+    - REPO=abingham/pyqt-test
+    - REPO=abingham/python-transducers  # has .travis.yml file
+    - REPO=abingham/rope  # has .travis.yml file
+    - REPO=abingham/runner_repl
+    - REPO=abingham/segpy  # has .travis.yml file
+    - REPO=abingham/spor  # has .travis.yml file
+    - REPO=abingham/stringscore  # has .travis.yml file
+    - REPO=abingham/traad  # has .travis.yml file
+    - REPO=abingham/ultan  # has .travis.yml file
+    - REPO=abingham/webassets-elm  # has .travis.yml file
+    - REPO=abingham/zorkalike
 cache: pip
 python:
     - 2.7
