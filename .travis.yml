@@ -1,45 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=shobrook/rebound
-    - REPO=zulip/zulip
-    - REPO=vaguileradiaz/tinfoleak
-    - REPO=NVlabs/MUNIT
-    - REPO=tensorflow/models
-    - REPO=skorov/ridrelay
-    - REPO=toddmotto/public-apis
-    - REPO=GauravBh1010tt/DeepLearn
-    - REPO=suragnair/alpha-zero-general
-    - REPO=vinta/awesome-python
-    - REPO=trailofbits/algo
-    - REPO=python-security/pyt
-    - REPO=keras-team/keras
-    - REPO=apachecn/MachineLearning
-    - REPO=rg3/youtube-dl
-    - REPO=audibleblink/doxycannon
-    - REPO=donnemartin/system-design-primer
-    - REPO=roytseng-tw/Detectron.pytorch
-    - REPO=pallets/flask
-    - REPO=django/django
-    - REPO=deepfakes/faceswap
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pypa/pipenv
-    - REPO=matterport/Mask_RCNN
-    - REPO=litl/backoff
-    - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=ckan/ckan
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=hyperledger/fabric
+    - REPO=CoreSecurity/impacket
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
@@ -55,7 +20,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+    - git clone --depth=50 ${URL} ~/${REPO} --branch=python36
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
