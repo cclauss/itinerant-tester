@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Supervisor/supervisor
+    - REPO=shobrook/rebound
 cache: pip
 python:
     - 2.7
