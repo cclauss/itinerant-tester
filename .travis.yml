@@ -1,10 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=g33kyM0m/iOS-Editorial-Pythonista-Tools
+    - REPO=IBM / adversarial-robustness-toolbox
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
