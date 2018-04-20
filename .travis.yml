@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=IBM / adversarial-robustness-toolbox
+    - REPO=IBM/adversarial-robustness-toolbox
 cache: pip
 python:
     - 2.7
