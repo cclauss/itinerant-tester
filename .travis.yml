@@ -1,11 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=IBM/FfDL
+    - REPO=reswitched/fusee-launcher
+    - REPO=eriklindernoren/PyTorch-GAN
+    - REPO=sksq96/pytorch-summary
+    - REPO=tensorflow/models
+    - REPO=uber-common/deep-neuroevolution
+    - REPO=eriklindernoren/Keras-GAN
+    - REPO=vinta/awesome-python
+    - REPO=shobrook/rebound
+    - REPO=karpathy/pytorch-made
+    - REPO=ayooshkathuria/YOLO_v3_tutorial_from_scratch
+    - REPO=keras-team/keras
+    - REPO=toddmotto/public-apis
+    - REPO=programthink/zhao
+    - REPO=apachecn/MachineLearning
+    - REPO=apachecn/hands_on_Ml_with_Sklearn_and_TF
+    - REPO=ageitgey/face_recognition
+    - REPO=matterport/Mask_RCNN
+    - REPO=serge-sans-paille/pythran
+    - REPO=0xAX/linux-insides
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ContextLab/hypertools
+    - REPO=samhaxr/hackbox
+    - REPO=switchbrew/nx-hbexploit300-obf
+    - REPO=requests/requests
+    - REPO=donnemartin/system-design-primer
+    - REPO=matplotlib/matplotlib
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=ckan/ckan
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=ggtracker/sc2reader
+    - REPO=apache/beam
+    - REPO=apache/spark
     - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
