@@ -1,7 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=kbengine/kbengine
+    - REPO=skorokithakis/catt
+    - REPO=evilmog/ntlmv1-multi
+    - REPO=rootm0s/WinPwnage
 cache: pip
 python:
     #- 2.7
