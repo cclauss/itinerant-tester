@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=serge-sans-paille/pythran
+    - REPO=kevingo/system-design-primer-zh-tw
 cache: pip
 python:
     #- 2.7
