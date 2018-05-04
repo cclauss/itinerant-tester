@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=flipkart-incubator/Astra
+    - REPO=jisungk/deepjazz
 cache: pip
 python:
     - 2.7
