@@ -1,24 +1,15 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ibm/MAX-Image-Caption-Generator
-    - REPO=ibm/MAX-Inception-ResNet-v2
-    - REPO=ibm/MAX-News-Text-Generator
-    - REPO=ibm/MAX-Object-Detector
-    - REPO=ibm/MAX-Places365-CNN
-    - REPO=ibm/MAX-ResNet-50
-    - REPO=ibm/MAX-Review-Text-Generator
-    - REPO=ibm/MAX-Sports-Video-Classifier
-    - REPO=ibm/Model-Training-and-Serving-using-WML
-    - REPO=ibm/deploy-ibm-cloud-private
-    - REPO=ibm/dmclient
-    - REPO=ibm/fuse-webhdfs
-    - REPO=ibm/home-assistant
-    - REPO=ibm/ibm-cos-sdk-python-core
-    - REPO=ibm/osslm-ansible-resource-manager
-    - REPO=ibm/plex
-    - REPO=ibm/pytorch-cifar10-in-ibm-cloud
-    - REPO=ibm/watson-assistant-workbench
+    - REPO=apple/ccs-caldavtester
+    - REPO=apple/ccs-calendarserver  # has .travis.yml file
+    - REPO=apple/ccs-pycalendar
+    - REPO=apple/ccs-pyosxframeworks
+    - REPO=apple/ccs-pysecuretransport
+    - REPO=apple/ccs-twistedextensions
+    - REPO=apple/coremltools
+    - REPO=apple/swift-integration-tests
+    - REPO=apple/swift-source-compat-suite
 cache: pip
 python:
     #- 2.7
