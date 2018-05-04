@@ -1,7 +1,20 @@
 group: travis_latest
 language: python
 env:
-    - REPO=kevingo/system-design-primer-zh-tw
+    - REPO=kraigu/ISS-QRpy
+    - REPO=kraigu/ISS-RTpy
+    - REPO=kraigu/Infoblox-API-Python
+    - REPO=kraigu/api-samples
+    - REPO=kraigu/munin-graphite
+    - REPO=kraigu/ninfo
+    - REPO=kraigu/ninfo-plugin-ieeedb
+    - REPO=kraigu/ninfo-plugin-infoblox
+    - REPO=kraigu/ninfo-plugin-ldap
+    - REPO=kraigu/ninfo-plugin-shodan
+    - REPO=kraigu/ninfo-plugin-vtotal
+    - REPO=kraigu/ninfo_plugins
+    - REPO=kraigu/qradarapi
+    - REPO=kraigu/qualysapi
 cache: pip
 python:
     #- 2.7
