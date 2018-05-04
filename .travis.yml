@@ -1,8 +1,16 @@
 group: travis_latest
 language: python
 env:
-    - REPO=paragbaxi/qualysapi
-cache: pip
+    - REPO=ibm-watson-data-lab/--deprecated--py-graph  # has .travis.yml file
+    - REPO=ibm-watson-data-lab/--deprecated--watson-recipe-bot-python-graph
+    - REPO=ibm-watson-data-lab/PoemGenerator
+    - REPO=ibm-watson-data-lab/cf-service-credential-browser
+    - REPO=ibm-watson-data-lab/ibmseti
+    - REPO=ibm-watson-data-lab/openobjectstore
+    - REPO=ibm-watson-data-lab/pixiedust_ibm
+    - REPO=ibm-watson-data-lab/pixiedust_node
+    - REPO=ibm-watson-data-lab/pixiedust_rosie
+    - REPO=ibm-watson-data-lab/watson-recipe-bot-python-cloudantcache: pip
 python:
     #- 2.7
     - 3.6
