@@ -1,12 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=marevol/Pyro4  # has .travis.yml file
-    - REPO=marevol/cnn-text-classification
-    - REPO=marevol/gym-starter-kit
-    - REPO=marevol/gym-starter-kit-example
-    - REPO=marevol/incubator-predictionio-sdk-python  # has .travis.yml file
-    - REPO=marevol/scikit-learn  # has .travis.yml file
+    - REPO=apache/incubator-openwhisk
 cache: pip
 python:
     #- 2.7
