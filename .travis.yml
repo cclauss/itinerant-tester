@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=apache/incubator-openwhisk
+    - REPO=ScriptNasty/MemoryCards.py
 cache: pip
 python:
     #- 2.7
