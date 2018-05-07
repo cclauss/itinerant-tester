@@ -1,10 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ScriptNasty/MemoryCards.py
+    - REPO=IBM/ibm-cos-sdk-python
+    - REPO=IBM/ibm-cos-sdk-python-core
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
