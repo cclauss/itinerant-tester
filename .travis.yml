@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=apache/incubator-airflow
+    - REPO=ammardodin/assistant-cross-validation
 cache: pip
 python:
     #- 2.7
