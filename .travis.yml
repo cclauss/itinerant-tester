@@ -27,13 +27,13 @@ env:
     - REPO=rg3/youtube-dl
     - REPO=scikit-learn/scikit-learn
     - REPO=matplotlib/matplotlib
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
     - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpyPythonCharmers/python-future
+    - REPO=ansible/ansible
     - REPO=facebookresearch/ParlAI
     - REPO=gevent/gevent
     - REPO=getsentry/sentry
-    - REPO=ggtracker/sc2reader
     - REPO=apache/beam
     - REPO=apache/spark
     - REPO=hyperledger/fabric
