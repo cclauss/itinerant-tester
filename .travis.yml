@@ -1,7 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=jonparrott/nox
+    - REPO=cuthbertLab/bali
+    - REPO=cuthbertLab/daseki
+    - REPO=cuthbertLab/music21  # has .travis.yml file
+    - REPO=cuthbertLab/music21-tools
 cache: pip
 python:
     #- 2.7
