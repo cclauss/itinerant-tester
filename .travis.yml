@@ -1,8 +1,36 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mikaelho/tinysync
-
+    - REPO=inveniosoftware/cookiecutter-invenio-instance
+    - REPO=inveniosoftware/dictdiffer  # has .travis.yml file
+    - REPO=inveniosoftware/flask-celeryext  # has .travis.yml file
+    - REPO=inveniosoftware/flask-iiif  # has .travis.yml file
+    - REPO=inveniosoftware/flask-sitemap  # has .travis.yml file
+    - REPO=inveniosoftware/idutils  # has .travis.yml file
+    - REPO=inveniosoftware/invenio  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-access  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-accounts  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-admin  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-app  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-assets  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-base  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-cache  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-celery  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-config  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-db  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-files-rest  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-formatter  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-i18n  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-iiif  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-indexer  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-jsonschemas  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-mail  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-oaiserver  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-records-rest  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-search  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-userprofiles  # has .travis.yml file
+    - REPO=inveniosoftware/invenio-webhooks  # has .travis.yml file
+    - REPO=inveniosoftware/pytest-invenio  # has .travis.yml file
 cache: pip
 python:
     #- 2.7
