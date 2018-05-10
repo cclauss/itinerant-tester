@@ -1,24 +1,29 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mikaelho/asyncui
-    - REPO=mikaelho/awz
-    - REPO=mikaelho/caves
-    - REPO=mikaelho/dictdiffer  # has .travis.yml file
-    - REPO=mikaelho/docgen
-    - REPO=mikaelho/extend
-    - REPO=mikaelho/multipeer
-    - REPO=mikaelho/noter
-    - REPO=mikaelho/pythonista-bsp
-    - REPO=mikaelho/pythonista-composite
-    - REPO=mikaelho/pythonista-gestures
-    - REPO=mikaelho/pythonista-lambda-deploy
-    - REPO=mikaelho/pythonista-markdownview
-    - REPO=mikaelho/pythonista-reminderstore
-    - REPO=mikaelho/ruuvi-temperatures
-    - REPO=mikaelho/ruuvitag-sensor
-    - REPO=mikaelho/scripter
-    - REPO=mikaelho/tinysynccache: pip
+    - REPO=vstinner/bytecode  # has .travis.yml file
+    - REPO=vstinner/cpython  # has .travis.yml file
+    - REPO=vstinner/cpython_core_tutorial
+    - REPO=vstinner/devguide  # has .travis.yml file
+    - REPO=vstinner/faster_cpython
+    - REPO=vstinner/fatoptimizer  # has .travis.yml file
+    - REPO=vstinner/hachoir3  # has .travis.yml file
+    - REPO=vstinner/misc
+    - REPO=vstinner/notes
+    - REPO=vstinner/peps  # has .travis.yml file
+    - REPO=vstinner/perf  # has .travis.yml file
+    - REPO=vstinner/performance  # has .travis.yml file
+    - REPO=vstinner/pymicrobench  # has .travis.yml file
+    - REPO=vstinner/pysandbox
+    - REPO=vstinner/python-ptrace  # has .travis.yml file
+    - REPO=vstinner/python-security
+    - REPO=vstinner/requirements
+    - REPO=vstinner/sixer
+    - REPO=vstinner/tracemallocqt
+    - REPO=vstinner/trollius  # has .travis.yml file
+    - REPO=vstinner/unicode_book
+
+cache: pip
 python:
     #- 2.7
     - 3.6
