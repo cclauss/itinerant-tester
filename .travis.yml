@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=inveniosoftware/dictdiffer
+    - REPO=mikaelho/tinysync
 
 cache: pip
 python:
