@@ -1,9 +1,24 @@
 group: travis_latest
 language: python
 env:
-    - REPO=joblib/joblib
-    - REPO=benjaminp/six
-cache: pip
+    - REPO=mikaelho/asyncui
+    - REPO=mikaelho/awz
+    - REPO=mikaelho/caves
+    - REPO=mikaelho/dictdiffer  # has .travis.yml file
+    - REPO=mikaelho/docgen
+    - REPO=mikaelho/extend
+    - REPO=mikaelho/multipeer
+    - REPO=mikaelho/noter
+    - REPO=mikaelho/pythonista-bsp
+    - REPO=mikaelho/pythonista-composite
+    - REPO=mikaelho/pythonista-gestures
+    - REPO=mikaelho/pythonista-lambda-deploy
+    - REPO=mikaelho/pythonista-markdownview
+    - REPO=mikaelho/pythonista-reminderstore
+    - REPO=mikaelho/ruuvi-temperatures
+    - REPO=mikaelho/ruuvitag-sensor
+    - REPO=mikaelho/scripter
+    - REPO=mikaelho/tinysynccache: pip
 python:
     #- 2.7
     - 3.6
