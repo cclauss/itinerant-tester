@@ -1,9 +1,13 @@
 group: travis_latest
 language: python
 env:
-    - REPO=SwissDataScienceCenter/renga-deployer  # has .travis.yml file
-    - REPO=SwissDataScienceCenter/renga-python  # has .travis.yml file
-    - REPO=SwissDataScienceCenter/renga-sphinx-theme  # has .travis.yml file
+    - REPO=ndrplz/ConvLSTM_pytorch
+    - REPO=ndrplz/computer_vision_utils
+    - REPO=ndrplz/dilation-tensorflow
+    - REPO=ndrplz/google-drive-downloader
+    - REPO=ndrplz/small_norb
+    - REPO=ndrplz/surround_vehicles_awareness
+    - REPO=ndrplz/transforming-autoencoders
 cache: pip
 python:
     #- 2.7
