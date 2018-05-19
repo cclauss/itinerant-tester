@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=apache/incubator-airflow
-    - REPO=vnpy/vnpy
+    - REPO=reswitched/fusee-launcher
 cache: pip
 python:
     #- 2.7
