@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Telenav/Telenav.AI
-    - REPO=Telenav/python-remote
+    - REPO=apache/incubator-airflow
     - REPO=vnpy/vnpy
 cache: pip
 python:
