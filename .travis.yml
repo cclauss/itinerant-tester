@@ -1,43 +1,25 @@
 group: travis_latest
 language: python
 env:
-    - REPO=easy-tensorflow/easy-tensorflow
-    - REPO=edgedb/edgedb
-    - REPO=tensorflow/models
-    - REPO=Embedding/Chinese-Word-Vectors
-    - REPO=chrissimpkins/Crunch
-    - REPO=rg3/youtube-dl
-    - REPO=keras-team/keras
-    - REPO=toddmotto/public-apis
-    - REPO=vinta/awesome-python
-    - REPO=pypa/pipenv
-    - REPO=rochacbruno/dynaconf
-    - REPO=dedupeio/dedupe
-    - REPO=pallets/flask
-    - REPO=tqdm/tqdm
-    - REPO=python/cpython
-    - REPO=django/django
+    - REPO=explosion/spaCy
+    - REPO=jiasenlu/NeuralBabyTalk
+    - REPO=soimort/you-get
+    - REPO=apache/incubator-airflow
     - REPO=matpalm/bnn
-    - REPO=kaxap/arl
-    - REPO=pytorch/examples
-    - REPO=requests/requests
-    - REPO=ufoym/deepo
-    - REPO=XX-net/XX-Net
-    - REPO=cchen156/Learning-to-See-in-the-Dark
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=ansible/ansible
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=lukalabs/cakechat
+    - REPO=reswitched/fusee-launcher
+    - REPO=Telenav/Telenav.AI
+    - REPO=Netflix/pygenie
+    - REPO=guardicore/monkey
+    - REPO=fossasia/query-server
+    - REPO=opencv/opencv
+    - REPO=dcowden/cadquery
+    - REPO=vbuterin/pybitcointools
+    - REPO=vstinner/unicode_book
+    - REPO=vstinner/misc
+    - REPO=apple/ccs-calendarserver
+    - REPO=Netflix/bless
+    - REPO=Zulko/moviepy
 cache: pip
 python:
     #- 2.7
