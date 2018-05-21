@@ -1,25 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=explosion/spaCy
-    - REPO=jiasenlu/NeuralBabyTalk
-    - REPO=soimort/you-get
-    - REPO=apache/incubator-airflow
-    - REPO=matpalm/bnn
-    - REPO=lukalabs/cakechat
-    - REPO=reswitched/fusee-launcher
-    - REPO=Telenav/Telenav.AI
-    - REPO=Netflix/pygenie
-    - REPO=guardicore/monkey
-    - REPO=fossasia/query-server
-    - REPO=opencv/opencv
-    - REPO=dcowden/cadquery
-    - REPO=vbuterin/pybitcointools
-    - REPO=vstinner/unicode_book
-    - REPO=vstinner/misc
-    - REPO=apple/ccs-calendarserver
-    - REPO=Netflix/bless
-    - REPO=Zulko/moviepy
+    - REPO=jpivarski/svgfig
 cache: pip
 python:
     #- 2.7
