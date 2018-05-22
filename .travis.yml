@@ -1,11 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=abseil/abseil-cpp
-    - REPO=abseil/abseil-py
+    - REPO=tensorlayer/srgan
+    - REPO=9b/chirp
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
