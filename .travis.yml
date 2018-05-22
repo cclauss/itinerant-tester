@@ -1,43 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=1-Sisyphe/youCanCodeAGif
-    - REPO=easy-tensorflow/easy-tensorflow
-    - REPO=tensorflow/models
-    - REPO=cchen156/Learning-to-See-in-the-Dark
-    - REPO=keras-team/keras
-    - REPO=carnal0wnage/weirdAAL
-    - REPO=9b/chirp
-    - REPO=Embedding/Chinese-Word-Vectors
-    - REPO=rg3/youtube-dl
-    - REPO=angr/angr
-    - REPO=toddmotto/public-apis
-    - REPO=chrissimpkins/Crunch
-    - REPO=vinta/awesome-python
-    - REPO=pallets/flask
-    - REPO=django/django
-    - REPO=python/cpython
-    - REPO=duckietown/gym-duckietown
-    - REPO=ropnop/windows_sshagent_extract
-    - REPO=scikit-learn/scikit-learn
-    - REPO=jackfrued/Python-100-Days
-    - REPO=edgedb/edgedb
-    - REPO=requests/requests
-    - REPO=ansible/ansible
-    - REPO=fireeye/PwnAuth
-    - REPO=JustinhoCHN/SRGAN_Wasserstein
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=abseil/abseil-cpp
+    - REPO=abseil/abseil-py
 cache: pip
 python:
     #- 2.7
