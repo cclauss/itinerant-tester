@@ -1,43 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=jackfrued/Python-100-Days
-    - REPO=easy-tensorflow/easy-tensorflow
-    - REPO=tensorflow/models
-    - REPO=1-Sisyphe/youCanCodeAGif
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=rg3/youtube-dl
-    - REPO=chrissimpkins/Crunch
-    - REPO=cchen156/Learning-to-See-in-the-Dark
-    - REPO=shellster/LDAPPER
-    - REPO=google/youtube-8m
-    - REPO=virajmavani/semi-auto-image-annotation-tool
-    - REPO=pallets/flask
-    - REPO=koalalorenzo/python-digitalocean
-    - REPO=pypa/pipenv
-    - REPO=django/django
-    - REPO=toddmotto/public-apis
-    - REPO=sdispater/poetry
-    - REPO=RhinoSecurityLabs/SleuthQL
-    - REPO=scikit-learn/scikit-learn
-    - REPO=edgedb/edgedb
-    - REPO=ansible/ansible
-    - REPO=donnemartin/system-design-primer
-    - REPO=python/cpython
-    - REPO=facebookresearch/Detectron
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=fizyr/keras-retinanet
 cache: pip
 python:
     #- 2.7
