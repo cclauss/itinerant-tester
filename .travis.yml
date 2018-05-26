@@ -1,7 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=JustinhoCHN/SRGAN_Wasserstein
+    - REPO=akshaybahadur21/Emojinator
+    - REPO=irhumshafkat/R2Plus1D-PyTorch
+    - REPO=yaserkl/RLSeq2Seq
+    - REPO=duckythescientist/SmoothLife
+    - REPO=openai/retro
 cache: pip
 python:
     #- 2.7
