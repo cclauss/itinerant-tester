@@ -1,31 +1,31 @@
 group: travis_latest
 language: python
 env:
+    - REPO=ambv/black
+    - REPO=NervanaSystems/nlp-architect
     - REPO=easy-tensorflow/easy-tensorflow
     - REPO=jackfrued/Python-100-Days
-    - REPO=NervanaSystems/nlp-architect
     - REPO=tensorflow/models
-    - REPO=ambv/black
-    - REPO=keras-team/keras
+    - REPO=openai/retro
+    - REPO=guardicore/monkey
+    - REPO=CERTCC/tapioca
     - REPO=vinta/awesome-python
     - REPO=toddmotto/public-apis
-    - REPO=dnouri/skorch
     - REPO=pallets/flask
+    - REPO=OlafenwaMoses/ImageAI
     - REPO=soimort/you-get
-    - REPO=trailofbits/algo
-    - REPO=scikit-learn/scikit-learn
-    - REPO=chuanconggao/extratools
-    - REPO=virajmavani/semi-auto-image-annotation-tool
-    - REPO=django/django
+    - REPO=keras-team/keras
     - REPO=python/cpython
-    - REPO=m4ll0k/Galileo
-    - REPO=CERTCC/tapioca
-    - REPO=pypa/pipenv
-    - REPO=rg3/youtube-dl
     - REPO=threat9/routersploit
-    - REPO=Erotemic/ubelt
+    - REPO=scikit-learn/scikit-learn
+    - REPO=django/django
+    - REPO=cchen156/Learning-to-See-in-the-Dark
+    - REPO=rg3/youtube-dl
+    - REPO=dnouri/skorch
+    - REPO=trailofbits/algo
+    - REPO=pypa/pipenv
     - REPO=home-assistant/home-assistant
-    - REPO=jakubroztocil/httpie
+    - REPO=Squarespace/datasheets
     - REPO=matplotlib/matplotlib
     - REPO=ckan/ckan
     - REPO=ggtracker/sc2reader
