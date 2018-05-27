@@ -1,7 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=littlecodersh/ItChat
+    - REPO=duckythescientist/SmoothLife
+    - REPO=DistrictDataLabs/yellowbrick
+    - REPO=Jack-Cherish/python-spider
+    - REPO=openai/retro
+    - REPO=skelsec/pypykatz
 cache: pip
 python:
     #- 2.7
