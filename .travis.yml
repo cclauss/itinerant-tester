@@ -1,43 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ambv/black
-    - REPO=guardicore/monkey
-    - REPO=duckythescientist/SmoothLife
-    - REPO=NervanaSystems/nlp-architect
-    - REPO=openai/retro
-    - REPO=easy-tensorflow/easy-tensorflow
-    - REPO=tensorflow/models
-    - REPO=yaserkl/RLSeq2Seq
-    - REPO=imWildCat/scylla
-    - REPO=vinta/awesome-python
-    - REPO=rg3/youtube-dl
-    - REPO=jackfrued/Python-100-Days
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=DistrictDataLabs/yellowbrick
-    - REPO=keras-team/keras
-    - REPO=toddmotto/public-apis
-    - REPO=django/django
-    - REPO=pallets/flask
-    - REPO=irhumshafkat/R2Plus1D-PyTorch
-    - REPO=jessemelpolio/non-stationary_texture_syn
-    - REPO=akshaybahadur21/Emojinator
-    - REPO=hessamb/label-refinery
-    - REPO=soimort/you-get
-    - REPO=donnemartin/system-design-primer
-    - REPO=UltimateHackers/nano
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=facebookresearch/ParlAI
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=littlecodersh/ItChat
 cache: pip
 python:
     #- 2.7
