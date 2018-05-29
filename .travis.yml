@@ -1,7 +1,43 @@
 group: travis_latest
 language: python
 env:
-    - REPO=benjaminp/six
+    - REPO=wangshub/Douyin-Bot
+    - REPO=Jack-Cherish/python-spider
+    - REPO=jackfrued/Python-100-Days
+    - REPO=imWildCat/scylla
+    - REPO=DistrictDataLabs/yellowbrick
+    - REPO=tensorflow/models
+    - REPO=ambv/black
+    - REPO=NervanaSystems/nlp-architect
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=cchen156/Learning-to-See-in-the-Dark
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=lucperkins/colossus
+    - REPO=wangshub/wechat_jump_game
+    - REPO=toddmotto/public-apis
+    - REPO=mileshenrichs/spotify-playlist-generator
+    - REPO=kiwi0fruit/sugartex
+    - REPO=longld/peda
+    - REPO=pallets/flask
+    - REPO=yunjey/pytorch-tutorial
+    - REPO=django/django
+    - REPO=MohamedNourTN/Terminator
+    - REPO=kezhenxu94/house-renting
+    - REPO=thewhiteh4t/pwnedOrNot
+    - REPO=ansible/ansible
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
