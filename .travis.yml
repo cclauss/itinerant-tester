@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=kezhenxu94/proxy-pool
+    - REPO=vnpy/vnpy
 cache: pip
 python:
     #- 2.7
@@ -20,7 +20,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+    - git clone --depth=50 ${URL} ~/${REPO} --branch=dev
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
