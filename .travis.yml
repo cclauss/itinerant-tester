@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=hoffa/kitten
+    - REPO=kezhenxu94/proxy-pool
 cache: pip
 python:
     #- 2.7
