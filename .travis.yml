@@ -1,14 +1,12 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Jack-Cherish/python-spider
-    - REPO=imWildCat/scylla
-    - REPO=ageitgey/face_recognition
-    - REPO=NervanaSystems/nlp-architect
-    - REPO=heykeetae/Self-Attention-GAN
-    - REPO=RainingComputers/whipFTP
-    - REPO=Squarespace/datasheets
-    - REPO=keras-team/keras-preprocessing
+    - REPO=lzfelix/opfy_split
+    - REPO=lzfelix/fakenewschallenge
+    - REPO=lzfelix/SIF
+    - REPO=lzfelix/movies
+    - REPO=lzfelix/pyStrings
+    - REPO=lzfelix/pyTetris
 cache: pip
 python:
     #- 2.7
