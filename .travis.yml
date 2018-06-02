@@ -1,9 +1,43 @@
 group: travis_latest
 language: python
 env:
-    - REPO=Embedding/Chinese-Word-Vectors
-    - REPO=chrissimpkins/Crunch
+    - REPO=wangshub/Douyin-Bot
+    - REPO=imWildCat/scylla
+    - REPO=tensorflow/models
     - REPO=xillwillx/skiptracer
+    - REPO=ambv/black
+    - REPO=keras-team/keras
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=toddmotto/public-apis
+    - REPO=Jack-Cherish/python-spider
+    - REPO=pallets/flask
+    - REPO=Embedding/Chinese-Word-Vectors
+    - REPO=django/django
+    - REPO=3b1b/manim
+    - REPO=rg3/youtube-dl
+    - REPO=chrissimpkins/Crunch
+    - REPO=scikit-learn/scikit-learn
+    - REPO=threerocks/studyFiles
+    - REPO=RainingComputers/whipFTP
+    - REPO=ageitgey/face_recognition
+    - REPO=heykeetae/Self-Attention-GAN
+    - REPO=pypa/pipenv
+    - REPO=jackfrued/Python-100-Days
+    - REPO=python/cpython
+    - REPO=The-Art-of-Hacking/art-of-hacking
+    - REPO=cchen156/Learning-to-See-in-the-Dark
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
