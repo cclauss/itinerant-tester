@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=llSourcell/world_models
+    - REPO=hlldz/SpookFlare
 cache: pip
 python:
     #- 2.7
