@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=elff1493/pyscene
+    - REPO=MagicStack/MagicPython
 cache: pip
 python:
     #- 2.7
