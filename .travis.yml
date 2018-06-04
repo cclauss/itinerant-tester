@@ -1,36 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ambv/MagicPython  # has .travis.yml file
-    - REPO=ambv/aioecho
-    - REPO=ambv/attrs  # has .travis.yml file
-    - REPO=ambv/bitrot
-    - REPO=ambv/black  # has .travis.yml file
-    - REPO=ambv/click  # has .travis.yml file
-    - REPO=ambv/cpython  # has .travis.yml file
-    - REPO=ambv/cython  # has .travis.yml file
-    - REPO=ambv/dj.choices  # has .travis.yml file
-    - REPO=ambv/flake8-mypy  # has .travis.yml file
-    - REPO=ambv/flake8-pyi  # has .travis.yml file
-    - REPO=ambv/html5lib-microbench
-    - REPO=ambv/html5lib-python  # has .travis.yml file
-    - REPO=ambv/httproxy
-    - REPO=ambv/isort  # has .travis.yml file
-    - REPO=ambv/itsdangerous  # has .travis.yml file
-    - REPO=ambv/kitdjango
-    - REPO=ambv/meta  # has .travis.yml file
-    - REPO=ambv/mypy  # has .travis.yml file
-    - REPO=ambv/pipenv  # has .travis.yml file
-    - REPO=ambv/pyflakes  # has .travis.yml file
-    - REPO=ambv/requests-robotstxt  # has .travis.yml file
-    - REPO=ambv/requests-testadapter  # has .travis.yml file
-    - REPO=ambv/retype  # has .travis.yml file
-    - REPO=ambv/se-web
-    - REPO=ambv/singledispatch  # has .travis.yml file
-    - REPO=ambv/spectro
-    - REPO=ambv/thingsweforget-fetcher
-    - REPO=ambv/yapf  # has .travis.yml file
-    - REPO=ambv/zzyzx
+    - REPO=elff1493/pyscene
 cache: pip
 python:
     #- 2.7
