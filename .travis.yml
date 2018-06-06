@@ -1,10 +1,46 @@
 group: travis_latest
 language: python
 env:
-    - REPO=xillwillx/skiptracer
+    - REPO=wangshub/Douyin-Bot
+    - REPO=tensorflow/models
+    - REPO=UltimateHackers/XSStrike
+    - REPO=vinta/awesome-python
+    - REPO=toddmotto/public-apis
+    - REPO=plasticityai/magnitude
+    - REPO=keras-team/keras
+    - REPO=The-Art-of-Hacking/art-of-hacking
+    - REPO=TheThreeDog/Auto-Lianliankan
+    - REPO=Jack-Cherish/python-spider
+    - REPO=rg3/youtube-dl
+    - REPO=wkentaro/pytorch-for-numpy-users
+    - REPO=fake-name/ChromeController
+    - REPO=chrissimpkins/Crunch
+    - REPO=apachecn/MachineLearning
+    - REPO=ageitgey/face_recognition
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ambv/black
+    - REPO=imWildCat/scylla
+    - REPO=ansible/ansible
+    - REPO=python/cpython
+    - REPO=XX-net/XX-Net
+    - REPO=donnemartin/system-design-primer
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=yangxuanxc/wechat_friends
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=facebookresearch/ParlAI
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
