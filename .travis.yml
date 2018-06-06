@@ -1,20 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=CellProfiler/BatchProfiler
-    - REPO=CellProfiler/CellProfiler  # has .travis.yml file
-    - REPO=CellProfiler/CellProfiler-Analyst
-    - REPO=CellProfiler/CellProfiler-build
-    - REPO=CellProfiler/CellProfiler-plugins  # has .travis.yml file
-    - REPO=CellProfiler/Distributed-CellProfiler
-    - REPO=CellProfiler/distribution  # has .travis.yml file
-    - REPO=CellProfiler/meoir
-    - REPO=CellProfiler/python-bioformats  # has .travis.yml file
-    - REPO=CellProfiler/stitching
-    - REPO=CellProfiler/tutorial
+    - REPO=pyqtgraph/pyqtgraph  # has .travis.yml file
+    - REPO=pyqtgraph/pyqtgraph-core
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
