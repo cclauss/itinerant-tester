@@ -1,30 +1,17 @@
 group: travis_latest
 language: python
 env:
-    - REPO=AllenInstitute/CellProfiler  # has .travis.yml file
-    - REPO=AllenInstitute/CellProfiler-plugins  # has .travis.yml file
-    - REPO=AllenInstitute/EM_aligner_python  # has .travis.yml file
-    - REPO=AllenInstitute/GLIF_Teeter_et_al_2018
-    - REPO=AllenInstitute/acq4
-    - REPO=AllenInstitute/allensdk.eye_tracking  # has .travis.yml file
-    - REPO=AllenInstitute/allensdk.ipfx
-    - REPO=AllenInstitute/argschema
-    - REPO=AllenInstitute/biophys_optimize
-    - REPO=AllenInstitute/bmtk
-    - REPO=AllenInstitute/ccfviewer
-    - REPO=AllenInstitute/conan-fmt
-    - REPO=AllenInstitute/ephys_pink_noise
-    - REPO=AllenInstitute/incubator-airflow  # has .travis.yml file
-    - REPO=AllenInstitute/mouse_connectivity_models  # has .travis.yml file
-    - REPO=AllenInstitute/multipatch_analysis
-    - REPO=AllenInstitute/neuroanalysis
-    - REPO=AllenInstitute/neuroglia  # has .travis.yml file
-    - REPO=AllenInstitute/pycsf
-    - REPO=AllenInstitute/pyqtgraph  # has .travis.yml file
-    - REPO=AllenInstitute/render-modules
-    - REPO=AllenInstitute/scikit-image  # has .travis.yml file
-    - REPO=AllenInstitute/sonata
-    - REPO=AllenInstitute/transformy
+    - REPO=CellProfiler/BatchProfiler
+    - REPO=CellProfiler/CellProfiler  # has .travis.yml file
+    - REPO=CellProfiler/CellProfiler-Analyst
+    - REPO=CellProfiler/CellProfiler-build
+    - REPO=CellProfiler/CellProfiler-plugins  # has .travis.yml file
+    - REPO=CellProfiler/Distributed-CellProfiler
+    - REPO=CellProfiler/distribution  # has .travis.yml file
+    - REPO=CellProfiler/meoir
+    - REPO=CellProfiler/python-bioformats  # has .travis.yml file
+    - REPO=CellProfiler/stitching
+    - REPO=CellProfiler/tutorial
 cache: pip
 python:
     #- 2.7
