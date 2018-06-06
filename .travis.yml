@@ -1,8 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=python-gitlab/python-gitlab
-    - REPO=pyapi-gitlab/pyapi-gitlab
+    - REPO=databricks/mlflow
+    - REPO=Hell0W0rld0/Github-Hunter
+    - REPO=allenai/allennlp
 cache: pip
 python:
     #- 2.7
