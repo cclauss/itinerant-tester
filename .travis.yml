@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=pyqtgraph/pyqtgraph  # has .travis.yml file
-    - REPO=pyqtgraph/pyqtgraph-core
+    - REPO=elff1493/pyscene
 cache: pip
 python:
     - 2.7
