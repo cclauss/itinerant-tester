@@ -1,10 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=naryal2580/HeaderChecker
+    - REPO=getsentry/sentry
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
