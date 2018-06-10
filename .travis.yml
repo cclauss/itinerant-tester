@@ -1,7 +1,14 @@
 group: travis_latest
 language: python
 env:
-    - REPO=P0cL4bs/WiFi-Pumpkin
+    - REPO=cherezov/bottle  # has .travis.yml file
+    - REPO=cherezov/curiosity_ev3
+    - REPO=cherezov/dlnap
+    - REPO=cherezov/healthgraph-api
+    - REPO=cherezov/orvibo
+    - REPO=cherezov/red
+    - REPO=cherezov/vk_api_auth
+    - REPO=cherezov/x2d
 cache: pip
 python:
     - 2.7
