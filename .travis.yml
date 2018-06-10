@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=getsentry/sentry
+    - REPO=P0cL4bs/WiFi-Pumpkin
 cache: pip
 python:
     - 2.7
