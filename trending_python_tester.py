@@ -19,7 +19,9 @@ username = getpass.getuser()  # Does local username == GitHub username?
 print('Please enter the GitHub password for user: {}'.format(username))
 gh = github3_login(username, getpass.getpass())
 
-url = 'https://github.com/trending?l=Python'  # GitHub Trending top 25 repos
+url = 'https://github.com/trending/python'  # GitHub Trending top 25 repos
+# url += '?since=weekly'
+# url += '?since=monthly'
 
 # these repos pass tests, have pull requests to pass tests, or are Py3 only
 ignore = sorted([
@@ -85,6 +87,7 @@ ignore = sorted([
     'laixintao/python-parallel-programming-cookbook-cn'
 
 ])
+ignore = []
 
 # the boilerplate content of the .travis.yml file
 fmt = """group: travis_latest
@@ -93,8 +96,8 @@ env:
 %s
 cache: pip
 python:
-    - 2.7.14
-    - 3.6.4
+    #- 2.7
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
@@ -131,24 +134,21 @@ repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
 # 'python/cpython'
 repos = (repo.text.strip().replace(' ', '') for repo in repos
          if '/' in repo.text and '://' not in repo.text)
-repos = list(repos) + [
-    'ArduPilot/ardupilot', 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
-    'PythonCharmers/python-future', 'ansible/ansible',  # 'ansible/awx',
-    'facebookresearch/ParlAI', 'gevent/gevent', 'getsentry/sentry',
-    'ggtracker/sc2reader', 'apache/beam', 'bl4de/security-tools',
-    'Seedarchangel/TuChart', 'QUVA-Lab/artemis', 'swisskyrepo/Wordpresscan',
-    'hyperledger/fabric', 'hyperledger/sawtooth-core', 'hyperledger/indy-node',
-    'hyperledger/indy-plenum', 'hyperledger/indy-anoncreds', 'httplib2/httplib2',
-    'Supervisor/supervisor'
-    # 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python'
-]
+repos = list(repos) + ['matplotlib/matplotlib', 'ckan/ckan',
+    'ggtracker/sc2reader', 'vnpy/vnpy',
+    # 'ansible/awx', 'cheshirekow/cmake_format',
+    # 'ArduPilot/ardupilot', 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
+    'PythonCharmers/python-future', 'ansible/ansible', 'apache/beam',
+    'apache/spark', 'gevent/gevent', 'getsentry/sentry', 'hyperledger/fabric']
+    # 'httplib2/httplib2', 'Supervisor/supervisor'
+    # 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python']
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
-repos = '\n'.join('    - REPO=' + repo for repo in repos
-                  if 'shadowsocks' not in repo and repo not in ignore)
+repos = '\n'.join('    - REPO=' + repo for repo in repos)
+#                 if 'shadowsocks' not in repo and repo not in ignore)
 print(repos)
 travis_text = fmt % repos
 
 # log into GitHub and commit an update to .travis.yml which will trigger tests
-travis = gh.repository(username, 'itinerant-tester').contents('/.travis.yml')
+travis = gh.repository(username, 'itinerant-tester').file_contents('/.travis.yml')
 print(travis.update('trigger a new build', travis_text.encode('utf-8')))
 webbrowser.open('https://travis-ci.org/{}/itinerant-tester'.format(username))
