@@ -1,36 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=newsdev/UnveillanceDeploy
-    - REPO=newsdev/apfake
-    - REPO=newsdev/campfin-loader
-    - REPO=newsdev/congress-candidates-2018
-    - REPO=newsdev/django-ajax-selects  # has .travis.yml file
-    - REPO=newsdev/elex  # has .travis.yml file
-    - REPO=newsdev/elex-ftp-loader
-    - REPO=newsdev/elex-micro  # has .travis.yml file
-    - REPO=newsdev/fbworld
-    - REPO=newsdev/fec2json
-    - REPO=newsdev/foialawya
-    - REPO=newsdev/newsapps-scraper-txair
-    - REPO=newsdev/nyt-campfinbot
-    - REPO=newsdev/nyt-clerk
-    - REPO=newsdev/nyt-docket
-    - REPO=newsdev/nyt-elections-admin
-    - REPO=newsdev/nyt-entity-service
-    - REPO=newsdev/nyt-entity-uploader
-    - REPO=newsdev/nyt-fec
-    - REPO=newsdev/nyt-nj-campfin
-    - REPO=newsdev/nyt-prb-scraper
-    - REPO=newsdev/nyt-pyfec
-    - REPO=newsdev/nyt-pyiap
-    - REPO=newsdev/nyt-scotus
-    - REPO=newsdev/nyt-scotusbot
-    - REPO=newsdev/nyt-scotusbot2
-    - REPO=newsdev/nyt-screenshot-service
-    - REPO=newsdev/python-elections  # has .travis.yml file
-    - REPO=newsdev/who-the-hill
-    - REPO=datawire/toybox
+    - REPO=victordomingos/Count-files
+    - REPO=apache/systemml
 cache: pip
 python:
     - 2.7
