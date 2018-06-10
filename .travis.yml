@@ -1,36 +1,37 @@
 group: travis_latest
 language: python
 env:
-    - REPO=datawire/ambassador  # has .travis.yml file
-    - REPO=datawire/ambassador-auth-httpbasic  # has .travis.yml file
-    - REPO=datawire/ambassador-auth-httpjwt  # has .travis.yml file
-    - REPO=datawire/ambassador-canary
-    - REPO=datawire/bakerstreet
-    - REPO=datawire/boston-devops-days-2017  # has .travis.yml file
-    - REPO=datawire/docker-shim
-    - REPO=datawire/envoy-canary
-    - REPO=datawire/envoy-steps
-    - REPO=datawire/forge  # has .travis.yml file
-    - REPO=datawire/gateway
-    - REPO=datawire/ghas
-    - REPO=datawire/hello-forge
-    - REPO=datawire/hello-forge-network
-    - REPO=datawire/hello-kubernetes
-    - REPO=datawire/hello-webapp
-    - REPO=datawire/hello-world
-    - REPO=datawire/hello-world-python
-    - REPO=datawire/kubeflow  # has .travis.yml file
-    - REPO=datawire/kubernaut  # has .travis.yml file
-    - REPO=datawire/kubernaut-agent  # has .travis.yml file
-    - REPO=datawire/micromaze
-    - REPO=datawire/qotm  # has .travis.yml file
-    - REPO=datawire/qotm-ws  # has .travis.yml file
-    - REPO=datawire/reference-infrastructure-fabric  # has .travis.yml file
-    - REPO=datawire/scout.py  # has .travis.yml file
-    - REPO=datawire/scout2csv  # has .travis.yml file
-    - REPO=datawire/sscid
-    - REPO=datawire/sshuttle  # has .travis.yml file
-    - REPO=datawire/toyboxcache: pip
+    - REPO=newsdev/UnveillanceDeploy
+    - REPO=newsdev/apfake
+    - REPO=newsdev/campfin-loader
+    - REPO=newsdev/congress-candidates-2018
+    - REPO=newsdev/django-ajax-selects  # has .travis.yml file
+    - REPO=newsdev/elex  # has .travis.yml file
+    - REPO=newsdev/elex-ftp-loader
+    - REPO=newsdev/elex-micro  # has .travis.yml file
+    - REPO=newsdev/fbworld
+    - REPO=newsdev/fec2json
+    - REPO=newsdev/foialawya
+    - REPO=newsdev/newsapps-scraper-txair
+    - REPO=newsdev/nyt-campfinbot
+    - REPO=newsdev/nyt-clerk
+    - REPO=newsdev/nyt-docket
+    - REPO=newsdev/nyt-elections-admin
+    - REPO=newsdev/nyt-entity-service
+    - REPO=newsdev/nyt-entity-uploader
+    - REPO=newsdev/nyt-fec
+    - REPO=newsdev/nyt-nj-campfin
+    - REPO=newsdev/nyt-prb-scraper
+    - REPO=newsdev/nyt-pyfec
+    - REPO=newsdev/nyt-pyiap
+    - REPO=newsdev/nyt-scotus
+    - REPO=newsdev/nyt-scotusbot
+    - REPO=newsdev/nyt-scotusbot2
+    - REPO=newsdev/nyt-screenshot-service
+    - REPO=newsdev/python-elections  # has .travis.yml file
+    - REPO=newsdev/who-the-hill
+    - REPO=datawire/toybox
+cache: pip
 python:
     - 2.7
     - 3.6
