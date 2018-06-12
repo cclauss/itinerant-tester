@@ -1,36 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=openai/EPG
-    - REPO=openai/baselines  # has .travis.yml file
-    - REPO=openai/deeptype
-    - REPO=openai/finetune-transformer-lm
-    - REPO=openai/generating-reviews-discovering-sentiment
-    - REPO=openai/gradient-checkpointing  # has .travis.yml file
-    - REPO=openai/gym  # has .travis.yml file
-    - REPO=openai/gym-http-api  # has .travis.yml file
-    - REPO=openai/gym-recording
-    - REPO=openai/gym-soccer
-    - REPO=openai/iaf
-    - REPO=openai/improved-gan
-    - REPO=openai/kubernetes-ec2-autoscaler  # has .travis.yml file
-    - REPO=openai/maddpg
-    - REPO=openai/mlsh
-    - REPO=openai/mujoco-py  # has .travis.yml file
-    - REPO=openai/multiagent-competition
-    - REPO=openai/multiagent-particle-envs
-    - REPO=openai/neural-gpu
-    - REPO=openai/pixel-cnn
-    - REPO=openai/retro  # has .travis.yml file
-    - REPO=openai/retro-baselines
-    - REPO=openai/retro-contest
-    - REPO=openai/retro-movies
-    - REPO=openai/roboschool
-    - REPO=openai/robosumo
-    - REPO=openai/sonic-on-ray
-    - REPO=openai/universe  # has .travis.yml file
-    - REPO=openai/universe-starter-agent
-    - REPO=openai/weightnormcache: pip
+    - REPO=openai/weightnorm
+cache: pip
 python:
     - 2.7
     - 3.6
