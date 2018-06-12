@@ -1,7 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=wxde/casUS_seg_ctx_re
+    - REPO=openai/finetune-transformer-lm
+    - REPO=johnolafenwa/TorchFusion
+    - REPO=faif/python-patterns
 cache: pip
 python:
     #- 2.7
