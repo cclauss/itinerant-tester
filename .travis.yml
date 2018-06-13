@@ -1,12 +1,20 @@
 group: travis_latest
 language: python
 env:
-    - REPO=johnafish/senticomment
-    - REPO=deepjia/v2net
-    - REPO=tiaod/qrcode-art-server
+    - REPO=h2oai/deepwater-nae
+    - REPO=h2oai/h2o-google-bigquery
+    - REPO=h2oai/h2o-rf1-bench
+    - REPO=h2oai/h2o3-sagemaker-poc
+    - REPO=h2oai/h2o4gpu
+    - REPO=h2oai/openml-python  # has .travis.yml file
+    - REPO=h2oai/py3nvml
+    - REPO=h2oai/scikit-learn  # has .travis.yml file
+    - REPO=h2oai/social_ml
+    - REPO=h2oai/typesentry
+
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
