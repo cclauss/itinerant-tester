@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=google/apitools
+    - REPO=tzutalin/labelImg
 
 cache: pip
 python:
