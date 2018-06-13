@@ -1,8 +1,21 @@
 group: travis_latest
 language: python
 env:
-    - REPO=taki0112/StarGAN-Tensorflow
-    - REPO=mapbox/robosat
+    - REPO=lamden/cilantro  # has .travis.yml file
+    - REPO=lamden/clove  # has .travis.yml file
+    - REPO=lamden/clove_bounty  # has .travis.yml file
+    - REPO=lamden/flora
+    - REPO=lamden/flora-api
+    - REPO=lamden/kademlia  # has .travis.yml file
+    - REPO=lamden/lamdex
+    - REPO=lamden/merk
+    - REPO=lamden/python-altcoinlib  # has .travis.yml file
+    - REPO=lamden/saffron  # has .travis.yml file
+    - REPO=lamden/seneca
+    - REPO=lamden/seneca_contracts
+    - REPO=lamden/speedy-zero-knowledge
+    - REPO=lamden/tsol
+    - REPO=lamden/vmnet
 cache: pip
 python:
     - 2.7
