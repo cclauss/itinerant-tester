@@ -1,16 +1,36 @@
 group: travis_latest
 language: python
 env:
-    - REPO=h2oai/deepwater-nae
-    - REPO=h2oai/h2o-google-bigquery
-    - REPO=h2oai/h2o-rf1-bench
-    - REPO=h2oai/h2o3-sagemaker-poc
-    - REPO=h2oai/h2o4gpu
-    - REPO=h2oai/openml-python  # has .travis.yml file
-    - REPO=h2oai/py3nvml
-    - REPO=h2oai/scikit-learn  # has .travis.yml file
-    - REPO=h2oai/social_ml
-    - REPO=h2oai/typesentry
+    - REPO=mapbox/COGDumper  # has .travis.yml file
+    - REPO=mapbox/CTFd  # has .travis.yml file
+    - REPO=mapbox/fio-area
+    - REPO=mapbox/make-surface
+    - REPO=mapbox/mapbox-cli-py  # has .travis.yml file
+    - REPO=mapbox/mapbox-sdk-py  # has .travis.yml file
+    - REPO=mapbox/mapboxgl-jupyter  # has .travis.yml file
+    - REPO=mapbox/mbutil  # has .travis.yml file
+    - REPO=mapbox/mercantile  # has .travis.yml file
+    - REPO=mapbox/montilecarlo
+    - REPO=mapbox/nodata
+    - REPO=mapbox/osmcha  # has .travis.yml file
+    - REPO=mapbox/pxm-manifest-specification
+    - REPO=mapbox/raster-tester
+    - REPO=mapbox/rasterio  # has .travis.yml file
+    - REPO=mapbox/rasterio-cookbook
+    - REPO=mapbox/rio-alpha  # has .travis.yml file
+    - REPO=mapbox/rio-color  # has .travis.yml file
+    - REPO=mapbox/rio-mbtiles  # has .travis.yml file
+    - REPO=mapbox/rio-merge-rgba  # has .travis.yml file
+    - REPO=mapbox/rio-polyencode
+    - REPO=mapbox/rio-rgbify  # has .travis.yml file
+    - REPO=mapbox/rio-tiler
+    - REPO=mapbox/robosat  # has .travis.yml file
+    - REPO=mapbox/snuggs  # has .travis.yml file
+    - REPO=mapbox/supermercado  # has .travis.yml file
+    - REPO=mapbox/untiler  # has .travis.yml file
+    - REPO=mapbox/vector-tile-base
+    - REPO=mapbox/vector-tile-py
+    - REPO=mapbox/watchbot-progress-py  # has .travis.yml file    - REPO=h2oai/typesentry
 
 cache: pip
 python:
