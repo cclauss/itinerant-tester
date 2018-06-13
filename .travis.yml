@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=chorsley/python-Wappalyzer
-    - REPO=DataSploit/datasploit
+    - REPO=google/apitools
 
 cache: pip
 python:
