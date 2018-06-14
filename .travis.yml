@@ -1,42 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=jackfrued/Python-100-Days
-    - REPO=vipstone/faceai
-    - REPO=tensorflow/models
-    - REPO=taki0112/StarGAN-Tensorflow
-    - REPO=wangshub/Douyin-Bot
-    - REPO=vinta/awesome-python
-    - REPO=Yelp/detect-secrets
-    - REPO=keras-team/keras
-    - REPO=ambv/black
     - REPO=chrisdonahue/nesmdb
-    - REPO=mitmproxy/mitmproxy
-    - REPO=darknessomi/musicbox
-    - REPO=faif/python-patterns
-    - REPO=toddmotto/public-apis
-    - REPO=rg3/youtube-dl
-    - REPO=johnafish/senticomment
-    - REPO=ageitgey/face_recognition
-    - REPO=deepjia/v2net
-    - REPO=pallets/flask
-    - REPO=semontesdeoca/MNPR
-    - REPO=facebookresearch/supervision-by-registration
-    - REPO=scrapy/scrapy
-    - REPO=django/django
-    - REPO=facebookresearch/Detectron
-    - REPO=scikit-learn/scikit-learn
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=nyukat/breast_density_classifier
 cache: pip
 python:
     #- 2.7
