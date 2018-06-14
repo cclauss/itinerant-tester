@@ -1,7 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=tzutalin/labelImg
+    - REPO=Yelp/detect-secrets
+    - REPO=darknessomi/musicbox
+    - REPO=chrisdonahue/nesmdb
 
 cache: pip
 python:
