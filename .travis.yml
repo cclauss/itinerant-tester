@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=dustinvtran/bayesrl
+    - REPO=msracver/Relation-Networks-for-Object-Detection 
 cache: pip
 python:
     #- 2.7
