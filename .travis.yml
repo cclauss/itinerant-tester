@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=matterport/Mask_RCNN
+    - REPO=huggingface/pytorch-openai-transformer-lm
 cache: pip
 python:
     #- 2.7
