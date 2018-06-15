@@ -2,6 +2,8 @@ group: travis_latest
 language: python
 env:
     - REPO=huggingface/pytorch-openai-transformer-lm
+    - REPO=msracver/Relation-Networks-for-Object-Detection 
+    - REPO=yzhao062/Pyod
 cache: pip
 python:
     #- 2.7
