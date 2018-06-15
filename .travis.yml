@@ -1,12 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=msracver/Deep-Feature-Flow
-    - REPO=msracver/Deep-Image-Analogy
-    - REPO=msracver/Deformable-ConvNets
-    - REPO=msracver/FCIS
-    - REPO=msracver/Flow-Guided-Feature-Aggregation
-    - REPO=msracver/Relation-Networks-for-Object-Detection
+    - REPO=google/gif-for-cli
+    - REPO=Carlos-Zen/blockchain-python
 cache: pip
 python:
     - 2.7
