@@ -9,8 +9,8 @@ env:
     - REPO=msracver/Relation-Networks-for-Object-Detection
 cache: pip
 python:
-    #- 2.7
-    - 3.6
+    - 2.7
+    #- 3.6
     #- nightly
     #- pypy
     #- pypy3
