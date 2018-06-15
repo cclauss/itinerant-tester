@@ -5,8 +5,8 @@ env:
     - REPO=Carlos-Zen/blockchain-python
 cache: pip
 python:
-    - 2.7
-    #- 3.6
+    #- 2.7
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
