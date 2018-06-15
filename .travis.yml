@@ -1,8 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=chrisdonahue/nesmdb
-    - REPO=nyukat/breast_density_classifier
+    - REPO=matterport/Mask_RCNN
 cache: pip
 python:
     #- 2.7
