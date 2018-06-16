@@ -1,10 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=huggingface/awd-lstm-lm
-    - REPO=huggingface/neuralcoref  # has .travis.yml file
-    - REPO=huggingface/pytorch-openai-transformer-lm
-    - REPO=huggingface/torchMoji
+    - REPO=vulnersCom/zabbix-threat-control
+    - REPO=jiesutd/NCRFpp
 cache: pip
 python:
     #- 2.7
