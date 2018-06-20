@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=https://github.com/vnpy/vnpy
+    - REPO=vnpy/vnpy
     
 cache: pip
 python:
