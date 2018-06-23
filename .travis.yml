@@ -1,42 +1,11 @@
 group: travis_latest
 language: python
 env:
-    - REPO=vibora-io/vibora
-    - REPO=mahyarnajibi/SNIPER
-    - REPO=llSourcell/learn_math_fast
-    - REPO=salesforce/decaNLP
-    - REPO=NervanaSystems/distiller
-    - REPO=ml-jku/baselines-rudder
-    - REPO=tensorflow/models
-    - REPO=toddmotto/public-apis
-    - REPO=moyuanz/DevilYuan
-    - REPO=DIYer22/boxx
-    - REPO=jackfrued/Python-100-Days
-    - REPO=CozySynthesizer/cozy
-    - REPO=avidLearnerInProgress/pyCAIR
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=rg3/youtube-dl
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=localstack/localstack
-    - REPO=django/django
-    - REPO=yassineaboukir/CVE-2018-0296
-    - REPO=facebookresearch/Detectron
     - REPO=w1109790800/penetration
-    - REPO=pallets/flask
-    - REPO=google/gif-for-cli
-    - REPO=scikit-learn/scikit-learn
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=joblib/joblib
+    - REPO=yassineaboukir/CVE-2018-0296
+    - REPO=salesforce/decaNLP
+    - REPO=CozySynthesizer/cozy
 cache: pip
 python:
     #- 2.7
