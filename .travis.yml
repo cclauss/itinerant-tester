@@ -1,13 +1,9 @@
 group: travis_latest
 language: python
 env:
-    - REPO=pandas-profiling/pandas-profiling
-    - REPO=ml-jku/baselines-rudder
-    - REPO=flipcoder/decadence
+    - REPO=meetmangukiya/instagram-scraper
     - REPO=joblib/joblib
-    - REPO=yassineaboukir/CVE-2018-0296
-    - REPO=CozySynthesizer/cozy
-    - REPO=salesforce/decaNLP
+    - REPO=ashishb/adb-enhanced
 
 cache: pip
 python:
