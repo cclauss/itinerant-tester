@@ -1,12 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=angr/angr
+    - REPO=meetmangukiya/instagram-scraper
+    - REPO=vibora-io/vibora
+    - REPO=llSourcell/learn_math_fast
+    - REPO=SteamDatabase/SalienCheat
     - REPO=ChrisTheCoolHut/Zeratool
-
+    - REPO=mahyarnajibi/SNIPER
+    - REPO=salesforce/decaNLP
+    - REPO=tensorflow/models
+    - REPO=ashishb/adb-enhanced
+    - REPO=vinta/awesome-python
+    - REPO=jeffzh3ng/Fuxi-Scanner
+    - REPO=toddmotto/public-apis
+    - REPO=nedbat/coveragepy
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=keras-team/keras
+    - REPO=w1109790800/penetration
+    - REPO=jackfrued/Python-100-Days
+    - REPO=NervanaSystems/nlp-architect
+    - REPO=mitmproxy/mitmproxy
+    - REPO=rg3/youtube-dl
+    - REPO=vipstone/faceai
+    - REPO=NervanaSystems/distiller
+    - REPO=matterport/Mask_RCNN
+    - REPO=yunho0130/awesome-blockchain-kor
+    - REPO=databricks/mlflow
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
