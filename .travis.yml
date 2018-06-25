@@ -1,24 +1,36 @@
 group: travis_latest
 language: python
 env:
-    - REPO=victordomingos/ContarDinheiro.py
-    - REPO=victordomingos/Count-files
-    - REPO=victordomingos/Learning_Flask-REST
-    - REPO=victordomingos/NPK-Backup
-    - REPO=victordomingos/PT-Tracking
-    - REPO=victordomingos/PerformanceTests
-    - REPO=victordomingos/RepService
-    - REPO=victordomingos/The-NPK-Weather-App
-    - REPO=victordomingos/The-No-Title-Tech-Blog
-    - REPO=victordomingos/centraldedados.pt
-    - REPO=victordomingos/challenges
-    - REPO=victordomingos/optimize-images
-    - REPO=victordomingos/other_stuff
-    - REPO=victordomingos/pelican-advthumbnailer
-    - REPO=victordomingos/pelican-plugins  # has .travis.yml file
-    - REPO=victordomingos/puremagic  # has .travis.yml file
-    - REPO=victordomingos/tkcalendar  # has .travis.yml file
-    - REPO=victordomingos/ttkwidgets  # has .travis.yml file
+    - REPO=IBM/MAX-Image-Caption-Generator
+    - REPO=IBM/MAX-Inception-ResNet-v2
+    - REPO=IBM/MAX-Object-Detector
+    - REPO=IBM/Model-Training-and-Serving-using-WML
+    - REPO=IBM/Portfolio-Optimize  # has .travis.yml file
+    - REPO=IBM/Portfolio-compute  # has .travis.yml file
+    - REPO=IBM/Predictive-Market-Stress-Testing  # has .travis.yml file
+    - REPO=IBM/Semantic-Search-for-Sustainable-Development
+    - REPO=IBM/adversarial-robustness-toolbox  # has .travis.yml file
+    - REPO=IBM/ansible-role-infosvr-import-export
+    - REPO=IBM/connector-for-storediq
+    - REPO=IBM/cristata
+    - REPO=IBM/dmclient
+    - REPO=IBM/dstc7-noesis
+    - REPO=IBM/home-assistant
+    - REPO=IBM/ibm-cos-sdk-python  # has .travis.yml file
+    - REPO=IBM/ibm-cos-sdk-python-core
+    - REPO=IBM/ibm-cos-sdk-python-s3transfer  # has .travis.yml file
+    - REPO=IBM/iot-device-trend-analysis  # has .travis.yml file
+    - REPO=IBM/ny-power  # has .travis.yml file
+    - REPO=IBM/osslm-ansible-resource-manager
+    - REPO=IBM/osslm-docker-adaptor
+    - REPO=IBM/plex
+    - REPO=IBM/pytorch-cifar10-in-ibm-cloud
+    - REPO=IBM/pytorch-seq2seq  # has .travis.yml file
+    - REPO=IBM/stix-shifter  # has .travis.yml file
+    - REPO=IBM/tensorflow-hangul-recognition  # has .travis.yml file
+    - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
+    - REPO=IBM/watson-online-store  # has .travis.yml file
+    - REPO=IBM/wc-devops-utilities
 
 cache: pip
 python:
