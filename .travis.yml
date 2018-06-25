@@ -1,46 +1,19 @@
 group: travis_latest
 language: python
 env:
-    - REPO=IBM/MAX-Image-Caption-Generator
-    - REPO=IBM/MAX-Inception-ResNet-v2
-    - REPO=IBM/MAX-Object-Detector
-    - REPO=IBM/Model-Training-and-Serving-using-WML
-    - REPO=IBM/Portfolio-Optimize  # has .travis.yml file
-    - REPO=IBM/Portfolio-compute  # has .travis.yml file
-    - REPO=IBM/Predictive-Market-Stress-Testing  # has .travis.yml file
-    - REPO=IBM/Semantic-Search-for-Sustainable-Development
-    - REPO=IBM/adversarial-robustness-toolbox  # has .travis.yml file
-    - REPO=IBM/ansible-role-infosvr-import-export
-    - REPO=IBM/connector-for-storediq
-    - REPO=IBM/cristata
-    - REPO=IBM/dmclient
-    - REPO=IBM/dstc7-noesis
-    - REPO=IBM/home-assistant
-    - REPO=IBM/ibm-cos-sdk-python  # has .travis.yml file
-    - REPO=IBM/ibm-cos-sdk-python-core
-    - REPO=IBM/ibm-cos-sdk-python-s3transfer  # has .travis.yml file
-    - REPO=IBM/iot-device-trend-analysis  # has .travis.yml file
-    - REPO=IBM/ny-power  # has .travis.yml file
-    - REPO=IBM/osslm-ansible-resource-manager
-    - REPO=IBM/osslm-docker-adaptor
-    - REPO=IBM/plex
-    - REPO=IBM/pytorch-cifar10-in-ibm-cloud
-    - REPO=IBM/pytorch-seq2seq  # has .travis.yml file
-    - REPO=IBM/stix-shifter  # has .travis.yml file
-    - REPO=IBM/tensorflow-hangul-recognition  # has .travis.yml file
+
     - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
-    - REPO=IBM/watson-online-store  # has .travis.yml file
-    - REPO=IBM/wc-devops-utilities
 
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
     #- pypy3
 matrix:
     allow_failures:
+        - python: 2.7
         - python: nightly
         - python: pypy
         - python: pypy3
