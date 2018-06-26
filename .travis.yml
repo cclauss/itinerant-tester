@@ -2,8 +2,7 @@ group: travis_latest
 language: python
 env:
 
-    - REPO=dfd-tud/deda
-    - REPO=manateelazycat/emacs-application-framework
+    - REPO=strongloop/acme-freight-controller
 
 cache: pip
 python:
