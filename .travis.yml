@@ -1,19 +1,51 @@
 group: travis_latest
 language: python
 env:
-
-    - REPO=strongloop/acme-freight-controller
-
+    - REPO=dfd-tud/deda
+    - REPO=vibora-io/vibora
+    - REPO=llSourcell/learn_math_fast
+    - REPO=meetmangukiya/instagram-scraper
+    - REPO=nedbat/coveragepy
+    - REPO=tensorflow/models
+    - REPO=SteamDatabase/SalienCheat
+    - REPO=NervanaSystems/distiller
+    - REPO=keras-team/keras
+    - REPO=quark0/darts
+    - REPO=mahyarnajibi/SNIPER
+    - REPO=jackfrued/Python-100-Days
+    - REPO=manateelazycat/emacs-application-framework
+    - REPO=salesforce/decaNLP
+    - REPO=vinta/awesome-python
+    - REPO=rg3/youtube-dl
+    - REPO=django/django
+    - REPO=toddmotto/public-apis
+    - REPO=openai/baselines
+    - REPO=scikit-learn/scikit-learn
+    - REPO=deepmind/scalable_agent
+    - REPO=openai/gym
+    - REPO=nbedos/termtosvg
+    - REPO=python/cpython
+    - REPO=jeffzh3ng/Fuxi-Scanner
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
     #- pypy3
 matrix:
     allow_failures:
-        - python: 2.7
         - python: nightly
         - python: pypy
         - python: pypy3
