@@ -2,7 +2,8 @@ group: travis_latest
 language: python
 env:
 
-    - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
+    - REPO=dfd-tud/deda
+    - REPO=manateelazycat/emacs-application-framework
 
 cache: pip
 python:
