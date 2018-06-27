@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=hollobit/All-About-the-GAN
+    - REPO=IBM/wc-devops-utilities
     
 cache: pip
 python:
