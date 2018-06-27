@@ -1,11 +1,45 @@
 group: travis_latest
 language: python
 env:
-    - REPO=IBM/wc-devops-utilities
-    
+    - REPO=quark0/darts
+    - REPO=deepmind/scalable_agent
+    - REPO=vibora-io/vibora
+    - REPO=dfd-tud/deda
+    - REPO=SteamDatabase/SalienCheat
+    - REPO=sibblegp/b2blaze
+    - REPO=meetmangukiya/instagram-scraper
+    - REPO=tensorflow/models
+    - REPO=llSourcell/learn_math_fast
+    - REPO=mahyarnajibi/SNIPER
+    - REPO=keras-team/keras
+    - REPO=nedbat/coveragepy
+    - REPO=toddmotto/public-apis
+    - REPO=guxd/deep-code-search
+    - REPO=vinta/awesome-python
+    - REPO=jackfrued/Python-100-Days
+    - REPO=hollobit/All-About-the-GAN
+    - REPO=scikit-learn/scikit-learn
+    - REPO=openai/baselines
+    - REPO=openai/gym
+    - REPO=apachecn/LeetCode
+    - REPO=rg3/youtube-dl
+    - REPO=pallets/flask
+    - REPO=requests/requests
+    - REPO=ansible/ansible
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
@@ -21,7 +55,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO}
+    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
