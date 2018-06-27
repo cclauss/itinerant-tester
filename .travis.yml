@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=vnpy/vnpy
+    - REPO=hollobit/All-About-the-GAN
     
 cache: pip
 python:
@@ -21,7 +21,7 @@ install:
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - git clone --depth=50 ${URL} ~/${REPO} --branch=dev
+    - git clone --depth=50 ${URL} ~/${REPO}
     - cd ~/${REPO}
 script:
     - echo stop the build if there are Python syntax errors or undefined names
