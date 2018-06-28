@@ -1,12 +1,28 @@
 group: travis_latest
 language: python
 env:
-    - REPO=quark0/darts
-
+    - REPO=MatthewScholefield/fitipy
+    - REPO=MatthewScholefield/flask-sqlalchemy  # has .travis.yml file
+    - REPO=MatthewScholefield/meson-wraps
+    - REPO=MatthewScholefield/mycroft-core  # has .travis.yml file
+    - REPO=MatthewScholefield/mycroft-light
+    - REPO=MatthewScholefield/padaos
+    - REPO=MatthewScholefield/petact
+    - REPO=MatthewScholefield/prettyparse
+    - REPO=MatthewScholefield/skill-kickstarter-tracker
+    - REPO=MatthewScholefield/skill-question-learner
+    - REPO=MatthewScholefield/skill-repeat-recent
+    - REPO=MatthewScholefield/skill-software-updater
+    - REPO=MatthewScholefield/speechpy  # has .travis.yml file
+    - REPO=MatthewScholefield/surro
+    - REPO=MatthewScholefield/tensorflow-on-raspberry-pi
+    - REPO=MatthewScholefield/tensorflow_speech_recognition_demo
+    - REPO=MatthewScholefield/testing-two-skill
+    
 cache: pip
 python:
     #- 2.7
-    - 3.6.5
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
