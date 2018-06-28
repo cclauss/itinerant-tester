@@ -1,31 +1,31 @@
 group: travis_latest
 language: python
 env:
-    - REPO=sibblegp/b2blaze
     - REPO=quark0/darts
+    - REPO=sibblegp/b2blaze
     - REPO=vibora-io/vibora
+    - REPO=LMGsec/Magic-Unicorn-Tool
+    - REPO=521xueweihan/HelloGitHub
+    - REPO=tensorflow/models
     - REPO=deepmind/scalable_agent
     - REPO=dfd-tud/deda
-    - REPO=tensorflow/models
-    - REPO=SteamDatabase/SalienCheat
-    - REPO=521xueweihan/HelloGitHub
     - REPO=keras-team/keras
-    - REPO=LMGsec/Magic-Unicorn-Tool
-    - REPO=apachecn/LeetCode
-    - REPO=toddmotto/public-apis
+    - REPO=SteamDatabase/SalienCheat
     - REPO=vinta/awesome-python
     - REPO=django/django
-    - REPO=rg3/youtube-dl
     - REPO=OlafenwaMoses/ImageAI
+    - REPO=rg3/youtube-dl
+    - REPO=apachecn/LeetCode
     - REPO=llSourcell/learn_math_fast
-    - REPO=mahyarnajibi/SNIPER
-    - REPO=yunho0130/awesome-blockchain-kor
-    - REPO=akanazawa/cmr
-    - REPO=scrapy/scrapy
     - REPO=python/cpython
-    - REPO=localstack/localstack
-    - REPO=mitmproxy/mitmproxy
     - REPO=pallets/flask
+    - REPO=toddmotto/public-apis
+    - REPO=stoic1979/robovision
+    - REPO=scrapy/scrapy
+    - REPO=localstack/localstack
+    - REPO=donnemartin/system-design-primer
+    - REPO=wy1iu/DCNets
+    - REPO=sec-bit/awesome-buggy-erc20-tokens
     - REPO=matplotlib/matplotlib
     - REPO=ckan/ckan
     - REPO=ggtracker/sc2reader
