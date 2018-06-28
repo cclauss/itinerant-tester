@@ -39,8 +39,8 @@ env:
     - REPO=hyperledger/fabric
 cache: pip
 python:
-    #- 2.7
-    - 3.6
+    - 2.7
+    - 3.7
     #- nightly
     #- pypy
     #- pypy3
