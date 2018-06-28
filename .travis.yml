@@ -1,36 +1,8 @@
 group: travis_latest
 language: python
 env:
-    - REPO=MycroftAI/adapt  # has .travis.yml file
-    - REPO=MycroftAI/fallback-duckduckgo
-    - REPO=MycroftAI/fallback-wolfram-alpha
+    - REPO=keithito/tacotron
     - REPO=MycroftAI/mimic2
-    - REPO=MycroftAI/mycroft-core  # has .travis.yml file
-    - REPO=MycroftAI/mycroft-precise
-    - REPO=MycroftAI/mycroft-skills-kit
-    - REPO=MycroftAI/mycroft-skills-manager
-    - REPO=MycroftAI/mycroft-timer
-    - REPO=MycroftAI/mycroft-wifi-setup
-    - REPO=MycroftAI/padatious
-    - REPO=MycroftAI/skill-alarm
-    - REPO=MycroftAI/skill-audio-record
-    - REPO=MycroftAI/skill-configuration
-    - REPO=MycroftAI/skill-date-time
-    - REPO=MycroftAI/skill-fallback-persona
-    - REPO=MycroftAI/skill-hello-world
-    - REPO=MycroftAI/skill-installer
-    - REPO=MycroftAI/skill-naptime
-    - REPO=MycroftAI/skill-npr-news
-    - REPO=MycroftAI/skill-release-test
-    - REPO=MycroftAI/skill-reminder
-    - REPO=MycroftAI/skill-spelling
-    - REPO=MycroftAI/skill-stock
-    - REPO=MycroftAI/skill-stop
-    - REPO=MycroftAI/skill-support
-    - REPO=MycroftAI/skill-version-checker
-    - REPO=MycroftAI/skill-volume
-    - REPO=MycroftAI/skill-weather
-    - REPO=MycroftAI/skill-wiki
 
 cache: pip
 python:
