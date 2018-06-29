@@ -1,16 +1,13 @@
 group: travis_latest
 language: python
 env:
-    - REPO=ctallec/world-models
-    - REPO=Microsoft/dowhy
     - REPO=statsmodels/statsmodels
     - REPO=facebookresearch/DetectAndTrack
-    - REPO=LMGsec/Magic-Unicorn-Tool
 
 cache: pip
 python:
-    #- 2.7
-    - 3.6
+    - 2.7
+    #- 3.6
     #- nightly
     #- pypy
     #- pypy3
