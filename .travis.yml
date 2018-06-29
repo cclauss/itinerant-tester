@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 env:
-    - REPO=nspies / genomeview 
+    - REPO=nspies/genomeview 
 
 cache: pip
 python:
