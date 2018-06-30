@@ -1,13 +1,13 @@
 group: travis_latest
 language: python
 env:
-    - REPO=mikaelho/multipeer
+    - REPO=johnwheeler/flask-ask
+    - REPO=jiesutd/LatticeLSTM 
 
 cache: pip
 python:
     #- 2.7
     - 3.6
-    - 3.6.6
     #- nightly
     #- pypy
     #- pypy3
