@@ -1,9 +1,42 @@
 group: travis_latest
 language: python
 env:
+    - REPO=alexa-labs/alexa-skills-kit-sdk-for-python
+    - REPO=vibora-io/vibora
+    - REPO=nbedos/termtosvg
+    - REPO=quark0/darts
+    - REPO=tensorflow/models
+    - REPO=remon/pythonCodes
+    - REPO=agrimgupta92/sgan
+    - REPO=keras-team/keras
+    - REPO=vinta/awesome-python
+    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
+    - REPO=toddmotto/public-apis
     - REPO=johnwheeler/flask-ask
-    - REPO=jiesutd/LatticeLSTM 
-
+    - REPO=vipstone/faceai
+    - REPO=django/django
+    - REPO=requests/requests
+    - REPO=llSourcell/learn_math_fast
+    - REPO=jiesutd/LatticeLSTM
+    - REPO=rg3/youtube-dl
+    - REPO=ctallec/world-models
+    - REPO=madman-bob/Smart-Fruit
+    - REPO=ageitgey/face_recognition
+    - REPO=facebookresearch/Detectron
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=scikit-learn/scikit-learn
+    - REPO=deepmind/scalable_agent
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
