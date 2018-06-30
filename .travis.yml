@@ -1,12 +1,10 @@
 group: travis_latest
 language: python
 env:
-    - REPO=google/sg2im
-    - REPO=airbus-seclab/cpu_rec
     - REPO=Tribler/tribler
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
