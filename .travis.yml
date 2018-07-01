@@ -2,7 +2,9 @@ group: travis_latest
 dist: xenial
 language: python
 env:
-    - REPO=victoresque/pytorch-template 
+    - REPO=1tayH/noisy
+    - REPO=jtolds/git-treesame-commit
+    - REPO=akanimax/T2F
 
 cache: pip
 python:
