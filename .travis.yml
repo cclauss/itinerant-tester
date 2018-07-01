@@ -1,12 +1,15 @@
 group: travis_latest
+dist: xenial
 language: python
 env:
-    - REPO=minqi/hnatt 
+    - REPO=errbotio/errbot
 cache: pip
 python:
     - 2.7
     - 3.6
-    #- nightly
+    - 3.7-dev
+    - 3.7
+    - nightly
     #- pypy
     #- pypy3
 matrix:
