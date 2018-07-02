@@ -1,42 +1,12 @@
 group: travis_latest
 language: python
 env:
-    - REPO=google/sg2im
-    - REPO=vibora-io/vibora
-    - REPO=akanimax/T2F
-    - REPO=1tayH/noisy
-    - REPO=ashishb/adb-enhanced
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=vipstone/faceai
-    - REPO=sffxzzp/Steam-2018-SummerGame
-    - REPO=Licoy/A-Joke
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=rg3/youtube-dl
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=TheAlgorithms/Python
-    - REPO=perplexingpegasus/ProGAN
-    - REPO=keras-team/keras
-    - REPO=django/django
-    - REPO=pallets/flask
-    - REPO=home-assistant/home-assistant
-    - REPO=victoresque/pytorch-template
-    - REPO=requests/requests
-    - REPO=python/cpython
-    - REPO=toddmotto/public-apis
-    - REPO=google/gif-for-cli
-    - REPO=quark0/darts
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=joblib/joblib
+    - REPO=tensorlayer/tensorlayer
+    - REPO=Tribler/tribler
+    - REPO=mrJean1/PyCocoa
+    - REPO=mrJean1/PyGeodesy
+
 cache: pip
 python:
     #- 2.7
