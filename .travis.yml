@@ -1,12 +1,44 @@
 group: travis_latest
 language: python
 env:
-    - REPO=joblib/joblib
-    - REPO=tensorlayer/tensorlayer
+    - REPO=google/sg2im
+    - REPO=vibora-io/vibora
+    - REPO=1tayH/noisy
+    - REPO=akanimax/T2F
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=ashishb/adb-enhanced
+    - REPO=tensorflow/models
+    - REPO=vinta/awesome-python
+    - REPO=TheAlgorithms/Python
+    - REPO=perplexingpegasus/ProGAN
+    - REPO=vipstone/faceai
+    - REPO=Licoy/A-Joke
+    - REPO=pallets/flask
+    - REPO=jiesutd/NCRFpp
+    - REPO=keras-team/keras
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=rg3/youtube-dl
+    - REPO=ageitgey/face_recognition
+    - REPO=home-assistant/home-assistant
+    - REPO=django/django
+    - REPO=python/cpython
+    - REPO=requests/requests
+    - REPO=databricks/mlflow
+    - REPO=quark0/darts
+    - REPO=salesforce/decaNLP
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
     - REPO=Tribler/tribler
-    - REPO=mrJean1/PyCocoa
-    - REPO=mrJean1/PyGeodesy
-
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
