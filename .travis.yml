@@ -3,44 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=vibora-io/vibora
-    - REPO=google/sg2im
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=tensorflow/models
-    - REPO=ashishb/adb-enhanced
-    - REPO=akanimax/T2F
-    - REPO=vinta/awesome-python
-    - REPO=1tayH/noisy
-    - REPO=TheAlgorithms/Python
-    - REPO=databricks/mlflow
-    - REPO=perplexingpegasus/ProGAN
-    - REPO=vipstone/faceai
-    - REPO=Licoy/A-Joke
-    - REPO=keras-team/keras
-    - REPO=salesforce/decaNLP
-    - REPO=jiesutd/NCRFpp
-    - REPO=LMGsec/Magic-Unicorn-Tool
-    - REPO=pallets/flask
-    - REPO=toddmotto/public-apis
-    - REPO=django/django
-    - REPO=rg3/youtube-dl
-    - REPO=ageitgey/face_recognition
-    - REPO=dfd-tud/deda
-    - REPO=python/cpython
-    - REPO=home-assistant/home-assistant
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=facebookresearch/py2bpf
 cache: pip
 python:
     #- 2.7
