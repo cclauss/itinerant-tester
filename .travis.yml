@@ -1,44 +1,22 @@
 group: travis_latest
 language: python
 env:
-    - REPO=google/sg2im
-    - REPO=vibora-io/vibora
-    - REPO=1tayH/noisy
-    - REPO=akanimax/T2F
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=ashishb/adb-enhanced
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=TheAlgorithms/Python
-    - REPO=perplexingpegasus/ProGAN
-    - REPO=vipstone/faceai
-    - REPO=Licoy/A-Joke
-    - REPO=pallets/flask
-    - REPO=jiesutd/NCRFpp
-    - REPO=keras-team/keras
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=rg3/youtube-dl
-    - REPO=ageitgey/face_recognition
-    - REPO=home-assistant/home-assistant
-    - REPO=django/django
-    - REPO=python/cpython
-    - REPO=requests/requests
-    - REPO=databricks/mlflow
-    - REPO=quark0/darts
-    - REPO=salesforce/decaNLP
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=salesforce/AutoTriageBot
+    - REPO=salesforce/LinuxTelemetry
+    - REPO=salesforce/Providence
+    - REPO=salesforce/WikiSQL  # has .travis.yml file
+    - REPO=salesforce/awd-lstm-lm
+    - REPO=salesforce/cove
+    - REPO=salesforce/decaNLP  # has .travis.yml file
+    - REPO=salesforce/glad
+    - REPO=salesforce/ja3
+    - REPO=salesforce/matchbox
+    - REPO=salesforce/nonauto-nmt
+    - REPO=salesforce/python-argusclient
+    - REPO=salesforce/pytorch-qrnn
+    - REPO=salesforce/smartACL  # has .travis.yml file
+    - REPO=salesforce/threatshell
+
 cache: pip
 python:
     #- 2.7
