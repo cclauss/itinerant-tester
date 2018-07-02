@@ -11,9 +11,9 @@ python:
     #- nightly
     #- pypy
     - pypy3.5
-    - "pypy-python 2.7.13"
-    - pypy-python2.7.13
-    - pypy-python-2.7.13
+    - "pypy"
+    - "pypy2.7"
+    - "pypy2.7.13"
 matrix:
     allow_failures:
         - python: nightly
