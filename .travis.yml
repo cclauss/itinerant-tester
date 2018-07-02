@@ -1,7 +1,7 @@
 group: travis_latest
 language: python
 dist: xenial
-sudo: true
+# sudo: true
 env:
     - REPO=salesforce/threatshell
 
