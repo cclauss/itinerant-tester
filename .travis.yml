@@ -1,34 +1,74 @@
 group: travis_latest
+# dist: xenial  # required for Python 3.7
+# sudo: true    # required for Python 3.7
 language: python
 env:
     - REPO=vibora-io/vibora
+    - REPO=google/sg2im
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=tensorflow/models
+    - REPO=ashishb/adb-enhanced
+    - REPO=akanimax/T2F
+    - REPO=vinta/awesome-python
+    - REPO=1tayH/noisy
+    - REPO=TheAlgorithms/Python
+    - REPO=databricks/mlflow
+    - REPO=perplexingpegasus/ProGAN
+    - REPO=vipstone/faceai
+    - REPO=Licoy/A-Joke
+    - REPO=keras-team/keras
+    - REPO=salesforce/decaNLP
+    - REPO=jiesutd/NCRFpp
+    - REPO=LMGsec/Magic-Unicorn-Tool
+    - REPO=pallets/flask
+    - REPO=toddmotto/public-apis
+    - REPO=django/django
+    - REPO=rg3/youtube-dl
+    - REPO=ageitgey/face_recognition
+    - REPO=dfd-tud/deda
+    - REPO=python/cpython
+    - REPO=home-assistant/home-assistant
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
-jobs:
-    include:
-      - python: 2.6
-      - python: 2.7
-      - python: 3.3
-      - python: 3.4
-      - python: 3.5
-      - python: 3.6
-      - python: 3.7
-        dist: xenial
-        sudo: true
-      - python: 3.8-dev
-        dist: xenial
-        sudo: true
-      - python: nightly
-        dist: xenial
-        sudo: true
-      - python: pypy
-      - python: pypy3
+python:
+    #- 2.7
+    - 3.6
+    #- nightly
+    #- pypy
+    #- pypy3
 matrix:
     allow_failures:
-        - python: 3.8-dev
+        - 2.7
         - python: nightly
+        - python: pypy
+        - python: pypy3
+install:
+    #- pip install -r requirements.txt
+    - pip install flake8  # pytest  # add other testing frameworks later
+before_script:
+    - URL=https://github.com/${REPO}
+    - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+    - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+    - cd ~/${REPO}
 script:
-    - python --version
-    - pip --version
+    - echo stop the build if there are Python syntax errors or undefined names
+    - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    #- true  # pytest --capture=sys
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
