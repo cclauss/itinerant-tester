@@ -3,11 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=logc/borda
-    - REPO=logc/githubland
-    - REPO=logc/hello.py
-    - REPO=logc/scikit-learn  # has .travis.yml file
-    - REPO=logc/seqdiag_gui
+    - REPO=bartdag/py4j
 
 cache: pip
 python:
