@@ -3,9 +3,44 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=chubin/cheat.sh 
-    - REPO=freedomofpress/trackthenews 
-    
+    - REPO=nbedos/termtosvg
+    - REPO=tensorflow/models
+    - REPO=vibora-io/vibora
+    - REPO=ageitgey/face_recognition
+    - REPO=google/sg2im
+    - REPO=toddmotto/public-apis
+    - REPO=databricks/mlflow
+    - REPO=TheAlgorithms/Python
+    - REPO=keras-team/keras
+    - REPO=chubin/cheat.sh
+    - REPO=scikit-learn/scikit-learn
+    - REPO=LMGsec/Magic-Unicorn-Tool
+    - REPO=vinta/awesome-python
+    - REPO=vipstone/faceai
+    - REPO=ansible/ansible
+    - REPO=rootm0s/WinPwnage
+    - REPO=rg3/youtube-dl
+    - REPO=pallets/flask
+    - REPO=donnemartin/system-design-primer
+    - REPO=salesforce/decaNLP
+    - REPO=1tayH/noisy
+    - REPO=akanimax/T2F
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=freedomofpress/trackthenews
+    - REPO=jakubroztocil/httpie
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
