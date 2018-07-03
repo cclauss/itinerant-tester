@@ -3,18 +3,9 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=bartdag/django-pylibmc
-    - REPO=bartdag/ghmiles
-    - REPO=bartdag/gitli
-    - REPO=bartdag/py4j-arbirary-python-example
-    - REPO=bartdag/py4j-benchmark
-    - REPO=bartdag/pydsl2
-    - REPO=bartdag/pylinkvalidator  # has .travis.yml file
-    - REPO=bartdag/pymining  # has .travis.yml file
-    - REPO=bartdag/pyprofilehelper  # has .travis.yml file
-    - REPO=bartdag/python-github2
-    - REPO=bartdag/python-phonenumbers
-    - REPO=bartdag/test-squash
+    - REPO=chubin/cheat.sh 
+    - REPO=freedomofpress/trackthenews 
+    
 cache: pip
 python:
     #- 2.7
