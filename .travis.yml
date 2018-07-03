@@ -3,7 +3,33 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=facebookresearch/py2bpf
+    - REPO=Fematich/EMall
+    - REPO=Fematich/Mediargus_code
+    - REPO=Fematich/MilkBarrelDetector
+    - REPO=Fematich/PyMongoStore
+    - REPO=Fematich/RedNotebookPusher
+    - REPO=Fematich/SleepHue
+    - REPO=Fematich/TwitterAPI
+    - REPO=Fematich/TwitterStream-store
+    - REPO=Fematich/agenda_updater
+    - REPO=Fematich/article_browser
+    - REPO=Fematich/astrohack_flask
+    - REPO=Fematich/cloudml-examples
+    - REPO=Fematich/cnn-text-classification-tf
+    - REPO=Fematich/conceptnetwork
+    - REPO=Fematich/dataprocessing
+    - REPO=Fematich/google-cloud-python  # has .travis.yml file
+    - REPO=Fematich/incubator-airflow  # has .travis.yml file
+    - REPO=Fematich/mlengine-boilerplate
+    - REPO=Fematich/mongo_iterator
+    - REPO=Fematich/muc4_proc
+    - REPO=Fematich/nn_ner
+    - REPO=Fematich/onco
+    - REPO=Fematich/python-docs-samples  # has .travis.yml file
+    - REPO=Fematich/rss_datamachina
+    - REPO=Fematich/tftransform-demo
+    - REPO=Fematich/word2vec_docrepr
+
 cache: pip
 python:
     #- 2.7
