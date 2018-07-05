@@ -3,8 +3,44 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=daviddrysdale/python-phonenumbers 
-
+    - REPO=nbedos/termtosvg
+    - REPO=rg3/youtube-dl
+    - REPO=danmacnish/cartoonify
+    - REPO=tensorflow/models
+    - REPO=AlexiaJM/RelativisticGAN
+    - REPO=kengz/SLM-Lab
+    - REPO=toddmotto/public-apis
+    - REPO=vinta/awesome-python
+    - REPO=pyannote/pyannote-audio
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=chubin/cheat.sh
+    - REPO=keras-team/keras
+    - REPO=Aidaho12/haproxy-wi
+    - REPO=ansible/ansible
+    - REPO=pypa/pipenv
+    - REPO=pallets/flask
+    - REPO=sgugger/Adam-experiments
+    - REPO=vibora-io/vibora
+    - REPO=django/django
+    - REPO=databricks/mlflow
+    - REPO=guoday/Tencent2018_Lookalike_Rank7th
+    - REPO=ThoughtfulDev/EagleEye
+    - REPO=jackfrued/Python-100-Days
+    - REPO=matterport/Mask_RCNN
+    - REPO=hottbox/hottbox
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/beam
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=hyperledger/fabric
 cache: pip
 python:
     #- 2.7
@@ -29,10 +65,9 @@ before_script:
 script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics --exclude=./python/phonenumbers/geodata
-    - time flake8 ./python/phonenumbers/geodata --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-    #- time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     #- true  # pytest --capture=sys
 notifications:
     on_success: change
