@@ -3,44 +3,36 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=nbedos/termtosvg
-    - REPO=rg3/youtube-dl
-    - REPO=danmacnish/cartoonify
-    - REPO=tensorflow/models
-    - REPO=AlexiaJM/RelativisticGAN
-    - REPO=kengz/SLM-Lab
-    - REPO=toddmotto/public-apis
-    - REPO=vinta/awesome-python
-    - REPO=pyannote/pyannote-audio
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=chubin/cheat.sh
-    - REPO=keras-team/keras
-    - REPO=Aidaho12/haproxy-wi
-    - REPO=ansible/ansible
-    - REPO=pypa/pipenv
-    - REPO=pallets/flask
-    - REPO=sgugger/Adam-experiments
-    - REPO=vibora-io/vibora
-    - REPO=django/django
-    - REPO=databricks/mlflow
-    - REPO=guoday/Tencent2018_Lookalike_Rank7th
-    - REPO=ThoughtfulDev/EagleEye
-    - REPO=jackfrued/Python-100-Days
-    - REPO=matterport/Mask_RCNN
-    - REPO=hottbox/hottbox
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=hyperledger/fabric
+    - REPO=DistrictDataLabs/02-OKJK
+    - REPO=DistrictDataLabs/02-labormatch
+    - REPO=DistrictDataLabs/02-seefish
+    - REPO=DistrictDataLabs/02-synthesizers
+    - REPO=DistrictDataLabs/03-EMU
+    - REPO=DistrictDataLabs/03-gentrifuge
+    - REPO=DistrictDataLabs/04-team2
+    - REPO=DistrictDataLabs/DP-Tutorial
+    - REPO=DistrictDataLabs/baleen  # has .travis.yml file
+    - REPO=DistrictDataLabs/bigtooth
+    - REPO=DistrictDataLabs/blog-files
+    - REPO=DistrictDataLabs/calendar
+    - REPO=DistrictDataLabs/chirpy
+    - REPO=DistrictDataLabs/dedupe-examples
+    - REPO=DistrictDataLabs/django-data-product
+    - REPO=DistrictDataLabs/entity-resolution
+    - REPO=DistrictDataLabs/group-d
+    - REPO=DistrictDataLabs/intro-to-python
+    - REPO=DistrictDataLabs/logbook  # has .travis.yml file
+    - REPO=DistrictDataLabs/mapreduce
+    - REPO=DistrictDataLabs/minimum-entropy  # has .travis.yml file
+    - REPO=DistrictDataLabs/minke  # has .travis.yml file
+    - REPO=DistrictDataLabs/partisan-discourse  # has .travis.yml file
+    - REPO=DistrictDataLabs/product-classifier  # has .travis.yml file
+    - REPO=DistrictDataLabs/science-bookclub
+    - REPO=DistrictDataLabs/semnet-similarity  # has .travis.yml file
+    - REPO=DistrictDataLabs/spark-workshop
+    - REPO=DistrictDataLabs/yellowbrick  # has .travis.yml file
+    - REPO=DistrictDataLabs/yellowbrick-docs-tr
+    - REPO=DistrictDataLabs/yellowbrick-docs-zh
 cache: pip
 python:
     #- 2.7
