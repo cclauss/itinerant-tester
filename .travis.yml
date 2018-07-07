@@ -3,16 +3,12 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=mrJean1/PyCocoa
-    - REPO=mrJean1/PyGeodesy
-    - REPO=mrJean1/code
-    - REPO=mrJean1/pympler  # has .travis.yml file
     - REPO=mrJean1/python-vlc
     - REPO=oaubert/python-vlc
 
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
