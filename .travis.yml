@@ -3,45 +3,11 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=nbedos/termtosvg
-    - REPO=danmacnish/cartoonify
-    - REPO=rg3/youtube-dl
-    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
-    - REPO=x0rz/tweets_analyzer
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=tensorflow/models
-    - REPO=vinta/awesome-python
-    - REPO=mapbox/robosat
-    - REPO=keras-team/keras
-    - REPO=mps-youtube/mps-youtube
-    - REPO=toddmotto/public-apis
-    - REPO=vibora-io/vibora
-    - REPO=ThoughtfulDev/EagleEye
-    - REPO=requests/requests
-    - REPO=donnemartin/system-design-primer
-    - REPO=ansible/ansible
-    - REPO=pallets/flask
-    - REPO=facebookresearch/Detectron
-    - REPO=jeffzh3ng/Fuxi-Scanner
-    - REPO=python/cpython
-    - REPO=django/django
-    - REPO=scrapy/scrapy
-    - REPO=TheAlgorithms/Python
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
+    - REPO=mrJean1/PyCocoa
     - REPO=mrJean1/PyGeodesy
+    - REPO=mrJean1/code
+    - REPO=mrJean1/pympler  # has .travis.yml file
+    - REPO=mrJean1/python-vlc
 cache: pip
 python:
     #- 2.7
