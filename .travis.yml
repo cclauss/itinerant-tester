@@ -3,45 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=nbedos/termtosvg
-    - REPO=globaleaks/GlobaLeaks
-    - REPO=danmacnish/cartoonify
-    - REPO=rg3/youtube-dl
-    - REPO=vipstone/faceai
-    - REPO=tensorflow/models
-    - REPO=switchablenorms/Switchable-Normalization
-    - REPO=x0rz/tweets_analyzer
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=modin-project/modin
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=mbadry1/DeepLearning.ai-Summary
-    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
-    - REPO=dn1z/pgn2gif
-    - REPO=vibora-io/vibora
-    - REPO=ansible/ansible
-    - REPO=TheAlgorithms/Python
-    - REPO=pypa/pipenv
-    - REPO=its-a-feature/Apfell
-    - REPO=django/django
-    - REPO=mapbox/robosat
-    - REPO=python/cpython
-    - REPO=scikit-learn/scikit-learn
-    - REPO=toddmotto/public-apis
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/beam
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=mrJean1/PyGeodesy
+    - REPO=AtsushiSakai/PythonRobotics 
 cache: pip
 python:
     #- 2.7
