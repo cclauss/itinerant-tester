@@ -3,31 +3,31 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
     - REPO=nbedos/termtosvg
     - REPO=globaleaks/GlobaLeaks
     - REPO=danmacnish/cartoonify
     - REPO=rg3/youtube-dl
     - REPO=vipstone/faceai
     - REPO=tensorflow/models
+    - REPO=switchablenorms/Switchable-Normalization
     - REPO=x0rz/tweets_analyzer
     - REPO=josephmisiti/awesome-machine-learning
+    - REPO=modin-project/modin
     - REPO=vinta/awesome-python
     - REPO=keras-team/keras
-    - REPO=modin-project/modin
-    - REPO=switchablenorms/Switchable-Normalization
-    - REPO=dn1z/pgn2gif
     - REPO=mbadry1/DeepLearning.ai-Summary
-    - REPO=TheAlgorithms/Python
+    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
+    - REPO=dn1z/pgn2gif
     - REPO=vibora-io/vibora
-    - REPO=scikit-learn/scikit-learn
-    - REPO=requests/requests
+    - REPO=ansible/ansible
+    - REPO=TheAlgorithms/Python
+    - REPO=pypa/pipenv
+    - REPO=its-a-feature/Apfell
+    - REPO=django/django
     - REPO=mapbox/robosat
     - REPO=python/cpython
-    - REPO=its-a-feature/Apfell
-    - REPO=Eric-mingjie/network-slimming
-    - REPO=scrapy/scrapy
-    - REPO=django/django
+    - REPO=scikit-learn/scikit-learn
+    - REPO=toddmotto/public-apis
     - REPO=matplotlib/matplotlib
     - REPO=ckan/ckan
     - REPO=ggtracker/sc2reader
