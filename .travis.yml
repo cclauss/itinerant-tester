@@ -3,12 +3,48 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=mrJean1/python-vlc
+    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
+    - REPO=nbedos/termtosvg
+    - REPO=globaleaks/GlobaLeaks
+    - REPO=danmacnish/cartoonify
+    - REPO=rg3/youtube-dl
+    - REPO=vipstone/faceai
+    - REPO=tensorflow/models
+    - REPO=x0rz/tweets_analyzer
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=modin-project/modin
+    - REPO=switchablenorms/Switchable-Normalization
+    - REPO=dn1z/pgn2gif
+    - REPO=mbadry1/DeepLearning.ai-Summary
+    - REPO=TheAlgorithms/Python
+    - REPO=vibora-io/vibora
+    - REPO=scikit-learn/scikit-learn
+    - REPO=requests/requests
+    - REPO=mapbox/robosat
+    - REPO=python/cpython
+    - REPO=its-a-feature/Apfell
+    - REPO=Eric-mingjie/network-slimming
+    - REPO=scrapy/scrapy
+    - REPO=django/django
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/beam
+    - REPO=apache/spark
     - REPO=oaubert/python-vlc
-
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=mrJean1/PyGeodesy
 cache: pip
 python:
-    - 2.7
+    #- 2.7
     - 3.6
     #- nightly
     #- pypy
