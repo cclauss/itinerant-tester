@@ -3,8 +3,8 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=mbadry1/DeepLearning.ai-Summary
-    - REPO=apache/incubator-mxnet 
+    - REPO=mukund109/word-mesh 
+    - REPO=chubin/wttr.in
 cache: pip
 python:
     #- 2.7
