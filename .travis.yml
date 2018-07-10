@@ -3,21 +3,49 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=ros2/ci
-    - REPO=ros2/examples
-    - REPO=ros2/joystick_drivers
-    - REPO=ros2/launch
-    - REPO=ros2/rclpy
-    - REPO=ros2/ros2cli
-    - REPO=ros2/ros2doc
-    - REPO=ros2/ros_buildfarm_config
-    - REPO=ros2/ros_core_documentation
-    - REPO=ros/rosdistro
-    - REPO=ros2/rosdistro  # has .travis.yml file
-    - REPO=ros2/rosidl_dds
-    - REPO=ros2/sros2
-    - REPO=ros2/teleop_twist_keyboard
-
+    - REPO=openai/glow
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=nbedos/termtosvg
+    - REPO=mukund109/word-mesh
+    - REPO=chubin/cheat.sh
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
+    - REPO=shobrook/statcode
+    - REPO=keras-team/keras
+    - REPO=vinta/awesome-python
+    - REPO=rg3/youtube-dl
+    - REPO=ricsinaruto/Seq2seqChatbots
+    - REPO=vibora-io/vibora
+    - REPO=ansible/ansible
+    - REPO=tomasz-oponowicz/spoken_language_identification
+    - REPO=allenai/allennlp
+    - REPO=mapbox/robosat
+    - REPO=ageitgey/face_recognition
+    - REPO=Bricoler/nlp-tensorflow
+    - REPO=danmacnish/cartoonify
+    - REPO=pallets/flask
+    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
+    - REPO=pypa/pipenv
+    - REPO=chubin/wttr.in
+    - REPO=Netflix/lemur
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=apache/incubator-openwhisk
+    - REPO=apache/incubator-openwhisk-client-python
+    - REPO=apache/incubator-openwhisk-runtime-python
+    - REPO=apache/incubator-openwhisk-utilities
 cache: pip
 python:
     #- 2.7
