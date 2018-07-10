@@ -3,31 +3,31 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
+    - REPO=openai/glow
     - REPO=AtsushiSakai/PythonRobotics
     - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
-    - REPO=nbedos/termtosvg
     - REPO=mukund109/word-mesh
-    - REPO=openai/glow
+    - REPO=nbedos/termtosvg
+    - REPO=chubin/cheat.sh
+    - REPO=shobrook/statcode
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
     - REPO=mapbox/robosat
     - REPO=vibora-io/vibora
-    - REPO=tensorflow/models
-    - REPO=danmacnish/cartoonify
     - REPO=rg3/youtube-dl
-    - REPO=donnemartin/system-design-primer
-    - REPO=chubin/wttr.in
-    - REPO=shobrook/statcode
+    - REPO=ricsinaruto/Seq2seqChatbots
+    - REPO=danmacnish/cartoonify
+    - REPO=keras-team/keras
     - REPO=vinta/awesome-python
     - REPO=ansible/ansible
-    - REPO=keras-team/keras
-    - REPO=akshaybahadur21/Autopilot
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=LMescheder/GAN_stability
-    - REPO=jackfrued/Python-100-Days
-    - REPO=ricsinaruto/Seq2seqChatbots
-    - REPO=toddmotto/public-apis
-    - REPO=quentinhardy/scriptsAndExploits
-    - REPO=mbadry1/DeepLearning.ai-Summary
     - REPO=ageitgey/face_recognition
+    - REPO=chubin/wttr.in
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=tomasz-oponowicz/spoken_language_identification
+    - REPO=allenai/allennlp
+    - REPO=pallets/flask
+    - REPO=pypa/pipenv
+    - REPO=jackfrued/Python-100-Days
     - REPO=matplotlib/matplotlib
     - REPO=ckan/ckan
     - REPO=ggtracker/sc2reader
