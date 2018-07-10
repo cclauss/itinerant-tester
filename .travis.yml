@@ -3,7 +3,45 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
+    - REPO=openai/glow
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=nbedos/termtosvg
+    - REPO=mukund109/word-mesh
+    - REPO=chubin/cheat.sh
+    - REPO=shobrook/statcode
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
+    - REPO=mapbox/robosat
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=vibora-io/vibora
+    - REPO=ricsinaruto/Seq2seqChatbots
+    - REPO=rg3/youtube-dl
+    - REPO=danmacnish/cartoonify
+    - REPO=ansible/ansible
+    - REPO=ageitgey/face_recognition
+    - REPO=allenai/allennlp
+    - REPO=pallets/flask
+    - REPO=tomasz-oponowicz/spoken_language_identification
+    - REPO=DeuroIO/erc20-ico-onchain-technical-analysis
+    - REPO=chubin/wttr.in
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=pypa/pipenv
+    - REPO=Bricoler/nlp-tensorflow
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/beam
+    - REPO=apache/spark
     - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=mrJean1/PyGeodesy
 cache: pip
 python:
     #- 2.7
@@ -28,8 +66,7 @@ before_script:
 script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - EXCLUDE=./generator/templates
-    - time flake8 . --count --exclude=$EXCLUDE --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     #- true  # pytest --capture=sys
