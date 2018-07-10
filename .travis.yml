@@ -12,6 +12,7 @@ env:
     - REPO=ros2/ros2doc
     - REPO=ros2/ros_buildfarm_config
     - REPO=ros2/ros_core_documentation
+    - REPO=ros/rosdistro
     - REPO=ros2/rosdistro  # has .travis.yml file
     - REPO=ros2/rosidl_dds
     - REPO=ros2/sros2
