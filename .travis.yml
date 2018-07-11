@@ -3,7 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=GoogleContainerTools/base-images-docker
+    - REPO=3b1b/manim
 
 cache: pip
 python:
