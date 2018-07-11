@@ -3,17 +3,49 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=Maluuba/FigureQA
-    - REPO=Maluuba/bokeh  # has .travis.yml file
-    - REPO=Maluuba/frames
+    - REPO=chubin/cheat.sh
+    - REPO=openai/glow
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=nbedos/termtosvg
+    - REPO=ejmg/help-why-cant-i-hold-all-these-mutuals
+    - REPO=GoogleContainerTools/distroless
+    - REPO=tensorflow/models
+    - REPO=donnemartin/system-design-primer
     - REPO=Maluuba/gensen
-    - REPO=Maluuba/gpuselect
-    - REPO=Maluuba/hra
-    - REPO=Maluuba/mctest-model
-    - REPO=Maluuba/mirror-api
-    - REPO=Maluuba/newsqa
-    - REPO=Maluuba/nlg-eval
-
+    - REPO=mukund109/word-mesh
+    - REPO=rg3/youtube-dl
+    - REPO=vinta/awesome-python
+    - REPO=shobrook/statcode
+    - REPO=Netflix/lemur
+    - REPO=keras-team/keras
+    - REPO=needmorecowbell/sniff-paste
+    - REPO=Bricoler/nlp-tensorflow
+    - REPO=vibora-io/vibora
+    - REPO=ansible/ansible
+    - REPO=toddmotto/public-apis
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=ageitgey/face_recognition
+    - REPO=pallets/flask
+    - REPO=D4Vinci/Cr3dOv3r
+    - REPO=allenai/allennlp
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=apache/incubator-openwhisk
+    - REPO=apache/incubator-openwhisk-client-python
+    - REPO=apache/incubator-openwhisk-runtime-python
+    - REPO=apache/incubator-openwhisk-utilities
 cache: pip
 python:
     #- 2.7
