@@ -3,49 +3,17 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=chubin/cheat.sh
-    - REPO=openai/glow
-    - REPO=AtsushiSakai/PythonRobotics
-    - REPO=tensorflow/models
-    - REPO=nbedos/termtosvg
-    - REPO=donnemartin/system-design-primer
-    - REPO=pypa/pipenv
-    - REPO=vinta/awesome-python
-    - REPO=mirumee/saleor
-    - REPO=vibora-io/vibora
-    - REPO=tldr-pages/tldr
-    - REPO=rg3/youtube-dl
-    - REPO=chubin/wttr.in
-    - REPO=toddmotto/public-apis
-    - REPO=GoogleContainerTools/distroless
-    - REPO=ageitgey/face_recognition
-    - REPO=needmorecowbell/sniff-paste
-    - REPO=keras-team/keras
-    - REPO=ansible/ansible
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=D4Vinci/Cr3dOv3r
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=danmacnish/cartoonify
-    - REPO=facebookresearch/Detectron
-    - REPO=scikit-learn/scikit-learn
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=apache/incubator-openwhisk
-    - REPO=apache/incubator-openwhisk-client-python
-    - REPO=apache/incubator-openwhisk-runtime-python
-    - REPO=apache/incubator-openwhisk-utilities
+    - REPO=ros-drivers/audio_common
+    - REPO=ros-drivers/axis_camera
+    - REPO=ros-drivers/joystick_drivers  # has .travis.yml file
+    - REPO=ros-drivers/joystick_drivers_tutorials
+    - REPO=ros-drivers/korg_nanokontrol
+    - REPO=ros-drivers/nmea_gps_driver
+    - REPO=ros-drivers/nmea_navsat_driver
+    - REPO=ros-drivers/novatel_span_driver
+    - REPO=ros-drivers/rgbd_launch
+    - REPO=ros-drivers/wifi_ddwrt
+
 cache: pip
 python:
     #- 2.7
