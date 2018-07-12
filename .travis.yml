@@ -3,17 +3,49 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=ros-drivers/audio_common
-    - REPO=ros-drivers/axis_camera
-    - REPO=ros-drivers/joystick_drivers  # has .travis.yml file
-    - REPO=ros-drivers/joystick_drivers_tutorials
-    - REPO=ros-drivers/korg_nanokontrol
-    - REPO=ros-drivers/nmea_gps_driver
-    - REPO=ros-drivers/nmea_navsat_driver
-    - REPO=ros-drivers/novatel_span_driver
-    - REPO=ros-drivers/rgbd_launch
-    - REPO=ros-drivers/wifi_ddwrt
-
+    - REPO=chubin/cheat.sh
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=openai/glow
+    - REPO=donnemartin/system-design-primer
+    - REPO=tensorflow/models
+    - REPO=pytorch/contrib
+    - REPO=nbedos/termtosvg
+    - REPO=vinta/awesome-python
+    - REPO=GoogleContainerTools/distroless
+    - REPO=vibora-io/vibora
+    - REPO=pypa/pipenv
+    - REPO=ageitgey/face_recognition
+    - REPO=keras-team/keras
+    - REPO=toddmotto/public-apis
+    - REPO=chubin/wttr.in
+    - REPO=rg3/youtube-dl
+    - REPO=mirumee/saleor
+    - REPO=ansible/ansible
+    - REPO=tldr-pages/tldr
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=facebookresearch/Detectron
+    - REPO=python/cpython
+    - REPO=scikit-learn/scikit-learn
+    - REPO=needmorecowbell/sniff-paste
+    - REPO=OlafenwaMoses/ImageAI
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=apache/incubator-openwhisk
+    - REPO=apache/incubator-openwhisk-client-python
+    - REPO=apache/incubator-openwhisk-runtime-python
+    - REPO=apache/incubator-openwhisk-utilities
 cache: pip
 python:
     #- 2.7
