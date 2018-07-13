@@ -3,10 +3,49 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=kubernetes/test-infra
-    - REPO=kubernetes/k8s.io
-    - REPO=kubernetes/kubeadm
-
+    - REPO=chubin/cheat.sh
+    - REPO=donnemartin/system-design-primer
+    - REPO=nbedos/termtosvg
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=openai/glow
+    - REPO=tensorflow/models
+    - REPO=GoogleContainerTools/distroless
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=mirumee/saleor
+    - REPO=python/cpython
+    - REPO=toddmotto/public-apis
+    - REPO=vibora-io/vibora
+    - REPO=ageitgey/face_recognition
+    - REPO=chubin/wttr.in
+    - REPO=pypa/pipenv
+    - REPO=shobrook/statcode
+    - REPO=pytorch/contrib
+    - REPO=tldr-pages/tldr
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=rg3/youtube-dl
+    - REPO=accelero-cloud/appkernel
+    - REPO=randy3k/Terminus
+    - REPO=ansible/ansible
+    - REPO=mukund109/word-mesh
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
+    - REPO=apache/incubator-openwhisk
+    - REPO=apache/incubator-openwhisk-client-python
+    - REPO=apache/incubator-openwhisk-runtime-python
+    - REPO=apache/incubator-openwhisk-utilities
 cache: pip
 python:
     #- 2.7
