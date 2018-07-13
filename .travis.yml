@@ -3,17 +3,36 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=chubin/cheat.sh
-    - REPO=chubin/github-stats
-    - REPO=chubin/pyphoon
-    - REPO=chubin/qrenco.de
-    - REPO=chubin/rate.sx
-    - REPO=chubin/rpi-homerouter
-    - REPO=chubin/syncer
-    - REPO=chubin/tailer
-    - REPO=chubin/terminaltables  # has .travis.yml file
-    - REPO=chubin/tmuxwm
-    - REPO=chubin/wttr.in
+    - REPO=apache/allura  # has .travis.yml file
+    - REPO=apache/bloodhound
+    - REPO=apache/cassandra-dtest  # has .travis.yml file
+    - REPO=apache/chemistry-cmislib
+    - REPO=apache/cloudstack-docs-rn
+    - REPO=apache/comdev-reporter
+    - REPO=apache/couchdb-documentation  # has .travis.yml file
+    - REPO=apache/fluo-muchos  # has .travis.yml file
+    - REPO=apache/incubator-airflow  # has .travis.yml file
+    - REPO=apache/incubator-airflow-old  # has .travis.yml file
+    - REPO=apache/incubator-ariatosca  # has .travis.yml file
+    - REPO=apache/incubator-mxnet  # has .travis.yml file
+    - REPO=apache/incubator-openwhisk-deploy-mesos  # has .travis.yml file
+    - REPO=apache/incubator-openwhisk-utilities  # has .travis.yml file
+    - REPO=apache/incubator-pagespeed-drp
+    - REPO=apache/incubator-sdap-edge
+    - REPO=apache/incubator-sdap-nexus
+    - REPO=apache/incubator-sdap-nexusproto
+    - REPO=apache/incubator-sdap-ningesterpy
+    - REPO=apache/incubator-senssoft-distill
+    - REPO=apache/incubator-spot
+    - REPO=apache/incubator-warble-node
+    - REPO=apache/incubator-wave-docs
+    - REPO=apache/infrastructure-puppet
+    - REPO=apache/kibble
+    - REPO=apache/kibble-scanners
+    - REPO=apache/libcloud
+    - REPO=apache/predictionio-sdk-python  # has .travis.yml file
+    - REPO=apache/qpid-interop-test
+    - REPO=apache/qpid-python
 
 cache: pip
 python:
