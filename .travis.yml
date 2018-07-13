@@ -4,48 +4,17 @@ group: travis_latest
 language: python
 env:
     - REPO=chubin/cheat.sh
-    - REPO=donnemartin/system-design-primer
-    - REPO=AtsushiSakai/PythonRobotics
-    - REPO=openai/glow
-    - REPO=nbedos/termtosvg
-    - REPO=tensorflow/models
-    - REPO=GoogleContainerTools/distroless
-    - REPO=vinta/awesome-python
-    - REPO=pytorch/contrib
-    - REPO=ageitgey/face_recognition
-    - REPO=mirumee/saleor
-    - REPO=vibora-io/vibora
-    - REPO=pypa/pipenv
+    - REPO=chubin/github-stats
+    - REPO=chubin/pyphoon
+    - REPO=chubin/qrenco.de
+    - REPO=chubin/rate.sx
+    - REPO=chubin/rpi-homerouter
+    - REPO=chubin/syncer
+    - REPO=chubin/tailer
+    - REPO=chubin/terminaltables  # has .travis.yml file
+    - REPO=chubin/tmuxwm
     - REPO=chubin/wttr.in
-    - REPO=toddmotto/public-apis
-    - REPO=keras-team/keras
-    - REPO=python/cpython
-    - REPO=ansible/ansible
-    - REPO=rg3/youtube-dl
-    - REPO=tldr-pages/tldr
-    - REPO=facebookresearch/Detectron
-    - REPO=shobrook/statcode
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=scikit-learn/scikit-learn
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=apache/incubator-openwhisk
-    - REPO=apache/incubator-openwhisk-client-python
-    - REPO=apache/incubator-openwhisk-runtime-python
-    - REPO=apache/incubator-openwhisk-utilities
+
 cache: pip
 python:
     #- 2.7
