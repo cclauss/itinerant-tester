@@ -3,31 +3,31 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=chubin/cheat.sh
     - REPO=donnemartin/system-design-primer
+    - REPO=chubin/cheat.sh
     - REPO=nbedos/termtosvg
-    - REPO=AtsushiSakai/PythonRobotics
-    - REPO=openai/glow
+    - REPO=facebookincubator/xar
     - REPO=tensorflow/models
-    - REPO=GoogleContainerTools/distroless
+    - REPO=quark0/darts
+    - REPO=openai/glow
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=randy3k/Terminus
+    - REPO=toddmotto/public-apis
     - REPO=vinta/awesome-python
     - REPO=keras-team/keras
-    - REPO=mirumee/saleor
-    - REPO=python/cpython
-    - REPO=toddmotto/public-apis
-    - REPO=vibora-io/vibora
-    - REPO=ageitgey/face_recognition
-    - REPO=chubin/wttr.in
     - REPO=pypa/pipenv
-    - REPO=shobrook/statcode
-    - REPO=pytorch/contrib
-    - REPO=tldr-pages/tldr
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=python/cpython
+    - REPO=GoogleContainerTools/distroless
     - REPO=rg3/youtube-dl
-    - REPO=accelero-cloud/appkernel
-    - REPO=randy3k/Terminus
+    - REPO=pallets/flask
     - REPO=ansible/ansible
+    - REPO=chubin/wttr.in
+    - REPO=ageitgey/face_recognition
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=google/compare_gan
+    - REPO=danmacnish/cartoonify
     - REPO=mukund109/word-mesh
+    - REPO=titu1994/keras-coordconv
     - REPO=matplotlib/matplotlib
     - REPO=ckan/ckan
     - REPO=apache/beam
