@@ -3,8 +3,45 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=Lamden/cilantro
-
+    - REPO=donnemartin/system-design-primer
+    - REPO=chubin/cheat.sh
+    - REPO=jerry-git/learn-python3
+    - REPO=facebookincubator/xar
+    - REPO=google/compare_gan
+    - REPO=mkocabas/CoordConv-pytorch
+    - REPO=tensorflow/models
+    - REPO=needmorecowbell/Hamburglar
+    - REPO=MVIG-SJTU/pointSIFT
+    - REPO=toddmotto/public-apis
+    - REPO=nbedos/termtosvg
+    - REPO=openai/glow
+    - REPO=ThoughtfulDev/EagleEye
+    - REPO=rg3/youtube-dl
+    - REPO=si9int/cc.py
+    - REPO=keras-team/keras
+    - REPO=lmcinnes/umap
+    - REPO=python/cpython
+    - REPO=django/django
+    - REPO=pallets/flask
+    - REPO=pandas-dev/pandas
+    - REPO=vibora-io/vibora
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=XX-net/XX-Net
+    - REPO=pypa/pipenv
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
 cache: pip
 python:
     #- 2.7
