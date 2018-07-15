@@ -3,49 +3,8 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=donnemartin/system-design-primer
-    - REPO=chubin/cheat.sh
-    - REPO=facebookincubator/xar
-    - REPO=jerry-git/learn-python3
-    - REPO=mkocabas/CoordConv-pytorch
-    - REPO=google/compare_gan
-    - REPO=tensorflow/models
-    - REPO=nbedos/termtosvg
-    - REPO=keras-team/keras
-    - REPO=rg3/youtube-dl
-    - REPO=ThoughtfulDev/EagleEye
-    - REPO=needmorecowbell/Hamburglar
-    - REPO=toddmotto/public-apis
-    - REPO=openai/glow
-    - REPO=pallets/flask
-    - REPO=AtsushiSakai/PythonRobotics
-    - REPO=django/django
-    - REPO=pandas-dev/pandas
-    - REPO=MVIG-SJTU/pointSIFT
-    - REPO=scikit-learn/scikit-learn
-    - REPO=lmcinnes/umap
-    - REPO=vibora-io/vibora
-    - REPO=python/cpython
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=quark0/darts
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
-    - REPO=apache/incubator-openwhisk
-    - REPO=apache/incubator-openwhisk-client-python
-    - REPO=apache/incubator-openwhisk-runtime-python
-    - REPO=apache/incubator-openwhisk-utilities
+    - REPO=Lamden/cilantro
+
 cache: pip
 python:
     #- 2.7
