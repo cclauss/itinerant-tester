@@ -3,45 +3,15 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=donnemartin/system-design-primer
-    - REPO=chubin/cheat.sh
-    - REPO=jerry-git/learn-python3
-    - REPO=facebookincubator/xar
-    - REPO=google/compare_gan
-    - REPO=tensorflow/models
-    - REPO=jackfrued/Python-100-Days
-    - REPO=marcoeilers/nagini
-    - REPO=nbedos/termtosvg
-    - REPO=toddmotto/public-apis
-    - REPO=zuoxingdong/lagom
-    - REPO=ageitgey/face_recognition
-    - REPO=mkocabas/CoordConv-pytorch
-    - REPO=si9int/cc.py
-    - REPO=openai/glow
-    - REPO=keras-team/keras
-    - REPO=vibora-io/vibora
-    - REPO=jupyter/repo2docker
-    - REPO=needmorecowbell/Hamburglar
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=django/django
-    - REPO=ThoughtfulDev/EagleEye
-    - REPO=scikit-learn/scikit-learn
-    - REPO=pypa/pipenv
-    - REPO=python/cpython
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
+    - REPO=dmlc/gluon-cv
+    - REPO=dmlc/gluon-nlp
+    - REPO=dmlc/keras  # has .travis.yml file
+    - REPO=dmlc/minpy  # has .travis.yml file
+    - REPO=dmlc/mxnet-deepmark
+    - REPO=dmlc/mxnet-memonger
+    - REPO=dmlc/tensorboard
+    - REPO=dmlc/docs-redirect-for-mxnet
+
 cache: pip
 python:
     #- 2.7
