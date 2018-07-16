@@ -3,14 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=dmlc/gluon-cv
-    - REPO=dmlc/gluon-nlp
-    - REPO=dmlc/keras  # has .travis.yml file
-    - REPO=dmlc/minpy  # has .travis.yml file
-    - REPO=dmlc/mxnet-deepmark
-    - REPO=dmlc/mxnet-memonger
-    - REPO=dmlc/tensorboard
-    - REPO=dmlc/docs-redirect-for-mxnet
+    - REPO=BryanCutler/PipelineTuning
 
 cache: pip
 python:
