@@ -3,36 +3,8 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=llSourcell/A-Guide-to-DeepMinds-StarCraft-AI-Environment
-    - REPO=llSourcell/AI_For_Music_Composition
-    - REPO=llSourcell/AI_for_Financial_Data
-    - REPO=llSourcell/AI_for_Resumes
-    - REPO=llSourcell/AI_in_Medicine_Clinical_Imaging_Classification
-    - REPO=llSourcell/Deep_Learning_with_Intel
-    - REPO=llSourcell/Generative-Adversarial-Network-Demo
-    - REPO=llSourcell/Generative-Query-Network
-    - REPO=llSourcell/HashGraph_Explained
-    - REPO=llSourcell/Landing-a-SpaceX-Falcon-Heavy-Rocket
-    - REPO=llSourcell/Make_Money_with_Tensorflow
-    - REPO=llSourcell/Neural_Network_Voices
-    - REPO=llSourcell/Pokemon_GAN
-    - REPO=llSourcell/Reinforcement_Learning_for_Stock_Prediction
-    - REPO=llSourcell/Research_to_Code
-    - REPO=llSourcell/backpropagation_explained
-    - REPO=llSourcell/capsule_networks
-    - REPO=llSourcell/chatbot_tutorial
-    - REPO=llSourcell/genetic_algorithm_challenge
-    - REPO=llSourcell/keras  # has .travis.yml file
-    - REPO=llSourcell/learn_math_fast
-    - REPO=llSourcell/linear_regression_live
-    - REPO=llSourcell/new_repository
-    - REPO=llSourcell/q_learning_demo
-    - REPO=llSourcell/self_driving_cars_explained
-    - REPO=llSourcell/tensorflow_chatbot
-    - REPO=llSourcell/tensorflow_demo
-    - REPO=llSourcell/twitter_sentiment_challenge
-    - REPO=llSourcell/visualize_dataset_demo
-    - REPO=llSourcell/world_models
+    - REPO=techbanca/coinai
+    - REPO=Microsoft/TEXTworld
 
 cache: pip
 python:
