@@ -3,7 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=markusvankempen/snp-2018
+    - REPO=pyusb/pyusb
 
 cache: pip
 python:
