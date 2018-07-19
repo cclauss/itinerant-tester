@@ -3,7 +3,10 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=bottlepy/bottle
+    - REPO=bgirschig/MultiEdit-Addon
+    - REPO=bgirschig/prepro-services
+    - REPO=bgirschig/smoothRide
+    - REPO=bgirschig/wifiOracle
 
 cache: pip
 python:
