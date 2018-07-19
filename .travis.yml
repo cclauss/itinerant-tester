@@ -3,31 +3,31 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=techbanca/coinai
     - REPO=donnemartin/system-design-primer
     - REPO=chubin/cheat.sh
+    - REPO=techbanca/coinai
+    - REPO=quantumlib/Cirq
     - REPO=toddmotto/public-apis
+    - REPO=ansible/ansible-jupyter-kernel
     - REPO=tensorflow/models
     - REPO=Chakazul/Lenia
     - REPO=vinta/awesome-python
-    - REPO=python/cpython
-    - REPO=llSourcell/Reinforcement_Learning_for_Stock_Prediction
-    - REPO=Microsoft/TextWorld
-    - REPO=google/ffn
     - REPO=keras-team/keras
-    - REPO=dongjun-Lee/text-classification-models-tf
-    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=rg3/youtube-dl
     - REPO=ageitgey/face_recognition
     - REPO=nbedos/termtosvg
-    - REPO=ansible/ansible
-    - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+    - REPO=lancifollia/tinygbt
     - REPO=odoo/odoo
-    - REPO=matterport/Mask_RCNN
-    - REPO=pallets/flask
-    - REPO=XX-net/XX-Net
-    - REPO=scikit-learn/scikit-learn
-    - REPO=facebookresearch/Detectron
     - REPO=facebookincubator/xar
+    - REPO=dongjun-Lee/text-classification-models-tf
+    - REPO=django/django
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=Microsoft/TextWorld
+    - REPO=openai/gym
+    - REPO=llSourcell/Reinforcement_Learning_for_Stock_Prediction
+    - REPO=ansible/ansible
+    - REPO=python/cpython
+    - REPO=Netflix-Skunkworks/diffy
     - REPO=matplotlib/matplotlib
     - REPO=ckan/ckan
     - REPO=apache/beam
