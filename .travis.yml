@@ -3,45 +3,8 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=donnemartin/system-design-primer
-    - REPO=chubin/cheat.sh
-    - REPO=techbanca/coinai
-    - REPO=quantumlib/Cirq
-    - REPO=toddmotto/public-apis
-    - REPO=ansible/ansible-jupyter-kernel
-    - REPO=tensorflow/models
-    - REPO=Chakazul/Lenia
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=rg3/youtube-dl
-    - REPO=ageitgey/face_recognition
-    - REPO=nbedos/termtosvg
-    - REPO=lancifollia/tinygbt
     - REPO=odoo/odoo
-    - REPO=facebookincubator/xar
-    - REPO=dongjun-Lee/text-classification-models-tf
-    - REPO=django/django
-    - REPO=josephmisiti/awesome-machine-learning
-    - REPO=Microsoft/TextWorld
-    - REPO=openai/gym
-    - REPO=llSourcell/Reinforcement_Learning_for_Stock_Prediction
-    - REPO=ansible/ansible
-    - REPO=python/cpython
-    - REPO=Netflix-Skunkworks/diffy
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
+
 cache: pip
 python:
     #- 2.7
@@ -66,7 +29,7 @@ before_script:
 script:
     - echo stop the build if there are Python syntax errors or undefined names
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-    - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+    - time flake8 . --builtins=_ --count --exclude=setup.py,odoo/tools/pycompat.py --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     #- true  # pytest --capture=sys
