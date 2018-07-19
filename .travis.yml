@@ -3,7 +3,10 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=pyusb/pyusb
+    - REPO=benmwebb/wifi-heatmap
+    - REPO=benmwebb/IMP_BioSystem_Domain_Fly_Genome
+    - REPO=3DGenomes/IMP_BioSystem_Domain_Fly_Genome
+    - REPO=3DGenomes/TADbit
 
 cache: pip
 python:
