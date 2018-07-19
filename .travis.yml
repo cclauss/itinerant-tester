@@ -3,11 +3,45 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=benmwebb/wifi-heatmap
-    - REPO=benmwebb/IMP_BioSystem_Domain_Fly_Genome
-    - REPO=3DGenomes/IMP_BioSystem_Domain_Fly_Genome
-    - REPO=3DGenomes/TADbit
-
+    - REPO=donnemartin/system-design-primer
+    - REPO=quantumlib/Cirq
+    - REPO=chubin/cheat.sh
+    - REPO=toddmotto/public-apis
+    - REPO=techbanca/coinai
+    - REPO=tensorflow/models
+    - REPO=ansible/ansible-jupyter-kernel
+    - REPO=Chakazul/Lenia
+    - REPO=keras-team/keras
+    - REPO=MatrixAINetwork/MatrixAIPoC_PY
+    - REPO=vinta/awesome-python
+    - REPO=lancifollia/tinygbt
+    - REPO=facebookincubator/xar
+    - REPO=Kozea/WeasyPrint
+    - REPO=jackfrued/Python-100-Days
+    - REPO=rg3/youtube-dl
+    - REPO=quantumlib/OpenFermion-Cirq
+    - REPO=nbedos/termtosvg
+    - REPO=Netflix-Skunkworks/diffy
+    - REPO=alexmojaki/sorcery
+    - REPO=django/django
+    - REPO=ageitgey/face_recognition
+    - REPO=hq6/GdbShellPipe
+    - REPO=ansible/ansible
+    - REPO=XanaduAI/strawberryfields
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
 cache: pip
 python:
     #- 2.7
