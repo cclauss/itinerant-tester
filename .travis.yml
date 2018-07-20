@@ -3,44 +3,8 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=donnemartin/system-design-primer
-    - REPO=quantumlib/Cirq
-    - REPO=chubin/cheat.sh
-    - REPO=toddmotto/public-apis
-    - REPO=tensorflow/models
-    - REPO=MatrixAINetwork/MatrixAIPoC_PY
-    - REPO=techbanca/coinai
-    - REPO=ansible/ansible-jupyter-kernel
-    - REPO=Kozea/WeasyPrint
-    - REPO=vinta/awesome-python
-    - REPO=keras-team/keras
-    - REPO=jackfrued/Python-100-Days
-    - REPO=facebookincubator/xar
-    - REPO=Chakazul/Lenia
-    - REPO=rg3/youtube-dl
-    - REPO=ageitgey/face_recognition
-    - REPO=alexmojaki/sorcery
-    - REPO=scikit-learn/scikit-learn
-    - REPO=Netflix-Skunkworks/diffy
-    - REPO=jerry-git/learn-python3
-    - REPO=ansible/ansible
-    - REPO=lancifollia/tinygbt
-    - REPO=nbedos/termtosvg
-    - REPO=django/django
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
+    - REPO=chef/okta_aws
+    
 cache: pip
 python:
     #- 2.7
