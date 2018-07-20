@@ -3,43 +3,45 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=quantumlib/Cirq  # has .travis.yml file
-    - REPO=quantumlib/OpenFermion  # has .travis.yml file
-    - REPO=quantumlib/OpenFermion-Cirq  # has .travis.yml file
-    - REPO=quantumlib/OpenFermion-ProjectQ  # has .travis.yml file
-    - REPO=quantumlib/OpenFermion-Psi4
-    - REPO=quantumlib/OpenFermion-PySCF  # has .travis.yml file
-    - REPO=hugovk/Pillow  # has .travis.yml file
-    - REPO=hugovk/aws-cli  # has .travis.yml file
-    - REPO=hugovk/black  # has .travis.yml file
-    - REPO=hugovk/botocore  # has .travis.yml file
-    - REPO=hugovk/coveragepy  # has .travis.yml file
-    - REPO=hugovk/dill  # has .travis.yml file
-    - REPO=hugovk/drop-python  # has .travis.yml file
-    - REPO=hugovk/fixtures  # has .travis.yml file
-    - REPO=hugovk/flake8-bugbear  # has .travis.yml file
-    - REPO=hugovk/frida-python
-    - REPO=hugovk/github-tools  # has .travis.yml file
-    - REPO=hugovk/gunicorn  # has .travis.yml file
-    - REPO=hugovk/lastfm-tools  # has .travis.yml file
-    - REPO=hugovk/lunchbot  # has .travis.yml file
-    - REPO=hugovk/olefile  # has .travis.yml file
-    - REPO=hugovk/openslide-python
-    - REPO=hugovk/parso  # has .travis.yml file
-    - REPO=hugovk/pika  # has .travis.yml file
-    - REPO=hugovk/pixel-tools  # has .travis.yml file
-    - REPO=hugovk/pyperclip
-    - REPO=hugovk/pypi-tools  # has .travis.yml file
-    - REPO=hugovk/pypinfo  # has .travis.yml file
-    - REPO=hugovk/pytest  # has .travis.yml file
-    - REPO=hugovk/pyyaml  # has .travis.yml file
-    - REPO=hugovk/rq-dashboard  # has .travis.yml file
-    - REPO=hugovk/scipy  # has .travis.yml file
-    - REPO=hugovk/simplejson  # has .travis.yml file
-    - REPO=hugovk/tinytext  # has .travis.yml file
-    - REPO=hugovk/tldextract  # has .travis.yml file
-    - REPO=hugovk/warehouse  # has .travis.yml file
- 
+    - REPO=donnemartin/system-design-primer
+    - REPO=quantumlib/Cirq
+    - REPO=chubin/cheat.sh
+    - REPO=toddmotto/public-apis
+    - REPO=techbanca/coinai
+    - REPO=tensorflow/models
+    - REPO=MatrixAINetwork/MatrixAIPoC_PY
+    - REPO=Kozea/WeasyPrint
+    - REPO=ansible/ansible-jupyter-kernel
+    - REPO=vinta/awesome-python
+    - REPO=keras-team/keras
+    - REPO=jerry-git/learn-python3
+    - REPO=facebookincubator/xar
+    - REPO=ageitgey/face_recognition
+    - REPO=rg3/youtube-dl
+    - REPO=alexmojaki/sorcery
+    - REPO=Netflix-Skunkworks/diffy
+    - REPO=django/django
+    - REPO=jackfrued/Python-100-Days
+    - REPO=Chakazul/Lenia
+    - REPO=scikit-learn/scikit-learn
+    - REPO=ansible/ansible
+    - REPO=lancifollia/tinygbt
+    - REPO=python/cpython
+    - REPO=pypa/pipenv
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
 cache: pip
 python:
     #- 2.7
