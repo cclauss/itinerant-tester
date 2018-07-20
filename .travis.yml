@@ -3,33 +3,18 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=oaubert/AssistantPi  # has .travis.yml file
-    - REPO=oaubert/Galicaster
     - REPO=oaubert/advene
-    - REPO=oaubert/advene2
-    - REPO=oaubert/bandcamp-dl  # has .travis.yml file
-    - REPO=oaubert/celery  # has .travis.yml file
-    - REPO=oaubert/deepzoom.py
-    - REPO=oaubert/django-ajax-selects  # has .travis.yml file
-    - REPO=oaubert/django-rest-framework  # has .travis.yml file
-    - REPO=oaubert/kadist
-    - REPO=oaubert/lecm  # has .travis.yml file
-    - REPO=oaubert/nots
-    - REPO=oaubert/python-openni
-    - REPO=oaubert/python-vlc  # has .travis.yml file
-    - REPO=oaubert/sensors
-    - REPO=oaubert/slideotracker
 
 cache: pip
 python:
-    #- 2.7
+    - 2.7
     - 3.6
     #- nightly
     #- pypy
     #- pypy3
 matrix:
     allow_failures:
-        - 2.7
+        - python: 3.6
         - python: nightly
         - python: pypy
         - python: pypy3
