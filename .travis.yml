@@ -3,45 +3,34 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=donnemartin/system-design-primer
-    - REPO=techbanca/coinai
-    - REPO=chubin/cheat.sh
-    - REPO=quantumlib/Cirq
-    - REPO=toddmotto/public-apis
-    - REPO=tensorflow/models
-    - REPO=jerry-git/learn-python3
-    - REPO=vinta/awesome-python
-    - REPO=alexmojaki/sorcery
-    - REPO=MatrixAINetwork/MatrixAIPoC_PY
-    - REPO=keras-team/keras
-    - REPO=ageitgey/face_recognition
-    - REPO=pallets/flask
-    - REPO=rg3/youtube-dl
-    - REPO=python/cpython
-    - REPO=django/django
-    - REPO=scikit-learn/scikit-learn
-    - REPO=ansible/ansible
-    - REPO=Kozea/WeasyPrint
-    - REPO=brain-research/acai
-    - REPO=soimort/you-get
-    - REPO=jackfrued/Python-100-Days
-    - REPO=nbedos/termtosvg
-    - REPO=Chakazul/Lenia
-    - REPO=jakubroztocil/httpie
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
+    - REPO=amercader/MapFish-Print-IIS
+    - REPO=amercader/OWSLib
+    - REPO=amercader/ckan  # has .travis.yml file
+    - REPO=amercader/ckanext-adfs
+    - REPO=amercader/ckanext-datajson
+    - REPO=amercader/ckanext-datarequests
+    - REPO=amercader/ckanext-harvest
+    - REPO=amercader/ckanext-ldap
+    - REPO=amercader/ckanext-rq
+    - REPO=amercader/ckanext-scheming  # has .travis.yml file
+    - REPO=amercader/datapusher  # has .travis.yml file
+    - REPO=amercader/docker-ckan
+    - REPO=amercader/example-docker-python
+    - REPO=amercader/flask-babel  # has .travis.yml file
+    - REPO=amercader/geojson-diff-examples
+    - REPO=amercader/gini-index
+    - REPO=amercader/hashtag-listener
+    - REPO=amercader/ne-data-test
+    - REPO=amercader/newcastle-libraries-data
+    - REPO=amercader/pycsw  # has .travis.yml file
+    - REPO=amercader/registry
+    - REPO=amercader/requests  # has .travis.yml file
+    - REPO=amercader/s-and-p-500-companies  # has .travis.yml file
+    - REPO=amercader/test_travis  # has .travis.yml file
+    - REPO=amercader/validate-sdg-dp
+    - REPO=amercader/weberror
+    - REPO=amercader/wikigeolinks
+
 cache: pip
 python:
     #- 2.7
