@@ -3,12 +3,7 @@ group: travis_latest
 # sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=rcarmo/piku
-    - REPO=rcarmo/azure-acme-foundation
-    - REPO=rcarmo/nlp-pt-tagger
-    - REPO=rcarmo/pngcanvas
-    - REPO=rcarmo/azure-docker-swarm-cluster
-    - REPO=rcarmo/imapbackup
+    - REPO=ry/deno
 
 cache: pip
 python:
