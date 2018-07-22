@@ -1,15 +1,51 @@
 group: travis_latest
-dist: xenial  # required for Python 3.7
-sudo: true    # required for Python 3.7
+# dist: xenial  # required for Python 3.7
+# sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=cython/cython
-
+    - REPO=donnemartin/system-design-primer
+    - REPO=wannabeOG/Mask-RCNN
+    - REPO=chubin/cheat.sh
+    - REPO=tensorflow/models
+    - REPO=toddmotto/public-apis
+    - REPO=openai/glow
+    - REPO=cuducos/twitter-cleanup
+    - REPO=llSourcell/Machine-Learning-API-Tutorial
+    - REPO=AtsushiSakai/PythonRobotics
+    - REPO=rg3/youtube-dl
+    - REPO=quantumlib/Cirq
+    - REPO=quantopian/qgrid
+    - REPO=nbedos/termtosvg
+    - REPO=IndicoDataSolutions/finetune
+    - REPO=vinta/awesome-python
+    - REPO=home-assistant/home-assistant
+    - REPO=keras-team/keras
+    - REPO=pallets/flask
+    - REPO=wxywhu/SRDenseNet-pytorch
+    - REPO=MatrixAINetwork/MatrixAIPoC_PY
+    - REPO=TheAlgorithms/Python
+    - REPO=scikit-learn/scikit-learn
+    - REPO=XX-net/XX-Net
+    - REPO=jackfrued/Python-100-Days
+    - REPO=jakubroztocil/httpie
+    - REPO=matplotlib/matplotlib
+    - REPO=ckan/ckan
+    - REPO=apache/beam
+    - REPO=ggtracker/sc2reader
+    - REPO=hyperledger/fabric
+    - REPO=vnpy/vnpy
+    - REPO=PythonCharmers/python-future
+    - REPO=ansible/ansible
+    - REPO=Tribler/tribler
+    - REPO=apache/incubator-mxnet
+    - REPO=apache/spark
+    - REPO=oaubert/python-vlc
+    - REPO=gevent/gevent
+    - REPO=getsentry/sentry
 cache: pip
 python:
     #- 2.7
-    # - 3.6
-    - 3.7
+    - 3.6
     #- nightly
     #- pypy
     #- pypy3
