@@ -1,6 +1,6 @@
 group: travis_latest
-# dist: xenial  # required for Python 3.7
-# sudo: true    # required for Python 3.7
+dist: xenial  # required for Python 3.7
+sudo: true    # required for Python 3.7
 language: python
 env:
     - REPO=cython/cython
@@ -8,7 +8,8 @@ env:
 cache: pip
 python:
     #- 2.7
-    - 3.6
+    # - 3.6
+    - 3.7
     #- nightly
     #- pypy
     #- pypy3
