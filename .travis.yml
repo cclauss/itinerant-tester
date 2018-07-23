@@ -10,19 +10,9 @@ matrix:
   allow_failures:
     - python: 2.7
 env:
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=nodejs/node-auto-test
-  - REPO=nodejs/build
-  - REPO=nodejs/llnode
-  - REPO=nodejs/node-v8
-  - REPO=nodejs/node-chakracore
-  - REPO=nodejs/node-addon-api
-  - REPO=nodejs/abi-stable-node-addon-examples
-  - REPO=nodejs/http-parser
-  - REPO=nodejs/nan
-  - REPO=nodejs/node-report
-  - REPO=nodejs/ffi
+  - REPO=eddiewebb/jive-confluence-migrator
+  - REPO=eddiewebb/statuspage-migrator
+
   - REPO=nodejs/testing
 install:
   - pip install flake8
