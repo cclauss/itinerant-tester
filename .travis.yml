@@ -4,23 +4,23 @@ sudo: true    # required for Python 3.7
 language: python
 cache: pip
 python:
-    - python: 2.7
-    - python: 3.7
+  - 2.7
+  - 3.7
 env:
-    - REPO=nodejs/node
-    - REPO=nodejs/node-gyp
-    - REPO=nodejs/node-auto-test
-    - REPO=nodejs/build
-    - REPO=nodejs/llnode
-    - REPO=nodejs/node-v8
-    - REPO=nodejs/node-chakracore
-    - REPO=nodejs/node-addon-api
-    - REPO=nodejs/abi-stable-node-addon-examples
-    - REPO=nodejs/http-parser
-    - REPO=nodejs/nan
-    - REPO=nodejs/node-report
-    - REPO=nodejs/ffi
-    - REPO=nodejs/testing
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=nodejs/node-auto-test
+  - REPO=nodejs/build
+  - REPO=nodejs/llnode
+  - REPO=nodejs/node-v8
+  - REPO=nodejs/node-chakracore
+  - REPO=nodejs/node-addon-api
+  - REPO=nodejs/abi-stable-node-addon-examples
+  - REPO=nodejs/http-parser
+  - REPO=nodejs/nan
+  - REPO=nodejs/node-report
+  - REPO=nodejs/ffi
+  - REPO=nodejs/testing
 matrix:
     allow_failures:
         - 2.7
@@ -37,7 +37,6 @@ script:
     - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
     - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
     - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    #- true  # pytest --capture=sys
 notifications:
     on_success: change
     on_failure: change  # `always` will be the setting once code changes slow down
