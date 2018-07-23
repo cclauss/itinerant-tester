@@ -1,5 +1,8 @@
 group: travis_latest
+dist: xenial  # required for Python 3.7
+sudo: true    # required for Python 3.7
 language: python
+cache: pip
 env:
     - REPO=nodejs/node
     - REPO=nodejs/node-gyp
@@ -15,13 +18,7 @@ env:
     - REPO=nodejs/node-report
     - REPO=nodejs/ffi
     - REPO=nodejs/testing
-cache: pip
 matrix:
-    include:
-        - python: 2.7
-        - python: 3.7
-          dist: xenial  # required for Python 3.7
-          sudo: true    # required for Python 3.7
     allow_failures:
         - 2.7
 install:
