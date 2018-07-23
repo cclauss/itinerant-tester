@@ -1,63 +1,31 @@
 group: travis_latest
-# dist: xenial  # required for Python 3.7
-# sudo: true    # required for Python 3.7
 language: python
 env:
-    - REPO=donnemartin/system-design-primer
-    - REPO=chubin/cheat.sh
-    - REPO=s0md3v/Photon
-    - REPO=wannabeOG/Mask-RCNN
-    - REPO=tensorflow/models
-    - REPO=jackfrued/Python-100-Days
-    - REPO=d33tah/strokes
-    - REPO=toddmotto/public-apis
-    - REPO=quantumlib/Cirq
-    - REPO=vinta/awesome-python
-    - REPO=TheAlgorithms/Python
-    - REPO=keras-team/keras
-    - REPO=rg3/youtube-dl
-    - REPO=nbedos/termtosvg
-    - REPO=mraza007/videodownloader
-    - REPO=OlafenwaMoses/ImageAI
-    - REPO=openai/glow
-    - REPO=pallets/flask
-    - REPO=HelloZeroNet/ZeroNet
-    - REPO=azizaltuntas/Camelishing
-    - REPO=XX-net/XX-Net
-    - REPO=AtsushiSakai/PythonRobotics
-    - REPO=cuducos/twitter-cleanup
-    - REPO=pypa/pipenv
-    - REPO=python/cpython
-    - REPO=matplotlib/matplotlib
-    - REPO=ckan/ckan
-    - REPO=apache/beam
-    - REPO=ggtracker/sc2reader
-    - REPO=hyperledger/fabric
-    - REPO=vnpy/vnpy
-    - REPO=PythonCharmers/python-future
-    - REPO=ansible/ansible
-    - REPO=Tribler/tribler
-    - REPO=apache/incubator-mxnet
-    - REPO=apache/spark
-    - REPO=oaubert/python-vlc
-    - REPO=gevent/gevent
-    - REPO=getsentry/sentry
+    - REPO=nodejs/node
+    - REPO=nodejs/node-gyp
+    - REPO=nodejs/node-auto-test
+    - REPO=nodejs/build
+    - REPO=nodejs/llnode
+    - REPO=nodejs/node-v8
+    - REPO=nodejs/node-chakracore
+    - REPO=nodejs/node-addon-api
+    - REPO=nodejs/abi-stable-node-addon-examples
+    - REPO=nodejs/http-parser
+    - REPO=nodejs/nan
+    - REPO=nodejs/node-report
+    - REPO=nodejs/ffi
+    - REPO=nodejs/testing
 cache: pip
-python:
-    #- 2.7
-    - 3.6
-    #- nightly
-    #- pypy
-    #- pypy3
 matrix:
+    include:
+        - python: 2.7
+        - python: 3.7
+          dist: xenial  # required for Python 3.7
+          sudo: true    # required for Python 3.7
     allow_failures:
         - 2.7
-        - python: nightly
-        - python: pypy
-        - python: pypy3
 install:
-    #- pip install -r requirements.txt
-    - pip install flake8  # pytest  # add other testing frameworks later
+    - pip install flake8
 before_script:
     - URL=https://github.com/${REPO}
     - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
