@@ -3,6 +3,9 @@ dist: xenial  # required for Python 3.7
 sudo: true    # required for Python 3.7
 language: python
 cache: pip
+python:
+    - python: 2.7
+    - python: 3.7
 env:
     - REPO=nodejs/node
     - REPO=nodejs/node-gyp
