@@ -10,10 +10,7 @@ matrix:
   allow_failures:
     - python: 2.7
 env:
-  - REPO=eddiewebb/jive-confluence-migrator
-  - REPO=eddiewebb/statuspage-migrator
-
-  - REPO=nodejs/testing
+  - REPO=v8/v8
 install:
   - pip install flake8
 before_script:
