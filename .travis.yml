@@ -4,18 +4,60 @@ sudo: true    # required for Python 3.7
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   - 3.7
+  #- nightly
+  #- pypy
+  #- pypy3
 matrix:
   allow_failures:
     - python: 2.7
+    - python: nightly
+    - python: pypy
+    - python: pypy3
 env:
-  - REPO=v8/v8
-  - REPO=v8/sampling-heap-profiler
-  - REPO=tc39/test262
-
+  - REPO=s0md3v/Photon
+  - REPO=donnemartin/system-design-primer
+  - REPO=chubin/cheat.sh
+  - REPO=tensorflow/models
+  - REPO=jackfrued/Python-100-Days
+  - REPO=vinta/awesome-python
+  - REPO=wannabeOG/Mask-RCNN
+  - REPO=toddmotto/public-apis
+  - REPO=ecs-vlc/torchbearer
+  - REPO=keras-team/keras
+  - REPO=HelloZeroNet/ZeroNet
+  - REPO=quantumlib/Cirq
+  - REPO=d33tah/strokes
+  - REPO=nbedos/termtosvg
+  - REPO=rg3/youtube-dl
+  - REPO=openai/glow
+  - REPO=ansible/ansible
+  - REPO=matterport/Mask_RCNN
+  - REPO=TheAlgorithms/Python
+  - REPO=python/cpython
+  - REPO=django/django
+  - REPO=pypa/pipenv
+  - REPO=AtsushiSakai/PythonRobotics
+  - REPO=facebookresearch/Detectron
+  - REPO=pallets/flask
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
 install:
-  - pip install flake8
+  #- pip install -r requirements.txt
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -27,6 +69,7 @@ script:
   - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  #- true  # pytest --capture=sys
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
