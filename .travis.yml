@@ -11,6 +11,9 @@ matrix:
     - python: 2.7
 env:
   - REPO=v8/v8
+  - REPO=v8/sampling-heap-profiler
+  - REPO=tc39/test262
+
 install:
   - pip install flake8
 before_script:
