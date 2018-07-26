@@ -16,48 +16,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=s0md3v/Photon
-  - REPO=donnemartin/system-design-primer
-  - REPO=instacart/lore
-  - REPO=MarkPKCollier/NeuralTuringMachine
-  - REPO=chubin/cheat.sh
-  - REPO=tensorflow/models
-  - REPO=Nekmo/dirhunt
-  - REPO=IndicoDataSolutions/finetune
-  - REPO=iterative/dvc
-  - REPO=tristandeleu/pytorch-maml-rl
   - REPO=keras-team/keras
-  - REPO=toddmotto/public-apis
-  - REPO=PyCQA/pylint
-  - REPO=salesforce/decaNLP
-  - REPO=rg3/youtube-dl
-  - REPO=ansible/ansible
-  - REPO=pallets/flask
-  - REPO=XX-net/XX-Net
-  - REPO=jerry-git/learn-python3
-  - REPO=mli/gluon-tutorials-zh
-  - REPO=matterport/Mask_RCNN
-  - REPO=django/django
-  - REPO=home-assistant/home-assistant
-  - REPO=python/cpython
-  - REPO=nbedos/termtosvg
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=apache/beam
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=vnpy/vnpy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=gevent/gevent
-  - REPO=getsentry/sentry
+
 install:
   #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testing frameworks later
+  - pip install flake8 pylint # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -65,6 +28,7 @@ before_script:
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
+  - find . -iname "*.py" | xargs pylint 
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
