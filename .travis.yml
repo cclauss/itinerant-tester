@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=node-red/node-red-nodes
+    - REPO=nodejs/node
 
 install:
   #- pip install -r requirements.txt
