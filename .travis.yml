@@ -16,8 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=nodejs/node
-
+  - REPO=mkaz/termgraph
+  - REPO=s0md3v/Photon
+  - REPO=donnemartin/system-design-primer
+  - REPO=colental/byob
+  - REPO=zulip/zulip
+  - REPO=chubin/cheat.sh
+  - REPO=XingangPan/IBN-Net
+  - REPO=instacart/lore
+  - REPO=tensorflow/models
+  - REPO=salesforce/decaNLP
+  - REPO=python-attrs/attrs
+  - REPO=vinta/awesome-python
+  - REPO=albertpumarola/GANimation
+  - REPO=tensorflow/cleverhans
+  - REPO=rg3/youtube-dl
+  - REPO=django/django
+  - REPO=pypa/pipenv
+  - REPO=keras-team/keras
+  - REPO=toddmotto/public-apis
+  - REPO=facebookresearch/pythia
+  - REPO=jaakkopasanen/AutoEq
+  - REPO=quark0/darts
+  - REPO=thewhiteh4t/seeker
+  - REPO=explosion/spaCy
+  - REPO=facebookresearch/Detectron
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
