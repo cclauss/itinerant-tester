@@ -28,9 +28,9 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - # time flake8 ./*.py --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-  - time flake8 ./src --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-  - time flake8 ./metric-learning --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  #- time flake8 ./*.py --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  #- time flake8 ./src --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  - time flake8 --exclude=./metric-learning --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
