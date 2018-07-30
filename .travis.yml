@@ -17,12 +17,7 @@ matrix:
       dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
       sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 env:
-  - REPO=ibm-watson-iot/iot-python
-  - REPO=colental/byob
-  - REPO=nicolargo/glances
-  - REPO=evyatarmeged/Raccoon
-  - REPO=mkaz/termgraph
-  - REPO=s0md3v/Photon
+  - REPO=apache/beam
 
 install:
   #- pip install -r requirements.txt
