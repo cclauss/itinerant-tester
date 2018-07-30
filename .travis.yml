@@ -1,6 +1,11 @@
 group: travis_latest
 language: python
 cache: pip
+python:
+  - 2.7
+  - 3.4
+  - 3.5
+  - 3.6
 matrix:
   allow_failures:
     - python: 2.7
@@ -8,20 +13,16 @@ matrix:
     - python: pypy
     - python: pypy3
   include:
-    #- python: 2.7
-    #- python: 3.4
-    #- python: 3.5
-    #- python: 3.6
     - python: 3.7
       dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
       sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
-  env:
-    global:
-      - REPO=colental/byob
-      - REPO=nicolargo/glances
-      - REPO=evyatarmeged/Raccoon
-      - REPO=mkaz/termgraph
-      - REPO=s0md3v/Photon
+env:
+  - REPO=ibm-watson-iot/iot-python
+  - REPO=colental/byob
+  - REPO=nicolargo/glances
+  - REPO=evyatarmeged/Raccoon
+  - REPO=mkaz/termgraph
+  - REPO=s0md3v/Photon
 
 install:
   #- pip install -r requirements.txt
