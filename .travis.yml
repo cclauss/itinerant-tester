@@ -1,8 +1,8 @@
 group: travis_latest
 language: python
 cache: pip
-#python:
-  #- 2.7
+python:
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
