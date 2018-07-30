@@ -15,7 +15,8 @@ matrix:
   include:
     - python: 3.7
       dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
-      sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)env:
+      sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
+env:
   - REPO=evyatarmeged/Raccoon
   - REPO=nicolargo/glances
   - REPO=colental/byob
