@@ -1,23 +1,60 @@
 group: travis_latest
-dist: xenial  # required for Python 3.7
-sudo: true    # required for Python 3.7
 language: python
 cache: pip
-python:
-  #- 2.7
-  - 3.7
-  #- nightly
-  #- pypy
-  #- pypy3
 matrix:
   allow_failures:
     - python: 2.7
     - python: nightly
     - python: pypy
     - python: pypy3
+  include:
+    #- python: 2.7
+    #- python: 3.4
+    #- python: 3.5
+    #- python: 3.6
+    - python: 3.7
+      dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
+      sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 env:
-  - REPO=aaugustin/websockets
-
+  - REPO=colental/byob
+  - REPO=nicolargo/glances
+  - REPO=evyatarmeged/Raccoon
+  - REPO=mkaz/termgraph
+  - REPO=s0md3v/Photon
+  - REPO=donnemartin/system-design-primer
+  - REPO=kitao/pyxel
+  - REPO=facebookresearch/pythia
+  - REPO=albertpumarola/GANimation
+  - REPO=tensorflow/models
+  - REPO=tensorflow/cleverhans
+  - REPO=chubin/cheat.sh
+  - REPO=mu-editor/mu
+  - REPO=ambv/black
+  - REPO=Bravest-Ptt/WxConn
+  - REPO=quantumlib/Cirq
+  - REPO=dabeaz/thredo
+  - REPO=keras-team/keras
+  - REPO=toddmotto/public-apis
+  - REPO=vinta/awesome-python
+  - REPO=frappe/erpnext
+  - REPO=pallets/flask
+  - REPO=XingangPan/IBN-Net
+  - REPO=scikit-learn/scikit-learn
+  - REPO=jrdutra/xDownload_public
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
