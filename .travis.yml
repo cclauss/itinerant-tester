@@ -16,7 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mu-editor/mu
+  - REPO=nicolargo/glances
+  - REPO=evyatarmeged/Raccoon
+  - REPO=colental/byob
+  - REPO=s0md3v/Photon
+  - REPO=kitao/pyxel
+  - REPO=mkaz/termgraph
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=chubin/cheat.sh
+  - REPO=tensorflow/cleverhans
+  - REPO=facebookresearch/pythia
+  - REPO=keras-team/keras
+  - REPO=rg3/youtube-dl
+  - REPO=vinta/awesome-python
+  - REPO=toddmotto/public-apis
+  - REPO=django/django
+  - REPO=quantumlib/Cirq
+  - REPO=scikit-learn/scikit-learn
+  - REPO=miaow1988/ShuffleNet_V2_pytorch_caffe
+  - REPO=pallets/flask
+  - REPO=avilum/linqit
+  - REPO=facebookresearch/Detectron
+  - REPO=frappe/erpnext
+  - REPO=ansible/ansible
+  - REPO=Marten4n6/EvilOSX
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
@@ -28,7 +66,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --builtins=_ --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
