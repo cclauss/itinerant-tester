@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=statsmodels/statsmodels
+  - REPO=lmcinnes/umap
 
 install:
   #- pip install -r requirements.txt
