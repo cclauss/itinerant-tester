@@ -16,8 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=lmcinnes/umap
-
+  - REPO=robinhood/faust
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=donnemartin/system-design-primer
+  - REPO=kitao/pyxel
+  - REPO=tensorflow/models
+  - REPO=nicolargo/glances
+  - REPO=evyatarmeged/Raccoon
+  - REPO=chubin/cheat.sh
+  - REPO=mkaz/termgraph
+  - REPO=s0md3v/Photon
+  - REPO=colental/byob
+  - REPO=tensorflow/cleverhans
+  - REPO=vinta/awesome-python
+  - REPO=toddmotto/public-apis
+  - REPO=miaow1988/ShuffleNet_V2_pytorch_caffe
+  - REPO=facebookresearch/pythia
+  - REPO=scikit-learn/scikit-learn
+  - REPO=keras-team/keras
+  - REPO=rg3/youtube-dl
+  - REPO=jhfjhfj1/autokeras
+  - REPO=mnkgrover08/whatsapp_automation
+  - REPO=django/django
+  - REPO=apache/incubator-mxnet
+  - REPO=Marten4n6/EvilOSX
+  - REPO=pallets/flask
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
