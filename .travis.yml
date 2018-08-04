@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mkaz/termgraph
+  - REPO=sigmavirus24/github3.py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
