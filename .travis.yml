@@ -18,29 +18,29 @@ matrix:
 env:
   - REPO=donnemartin/system-design-primer
   - REPO=jhfjhfj1/autokeras
-  - REPO=kitao/pyxel
   - REPO=amitt001/pygmy
+  - REPO=kitao/pyxel
   - REPO=zotroneneis/harry_potter_universe
-  - REPO=rootVIII/proxy_requests
   - REPO=RaRe-Technologies/smart_open
+  - REPO=rootVIII/proxy_requests
   - REPO=chubin/cheat.sh
   - REPO=tensorflow/models
   - REPO=tensorflow/cleverhans
-  - REPO=trailofbits/algo
   - REPO=robinhood/faust
+  - REPO=trailofbits/algo
   - REPO=vinta/awesome-python
-  - REPO=bbli/ml_board
   - REPO=keras-team/keras
+  - REPO=bbli/ml_board
+  - REPO=angr/heaphopper
+  - REPO=rg3/youtube-dl
+  - REPO=s0md3v/Photon
   - REPO=kevinzakka/NALU-pytorch
   - REPO=colental/byob
-  - REPO=angr/heaphopper
-  - REPO=s0md3v/Photon
-  - REPO=rg3/youtube-dl
-  - REPO=evyatarmeged/Raccoon
-  - REPO=toddmotto/public-apis
-  - REPO=kgrm/NALU
   - REPO=django/django
+  - REPO=umich-vl/CornerNet
+  - REPO=evyatarmeged/Raccoon
   - REPO=pallets/flask
+  - REPO=toddmotto/public-apis
   - REPO=matplotlib/matplotlib
   - REPO=ckan/ckan
   - REPO=apache/beam
@@ -55,6 +55,7 @@ env:
   - REPO=oaubert/python-vlc
   - REPO=gevent/gevent
   - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
