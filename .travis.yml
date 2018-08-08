@@ -17,6 +17,8 @@ matrix:
     - python: pypy3
 env:
   - REPO=apache/incubator-openwhisk
+  - REPO=pypa/warehouse
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
