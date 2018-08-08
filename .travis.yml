@@ -16,8 +16,12 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=apache/incubator-openwhisk
-  - REPO=pypa/warehouse
+    - REPO=Qiskit/aqua
+    - REPO=Qiskit/aqua-chemistry
+    - REPO=Qiskit/qiskit-addon-projectq  # has .travis.yml file
+    - REPO=Qiskit/qiskit-addon-sympy  # has .travis.yml file
+    - REPO=Qiskit/qiskit-api-py  # has .travis.yml file
+    - REPO=Qiskit/qiskit-terra  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
