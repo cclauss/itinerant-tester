@@ -16,21 +16,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=SpiderLabs/HostHunter
-    - REPO=SpiderLabs/ModSecurity-Python-bindings
-    - REPO=SpiderLabs/ModSecurity-log-utilities
-    - REPO=SpiderLabs/OWASP-CRS-Documentation
-    - REPO=SpiderLabs/OWASP-CRS-regressions
-    - REPO=SpiderLabs/Responder
-    - REPO=SpiderLabs/cribdrag
-    - REPO=SpiderLabs/deblaze
-    - REPO=SpiderLabs/groupenum
-    - REPO=SpiderLabs/ikeforce
-    - REPO=SpiderLabs/nrfdump
-    - REPO=SpiderLabs/oracle_pwd_tools
-    - REPO=SpiderLabs/secrules-language-evaluation
-    - REPO=SpiderLabs/social_mapper
-
+  - REPO=haskellcamargo/sclack
+  - REPO=SpiderLabs/social_mapper
+  - REPO=donnemartin/system-design-primer
+  - REPO=jiaruncao/Readers
+  - REPO=jhfjhfj1/autokeras
+  - REPO=kitao/pyxel
+  - REPO=romanzaikin/BurpExtension-WhatsApp-Decryption-CheckPoint
+  - REPO=tensorflow/models
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=jsn5/dancenet
+  - REPO=chubin/cheat.sh
+  - REPO=notifiers/notifiers
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/cleverhans
+  - REPO=keras-team/keras
+  - REPO=ansible/ansible
+  - REPO=t-makaro/animatplot
+  - REPO=toddmotto/public-apis
+  - REPO=0xAX/linux-insides
+  - REPO=apache/incubator-mxnet
+  - REPO=python/cpython
+  - REPO=trailofbits/rattle
+  - REPO=odoo/odoo
+  - REPO=django/django
+  - REPO=robinhood/faust
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
