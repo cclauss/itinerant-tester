@@ -16,7 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=wannabeOG/Mask-RCNN
+  - REPO=yjqiang/bilibili-live-tools
+  - REPO=Dawnnnnnn/bilibili-live-tools
 
 install:
   #- pip install -r requirements.txt
