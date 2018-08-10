@@ -16,46 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=SpiderLabs/social_mapper
-  - REPO=donnemartin/system-design-primer
-  - REPO=haskellcamargo/sclack
-  - REPO=jhfjhfj1/autokeras
-  - REPO=chubin/cheat.sh
-  - REPO=airbnb/artificial-adversary
-  - REPO=romanzaikin/BurpExtension-WhatsApp-Decryption-CheckPoint
-  - REPO=tensorflow/models
-  - REPO=jsn5/dancenet
-  - REPO=keras-team/keras
-  - REPO=nicolargo/glances
-  - REPO=umich-vl/CornerNet
-  - REPO=vinta/awesome-python
-  - REPO=zotroneneis/harry_potter_universe
-  - REPO=ageitgey/face_recognition
-  - REPO=tensorflow/cleverhans
-  - REPO=ansible/ansible
-  - REPO=theInfectedDrake/TIDoS-Framework
-  - REPO=rg3/youtube-dl
-  - REPO=django/django
-  - REPO=chinese-poetry/chinese-poetry
-  - REPO=kitao/pyxel
-  - REPO=toddmotto/public-apis
-  - REPO=luke14free/pm-prophet
-  - REPO=requests/requests
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=apache/beam
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=vnpy/vnpy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=gevent/gevent
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=tensorflow/minigo
+ 
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
