@@ -16,31 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=haskellcamargo/sclack
   - REPO=SpiderLabs/social_mapper
   - REPO=donnemartin/system-design-primer
-  - REPO=jiaruncao/Readers
+  - REPO=haskellcamargo/sclack
   - REPO=jhfjhfj1/autokeras
-  - REPO=kitao/pyxel
+  - REPO=chubin/cheat.sh
+  - REPO=airbnb/artificial-adversary
   - REPO=romanzaikin/BurpExtension-WhatsApp-Decryption-CheckPoint
   - REPO=tensorflow/models
-  - REPO=chinese-poetry/chinese-poetry
   - REPO=jsn5/dancenet
-  - REPO=chubin/cheat.sh
-  - REPO=notifiers/notifiers
-  - REPO=vinta/awesome-python
-  - REPO=tensorflow/cleverhans
   - REPO=keras-team/keras
+  - REPO=nicolargo/glances
+  - REPO=umich-vl/CornerNet
+  - REPO=vinta/awesome-python
+  - REPO=zotroneneis/harry_potter_universe
+  - REPO=ageitgey/face_recognition
+  - REPO=tensorflow/cleverhans
   - REPO=ansible/ansible
-  - REPO=t-makaro/animatplot
-  - REPO=toddmotto/public-apis
-  - REPO=0xAX/linux-insides
-  - REPO=apache/incubator-mxnet
-  - REPO=python/cpython
-  - REPO=trailofbits/rattle
-  - REPO=odoo/odoo
+  - REPO=theInfectedDrake/TIDoS-Framework
+  - REPO=rg3/youtube-dl
   - REPO=django/django
-  - REPO=robinhood/faust
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=kitao/pyxel
+  - REPO=toddmotto/public-apis
+  - REPO=luke14free/pm-prophet
+  - REPO=requests/requests
   - REPO=matplotlib/matplotlib
   - REPO=ckan/ckan
   - REPO=apache/beam
