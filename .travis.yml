@@ -17,6 +17,7 @@ matrix:
     - python: pypy3
 env:
     - REPO=buildbot/buildbot
+    - REPO=DongjunLee/transformer-tensorflow
 
 install:
   #- pip install -r requirements.txt
