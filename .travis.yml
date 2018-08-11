@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,8 +16,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=SpiderLabs/social_mapper
+  - REPO=donnemartin/system-design-primer
+  - REPO=haskellcamargo/sclack
+  - REPO=lyft/xiblint
+  - REPO=chubin/cheat.sh
+  - REPO=tiepvupsu/zalo_landmark
+  - REPO=umich-vl/CornerNet
+  - REPO=vinta/awesome-python
+  - REPO=jhfjhfj1/autokeras
+  - REPO=romanzaikin/BurpExtension-WhatsApp-Decryption-CheckPoint
+  - REPO=keras-team/keras
+  - REPO=airbnb/artificial-adversary
+  - REPO=ansible/ansible
+  - REPO=nicolargo/glances
+  - REPO=MikeTheWatchGuy/PySimpleGUI
+  - REPO=ageitgey/face_recognition
   - REPO=theInfectedDrake/TIDoS-Framework
- 
+  - REPO=django/django
+  - REPO=alicevision/meshroom
+  - REPO=kitao/pyxel
+  - REPO=zotroneneis/harry_potter_universe
+  - REPO=toddmotto/public-apis
+  - REPO=rg3/youtube-dl
+  - REPO=tensorflow/cleverhans
+  - REPO=requests/requests
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
