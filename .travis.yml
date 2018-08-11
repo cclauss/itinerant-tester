@@ -16,46 +16,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=SpiderLabs/social_mapper
-  - REPO=donnemartin/system-design-primer
-  - REPO=haskellcamargo/sclack
-  - REPO=lyft/xiblint
-  - REPO=chubin/cheat.sh
-  - REPO=tiepvupsu/zalo_landmark
-  - REPO=umich-vl/CornerNet
-  - REPO=vinta/awesome-python
-  - REPO=jhfjhfj1/autokeras
-  - REPO=romanzaikin/BurpExtension-WhatsApp-Decryption-CheckPoint
-  - REPO=keras-team/keras
-  - REPO=airbnb/artificial-adversary
-  - REPO=ansible/ansible
-  - REPO=nicolargo/glances
-  - REPO=MikeTheWatchGuy/PySimpleGUI
-  - REPO=ageitgey/face_recognition
-  - REPO=theInfectedDrake/TIDoS-Framework
-  - REPO=django/django
-  - REPO=alicevision/meshroom
-  - REPO=kitao/pyxel
-  - REPO=zotroneneis/harry_potter_universe
-  - REPO=toddmotto/public-apis
-  - REPO=rg3/youtube-dl
-  - REPO=tensorflow/cleverhans
-  - REPO=requests/requests
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=apache/beam
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=vnpy/vnpy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=gevent/gevent
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+    - REPO=cloudant/bigcouch  # has .travis.yml file
+    - REPO=cloudant/buildbot
+    - REPO=cloudant/cirrus  # has .travis.yml file
+    - REPO=cloudant/couchdb-documentation  # has .travis.yml file
+    - REPO=cloudant/hdfs
+    - REPO=cloudant/locust  # has .travis.yml file
+    - REPO=cloudant/multiloggy
+    - REPO=cloudant/public-examples
+    - REPO=cloudant/python-cloudant  # has .travis.yml file
+    - REPO=cloudant/quimby
+    - REPO=cloudant/sensu-trapd  # has .travis.yml file
+    - REPO=cloudant/slapi
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
