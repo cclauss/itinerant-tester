@@ -16,7 +16,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=boto/boto3
+  - REPO=donnemartin/system-design-primer
+  - REPO=SpiderLabs/social_mapper
+  - REPO=quickbreach/SMBetray
+  - REPO=yogurt-cultures/kefir
+  - REPO=jhfjhfj1/autokeras
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+  - REPO=chubin/cheat.sh
+  - REPO=keras-team/keras
+  - REPO=hardikvasa/google-images-download
+  - REPO=vinta/awesome-python
+  - REPO=virtualabs/btlejack
+  - REPO=haskellcamargo/sclack
+  - REPO=toddmotto/public-apis
+  - REPO=UIUC-PPL/charmpy
+  - REPO=nicolargo/glances
+  - REPO=rg3/youtube-dl
+  - REPO=lyft/xiblint
+  - REPO=romanzaikin/BurpExtension-WhatsApp-Decryption-CheckPoint
+  - REPO=python/cpython
+  - REPO=soimort/you-get
+  - REPO=scikit-learn/scikit-learn
+  - REPO=ageitgey/face_recognition
+  - REPO=ansible/ansible
+  - REPO=facebookresearch/Detectron
+  - REPO=Featuretools/featuretools
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
