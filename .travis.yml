@@ -16,37 +16,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=asottile/PyGithub  # has .travis.yml file
-    - REPO=asottile/add-trailing-comma  # has .travis.yml file
-    - REPO=asottile/all-repos  # has .travis.yml file
-    - REPO=asottile/all-repos-depends  # has .travis.yml file
-    - REPO=asottile/asottile.github.io
-    - REPO=asottile/aspy.refactor_imports  # has .travis.yml file
-    - REPO=asottile/aspy.yaml  # has .travis.yml file
-    - REPO=asottile/astpretty  # has .travis.yml file
-    - REPO=asottile/aws-cli  # has .travis.yml file
-    - REPO=asottile/blacken-docs  # has .travis.yml file
-    - REPO=asottile/color-code  # has .travis.yml file
-    - REPO=asottile/docker-py  # has .travis.yml file
-    - REPO=asottile/future-fstrings  # has .travis.yml file
-    - REPO=asottile/git-code-debt  # has .travis.yml file
-    - REPO=asottile/gitlint  # has .travis.yml file
-    - REPO=asottile/ircbot
-    - REPO=asottile/mypy  # has .travis.yml file
-    - REPO=asottile/pleasant
-    - REPO=asottile/pyterminalsize  # has .travis.yml file
-    - REPO=asottile/python-modernize  # has .travis.yml file
-    - REPO=asottile/pythoncapi
-    - REPO=asottile/pyupgrade  # has .travis.yml file
-    - REPO=asottile/reorder_python_imports  # has .travis.yml file
-    - REPO=asottile/scratch
-    - REPO=asottile/seed-isort-config  # has .travis.yml file
-    - REPO=asottile/setuptools-golang  # has .travis.yml file
-    - REPO=asottile/tox-virtualenv-no-download  # has .travis.yml file
-    - REPO=asottile/unknown-horizons  # has .travis.yml file
-    - REPO=asottile/watch-plz  # has .travis.yml file
-    - REPO=asottile/yesqa  # has .travis.yml file
-  
+  - REPO=astorfi/Deep-Learning-World
+  - REPO=calebmadrigal/trackerjacker
+  - REPO=imhuay/Interview_Notes-Chinese
+  - REPO=SpiderLabs/social_mapper
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=donnemartin/system-design-primer
+  - REPO=virtualabs/btlejack
+  - REPO=pwxcoo/chinese-xinhua
+  - REPO=tensorflow/models
+  - REPO=vinta/awesome-python
+  - REPO=jhfjhfj1/autokeras
+  - REPO=keras-team/keras
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+  - REPO=yogurt-cultures/kefir
+  - REPO=haskellcamargo/sclack
+  - REPO=rg3/youtube-dl
+  - REPO=noahfl/densenet-sdr
+  - REPO=joukos/PaperTTY
+  - REPO=chubin/cheat.sh
+  - REPO=alicevision/meshroom
+  - REPO=s0md3v/Photon
+  - REPO=toddmotto/public-apis
+  - REPO=django/django
+  - REPO=crazyguitar/pysheeet
+  - REPO=ansible/ansible
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
