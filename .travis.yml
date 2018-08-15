@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,15 +16,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=soonuse/epd-library-python
-
+  - REPO=astorfi/Deep-Learning-World
+  - REPO=calebmadrigal/trackerjacker
+  - REPO=virtualabs/btlejack
+  - REPO=imhuay/Interview_Notes-Chinese
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=SpiderLabs/social_mapper
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=joukos/PaperTTY
+  - REPO=pwxcoo/chinese-xinhua
+  - REPO=keras-team/keras
+  - REPO=vinta/awesome-python
+  - REPO=jhfjhfj1/autokeras
+  - REPO=ashutosh1206/Crypton
+  - REPO=pandas-dev/pandas
+  - REPO=yogurt-cultures/kefir
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+  - REPO=haskellcamargo/sclack
+  - REPO=chubin/cheat.sh
+  - REPO=hanxiao/tf-nlp-blocks
+  - REPO=ansible/ansible
+  - REPO=rg3/youtube-dl
+  - REPO=soimort/you-get
+  - REPO=scikit-learn/scikit-learn
+  - REPO=toddmotto/public-apis
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=dev
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
