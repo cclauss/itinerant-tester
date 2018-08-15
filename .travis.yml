@@ -16,46 +16,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=astorfi/Deep-Learning-World
-  - REPO=calebmadrigal/trackerjacker
-  - REPO=virtualabs/btlejack
-  - REPO=imhuay/Interview_Notes-Chinese
-  - REPO=chinese-poetry/chinese-poetry
-  - REPO=SpiderLabs/social_mapper
-  - REPO=donnemartin/system-design-primer
-  - REPO=tensorflow/models
-  - REPO=joukos/PaperTTY
-  - REPO=pwxcoo/chinese-xinhua
-  - REPO=keras-team/keras
-  - REPO=vinta/awesome-python
-  - REPO=jhfjhfj1/autokeras
-  - REPO=ashutosh1206/Crypton
-  - REPO=pandas-dev/pandas
-  - REPO=yogurt-cultures/kefir
-  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
-  - REPO=haskellcamargo/sclack
-  - REPO=chubin/cheat.sh
-  - REPO=hanxiao/tf-nlp-blocks
-  - REPO=ansible/ansible
-  - REPO=rg3/youtube-dl
-  - REPO=soimort/you-get
-  - REPO=scikit-learn/scikit-learn
-  - REPO=toddmotto/public-apis
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=apache/beam
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=vnpy/vnpy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=gevent/gevent
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=node-red/node-red-nodes
+  - REPO=node-red/node-red
+  - REPO=node-red/node-red-docker
+  - REPO=node-red/node-red-nodegen
+  - REPO=node-red/node-red-web-nodes
+  - REPO=node-red/node-red-admin
+  - REPO=node-red/catalogue.nodered.org
+  - REPO=node-red/node-red-auth-github
+  - REPO=node-red/flow-library
+  - REPO=node-red/cookbook.nodered.org
+  - REPO=node-red/node-red-node-swagger
+  - REPO=node-red/node-red-node-test-helper
+  - REPO=node-red/node-red.github.io
+  - REPO=node-red/raspbian-deb-package
+  - REPO=node-red/node-red-auth-twitter
+  - REPO=node-red/node-red-dashboard
+  - REPO=node-red/node-red-node-watson
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
