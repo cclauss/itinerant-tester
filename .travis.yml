@@ -16,23 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=node-red/node-red-nodes
-  - REPO=node-red/node-red
-  - REPO=node-red/node-red-docker
-  - REPO=node-red/node-red-nodegen
-  - REPO=node-red/node-red-web-nodes
-  - REPO=node-red/node-red-admin
-  - REPO=node-red/catalogue.nodered.org
-  - REPO=node-red/node-red-auth-github
-  - REPO=node-red/flow-library
-  - REPO=node-red/cookbook.nodered.org
-  - REPO=node-red/node-red-node-swagger
-  - REPO=node-red/node-red-node-test-helper
-  - REPO=node-red/node-red.github.io
-  - REPO=node-red/raspbian-deb-package
-  - REPO=node-red/node-red-auth-twitter
-  - REPO=node-red/node-red-dashboard
-  - REPO=node-red/node-red-node-watson
+  - REPO=Qiskit/aqua
+  - REPO=NervanaSystems/nlp-architect
   
 install:
   #- pip install -r requirements.txt
