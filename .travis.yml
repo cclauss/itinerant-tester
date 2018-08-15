@@ -16,8 +16,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=watson-developer-cloud/python-sdk
-  
+  - REPO=astorfi/Deep-Learning-World
+  - REPO=calebmadrigal/trackerjacker
+  - REPO=virtualabs/btlejack
+  - REPO=imhuay/Interview_Notes-Chinese
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=donnemartin/system-design-primer
+  - REPO=SpiderLabs/social_mapper
+  - REPO=tensorflow/models
+  - REPO=ashutosh1206/Crypton
+  - REPO=pwxcoo/chinese-xinhua
+  - REPO=keras-team/keras
+  - REPO=vinta/awesome-python
+  - REPO=facebookresearch/UnsupervisedMT
+  - REPO=jhfjhfj1/autokeras
+  - REPO=joukos/PaperTTY
+  - REPO=toddmotto/public-apis
+  - REPO=yogurt-cultures/kefir
+  - REPO=pandas-dev/pandas
+  - REPO=ansible/ansible
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+  - REPO=haskellcamargo/sclack
+  - REPO=scikit-learn/scikit-learn
+  - REPO=soimort/you-get
+  - REPO=chubin/cheat.sh
+  - REPO=rg3/youtube-dl
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
