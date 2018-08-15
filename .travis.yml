@@ -16,8 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Qiskit/aqua
-  - REPO=NervanaSystems/nlp-architect
+  - REPO=watson-developer-cloud/python-sdk
   
 install:
   #- pip install -r requirements.txt
