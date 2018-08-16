@@ -16,31 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=facebookresearch/UnsupervisedMT
   - REPO=astorfi/Deep-Learning-World
   - REPO=calebmadrigal/trackerjacker
-  - REPO=facebookresearch/UnsupervisedMT
-  - REPO=chinese-poetry/chinese-poetry
-  - REPO=virtualabs/btlejack
-  - REPO=imhuay/Interview_Notes-Chinese
-  - REPO=donnemartin/system-design-primer
   - REPO=IEEEKeralaSection/rescuekerala
-  - REPO=ashutosh1206/Crypton
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=donnemartin/system-design-primer
+  - REPO=imhuay/Interview_Notes-Chinese
   - REPO=getredash/redash
+  - REPO=virtualabs/btlejack
+  - REPO=ashutosh1206/Crypton
   - REPO=tensorflow/models
-  - REPO=yt-project/unyt
-  - REPO=SpiderLabs/social_mapper
-  - REPO=vinta/awesome-python
   - REPO=jhfjhfj1/autokeras
-  - REPO=apachecn/AiLearning
-  - REPO=aquasecurity/kube-hunter
-  - REPO=pwxcoo/chinese-xinhua
+  - REPO=vinta/awesome-python
   - REPO=s0md3v/Photon
+  - REPO=biswaz/rescuekerala
+  - REPO=apachecn/AiLearning
+  - REPO=pwxcoo/chinese-xinhua
+  - REPO=yt-project/unyt
+  - REPO=tensorflow/tensor2tensor
+  - REPO=SpiderLabs/social_mapper
+  - REPO=aquasecurity/kube-hunter
   - REPO=keras-team/keras
-  - REPO=toddmotto/public-apis
+  - REPO=django/django
   - REPO=nbedos/termtosvg
   - REPO=vibora-io/vibora
-  - REPO=ansible/ansible
-  - REPO=biswaz/rescuekerala
   - REPO=matplotlib/matplotlib
   - REPO=ckan/ckan
   - REPO=apache/beam
