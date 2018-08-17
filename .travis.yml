@@ -16,24 +16,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=aquasecurity/dcos-universe
-    - REPO=aquasecurity/kube-hunter
-    - REPO=aquasecurity/scan-cve-2018-8115
-    - REPO=aquasecurity/sumologic-content
-    - REPO=lizrice/acs-logging-test
-    - REPO=lizrice/calico
-    - REPO=lizrice/calico-containers
-    - REPO=lizrice/django-allauth
-    - REPO=lizrice/django-avatar
-    - REPO=lizrice/django-email-confirmation
-    - REPO=lizrice/django-privatebeta
-    - REPO=lizrice/django-social-friends-finder
-    - REPO=lizrice/dockerregistry
-    - REPO=lizrice/download-shopify-theme
-    - REPO=lizrice/rpi-lcd-display
-    - REPO=lizrice/sentry-github
-    - REPO=lizrice/whoisinthehouse
-
+  - REPO=pwxcoo/chinese-xinhua
+  - REPO=imhuay/Interview_Notes-Chinese
+  - REPO=IEEEKeralaSection/rescuekerala
+  - REPO=astorfi/Deep-Learning-World
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=Pext/Pext
+  - REPO=donnemartin/system-design-primer
+  - REPO=calebmadrigal/trackerjacker
+  - REPO=ashutosh1206/Crypton
+  - REPO=facebookresearch/UnsupervisedMT
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/models
+  - REPO=jhfjhfj1/autokeras
+  - REPO=chubin/cheat.sh
+  - REPO=ageitgey/face_recognition
+  - REPO=aquasecurity/kube-hunter
+  - REPO=NVIDIA/vid2vid
+  - REPO=getredash/redash
+  - REPO=django/django
+  - REPO=keras-team/keras
+  - REPO=SpiderLabs/social_mapper
+  - REPO=toddmotto/public-apis
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=ansible/ansible
+  - REPO=zsdlove/ApkVulCheck
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=apache/beam
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=vnpy/vnpy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=gevent/gevent
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
