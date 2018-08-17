@@ -16,46 +16,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=facebookresearch/UnsupervisedMT
-  - REPO=astorfi/Deep-Learning-World
-  - REPO=calebmadrigal/trackerjacker
-  - REPO=IEEEKeralaSection/rescuekerala
-  - REPO=chinese-poetry/chinese-poetry
-  - REPO=donnemartin/system-design-primer
-  - REPO=imhuay/Interview_Notes-Chinese
-  - REPO=getredash/redash
-  - REPO=virtualabs/btlejack
-  - REPO=ashutosh1206/Crypton
-  - REPO=tensorflow/models
-  - REPO=jhfjhfj1/autokeras
-  - REPO=vinta/awesome-python
-  - REPO=s0md3v/Photon
-  - REPO=biswaz/rescuekerala
-  - REPO=apachecn/AiLearning
-  - REPO=pwxcoo/chinese-xinhua
-  - REPO=yt-project/unyt
-  - REPO=tensorflow/tensor2tensor
-  - REPO=SpiderLabs/social_mapper
-  - REPO=aquasecurity/kube-hunter
-  - REPO=keras-team/keras
-  - REPO=django/django
-  - REPO=nbedos/termtosvg
-  - REPO=vibora-io/vibora
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=apache/beam
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=vnpy/vnpy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=gevent/gevent
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+    - REPO=aquasecurity/dcos-universe
+    - REPO=aquasecurity/kube-hunter
+    - REPO=aquasecurity/scan-cve-2018-8115
+    - REPO=aquasecurity/sumologic-content
+    - REPO=lizrice/acs-logging-test
+    - REPO=lizrice/calico
+    - REPO=lizrice/calico-containers
+    - REPO=lizrice/django-allauth
+    - REPO=lizrice/django-avatar
+    - REPO=lizrice/django-email-confirmation
+    - REPO=lizrice/django-privatebeta
+    - REPO=lizrice/django-social-friends-finder
+    - REPO=lizrice/dockerregistry
+    - REPO=lizrice/download-shopify-theme
+    - REPO=lizrice/rpi-lcd-display
+    - REPO=lizrice/sentry-github
+    - REPO=lizrice/whoisinthehouse
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
