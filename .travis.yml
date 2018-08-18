@@ -16,31 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=google/python-fire
+  - REPO=IEEEKeralaSection/rescuekerala
   - REPO=pwxcoo/chinese-xinhua
   - REPO=imhuay/Interview_Notes-Chinese
-  - REPO=IEEEKeralaSection/rescuekerala
   - REPO=astorfi/Deep-Learning-World
-  - REPO=chinese-poetry/chinese-poetry
   - REPO=Pext/Pext
-  - REPO=donnemartin/system-design-primer
   - REPO=calebmadrigal/trackerjacker
-  - REPO=ashutosh1206/Crypton
-  - REPO=facebookresearch/UnsupervisedMT
-  - REPO=vinta/awesome-python
+  - REPO=donnemartin/system-design-primer
   - REPO=tensorflow/models
-  - REPO=jhfjhfj1/autokeras
-  - REPO=chubin/cheat.sh
-  - REPO=ageitgey/face_recognition
-  - REPO=aquasecurity/kube-hunter
   - REPO=NVIDIA/vid2vid
-  - REPO=getredash/redash
+  - REPO=vinta/awesome-python
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=jhfjhfj1/autokeras
+  - REPO=pyfocus/pylava
+  - REPO=aquasecurity/kube-hunter
+  - REPO=spotify/luigi
+  - REPO=ageitgey/face_recognition
   - REPO=django/django
-  - REPO=keras-team/keras
-  - REPO=SpiderLabs/social_mapper
+  - REPO=two06/Inception
+  - REPO=facebookresearch/UnsupervisedMT
+  - REPO=ashutosh1206/Crypton
+  - REPO=chubin/cheat.sh
   - REPO=toddmotto/public-apis
+  - REPO=scikit-learn/scikit-learn
   - REPO=josephmisiti/awesome-machine-learning
-  - REPO=ansible/ansible
-  - REPO=zsdlove/ApkVulCheck
   - REPO=matplotlib/matplotlib
   - REPO=ckan/ckan
   - REPO=apache/beam
