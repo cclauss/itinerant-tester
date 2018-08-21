@@ -16,48 +16,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pwxcoo/chinese-xinhua
-  - REPO=NVIDIA/vid2vid
-  - REPO=donnemartin/system-design-primer
-  - REPO=google/python-fire
-  - REPO=chubin/cheat.sh
-  - REPO=astorfi/Deep-Learning-World
-  - REPO=imhuay/Interview_Notes-Chinese
-  - REPO=foolwood/DaSiamRPN
-  - REPO=fastai/fast_progress
-  - REPO=donnemartin/interactive-coding-challenges
-  - REPO=tensorflow/models
-  - REPO=chinese-poetry/chinese-poetry
-  - REPO=keras-team/keras
-  - REPO=1991viet/Yolo-pytorch
-  - REPO=IEEEKeralaSection/rescuekerala
-  - REPO=vinta/awesome-python
-  - REPO=tldr-pages/tldr
-  - REPO=DiligentPanda/Tencent_Ads_Algo_2018
-  - REPO=aquasecurity/kube-hunter
-  - REPO=scikit-learn/scikit-learn
-  - REPO=pallets/flask
-  - REPO=ansible/ansible
-  - REPO=toddmotto/public-apis
-  - REPO=django/django
-  - REPO=jackfrued/Python-100-Days
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
+  - REPO=nedbat/coveragepy
   - REPO=apache/beam
   - REPO=apache/incubator-mxnet
   - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
