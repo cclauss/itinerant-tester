@@ -22,6 +22,7 @@ env:
   - REPO=apache/spark
   - REPO=kayhayen/Nuitka
   - REPO=FutunnOpen/futuquant
+  - REPO=Microsoft/vscode-python
 
 install:
   #- pip install -r requirements.txt
