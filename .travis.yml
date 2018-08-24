@@ -16,31 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=donnemartin/interactive-coding-challenges
   - REPO=NVIDIA/vid2vid
   - REPO=pwxcoo/chinese-xinhua
-  - REPO=donnemartin/interactive-coding-challenges
   - REPO=donnemartin/system-design-primer
   - REPO=trailofbits/algo
-  - REPO=google/python-fire
   - REPO=home-assistant/home-assistant
-  - REPO=s0md3v/Photon
   - REPO=Microsoft/human-pose-estimation.pytorch
   - REPO=tensorflow/models
-  - REPO=chubin/cheat.sh
-  - REPO=vinta/awesome-python
-  - REPO=lmcinnes/umap
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=ageitgey/face_recognition
-  - REPO=RameshAditya/asciify
+  - REPO=s0md3v/Photon
+  - REPO=google/python-fire
   - REPO=keras-team/keras
-  - REPO=w1109790800/penetration
-  - REPO=Rhynorater/CVE-2018-15473-Exploit
+  - REPO=vinta/awesome-python
+  - REPO=chubin/cheat.sh
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
   - REPO=nteract/papermill
-  - REPO=pallets/flask
-  - REPO=scikit-learn/scikit-learn
-  - REPO=astorfi/Deep-Learning-World
-  - REPO=google/cocoapods-size
+  - REPO=ageitgey/face_recognition
+  - REPO=timgrossmann/InstaPy
+  - REPO=RameshAditya/asciify
+  - REPO=toddmotto/public-apis
+  - REPO=lmcinnes/umap
+  - REPO=Rhynorater/CVE-2018-15473-Exploit
   - REPO=django/django
+  - REPO=pallets/flask
+  - REPO=astorfi/Deep-Learning-World
+  - REPO=w1109790800/penetration
   - REPO=matplotlib/matplotlib
   - REPO=ckan/ckan
   - REPO=vnpy/vnpy
