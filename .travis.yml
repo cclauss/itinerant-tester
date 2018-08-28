@@ -17,6 +17,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=skyfielders/python-skyfield  # has .travis.yml file
+  - REPO=aronim/serverless-plugin-fastdeploy
 
 install:
   #- pip install -r requirements.txt
