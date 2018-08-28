@@ -16,8 +16,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=skyfielders/python-skyfield  # has .travis.yml file
-  - REPO=aronim/serverless-plugin-fastdeploy
+    - REPO=hhatto/aiogrn
+    - REPO=hhatto/autopep8  # has .travis.yml file
+    - REPO=hhatto/chatpy  # has .travis.yml file
+    - REPO=hhatto/fcsv  # has .travis.yml file
+    - REPO=hhatto/flake8-helloworld
+    - REPO=hhatto/fpath  # has .travis.yml file
+    - REPO=hhatto/gruffy
+    - REPO=hhatto/kgscripts
+    - REPO=hhatto/kuroko  # has .travis.yml file
+    - REPO=hhatto/loadtest_tool_for_websocket
+    - REPO=hhatto/my-pytest-cov-extension
+    - REPO=hhatto/nude.py  # has .travis.yml file
+    - REPO=hhatto/poyonga  # has .travis.yml file
+    - REPO=hhatto/pproftools
+    - REPO=hhatto/pybitflyer
+    - REPO=hhatto/pycodestyle  # has .travis.yml file
+    - REPO=hhatto/pyramid_chameleon  # has .travis.yml file
+    - REPO=hhatto/pytest-codestyle  # has .travis.yml file
+    - REPO=hhatto/python-kcipher2
+    - REPO=hhatto/python-pegmarkdown
+    - REPO=hhatto/python-workq
+    - REPO=hhatto/scaffold_mywebtool
+    - REPO=hhatto/slowfast
+    - REPO=hhatto/smartcrop.py
+    - REPO=hhatto/websocket-client  # has .travis.yml file
+    - REPO=hhatto/woothee-python  # has .travis.yml file
+    - REPO=hhatto/zaifapi
+    - REPO=hhatto/zci
+    - REPO=hhatto/zsh-completions
+    - REPO=hhatto/zsh_completions
 
 install:
   #- pip install -r requirements.txt
