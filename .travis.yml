@@ -16,48 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=donnemartin/system-design-primer
-  - REPO=kkyon/databot
-  - REPO=NVIDIA/vid2vid
-  - REPO=mazen160/struts-pwn_CVE-2018-11776
-  - REPO=tensorflow/models
-  - REPO=ultralytics/yolov3
-  - REPO=chubin/cheat.sh
-  - REPO=elbayadm/attn2d
-  - REPO=nteract/papermill
-  - REPO=donnemartin/interactive-coding-challenges
-  - REPO=home-assistant/home-assistant
-  - REPO=alicevision/meshroom
-  - REPO=vinta/awesome-python
-  - REPO=jhfjhfj1/autokeras
-  - REPO=keras-team/keras
-  - REPO=google/python-fire
-  - REPO=scrapy/scrapy
-  - REPO=felixweyne/imaginaryC2
-  - REPO=rg3/youtube-dl
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=toddmotto/public-apis
-  - REPO=MalwareCantFly/Vba2Graph
-  - REPO=django/django
-  - REPO=iodide-project/pyodide
-  - REPO=timgrossmann/InstaPy
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=skyfielders/python-skyfield  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
