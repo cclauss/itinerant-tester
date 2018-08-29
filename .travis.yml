@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=tensorflow/tcav
+    - REPO=theacodes/nox
     
 install:
   #- pip install -r requirements.txt
