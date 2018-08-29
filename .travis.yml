@@ -16,36 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=GoogleCloudPlatform/PerfKitBenchmarker  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/appengine-guestbook-python
-    - REPO=GoogleCloudPlatform/bigquery-bokeh-dashboard
-    - REPO=GoogleCloudPlatform/cloud-dataproc
-    - REPO=GoogleCloudPlatform/cloud-opensource-python  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/cloud-shell-tutorials
-    - REPO=GoogleCloudPlatform/cloudml-samples
-    - REPO=GoogleCloudPlatform/compute-image-packages  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/deploymentmanager-samples
-    - REPO=GoogleCloudPlatform/distributed-load-testing-using-kubernetes
-    - REPO=GoogleCloudPlatform/flask-talisman  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/forseti-security  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/getting-started-python  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/gke-datadog-demo
-    - REPO=GoogleCloudPlatform/gke-logging-sinks-demo
-    - REPO=GoogleCloudPlatform/gke-tracing-demo
-    - REPO=GoogleCloudPlatform/google-auth-library-python  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/google-cloud-python
-    - REPO=GoogleCloudPlatform/grpc-gcp-python
-    - REPO=GoogleCloudPlatform/gsutil  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/healthcare
-    - REPO=GoogleCloudPlatform/marketplace-k8s-app-tools  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/next18-ai-in-motion
-    - REPO=GoogleCloudPlatform/professional-services
-    - REPO=GoogleCloudPlatform/python-docs-samples  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/python-runtime  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/releasetool
-    - REPO=GoogleCloudPlatform/repository-gardener  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/runtimes-common  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/synthtool
+    - REPO=tensorflow/tcav
     
 install:
   #- pip install -r requirements.txt
