@@ -16,7 +16,35 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-
+    - REPO=jtolds/pynarcissus
+    - REPO=andresriancho/w3af
+    - REPO=libkeepass/libkeepass
+    - REPO=nccgroup/redsnarf
+    - REPO=volatilityfoundation/volatility
+    - REPO=AlessandroZ/LaZagne
+    - REPO=n1nj4sec/pupy
+    - REPO=endgameinc/gym-malware
+    - REPO=zsdonghao/tensorlayer
+    - REPO=PlasmaPy/PlasmaPy 
+    - REPO=Seanld/Latte
+    - REPO=juanjux/client-python
+    - REPO=erocarrera/pefile
+    - REPO=vbuterin/pybitcointools
+    - REPO=xoreaxeaxeax/sandsifter
+    - REPO=neozhaoliang/pywonderland
+    - REPO=zerosum0x0/koadic
+    - REPO=bugcrowdlabs/HUNT
+    - REPO=tensorflow/models
+    - REPO=fendouai/FaceRank
+    - REPO=persepolisdm/persepolis
+    - REPO=pallets/flask
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=scikit-learn/scikit-learn
+    - REPO=huwwp/cryptop
+    - REPO=brightmart/text_classification
+    - REPO=alexellis/docker-blinkt-workshop
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=monoxgas/sRDI
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
