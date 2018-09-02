@@ -16,48 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=trekhleb/learn-python
-  - REPO=donnemartin/system-design-primer
-  - REPO=eriklindernoren/ML-From-Scratch
-  - REPO=PyCQA/pylint
-  - REPO=kennethreitz/pytheory
-  - REPO=swisskyrepo/PayloadsAllTheThings
-  - REPO=emfcamp/Mk4-Apps
-  - REPO=keras-team/keras
-  - REPO=vinta/awesome-python
-  - REPO=tensorflow/models
-  - REPO=python/mypy
-  - REPO=rg3/youtube-dl
-  - REPO=home-assistant/home-assistant
-  - REPO=chubin/wttr.in
-  - REPO=toddmotto/public-apis
-  - REPO=NVIDIA/OpenSeq2Seq
-  - REPO=tldr-pages/tldr
-  - REPO=chubin/cheat.sh
-  - REPO=python/cpython
-  - REPO=malwaredllc/byob
-  - REPO=donnemartin/interactive-coding-challenges
-  - REPO=pandas-dev/pandas
-  - REPO=facebookresearch/UnsupervisedMT
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=s0md3v/Photon
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=grumpyhome/grumpy
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
@@ -65,7 +25,7 @@ before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
-  - cd ~/${REPO}
+  - cd ~/${REPO}/grumpy-tools-src
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
