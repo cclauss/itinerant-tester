@@ -16,29 +16,29 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jakubroztocil/httpie
-  - REPO=trekhleb/learn-python
   - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=joukos/PaperTTY
+  - REPO=trekhleb/learn-python
+  - REPO=jakubroztocil/httpie
   - REPO=donnemartin/system-design-primer
+  - REPO=joukos/PaperTTY
+  - REPO=drduh/macOS-Security-and-Privacy-Guide
   - REPO=tensorflow/models
-  - REPO=jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction
+  - REPO=MasoniteFramework/masonite
   - REPO=kennethreitz/pytheory
   - REPO=facebookresearch/UnsupervisedMT
-  - REPO=eriklindernoren/ML-From-Scratch
-  - REPO=ikostrikov/pytorch-flows
-  - REPO=keras-team/keras
-  - REPO=rg3/youtube-dl
+  - REPO=rstojnic/lazydata
+  - REPO=niklasb/3dpwn
   - REPO=vinta/awesome-python
+  - REPO=rg3/youtube-dl
   - REPO=chubin/cheat.sh
-  - REPO=maxpumperla/deep_learning_and_the_game_of_go
-  - REPO=NVIDIA/vid2vid
-  - REPO=s0md3v/Photon
-  - REPO=toddmotto/public-apis
-  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=eriklindernoren/ML-From-Scratch
   - REPO=ageitgey/face_recognition
-  - REPO=leitbogioro/SSR.Go
-  - REPO=swisskyrepo/PayloadsAllTheThings
+  - REPO=s0md3v/Photon
+  - REPO=NVIDIA/vid2vid
+  - REPO=keras-team/keras
+  - REPO=ikostrikov/pytorch-flows
+  - REPO=jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction
+  - REPO=toddmotto/public-apis
   - REPO=imhuay/Algorithm_Interview_Notes-Chinese
   - REPO=python/cpython
   - REPO=matplotlib/matplotlib
