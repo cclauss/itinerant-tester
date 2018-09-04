@@ -16,48 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=trekhleb/learn-python
-  - REPO=jakubroztocil/httpie
-  - REPO=donnemartin/system-design-primer
-  - REPO=joukos/PaperTTY
-  - REPO=drduh/macOS-Security-and-Privacy-Guide
-  - REPO=tensorflow/models
-  - REPO=MasoniteFramework/masonite
-  - REPO=kennethreitz/pytheory
-  - REPO=facebookresearch/UnsupervisedMT
-  - REPO=rstojnic/lazydata
-  - REPO=niklasb/3dpwn
-  - REPO=vinta/awesome-python
-  - REPO=rg3/youtube-dl
-  - REPO=chubin/cheat.sh
-  - REPO=eriklindernoren/ML-From-Scratch
-  - REPO=ageitgey/face_recognition
-  - REPO=s0md3v/Photon
-  - REPO=NVIDIA/vid2vid
-  - REPO=keras-team/keras
-  - REPO=ikostrikov/pytorch-flows
-  - REPO=jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction
-  - REPO=toddmotto/public-apis
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=python/cpython
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=iodide-project/pyodide
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
