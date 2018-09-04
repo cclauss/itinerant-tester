@@ -16,48 +16,17 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=donnemartin/system-design-primer
-  - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=trekhleb/learn-python
-  - REPO=jakubroztocil/httpie
-  - REPO=drduh/macOS-Security-and-Privacy-Guide
-  - REPO=MasoniteFramework/masonite
-  - REPO=rstojnic/lazydata
-  - REPO=joukos/PaperTTY
-  - REPO=tensorflow/models
-  - REPO=kennethreitz/pytheory
-  - REPO=rg3/youtube-dl
-  - REPO=vinta/awesome-python
-  - REPO=eriklindernoren/ML-From-Scratch
-  - REPO=facebookresearch/UnsupervisedMT
-  - REPO=chubin/cheat.sh
-  - REPO=s0md3v/Photon
-  - REPO=ageitgey/face_recognition
-  - REPO=toddmotto/public-apis
-  - REPO=NVIDIA/vid2vid
-  - REPO=keras-team/keras
-  - REPO=python/cpython
-  - REPO=tldr-pages/tldr
-  - REPO=niklasb/3dpwn
-  - REPO=littlecodersh/ItChat
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+    - REPO=7sDream/0v0.link-blog
+    - REPO=7sDream/MyContribution
+    - REPO=7sDream/kd100
+    - REPO=7sDream/learn_gevent
+    - REPO=7sDream/pyqart
+    - REPO=7sDream/pyqt-piano-emulator
+    - REPO=7sDream/qqqfome
+    - REPO=7sDream/torrent_parser
+    - REPO=7sDream/zhihu-oauth  # has .travis.yml file
+    - REPO=7sDream/zhihu-py3  # has .travis.yml file
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
