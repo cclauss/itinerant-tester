@@ -17,6 +17,8 @@ matrix:
     - python: pypy3
 env:
   - REPO=onnx/onnx
+  - REPO=ShuLiu1993/PANet
+  - REPO=mschwager/0wned
 
 install:
   #- pip install -r requirements.txt
