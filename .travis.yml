@@ -16,36 +16,16 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=facebookresearch/BlueWhale
-    - REPO=facebookresearch/CommAI-env
-    - REPO=facebookresearch/DeepConvexity
-    - REPO=facebookresearch/DetectAndTrack
-    - REPO=facebookresearch/Detectron
-    - REPO=facebookresearch/DrQA
-    - REPO=facebookresearch/EmbodiedQA
-    - REPO=facebookresearch/InferSent
-    - REPO=facebookresearch/MUSE
-    - REPO=facebookresearch/NAM
-    - REPO=facebookresearch/ParlAI  # has .travis.yml file
-    - REPO=facebookresearch/R2Plus1D
-    - REPO=facebookresearch/SentEval
-    - REPO=facebookresearch/UnsupervisedMT
-    - REPO=facebookresearch/adversarial_image_defenses
-    - REPO=facebookresearch/colorlessgreenRNNs
-    - REPO=facebookresearch/ddr
-    - REPO=facebookresearch/deepcluster
-    - REPO=facebookresearch/end-to-end-negotiator
-    - REPO=facebookresearch/hypernymysuite
-    - REPO=facebookresearch/low-shot-with-diffusion
-    - REPO=facebookresearch/mixup-cifar10
-    - REPO=facebookresearch/poincare-embeddings
-    - REPO=facebookresearch/py2bpf
-    - REPO=facebookresearch/pythia
-    - REPO=facebookresearch/supervision-by-registration
-    - REPO=facebookresearch/talkthewalk
-    - REPO=facebookresearch/translagent
-    - REPO=facebookresearch/video-nonlocal-net
-    - REPO=facebookresearch/visdom
+    - REPO=facebookincubator/Bowler  # has .travis.yml file
+    - REPO=facebookincubator/CommunityCellularManager  # has .travis.yml file
+    - REPO=facebookincubator/FCR
+    - REPO=facebookincubator/OnlineSchemaChange  # has .travis.yml file
+    - REPO=facebookincubator/bootstrapped
+    - REPO=facebookincubator/dcrpm  # has .travis.yml file
+    - REPO=facebookincubator/ml_sampler
+    - REPO=facebookincubator/pystemd  # has .travis.yml file
+    - REPO=facebookincubator/python-nubia  # has .travis.yml file
+    - REPO=facebookincubator/xar
 
 install:
   #- pip install -r requirements.txt
