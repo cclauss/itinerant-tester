@@ -16,48 +16,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=donnemartin/system-design-primer
-  - REPO=facebookincubator/python-nubia
-  - REPO=1tayH/noisy
-  - REPO=trekhleb/learn-python
-  - REPO=ThoughtRiver/lmdb-embeddings
-  - REPO=3b1b/manim
-  - REPO=fperazzi/proSR
-  - REPO=prideout/snowy
-  - REPO=kennethreitz/pytheory
-  - REPO=tensorflow/models
-  - REPO=RJT1990/mantra
-  - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=toddmotto/public-apis
-  - REPO=vinta/awesome-python
-  - REPO=rg3/youtube-dl
-  - REPO=ansible/ansible
-  - REPO=rstojnic/lazydata
-  - REPO=keras-team/keras
-  - REPO=1991viet/Yolo-pytorch
-  - REPO=pallets/flask
-  - REPO=home-assistant/home-assistant
-  - REPO=r3vn/badKarma
-  - REPO=ShuLiu1993/PANet
-  - REPO=python/cpython
-  - REPO=asyml/texar
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+    - REPO=brettcannon/azure-kusto-python  # has .travis.yml file
+    - REPO=brettcannon/bedevere  # has .travis.yml file
+    - REPO=brettcannon/black  # has .travis.yml file
+    - REPO=brettcannon/caniusepython3  # has .travis.yml file
+    - REPO=brettcannon/conda-docs  # has .travis.yml file
+    - REPO=brettcannon/core-workflow  # has .travis.yml file
+    - REPO=brettcannon/cpython  # has .travis.yml file
+    - REPO=brettcannon/django
+    - REPO=brettcannon/flit  # has .travis.yml file
+    - REPO=brettcannon/free-labour
+    - REPO=brettcannon/gidgethub  # has .travis.yml file
+    - REPO=brettcannon/github-bot-tutorial
+    - REPO=brettcannon/jedi  # has .travis.yml file
+    - REPO=brettcannon/modutil  # has .travis.yml file
+    - REPO=brettcannon/oauthlib  # has .travis.yml file
+    - REPO=brettcannon/packaging  # has .travis.yml file
+    - REPO=brettcannon/pep425
+    - REPO=brettcannon/peps  # has .travis.yml file
+    - REPO=brettcannon/pipenv  # has .travis.yml file
+    - REPO=brettcannon/pytest  # has .travis.yml file
+    - REPO=brettcannon/python
+    - REPO=brettcannon/python-language-server
+    - REPO=brettcannon/python-packaging-user-guide
+    - REPO=brettcannon/python-sample-pagination
+    - REPO=brettcannon/sans-io  # has .travis.yml file
+    - REPO=brettcannon/supporting-python-3  # has .travis.yml file
+    - REPO=brettcannon/toga
+    - REPO=brettcannon/unittest-xml-reporting  # has .travis.yml file
+    - REPO=brettcannon/vibora
+    - REPO=brettcannon/welcome-wagon-2018  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
