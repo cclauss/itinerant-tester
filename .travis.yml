@@ -16,36 +16,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=brettcannon/azure-kusto-python  # has .travis.yml file
-    - REPO=brettcannon/bedevere  # has .travis.yml file
-    - REPO=brettcannon/black  # has .travis.yml file
-    - REPO=brettcannon/caniusepython3  # has .travis.yml file
-    - REPO=brettcannon/conda-docs  # has .travis.yml file
-    - REPO=brettcannon/core-workflow  # has .travis.yml file
-    - REPO=brettcannon/cpython  # has .travis.yml file
-    - REPO=brettcannon/django
-    - REPO=brettcannon/flit  # has .travis.yml file
-    - REPO=brettcannon/free-labour
-    - REPO=brettcannon/gidgethub  # has .travis.yml file
-    - REPO=brettcannon/github-bot-tutorial
-    - REPO=brettcannon/jedi  # has .travis.yml file
-    - REPO=brettcannon/modutil  # has .travis.yml file
-    - REPO=brettcannon/oauthlib  # has .travis.yml file
-    - REPO=brettcannon/packaging  # has .travis.yml file
-    - REPO=brettcannon/pep425
-    - REPO=brettcannon/peps  # has .travis.yml file
-    - REPO=brettcannon/pipenv  # has .travis.yml file
-    - REPO=brettcannon/pytest  # has .travis.yml file
-    - REPO=brettcannon/python
-    - REPO=brettcannon/python-language-server
-    - REPO=brettcannon/python-packaging-user-guide
-    - REPO=brettcannon/python-sample-pagination
-    - REPO=brettcannon/sans-io  # has .travis.yml file
-    - REPO=brettcannon/supporting-python-3  # has .travis.yml file
-    - REPO=brettcannon/toga
-    - REPO=brettcannon/unittest-xml-reporting  # has .travis.yml file
-    - REPO=brettcannon/vibora
-    - REPO=brettcannon/welcome-wagon-2018  # has .travis.yml file
+    - REPO=facebookresearch/BlueWhale
+    - REPO=facebookresearch/CommAI-env
+    - REPO=facebookresearch/DeepConvexity
+    - REPO=facebookresearch/DetectAndTrack
+    - REPO=facebookresearch/Detectron
+    - REPO=facebookresearch/DrQA
+    - REPO=facebookresearch/EmbodiedQA
+    - REPO=facebookresearch/InferSent
+    - REPO=facebookresearch/MUSE
+    - REPO=facebookresearch/NAM
+    - REPO=facebookresearch/ParlAI  # has .travis.yml file
+    - REPO=facebookresearch/R2Plus1D
+    - REPO=facebookresearch/SentEval
+    - REPO=facebookresearch/UnsupervisedMT
+    - REPO=facebookresearch/adversarial_image_defenses
+    - REPO=facebookresearch/colorlessgreenRNNs
+    - REPO=facebookresearch/ddr
+    - REPO=facebookresearch/deepcluster
+    - REPO=facebookresearch/end-to-end-negotiator
+    - REPO=facebookresearch/hypernymysuite
+    - REPO=facebookresearch/low-shot-with-diffusion
+    - REPO=facebookresearch/mixup-cifar10
+    - REPO=facebookresearch/poincare-embeddings
+    - REPO=facebookresearch/py2bpf
+    - REPO=facebookresearch/pythia
+    - REPO=facebookresearch/supervision-by-registration
+    - REPO=facebookresearch/talkthewalk
+    - REPO=facebookresearch/translagent
+    - REPO=facebookresearch/video-nonlocal-net
+    - REPO=facebookresearch/visdom
 
 install:
   #- pip install -r requirements.txt
