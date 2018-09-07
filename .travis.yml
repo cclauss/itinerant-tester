@@ -16,16 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=facebookincubator/Bowler  # has .travis.yml file
-    - REPO=facebookincubator/CommunityCellularManager  # has .travis.yml file
-    - REPO=facebookincubator/FCR
-    - REPO=facebookincubator/OnlineSchemaChange  # has .travis.yml file
-    - REPO=facebookincubator/bootstrapped
-    - REPO=facebookincubator/dcrpm  # has .travis.yml file
-    - REPO=facebookincubator/ml_sampler
-    - REPO=facebookincubator/pystemd  # has .travis.yml file
-    - REPO=facebookincubator/python-nubia  # has .travis.yml file
-    - REPO=facebookincubator/xar
+    - REPO=1991viet/Yolo-pytorch
 
 install:
   #- pip install -r requirements.txt
