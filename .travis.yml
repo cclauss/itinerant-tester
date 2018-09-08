@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=1991viet/Yolo-pytorch
+    - REPO=imhuay/Algorithm_Interview_Notes-Chinese
 
 install:
   #- pip install -r requirements.txt
