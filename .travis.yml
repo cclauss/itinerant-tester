@@ -16,7 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=guardicore/monkey
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=mitmproxy/pdoc
 
 install:
   #- pip install -r requirements.txt
