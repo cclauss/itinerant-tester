@@ -16,8 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=mitmproxy/pdoc
+  - REPO=kanishka-linux/reminiscence
 
 install:
   #- pip install -r requirements.txt
