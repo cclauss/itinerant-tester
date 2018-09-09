@@ -17,7 +17,47 @@ matrix:
     - python: pypy3
 env:
   - REPO=kanishka-linux/reminiscence
-
+  - REPO=diux-dev/imagenet18
+  - REPO=donnemartin/system-design-primer
+  - REPO=snowkylin/TensorFlow-cn
+  - REPO=facebookincubator/python-nubia
+  - REPO=asyml/texar
+  - REPO=rg3/youtube-dl
+  - REPO=tensorflow/models
+  - REPO=NVIDIA/vid2vid
+  - REPO=richzhang/colorization-pytorch
+  - REPO=chris408/ct-exposer
+  - REPO=fperazzi/proSR
+  - REPO=keras-team/keras
+  - REPO=trekhleb/learn-python
+  - REPO=vinta/awesome-python
+  - REPO=toddmotto/public-apis
+  - REPO=odoo/odoo
+  - REPO=python/cpython
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=apachecn/LeetCode
+  - REPO=TheAlgorithms/Python
+  - REPO=shadowsocks/shadowsocks
+  - REPO=mitmproxy/pdoc
+  - REPO=django/django
+  - REPO=ansible/ansible
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=vnpy/vnpy
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
