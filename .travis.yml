@@ -16,10 +16,48 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=diux-dev/cluster
-    - REPO=diux-dev/imagenet18
-    - REPO=diux-dev/ncluster
-    
+  - REPO=KonstantinSchubert/zero
+  - REPO=howie6879/aspider
+  - REPO=mwouts/jupytext
+  - REPO=donnemartin/system-design-primer
+  - REPO=kanishka-linux/reminiscence
+  - REPO=snowkylin/TensorFlow-cn
+  - REPO=diux-dev/imagenet18
+  - REPO=NVIDIA/vid2vid
+  - REPO=Avik-Jain/100-Days-of-ML-Code-Chinese-Version
+  - REPO=tensorflow/models
+  - REPO=vinta/awesome-python
+  - REPO=toddmotto/public-apis
+  - REPO=trekhleb/learn-python
+  - REPO=facebookincubator/python-nubia
+  - REPO=rg3/youtube-dl
+  - REPO=fperazzi/proSR
+  - REPO=apachecn/LeetCode
+  - REPO=keras-team/keras
+  - REPO=django/django
+  - REPO=asyml/texar
+  - REPO=ansible/ansible
+  - REPO=scikit-learn/scikit-learn
+  - REPO=ambv/black
+  - REPO=kamyu104/LeetCode
+  - REPO=home-assistant/home-assistant
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=vnpy/vnpy
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
