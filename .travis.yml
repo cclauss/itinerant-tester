@@ -16,48 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=mwouts/jupytext
-  - REPO=KonstantinSchubert/zero
-  - REPO=tensorflow/models
-  - REPO=howie6879/aspider
-  - REPO=vinta/awesome-python
-  - REPO=keras-team/keras
-  - REPO=snowkylin/TensorFlow-cn
-  - REPO=rstojnic/lazydata
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=ansible/ansible
-  - REPO=home-assistant/home-assistant
-  - REPO=kanishka-linux/reminiscence
-  - REPO=toddmotto/public-apis
-  - REPO=KamitaniLab/DeepImageReconstruction
-  - REPO=rg3/youtube-dl
-  - REPO=pallets/flask
-  - REPO=matterport/Mask_RCNN
-  - REPO=Avik-Jain/100-Days-of-ML-Code-Chinese-Version
-  - REPO=1tayH/noisy
-  - REPO=chubin/cheat.sh
-  - REPO=scikit-learn/scikit-learn
-  - REPO=trekhleb/learn-python
-  - REPO=jakubroztocil/httpie
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=oaubert/advene
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
