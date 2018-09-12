@@ -16,48 +16,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=mwouts/jupytext
-  - REPO=tensorflow/models
-  - REPO=KonstantinSchubert/zero
-  - REPO=vinta/awesome-python
-  - REPO=howie6879/aspider
-  - REPO=KamitaniLab/DeepImageReconstruction
-  - REPO=tensorflow/tensorboard
-  - REPO=keras-team/keras
-  - REPO=rstojnic/lazydata
-  - REPO=snowkylin/TensorFlow-cn
-  - REPO=home-assistant/home-assistant
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=pallets/flask
-  - REPO=toddmotto/public-apis
-  - REPO=facebookincubator/python-nubia
-  - REPO=ansible/ansible
-  - REPO=kanishka-linux/reminiscence
-  - REPO=1tayH/noisy
-  - REPO=trekhleb/learn-python
-  - REPO=django/django
-  - REPO=scikit-learn/scikit-learn
-  - REPO=rg3/youtube-dl
-  - REPO=jakubroztocil/httpie
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=ibm-maximo-dev/maximodev-cli
+  - REPO=ibm-maximo-dev/maximo-blockchain-samples
+  - REPO=ibm-maximo-dev/maximo-scripting
+  - REPO=ibm-maximo-dev/MaximoCoreMLVision
+  - REPO=ibm-maximo-dev/maximo-wotrack-swift-sample
+  - REPO=ibm-maximo-dev/maximo-swift-restclient
+  - REPO=ibm-maximo-dev/maximo-wotrack-android-sample
+  - REPO=ibm-maximo-dev/maximo-docker-enterprise-setup
+  - REPO=ibm-maximo-dev/maximo-wotrack-polymer-sample
+  - REPO=ibm-maximo-dev/maximo-nodejs-sample
+  - REPO=ibm-maximo-dev/maximo-java-rest-client
+  - REPO=ibmmaximorestjsonapis/maximorestclient
+  - REPO=ibm-maximo-dev/maximo-nodejs-rest-client 
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
