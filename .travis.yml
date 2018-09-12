@@ -16,19 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ibm-maximo-dev/maximodev-cli
-  - REPO=ibm-maximo-dev/maximo-blockchain-samples
-  - REPO=ibm-maximo-dev/maximo-scripting
-  - REPO=ibm-maximo-dev/MaximoCoreMLVision
-  - REPO=ibm-maximo-dev/maximo-wotrack-swift-sample
-  - REPO=ibm-maximo-dev/maximo-swift-restclient
-  - REPO=ibm-maximo-dev/maximo-wotrack-android-sample
-  - REPO=ibm-maximo-dev/maximo-docker-enterprise-setup
-  - REPO=ibm-maximo-dev/maximo-wotrack-polymer-sample
-  - REPO=ibm-maximo-dev/maximo-nodejs-sample
-  - REPO=ibm-maximo-dev/maximo-java-rest-client
-  - REPO=ibmmaximorestjsonapis/maximorestclient
-  - REPO=ibm-maximo-dev/maximo-nodejs-rest-client 
+  - REPO=certbot/certbot 
 
 install:
   #- pip install -r requirements.txt
