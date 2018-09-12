@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=oaubert/advene
+  - REPO=google/python_portpicker
 
 install:
   #- pip install -r requirements.txt
