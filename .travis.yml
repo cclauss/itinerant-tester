@@ -16,48 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=mwouts/jupytext
-  - REPO=tensorflow/models
-  - REPO=tensorflow/tensorboard
-  - REPO=vinta/awesome-python
-  - REPO=django/django
-  - REPO=everhide/everbug
-  - REPO=KamitaniLab/DeepImageReconstruction
-  - REPO=junfu1115/DANet
-  - REPO=keras-team/keras
-  - REPO=rg3/youtube-dl
-  - REPO=python/cpython
-  - REPO=toddmotto/public-apis
-  - REPO=soimort/you-get
-  - REPO=encode/apistar
-  - REPO=ansible/ansible
-  - REPO=pallets/flask
-  - REPO=howie6879/aspider
-  - REPO=home-assistant/home-assistant
-  - REPO=facebookincubator/python-nubia
-  - REPO=scikit-learn/scikit-learn
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=KonstantinSchubert/zero
-  - REPO=requests/requests
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=soonuse/epd-library-python
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
