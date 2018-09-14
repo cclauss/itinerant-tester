@@ -16,48 +16,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=facebookincubator/Bowler
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=pavlin-policar/fastTSNE
-  - REPO=tensorflow/models
-  - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=mwouts/jupytext
-  - REPO=vinta/awesome-python
-  - REPO=prkumar/uplink
-  - REPO=keras-team/keras
-  - REPO=albertpumarola/GANimation
-  - REPO=python/cpython
-  - REPO=google/unrestricted-adversarial-examples
-  - REPO=junfu1115/DANet
-  - REPO=toddmotto/public-apis
-  - REPO=IBM/AIF360
-  - REPO=rg3/youtube-dl
-  - REPO=ansible/ansible
-  - REPO=scikit-learn/scikit-learn
-  - REPO=NVIDIA/vid2vid
-  - REPO=ageitgey/face_recognition
-  - REPO=kanishka-linux/reminiscence
-  - REPO=pallets/flask
-  - REPO=facebookincubator/python-nubia
-  - REPO=foolwood/DaSiamRPN
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+    - REPO=CellProfiler/BatchProfiler
+    - REPO=CellProfiler/CPCharm
+    - REPO=CellProfiler/CellProfiler  # has .travis.yml file
+    - REPO=CellProfiler/CellProfiler-Analyst
+    - REPO=CellProfiler/CellProfiler-build
+    - REPO=CellProfiler/CellProfiler-plugins  # has .travis.yml file
+    - REPO=CellProfiler/Distributed-CellProfiler
+    - REPO=CellProfiler/centrosome  # has .travis.yml file
+    - REPO=CellProfiler/distribution  # has .travis.yml file
+    - REPO=CellProfiler/meoir
+    - REPO=CellProfiler/python-bioformats  # has .travis.yml file
+    - REPO=CellProfiler/stitching
+    - REPO=CellProfiler/tutorial
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
