@@ -16,37 +16,48 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=IBM/AIF360  # has .travis.yml file
-    - REPO=IBM/BAGAN
-    - REPO=IBM/CLEVER-Robustness-Score
-    - REPO=IBM/DLaaS-Getting-StartedTutorial
-    - REPO=IBM/MAX-Audio-Classifier  # has .travis.yml file
-    - REPO=IBM/MAX-Breast-Cancer-Mitosis-Detector  # has .travis.yml file
-    - REPO=IBM/MAX-Fast-Neural-Style-Transfer
-    - REPO=IBM/MAX-Image-Caption-Generator  # has .travis.yml file
-    - REPO=IBM/MAX-Image-Colorizer  # has .travis.yml file
-    - REPO=IBM/MAX-Inception-ResNet-v2  # has .travis.yml file
-    - REPO=IBM/MAX-News-Text-Generator
-    - REPO=IBM/MAX-Object-Detector  # has .travis.yml file
-    - REPO=IBM/MAX-Scene-Classifier  # has .travis.yml file
-    - REPO=IBM/MAX-Sports-Video-Classifier  # has .travis.yml file
-    - REPO=IBM/MAX-Weather-Forecaster
-    - REPO=IBM/MAX-Word-Embedding-Generator
-    - REPO=IBM/Portfolio-Optimize  # has .travis.yml file
-    - REPO=IBM/Semantic-Search-for-Sustainable-Development
-    - REPO=IBM/ansible-role-infosvr-import-export
-    - REPO=IBM/gan-toolkit
-    - REPO=IBM/microprobe  # has .travis.yml file
-    - REPO=IBM/ny-power  # has .travis.yml file
-    - REPO=IBM/pytorch-seq2seq  # has .travis.yml file
-    - REPO=IBM/quickcd
-    - REPO=IBM/rl-testbed-for-energyplus
-    - REPO=IBM/secure-bitcoin-wallet
-    - REPO=IBM/stix-shifter  # has .travis.yml file
-    - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
-    - REPO=IBM/wc-devops-utilities
-    - REPO=IBM/worklog
-    
+  - REPO=facebookincubator/Bowler
+  - REPO=TheAlgorithms/Python
+  - REPO=donnemartin/system-design-primer
+  - REPO=pavlin-policar/fastTSNE
+  - REPO=tensorflow/models
+  - REPO=madhavanmalolan/awesome-reactnative-ui
+  - REPO=mwouts/jupytext
+  - REPO=vinta/awesome-python
+  - REPO=prkumar/uplink
+  - REPO=keras-team/keras
+  - REPO=albertpumarola/GANimation
+  - REPO=python/cpython
+  - REPO=google/unrestricted-adversarial-examples
+  - REPO=junfu1115/DANet
+  - REPO=toddmotto/public-apis
+  - REPO=IBM/AIF360
+  - REPO=rg3/youtube-dl
+  - REPO=ansible/ansible
+  - REPO=scikit-learn/scikit-learn
+  - REPO=NVIDIA/vid2vid
+  - REPO=ageitgey/face_recognition
+  - REPO=kanishka-linux/reminiscence
+  - REPO=pallets/flask
+  - REPO=facebookincubator/python-nubia
+  - REPO=foolwood/DaSiamRPN
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=vnpy/vnpy
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
