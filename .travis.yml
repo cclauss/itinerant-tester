@@ -16,48 +16,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=facebookincubator/Bowler
-  - REPO=donnemartin/system-design-primer
-  - REPO=pavlin-policar/fastTSNE
-  - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=tensorflow/models
-  - REPO=xonsh/xonsh
-  - REPO=python/cpython
+  - REPO=TKCERT/mail-security-tester
+  - REPO=freqtrade/freqtrade
   - REPO=prkumar/uplink
-  - REPO=jsalt18-sentence-repl/jiant
-  - REPO=mwouts/jupytext
-  - REPO=vinta/awesome-python
-  - REPO=toddmotto/public-apis
-  - REPO=rg3/youtube-dl
-  - REPO=albertpumarola/GANimation
-  - REPO=keras-team/keras
-  - REPO=kanishka-linux/reminiscence
-  - REPO=ansible/ansible
-  - REPO=junfu1115/DANet
-  - REPO=scikit-learn/scikit-learn
-  - REPO=NVIDIA/vid2vid
-  - REPO=foolwood/DaSiamRPN
-  - REPO=pallets/flask
-  - REPO=ageitgey/face_recognition
-  - REPO=IBM/AIF360
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
