@@ -16,9 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TKCERT/mail-security-tester
-  - REPO=freqtrade/freqtrade
-  - REPO=prkumar/uplink
+  - REPO=whittlbc/wat-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
