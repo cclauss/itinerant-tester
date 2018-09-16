@@ -17,6 +17,9 @@ matrix:
     - python: pypy3
 env:
   - REPO=allenai/allennlp
+  - REPO=spesmilo/electrum
+  - REPO=RoboJackets/jr
+  - REPO=digitalocean/netbox
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
