@@ -16,7 +16,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/wc-devops-utilities
+  - REPO=hoffa/notation
+  - REPO=tensorflow/datasets
+  - REPO=xavier150/Blender-For-UnrealEngine-Addons
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
