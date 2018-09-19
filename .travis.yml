@@ -17,47 +17,15 @@ matrix:
     - python: pypy3
 env:
   - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=tensorflow/models
-  - REPO=spesmilo/electrum
-  - REPO=madhavanmalolan/awesome-reactnative-ui
-  - REPO=tensorflow/datasets
-  - REPO=vinta/awesome-python
-  - REPO=hoffa/notation
-  - REPO=ageitgey/face_recognition
-  - REPO=xavier150/Blender-For-UnrealEngine-Addons
-  - REPO=pallets/flask
-  - REPO=home-assistant/home-assistant
-  - REPO=django/django
-  - REPO=keras-team/keras
-  - REPO=rg3/youtube-dl
-  - REPO=RoboJackets/jr
-  - REPO=kennethreitz/terrapyn
-  - REPO=python/cpython
-  - REPO=pypa/pipenv
-  - REPO=fxsjy/jieba
-  - REPO=toddmotto/public-apis
-  - REPO=scikit-learn/scikit-learn
   - REPO=facebookresearch/Detectron
-  - REPO=freqtrade/freqtrade
-  - REPO=jakubroztocil/httpie
   - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=kennethreitz/pytheory
+  - REPO=byt3bl33d3r/SprayingToolkit
+  - REPO=loremwalker/WebSiteUseful
+  - REPO=apachecn/awesome-leetcode
+  - REPO=rwv/chinese-dos-games
+  - REPO=google/ggrc-core
+  - REPO=qubvel/segmentation_models
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
