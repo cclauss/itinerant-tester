@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -18,14 +18,8 @@ matrix:
 env:
   - REPO=TheAlgorithms/Python
   - REPO=facebookresearch/Detectron
-  - REPO=matplotlib/matplotlib
-  - REPO=kennethreitz/pytheory
-  - REPO=byt3bl33d3r/SprayingToolkit
-  - REPO=loremwalker/WebSiteUseful
-  - REPO=apachecn/awesome-leetcode
-  - REPO=rwv/chinese-dos-games
   - REPO=google/ggrc-core
-  - REPO=qubvel/segmentation_models
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
