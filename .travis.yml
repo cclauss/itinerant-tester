@@ -16,8 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=facebookresearch/Detectron
+  - REPO=codelucas/newspaper
+  - REPO=pydicom/pydicom
   - REPO=google/ggrc-core
 
 install:
