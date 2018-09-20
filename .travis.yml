@@ -20,6 +20,7 @@ env:
   - REPO=hill-a/stable-baselines
   - REPO=pydicom/pydicom
   - REPO=google/ggrc-core
+  - REPO=apache/incubator-airflow
 
 install:
   #- pip install -r requirements.txt
