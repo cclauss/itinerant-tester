@@ -16,7 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=codelucas/newspaper
+  - REPO=GeorgeSeif/Semantic-Segmentation-Suite
+  - REPO=hill-a/stable-baselines
   - REPO=pydicom/pydicom
   - REPO=google/ggrc-core
 
