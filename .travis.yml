@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,47 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=NVIDIA/vid2vid
-  - REPO=manatlan/vbuild
-  - REPO=HuberTRoy/leetCode
-  - REPO=apachecn/awesome-leetcode
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=Eloston/ungoogled-chromium
-  - REPO=donnemartin/system-design-primer
-  - REPO=Yorko/mlcourse.ai
   - REPO=aiidateam/aiida_core
-  - REPO=tensorflow/models
-  - REPO=vinta/awesome-python
-  - REPO=uber-research/PyTorch-NEAT
-  - REPO=OpenMined/PySyft
-  - REPO=snowkylin/TensorFlow-cn
-  - REPO=uber/petastorm
-  - REPO=rg3/youtube-dl
-  - REPO=asyml/texar
-  - REPO=keras-team/keras
-  - REPO=django/django
-  - REPO=toddmotto/public-apis
-  - REPO=pallets/flask
-  - REPO=python/cpython
-  - REPO=swisskyrepo/PayloadsAllTheThings
-  - REPO=keon/algorithms
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=hyperledger/fabric
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
   - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
