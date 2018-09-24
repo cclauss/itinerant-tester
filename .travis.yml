@@ -16,25 +16,48 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Qiskit/aqua
-  - REPO=Qiskit/qiskit-backend-information
-  - REPO=Qiskit/qiskit-terra
-  - REPO=Qiskit/qiskit-api-py
-  - REPO=Qiskit/qiskit-tutorial
-  - REPO=Qiskit/ibmqx-user-guides
-  - REPO=Qiskit/qiskit.org
-  - REPO=Qiskit/aqua-chemistry
-  - REPO=Qiskit/aqua-tutorials
-  - REPO=Qiskit/qiskit-addon-jku
-  - REPO=Qiskit/qiskit-addon-projectq
-  - REPO=Qiskit/qiskit-bot
-  - REPO=Qiskit/presentations
-  - REPO=Qiskit/qiskit-addon-sympy
-  - REPO=Qiskit/qiskit-js
-  - REPO=Qiskit/qiskit-vscode
-  - REPO=Qiskit/openqasm
-  - REPO=Qiskit/qiskit-sdk-swift
-
+  - REPO=TheAlgorithms/Python
+  - REPO=Eloston/ungoogled-chromium
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=cgarciae/pypeln
+  - REPO=woj-ciech/Danger-zone
+  - REPO=Yorko/mlcourse.ai
+  - REPO=NVIDIA/vid2vid
+  - REPO=apachecn/awesome-leetcode
+  - REPO=donnemartin/system-design-primer
+  - REPO=HuberTRoy/leetCode
+  - REPO=spesmilo/electrum
+  - REPO=tensorflow/models
+  - REPO=keon/algorithms
+  - REPO=cms-flash/beauty-net
+  - REPO=keras-team/keras
+  - REPO=toddmotto/public-apis
+  - REPO=vinta/awesome-python
+  - REPO=manatlan/vbuild
+  - REPO=rg3/youtube-dl
+  - REPO=home-assistant/home-assistant
+  - REPO=pallets/flask
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=snowkylin/TensorFlow-cn
+  - REPO=asyml/texar
+  - REPO=uber/petastorm
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=vnpy/vnpy
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
