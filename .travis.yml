@@ -16,7 +16,25 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=niltonvolpato/python-progressbar
+  - REPO=Qiskit/aqua
+  - REPO=Qiskit/qiskit-backend-information
+  - REPO=Qiskit/qiskit-terra
+  - REPO=Qiskit/qiskit-api-py
+  - REPO=Qiskit/qiskit-tutorial
+  - REPO=Qiskit/ibmqx-user-guides
+  - REPO=Qiskit/qiskit.org
+  - REPO=Qiskit/aqua-chemistry
+  - REPO=Qiskit/aqua-tutorials
+  - REPO=Qiskit/qiskit-addon-jku
+  - REPO=Qiskit/qiskit-addon-projectq
+  - REPO=Qiskit/qiskit-bot
+  - REPO=Qiskit/presentations
+  - REPO=Qiskit/qiskit-addon-sympy
+  - REPO=Qiskit/qiskit-js
+  - REPO=Qiskit/qiskit-vscode
+  - REPO=Qiskit/openqasm
+  - REPO=Qiskit/qiskit-sdk-swift
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
