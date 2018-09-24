@@ -18,6 +18,7 @@ matrix:
 env:
   - REPO=aiidateam/aiida_core
   - REPO=n1nj4sec/pupy
+  - REPO=3b1b/manim
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
