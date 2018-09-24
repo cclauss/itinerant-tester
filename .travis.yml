@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,9 +16,48 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=aiidateam/aiida_core
+  - REPO=TheAlgorithms/Python
+  - REPO=Eloston/ungoogled-chromium
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=woj-ciech/Danger-zone
+  - REPO=NVIDIA/vid2vid
+  - REPO=Yorko/mlcourse.ai
+  - REPO=apachecn/awesome-leetcode
+  - REPO=HuberTRoy/leetCode
+  - REPO=spesmilo/electrum
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=keon/algorithms
+  - REPO=cms-flash/beauty-net
+  - REPO=cgarciae/pypeln
+  - REPO=keras-team/keras
+  - REPO=snowkylin/TensorFlow-cn
+  - REPO=manatlan/vbuild
+  - REPO=vinta/awesome-python
+  - REPO=toddmotto/public-apis
+  - REPO=asyml/texar
+  - REPO=rg3/youtube-dl
+  - REPO=home-assistant/home-assistant
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=pallets/flask
+  - REPO=uber/petastorm
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=vnpy/vnpy
+  - REPO=ggtracker/sc2reader
+  - REPO=hyperledger/fabric
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
   - REPO=n1nj4sec/pupy
-  - REPO=3b1b/manim
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
