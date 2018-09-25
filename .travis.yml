@@ -16,46 +16,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Eloston/ungoogled-chromium
-  - REPO=apachecn/awesome-algorithm
-  - REPO=TheAlgorithms/Python
-  - REPO=cgarciae/pypeln
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=Yorko/mlcourse.ai
-  - REPO=woj-ciech/Danger-zone
-  - REPO=ihucos/plash
-  - REPO=donnemartin/system-design-primer
-  - REPO=robertmartin8/PyPortfolioOpt
-  - REPO=alexander-akhmetov/python-shortcuts
-  - REPO=NVIDIA/vid2vid
-  - REPO=tensorflow/models
-  - REPO=uber/petastorm
-  - REPO=cms-flash/beauty-net
-  - REPO=keras-team/keras
-  - REPO=HuberTRoy/leetCode
-  - REPO=Scitator/prometheus
-  - REPO=localstack/localstack
-  - REPO=rg3/youtube-dl
-  - REPO=timgrossmann/InstaPy
-  - REPO=home-assistant/home-assistant
-  - REPO=django/django
-  - REPO=vinta/awesome-python
-  - REPO=yihui-he/softer-NMS
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=vnpy/vnpy
-  - REPO=ggtracker/sc2reader
-  - REPO=openai/baselines
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=n1nj4sec/pupy
+  - REPO=caffe2/caffe2
+  - REPO=caffe2/caffe2.github.io
+  - REPO=caffe2/AICamera
+  - REPO=caffe2/models
+  - REPO=caffe2/tutorials
+  - REPO=caffe2/AICamera-Style-Transfer
+  - REPO=caffe2/caffe2_bhtsne
+  - REPO=caffe2/caffe 
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
