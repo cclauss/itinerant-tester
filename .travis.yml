@@ -1,23 +1,27 @@
 group: travis_latest
-dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
-sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
-  #- 3.4
-  #- 3.5
-  #- 3.6
-  - 3.7
+  - 2.7
+  - 3.6
 matrix:
   allow_failures:
-    - python: 2.7
-    - python: nightly
-    - python: pypy
-    - python: pypy3
+    - python: 3.6
 env:
-  - REPO=depristo/prototest
-
+  - REPO=CellProfiler/BatchProfiler
+  - REPO=CellProfiler/CPCharm
+  - REPO=CellProfiler/CellProfiler  # has .travis.yml file
+  - REPO=CellProfiler/CellProfiler-Analyst
+  - REPO=CellProfiler/CellProfiler-build
+  - REPO=CellProfiler/CellProfiler-plugins  # has .travis.yml file
+  - REPO=CellProfiler/Distributed-CellProfiler
+  - REPO=CellProfiler/centrosome  # has .travis.yml file
+  - REPO=CellProfiler/distribution  # has .travis.yml file
+  - REPO=CellProfiler/meoir
+  - REPO=CellProfiler/python-bioformats  # has .travis.yml file
+  - REPO=CellProfiler/stitching
+  - REPO=CellProfiler/tutorial
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
