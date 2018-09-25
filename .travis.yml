@@ -16,7 +16,28 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/gtfs-realtime-bindings
+  - REPO=pytorch/accimage
+  - REPO=pytorch/audio
+  - REPO=pytorch/benchmark
+  - REPO=pytorch/builder
+  - REPO=pytorch/caffe2.github.io
+  - REPO=pytorch/contrib
+  - REPO=pytorch/cpuinfo
+  - REPO=pytorch/ELF
+  - REPO=pytorch/examples
+  - REPO=pytorch/extension-cpp
+  - REPO=pytorch/extension-ffi
+  - REPO=pytorch/fairseq
+  - REPO=pytorch/glow
+  - REPO=pytorch/ideep
+  - REPO=pytorch/ignite
+  - REPO=pytorch/ossci-job-dsl
+  - REPO=pytorch/pytorch_sphinx_theme
+  - REPO=pytorch/text
+  - REPO=pytorch/tnt
+  - REPO=pytorch/translate
+  - REPO=pytorch/tutorials
+  - REPO=pytorch/vision
  
 install:
   #- pip install -r requirements.txt
