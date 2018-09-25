@@ -16,14 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=caffe2/caffe2
-  - REPO=caffe2/caffe2.github.io
-  - REPO=caffe2/AICamera
-  - REPO=caffe2/models
-  - REPO=caffe2/tutorials
-  - REPO=caffe2/AICamera-Style-Transfer
-  - REPO=caffe2/caffe2_bhtsne
-  - REPO=caffe2/caffe 
+  - REPO=google/gtfs-realtime-bindings
+ 
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
