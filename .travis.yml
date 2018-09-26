@@ -1,30 +1,60 @@
 group: travis_latest
+dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
+sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
   #- 2.7
-  - 3.6
+  #- 3.4
+  #- 3.5
+  #- 3.6
+  - 3.7
 matrix:
   allow_failures:
-    - python: 3.6
+    - python: 2.7
+    - python: nightly
+    - python: pypy
+    - python: pypy3
 env:
-    - REPO=IBM-Cloud/Bluemix-ServiceBroker
-    - REPO=IBM-Cloud/Bluemix-onprem-data
-    - REPO=IBM-Cloud/HackMETU-15
-    - REPO=IBM-Cloud/application-log-analysis
-    - REPO=IBM-Cloud/cf-deployment-tracker-client-python  # has .travis.yml file
-    - REPO=IBM-Cloud/concept-insights-eclipse-faq
-    - REPO=IBM-Cloud/data-store-for-memcache-client
-    - REPO=IBM-Cloud/django-boilerplate
-    - REPO=IBM-Cloud/github-traffic-stats
-    - REPO=IBM-Cloud/gp-python-client  # has .travis.yml file
-    - REPO=IBM-Cloud/key-protect-helloworld-python
-    - REPO=IBM-Cloud/kube-samples
-    - REPO=IBM-Cloud/logistics-wizard-controller  # has .travis.yml file
-    - REPO=IBM-Cloud/python-iot-raspberry-pi
-    - REPO=IBM-Cloud/service-discovery-client-python  # has .travis.yml file
-    - REPO=IBM-Cloud/sql-query-clients
-
+  - REPO=apachecn/awesome-algorithm
+  - REPO=TheAlgorithms/Python
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=Eloston/ungoogled-chromium
+  - REPO=BNMetrics/logme
+  - REPO=cgarciae/pypeln
+  - REPO=Yorko/mlcourse.ai
+  - REPO=ihucos/plash
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=localstack/localstack
+  - REPO=mherrmann/fbs
+  - REPO=woj-ciech/Danger-zone
+  - REPO=yihui-he/softer-NMS
+  - REPO=rg3/youtube-dl
+  - REPO=CppCon/CppCon2018
+  - REPO=robertmartin8/PyPortfolioOpt
+  - REPO=vinta/awesome-python
+  - REPO=aditya-vora/FCHD-Fully-Convolutional-Head-Detector
+  - REPO=cms-flash/beauty-net
+  - REPO=keras-team/keras
+  - REPO=Scitator/prometheus
+  - REPO=NVIDIA/vid2vid
+  - REPO=qutebrowser/qutebrowser
+  - REPO=home-assistant/home-assistant
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
