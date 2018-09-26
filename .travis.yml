@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=andreyvit/create-dmg
+  - REPO=LeeKamentsky/python-javabridge
 
 install:
   #- pip install -r requirements.txt
