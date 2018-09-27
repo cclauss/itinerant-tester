@@ -17,8 +17,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=driving-behavior/DBNet
-  - REPO=BNMetrics/logme
-  - REPO=swar/nba_api
+  - REPO=chris408/known_hosts-hashcat
 
 install:
   #- pip install -r requirements.txt
