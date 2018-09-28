@@ -16,20 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=target/REDstack
-    - REPO=target/boots_of_haste
-    - REPO=target/cloudpunch
-    - REPO=target/coldsalt
-    - REPO=target/fortifyapi  # has .travis.yml file
-    - REPO=target/grease  # has .travis.yml file
-    - REPO=target/matrixprofile-ts
-    - REPO=target/nix-fetchers  # has .travis.yml file
-    - REPO=target/osx-edgelab
-    - REPO=target/setupcfg2nix
-    - REPO=target/strelka
-    - REPO=target/webbreaker  # has .travis.yml file
-    - REPO=target/webinspectapi  # has .travis.yml file
-    - REPO=target/winnaker
+    - REPO=lawlite19/MachineLearning_Python
 
 install:
   #- pip install -r requirements.txt
