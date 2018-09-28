@@ -16,18 +16,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=CoreSecurity/impacket
-  - REPO=CoreSecurity/SAP-Dissection-plug-in-for-Wireshark
-  - REPO=CoreSecurity/pysap
-  - REPO=CoreSecurity/pcapy
-  - REPO=CoreSecurity/wiwo
-  - REPO=CoreSecurity/HoneySAP
-  - REPO=CoreSecurity/GDIObjDump
-  - REPO=CoreSecurity/Agafi
-  - REPO=CoreSecurity/Embarcadero-Workaround
-  - REPO=CoreSecurity/pycodin
-  - REPO=CoreSecurity/sentinel
-  - REPO=n1nj4sec/pupy
+    - REPO=target/REDstack
+    - REPO=target/boots_of_haste
+    - REPO=target/cloudpunch
+    - REPO=target/coldsalt
+    - REPO=target/fortifyapi  # has .travis.yml file
+    - REPO=target/grease  # has .travis.yml file
+    - REPO=target/matrixprofile-ts
+    - REPO=target/nix-fetchers  # has .travis.yml file
+    - REPO=target/osx-edgelab
+    - REPO=target/setupcfg2nix
+    - REPO=target/strelka
+    - REPO=target/webbreaker  # has .travis.yml file
+    - REPO=target/webinspectapi  # has .travis.yml file
+    - REPO=target/winnaker
 
 install:
   #- pip install -r requirements.txt
