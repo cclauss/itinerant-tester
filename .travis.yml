@@ -16,9 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=driving-behavior/DBNet
+  - REPO=apachecn/awesome-algorithm
+  - REPO=TheAlgorithms/Python
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
   - REPO=chris408/known_hosts-hashcat
-
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=Eloston/ungoogled-chromium
+  - REPO=keras-team/keras
+  - REPO=vinta/awesome-python
+  - REPO=target/strelka
+  - REPO=Tylous/Vibe
+  - REPO=pallets/flask
+  - REPO=ansible/ansible
+  - REPO=apachecn/AiLearning
+  - REPO=amanusk/s-tui
+  - REPO=andreasveit/convnet-aig
+  - REPO=django/django
+  - REPO=toddmotto/public-apis
+  - REPO=rg3/youtube-dl
+  - REPO=BNMetrics/logme
+  - REPO=yihui-he/softer-NMS
+  - REPO=getredash/redash
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=odoo/odoo
+  - REPO=swar/nba_api
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=n1nj4sec/pupy
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
