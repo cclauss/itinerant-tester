@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=angr/angr
+  - REPO=si9int/Acamar
   
 install:
   #- pip install -r requirements.txt
