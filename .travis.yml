@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=si9int/Acamar
+  - REPO=getredash/redash
   
 install:
   #- pip install -r requirements.txt
