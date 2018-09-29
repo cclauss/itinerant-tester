@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,8 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=apachecn/awesome-algorithm
+  - REPO=TheAlgorithms/Python
+  - REPO=amanusk/s-tui
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=Eloston/ungoogled-chromium
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=keras-team/keras
+  - REPO=rg3/youtube-dl
+  - REPO=vinta/awesome-python
+  - REPO=hjmshi/PyTorch-LBFGS
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=pallets/flask
+  - REPO=ageitgey/face_recognition
+  - REPO=apachecn/AiLearning
+  - REPO=django/django
+  - REPO=Tylous/Vibe
+  - REPO=toddmotto/public-apis
+  - REPO=andreasveit/convnet-aig
   - REPO=getredash/redash
-  
+  - REPO=ansible/ansible
+  - REPO=stellargraph/stellargraph
+  - REPO=si9int/Acamar
+  - REPO=yinquanwang/FasterRunner
+  - REPO=yihui-he/softer-NMS
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
