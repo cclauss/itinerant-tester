@@ -17,7 +17,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=kriadmin/30-seconds-of-python-code 
-  - REPO=lra/mackup
+  - REPO=marcoeilers/nagini
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
