@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -25,6 +25,8 @@ env:
   - REPO=CellProfiler/distribution
   - REPO=CellProfiler/python-bioformats
   - REPO=CellProfiler/stitching
+  - REPO=CellProfiler/examples
+  - REPO=CellProfiler/tutorials
 
 install:
   #- pip install -r requirements.txt
