@@ -16,8 +16,12 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=theInfectedDrake/TIDoS-Framework
-  - REPO=theInfectedDrake/XSRFProbe
+  - REPO=travis-ci/nat-conntracker
+  - REPO=travis-ci/gesund
+  - REPO=travis-ci/travis-intro-python
+  - REPO=travis-ci/travis_staging_test
+  - REPO=travis-ci/BanzaiMan/travis_staging_test
+  - REPO=travis-ci/enterprise-extras
 
 install:
   #- pip install -r requirements.txt
