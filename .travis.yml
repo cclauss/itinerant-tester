@@ -16,45 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=Bogdanp/molten
-  - REPO=Yorko/mlcourse.ai
-  - REPO=apachecn/awesome-algorithm
-  - REPO=donnemartin/system-design-primer
-  - REPO=tensorflow/models
-  - REPO=Eloston/ungoogled-chromium
-  - REPO=pandas-dev/pandas
-  - REPO=toddmotto/public-apis
-  - REPO=lra/mackup
-  - REPO=keras-team/keras
-  - REPO=rg3/youtube-dl
-  - REPO=vinta/awesome-python
-  - REPO=home-assistant/home-assistant
-  - REPO=ageitgey/face_recognition
-  - REPO=pallets/flask
-  - REPO=django/django
-  - REPO=theInfectedDrake/TIDoS-Framework
-  - REPO=ansible/ansible
-  - REPO=dddomodossola/remi
-  - REPO=facebookresearch/Detectron
-  - REPO=horejsek/python-fastjsonschema
-  - REPO=scikit-learn/scikit-learn
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=jakubroztocil/httpie
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+  - REPO=Netflix/security_monkey
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
