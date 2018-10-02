@@ -16,7 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=theInfectedDrake/TIDoS-Framework 
+  - REPO=theInfectedDrake/TIDoS-Framework
+  - REPO=theInfectedDrake/XSRFProbe
 
 install:
   #- pip install -r requirements.txt
