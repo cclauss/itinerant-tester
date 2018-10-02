@@ -16,17 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=CellProfiler/CellProfiler-Analyst
-  - REPO=CellProfiler/CellProfiler-plugins
-  - REPO=CellProfiler/Distributed-CellProfiler
-  - REPO=CellProfiler/meoir
-  - REPO=CellProfiler/CellProfiler
-  - REPO=CellProfiler/centrosome
-  - REPO=CellProfiler/distribution
-  - REPO=CellProfiler/python-bioformats
-  - REPO=CellProfiler/stitching
-  - REPO=CellProfiler/examples
-  - REPO=CellProfiler/tutorials
+  - REPO=theInfectedDrake/TIDoS-Framework 
 
 install:
   #- pip install -r requirements.txt
