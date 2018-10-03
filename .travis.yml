@@ -16,12 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=ACM-VIT/Detect-HandWrittenDigits
-    - REPO=ACM-VIT/GST-Analysis
-    - REPO=ACM-VIT/PyFlask_2k18
-    - REPO=ACM-VIT/PyGae
-    - REPO=ACM-VIT/time_table_analyser
-
+    - REPO=malwaredllc/byob
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
