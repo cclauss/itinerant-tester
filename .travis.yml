@@ -16,8 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Scitator/prometheus
-
+  - REPO=TheAlgorithms/Python
+  - REPO=ACM-VIT/PyFlask_2k18
+  - REPO=Bogdanp/molten
+  - REPO=donnemartin/system-design-primer
+  - REPO=apachecn/awesome-algorithm
+  - REPO=Yorko/mlcourse.ai
+  - REPO=tensorflow/models
+  - REPO=tldr-pages/tldr
+  - REPO=pandas-dev/pandas
+  - REPO=rg3/youtube-dl
+  - REPO=vinta/awesome-python
+  - REPO=kriadmin/30-seconds-of-python-code
+  - REPO=toddmotto/public-apis
+  - REPO=m8r0wn/subscraper
+  - REPO=home-assistant/home-assistant
+  - REPO=keras-team/keras
+  - REPO=malwaredllc/byob
+  - REPO=python/cpython
+  - REPO=lra/mackup
+  - REPO=arraiy/torchgeometry
+  - REPO=brain-research/realistic-ssl-evaluation
+  - REPO=scikit-learn/scikit-learn
+  - REPO=requests/requests
+  - REPO=Eloston/ungoogled-chromium
+  - REPO=pallets/flask
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
