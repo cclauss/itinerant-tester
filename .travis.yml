@@ -16,7 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=RaRe-Technologies/smart_open
+  - REPO=fossasia/query-server
+
 
 install:
   #- pip install -r requirements.txt
