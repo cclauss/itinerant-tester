@@ -16,13 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=rianhunter/archive_soundcloud
-    - REPO=rianhunter/block_tracing
-    - REPO=rianhunter/dbxfs
-    - REPO=rianhunter/dropboxwsgi
-    - REPO=rianhunter/fusepy
-    - REPO=rianhunter/ofxtools
-    - REPO=rianhunter/userspacefs
+    - REPO=tensorflow/transform
+    - REPO=tensorflow/tensorflow
 
 install:
   #- pip install -r requirements.txt
