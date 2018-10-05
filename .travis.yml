@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=3b1b/manim
+  - REPO=RaRe-Technologies/smart_open
 
 install:
   #- pip install -r requirements.txt
