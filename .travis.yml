@@ -17,6 +17,7 @@ matrix:
     - python: pypy3
 env:
     - REPO=aiidateam/aiida_core
+    - REPO=CoreSecurity/impacket
 
 install:
   #- pip install -r requirements.txt
