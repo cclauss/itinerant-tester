@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=byt3bl33d3r/SILENTTRINITY
+  - REPO=theInfectedDrake/TIDoS-Framework
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
