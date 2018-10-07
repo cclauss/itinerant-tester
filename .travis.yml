@@ -16,14 +16,16 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=webpy/webpy
-  - REPO=abhishekg785/InfoGami
-  - REPO=IronLanguages/ironpython3
-  - REPO=guardicore/monkey
-  - REPO=lukalabs/cakechat
-  - REPO=oaubert/python-vlc
-  - REPO=aiidateam/aiida_core
-  - REPO=getredash/redash
+  #- REPO=webpy/webpy
+  #- REPO=abhishekg785/InfoGami
+  #- REPO=IronLanguages/ironpython3
+  #- REPO=guardicore/monkey
+  #- REPO=lukalabs/cakechat
+  #- REPO=oaubert/python-vlc
+  #- REPO=aiidateam/aiida_core
+  #- REPO=getredash/redash
+  - REPO=TheSecondSun/Shellab
+  - REPO=shubhomoydas/ad_examples
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
