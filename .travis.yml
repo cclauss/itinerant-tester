@@ -20,12 +20,12 @@ env:
     - REPO=target/REDstack
     - REPO=BYU-PCCL/holodeck
     - REPO=tensorflow/transform
-    - REPO=tgeekcomputers/Python
-    - REPO=tapachecn/AiLearning
-    - REPO=t3b1b/manim
-    - REPO=tpexpect/pexpect
-    - REPO=taiidateam/aiida_core
-    - REPO=tlukalabs/cakechat
+    - REPO=geekcomputers/Python
+    - REPO=apachecn/AiLearning
+    - REPO=3b1b/manim
+    - REPO=pexpect/pexpect
+    - REPO=aiidateam/aiida_core
+    - REPO=lukalabs/cakechat
 
 install:
   #- pip install -r requirements.txt
