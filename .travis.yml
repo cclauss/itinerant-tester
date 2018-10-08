@@ -16,14 +16,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=m4ll0k/Atlas
-    - REPO=m4ll0k/Galileo
-    - REPO=m4ll0k/Infoga
-    - REPO=m4ll0k/SMBrute
-    - REPO=m4ll0k/WAScan
-    - REPO=m4ll0k/WPSeku
-    - REPO=m4ll0k/takeover
-    
+    - REPO=codingo/AWSBucketDump
+    - REPO=codingo/AutoBlue-MS17-010
+    - REPO=codingo/BeRoot
+    - REPO=codingo/CORStest
+    - REPO=codingo/CTFs
+    - REPO=codingo/CVE-2018-15473-Exploit
+    - REPO=codingo/Hash-Buster
+    - REPO=codingo/Minesweeper
+    - REPO=codingo/NoSQLMap
+    - REPO=codingo/OSCP-2
+    - REPO=codingo/RaiderOfTheLostBrowsers
+    - REPO=codingo/Ransomware-Json-Dataset  # has .travis.yml file
+    - REPO=codingo/Reconnoitre  # has .travis.yml file
+    - REPO=codingo/SSRF-Testing
+    - REPO=codingo/Security-Testing
+    - REPO=codingo/Simple-Substitution
+    - REPO=codingo/VHostScan  # has .travis.yml file
+    - REPO=codingo/Windows-Exploit-Suggester
+    - REPO=codingo/autoSubTakeover
+    - REPO=codingo/bumblebee-status  # has .travis.yml file
+    - REPO=codingo/certasset
+    - REPO=codingo/echoed
+    - REPO=codingo/jwt_tool
+    - REPO=codingo/krackdetector
+    - REPO=codingo/securityheaders
+    - REPO=codingo/session-tracking-checks
+    - REPO=codingo/sqlmap  # has .travis.yml file
+    - REPO=codingo/subtake
+    - REPO=codingo/watchdog
+    - REPO=codingo/xssfinder
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
