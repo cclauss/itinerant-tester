@@ -16,42 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=internetarchive/IA-solr-frontend
-    - REPO=internetarchive/IAWatchBot
-    - REPO=internetarchive/acs4_py
-    - REPO=internetarchive/analyze_ocr
-    - REPO=internetarchive/bookserver
-    - REPO=internetarchive/brozzler  # has .travis.yml file
-    - REPO=internetarchive/btget
-    - REPO=internetarchive/crawling-for-nomore404
-    - REPO=internetarchive/doublethink  # has .travis.yml file
-    - REPO=internetarchive/draintasker
-    - REPO=internetarchive/dweb-gateway  # has .travis.yml file
-    - REPO=internetarchive/epub
-    - REPO=internetarchive/epub3
-    - REPO=internetarchive/infogami
-    - REPO=internetarchive/liveweb  # has .travis.yml file
-    - REPO=internetarchive/map-of-the-web
-    - REPO=internetarchive/openlibrary  # has .travis.yml file
-    - REPO=internetarchive/openlibrary-bots
-    - REPO=internetarchive/openlibrary-client  # has .travis.yml file
-    - REPO=internetarchive/py-wasapi-client  # has .travis.yml file
-    - REPO=internetarchive/s3_loader
-    - REPO=internetarchive/scribe-redux
-    - REPO=internetarchive/surt  # has .travis.yml file
-    - REPO=internetarchive/trough  # has .travis.yml file
-    - REPO=internetarchive/umbra
-    - REPO=internetarchive/waimea
-    - REPO=internetarchive/warc  # has .travis.yml file
-    - REPO=internetarchive/warcprox  # has .travis.yml file
-    - REPO=internetarchive/warctools  # has .travis.yml file
-    - REPO=internetarchive/wayback-discover-diff
-    - REPO=cdrini/openlibrary-wikidata-bot
-    - REPO=hornc/ixqus
-    - REPO=hornc/marcia
-    - REPO=hornc/catharbot
-    - REPO=hornc/ol-schemata
-    - REPO=niolabs/python-xbee
+    - REPO=o-lim/generate-ninja
 
 install:
   #- pip install -r requirements.txt
