@@ -16,45 +16,43 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=apachecn/awesome-algorithm
-  - REPO=tensorflow/models
-  - REPO=keras-team/keras
-  - REPO=rg3/youtube-dl
-  - REPO=TheSecondSun/Shellab
-  - REPO=vinta/awesome-python
-  - REPO=Yorko/mlcourse.ai
-  - REPO=peter-woyzbun/rests
-  - REPO=m4ll0k/Atlas
-  - REPO=malwaredllc/byob
-  - REPO=ansible/ansible
-  - REPO=home-assistant/home-assistant
-  - REPO=arviz-devs/arviz
-  - REPO=scikit-learn/scikit-learn
-  - REPO=byt3bl33d3r/SILENTTRINITY
-  - REPO=internetarchive/openlibrary
-  - REPO=chiphuyen/sotawhat
-  - REPO=dataplayer12/shavenet
-  - REPO=pypa/pipenv
-  - REPO=toddmotto/public-apis
-  - REPO=django/django
-  - REPO=kubeflow/kubeflow
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=internetarchive/IA-solr-frontend
+    - REPO=internetarchive/IAWatchBot
+    - REPO=internetarchive/acs4_py
+    - REPO=internetarchive/analyze_ocr
+    - REPO=internetarchive/bookserver
+    - REPO=internetarchive/brozzler  # has .travis.yml file
+    - REPO=internetarchive/btget
+    - REPO=internetarchive/crawling-for-nomore404
+    - REPO=internetarchive/doublethink  # has .travis.yml file
+    - REPO=internetarchive/draintasker
+    - REPO=internetarchive/dweb-gateway  # has .travis.yml file
+    - REPO=internetarchive/epub
+    - REPO=internetarchive/epub3
+    - REPO=internetarchive/infogami
+    - REPO=internetarchive/liveweb  # has .travis.yml file
+    - REPO=internetarchive/map-of-the-web
+    - REPO=internetarchive/openlibrary  # has .travis.yml file
+    - REPO=internetarchive/openlibrary-bots
+    - REPO=internetarchive/openlibrary-client  # has .travis.yml file
+    - REPO=internetarchive/py-wasapi-client  # has .travis.yml file
+    - REPO=internetarchive/s3_loader
+    - REPO=internetarchive/scribe-redux
+    - REPO=internetarchive/surt  # has .travis.yml file
+    - REPO=internetarchive/trough  # has .travis.yml file
+    - REPO=internetarchive/umbra
+    - REPO=internetarchive/waimea
+    - REPO=internetarchive/warc  # has .travis.yml file
+    - REPO=internetarchive/warcprox  # has .travis.yml file
+    - REPO=internetarchive/warctools  # has .travis.yml file
+    - REPO=internetarchive/wayback-discover-diff
+    - REPO=cdrini/openlibrary-wikidata-bot
+    - REPO=hornc/ixqus
+    - REPO=hornc/marcia
+    - REPO=hornc/catharbot
+    - REPO=hornc/ol-schemata
+    - REPO=niolabs/python-xbee
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
