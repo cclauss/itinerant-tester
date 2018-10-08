@@ -16,16 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=locuslab/mpc.pytorch
-    - REPO=target/REDstack
-    - REPO=BYU-PCCL/holodeck
-    - REPO=tensorflow/transform
-    - REPO=geekcomputers/Python
-    - REPO=apachecn/AiLearning
-    - REPO=3b1b/manim
-    - REPO=pexpect/pexpect
-    - REPO=aiidateam/aiida_core
-    - REPO=lukalabs/cakechat
+    - REPO=b-ryan/powerline-shell
 
 install:
   #- pip install -r requirements.txt
