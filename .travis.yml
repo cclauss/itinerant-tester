@@ -16,9 +16,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nose-devs/nose
-  - REPO=nose-devs/nose2
-  - REPO=CoreSecurity/impacket
+    - REPO=anandology/2017.pyconuk.org  # has .travis.yml file
+    - REPO=anandology/Syrupy
+    - REPO=anandology/blaze  # has .travis.yml file
+    - REPO=anandology/broadgauge  # has .travis.yml file
+    - REPO=anandology/cleansweep-data
+    - REPO=anandology/cleansweep-sms-bridge
+    - REPO=anandology/credit-risk-demo
+    - REPO=anandology/election-directory
+    - REPO=anandology/generators-inside-out-talk
+    - REPO=anandology/hacks
+    - REPO=anandology/httpbottomup
+    - REPO=anandology/microrepl
+    - REPO=anandology/microservices-workshop
+    - REPO=anandology/mockdown  # has .travis.yml file
+    - REPO=anandology/niftyhacks  # has .travis.yml file
+    - REPO=anandology/openlibrary  # has .travis.yml file
+    - REPO=anandology/pdf-table-extract
+    - REPO=anandology/pyconindia-handbook
+    - REPO=anandology/pydot
+    - REPO=anandology/pygame-workshop
+    - REPO=anandology/python-practice-book
+    - REPO=anandology/restful-apis
+    - REPO=anandology/rsvpapp
+    - REPO=anandology/serverless-python-talk
+    - REPO=anandology/tornado  # has .travis.yml file
+    - REPO=anandology/voterdb
+    - REPO=anandology/votersearch
+    - REPO=anandology/webpy  # has .travis.yml file
+    - REPO=anandology/webpy-jinja2
+    - REPO=anandology/webpy.github.com  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
