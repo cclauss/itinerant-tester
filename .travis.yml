@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,10 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nosedevs/nose
-  - REPO=nosedevs/nose2
-  - REPO=mkwiatkowski/pinocchio
-
+  - REPO=jlaine/aiortc
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=TheAlgorithms/Python
+  - REPO=apachecn/awesome-algorithm
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=autonomio/talos
+  - REPO=DrSleep/light-weight-refinenet
+  - REPO=BYU-PCCL/holodeck
+  - REPO=dwyl/english-words
+  - REPO=vinta/awesome-python
+  - REPO=keras-team/keras
+  - REPO=ageitgey/face_recognition
+  - REPO=apachecn/AiLearning
+  - REPO=rg3/youtube-dl
+  - REPO=kengz/SLM-Lab
+  - REPO=Showndarya/Hacktoberfest
+  - REPO=sshuttle/sshuttle
+  - REPO=toddmotto/public-apis
+  - REPO=internetarchive/openlibrary
+  - REPO=Yorko/mlcourse.ai
+  - REPO=ansible/ansible
+  - REPO=kriadmin/30-seconds-of-python-code
+  - REPO=zalandoresearch/fashion-mnist
+  - REPO=django/django
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
@@ -31,7 +66,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - travis_wait 60 flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
