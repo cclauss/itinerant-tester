@@ -16,7 +16,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IronLanguages/ironpython3
+  - REPO=facebookresearch/Detectron
+  - REPO=dwyl/english-words
+  - REPO=DrSleep/light-weight-refinenet
+
 
 install:
   #- pip install -r requirements.txt
