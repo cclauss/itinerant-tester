@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,10 +16,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=facebookresearch/Detectron
-  - REPO=dwyl/english-words
-  - REPO=DrSleep/light-weight-refinenet
-
+  - REPO=nosedevs/nose
+  - REPO=nosedevs/nose2
+  - REPO=mkwiatkowski/pinocchio
 
 install:
   #- pip install -r requirements.txt
