@@ -16,45 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=mahmoud/boltons
-  - REPO=TheAlgorithms/Python
-  - REPO=brain-research/self-attention-gan
-  - REPO=donnemartin/system-design-primer
-  - REPO=tensorflow/models
-  - REPO=apachecn/awesome-algorithm
-  - REPO=Battelle/sandsifter
-  - REPO=1991viet/ASCII-generator
-  - REPO=Showndarya/Hacktoberfest
-  - REPO=vinta/awesome-python
-  - REPO=kennethreitz/responder
-  - REPO=google/active-qa
-  - REPO=rg3/youtube-dl
-  - REPO=keras-team/keras
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=pallets/flask
-  - REPO=facebookresearch/Detectron
-  - REPO=DrSleep/light-weight-refinenet
-  - REPO=salesforce/hassh
-  - REPO=home-assistant/home-assistant
-  - REPO=django/django
-  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
-  - REPO=matterport/Mask_RCNN
-  - REPO=ansible/ansible
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+  - REPO=google/ggrc-core
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
