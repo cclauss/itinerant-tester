@@ -16,31 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mahmoud/boltons
   - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=mahmoud/boltons
   - REPO=TheAlgorithms/Python
+  - REPO=brain-research/self-attention-gan
+  - REPO=donnemartin/system-design-primer
   - REPO=tensorflow/models
   - REPO=apachecn/awesome-algorithm
-  - REPO=donnemartin/system-design-primer
-  - REPO=kennethreitz/responder
-  - REPO=jlaine/aiortc
-  - REPO=DrSleep/light-weight-refinenet
-  - REPO=vinta/awesome-python
+  - REPO=Battelle/sandsifter
+  - REPO=1991viet/ASCII-generator
   - REPO=Showndarya/Hacktoberfest
-  - REPO=pytoolz/toolz
+  - REPO=vinta/awesome-python
+  - REPO=kennethreitz/responder
+  - REPO=google/active-qa
   - REPO=rg3/youtube-dl
-  - REPO=pallets/flask
-  - REPO=josephmisiti/awesome-machine-learning
   - REPO=keras-team/keras
-  - REPO=apachecn/AiLearning
-  - REPO=python/cpython
-  - REPO=toddmotto/public-apis
-  - REPO=dwyl/english-words
-  - REPO=sqlmapproject/sqlmap
-  - REPO=ansible/ansible
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=pallets/flask
   - REPO=facebookresearch/Detectron
+  - REPO=DrSleep/light-weight-refinenet
+  - REPO=salesforce/hassh
+  - REPO=home-assistant/home-assistant
   - REPO=django/django
-  - REPO=Yorko/mlcourse.ai
+  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
+  - REPO=matterport/Mask_RCNN
+  - REPO=ansible/ansible
   - REPO=ArduPilot/ardupilot
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
