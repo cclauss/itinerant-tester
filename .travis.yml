@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,8 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Miserlou/Zappa
-
+  - REPO=socialcopsdev/camelot
+  - REPO=TheAlgorithms/Python
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=mohanson/accu
+  - REPO=apachecn/awesome-algorithm
+  - REPO=kennethreitz/responder
+  - REPO=open-mmlab/mmdetection
+  - REPO=tensorflow/models
+  - REPO=mahmoud/boltons
+  - REPO=donnemartin/system-design-primer
+  - REPO=open-mmlab/mmcv
+  - REPO=brain-research/self-attention-gan
+  - REPO=google-research/google-research
+  - REPO=MillionIntegrals/vel
+  - REPO=keras-team/keras
+  - REPO=joxeankoret/pigaios
+  - REPO=scikit-learn/scikit-learn
+  - REPO=byt3bl33d3r/SILENTTRINITY
+  - REPO=rg3/youtube-dl
+  - REPO=vinta/awesome-python
+  - REPO=tobiascz/MNIST_Pytorch_python_and_capi
+  - REPO=toddmotto/public-apis
+  - REPO=django/django
+  - REPO=facebookresearch/Detectron
+  - REPO=google/active-qa
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
