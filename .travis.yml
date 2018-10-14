@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,16 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=nodejs/node-auto-test
-  - REPO=nodejs/node-chakracore
-  - REPO=nodejs/node-v8
-  - REPO=nodejs/build
-  - REPO=nodejs/ffi
-  - REPO=nodejs/nan
-  - REPO=nodejs/testing
-
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=TheAlgorithms/Python
+  - REPO=kennethreitz/responder
+  - REPO=open-mmlab/mmdetection
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=socialcopsdev/camelot
+  - REPO=open-mmlab/mmcv
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=s0md3v/ReconDog
+  - REPO=vinta/awesome-python
+  - REPO=msamogh/nonechucks
+  - REPO=rg3/youtube-dl
+  - REPO=juand-r/entity-recognition-datasets
+  - REPO=keras-team/keras
+  - REPO=google-research/google-research
+  - REPO=apachecn/awesome-algorithm
+  - REPO=perone/medicaltorch
+  - REPO=python/cpython
+  - REPO=toddmotto/public-apis
+  - REPO=Yorko/mlcourse.ai
+  - REPO=explosion/wheelwright
+  - REPO=internetarchive/openlibrary
+  - REPO=python-telegram-bot/python-telegram-bot
+  - REPO=zhanghang1989/gluoncv-torch
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
