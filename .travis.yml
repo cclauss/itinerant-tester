@@ -16,45 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Hacktoberfest-2018/Hello-world
-  - REPO=norvig/pytudes
-  - REPO=aymericdamien/TensorFlow-Examples
-  - REPO=fastai/fastai
-  - REPO=TheEconomist/big-mac-data
-  - REPO=ZoranPandovski/al-go-rithms
-  - REPO=rapidsai/pygdf
-  - REPO=spmallick/learnopencv
-  - REPO=tensorflow/magenta-demos
-  - REPO=parrt/dtreeviz
-  - REPO=CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
-  - REPO=GoogleCloudPlatform/tf-estimator-tutorials
-  - REPO=slundberg/shap
-  - REPO=1millionwomentotech/toolkitten
-  - REPO=MVIG-SJTU/AlphaPose
-  - REPO=spro/practical-pytorch
-  - REPO=ljpzzz/machinelearning
-  - REPO=Kulbear/deep-learning-coursera
-  - REPO=fivethirtyeight/data
-  - REPO=amueller/introduction_to_ml_with_python
-  - REPO=GoogleCloudPlatform/training-data-analyst
-  - REPO=kubeflow/examples
-  - REPO=rasbt/stat479-machine-learning-fs18
-  - REPO=fastai/course-v3
-  - REPO=SkalskiP/ILearnDeepLearning.py
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+  - REPO=keras-team/keras-preprocessing
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
