@@ -16,8 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dimagi/commcare-hq
-
+  - REPO=Hacktoberfest-2018/Hello-world
+  - REPO=google/dopamine
+  - REPO=fastai/fastai
+  - REPO=danielhanchen/hyperlearn
+  - REPO=aymericdamien/TensorFlow-Examples
+  - REPO=ustclug/hackergame2018-writeups
+  - REPO=jakevdp/PythonDataScienceHandbook
+  - REPO=TheEconomist/big-mac-data
+  - REPO=ZoranPandovski/al-go-rithms
+  - REPO=norvig/pytudes
+  - REPO=wesm/pydata-book
+  - REPO=tensorflow/magenta-demos
+  - REPO=CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
+  - REPO=priya-dwivedi/Deep-Learning
+  - REPO=andri27-ts/60_Days_RL_Challenge
+  - REPO=ljpzzz/machinelearning
+  - REPO=slundberg/shap
+  - REPO=simoninithomas/Deep_reinforcement_learning_Course
+  - REPO=OpenGenus/cosmos
+  - REPO=Kulbear/deep-learning-coursera
+  - REPO=rapidsai/pygdf
+  - REPO=pytorch/vision
+  - REPO=udacity/deep-reinforcement-learning
+  - REPO=spro/practical-pytorch
+  - REPO=kubeflow/examples
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
