@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=keras-team/keras-preprocessing
+  - REPO=google/upvote
 
 install:
   #- pip install -r requirements.txt
