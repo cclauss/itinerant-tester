@@ -16,45 +16,27 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Hacktoberfest-2018/Hello-world
-  - REPO=google/dopamine
-  - REPO=fastai/fastai
-  - REPO=danielhanchen/hyperlearn
-  - REPO=aymericdamien/TensorFlow-Examples
-  - REPO=ustclug/hackergame2018-writeups
-  - REPO=jakevdp/PythonDataScienceHandbook
-  - REPO=TheEconomist/big-mac-data
-  - REPO=ZoranPandovski/al-go-rithms
-  - REPO=norvig/pytudes
-  - REPO=wesm/pydata-book
-  - REPO=tensorflow/magenta-demos
-  - REPO=CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
-  - REPO=priya-dwivedi/Deep-Learning
-  - REPO=andri27-ts/60_Days_RL_Challenge
-  - REPO=ljpzzz/machinelearning
-  - REPO=slundberg/shap
-  - REPO=simoninithomas/Deep_reinforcement_learning_Course
-  - REPO=OpenGenus/cosmos
-  - REPO=Kulbear/deep-learning-coursera
-  - REPO=rapidsai/pygdf
-  - REPO=pytorch/vision
-  - REPO=udacity/deep-reinforcement-learning
-  - REPO=spro/practical-pytorch
-  - REPO=kubeflow/examples
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=jona-sassenhagen/Log-bilinear-language-models
+    - REPO=jona-sassenhagen/URIAL
+    - REPO=jona-sassenhagen/autoreject  # has .travis.yml file
+    - REPO=jona-sassenhagen/boroditsky
+    - REPO=jona-sassenhagen/deepy  # has .travis.yml file
+    - REPO=jona-sassenhagen/differ
+    - REPO=jona-sassenhagen/eeg-cnt
+    - REPO=jona-sassenhagen/face-landmark-localization
+    - REPO=jona-sassenhagen/mne-hcp
+    - REPO=jona-sassenhagen/mne-python  # has .travis.yml file
+    - REPO=jona-sassenhagen/mypy
+    - REPO=jona-sassenhagen/neurodocker
+    - REPO=jona-sassenhagen/nilearn  # has .travis.yml file
+    - REPO=jona-sassenhagen/philistine
+    - REPO=jona-sassenhagen/pyRiemann  # has .travis.yml file
+    - REPO=jona-sassenhagen/python3-krakenex  # has .travis.yml file
+    - REPO=jona-sassenhagen/scikit-learn  # has .travis.yml file
+    - REPO=jona-sassenhagen/scipy  # has .travis.yml file
+    - REPO=jona-sassenhagen/signalbox-example-project
+    - REPO=jona-sassenhagen/skip-thoughts
+    - REPO=jona-sassenhagen/tqdm
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
