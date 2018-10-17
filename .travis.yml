@@ -16,27 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=jona-sassenhagen/Log-bilinear-language-models
-    - REPO=jona-sassenhagen/URIAL
-    - REPO=jona-sassenhagen/autoreject  # has .travis.yml file
-    - REPO=jona-sassenhagen/boroditsky
-    - REPO=jona-sassenhagen/deepy  # has .travis.yml file
-    - REPO=jona-sassenhagen/differ
-    - REPO=jona-sassenhagen/eeg-cnt
-    - REPO=jona-sassenhagen/face-landmark-localization
-    - REPO=jona-sassenhagen/mne-hcp
-    - REPO=jona-sassenhagen/mne-python  # has .travis.yml file
-    - REPO=jona-sassenhagen/mypy
-    - REPO=jona-sassenhagen/neurodocker
-    - REPO=jona-sassenhagen/nilearn  # has .travis.yml file
-    - REPO=jona-sassenhagen/philistine
-    - REPO=jona-sassenhagen/pyRiemann  # has .travis.yml file
-    - REPO=jona-sassenhagen/python3-krakenex  # has .travis.yml file
-    - REPO=jona-sassenhagen/scikit-learn  # has .travis.yml file
-    - REPO=jona-sassenhagen/scipy  # has .travis.yml file
-    - REPO=jona-sassenhagen/signalbox-example-project
-    - REPO=jona-sassenhagen/skip-thoughts
-    - REPO=jona-sassenhagen/tqdm
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=kennethreitz/responder
+  - REPO=TheAlgorithms/Python
+  - REPO=open-mmlab/mmdetection
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=facebookresearch/DME
+  - REPO=home-assistant/home-assistant
+  - REPO=dmlc/gluon-cv
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=theInfectedDrake/TIDoS-Framework
+  - REPO=ansible/ansible
+  - REPO=apachecn/awesome-algorithm
+  - REPO=vinta/awesome-python
+  - REPO=rg3/youtube-dl
+  - REPO=facebookresearch/Detectron
+  - REPO=socialcopsdev/camelot
+  - REPO=toddmotto/public-apis
+  - REPO=keras-team/keras
+  - REPO=codertimo/BERT-pytorch
+  - REPO=pallets/flask
+  - REPO=open-mmlab/mmcv
+  - REPO=Showndarya/Hacktoberfest
+  - REPO=django/django
+  - REPO=requests/requests
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
