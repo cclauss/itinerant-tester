@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/upvote
+  - REPO=dimagi/commcare-hq
 
 install:
   #- pip install -r requirements.txt
