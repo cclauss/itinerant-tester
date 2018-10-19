@@ -16,8 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pycontribs/jira
-
+  - REPO=amilcarlucas/gpssim
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
