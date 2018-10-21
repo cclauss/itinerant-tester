@@ -16,45 +16,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=deepmind/graph_nets
-  - REPO=open-source-for-science/TensorFlow-Course
-  - REPO=TheAlgorithms/Python
-  - REPO=deepmind/trfl
-  - REPO=codertimo/BERT-pytorch
-  - REPO=Tencent/tencent-ml-images
-  - REPO=socialcopsdev/camelot
-  - REPO=Tencent/Metis
-  - REPO=tensorflow/models
-  - REPO=rg3/youtube-dl
-  - REPO=donnemartin/system-design-primer
-  - REPO=vinta/awesome-python
-  - REPO=home-assistant/home-assistant
-  - REPO=keras-team/keras
-  - REPO=facebookresearch/Detectron
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=sdispater/poetry
-  - REPO=ansible/ansible
-  - REPO=blacknbunny/libSSH-Authentication-Bypass
-  - REPO=django/django
-  - REPO=leapsecurity/libssh-scanner
-  - REPO=dddomodossola/remi
-  - REPO=scikit-learn/scikit-learn
-  - REPO=open-mmlab/mmdetection
-  - REPO=toddmotto/public-apis
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=impredicative/Google-Nest-Cam-Bug-Disclosures
+    - REPO=impredicative/anagram
+    - REPO=impredicative/gcam
+    - REPO=impredicative/genbank-fetch
+    - REPO=impredicative/irc-link-mirror-bot
+    - REPO=impredicative/nodeforge
+    - REPO=impredicative/pgtune
+    - REPO=impredicative/pyskeleton
+    - REPO=impredicative/python-rss2irc
+    - REPO=leapsecurity/InSpy
+    - REPO=leapsecurity/Pastepwnd
+    - REPO=leapsecurity/libssh-scanner
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
