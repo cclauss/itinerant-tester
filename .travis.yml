@@ -16,9 +16,27 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=thetaniyagupta/BLOGiee
-  - REPO=hackerearthclub/CODE2RACE
-
+    - REPO=kylemcdonald/CommunityAnalyzer
+    - REPO=kylemcdonald/DIGITS
+    - REPO=kylemcdonald/EmbeddingScripts
+    - REPO=kylemcdonald/FreeWifi
+    - REPO=kylemcdonald/KernelizedSorting
+    - REPO=kylemcdonald/acai
+    - REPO=kylemcdonald/arxiv-sanity-preserver
+    - REPO=kylemcdonald/chainer-char-rnn
+    - REPO=kylemcdonald/convolutional_autoencoder
+    - REPO=kylemcdonald/deeppose
+    - REPO=kylemcdonald/kfkd-tutorial
+    - REPO=kylemcdonald/munkres
+    - REPO=kylemcdonald/pycadl
+    - REPO=kylemcdonald/python-utils
+    - REPO=kylemcdonald/ragaDB
+    - REPO=kylemcdonald/reverse-tunnel
+    - REPO=kylemcdonald/snapchat-python
+    - REPO=kylemcdonald/snapitforward
+    - REPO=kylemcdonald/speech
+    - REPO=kylemcdonald/webdnn
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
