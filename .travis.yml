@@ -16,18 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=impredicative/Google-Nest-Cam-Bug-Disclosures
-    - REPO=impredicative/anagram
-    - REPO=impredicative/gcam
-    - REPO=impredicative/genbank-fetch
-    - REPO=impredicative/irc-link-mirror-bot
-    - REPO=impredicative/nodeforge
-    - REPO=impredicative/pgtune
-    - REPO=impredicative/pyskeleton
-    - REPO=impredicative/python-rss2irc
-    - REPO=leapsecurity/InSpy
-    - REPO=leapsecurity/Pastepwnd
-    - REPO=leapsecurity/libssh-scanner
+    - REPO=sphinx-doc/sphinx
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
