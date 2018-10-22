@@ -16,36 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=GoogleCloudPlatform/PerfKitBenchmarker  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/appengine-guestbook-python
-    - REPO=GoogleCloudPlatform/automl-translation-tools
-    - REPO=GoogleCloudPlatform/cloud-dataproc
-    - REPO=GoogleCloudPlatform/cloud-opensource-python  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/cloud-shell-tutorials
-    - REPO=GoogleCloudPlatform/cloudml-samples
-    - REPO=GoogleCloudPlatform/compute-image-packages  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/dataflow-prediction-example
-    - REPO=GoogleCloudPlatform/deploymentmanager-samples
-    - REPO=GoogleCloudPlatform/django-cloud-deploy
-    - REPO=GoogleCloudPlatform/endpoints-proto-datastore
-    - REPO=GoogleCloudPlatform/flask-talisman  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/forseti-security  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/gcs-oauth2-boto-plugin
-    - REPO=GoogleCloudPlatform/getting-started-python  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/gmemegen
-    - REPO=GoogleCloudPlatform/grpc-gcp-python
-    - REPO=GoogleCloudPlatform/gsutil  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/healthcare-deid
-    - REPO=GoogleCloudPlatform/marketplace-k8s-app-tools  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/professional-services
-    - REPO=GoogleCloudPlatform/psq  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/python-docs-samples  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/python-runtime  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/reliable-task-scheduling-compute-engine-sample
-    - REPO=GoogleCloudPlatform/repository-gardener  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/runtimes-common  # has .travis.yml file
-    - REPO=GoogleCloudPlatform/solutions-vision-search
-    - REPO=GoogleCloudPlatform/spark-recommendation-engine
+- REPO=freeCodeCamp/python-coding-challenges
 
 install:
   #- pip install -r requirements.txt
