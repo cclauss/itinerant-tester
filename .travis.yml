@@ -16,45 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=open-source-for-science/TensorFlow-Course
-  - REPO=deepmind/graph_nets
-  - REPO=TheAlgorithms/Python
-  - REPO=codertimo/BERT-pytorch
-  - REPO=Tencent/Metis
-  - REPO=gbafana25/esp8266_honeypot
-  - REPO=deepmind/trfl
-  - REPO=tensorflow/models
-  - REPO=luismartingarcia/protocol
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=apachecn/awesome-algorithm
-  - REPO=donnemartin/system-design-primer
-  - REPO=Tencent/tencent-ml-images
-  - REPO=circa10a/ouroboros
-  - REPO=keras-team/keras
-  - REPO=vinta/awesome-python
-  - REPO=Eric-mingjie/rethinking-network-pruning
-  - REPO=learning511/cs224n-learning-camp
-  - REPO=toddmotto/public-apis
-  - REPO=malwaredllc/byob
-  - REPO=open-mmlab/mmdetection
-  - REPO=pallets/flask
-  - REPO=matterport/Mask_RCNN
-  - REPO=facebookresearch/Detectron
-  - REPO=rg3/youtube-dl
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+  - REPO=vibora-io/vibora
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
