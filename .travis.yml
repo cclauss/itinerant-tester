@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-- REPO=freeCodeCamp/python-coding-challenges
+  - REPO=freeCodeCamp/python-coding-challenges
 
 install:
   #- pip install -r requirements.txt
