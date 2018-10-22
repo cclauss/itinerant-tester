@@ -4,7 +4,7 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -16,37 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=freeCodeCamp/python-coding-challenges
-    - REPO=brettcannon/azure-kusto-python  # has .travis.yml file
-    - REPO=brettcannon/bedevere  # has .travis.yml file
-    - REPO=brettcannon/black  # has .travis.yml file
-    - REPO=brettcannon/caniusepython3  # has .travis.yml file
-    - REPO=brettcannon/conda-docs  # has .travis.yml file
-    - REPO=brettcannon/cpython  # has .travis.yml file
-    - REPO=brettcannon/django
-    - REPO=brettcannon/flit  # has .travis.yml file
-    - REPO=brettcannon/free-labour
-    - REPO=brettcannon/gidgethub  # has .travis.yml file
-    - REPO=brettcannon/github-bot-tutorial
-    - REPO=brettcannon/jedi  # has .travis.yml file
-    - REPO=brettcannon/modutil  # has .travis.yml file
-    - REPO=brettcannon/oauthlib  # has .travis.yml file
-    - REPO=brettcannon/packaging  # has .travis.yml file
-    - REPO=brettcannon/pep425
-    - REPO=brettcannon/peps  # has .travis.yml file
-    - REPO=brettcannon/pipenv  # has .travis.yml file
-    - REPO=brettcannon/pym
-    - REPO=brettcannon/pytest  # has .travis.yml file
-    - REPO=brettcannon/python
-    - REPO=brettcannon/python-language-server
-    - REPO=brettcannon/python-packaging-user-guide
-    - REPO=brettcannon/python-sample-pagination
-    - REPO=brettcannon/sans-io  # has .travis.yml file
-    - REPO=brettcannon/supporting-python-3  # has .travis.yml file
-    - REPO=brettcannon/toga
-    - REPO=brettcannon/unittest-xml-reporting  # has .travis.yml file
-    - REPO=brettcannon/vibora
-    - REPO=brettcannon/welcome-wagon-2018  # has .travis.yml file
+  - REPO=deepmind/graph_nets
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=TheAlgorithms/Python
+  - REPO=gbafana25/esp8266_honeypot
+  - REPO=deepmind/trfl
+  - REPO=Tencent/Metis
+  - REPO=codertimo/BERT-pytorch
+  - REPO=tensorflow/models
+  - REPO=circa10a/ouroboros
+  - REPO=donnemartin/system-design-primer
+  - REPO=open-mmlab/mmdetection
+  - REPO=socialcopsdev/camelot
+  - REPO=vinta/awesome-python
+  - REPO=malwaredllc/byob
+  - REPO=Tencent/tencent-ml-images
+  - REPO=keras-team/keras
+  - REPO=azavea/raster-vision
+  - REPO=hackerearthclub/CODE2RACE
+  - REPO=facebookresearch/Detectron
+  - REPO=tugstugi/pytorch-saltnet
+  - REPO=jonasrothfuss/ProMP
+  - REPO=PaulKlinger/satellite_tracker
+  - REPO=django/django
+  - REPO=rg3/youtube-dl
+  - REPO=luismartingarcia/protocol
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
