@@ -16,8 +16,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=freeCodeCamp/python-coding-challenges
-
+    - REPO=freeCodeCamp/python-coding-challenges
+    - REPO=brettcannon/azure-kusto-python  # has .travis.yml file
+    - REPO=brettcannon/bedevere  # has .travis.yml file
+    - REPO=brettcannon/black  # has .travis.yml file
+    - REPO=brettcannon/caniusepython3  # has .travis.yml file
+    - REPO=brettcannon/conda-docs  # has .travis.yml file
+    - REPO=brettcannon/cpython  # has .travis.yml file
+    - REPO=brettcannon/django
+    - REPO=brettcannon/flit  # has .travis.yml file
+    - REPO=brettcannon/free-labour
+    - REPO=brettcannon/gidgethub  # has .travis.yml file
+    - REPO=brettcannon/github-bot-tutorial
+    - REPO=brettcannon/jedi  # has .travis.yml file
+    - REPO=brettcannon/modutil  # has .travis.yml file
+    - REPO=brettcannon/oauthlib  # has .travis.yml file
+    - REPO=brettcannon/packaging  # has .travis.yml file
+    - REPO=brettcannon/pep425
+    - REPO=brettcannon/peps  # has .travis.yml file
+    - REPO=brettcannon/pipenv  # has .travis.yml file
+    - REPO=brettcannon/pym
+    - REPO=brettcannon/pytest  # has .travis.yml file
+    - REPO=brettcannon/python
+    - REPO=brettcannon/python-language-server
+    - REPO=brettcannon/python-packaging-user-guide
+    - REPO=brettcannon/python-sample-pagination
+    - REPO=brettcannon/sans-io  # has .travis.yml file
+    - REPO=brettcannon/supporting-python-3  # has .travis.yml file
+    - REPO=brettcannon/toga
+    - REPO=brettcannon/unittest-xml-reporting  # has .travis.yml file
+    - REPO=brettcannon/vibora
+    - REPO=brettcannon/welcome-wagon-2018  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
