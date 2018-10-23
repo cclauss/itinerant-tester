@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=vibora-io/vibora
+  - REPO=IBM/rl-testbed-for-energyplus
   
 install:
   #- pip install -r requirements.txt
