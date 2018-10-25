@@ -16,30 +16,30 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=open-source-for-science/TensorFlow-Course
   - REPO=TheAlgorithms/Python
+  - REPO=open-source-for-science/TensorFlow-Course
   - REPO=tensorflow/models
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
   - REPO=dandrino/terrain-erosion-3-ways
+  - REPO=codertimo/BERT-pytorch
   - REPO=deepmind/graph_nets
   - REPO=donnemartin/system-design-primer
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=codertimo/BERT-pytorch
   - REPO=vinta/awesome-python
   - REPO=apachecn/awesome-algorithm
   - REPO=rg3/youtube-dl
   - REPO=keras-team/keras
   - REPO=toddmotto/public-apis
   - REPO=pallets/flask
-  - REPO=django/django
-  - REPO=home-assistant/home-assistant
-  - REPO=deepmind/trfl
-  - REPO=requests/requests
-  - REPO=ageitgey/face_recognition
-  - REPO=ansible/ansible
-  - REPO=pyn3rd/CVE-2018-3191
-  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=aesophor/py-todo
   - REPO=ranger/ranger
-  - REPO=scrapy/scrapy
+  - REPO=home-assistant/home-assistant
+  - REPO=scikit-learn/scikit-learn
+  - REPO=ansible/ansible
+  - REPO=requests/requests
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=deepmind/trfl
+  - REPO=Shougo/deoplete-lsp
+  - REPO=internetarchive/openlibrary
   - REPO=jakubroztocil/httpie
   - REPO=ArduPilot/ardupilot
   - REPO=PythonCharmers/python-future
