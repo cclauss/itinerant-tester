@@ -16,7 +16,30 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=abcnews/data-life
+    - REPO=fossasia/AYABInterface  # has .travis.yml file
+    - REPO=fossasia/directory.api.fossasia.net  # has .travis.yml file
+    - REPO=fossasia/event-collect  # has .travis.yml file
+    - REPO=fossasia/flask-rest-jsonapi  # has .travis.yml file
+    - REPO=fossasia/knitlib  # has .travis.yml file
+    - REPO=fossasia/knitpat
+    - REPO=fossasia/knittingpattern  # has .travis.yml file
+    - REPO=fossasia/loklak_telegrambot
+    - REPO=fossasia/meilix  # has .travis.yml file
+    - REPO=fossasia/meilix-systemlock  # has .travis.yml file
+    - REPO=fossasia/mew  # has .travis.yml file
+    - REPO=fossasia/open-event
+    - REPO=fossasia/open-event-legacy  # has .travis.yml file
+    - REPO=fossasia/open-event-scraper  # has .travis.yml file
+    - REPO=fossasia/open-event-server  # has .travis.yml file
+    - REPO=fossasia/pslab-desktop-apps  # has .travis.yml file
+    - REPO=fossasia/pslab-expeyes  # has .travis.yml file
+    - REPO=fossasia/pslab-python  # has .travis.yml file
+    - REPO=fossasia/query-server  # has .travis.yml file
+    - REPO=fossasia/searss  # has .travis.yml file
+    - REPO=fossasia/susi_api_wrapper  # has .travis.yml file
+    - REPO=fossasia/susi_linux  # has .travis.yml file
+    - REPO=fossasia/x-mario-center
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
