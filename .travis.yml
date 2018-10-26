@@ -16,30 +16,45 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=fossasia/AYABInterface  # has .travis.yml file
-    - REPO=fossasia/directory.api.fossasia.net  # has .travis.yml file
-    - REPO=fossasia/event-collect  # has .travis.yml file
-    - REPO=fossasia/flask-rest-jsonapi  # has .travis.yml file
-    - REPO=fossasia/knitlib  # has .travis.yml file
-    - REPO=fossasia/knitpat
-    - REPO=fossasia/knittingpattern  # has .travis.yml file
-    - REPO=fossasia/loklak_telegrambot
-    - REPO=fossasia/meilix  # has .travis.yml file
-    - REPO=fossasia/meilix-systemlock  # has .travis.yml file
-    - REPO=fossasia/mew  # has .travis.yml file
-    - REPO=fossasia/open-event
-    - REPO=fossasia/open-event-legacy  # has .travis.yml file
-    - REPO=fossasia/open-event-scraper  # has .travis.yml file
-    - REPO=fossasia/open-event-server  # has .travis.yml file
-    - REPO=fossasia/pslab-desktop-apps  # has .travis.yml file
-    - REPO=fossasia/pslab-expeyes  # has .travis.yml file
-    - REPO=fossasia/pslab-python  # has .travis.yml file
-    - REPO=fossasia/query-server  # has .travis.yml file
-    - REPO=fossasia/searss  # has .travis.yml file
-    - REPO=fossasia/susi_api_wrapper  # has .travis.yml file
-    - REPO=fossasia/susi_linux  # has .travis.yml file
-    - REPO=fossasia/x-mario-center
-
+  - REPO=facebookresearch/maskrcnn-benchmark
+  - REPO=abcnews/data-life
+  - REPO=TheAlgorithms/Python
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=python/cpython
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=fossasia/meilix
+  - REPO=fossasia/open-event-server
+  - REPO=fossasia/pslab-python
+  - REPO=fossasia/pslab-desktop-apps
+  - REPO=fossasia/meilix-systemlock
+  - REPO=keras-team/keras
+  - REPO=fossasia/susi_linux
+  - REPO=apachecn/awesome-algorithm
+  - REPO=vinta/awesome-python
+  - REPO=rg3/youtube-dl
+  - REPO=kennethreitz/responder
+  - REPO=open-mmlab/mmdetection
+  - REPO=facebookresearch/Detectron
+  - REPO=codertimo/BERT-pytorch
+  - REPO=deepmind/graph_nets
+  - REPO=mitmproxy/mitmproxy
+  - REPO=home-assistant/home-assistant
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
