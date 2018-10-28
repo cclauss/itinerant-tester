@@ -16,7 +16,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=joxeankoret/pigaios
+    - REPO=jtauber/RocAlphaGo  # has .travis.yml file
+    - REPO=jtauber/Thesaurus_Morphologicus_Linguae_Graecae
+    - REPO=jtauber/a2disk
+    - REPO=jtauber/apostolic-fathers
+    - REPO=jtauber/applepy
+    - REPO=jtauber/blockchain  # has .travis.yml file
+    - REPO=jtauber/core-gnt-vocab
+    - REPO=jtauber/depquery  # has .travis.yml file
+    - REPO=jtauber/dux
+    - REPO=jtauber/forth
+    - REPO=jtauber/functional-differential-geometry  # has .travis.yml file
+    - REPO=jtauber/gnt-accentuation
+    - REPO=jtauber/graded-reader
+    - REPO=jtauber/greek-accentuation  # has .travis.yml file
+    - REPO=jtauber/greek-inflexion  # has .travis.yml file
+    - REPO=jtauber/greek-reader  # has .travis.yml file
+    - REPO=jtauber/greek-utils  # has .travis.yml file
+    - REPO=jtauber/gtp  # has .travis.yml file
+    - REPO=jtauber/inflexion  # has .travis.yml file
+    - REPO=jtauber/learning-greek
+    - REPO=jtauber/midiwrite
+    - REPO=jtauber/oxlos2
+    - REPO=jtauber/pygo
+    - REPO=jtauber/pykanren
+    - REPO=jtauber/pyuca  # has .travis.yml file
+    - REPO=jtauber/quantum-workbench  # has .travis.yml file
+    - REPO=jtauber/quantumpy  # has .travis.yml file
+    - REPO=jtauber/sgf  # has .travis.yml file
+    - REPO=jtauber/ultima4
+    - REPO=jtauber/ultima6
 
 install:
   #- pip install -r requirements.txt
