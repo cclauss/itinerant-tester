@@ -16,37 +16,47 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=jtauber/RocAlphaGo  # has .travis.yml file
-    - REPO=jtauber/Thesaurus_Morphologicus_Linguae_Graecae
-    - REPO=jtauber/a2disk
-    - REPO=jtauber/apostolic-fathers
-    - REPO=jtauber/applepy
-    - REPO=jtauber/blockchain  # has .travis.yml file
-    - REPO=jtauber/core-gnt-vocab
-    - REPO=jtauber/depquery  # has .travis.yml file
-    - REPO=jtauber/dux
-    - REPO=jtauber/forth
-    - REPO=jtauber/functional-differential-geometry  # has .travis.yml file
-    - REPO=jtauber/gnt-accentuation
-    - REPO=jtauber/graded-reader
-    - REPO=jtauber/greek-accentuation  # has .travis.yml file
-    - REPO=jtauber/greek-inflexion  # has .travis.yml file
-    - REPO=jtauber/greek-reader  # has .travis.yml file
-    - REPO=jtauber/greek-utils  # has .travis.yml file
-    - REPO=jtauber/gtp  # has .travis.yml file
-    - REPO=jtauber/inflexion  # has .travis.yml file
-    - REPO=jtauber/learning-greek
-    - REPO=jtauber/midiwrite
-    - REPO=jtauber/oxlos2
-    - REPO=jtauber/pygo
-    - REPO=jtauber/pykanren
-    - REPO=jtauber/pyuca  # has .travis.yml file
-    - REPO=jtauber/quantum-workbench  # has .travis.yml file
-    - REPO=jtauber/quantumpy  # has .travis.yml file
-    - REPO=jtauber/sgf  # has .travis.yml file
-    - REPO=jtauber/ultima4
-    - REPO=jtauber/ultima6
-
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=facebookresearch/maskrcnn-benchmark
+  - REPO=deeppomf/DeepCreamPy
+  - REPO=TheAlgorithms/Python
+  - REPO=Rev3rseSecurity/WebMap
+  - REPO=SummitKwan/transparent_latent_gan
+  - REPO=google/python-fire
+  - REPO=tensorflow/models
+  - REPO=kennethreitz/responder
+  - REPO=vinta/awesome-python
+  - REPO=donnemartin/system-design-primer
+  - REPO=keras-team/keras
+  - REPO=rg3/youtube-dl
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=toddmotto/public-apis
+  - REPO=hackerearthclub/CODE2RACE
+  - REPO=mcastorina/graph-cli
+  - REPO=scikit-learn/scikit-learn
+  - REPO=home-assistant/home-assistant
+  - REPO=openai/gym
+  - REPO=0x454447415244/HandwritingRecognitionSystem
+  - REPO=apachecn/awesome-algorithm
+  - REPO=modin-project/modin
+  - REPO=3b1b/manim
+  - REPO=CompVis/vunet
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
