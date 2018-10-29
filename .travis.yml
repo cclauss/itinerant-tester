@@ -16,10 +16,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=redhat-developer/dotnet-bunny
-  - REPO=RedHatOfficial/ansible-redhat_satellite6
-  - REPO=RedHatOfficial/ansible-role-manageiq_workers
-  - REPO=RedHatOfficial/ansible-role-redhat_satellite6_organizations
+    - REPO=fedora-infra/bodhi
+    - REPO=fedora-infra/datagrepper  # has .travis.yml file
+    - REPO=fedora-infra/datanommer  # has .travis.yml file
+    - REPO=fedora-infra/elections
+    - REPO=fedora-infra/fas
+    - REPO=fedora-infra/fedbadges  # has .travis.yml file
+    - REPO=fedora-infra/fedimg  # has .travis.yml file
+    - REPO=fedora-infra/fedmsg  # has .travis.yml file
+    - REPO=fedora-infra/fedmsg-atomic-composer
+    - REPO=fedora-infra/fedmsg-migration-tools  # has .travis.yml file
+    - REPO=fedora-infra/fedmsg_meta_fedora_infrastructure  # has .travis.yml file
+    - REPO=fedora-infra/fedocal
+    - REPO=fedora-infra/fedora-messaging  # has .travis.yml file
+    - REPO=fedora-infra/fedora-search
+    - REPO=fedora-infra/fedora-tagger
+    - REPO=fedora-infra/fmn
+    - REPO=fedora-infra/fpdc
+    - REPO=fedora-infra/fpdc-client
+    - REPO=fedora-infra/kitchen  # has .travis.yml file
+    - REPO=fedora-infra/mirrormanager2  # has .travis.yml file
+    - REPO=fedora-infra/nuancier  # has .travis.yml file
+    - REPO=fedora-infra/pdc-updater  # has .travis.yml file
+    - REPO=fedora-infra/pyramid_fas_openid
+    - REPO=fedora-infra/python-fedora
+    - REPO=fedora-infra/rube
+    - REPO=fedora-infra/supybot-fedora
+    - REPO=fedora-infra/tahrir-api  # has .travis.yml file
+    - REPO=fedora-infra/taiga-contrib-fas-openid-auth
+    - REPO=fedora-infra/taiga-contrib-oidc-auth
+    - REPO=fedora-infra/the-new-hotness
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
