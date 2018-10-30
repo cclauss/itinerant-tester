@@ -16,12 +16,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ibm-watson-iot/functions
-  - REPO=CODAIT/MAX-Facial-Age-Estimator-Mini-Web-App
-  - REPO=CODAIT/max-workshop-app-python
-  - REPO=CODAIT/max-base
-  - REPO=CODAIT/deep-histopath
-  - REPO=CODAIT/redrockv2
+  - REPO=pyparsing/pyparsing
+  - REPO=pyparsing/pyparsing_arith_lj
+  - REPO=mozman/svgwrite
 
 install:
   #- pip install -r requirements.txt
