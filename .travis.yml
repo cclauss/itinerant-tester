@@ -16,9 +16,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pyparsing/pyparsing
-  - REPO=pyparsing/pyparsing_arith_lj
-  - REPO=mozman/svgwrite
+    - REPO=uqfoundation/dill  # has .travis.yml file
+    - REPO=uqfoundation/klepto  # has .travis.yml file
+    - REPO=uqfoundation/multiprocess  # has .travis.yml file
+    - REPO=uqfoundation/mystic  # has .travis.yml file
+    - REPO=uqfoundation/pathos  # has .travis.yml file
+    - REPO=uqfoundation/pox  # has .travis.yml file
+    - REPO=uqfoundation/ppft  # has .travis.yml file
+    - REPO=uqfoundation/pyina  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
