@@ -24,32 +24,7 @@ env:
     - REPO=apache/hadoop
     - REPO=odpi/hive
     - REPO=apache/hive
-
-Forked from apache/bigtop
-
-Mirror of Apache Bigtop
-Java 3 282 Apache-2.0 Updated on Aug 3, 2017
-security-guide
-2 2 Updated on Jun 6, 2017
-sig-reports
-
-ODPi Special Interest Group reports
-8 2 Updated on Apr 5, 2017
-specs
-
-ODPi specifications
-38 18 Updated on Apr 5, 2017
-ambari
-Forked from apache/ambari
-
-Mirror of Apache Ambari
-Java 1 959 Apache-2.0 Updated on Sep 8, 2016
-hive
-Forked from apache/hive
-
-Mirror of Apache Hive
-Java 2,210 Apache-2.0 Updated on Sep 7, 2016
-hadoop 
+    - REPO=rainofmine/Face_Attention_Network
 
 install:
   #- pip install -r requirements.txt
