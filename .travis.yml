@@ -16,7 +16,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=ptmcg/littletable
+    - REPO=brightmart/ai_law
+    - REPO=brightmart/ai_law_judger
+    - REPO=brightmart/bert_language_understanding
+    - REPO=brightmart/cs224d_DeepLearningForNLP
+    - REPO=brightmart/dynamic_pointer_network
+    - REPO=brightmart/machine_learning
+    - REPO=brightmart/machine_reading_comprehension
+    - REPO=brightmart/machine_translation
+    - REPO=brightmart/magpie  # has .travis.yml file
+    - REPO=brightmart/name_entity_recognition
+    - REPO=brightmart/nlu_sim
+    - REPO=brightmart/nmt
+    - REPO=brightmart/slot_filling_intent_joint_model
+    - REPO=brightmart/text_classification  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
