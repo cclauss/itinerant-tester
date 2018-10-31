@@ -16,36 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=Swall0w/BBox-Label-Tool
-    - REPO=Swall0w/DeepEmbeddedClustering
-    - REPO=Swall0w/Detectron.pytorch  # has .travis.yml file
-    - REPO=Swall0w/ImageMarker
-    - REPO=Swall0w/MachineLearningAPI
-    - REPO=Swall0w/PodcastStreamer
-    - REPO=Swall0w/PyTorch-YOLOv3
-    - REPO=Swall0w/PytorchSSD
-    - REPO=Swall0w/arxiv-bot  # has .travis.yml file
-    - REPO=Swall0w/chainer-crnn
-    - REPO=Swall0w/chainer-mask-rcnn  # has .travis.yml file
-    - REPO=Swall0w/clib  # has .travis.yml file
-    - REPO=Swall0w/crnn.pytorch
-    - REPO=Swall0w/dual-path-networks
-    - REPO=Swall0w/image-captioning
-    - REPO=Swall0w/learning-nonparametric-bayesian
-    - REPO=Swall0w/maskrcnn-benchmark
-    - REPO=Swall0w/matching-networks-pytorch
-    - REPO=Swall0w/mchainercv  # has .travis.yml file
-    - REPO=Swall0w/microservice-ml-demo
-    - REPO=Swall0w/protobuf-to-dict
-    - REPO=Swall0w/pytorch-mask-rcnn
-    - REPO=Swall0w/pytorch-mobilenet-v2
-    - REPO=Swall0w/pytorch-tutorial
-    - REPO=Swall0w/pytorch-yolo-v3
-    - REPO=Swall0w/pytorch-yolo3
-    - REPO=Swall0w/siamese-network
-    - REPO=Swall0w/textboxes
-    - REPO=Swall0w/torchstat
-    - REPO=Swall0w/word2vec
+    - REPO=ptmcg/littletable
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
