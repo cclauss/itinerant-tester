@@ -16,8 +16,48 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=GoogleCloudPlatform/cloudml-samples
-
+  - REPO=deeppomf/DeepCreamPy
+  - REPO=vespene-io/vespene
+  - REPO=almandin/fuxploider
+  - REPO=SummitKwan/transparent_latent_gan
+  - REPO=Separius/BERT-keras
+  - REPO=Swall0w/torchstat
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=mcastorina/graph-cli
+  - REPO=Rev3rseSecurity/WebMap
+  - REPO=TheAlgorithms/Python
+  - REPO=facebookresearch/maskrcnn-benchmark
+  - REPO=vinta/awesome-python
+  - REPO=brightmart/bert_language_understanding
+  - REPO=vergeml/vergeml
+  - REPO=Python3WebSpider/DouYin
+  - REPO=rg3/youtube-dl
+  - REPO=keras-team/keras
+  - REPO=ageitgey/face_recognition
+  - REPO=home-assistant/home-assistant
+  - REPO=scikit-learn/scikit-learn
+  - REPO=ansible/ansible
+  - REPO=toddmotto/public-apis
+  - REPO=apachecn/awesome-algorithm
+  - REPO=django/django
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
+  - REPO=webpy/webpy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
