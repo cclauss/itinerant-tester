@@ -16,9 +16,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=webpy/webpy
   - REPO=deeplook/svglib
   - REPO=internetarchive/infogami
   - REPO=internetarchive/openlibrary
+  - REPO=raspberrypi/documentation
+  - REPO=raspberrypi/pytrack
+  - REPO=raspberrypi/skygate
 
 install:
   #- pip install -r requirements.txt
