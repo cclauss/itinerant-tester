@@ -16,20 +16,40 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=brightmart/ai_law
-    - REPO=brightmart/ai_law_judger
-    - REPO=brightmart/bert_language_understanding
-    - REPO=brightmart/cs224d_DeepLearningForNLP
-    - REPO=brightmart/dynamic_pointer_network
-    - REPO=brightmart/machine_learning
-    - REPO=brightmart/machine_reading_comprehension
-    - REPO=brightmart/machine_translation
-    - REPO=brightmart/magpie  # has .travis.yml file
-    - REPO=brightmart/name_entity_recognition
-    - REPO=brightmart/nlu_sim
-    - REPO=brightmart/nmt
-    - REPO=brightmart/slot_filling_intent_joint_model
-    - REPO=brightmart/text_classification  # has .travis.yml file
+    - REPO=odpi/ambari
+    - REPO=apache/ambari
+    - REPO=odpi/bigtop
+    - REPO=apache/bigtop
+    - REPO=odpi/hadoop
+    - REPO=apache/hadoop
+    - REPO=odpi/hive
+    - REPO=apache/hive
+
+Forked from apache/bigtop
+
+Mirror of Apache Bigtop
+Java 3 282 Apache-2.0 Updated on Aug 3, 2017
+security-guide
+2 2 Updated on Jun 6, 2017
+sig-reports
+
+ODPi Special Interest Group reports
+8 2 Updated on Apr 5, 2017
+specs
+
+ODPi specifications
+38 18 Updated on Apr 5, 2017
+ambari
+Forked from apache/ambari
+
+Mirror of Apache Ambari
+Java 1 959 Apache-2.0 Updated on Sep 8, 2016
+hive
+Forked from apache/hive
+
+Mirror of Apache Hive
+Java 2,210 Apache-2.0 Updated on Sep 7, 2016
+hadoop 
 
 install:
   #- pip install -r requirements.txt
