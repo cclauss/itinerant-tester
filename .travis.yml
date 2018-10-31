@@ -17,6 +17,8 @@ matrix:
     - python: pypy3
 env:
   - REPO=deeplook/svglib
+  - REPO=internetarchive/infogami
+  - REPO=internetarchive/openlibrary
 
 install:
   #- pip install -r requirements.txt
