@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=apache/geode
+  - REPO=internetarchive/acs4_py
 
 install:
   #- pip install -r requirements.txt
