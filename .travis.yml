@@ -16,13 +16,17 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=cherrypy/cheroot  # has .travis.yml file
-    - REPO=cherrypy/cherrypy  # has .travis.yml file
-    - REPO=cherrypy/cherrypy-obsolete
-    - REPO=cherrypy/magicbus  # has .travis.yml file
-    - REPO=cherrypy/oauth-client-example
-    - REPO=cherrypy/tools-legacy
-    
+    - REPO=tox-dev/cookiecutter-tox-plugin  # has .travis.yml file
+    - REPO=tox-dev/detox  # has .travis.yml file
+    - REPO=tox-dev/tox
+    - REPO=tox-dev/tox-conda  # has .travis.yml file
+    - REPO=tox-dev/tox-docker  # has .travis.yml file
+    - REPO=tox-dev/tox-durations
+    - REPO=tox-dev/tox-pip-extensions  # has .travis.yml file
+    - REPO=tox-dev/tox-pipenv  # has .travis.yml file
+    - REPO=tox-dev/tox-travis  # has .travis.yml file
+    - REPO=tox-dev/tox-venv  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
