@@ -16,48 +16,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google-research/bert
-  - REPO=tensorflow/adanet
-  - REPO=deeppomf/DeepCreamPy
-  - REPO=tensorflow/models
-  - REPO=codertimo/BERT-pytorch
-  - REPO=TheAlgorithms/Python
-  - REPO=openai/random-network-distillation
-  - REPO=donnemartin/system-design-primer
-  - REPO=open-source-for-science/TensorFlow-Course
-  - REPO=facebookresearch/maskrcnn-benchmark
-  - REPO=coffeehb/Some-PoC-oR-ExP
-  - REPO=almandin/fuxploider
-  - REPO=SummitKwan/transparent_latent_gan
-  - REPO=vespene-io/vespene
-  - REPO=Separius/BERT-keras
-  - REPO=Swall0w/torchstat
-  - REPO=rg3/youtube-dl
-  - REPO=home-assistant/home-assistant
-  - REPO=django/django
-  - REPO=python/cpython
-  - REPO=toddmotto/public-apis
-  - REPO=pallets/flask
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=vinta/awesome-python
-  - REPO=ageitgey/face_recognition
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=google/ffn
-  - REPO=joxeankoret/pigaios
-  - REPO=webpy/webpy
+    - REPO=codesardine/Jadesktop
+    - REPO=codesardine/Jade-Application-Kit  # has .travis.yml file
+    - REPO=codesardine/manjaro-maintenance
+    - REPO=codesardine/ms-office-online
+    - REPO=codesardine/repology-rules  # has .travis.yml file
+    - REPO=codesardine/webdad-speech
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
