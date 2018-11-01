@@ -16,8 +16,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=internetarchive/acs4_py
-
+    - REPO=cherrypy/cheroot  # has .travis.yml file
+    - REPO=cherrypy/cherrypy  # has .travis.yml file
+    - REPO=cherrypy/cherrypy-obsolete
+    - REPO=cherrypy/magicbus  # has .travis.yml file
+    - REPO=cherrypy/oauth-client-example
+    - REPO=cherrypy/tools-legacy
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
