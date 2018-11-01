@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=https://github.com/mariusmucenicu/mind-games
+    - REPO=mariusmucenicu/mind-games
 
 install:
   #- pip install -r requirements.txt
