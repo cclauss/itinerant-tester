@@ -16,12 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=codesardine/Jadesktop
-    - REPO=codesardine/Jade-Application-Kit  # has .travis.yml file
-    - REPO=codesardine/manjaro-maintenance
-    - REPO=codesardine/ms-office-online
-    - REPO=codesardine/repology-rules  # has .travis.yml file
-    - REPO=codesardine/webdad-speech
+    - REPO=https://github.com/mariusmucenicu/mind-games
 
 install:
   #- pip install -r requirements.txt
