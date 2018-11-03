@@ -16,31 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google-research/bert
   - REPO=deeppomf/DeepCreamPy
+  - REPO=google-research/bert
   - REPO=facebookresearch/Horizon
-  - REPO=tensorflow/adanet
   - REPO=Tencent/PocketFlow
+  - REPO=tensorflow/adanet
   - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=tensorflow/models
   - REPO=ofirpress/YouMayNotNeedAttention
   - REPO=TheAlgorithms/Python
   - REPO=facebookresearch/maskrcnn-benchmark
-  - REPO=codertimo/BERT-pytorch
-  - REPO=tensorflow/models
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=pandas-dev/pandas
-  - REPO=openai/random-network-distillation
+  - REPO=terrytangyuan/tensorflow-in-practice-code
   - REPO=donnemartin/system-design-primer
-  - REPO=rg3/youtube-dl
+  - REPO=vinta/awesome-python
+  - REPO=codertimo/BERT-pytorch
+  - REPO=kennethreitz/responder
   - REPO=keras-team/keras
   - REPO=home-assistant/home-assistant
-  - REPO=vinta/awesome-python
-  - REPO=coffeehb/Some-PoC-oR-ExP
-  - REPO=requests/requests
-  - REPO=Swall0w/torchstat
+  - REPO=toddmotto/public-apis
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=openai/random-network-distillation
+  - REPO=rg3/youtube-dl
+  - REPO=python/cpython
   - REPO=scikit-learn/scikit-learn
-  - REPO=ansible/ansible
   - REPO=django/django
+  - REPO=ansible/ansible
   - REPO=ArduPilot/ardupilot
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
