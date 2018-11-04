@@ -16,32 +16,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=metaodi/ckan  # has .travis.yml file
-    - REPO=metaodi/ckanapi  # has .travis.yml file
-    - REPO=metaodi/ckanext-composite  # has .travis.yml file
-    - REPO=metaodi/ckanext-dcat  # has .travis.yml file
-    - REPO=metaodi/ckanext-dgu
-    - REPO=metaodi/ckanext-graphql  # has .travis.yml file
-    - REPO=metaodi/ckanext-harvest  # has .travis.yml file
-    - REPO=metaodi/ckanext-scheming
-    - REPO=metaodi/ckanext-xloader  # has .travis.yml file
-    - REPO=metaodi/ckantoolkit
-    - REPO=metaodi/csvtowikidata
-    - REPO=metaodi/datacentral
-    - REPO=metaodi/elcom-strompreise-scraper
-    - REPO=metaodi/fis-alpine-skiing-scraper
-    - REPO=metaodi/geodict
-    - REPO=metaodi/hostages
-    - REPO=metaodi/hypothesis  # has .travis.yml file
-    - REPO=metaodi/learning-python
-    - REPO=metaodi/mapthebanks-scraper
-    - REPO=metaodi/open-power-system-timeseries
-    - REPO=metaodi/osmapi  # has .travis.yml file
-    - REPO=metaodi/pyoai
-    - REPO=metaodi/python-beginners
-    - REPO=metaodi/schema  # has .travis.yml file
-    - REPO=metaodi/taxi  # has .travis.yml file
-    - REPO=metaodi/uzh-commitments-scraper  # has .travis.yml file
+    - REPO=linsomniac/python-memcached
+    - REPO=pinterest/pymemcache
+    - REPO=lericson/pylibmc
+    - REPO=eguven/python3-memcached
+
 
 install:
   #- pip install -r requirements.txt
