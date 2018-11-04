@@ -16,12 +16,48 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=linsomniac/python-memcached
-    - REPO=pinterest/pymemcache
-    - REPO=lericson/pylibmc
-    - REPO=eguven/python3-memcached
-
-
+  - REPO=deeppomf/DeepCreamPy
+  - REPO=google-research/bert
+  - REPO=geekcomputers/Python
+  - REPO=Tencent/PocketFlow
+  - REPO=tensorflow/adanet
+  - REPO=facebookresearch/Horizon
+  - REPO=TheAlgorithms/Python
+  - REPO=donnemartin/system-design-primer
+  - REPO=mmirman/MentisOculi
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=rg3/youtube-dl
+  - REPO=tensorflow/models
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=BoukeHaarsma23/WattmanGTK
+  - REPO=defaultnamehere/cookie_crimes
+  - REPO=toddmotto/public-apis
+  - REPO=ageitgey/face_recognition
+  - REPO=keras-team/keras
+  - REPO=home-assistant/home-assistant
+  - REPO=facebookresearch/maskrcnn-benchmark
+  - REPO=vinta/awesome-python
+  - REPO=django/django
+  - REPO=pallets/flask
+  - REPO=FinanceData/marcap
+  - REPO=matterport/Mask_RCNN
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
+  - REPO=webpy/webpy
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
