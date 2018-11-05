@@ -16,11 +16,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=watson-developer-cloud/language/python-sdk
-  - REPO=watson-developer-cloud/language/community
-  - REPO=watson-developer-cloud/language/speech-to-text-websockets-python
-  - REPO=watson-developer-cloud/language/personality-insights-twitter-python
-  - REPO=watson-developer-cloud/language/python-primer-companion-code
+  - REPO=watson-developer-cloud/python-sdk
+  - REPO=watson-developer-cloud/community
+  - REPO=watson-developer-cloud/speech-to-text-websockets-python
+  - REPO=watson-developer-cloud/personality-insights-twitter-python
+  - REPO=watson-developer-cloud/python-primer-companion-code
 
 install:
   #- pip install -r requirements.txt
