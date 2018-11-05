@@ -16,32 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=mmirman/MentisOculi
-    - REPO=mmirman/conpig
-    - REPO=mmirman/lethargic-python
-    - REPO=mmirman/mops
-    - REPO=achillean/greynoise
-    - REPO=achillean/latch-sdk-python
-    - REPO=achillean/pyjade  # has .travis.yml file
-    - REPO=achillean/redis-keys
-    - REPO=achillean/shodan-python
-    - REPO=hundredrab/BertrandNashEquilibriumComputation
-    - REPO=hundredrab/BitMEX-API-python
-    - REPO=hundredrab/Chatistics
-    - REPO=hundredrab/ChatterBot  # has .travis.yml file
-    - REPO=hundredrab/Maryo
-    - REPO=hundredrab/MusicUtils
-    - REPO=hundredrab/Remixatron
-    - REPO=hundredrab/cpcb-downloader
-    - REPO=hundredrab/hackerrank
-    - REPO=hundredrab/hacktoberbot  # has .travis.yml file
-    - REPO=hundredrab/hundredlinesofcode
-    - REPO=hundredrab/library
-    - REPO=hundredrab/movie_subs
-    - REPO=hundredrab/oppia  # has .travis.yml file
-    - REPO=hundredrab/scrapy  # has .travis.yml file
-    - REPO=hundredrab/spock42
-    - REPO=hundredrab/zulip  # has .travis.yml file
+    - REPO=drensin/Remixatron
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
