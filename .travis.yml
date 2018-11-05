@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=drensin/Remixatron
+    - REPO=oppia/oppia
 
 install:
   #- pip install -r requirements.txt
