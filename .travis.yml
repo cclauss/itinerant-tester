@@ -16,48 +16,32 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=deeppomf/DeepCreamPy
-  - REPO=google-research/bert
-  - REPO=geekcomputers/Python
-  - REPO=Tencent/PocketFlow
-  - REPO=tensorflow/adanet
-  - REPO=facebookresearch/Horizon
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=mmirman/MentisOculi
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=rg3/youtube-dl
-  - REPO=tensorflow/models
-  - REPO=open-source-for-science/TensorFlow-Course
-  - REPO=BoukeHaarsma23/WattmanGTK
-  - REPO=defaultnamehere/cookie_crimes
-  - REPO=toddmotto/public-apis
-  - REPO=ageitgey/face_recognition
-  - REPO=keras-team/keras
-  - REPO=home-assistant/home-assistant
-  - REPO=facebookresearch/maskrcnn-benchmark
-  - REPO=vinta/awesome-python
-  - REPO=django/django
-  - REPO=pallets/flask
-  - REPO=FinanceData/marcap
-  - REPO=matterport/Mask_RCNN
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=google/ffn
-  - REPO=joxeankoret/pigaios
-  - REPO=webpy/webpy
+    - REPO=mmirman/MentisOculi
+    - REPO=mmirman/conpig
+    - REPO=mmirman/lethargic-python
+    - REPO=mmirman/mops
+    - REPO=achillean/greynoise
+    - REPO=achillean/latch-sdk-python
+    - REPO=achillean/pyjade  # has .travis.yml file
+    - REPO=achillean/redis-keys
+    - REPO=achillean/shodan-python
+    - REPO=hundredrab/BertrandNashEquilibriumComputation
+    - REPO=hundredrab/BitMEX-API-python
+    - REPO=hundredrab/Chatistics
+    - REPO=hundredrab/ChatterBot  # has .travis.yml file
+    - REPO=hundredrab/Maryo
+    - REPO=hundredrab/MusicUtils
+    - REPO=hundredrab/Remixatron
+    - REPO=hundredrab/cpcb-downloader
+    - REPO=hundredrab/hackerrank
+    - REPO=hundredrab/hacktoberbot  # has .travis.yml file
+    - REPO=hundredrab/hundredlinesofcode
+    - REPO=hundredrab/library
+    - REPO=hundredrab/movie_subs
+    - REPO=hundredrab/oppia  # has .travis.yml file
+    - REPO=hundredrab/scrapy  # has .travis.yml file
+    - REPO=hundredrab/spock42
+    - REPO=hundredrab/zulip  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
