@@ -8,7 +8,7 @@ python:
   #- 3.4
   #- 3.5
   #- 3.6
-  - 3.7
+  - 2.7
 matrix:
   allow_failures:
     - python: 2.7
@@ -16,11 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=watson-developer-cloud/python-sdk
-  - REPO=watson-developer-cloud/community
   - REPO=watson-developer-cloud/speech-to-text-websockets-python
-  - REPO=watson-developer-cloud/personality-insights-twitter-python
-  - REPO=watson-developer-cloud/python-primer-companion-code
 
 install:
   #- pip install -r requirements.txt
