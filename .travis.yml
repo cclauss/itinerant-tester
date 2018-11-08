@@ -17,6 +17,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=python-visualization/folium
+  - REPO=dabeaz/ply
 
 install:
   #- pip install -r requirements.txt
