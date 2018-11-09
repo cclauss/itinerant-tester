@@ -16,8 +16,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=python-visualization/folium
-  - REPO=dabeaz/ply
+    - REPO=python-visualization/folium
+    - REPO=NVIDIA/waveglow
+    - REPO=openai/spinningup
+    - REPO=mirumee/saleor
+    - REPO=ksw0306/FloWaveNet
+    - REPO=google-research/google-research
+    - REPO=waleedka/hiddenlayer
+
 
 install:
   #- pip install -r requirements.txt
