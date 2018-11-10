@@ -16,8 +16,58 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=kubernetes/test-infra
-
+  - REPO=openai/spinningup
+  - REPO=santinic/pampy
+  - REPO=google-research/bert
+  - REPO=NVIDIA/waveglow
+  - REPO=deeppomf/DeepCreamPy
+  - REPO=TheAlgorithms/Python
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=vinta/awesome-python
+  - REPO=apachecn/awesome-algorithm
+  - REPO=geekcomputers/Python
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=ksw0306/FloWaveNet
+  - REPO=keras-team/keras
+  - REPO=yunjey/pytorch-tutorial
+  - REPO=home-assistant/home-assistant
+  - REPO=rg3/youtube-dl
+  - REPO=Tencent/PocketFlow
+  - REPO=toddmotto/public-apis
+  - REPO=facebookresearch/Horizon
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=scikit-learn/scikit-learn
+  - REPO=django/django
+  - REPO=zulip/zulip
+  - REPO=fighting41love/funNLP
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/connector-qradar
+  - REPO=ibm-watson-iot/connector-statsd
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=ibm-watson-iot/gateway-hue
+  - REPO=ibm-watson-iot/gateway-lightify
+  - REPO=ibm-watson-iot/grafana4iot
+  - REPO=ibm-watson-iot/iot-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
