@@ -16,9 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=tensorflow/tensorflow
-    - REPO=openai/spinningup
-    - REPO=google-research/google-resear
+    - REPO=santinic/pampy
 
 install:
   #- pip install -r requirements.txt
