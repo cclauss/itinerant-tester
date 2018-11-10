@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=santinic/pampy
+    - REPO=kubernetes/test-infra
 
 install:
   #- pip install -r requirements.txt
