@@ -16,9 +16,12 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=s0md3v/XSStrike
-  - REPO=WeblateOrg/weblate
-  - REPO=ibm-watson-iot/functions
+    - REPO=woj-ciech/Daily-dose-of-malware
+    - REPO=woj-ciech/Danger-zone
+    - REPO=woj-ciech/Social-media-c2
+    - REPO=woj-ciech/Wallet-watcher
+    - REPO=woj-ciech/kamerka
+    - REPO=woj-ciech/OSINT
 
 install:
   #- pip install -r requirements.txt
