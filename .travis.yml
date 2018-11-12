@@ -16,58 +16,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=s0md3v/XSStrike
-  - REPO=santinic/pampy
-  - REPO=openai/spinningup
-  - REPO=google-research/bert
-  - REPO=TheAlgorithms/Python
-  - REPO=deeppomf/DeepCreamPy
-  - REPO=tensorflow/models
-  - REPO=chiphuyen/sotawhat
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=masa-su/pixyz
-  - REPO=donnemartin/system-design-primer
-  - REPO=vinta/awesome-python
-  - REPO=allenai/writing-code-for-nlp-research-emnlp2018
-  - REPO=NVIDIA/waveglow
-  - REPO=MikeTheWatchGuy/PySimpleGUI
-  - REPO=geekcomputers/Python
-  - REPO=apachecn/awesome-algorithm
-  - REPO=HTML-as-programming-language/HTML-as-programming-language
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=rg3/youtube-dl
-  - REPO=mirumee/saleor
-  - REPO=liquanzhou/cedardeploy
-  - REPO=keras-team/keras
-  - REPO=django/django
-  - REPO=facebookresearch/Horizon
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
-  - REPO=google/ffn
-  - REPO=joxeankoret/pigaios
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/connector-qradar
-  - REPO=ibm-watson-iot/connector-statsd
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions
-  - REPO=ibm-watson-iot/gateway-hue
-  - REPO=ibm-watson-iot/gateway-lightify
-  - REPO=ibm-watson-iot/grafana4iot
-  - REPO=ibm-watson-iot/iot-python
+    - REPO=cloudant/bigcouch  # has .travis.yml file
+    - REPO=cloudant/buildbot
+    - REPO=cloudant/cirrus  # has .travis.yml file
+    - REPO=cloudant/couchdb-documentation  # has .travis.yml file
+    - REPO=cloudant/hdfs
+    - REPO=cloudant/locust  # has .travis.yml file
+    - REPO=cloudant/multiloggy
+    - REPO=cloudant/public-examples
+    - REPO=cloudant/python-cloudant  # has .travis.yml file
+    - REPO=cloudant/quimby
+    - REPO=cloudant/sensu-trapd  # has .travis.yml file
+    - REPO=cloudant/slapi
+    - REPO=ibm-watson-iot/connector-cloudant
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
