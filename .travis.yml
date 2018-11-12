@@ -16,12 +16,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=woj-ciech/Daily-dose-of-malware
-    - REPO=woj-ciech/Danger-zone
-    - REPO=woj-ciech/Social-media-c2
-    - REPO=woj-ciech/Wallet-watcher
-    - REPO=woj-ciech/kamerka
-    - REPO=woj-ciech/OSINT
+    - REPO=alecthomas/Godef
+    - REPO=alecthomas/SublimeFoldPythonDocstrings
+    - REPO=alecthomas/SublimeLinter-contrib-errcheck  # has .travis.yml file
+    - REPO=alecthomas/SublimeLinter-contrib-golang-cilint  # has .travis.yml file
+    - REPO=alecthomas/SublimeLinter-contrib-gometalinter  # has .travis.yml file
+    - REPO=alecthomas/SublimeLinter-cppcheck  # has .travis.yml file
+    - REPO=alecthomas/SublimePythonImportMagic
+    - REPO=alecthomas/Vintageous  # has .travis.yml file
+    - REPO=alecthomas/WaveGrowl.app
+    - REPO=alecthomas/aspect
+    - REPO=alecthomas/cly
+    - REPO=alecthomas/cut
+    - REPO=alecthomas/flam
+    - REPO=alecthomas/flask_injector  # has .travis.yml file
+    - REPO=alecthomas/importmagic  # has .travis.yml file
+    - REPO=alecthomas/injector  # has .travis.yml file
+    - REPO=alecthomas/oink
+    - REPO=alecthomas/package_control_channel  # has .travis.yml file
+    - REPO=alecthomas/pawk
+    - REPO=alecthomas/porpoise
+    - REPO=alecthomas/ptsd
+    - REPO=alecthomas/pyflakes
+    - REPO=alecthomas/simplenotefs
+    - REPO=alecthomas/voluptuous  # has .travis.yml file
+    - REPO=alecthomas/waffle
 
 install:
   #- pip install -r requirements.txt
