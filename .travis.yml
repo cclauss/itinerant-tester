@@ -30,6 +30,9 @@ env:
     - REPO=PowerDNS/redis-ipprefix
     - REPO=PowerDNS/redis-py  # has .travis.yml file
     - REPO=PowerDNS/xfrserver
+    - REPO=PowerDNS/pdns-builder
+    - REPO=PowerDNS/PowerDNS/dnsmasq
+    - REPO=PowerDNS/PowerDNS/pdnscontrol
 
 install:
   #- pip install -r requirements.txt
