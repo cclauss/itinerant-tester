@@ -13,26 +13,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    #- REPO=PowerDNS/codedemo  # has .travis.yml file
-    #- REPO=PowerDNS/codespell
-    #- REPO=PowerDNS/dnsdist-ansible  # has .travis.yml file
-    #- REPO=PowerDNS/dnssec-ta-tools
-    #- REPO=PowerDNS/exabgp  # has .travis.yml file
-    #- REPO=PowerDNS/grafana-metronome
-    #- REPO=PowerDNS/kgb-twitter
-    #- REPO=PowerDNS/mqtt-spawn
-    #- REPO=PowerDNS/netaddr
-    #- REPO=PowerDNS/pandoc2rfc
-    #- REPO=PowerDNS/pdns
-    #- REPO=PowerDNS/pdns-ansible  # has .travis.yml file
-    #- REPO=PowerDNS/pdns_recursor-ansible  # has .travis.yml file
-    #- REPO=PowerDNS/pdnsrectify
-    #- REPO=PowerDNS/redis-ipprefix
-    #- REPO=PowerDNS/redis-py  # has .travis.yml file
-    #- REPO=PowerDNS/xfrserver
-    #- REPO=PowerDNS/pdns-builder
-    - REPO=PowerDNS/dnsmasq
-    - REPO=PowerDNS/pdnscontrol
+    - REPO=ibm-watson-iot/functions
 
 install:
   #- pip install -r requirements.txt
