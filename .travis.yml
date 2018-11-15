@@ -16,7 +16,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=adrienverge/yamllint
+    - REPO=aaronpenne/data_visualization
+    - REPO=aaronpenne/generative_art
+    - REPO=aaronpenne/get_noaa_ghcn_data
+    - REPO=aaronpenne/government_corpus
+    - REPO=aaronpenne/hangouts_history_parser
+    - REPO=aaronpenne/somafm_charts
+    - REPO=adrienverge/PhotoCollage  # has .travis.yml file
+    - REPO=adrienverge/ansible
+    - REPO=adrienverge/check-all-the-things
+    - REPO=adrienverge/cinder
+    - REPO=adrienverge/cli2man
+    - REPO=adrienverge/coala-bears  # has .travis.yml file
+    - REPO=adrienverge/context_unnester
+    - REPO=adrienverge/coucharchive  # has .travis.yml file
+    - REPO=adrienverge/couchdb-documentation  # has .travis.yml file
+    - REPO=adrienverge/couchdb-python  # has .travis.yml file
+    - REPO=adrienverge/familytreemaker
+    - REPO=adrienverge/git-lint  # has .travis.yml file
+    - REPO=adrienverge/hachiko
+    - REPO=adrienverge/heat
+    - REPO=adrienverge/horizon
+    - REPO=adrienverge/keyboard-stickers
+    - REPO=adrienverge/kijijiapi
+    - REPO=adrienverge/localstripe  # has .travis.yml file
+    - REPO=adrienverge/nest-css
+    - REPO=adrienverge/python-path-specification
+    - REPO=adrienverge/python-saharaclient
+    - REPO=adrienverge/rhythmbox_playlist_to_m3u
+    - REPO=adrienverge/sahara
+    - REPO=adrienverge/sahara-specs
+    - REPO=adrienverge/yamllint  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
