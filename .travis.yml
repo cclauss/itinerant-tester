@@ -13,14 +13,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=freeipa/freeipa
-    - REPO=roedie/netdata-debian
-    - REPO=netdata/netdata
-    - REPO=tahoe-lafs/tahoe-lafs
-    - REPO=soasme/lgtm 
-    - REPO=yusufsn/evaluating_diff_algorithms
-    - REPO=macvim-dev/macvim
-    - REPO=curl/curl
+    - REPO=PowerDNS/pdns
 
 install:
   #- pip install -r requirements.txt
