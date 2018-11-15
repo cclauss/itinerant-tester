@@ -16,51 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=s0md3v/XSStrike
-  - REPO=google-research/bert
-  - REPO=google/uis-rnn
-  - REPO=tensorflow/models
-  - REPO=deeppomf/DeepCreamPy
-  - REPO=TheAlgorithms/Python
-  - REPO=santinic/pampy
-  - REPO=openai/spinningup
-  - REPO=Timthony/self_drive
-  - REPO=keras-team/keras
-  - REPO=PPshrimpGo/BDCI2018-ChinauUicom-1st-solution
-  - REPO=vinta/awesome-python
-  - REPO=localstack/localstack
-  - REPO=donnemartin/system-design-primer
-  - REPO=aaronpenne/generative_art
-  - REPO=liquanzhou/cedardeploy
-  - REPO=rg3/youtube-dl
-  - REPO=pallets/flask
-  - REPO=python/cpython
-  - REPO=ageitgey/face_recognition
-  - REPO=geekcomputers/Python
-  - REPO=tensorflow/adanet
-  - REPO=apachecn/awesome-algorithm
-  - REPO=django/django
-  - REPO=ansible/ansible
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
-  - REPO=google/ffn
-  - REPO=joxeankoret/pigaios
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
+  - REPO=adrienverge/yamllint
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
