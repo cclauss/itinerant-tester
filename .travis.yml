@@ -12,7 +12,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=SecureAuthCorp/impacket
+    - REPO=stmharry/BBQNet
+    - REPO=stmharry/DeepBox
+    - REPO=stmharry/FoodRecognition
+    - REPO=stmharry/FoodRecognitionV2
+    - REPO=stmharry/boleto
+    - REPO=stmharry/boleto2
+    - REPO=stmharry/boleto3
+    - REPO=stmharry/bulb
+    - REPO=stmharry/doc-box
+    - REPO=stmharry/slender
+    - REPO=stmharry/sofa
+    - REPO=stmharry/sofa2
+    - REPO=stmharry/text  # has .travis.yml file
+    - REPO=SecureAuthCorp/HoneySAP  # has .travis.yml file
+    - REPO=SecureAuthCorp/impacket
+    - REPO=SecureAuthCorp/pysap  # has .travis.yml file
+    - REPO=SecureAuthCorp/wiwo
 
 install:
   #- pip install -r requirements.txt
@@ -23,7 +39,7 @@ install:
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO} --branch=python36
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=python36
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
