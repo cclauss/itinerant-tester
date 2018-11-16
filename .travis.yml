@@ -4,6 +4,10 @@ sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
+  #- 2.7
+  #- 3.4
+  #- 3.5
+  #- 3.6
   - 3.7
 matrix:
   allow_failures:
@@ -12,34 +16,58 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=stmharry/BBQNet
-    - REPO=stmharry/DeepBox
-    - REPO=stmharry/FoodRecognition
-    - REPO=stmharry/FoodRecognitionV2
-    - REPO=stmharry/boleto
-    - REPO=stmharry/boleto2
-    - REPO=stmharry/boleto3
-    - REPO=stmharry/bulb
-    - REPO=stmharry/doc-box
-    - REPO=stmharry/slender
-    - REPO=stmharry/sofa
-    - REPO=stmharry/sofa2
-    - REPO=stmharry/text  # has .travis.yml file
-    - REPO=SecureAuthCorp/HoneySAP  # has .travis.yml file
-    - REPO=SecureAuthCorp/impacket
-    - REPO=SecureAuthCorp/pysap  # has .travis.yml file
-    - REPO=SecureAuthCorp/wiwo
-
+  - REPO=minimaxir/big-list-of-naughty-strings
+  - REPO=spotify/chartify
+  - REPO=harelba/q
+  - REPO=fighting41love/funNLP
+  - REPO=rtqichen/torchdiffeq
+  - REPO=s0md3v/XSStrike
+  - REPO=google-research/bert
+  - REPO=santinic/pampy
+  - REPO=home-assistant/home-assistant
+  - REPO=tensorflow/models
+  - REPO=arogozhnikov/einops
+  - REPO=TheAlgorithms/Python
+  - REPO=Timthony/self_drive
+  - REPO=deeppomf/DeepCreamPy
+  - REPO=Kamik423/cutie
+  - REPO=PandasCute/2018-CCF-BDCI-China-Unicom-Research-Institute-top2
+  - REPO=DanMcInerney/msf-autoshell
+  - REPO=vinta/awesome-python
+  - REPO=j3ssie/Osmedeus
+  - REPO=openai/spinningup
+  - REPO=keras-team/keras
+  - REPO=donnemartin/system-design-primer
+  - REPO=jayshah19949596/CodingInterviews
+  - REPO=django/django
+  - REPO=toddmotto/public-apis
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
 install:
   #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testin
-  #- 2.7
-  #- 3.4
-  #- 3.5g frameworks later
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=python36
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
