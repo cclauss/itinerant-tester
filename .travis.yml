@@ -13,7 +13,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=ibm-watson-iot/functions
+    - REPO=catmaid/CATMAID
 
 install:
   #- pip install -r requirements.txt
