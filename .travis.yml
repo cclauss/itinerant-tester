@@ -13,15 +13,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=patrickelectric/foundation
-    - REPO=patrickelectric/SLAM_Qt
-    - REPO=patrickelectric/Conway-game-of-life-in-pyside2
-    - REPO=patrickelectric/get_gcodes_from_source
-    - REPO=patrickelectric/bluerov_ros_playground
-    - REPO=patrickelectric/RemoteLog
-    - REPO=patrickelectric/F3P
-    - REPO=patrickelectric/provant-devices
-    - REPO=patrickelectric/CMUcam2PY
+  - REPO=harelba/q
+  - REPO=rtqichen/torchdiffeq
+  - REPO=spotify/chartify
 
 install:
   #- pip install -r requirements.txt
