@@ -16,10 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=jdf/haikufinder
-    - REPO=jdf/haikufinder.webapp
-    - REPO=jdf/html2text
-    - REPO=jdf/processing.py  # has .travis.yml file
+    - REPO=MikeTheWatchGuy/PySimpleGUI
 
 install:
   #- pip install -r requirements.txt
