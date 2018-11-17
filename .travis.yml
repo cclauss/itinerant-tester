@@ -16,7 +16,27 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=MikeTheWatchGuy/PySimpleGUI
+    - REPO=Exa-Networks/exabgp  # has .travis.yml file
+    - REPO=Exa-Networks/exaddos
+    - REPO=Exa-Networks/exaproxy
+    - REPO=Exa-Networks/exaripe
+    - REPO=Exa-Networks/scavengerexa
+    - REPO=salbertson/NIPAP  # has .travis.yml file
+    - REPO=salbertson/Photon  # has .travis.yml file
+    - REPO=salbertson/Qt.py  # has .travis.yml file
+    - REPO=salbertson/django-activity-stream  # has .travis.yml file
+    - REPO=salbertson/exabgp  # has .travis.yml file
+    - REPO=salbertson/flask-limiter  # has .travis.yml file
+    - REPO=salbertson/git-of-theseus  # has .travis.yml file
+    - REPO=salbertson/home-assistant  # has .travis.yml file
+    - REPO=salbertson/kazoo  # has .travis.yml file
+    - REPO=salbertson/open-event-server  # has .travis.yml file
+    - REPO=salbertson/proselint  # has .travis.yml file
+    - REPO=salbertson/pyHS100  # has .travis.yml file
+    - REPO=salbertson/pychromecast  # has .travis.yml file
+    - REPO=salbertson/python-jsonschema-objects  # has .travis.yml file
+    - REPO=salbertson/python-telegram-bot  # has .travis.yml file
+    - REPO=salbertson/wechatpy  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
