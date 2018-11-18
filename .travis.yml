@@ -16,11 +16,51 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=python-cmd2/cmd2  # has .travis.yml file
-    - REPO=python-cmd2/cmd2-abbrev
-    - REPO=python-cmd2/cmd2-plugin-template
-    - REPO=python-cmd2/cmd2-submenu
-
+  - REPO=minimaxir/big-list-of-naughty-strings
+  - REPO=fighting41love/funNLP
+  - REPO=karanchahal/DoodleMaster
+  - REPO=malwaredllc/byob
+  - REPO=toddmotto/public-apis
+  - REPO=spotify/chartify
+  - REPO=harelba/q
+  - REPO=ptresearch/IntelTXE-PoC
+  - REPO=tensorflow/models
+  - REPO=s0md3v/XSStrike
+  - REPO=jarun/ddgr
+  - REPO=Warflop/CloudBunny
+  - REPO=donnemartin/system-design-primer
+  - REPO=google-research/bert
+  - REPO=huggingface/hmtl
+  - REPO=keras-team/keras
+  - REPO=TheAlgorithms/Python
+  - REPO=vinta/awesome-python
+  - REPO=django/django
+  - REPO=apenwarr/redo
+  - REPO=scikit-learn/scikit-learn
+  - REPO=pallets/flask
+  - REPO=rg3/youtube-dl
+  - REPO=santinic/pampy
+  - REPO=drivendata/cookiecutter-data-science
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
