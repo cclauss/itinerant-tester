@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=npm/node
+    - REPO=v8/v8
 
 install:
   #- pip install -r requirements.txt
