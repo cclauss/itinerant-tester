@@ -16,15 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=indutny/gyp.js
-    - REPO=indutny/YOLO_Object_Detection
-    - REPO=indutny/bud-logger
-    - REPO=indutny/couchapp
-    - REPO=indutny/gradtype
-    - REPO=indutny/haggling_rl
-    - REPO=indutny/nan  # has .travis.yml file
-    - REPO=indutny/node-gyp
-    - REPO=indutny/resistenz
+    - REPO=npm/node
 
 install:
   #- pip install -r requirements.txt
