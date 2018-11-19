@@ -17,6 +17,8 @@ matrix:
     - python: pypy3
 env:
     - REPO=v8/v8
+    - REPO=nodejs/node
+    - REPO=nodejs/node-gyp
 
 install:
   #- pip install -r requirements.txt
