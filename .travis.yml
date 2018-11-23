@@ -16,20 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=pyupio/PyGithub  # has .travis.yml file
-    - REPO=pyupio/changelogs  # has .travis.yml file
-    - REPO=pyupio/demo  # has .travis.yml file
-    - REPO=pyupio/django-jsonfield  # has .travis.yml file
-    - REPO=pyupio/dparse  # has .travis.yml file
-    - REPO=pyupio/github-requirements
-    - REPO=pyupio/pyup  # has .travis.yml file
-    - REPO=pyupio/pyup-django  # has .travis.yml file
-    - REPO=pyupio/pyup-tools
-    - REPO=pyupio/safety  # has .travis.yml file
-    - REPO=pyupio/safety-bar
-    - REPO=pyupio/safety-db  # has .travis.yml file
-    - REPO=pyupio/safety-demo  # has .travis.yml file
-    - REPO=pyupio/warehouse  # has .travis.yml file
+    - REPO=PyGithub/PyGithub
 
 install:
   #- pip install -r requirements.txt
