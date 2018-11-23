@@ -16,8 +16,51 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=PyGithub/PyGithub
-
+  - REPO=minimaxir/big-list-of-naughty-strings
+  - REPO=hanxiao/bert-as-service
+  - REPO=OpenMined/PySyft
+  - REPO=google-research/bert
+  - REPO=YoongiKim/AutoCrawler
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/models
+  - REPO=TheAlgorithms/Python
+  - REPO=keras-team/keras
+  - REPO=huggingface/hmtl
+  - REPO=donnemartin/system-design-primer
+  - REPO=araffin/rl-baselines-zoo
+  - REPO=ageitgey/face_recognition
+  - REPO=django/django
+  - REPO=google/jax
+  - REPO=spotify/chartify
+  - REPO=0xR0/shellver
+  - REPO=john-smith-19/Base
+  - REPO=toddmotto/public-apis
+  - REPO=rg3/youtube-dl
+  - REPO=geekcomputers/Python
+  - REPO=home-assistant/home-assistant
+  - REPO=python/cpython
+  - REPO=pfjaeger/medicaldetectiontoolkit
+  - REPO=pallets/flask
+  - REPO=ArduPilot/ardupilot
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
+  - REPO=google/ffn
+  - REPO=joxeankoret/pigaios
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
