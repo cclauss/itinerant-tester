@@ -16,7 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=kennethreitz/responder
+    - REPO=nodejs/node
+    - REPO=nodejs/node-gyp
     
 install:
   #- pip install -r requirements.txt
