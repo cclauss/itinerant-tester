@@ -16,36 +16,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=pytroll/donfig  # has .travis.yml file
-    - REPO=pytroll/mipp
-    - REPO=pytroll/mpop  # has .travis.yml file
-    - REPO=pytroll/posttroll  # has .travis.yml file
-    - REPO=pytroll/pycoast  # has .travis.yml file
-    - REPO=pytroll/pydecorate  # has .travis.yml file
-    - REPO=pytroll/pygac  # has .travis.yml file
-    - REPO=pytroll/pyninjotiff
-    - REPO=pytroll/pyorbital  # has .travis.yml file
-    - REPO=pytroll/pyresample  # has .travis.yml file
-    - REPO=pytroll/pyspectral  # has .travis.yml file
-    - REPO=pytroll/python-geotiepoints  # has .travis.yml file
-    - REPO=pytroll/pytroll
-    - REPO=pytroll/pytroll-aapp-runner
-    - REPO=pytroll/pytroll-collectors  # has .travis.yml file
-    - REPO=pytroll/pytroll-cspp-runner
-    - REPO=pytroll/pytroll-modis-runner
-    - REPO=pytroll/pytroll-osisaf-runner
-    - REPO=pytroll/pytroll-pps-runner
-    - REPO=pytroll/pytroll-product-filter
-    - REPO=pytroll/pytroll-schedule  # has .travis.yml file
-    - REPO=pytroll/satpy  # has .travis.yml file
-    - REPO=pytroll/trollbufr
-    - REPO=pytroll/trollcast  # has .travis.yml file
-    - REPO=pytroll/trollduction  # has .travis.yml file
-    - REPO=pytroll/trollflow  # has .travis.yml file
-    - REPO=pytroll/trollflow-sat  # has .travis.yml file
-    - REPO=pytroll/trollimage  # has .travis.yml file
-    - REPO=pytroll/trollmoves
-    - REPO=pytroll/trollsift  # has .travis.yml file
+    - REPO=kennethreitz/responder
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
