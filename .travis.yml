@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=edsu/pymarc
+  - REPO=joxeankoret/pigaios
 
 install:
   #- pip install -r requirements.txt
