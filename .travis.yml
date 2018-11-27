@@ -16,8 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Mariatta/python_versions_and_distros
-  - REPO=meolu/walle-web
+  - REPO=guardicore/monkey
   - REPO=jantic/DeOldify
 install:
   #- pip install -r requirements.txt
