@@ -16,15 +16,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=CSAILVision/IBD
-    - REPO=CSAILVision/NetDissect
-    - REPO=CSAILVision/NetDissect-Lite
-    - REPO=CSAILVision/gandissect
-    - REPO=CSAILVision/miniplaces
-    - REPO=CSAILVision/places365
-    - REPO=CSAILVision/semantic-segmentation-pytorch
-    - REPO=CSAILVision/unifiedparsing
-    - REPO=CSAILVision/vision-cluster
+    - REPO=rsms/inter
+    - REPO=rsms/kvs-contract
+    - REPO=rsms/pyca
+    - REPO=rsms/smisk
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
