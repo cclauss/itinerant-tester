@@ -16,51 +16,15 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jofpin/trape
-  - REPO=1991viet/QuickDraw
-  - REPO=google-research/bert
-  - REPO=minimaxir/big-list-of-naughty-strings
-  - REPO=inoryy/reaver-pysc2
-  - REPO=TheAlgorithms/Python
-  - REPO=tensorflow/models
-  - REPO=python-trio/trio
-  - REPO=donnemartin/system-design-primer
-  - REPO=facebookresearch/fastMRI
-  - REPO=cleardusk/3DDFA
-  - REPO=Tencent/tencent-ml-images
-  - REPO=diveintodeeplearning/d2l-en
-  - REPO=keras-team/keras
-  - REPO=meolu/walle-web
-  - REPO=rg3/youtube-dl
-  - REPO=OpenMined/PySyft
-  - REPO=vinta/awesome-python
-  - REPO=toddmotto/public-apis
-  - REPO=spotify/chartify
-  - REPO=geekcomputers/Python
-  - REPO=pallets/flask
-  - REPO=python/cpython
-  - REPO=hanxiao/bert-as-service
-  - REPO=home-assistant/home-assistant
-  - REPO=ArduPilot/ardupilot
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
-  - REPO=google/ffn
-  - REPO=joxeankoret/pigaios
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
+    - REPO=jofpin/FSpuerto
+    - REPO=jofpin/backcookie
+    - REPO=jofpin/brutto
+    - REPO=jofpin/compaXSS
+    - REPO=jofpin/fuckshell
+    - REPO=jofpin/sack
+    - REPO=jofpin/smallpy
+    - REPO=jofpin/trape
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
