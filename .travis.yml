@@ -15,7 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=pytorch/examples 
+    - REPO=MasoniteFramework/core
+    - REPO=MasoniteFramework/craft
+    - REPO=MasoniteFramework/masonite
 
 install:
   #- pip install -r requirements.txt
