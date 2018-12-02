@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=MikeTheWatchGuy/PySimpleGUI
+    - REPO=edsu/pymarc
 
 install:
   #- pip install -r requirements.txt
