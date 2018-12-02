@@ -15,15 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=AUEB-BALab/VulinOSS
-    - REPO=AUEB-BALab/RepoFS
-    - REPO=AUEB-BALab/web
-    - REPO=CAST-Extend/com.castsoftware.uc.checkanalysiscompleteness
-    - REPO=wise-team/steemprojects.com
-    - REPO=CSNW/html5libs
-    - REPO=soorichu/django-girls
-    - REPO=djangopackages/djangopackages
-    - REPO=mochajazz/venv-demos
+    - REPO=refack/GYP
 
 install:
   #- pip install -r requirements.txt
