@@ -16,36 +16,35 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=jazzband/contextlib2  # has .travis.yml file
-    - REPO=jazzband/django-admin2  # has .travis.yml file
-    - REPO=jazzband/django-analytical  # has .travis.yml file
-    - REPO=jazzband/django-authority  # has .travis.yml file
-    - REPO=jazzband/django-axes  # has .travis.yml file
-    - REPO=jazzband/django-configurations  # has .travis.yml file
-    - REPO=jazzband/django-constance  # has .travis.yml file
-    - REPO=jazzband/django-debug-toolbar  # has .travis.yml file
-    - REPO=jazzband/django-discover-jenkins  # has .travis.yml file
-    - REPO=jazzband/django-embed-video  # has .travis.yml file
-    - REPO=jazzband/django-flatblocks  # has .travis.yml file
-    - REPO=jazzband/django-hosts  # has .travis.yml file
-    - REPO=jazzband/django-ical  # has .travis.yml file
-    - REPO=jazzband/django-model-utils  # has .travis.yml file
-    - REPO=jazzband/django-mongonaut  # has .travis.yml file
-    - REPO=jazzband/django-oauth-toolkit  # has .travis.yml file
-    - REPO=jazzband/django-pipeline  # has .travis.yml file
-    - REPO=jazzband/django-push-notifications  # has .travis.yml file
-    - REPO=jazzband/django-queued-storage  # has .travis.yml file
-    - REPO=jazzband/django-redshift-backend  # has .travis.yml file
-    - REPO=jazzband/django-robots  # has .travis.yml file
-    - REPO=jazzband/django-silk  # has .travis.yml file
-    - REPO=jazzband/django-simple-menu  # has .travis.yml file
-    - REPO=jazzband/django-sorter  # has .travis.yml file
-    - REPO=jazzband/django-widget-tweaks  # has .travis.yml file
-    - REPO=jazzband/inflect  # has .travis.yml file
-    - REPO=jazzband/pip-tools  # has .travis.yml file
-    - REPO=jazzband/prettytable
-    - REPO=jazzband/sorl-thumbnail  # has .travis.yml file
-    - REPO=jazzband/website
+    - REPO=abbeyokgo/-
+    - REPO=abbeyokgo/Bilibili_login_geetest
+    - REPO=abbeyokgo/FreeForWenku
+    - REPO=abbeyokgo/MachineLearning_Python
+    - REPO=abbeyokgo/ProxyPool
+    - REPO=abbeyokgo/PyOne
+    - REPO=abbeyokgo/SinaWeibo
+    - REPO=abbeyokgo/aria2c-py
+    - REPO=abbeyokgo/blog_migrate_tool
+    - REPO=abbeyokgo/crawler-py
+    - REPO=abbeyokgo/douyu_dm
+    - REPO=abbeyokgo/get-email-by-tieba
+    - REPO=abbeyokgo/hexo_weibo_image
+    - REPO=abbeyokgo/k1kmz
+    - REPO=abbeyokgo/ojbk_jiexi
+    - REPO=abbeyokgo/owllook
+    - REPO=abbeyokgo/payjs_faka
+    - REPO=abbeyokgo/proxy_pool  # has .travis.yml file
+    - REPO=abbeyokgo/python-bittrex  # has .travis.yml file
+    - REPO=abbeyokgo/python-flickr
+    - REPO=abbeyokgo/python-spider
+    - REPO=abbeyokgo/pythoncode
+    - REPO=abbeyokgo/pytumblr  # has .travis.yml file
+    - REPO=abbeyokgo/tumblr_crawler
+    - REPO=abbeyokgo/wechat_articles_spider
+    - REPO=abbeyokgo/wechat_jump_game
+    - REPO=abbeyokgo/weiboPicDownloader
+    - REPO=abbeyokgo/youku
+    - REPO=abbeyokgo/youtube-upload
 
 install:
   #- pip install -r requirements.txt
