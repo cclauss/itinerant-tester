@@ -16,7 +16,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=edsu/pymarc
+    - REPO=pytorch/examples 
 
 install:
   #- pip install -r requirements.txt
