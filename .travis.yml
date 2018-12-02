@@ -16,11 +16,19 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=watson-developer-cloud/community
-    - REPO=watson-developer-cloud/personality-insights-twitter-python  # has .travis.yml file
-    - REPO=watson-developer-cloud/python-primer-companion-code  # has .travis.yml file
-    - REPO=watson-developer-cloud/python-sdk  # has .travis.yml file
     - REPO=watson-developer-cloud/speech-to-text-websockets-python
+    - REPO=ehdsouza/base  # has .travis.yml file
+    - REPO=cloudmesh/client
+    - REPO=watson-intu/self-python-sdk
+    - REPO=watson-intu/self
+    - REPO=watson-intu/cpp-sdk
+    - REPO=watson-intu/self-plugins
+    - REPO=watson-intu/self-pcl-plugin
+    - REPO=watson-intu/self-docs
+    - REPO=watson-intu/self-javascript-sdk
+    - REPO=watson-intu/self-unity-sdk
+    - REPO=watson-intu/self-java-sdk
+    - REPO=watson-intu/self-sdk
 
 install:
   #- pip install -r requirements.txt
