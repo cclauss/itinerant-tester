@@ -15,53 +15,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=leisurelicht/wtfpython-cn
-  - REPO=satwikkansal/wtfpython
-  - REPO=diveintodeeplearning/d2l-zh
-  - REPO=toddmotto/public-apis
-  - REPO=pfnet/optuna
-  - REPO=google-research/bert
-  - REPO=tensorflow/models
-  - REPO=kennethreitz/responder
-  - REPO=nbedos/termtosvg
-  - REPO=TheAlgorithms/Python
-  - REPO=facebookresearch/Horizon
-  - REPO=jantic/DeOldify
-  - REPO=jofpin/trape
-  - REPO=donnemartin/system-design-primer
-  - REPO=ageitgey/face_recognition
-  - REPO=vinta/awesome-python
-  - REPO=facebookresearch/VideoPose3D
-  - REPO=hanxiao/bert-as-service
-  - REPO=home-assistant/home-assistant
-  - REPO=MIC-DKFZ/trixi
-  - REPO=rg3/youtube-dl
-  - REPO=keras-team/keras
-  - REPO=geekcomputers/Python
-  - REPO=CSAILVision/gandissect
-  - REPO=scikit-learn/scikit-learn
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=ibm-watson-iot/functions
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=C2FO/simple-salesforce  # has .travis.yml file
+    - REPO=garrypolley/ColorConvert
+    - REPO=garrypolley/cookiecutter-django  # has .travis.yml file
+    - REPO=garrypolley/disable-docstring
+    - REPO=garrypolley/django
+    - REPO=garrypolley/django-example-decorate-view
+    - REPO=garrypolley/django-girls-blog
+    - REPO=garrypolley/django-heroku-static-example
+    - REPO=garrypolley/django-mongonaut  # has .travis.yml file
+    - REPO=garrypolley/django_generic_permissions
+    - REPO=garrypolley/djorm-talk
+    - REPO=garrypolley/flicklist-python
+    - REPO=garrypolley/kuberwatcher
+    - REPO=garrypolley/python-parameter-talk
+    - REPO=garrypolley/utility_commands
+    - REPO=garrypolley/yelp-client
+    - REPO=garrypolley/zmanapp
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
