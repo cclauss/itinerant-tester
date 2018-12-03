@@ -20,6 +20,7 @@ username = getpass.getuser()  # Does local username == GitHub username?
 print('Please enter the GitHub password for user: {}'.format(username))
 gh = github3_login(username, getpass.getpass())
 
+# url = 'https://github.com/trending/jupyter-notebook'  # GitHub Trending top 25 repos
 url = 'https://github.com/trending/python'  # GitHub Trending top 25 repos
 # url += '?since=weekly'
 # url += '?since=monthly'
@@ -29,8 +30,7 @@ ignore = []
 
 # the boilerplate content of the .travis.yml file
 fmt = """group: travis_latest
-dist: xenial    # required for Python 3.7 (travis-ci/travis-ci#9069)
-sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
+dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
@@ -75,17 +75,15 @@ repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
 # 'python/cpython'
 repos = (repo.text.strip().replace(' ', '') for repo in repos
          if '/' in repo.text and '://' not in repo.text)
-repos = list(repos) + ['matplotlib/matplotlib', 'ckan/ckan', 'apache/beam',
-    'ggtracker/sc2reader', 'hyperledger/fabric', 'vnpy/vnpy',
-    # 'ansible/awx', 'cheshirekow/cmake_format',
-    # 'ArduPilot/ardupilot', 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
-    'PythonCharmers/python-future', 'ansible/ansible', 'Tribler/tribler',
-    'apache/incubator-mxnet', 'apache/spark', 'oaubert/python-vlc',
-    'gevent/gevent', 'getsentry/sentry',
-    # 'apache/incubator-openwhisk',
-    # 'apache/incubator-openwhisk-client-python',
-    # 'apache/incubator-openwhisk-runtime-python',
-    # 'apache/incubator-openwhisk-utilities',
+repos = list(repos) + ['PythonCharmers/python-future',
+    # 'ansible/awx', 'cheshirekow/cmake_format', 'n1nj4sec/pupy',
+    # 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
+    'ansible/ansible', 'Tribler/tribler', 'vnpy/vnpy', 'oaubert/python-vlc',
+    'getsentry/sentry', 'CoreSecurity/impacket', 'ibm-watson-iot/functions',
+    'nodejs/node', 'nodejs/node-gyp', 'internetarchive/openlibrary', 'google/ffn',
+    'webpy/webpy', 'ibm-watson-iot/connector-cloudant', 'ibm-watson-iot/device-kodi',
+    'ArduPilot/ardupilot', 'matplotlib/matplotlib', 'ckan/ckan', 'ggtracker/sc2reader',
+    'apache/beam', 'apache/incubator-mxnet', 'apache/spark',
 ]
     # 'httplib2/httplib2', 'Supervisor/supervisor'
     # 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python']
