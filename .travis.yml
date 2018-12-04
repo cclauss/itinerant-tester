@@ -15,23 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=C2FO/simple-salesforce  # has .travis.yml file
-    - REPO=garrypolley/ColorConvert
-    - REPO=garrypolley/cookiecutter-django  # has .travis.yml file
-    - REPO=garrypolley/disable-docstring
-    - REPO=garrypolley/django
-    - REPO=garrypolley/django-example-decorate-view
-    - REPO=garrypolley/django-girls-blog
-    - REPO=garrypolley/django-heroku-static-example
-    - REPO=garrypolley/django-mongonaut  # has .travis.yml file
-    - REPO=garrypolley/django_generic_permissions
-    - REPO=garrypolley/djorm-talk
-    - REPO=garrypolley/flicklist-python
-    - REPO=garrypolley/kuberwatcher
-    - REPO=garrypolley/python-parameter-talk
-    - REPO=garrypolley/utility_commands
-    - REPO=garrypolley/yelp-client
-    - REPO=garrypolley/zmanapp
+    - REPO=tensorflow/tensor2tensor
+    - REPO=v8/v8
 
 install:
   #- pip install -r requirements.txt
