@@ -15,21 +15,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=bazelbuild/bazel
-    - REPO=bazelbuild/bazel-buildfarm
-    - REPO=bazelbuild/intellij
-    - REPO=bazelbuild/tools_remote
-    - REPO=bazelbuild/bazel-integration-testing
-    - REPO=bazelbuild/BUILD_file_generator
-    - REPO=bazelbuild/eclipse
-    - REPO=bazelbuild/migration-tooling
-    - REPO=bazelbuild/bazel-watcher
-    - REPO=bazelbuild/buildtools
-    - REPO=bazelbuild/sandboxfs
-    - REPO=bazelbuild/bazel-gazelle
-    - REPO=bazelbuild/rules_webtesting
-    - REPO=bazelbuild/tools_jvm_autodeps
-    - REPO=bazelbuild/rules_pkg
+    - REPO=sgraham/crb
+    - REPO=sgraham/crfuchbot
+    - REPO=sgraham/cyp
+    - REPO=sgraham/seaborgium_retry
+    - REPO=sgraham/tangerine_ofx_to_html
+    - REPO=sgraham/utils_bin
+    - REPO=refack/CellProfiler  # has .travis.yml file
+    - REPO=refack/GYP  # has .travis.yml file
+    - REPO=refack/OpticalPooledScreens
+    - REPO=refack/clcache
+    - REPO=refack/cmd-call-graph
+    - REPO=refack/labnoteify
+    - REPO=refack/node-gyp
+    - REPO=refack/pipenv
+    - REPO=refack/pipfile  # has .travis.yml file
+    - REPO=refack/tap2junit
+    - REPO=refack/waf
 
 install:
   #- pip install -r requirements.txt
