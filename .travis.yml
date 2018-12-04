@@ -15,7 +15,21 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=google/containerregistry
+    - REPO=bazelbuild/bazel
+    - REPO=bazelbuild/bazel-buildfarm
+    - REPO=bazelbuild/intellij
+    - REPO=bazelbuild/tools_remote
+    - REPO=bazelbuild/bazel-integration-testing
+    - REPO=bazelbuild/BUILD_file_generator
+    - REPO=bazelbuild/eclipse
+    - REPO=bazelbuild/migration-tooling
+    - REPO=bazelbuild/bazel-watcher
+    - REPO=bazelbuild/buildtools
+    - REPO=bazelbuild/sandboxfs
+    - REPO=bazelbuild/bazel-gazelle
+    - REPO=bazelbuild/rules_webtesting
+    - REPO=bazelbuild/tools_jvm_autodeps
+    - REPO=bazelbuild/rules_pkg
 
 install:
   #- pip install -r requirements.txt
