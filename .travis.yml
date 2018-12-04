@@ -15,20 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=IBM/MAX-Framework  # has .travis.yml file
-    - REPO=IBM/MAX-Audio-Classifier  # has .travis.yml file
-    - REPO=IBM/MAX-Facial-Age-Estimator  # has .travis.yml file
-    - REPO=IBM/MAX-Fast-Neural-Style-Transfer  # has .travis.yml file
-    - REPO=IBM/MAX-Image-Caption-Generator  # has .travis.yml file
-    - REPO=IBM/MAX-Image-Colorizer  # has .travis.yml file
-    - REPO=IBM/MAX-News-Text-Generator  # has .travis.yml file
-    - REPO=IBM/MAX-Object-Detector
-    - REPO=IBM/MAX-ResNet-50  # has .travis.yml file
-    - REPO=IBM/MAX-Review-Text-Generator  # has .travis.yml file
-    - REPO=IBM/MAX-Scene-Classifier  # has .travis.yml file
-    - REPO=IBM/MAX-Sports-Video-Classifier  # has .travis.yml file
-    - REPO=IBM/MAX-Word-Embedding-Generator
- 
+  - REPO=OpenMined/PySyft
+  - REPO=leisurelicht/wtfpython-cn
+  - REPO=satwikkansal/wtfpython
+  - REPO=asavinov/lambdo
+  - REPO=pfnet/optuna
+  - REPO=tensorflow/models
+  - REPO=joelibaceta/video-to-ascii
+  - REPO=toddmotto/public-apis
+  - REPO=waditu/tushare
+  - REPO=google-research/bert
+  - REPO=stewartmcgown/uds
+  - REPO=diveintodeeplearning/d2l-zh
+  - REPO=yilirin/BDCI_Car_2018
+  - REPO=keras-team/keras
+  - REPO=Scitator/catalyst
+  - REPO=donnemartin/system-design-primer
+  - REPO=TheAlgorithms/Python
+  - REPO=vinta/awesome-python
+  - REPO=home-assistant/home-assistant
+  - REPO=bbolli/tumblr-utils
+  - REPO=allo-/firefox-profilemaker
+  - REPO=jantic/DeOldify
+  - REPO=ageitgey/face_recognition
+  - REPO=django/django
+  - REPO=jofpin/trape
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
