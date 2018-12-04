@@ -15,11 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=markstur/ibmcodechallengetracker
-    - REPO=markstur/scaleio-flocker-driver
-    - REPO=markstur/watson-online-store  # has .travis.yml file
-    - REPO=markstur/db2-event-store-akka-streams
-    - REPO=IBM/nodejs-in-notebooks
+    - REPO=refack/ronenakerman.com
 
 install:
   #- pip install -r requirements.txt
