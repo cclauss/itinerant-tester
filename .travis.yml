@@ -15,20 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=stripe/confidant  # has .travis.yml file
-    - REPO=stripe/curator  # has .travis.yml file
-    - REPO=stripe/datadog-checks
-    - REPO=stripe/dd-agent  # has .travis.yml file
-    - REPO=stripe/doorman  # has .travis.yml file
-    - REPO=stripe/monospace-django
-    - REPO=stripe/python-confidant-client  # has .travis.yml file
-    - REPO=stripe/python-kmsauth  # has .travis.yml file
-    - REPO=stripe/rules_scala  # has .travis.yml file
-    - REPO=stripe/sentry-restricted-github
-    - REPO=stripe/statsdump
-    - REPO=stripe/stripe-python  # has .travis.yml file
-    - REPO=stripe/topmodel
-
+    - REPO=soasme/lgtm
+    - REPO=freeipa/freeipa
+    - REPO=annarailton/studious-pancake
+    - REPO=samlanning/lgtm-test-repo-3
+    - REPO=andysim/helpme
+    - REPO=Acellera/htmd
+    - REPO=lyft/confidant
 
 install:
   #- pip install -r requirements.txt
