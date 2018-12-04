@@ -15,7 +15,22 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=refack/ronenakerman.com
+    - REPO=iodide-project/data-benchmark
+    - REPO=iodide-project/iodide
+    - REPO=iodide-project/pyodide
+    - REPO=huge-success/sanic
+    - REPO=huge-success/sanic-openapi
+    - REPO=hubblestack/hubble
+    - REPO=hubblestack/hubble-salt
+    - REPO=hubblestack/nebula
+    - REPO=hubblestack/nova
+    - REPO=hubblestack/pulsar
+    - REPO=hubblestack/quasar
+    - REPO=zotroneneis/LSTM_language_model
+    - REPO=zotroneneis/ProjectEuler
+    - REPO=zotroneneis/game_AI
+    - REPO=zotroneneis/magical_universe
+    - REPO=mypyc/mypyc
 
 install:
   #- pip install -r requirements.txt
