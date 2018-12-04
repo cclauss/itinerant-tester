@@ -15,37 +15,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=tonybaloney/StackStorm-infoblox
-    - REPO=tonybaloney/baloneyscript
-    - REPO=tonybaloney/cards  # has .travis.yml file
-    - REPO=tonybaloney/cpython  # has .travis.yml file
-    - REPO=tonybaloney/django-badger  # has .travis.yml file
-    - REPO=tonybaloney/email-toolbox
-    - REPO=tonybaloney/friendly-deprecation-test
-    - REPO=tonybaloney/infoblox-client  # has .travis.yml file
-    - REPO=tonybaloney/libcloud
-    - REPO=tonybaloney/pathgather  # has .travis.yml file
-    - REPO=tonybaloney/performance  # has .travis.yml file
-    - REPO=tonybaloney/pip  # has .travis.yml file
-    - REPO=tonybaloney/pluralsight  # has .travis.yml file
-    - REPO=tonybaloney/pytest  # has .travis.yml file
-    - REPO=tonybaloney/python-packaging-user-guide  # has .travis.yml file
-    - REPO=tonybaloney/python-zeep  # has .travis.yml file
-    - REPO=tonybaloney/pyviera-1
-    - REPO=tonybaloney/requests-staticmock  # has .travis.yml file
-    - REPO=tonybaloney/retox  # has .travis.yml file
-    - REPO=tonybaloney/salt
-    - REPO=tonybaloney/sciencelogic  # has .travis.yml file
-    - REPO=tonybaloney/search-tweets-python
-    - REPO=tonybaloney/sphinxcontrib-confluencebuilder  # has .travis.yml file
-    - REPO=tonybaloney/stackstorm-infoblox-1
-    - REPO=tonybaloney/stackstorm-servicenow
-    - REPO=tonybaloney/tox-nuitka  # has .travis.yml file
-    - REPO=tonybaloney/tox-pipenv  # has .travis.yml file
-    - REPO=tonybaloney/wily  # has .travis.yml file
-    - REPO=tonybaloney/woof
-    - REPO=tonybaloney/workday  # has .travis.yml file
-
+    - REPO=IBM/MAX-Framework  # has .travis.yml file
+    - REPO=IBM/MAX-Audio-Classifier  # has .travis.yml file
+    - REPO=IBM/MAX-Facial-Age-Estimator  # has .travis.yml file
+    - REPO=IBM/MAX-Fast-Neural-Style-Transfer  # has .travis.yml file
+    - REPO=IBM/MAX-Image-Caption-Generator  # has .travis.yml file
+    - REPO=IBM/MAX-Image-Colorizer  # has .travis.yml file
+    - REPO=IBM/MAX-News-Text-Generator  # has .travis.yml file
+    - REPO=IBM/MAX-Object-Detector
+    - REPO=IBM/MAX-ResNet-50  # has .travis.yml file
+    - REPO=IBM/MAX-Review-Text-Generator  # has .travis.yml file
+    - REPO=IBM/MAX-Scene-Classifier  # has .travis.yml file
+    - REPO=IBM/MAX-Sports-Video-Classifier  # has .travis.yml file
+    - REPO=IBM/MAX-Word-Embedding-Generator
+ 
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
