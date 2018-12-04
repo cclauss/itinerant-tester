@@ -15,7 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=google/cog
+    - REPO=soasme/lgtm
+    - REPO=freeipa/freeipa
+    - REPO=annarailton/studious-pancake
+    - REPO=samlanning/lgtm-test-repo-3
+    - REPO=andysim/helpme
+    - REPO=Acellera/htmd
+
 
 install:
   #- pip install -r requirements.txt
