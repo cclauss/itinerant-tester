@@ -15,23 +15,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=sgraham/crb
-    - REPO=sgraham/crfuchbot
-    - REPO=sgraham/cyp
-    - REPO=sgraham/seaborgium_retry
-    - REPO=sgraham/tangerine_ofx_to_html
-    - REPO=sgraham/utils_bin
-    - REPO=refack/CellProfiler  # has .travis.yml file
-    - REPO=refack/GYP  # has .travis.yml file
-    - REPO=refack/OpticalPooledScreens
-    - REPO=refack/clcache
-    - REPO=refack/cmd-call-graph
-    - REPO=refack/labnoteify
-    - REPO=refack/node-gyp
-    - REPO=refack/pipenv
-    - REPO=refack/pipfile  # has .travis.yml file
-    - REPO=refack/tap2junit
-    - REPO=refack/waf
+    - REPO=markstur/ibmcodechallengetracker
+    - REPO=markstur/scaleio-flocker-driver
+    - REPO=markstur/watson-online-store  # has .travis.yml file
+    - REPO=markstur/db2-event-store-akka-streams
+    - REPO=IBM/nodejs-in-notebooks
 
 install:
   #- pip install -r requirements.txt
