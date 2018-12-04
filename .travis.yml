@@ -15,36 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=IBM/AIF360  # has .travis.yml file
-    - REPO=IBM/CROWN-Robustness-Certification
-    - REPO=IBM/MAX-Facial-Age-Estimator-Web-App  # has .travis.yml file
-    - REPO=IBM/MAX-Framework
-    - REPO=IBM/MAX-Review-Text-Generator  # has .travis.yml file
-    - REPO=IBM/MAX-Scene-Classifier  # has .travis.yml file
-    - REPO=IBM/Portfolio-Optimize  # has .travis.yml file
-    - REPO=IBM/Portfolio-compute  # has .travis.yml file
-    - REPO=IBM/Predictive-Market-Stress-Testing  # has .travis.yml file
-    - REPO=IBM/audioset-classification
-    - REPO=IBM/cognitive-moderator-service
-    - REPO=IBM/connector-for-storediq
-    - REPO=IBM/dsrc
-    - REPO=IBM/home-assistant
-    - REPO=IBM/iot-device-trend-analysis  # has .travis.yml file
-    - REPO=IBM/max-tutorial-app-python
-    - REPO=IBM/mi-prometheus
-    - REPO=IBM/nlc-icd10-classifier  # has .travis.yml file
-    - REPO=IBM/ny-power  # has .travis.yml file
-    - REPO=IBM/osslm-ansible-resource-manager
-    - REPO=IBM/page-lab
-    - REPO=IBM/photorealistic-blocksworld
-    - REPO=IBM/powerai-transfer-learning
-    - REPO=IBM/pytorch-seq2seq  # has .travis.yml file
-    - REPO=IBM/serverless-app-python
-    - REPO=IBM/solution-test-samples
-    - REPO=IBM/stix-shifter  # has .travis.yml file
-    - REPO=IBM/tensorflow-hangul-recognition  # has .travis.yml file
-    - REPO=IBM/watson-online-store  # has .travis.yml file
-    - REPO=IBM/wc-devops-utilities
+    - REPO=google/cog
 
 install:
   #- pip install -r requirements.txt
