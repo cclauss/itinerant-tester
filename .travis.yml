@@ -15,13 +15,35 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=soasme/lgtm
-    - REPO=freeipa/freeipa
-    - REPO=annarailton/studious-pancake
-    - REPO=samlanning/lgtm-test-repo-3
-    - REPO=andysim/helpme
-    - REPO=Acellera/htmd
-    - REPO=lyft/confidant
+    - REPO=bazelbuild/bazel-skylib  # has .travis.yml file
+    - REPO=bazelbuild/bazel-toolchains  # has .travis.yml file
+    - REPO=bazelbuild/continuous-integration
+    - REPO=bazelbuild/examples
+    - REPO=bazelbuild/gmaven_rules
+    - REPO=bazelbuild/remote-apis
+    - REPO=bazelbuild/rules_android
+    - REPO=bazelbuild/rules_angular
+    - REPO=bazelbuild/rules_appengine
+    - REPO=bazelbuild/rules_apple  # has .travis.yml file
+    - REPO=bazelbuild/rules_closure  # has .travis.yml file
+    - REPO=bazelbuild/rules_d
+    - REPO=bazelbuild/rules_docker  # has .travis.yml file
+    - REPO=bazelbuild/rules_dotnet  # has .travis.yml file
+    - REPO=bazelbuild/rules_foreign_cc
+    - REPO=bazelbuild/rules_go  # has .travis.yml file
+    - REPO=bazelbuild/rules_groovy
+    - REPO=bazelbuild/rules_gwt
+    - REPO=bazelbuild/rules_jsonnet
+    - REPO=bazelbuild/rules_k8s
+    - REPO=bazelbuild/rules_nodejs
+    - REPO=bazelbuild/rules_perl
+    - REPO=bazelbuild/rules_python  # has .travis.yml file
+    - REPO=bazelbuild/rules_rust
+    - REPO=bazelbuild/rules_sass
+    - REPO=bazelbuild/rules_scala  # has .travis.yml file
+    - REPO=bazelbuild/rules_swift  # has .travis.yml file
+    - REPO=bazelbuild/skydoc
+    - REPO=bazelbuild/tools_android
 
 install:
   #- pip install -r requirements.txt
