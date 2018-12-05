@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,7 +15,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=internetarchive/openlibrary
+  - REPO=avakar/pytoml
+  - REPO=dbohdan/remarshal
+  - REPO=dateutil/dateutil
+  - REPO=yaml/Cerealizer
+  - REPO=yaml/dictspec
+  - REPO=yaml/marrow.config
+  - REPO=yaml/online-yaml-parser
+  - REPO=yaml/pysyck
+  - REPO=yaml/pyyaml  # has .travis.yml file
+  - REPO=yaml/yamlfold
+  - REPO=yaml/ygrep
+  - REPO=yaml/yxml
 
 install:
   #- pip install -r requirements.txt
