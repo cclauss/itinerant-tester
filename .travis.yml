@@ -15,21 +15,16 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
-  - REPO=v8/node
-  - REPO=v8/sampling-heap-profiler
-  - REPO=chromium/chromium
-  - REPO=chromium/blink-intent-tracker
-  - REPO=chromium/caterpillar
-  - REPO=chromium/codesearch-py  # has .travis.yml file
-  - REPO=chromium/gyp  # has .travis.yml file
-  - REPO=chromium/ozone-client
-  - REPO=chromium/vim-codesearch  # has .travis.yml file
-  - REPO=chromium/web-page-replay  # has .travis.yml file
-  - REPO=chromium/gyp
-  - REPO=nodejs/node
-  - REPO=nodejs/gyp
-  - REPO=refack/GYP
+    - REPO=okken/cards  # has .travis.yml file
+    - REPO=okken/cookiecutter-pytest-plugin  # has .travis.yml file
+    - REPO=okken/markdown.py
+    - REPO=okken/pip-init  # has .travis.yml file
+    - REPO=okken/pycharm_2018_Feb
+    - REPO=okken/pytest  # has .travis.yml file
+    - REPO=okken/pytest-check
+    - REPO=okken/pytest-expect
+    - REPO=okken/pytest-json-report  # has .travis.yml file
+    - REPO=okken/pytest-requests  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
