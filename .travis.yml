@@ -15,7 +15,21 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=v8/v8
+  - REPO=v8/node
+  - REPO=v8/sampling-heap-profiler
+  - REPO=chromium/chromium
+  - REPO=chromium/blink-intent-tracker
+  - REPO=chromium/caterpillar
+  - REPO=chromium/codesearch-py  # has .travis.yml file
+  - REPO=chromium/gyp  # has .travis.yml file
+  - REPO=chromium/ozone-client
+  - REPO=chromium/vim-codesearch  # has .travis.yml file
+  - REPO=chromium/web-page-replay  # has .travis.yml file
   - REPO=chromium/gyp
+  - REPO=nodejs/node
+  - REPO=nodejs/gyp
+  - REPO=refack/GYP
 
 install:
   #- pip install -r requirements.txt
