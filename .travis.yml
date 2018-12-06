@@ -15,37 +15,17 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=hackebrot/PyPOM-screenshot
-    - REPO=hackebrot/apistar  # has .travis.yml file
-    - REPO=hackebrot/attrs  # has .travis.yml file
-    - REPO=hackebrot/briefcase
-    - REPO=hackebrot/changelogs  # has .travis.yml file
-    - REPO=hackebrot/cookiecutter  # has .travis.yml file
-    - REPO=hackebrot/cookiecutter-django  # has .travis.yml file
-    - REPO=hackebrot/cookiecutter-examples
-    - REPO=hackebrot/cookiedozer
-    - REPO=hackebrot/cpython  # has .travis.yml file
-    - REPO=hackebrot/django
-    - REPO=hackebrot/django-rest-framework  # has .travis.yml file
-    - REPO=hackebrot/dojo-asciiart
-    - REPO=hackebrot/enhanced-coc-hotline
-    - REPO=hackebrot/glean_parser  # has .travis.yml file
-    - REPO=hackebrot/jinja2-time  # has .travis.yml file
-    - REPO=hackebrot/labels  # has .travis.yml file
-    - REPO=hackebrot/mozillians-tests  # has .travis.yml file
-    - REPO=hackebrot/poyo  # has .travis.yml file
-    - REPO=hackebrot/pytest  # has .travis.yml file
-    - REPO=hackebrot/pytest-cookies  # has .travis.yml file
-    - REPO=hackebrot/pytest-covfefe
-    - REPO=hackebrot/pytest-tricks  # has .travis.yml file
-    - REPO=hackebrot/python-bee
-    - REPO=hackebrot/python-type-hints
-    - REPO=hackebrot/redash
-    - REPO=hackebrot/sfallhands
-    - REPO=hackebrot/tox  # has .travis.yml file
-    - REPO=hackebrot/uvloop  # has .travis.yml file
-    - REPO=hackebrot/widget-cookiecutter
-    
+    - REPO=tox-dev/cookiecutter-tox-plugin  # has .travis.yml file
+    - REPO=tox-dev/detox  # has .travis.yml file
+    - REPO=tox-dev/tox
+    - REPO=tox-dev/tox-conda  # has .travis.yml file
+    - REPO=tox-dev/tox-docker  # has .travis.yml file
+    - REPO=tox-dev/tox-durations
+    - REPO=tox-dev/tox-pip-extensions  # has .travis.yml file
+    - REPO=tox-dev/tox-pipenv  # has .travis.yml file
+    - REPO=tox-dev/tox-travis  # has .travis.yml file
+    - REPO=tox-dev/tox-venv  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
