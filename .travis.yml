@@ -15,17 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=tox-dev/cookiecutter-tox-plugin  # has .travis.yml file
-    - REPO=tox-dev/detox  # has .travis.yml file
-    - REPO=tox-dev/tox
-    - REPO=tox-dev/tox-conda  # has .travis.yml file
-    - REPO=tox-dev/tox-docker  # has .travis.yml file
-    - REPO=tox-dev/tox-durations
-    - REPO=tox-dev/tox-pip-extensions  # has .travis.yml file
-    - REPO=tox-dev/tox-pipenv  # has .travis.yml file
-    - REPO=tox-dev/tox-travis  # has .travis.yml file
-    - REPO=tox-dev/tox-venv  # has .travis.yml file
-
+  - REPO=satwikkansal/wtfpython
+  - REPO=leisurelicht/wtfpython-cn
+  - REPO=joelibaceta/video-to-ascii
+  - REPO=sdispater/poetry
+  - REPO=tensorflow/ranking
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=tensorflow/models
+  - REPO=google-research/bert
+  - REPO=XuefengHuang/lianjia-scrawler
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=TheAlgorithms/Python
+  - REPO=donnemartin/system-design-primer
+  - REPO=fbkcs/ThunderDNS
+  - REPO=diveintodeeplearning/d2l-zh
+  - REPO=vinta/awesome-python
+  - REPO=geekcomputers/Python
+  - REPO=idealo/image-super-resolution
+  - REPO=keras-team/keras
+  - REPO=hanxiao/bert-as-service
+  - REPO=rg3/youtube-dl
+  - REPO=toddmotto/public-apis
+  - REPO=tech-srl/code2vec
+  - REPO=django/django
+  - REPO=ansible/ansible
+  - REPO=apachecn/awesome-algorithm
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
