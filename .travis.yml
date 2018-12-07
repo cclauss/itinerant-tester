@@ -15,7 +15,38 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=harelba/q
+    - REPO=nicolasnoble/CouchPotatoServer
+    - REPO=nicolasnoble/node-pre-gyp-testcase
+    - REPO=nicolasnoble/openssl-nodejs-ubuntu-demo
+    - REPO=grpc/grpc-node
+    - REPO=grpc/grpc-proto
+    - REPO=ehashman/WelcomeBot
+    - REPO=ehashman/ansiblefest
+    - REPO=ehashman/auditwheel  # has .travis.yml file
+    - REPO=ehashman/falcon-mutualauth  # has .travis.yml file
+    - REPO=ehashman/molecule  # has .travis.yml file
+    - REPO=ehashman/oh-bugimporters  # has .travis.yml file
+    - REPO=ehashman/oh-mainline  # has .travis.yml file
+    - REPO=ehashman/pelican-plugins  # has .travis.yml file
+    - REPO=ehashman/peps  # has .travis.yml file
+    - REPO=ehashman/pip  # has .travis.yml file
+    - REPO=ehashman/pyceo
+    - REPO=ehashman/rickastley
+    - REPO=unode/Coherence
+    - REPO=unode/cloud-genomics
+    - REPO=unode/django-mailer  # has .travis.yml file
+    - REPO=unode/ete  # has .travis.yml file
+    - REPO=unode/firefox_decrypt  # has .travis.yml file
+    - REPO=unode/htseq
+    - REPO=unode/jug  # has .travis.yml file
+    - REPO=unode/mOTUs_v2
+    - REPO=unode/mOTUs_v2_deps
+    - REPO=unode/nixs
+    - REPO=unode/panyc  # has .travis.yml file
+    - REPO=unode/pytagger
+    - REPO=unode/python-feedparser
+    - REPO=unode/q
+    - REPO=unode/simpletap  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
