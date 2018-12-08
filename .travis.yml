@@ -15,39 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=nicolasnoble/CouchPotatoServer
-    - REPO=nicolasnoble/node-pre-gyp-testcase
-    - REPO=nicolasnoble/openssl-nodejs-ubuntu-demo
-    - REPO=grpc/grpc-node
-    - REPO=grpc/grpc-proto
-    - REPO=ehashman/WelcomeBot
-    - REPO=ehashman/ansiblefest
-    - REPO=ehashman/auditwheel  # has .travis.yml file
-    - REPO=ehashman/falcon-mutualauth  # has .travis.yml file
-    - REPO=ehashman/molecule  # has .travis.yml file
-    - REPO=ehashman/oh-bugimporters  # has .travis.yml file
-    - REPO=ehashman/oh-mainline  # has .travis.yml file
-    - REPO=ehashman/pelican-plugins  # has .travis.yml file
-    - REPO=ehashman/peps  # has .travis.yml file
-    - REPO=ehashman/pip  # has .travis.yml file
-    - REPO=ehashman/pyceo
-    - REPO=ehashman/rickastley
-    - REPO=unode/Coherence
-    - REPO=unode/cloud-genomics
-    - REPO=unode/django-mailer  # has .travis.yml file
-    - REPO=unode/ete  # has .travis.yml file
-    - REPO=unode/firefox_decrypt  # has .travis.yml file
-    - REPO=unode/htseq
-    - REPO=unode/jug  # has .travis.yml file
-    - REPO=unode/mOTUs_v2
-    - REPO=unode/mOTUs_v2_deps
-    - REPO=unode/nixs
-    - REPO=unode/panyc  # has .travis.yml file
-    - REPO=unode/pytagger
-    - REPO=unode/python-feedparser
-    - REPO=unode/q
-    - REPO=unode/simpletap  # has .travis.yml file
-
+  - REPO=satwikkansal/wtfpython
+  - REPO=leisurelicht/wtfpython-cn
+  - REPO=tensorflow/ranking
+  - REPO=getredash/redash
+  - REPO=google-research/bert
+  - REPO=tldr-pages/tldr
+  - REPO=tensorflow/models
+  - REPO=junyanz/VON
+  - REPO=yzhao062/pyod
+  - REPO=hanxiao/bert-as-service
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=vinta/awesome-python
+  - REPO=joelibaceta/video-to-ascii
+  - REPO=idealo/image-super-resolution
+  - REPO=open-source-for-science/TensorFlow-Course
+  - REPO=donnemartin/system-design-primer
+  - REPO=rg3/youtube-dl
+  - REPO=evict/poc_CVE-2018-1002105
+  - REPO=fox-it/aclpwn.py
+  - REPO=keras-team/keras
+  - REPO=TheAlgorithms/Python
+  - REPO=django/django
+  - REPO=MIT-HAN-LAB/ProxylessNAS
+  - REPO=python/cpython
+  - REPO=Walleclipse/ChineseAddress_OCR
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
