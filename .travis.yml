@@ -15,20 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=tikitu/jsmin
-  - REPO=Tribler/PlebNet
-  - REPO=Tribler/application-tester
-  - REPO=Tribler/cloudomate
-  - REPO=Tribler/decentral-market
-  - REPO=Tribler/decentralized-mortgage-market
-  - REPO=Tribler/deployment-scripts
-  - REPO=Tribler/dispersy
-  - REPO=Tribler/fake-tribler-api
-  - REPO=Tribler/gumby
-  - REPO=Tribler/ipv8-android-app
-  - REPO=Tribler/py-ipv8
-  - REPO=Tribler/pymdht
-  - REPO=Tribler/tribler
+  - REPO=Tribler/trustchain-android
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
