@@ -15,22 +15,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=sybrenstuvel/DROP
-    - REPO=sybrenstuvel/PySvn
-    - REPO=sybrenstuvel/blenderid
-    - REPO=sybrenstuvel/blendfx-blender
-    - REPO=sybrenstuvel/cachecontrol  # has .travis.yml file
-    - REPO=sybrenstuvel/eve  # has .travis.yml file
-    - REPO=sybrenstuvel/flask-oauthlib  # has .travis.yml file
-    - REPO=sybrenstuvel/flickrapi  # has .travis.yml file
-    - REPO=sybrenstuvel/pose_thumbnails
-    - REPO=sybrenstuvel/python-rsa  # has .travis.yml file
-    - REPO=sybrenstuvel/quickypano
-    - REPO=sybrenstuvel/random-blender-addons
-    - REPO=sybrenstuvel/splode
-    - REPO=sybrenstuvel/sybren-cli-tools
-    - REPO=sybrenstuvel/vidstuff
-
+    - REPO=baruch/libsigrokdecode
+    - REPO=baruch/lsi_decode_loginfo
+    - REPO=baruch/nodemcu-utils
+    - REPO=baruch/redo
+    - REPO=baruch/sortedtar
+    - REPO=baruch/vplotter-experiments
+    - REPO=baruch/websec.py
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
