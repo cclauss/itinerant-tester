@@ -15,53 +15,22 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Delgan/loguru
-  - REPO=google/jax
-  - REPO=wonderfulsuccess/weixin_crawler
-  - REPO=meolu/walle-web
-  - REPO=satwikkansal/wtfpython
-  - REPO=leisurelicht/wtfpython-cn
-  - REPO=tensorflow/models
-  - REPO=google-research/bert
-  - REPO=yunjey/pytorch-tutorial
-  - REPO=OpenMined/PySyft
-  - REPO=dmlc/dgl
-  - REPO=donnemartin/system-design-primer
-  - REPO=Boerderij/Varken
-  - REPO=open-source-for-science/TensorFlow-Course
-  - REPO=vinta/awesome-python
-  - REPO=deepfakes/faceswap
-  - REPO=qxf2/wtfiswronghere
-  - REPO=lufficc/SSD
-  - REPO=keras-team/keras
-  - REPO=gkrizek/bash-lambda-layer
-  - REPO=cakinney/secure
-  - REPO=TheAlgorithms/Python
-  - REPO=rois-codh/kmnist
-  - REPO=shadowsocks/shadowsocks
-  - REPO=tomgoldstein/loss-landscape
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=ibm-watson-iot/functions
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=sybrenstuvel/DROP
+    - REPO=sybrenstuvel/PySvn
+    - REPO=sybrenstuvel/blenderid
+    - REPO=sybrenstuvel/blendfx-blender
+    - REPO=sybrenstuvel/cachecontrol  # has .travis.yml file
+    - REPO=sybrenstuvel/eve  # has .travis.yml file
+    - REPO=sybrenstuvel/flask-oauthlib  # has .travis.yml file
+    - REPO=sybrenstuvel/flickrapi  # has .travis.yml file
+    - REPO=sybrenstuvel/pose_thumbnails
+    - REPO=sybrenstuvel/python-rsa  # has .travis.yml file
+    - REPO=sybrenstuvel/quickypano
+    - REPO=sybrenstuvel/random-blender-addons
+    - REPO=sybrenstuvel/splode
+    - REPO=sybrenstuvel/sybren-cli-tools
+    - REPO=sybrenstuvel/vidstuff
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
