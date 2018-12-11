@@ -22,6 +22,9 @@ env:
     - REPO=baruch/sortedtar
     - REPO=baruch/vplotter-experiments
     - REPO=baruch/websec.py
+    - REPO=internetarchive/wmd
+    - REPO=derobins/wmd
+    - REPO=tikitu/jsmin
     
 install:
   #- pip install -r requirements.txt
