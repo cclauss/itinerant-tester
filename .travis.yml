@@ -15,53 +15,21 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=facebookresearch/pytext
-  - REPO=eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-  - REPO=vaexio/vaex
-  - REPO=Delgan/loguru
-  - REPO=rtqichen/torchdiffeq
-  - REPO=google/jax
-  - REPO=dmlc/dgl
-  - REPO=google-research/bert
-  - REPO=tensorflow/models
-  - REPO=leisurelicht/wtfpython-cn
-  - REPO=satwikkansal/wtfpython
-  - REPO=google/deepvariant
-  - REPO=vinta/awesome-python
-  - REPO=home-assistant/home-assistant
-  - REPO=python/cpython
-  - REPO=rg3/youtube-dl
-  - REPO=mindsdb/mindsdb
-  - REPO=TheAlgorithms/Python
-  - REPO=facebookresearch/maskrcnn-benchmark
-  - REPO=allenai/allennlp
-  - REPO=toddmotto/public-apis
-  - REPO=donnemartin/system-design-primer
-  - REPO=google-research/google-research
-  - REPO=keras-team/keras
-  - REPO=hsddlz/faster-CTPN
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=ibm-watson-iot/functions
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=tijme/angularjs-csti-scanner  # has .travis.yml file
+    - REPO=tijme/detective
+    - REPO=tijme/grand-theft-filezilla
+    - REPO=tijme/not-your-average-web-crawler  # has .travis.yml file
+    - REPO=tijme/oscp
+    - REPO=jlane9/Flask-MonitoringDashboard  # has .travis.yml file
+    - REPO=jlane9/SAMpyL
+    - REPO=jlane9/alexa-chill
+    - REPO=jlane9/chill-api
+    - REPO=jlane9/gmail
+    - REPO=jlane9/pytest-needle  # has .travis.yml file
+    - REPO=jlane9/pytest-selenium  # has .travis.yml file
+    - REPO=jlane9/pytest-statsd  # has .travis.yml file
+    - REPO=jlane9/selenium_data_attributes  # has .travis.yml file
+    - REPO=jlane9/slumber  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
