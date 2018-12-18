@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/cristata
+  - REPO=jdsheehan/fabric-vms-provision
 
 install:
   #- pip install -r requirements.txt
