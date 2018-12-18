@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jdsheehan/fabric-vms-provision
+  - REPO=indutny/gyp.js
 
 install:
   #- pip install -r requirements.txt
