@@ -15,14 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=DrFaustie/Misc
-    - REPO=DrFaustie/PyELO
-    - REPO=DrFaustie/WarELO
-    - REPO=DrFaustie/kinto  # has .travis.yml file
-    - REPO=DrFaustie/webpy  # has .travis.yml file
-    - REPO=DrFaustie/messenger
-    - REPO=DrFaustie/Reviewer
-
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=facebookresearch/nevergrad
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=facebookresearch/pytext
+  - REPO=tensor-yu/PyTorch_Tutorial
+  - REPO=BitconFeng/Deep-Feature-video
+  - REPO=Alex-teach/Movoo
+  - REPO=samuel-code/faceTracking
+  - REPO=satwikkansal/wtfpython
+  - REPO=google-research/bert
+  - REPO=opsmop/opsmop
+  - REPO=zalandoresearch/flair
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/models
+  - REPO=facebookresearch/DeepFocus
+  - REPO=rg3/youtube-dl
+  - REPO=donnemartin/system-design-primer
+  - REPO=harelba/q
+  - REPO=Microsoft/mu
+  - REPO=leisurelicht/wtfpython-cn
+  - REPO=toddmotto/public-apis
+  - REPO=GoSecure/pyrdp
+  - REPO=jessevig/bertviz
+  - REPO=keras-team/keras
+  - REPO=ezaquarii/vpn-at-home
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
