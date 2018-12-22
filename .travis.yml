@@ -15,37 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=rciorba/1984
-    - REPO=rciorba/andreeafarago-plp
-    - REPO=rciorba/bitbucket_pr
-    - REPO=rciorba/borg  # has .travis.yml file
-    - REPO=rciorba/cookiecutter-pytest-plugin  # has .travis.yml file
-    - REPO=rciorba/curs-python
-    - REPO=rciorba/ddns
-    - REPO=rciorba/django-haystack  # has .travis.yml file
-    - REPO=rciorba/elasticsearch-py  # has .travis.yml file
-    - REPO=rciorba/elasticsearch-py-async
-    - REPO=rciorba/es_mon
-    - REPO=rciorba/etcd_membership_plugin  # has .travis.yml file
-    - REPO=rciorba/glass_2_kibana
-    - REPO=rciorba/hashcode_2017
-    - REPO=rciorba/iconcur
-    - REPO=rciorba/jam
-    - REPO=rciorba/moin-2.0-mirror
-    - REPO=rciorba/pgzero-flappy
-    - REPO=rciorba/pidunu  # has .travis.yml file
-    - REPO=rciorba/plp-cosmin
-    - REPO=rciorba/pytest  # has .travis.yml file
-    - REPO=rciorba/pytest-django  # has .travis.yml file
-    - REPO=rciorba/pytest-fixture-marker  # has .travis.yml file
-    - REPO=rciorba/rotten
-    - REPO=rciorba/thespian  # has .travis.yml file
-    - REPO=rciorba/tldt
-    - REPO=rciorba/twit
-    - REPO=rciorba/virtosubogdan-plp
-    - REPO=rciorba/vlddamian-plp
-    - REPO=rciorba/z3  # has .travis.yml file
-
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=facebookresearch/nevergrad
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=ghost123gg/tools
+  - REPO=facebookresearch/pytext
+  - REPO=zalandoresearch/flair
+  - REPO=EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
+  - REPO=rg3/youtube-dl
+  - REPO=tensor-yu/PyTorch_Tutorial
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/models
+  - REPO=google-research/bert
+  - REPO=satwikkansal/wtfpython
+  - REPO=keras-team/keras
+  - REPO=donnemartin/system-design-primer
+  - REPO=toddmotto/public-apis
+  - REPO=TheAlgorithms/Python
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=XX-net/XX-Net
+  - REPO=ageitgey/face_recognition
+  - REPO=python/cpython
+  - REPO=jakubroztocil/httpie
+  - REPO=ezaquarii/vpn-at-home
+  - REPO=VertStretch/RenderBurst
+  - REPO=facebookresearch/DeepFocus
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
