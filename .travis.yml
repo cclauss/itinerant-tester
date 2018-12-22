@@ -15,21 +15,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=curl/curl
-    - REPO=guardicore/monkey
-    - REPO=zerosum0x0/koadic 
-    - REPO=skorov/ridrelay
-    - REPO=AlessandroZ/BeRoot
-    - REPO=AlessandroZ/LaZagne
-    - REPO=AlessandroZ/LaZagneForensic
-    - REPO=AlessandroZ/WinPwnage
-    - REPO=AlessandroZ/changeme  # has .travis.yml file
-    - REPO=AlessandroZ/dpapilab
-    - REPO=AlessandroZ/memorpy
-    - REPO=AlessandroZ/pupy  # has .travis.yml file
-    - REPO=AlessandroZ/pypykatz
-    - REPO=AlessandroZ/pywerview
-    - REPO=AlessandroZ/sparta
+    - REPO=mapbox/make-surface    
+    - REPO=DataSploit/datasploit
+    - REPO=google/apitools
+    - REPO=chrisdonahue/nesmdb
+    - REPO=msracver/Relation-Networks-for-Object-Detection
+    - REPO=mahyarnajibi/SNIPER
+    - REPO=nccgroup/opinel
+    - REPO=vibora-io/vibora
+    - REPO=nedbat/blogtools
+    - REPO=IBM/connector-for-storediq
+    - REPO=strongloop/acme-freight-controller
+    - REPO=TarrySingh/Artificial-Intelligence-Deep-Learning-Machine-Learning-Tutorials
+    - REPO=salesforce/nonauto-nmt    
+    - REPO=danmacnish/cartoonify
+    - REPO=jeffzh3ng/Fuxi-Scanner Modernize Python 2 code to get ready for Python 3
+    - REPO=quentinhardy/scriptsAndExploits
+    - REPO=Maluuba/gensen
 
 install:
   #- pip install -r requirements.txt
