@@ -15,7 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO= n1nj4sec/pupy
+    - REPO=n1nj4sec/LaZagne
+    - REPO=n1nj4sec/memorpy
+    - REPO=n1nj4sec/mimipy
+    - REPO=n1nj4sec/pr0cks
+    - REPO=n1nj4sec/psutil  # has .travis.yml file
+    - REPO=n1nj4sec/pupy  # has .travis.yml file
+    - REPO=n1nj4sec/pymemimporter
 
 install:
   #- pip install -r requirements.txt
