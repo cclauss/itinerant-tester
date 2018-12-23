@@ -15,36 +15,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=google/GiftStick  # has .travis.yml file
-    - REPO=google/aiyprojects-raspbian  # has .travis.yml file
-    - REPO=google/apitools  # has .travis.yml file
-    - REPO=google/capirca  # has .travis.yml file
-    - REPO=google/cauliflowervest  # has .travis.yml file
-    - REPO=google/ci_edit
-    - REPO=google/clusterfuzz-tools
-    - REPO=google/docker-explorer  # has .travis.yml file
-    - REPO=google/dspl
-    - REPO=google/election_results_xml_validator  # has .travis.yml file
-    - REPO=google/elemental2
-    - REPO=google/ggrc-core
-    - REPO=google/gif-for-cli  # has .travis.yml file
-    - REPO=google/grr  # has .travis.yml file
-    - REPO=google/grr-doc
-    - REPO=google/importlab  # has .travis.yml file
-    - REPO=google/jax  # has .travis.yml file
-    - REPO=google/loaner  # has .travis.yml file
-    - REPO=google/meta_tagger
-    - REPO=google/myelin-acorn-electron-hardware
-    - REPO=google/openhtf  # has .travis.yml file
-    - REPO=google/pasta  # has .travis.yml file
-    - REPO=google/python-cloud-utils
-    - REPO=google/pytype  # has .travis.yml file
-    - REPO=google/starlark-rust  # has .travis.yml file
-    - REPO=google/subpar  # has .travis.yml file
-    - REPO=google/timesketch  # has .travis.yml file
-    - REPO=google/transitfeed  # has .travis.yml file
-    - REPO=google/turbinia  # has .travis.yml file
-    - REPO=google/uis-rnn
+    - REPO=Mariatta/aiohttp-session  # has .travis.yml file
+    - REPO=Mariatta/aiojobs  # has .travis.yml file
+    - REPO=Mariatta/arq  # has .travis.yml file
+    - REPO=Mariatta/async-server
+    - REPO=Mariatta/bedevere  # has .travis.yml file
+    - REPO=Mariatta/black  # has .travis.yml file
+    - REPO=Mariatta/black_out
+    - REPO=Mariatta/blurb_it  # has .travis.yml file
+    - REPO=Mariatta/celery  # has .travis.yml file
+    - REPO=Mariatta/check_python_cla  # has .travis.yml file
+    - REPO=Mariatta/coveragepy  # has .travis.yml file
+    - REPO=Mariatta/cpython  # has .travis.yml file
+    - REPO=Mariatta/devguide  # has .travis.yml file
+    - REPO=Mariatta/enhanced-coc-hotline  # has .travis.yml file
+    - REPO=Mariatta/flit  # has .travis.yml file
+    - REPO=Mariatta/gh_app_demo
+    - REPO=Mariatta/gidgethub  # has .travis.yml file
+    - REPO=Mariatta/gidgethub-aiohttp-starter
+    - REPO=Mariatta/github-bot-tutorial  # has .travis.yml file
+    - REPO=Mariatta/miss-islington  # has .travis.yml file
+    - REPO=Mariatta/nexmo-python  # has .travis.yml file
+    - REPO=Mariatta/peps  # has .travis.yml file
+    - REPO=Mariatta/pylint  # has .travis.yml file
+    - REPO=Mariatta/pytaco
+    - REPO=Mariatta/python_versions_and_distros  # has .travis.yml file
+    - REPO=Mariatta/strange-relationship
+    - REPO=Mariatta/talk-talk-talk  # has .travis.yml file
+    - REPO=Mariatta/tic_tac_taco_pizza
+    - REPO=Mariatta/vibora
+    - REPO=Mariatta/welcome-wagon-2018  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
