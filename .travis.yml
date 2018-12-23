@@ -15,13 +15,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=n1nj4sec/LaZagne
-    - REPO=n1nj4sec/memorpy
-    - REPO=n1nj4sec/mimipy
-    - REPO=n1nj4sec/pr0cks
-    - REPO=n1nj4sec/psutil  # has .travis.yml file
-    - REPO=n1nj4sec/pupy  # has .travis.yml file
-    - REPO=n1nj4sec/pymemimporter
+    - REPO=google/GiftStick  # has .travis.yml file
+    - REPO=google/aiyprojects-raspbian  # has .travis.yml file
+    - REPO=google/apitools  # has .travis.yml file
+    - REPO=google/capirca  # has .travis.yml file
+    - REPO=google/cauliflowervest  # has .travis.yml file
+    - REPO=google/ci_edit
+    - REPO=google/clusterfuzz-tools
+    - REPO=google/docker-explorer  # has .travis.yml file
+    - REPO=google/dspl
+    - REPO=google/election_results_xml_validator  # has .travis.yml file
+    - REPO=google/elemental2
+    - REPO=google/ggrc-core
+    - REPO=google/gif-for-cli  # has .travis.yml file
+    - REPO=google/grr  # has .travis.yml file
+    - REPO=google/grr-doc
+    - REPO=google/importlab  # has .travis.yml file
+    - REPO=google/jax  # has .travis.yml file
+    - REPO=google/loaner  # has .travis.yml file
+    - REPO=google/meta_tagger
+    - REPO=google/myelin-acorn-electron-hardware
+    - REPO=google/openhtf  # has .travis.yml file
+    - REPO=google/pasta  # has .travis.yml file
+    - REPO=google/python-cloud-utils
+    - REPO=google/pytype  # has .travis.yml file
+    - REPO=google/starlark-rust  # has .travis.yml file
+    - REPO=google/subpar  # has .travis.yml file
+    - REPO=google/timesketch  # has .travis.yml file
+    - REPO=google/transitfeed  # has .travis.yml file
+    - REPO=google/turbinia  # has .travis.yml file
+    - REPO=google/uis-rnn
 
 install:
   #- pip install -r requirements.txt
