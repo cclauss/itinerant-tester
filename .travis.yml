@@ -15,36 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=Mariatta/aiohttp-session  # has .travis.yml file
-    - REPO=Mariatta/aiojobs  # has .travis.yml file
-    - REPO=Mariatta/arq  # has .travis.yml file
-    - REPO=Mariatta/async-server
-    - REPO=Mariatta/bedevere  # has .travis.yml file
-    - REPO=Mariatta/black  # has .travis.yml file
-    - REPO=Mariatta/black_out
-    - REPO=Mariatta/blurb_it  # has .travis.yml file
-    - REPO=Mariatta/celery  # has .travis.yml file
-    - REPO=Mariatta/check_python_cla  # has .travis.yml file
-    - REPO=Mariatta/coveragepy  # has .travis.yml file
-    - REPO=Mariatta/cpython  # has .travis.yml file
-    - REPO=Mariatta/devguide  # has .travis.yml file
-    - REPO=Mariatta/enhanced-coc-hotline  # has .travis.yml file
-    - REPO=Mariatta/flit  # has .travis.yml file
-    - REPO=Mariatta/gh_app_demo
-    - REPO=Mariatta/gidgethub  # has .travis.yml file
-    - REPO=Mariatta/gidgethub-aiohttp-starter
-    - REPO=Mariatta/github-bot-tutorial  # has .travis.yml file
-    - REPO=Mariatta/miss-islington  # has .travis.yml file
-    - REPO=Mariatta/nexmo-python  # has .travis.yml file
-    - REPO=Mariatta/peps  # has .travis.yml file
-    - REPO=Mariatta/pylint  # has .travis.yml file
-    - REPO=Mariatta/pytaco
-    - REPO=Mariatta/python_versions_and_distros  # has .travis.yml file
-    - REPO=Mariatta/strange-relationship
-    - REPO=Mariatta/talk-talk-talk  # has .travis.yml file
-    - REPO=Mariatta/tic_tac_taco_pizza
-    - REPO=Mariatta/vibora
-    - REPO=Mariatta/welcome-wagon-2018  # has .travis.yml file
+    - REPO=takluyver/flit  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
