@@ -15,53 +15,32 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mahmoud/awesome-python-applications
-  - REPO=ghost123gg/tools
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=facebookresearch/nevergrad
-  - REPO=rtqichen/torchdiffeq
-  - REPO=google-research/bert
-  - REPO=facebookresearch/pytext
-  - REPO=zalandoresearch/flair
-  - REPO=rg3/youtube-dl
-  - REPO=tensorflow/privacy
-  - REPO=tensorflow/models
-  - REPO=chenghuige/wenzheng
-  - REPO=vinta/awesome-python
-  - REPO=jakubroztocil/httpie
-  - REPO=donnemartin/system-design-primer
-  - REPO=roman-ku/reddit_utils
-  - REPO=keras-team/keras
-  - REPO=deepfakes/faceswap
-  - REPO=wikipedia2vec/wikipedia2vec
-  - REPO=python/cpython
-  - REPO=XX-net/XX-Net
-  - REPO=TheAlgorithms/Python
-  - REPO=ageitgey/face_recognition
-  - REPO=toddmotto/public-apis
-  - REPO=home-assistant/home-assistant
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=ibm-watson-iot/functions
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+    - REPO=NVIDIA/Dataset_Utilities
+    - REPO=NVIDIA/DeepLearningExamples
+    - REPO=NVIDIA/DeepRecommender
+    - REPO=NVIDIA/FastPhotoStyle
+    - REPO=NVIDIA/Milano
+    - REPO=NVIDIA/OpenSeq2Seq
+    - REPO=NVIDIA/apex
+    - REPO=NVIDIA/cuda-profiler
+    - REPO=NVIDIA/flownet2-pytorch
+    - REPO=NVIDIA/hpc-container-maker  # has .travis.yml file
+    - REPO=NVIDIA/mxnet_to_onnx
+    - REPO=NVIDIA/ngc-container-replicator
+    - REPO=NVIDIA/ngc-examples
+    - REPO=NVIDIA/nvstrings
+    - REPO=NVIDIA/partialconv
+    - REPO=NVIDIA/pix2pixHD
+    - REPO=NVIDIA/pynvrtc
+    - REPO=NVIDIA/python-jetson
+    - REPO=NVIDIA/sentiment-discovery
+    - REPO=NVIDIA/tegra-pinmux-scripts
+    - REPO=NVIDIA/tegra-uboot-flasher-scripts
+    - REPO=NVIDIA/tegra-uboot-scripts
+    - REPO=NVIDIA/vid2vid
+    - REPO=NVIDIA/waveglow
+    - REPO=bitcoin/bips  # has .travis.yml file
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
