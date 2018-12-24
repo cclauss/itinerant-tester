@@ -15,31 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=NVIDIA/Dataset_Utilities
-    - REPO=NVIDIA/DeepLearningExamples
-    - REPO=NVIDIA/DeepRecommender
-    - REPO=NVIDIA/FastPhotoStyle
-    - REPO=NVIDIA/Milano
-    - REPO=NVIDIA/OpenSeq2Seq
-    - REPO=NVIDIA/apex
-    - REPO=NVIDIA/cuda-profiler
-    - REPO=NVIDIA/flownet2-pytorch
-    - REPO=NVIDIA/hpc-container-maker  # has .travis.yml file
-    - REPO=NVIDIA/mxnet_to_onnx
-    - REPO=NVIDIA/ngc-container-replicator
-    - REPO=NVIDIA/ngc-examples
-    - REPO=NVIDIA/nvstrings
-    - REPO=NVIDIA/partialconv
-    - REPO=NVIDIA/pix2pixHD
-    - REPO=NVIDIA/pynvrtc
-    - REPO=NVIDIA/python-jetson
-    - REPO=NVIDIA/sentiment-discovery
-    - REPO=NVIDIA/tegra-pinmux-scripts
-    - REPO=NVIDIA/tegra-uboot-flasher-scripts
-    - REPO=NVIDIA/tegra-uboot-scripts
-    - REPO=NVIDIA/vid2vid
-    - REPO=NVIDIA/waveglow
-    - REPO=bitcoin/bips  # has .travis.yml file
+    - REPO=NVIDIA/DIGITS
+
     
 install:
   #- pip install -r requirements.txt
