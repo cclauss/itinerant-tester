@@ -15,8 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=NVIDIA/DIGITS
-
+    - REPO=janeasystems/node-gyp
+    - REPO=janeasystems/nodejs-mobile-gyp
     
 install:
   #- pip install -r requirements.txt
