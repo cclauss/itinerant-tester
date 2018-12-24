@@ -15,36 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=takluyver/astcheck  # has .travis.yml file
-    - REPO=takluyver/astsearch  # has .travis.yml file
-    - REPO=takluyver/backcall  # has .travis.yml file
-    - REPO=takluyver/blog
-    - REPO=takluyver/bookbook  # has .travis.yml file
-    - REPO=takluyver/cfelpyutils
-    - REPO=takluyver/edinburgh-dojo-2018-10
-    - REPO=takluyver/entrypoints  # has .travis.yml file
-    - REPO=takluyver/fabio  # has .travis.yml file
-    - REPO=takluyver/flit  # has .travis.yml file
-    - REPO=takluyver/h5py  # has .travis.yml file
-    - REPO=takluyver/h5tools-py  # has .travis.yml file
-    - REPO=takluyver/ipython  # has .travis.yml file
-    - REPO=takluyver/jupyter_docker_kernels
-    - REPO=takluyver/jupyter_kernel_mgmt  # has .travis.yml file
-    - REPO=takluyver/jupyter_protocol  # has .travis.yml file
-    - REPO=takluyver/jupyter_ssh_kernels
-    - REPO=takluyver/nbopen
-    - REPO=takluyver/nbparameterise  # has .travis.yml file
-    - REPO=takluyver/penguin-carpentry
-    - REPO=takluyver/peps  # has .travis.yml file
-    - REPO=takluyver/pi_ina219  # has .travis.yml file
-    - REPO=takluyver/pygame-flatpak-test
-    - REPO=takluyver/pynsist  # has .travis.yml file
-    - REPO=takluyver/pyxdg  # has .travis.yml file
-    - REPO=takluyver/rednotebook  # has .travis.yml file
-    - REPO=takluyver/sj
-    - REPO=takluyver/snakeviz  # has .travis.yml file
-    - REPO=takluyver/uk.python.org  # has .travis.yml file
-    - REPO=takluyver/wheel2conda
+    - REPO=h5py/h5py
 
 install:
   #- pip install -r requirements.txt
