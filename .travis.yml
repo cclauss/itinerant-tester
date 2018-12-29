@@ -15,38 +15,30 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=OpenZWave/python-openzwave  # has .travis.yml file
-    - REPO=mahmoud/Programming-Problem-Solutions
-    - REPO=mahmoud/ashes  # has .travis.yml file
-    - REPO=mahmoud/awesome-python-applications
-    - REPO=mahmoud/boltons  # has .travis.yml file
-    - REPO=mahmoud/briefings
-    - REPO=mahmoud/chert
-    - REPO=mahmoud/clastic
-    - REPO=mahmoud/erosion
-    - REPO=mahmoud/espymetrics
-    - REPO=mahmoud/etavta
-    - REPO=mahmoud/face
-    - REPO=mahmoud/glom  # has .travis.yml file
-    - REPO=mahmoud/grumblr
-    - REPO=mahmoud/hematite
-    - REPO=mahmoud/ipynb-ftw
-    - REPO=mahmoud/lithoxyl
-    - REPO=mahmoud/passage
-    - REPO=mahmoud/picritic
-    - REPO=mahmoud/python-iso3166
-    - REPO=mahmoud/python-packaging-user-guide  # has .travis.yml file
-    - REPO=mahmoud/sky
-    - REPO=mahmoud/socklusion
-    - REPO=mahmoud/spyce
-    - REPO=mahmoud/strata
-    - REPO=mahmoud/tectonic
-    - REPO=mahmoud/tls  # has .travis.yml file
-    - REPO=mahmoud/twisted
-    - REPO=mahmoud/ufork
-    - REPO=mahmoud/wapiti
-    - REPO=mahmoud/warehouse  # has .travis.yml file
-    
+    - REPO=piyush-kgp/Algorithms-Specialization-Stanford
+    - REPO=piyush-kgp/Daily-Coding-Problems
+    - REPO=piyush-kgp/Digit-Recognition-with-TFJS
+    - REPO=piyush-kgp/Face-Recognition-with-FaceNet
+    - REPO=piyush-kgp/GAN-Lab
+    - REPO=piyush-kgp/Intent-Detection
+    - REPO=piyush-kgp/Leetcode
+    - REPO=piyush-kgp/Music-Generation-with-deep-learning
+    - REPO=piyush-kgp/Neural-Style-Transfer
+    - REPO=piyush-kgp/OpenCV-assignments
+    - REPO=piyush-kgp/PyData-Seattle
+    - REPO=piyush-kgp/Python  # has .travis.yml file
+    - REPO=piyush-kgp/cartoonify
+    - REPO=piyush-kgp/cleverhans  # has .travis.yml file
+    - REPO=piyush-kgp/codechef_practice
+    - REPO=piyush-kgp/cs231n
+    - REPO=piyush-kgp/datasets  # has .travis.yml file
+    - REPO=piyush-kgp/models
+    - REPO=piyush-kgp/musical_lstm
+    - REPO=piyush-kgp/python-docs-samples  # has .travis.yml file
+    - REPO=piyush-kgp/python-fire  # has .travis.yml file
+    - REPO=piyush-kgp/temp-dir2
+    - REPO=piyush-kgp/temp_dir
+    - REPO=piyush-kgp/utility_scripts    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
