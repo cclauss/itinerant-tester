@@ -15,7 +15,46 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=evelikov/namcap
+    - REPO=THUFutureLab/gluon-face
+    - REPO=payatu/CVE-2017-5638
+    - REPO=payatu/CVE-2018-14442
+    - REPO=payatu/Tiredful-API
+    - REPO=payatu/ivr-pentest
+    - REPO=s0md3v/Arjun
+    - REPO=s0md3v/Blazy
+    - REPO=s0md3v/Breacher
+    - REPO=s0md3v/Cloak
+    - REPO=s0md3v/Decodify
+    - REPO=s0md3v/Entropy
+    - REPO=s0md3v/Hash-Buster
+    - REPO=s0md3v/JShell
+    - REPO=s0md3v/Locky
+    - REPO=s0md3v/Orbit
+    - REPO=s0md3v/Photon  # has .travis.yml file
+    - REPO=s0md3v/ReconDog  # has .travis.yml file
+    - REPO=s0md3v/Shiva
+    - REPO=s0md3v/Striker
+    - REPO=s0md3v/XSStrike  # has .travis.yml file
+    - REPO=s0md3v/Zen  # has .travis.yml file
+    - REPO=s0md3v/hue
+    - REPO=s0md3v/infinity
+    - REPO=s0md3v/proxify
+    - REPO=s0md3v/regxy
+    - REPO=s0md3v/sqlmate
+    - REPO=s0md3v/zetanize
+    - REPO=home-assistant/appdaemon
+    - REPO=home-assistant/example-custom-config
+    - REPO=home-assistant/hass-release  # has .travis.yml file
+    - REPO=home-assistant/hbmqtt-auth-home-assistant
+    - REPO=home-assistant/home-assistant-cli  # has .travis.yml file
+    - REPO=home-assistant/lambda-home-assistant-github
+    - REPO=home-assistant/micropython-home-assistant
+    - REPO=home-assistant/netdisco  # has .travis.yml file
+    - REPO=home-assistant/pyharmony
+    - REPO=home-assistant/python-openzwave  # has .travis.yml file
+    - REPO=home-assistant/scenegen
+    - REPO=home-assistant/warrant  # has .travis.yml file
+    
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
