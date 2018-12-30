@@ -15,14 +15,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=harfbuzz/harfbuzz  # has .travis.yml file
-  - REPO=harfbuzz/harfbuzz-hazmat
-  - REPO=harfbuzz/harfbuzz-old
-  - REPO=harfbuzz/harfbuzz-testing-wikipedia
-  - REPO=harfbuzz/harfbuzz-tutorial
-  - REPO=harfbuzz/harfbuzz.github.io
-  - REPO=harfbuzz/icu-le-hb
-
+  - REPO=jendrikseipp/ICAPS-Citation-Count
+  - REPO=jendrikseipp/UbuntuIndicatorWeather
+  - REPO=jendrikseipp/VAL
+  - REPO=jendrikseipp/best-practices-talk
+  - REPO=jendrikseipp/fixubuntu
+  - REPO=jendrikseipp/gae-boilerplate  # has .travis.yml file
+  - REPO=jendrikseipp/github-issue-importer
+  - REPO=jendrikseipp/gvsbuild
+  - REPO=jendrikseipp/icaps2017.github.io
+  - REPO=jendrikseipp/mistune  # has .travis.yml file
+  - REPO=jendrikseipp/pogo  # has .travis.yml file
+  - REPO=jendrikseipp/pygtkspellcheck
+  - REPO=jendrikseipp/pyinstaller  # has .travis.yml file
+  - REPO=jendrikseipp/rednotebook  # has .travis.yml file
+  - REPO=jendrikseipp/rednotebook-elementary  # has .travis.yml file
+  - REPO=jendrikseipp/vulture  # has .travis.yml file
+  - REPO=jendrikseipp/vulture-analysis
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
