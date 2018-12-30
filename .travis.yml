@@ -15,7 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/roboto
+  - REPO=harfbuzz/harfbuzz  # has .travis.yml file
+  - REPO=harfbuzz/harfbuzz-hazmat
+  - REPO=harfbuzz/harfbuzz-old
+  - REPO=harfbuzz/harfbuzz-testing-wikipedia
+  - REPO=harfbuzz/harfbuzz-tutorial
+  - REPO=harfbuzz/harfbuzz.github.io
+  - REPO=harfbuzz/icu-le-hb
 
 install:
   #- pip install -r requirements.txt
