@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - google/roboto
+  - REPO=google/roboto
 
 install:
   #- pip install -r requirements.txt
