@@ -15,30 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-    - REPO=piyush-kgp/Algorithms-Specialization-Stanford
-    - REPO=piyush-kgp/Daily-Coding-Problems
-    - REPO=piyush-kgp/Digit-Recognition-with-TFJS
-    - REPO=piyush-kgp/Face-Recognition-with-FaceNet
-    - REPO=piyush-kgp/GAN-Lab
-    - REPO=piyush-kgp/Intent-Detection
-    - REPO=piyush-kgp/Leetcode
-    - REPO=piyush-kgp/Music-Generation-with-deep-learning
-    - REPO=piyush-kgp/Neural-Style-Transfer
-    - REPO=piyush-kgp/OpenCV-assignments
-    - REPO=piyush-kgp/PyData-Seattle
-    - REPO=piyush-kgp/Python  # has .travis.yml file
-    - REPO=piyush-kgp/cartoonify
-    - REPO=piyush-kgp/cleverhans  # has .travis.yml file
-    - REPO=piyush-kgp/codechef_practice
-    - REPO=piyush-kgp/cs231n
-    - REPO=piyush-kgp/datasets  # has .travis.yml file
-    - REPO=piyush-kgp/models
-    - REPO=piyush-kgp/musical_lstm
-    - REPO=piyush-kgp/python-docs-samples  # has .travis.yml file
-    - REPO=piyush-kgp/python-fire  # has .travis.yml file
-    - REPO=piyush-kgp/temp-dir2
-    - REPO=piyush-kgp/temp_dir
-    - REPO=piyush-kgp/utility_scripts    
+  - REPO=rsms/inter
+  - REPO=avinashpaliwal/Super-SloMo
+  - REPO=sdushantha/sherlock
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=home-assistant/home-assistant
+  - REPO=malwaredllc/byob
+  - REPO=keras-team/keras
+  - REPO=TheAlgorithms/Python
+  - REPO=tensorflow/models
+  - REPO=google-research/bert
+  - REPO=deepfakes/faceswap
+  - REPO=django/django
+  - REPO=facebookresearch/pytext
+  - REPO=rg3/youtube-dl
+  - REPO=geekcomputers/Python
+  - REPO=wonderfulsuccess/weixin_crawler
+  - REPO=facebookresearch/Detectron
+  - REPO=donnemartin/system-design-primer
+  - REPO=Image-Py/imagepy
+  - REPO=toddmotto/public-apis
+  - REPO=nurdtechie98/drive-cli
+  - REPO=d2l-ai/d2l-zh
+  - REPO=s0md3v/XSStrike
+  - REPO=google/jax
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
