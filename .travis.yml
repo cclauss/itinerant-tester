@@ -15,53 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=rsms/inter
-  - REPO=avinashpaliwal/Super-SloMo
-  - REPO=sdushantha/sherlock
-  - REPO=mahmoud/awesome-python-applications
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=home-assistant/home-assistant
-  - REPO=malwaredllc/byob
-  - REPO=keras-team/keras
-  - REPO=TheAlgorithms/Python
-  - REPO=tensorflow/models
-  - REPO=google-research/bert
-  - REPO=deepfakes/faceswap
-  - REPO=django/django
-  - REPO=facebookresearch/pytext
-  - REPO=rg3/youtube-dl
-  - REPO=geekcomputers/Python
-  - REPO=wonderfulsuccess/weixin_crawler
-  - REPO=facebookresearch/Detectron
-  - REPO=donnemartin/system-design-primer
-  - REPO=Image-Py/imagepy
-  - REPO=toddmotto/public-apis
-  - REPO=nurdtechie98/drive-cli
-  - REPO=d2l-ai/d2l-zh
-  - REPO=s0md3v/XSStrike
-  - REPO=google/jax
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=ibm-watson-iot/functions
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
+  - google/roboto
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
