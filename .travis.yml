@@ -15,10 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=encela95dus/ios_pythonista_examples
-  - REPO=huseinzol05/Gather-Tensorflow-Serving
-  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
-  - REPO=sdushantha/sherlock
+  - REPO=ecthros/uncaptcha2
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
