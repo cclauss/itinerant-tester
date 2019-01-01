@@ -15,53 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=rsms/inter
-  - REPO=home-assistant/home-assistant
+  - REPO=encela95dus/ios_pythonista_examples
+  - REPO=huseinzol05/Gather-Tensorflow-Serving
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
   - REPO=sdushantha/sherlock
-  - REPO=mahmoud/awesome-python-applications
-  - REPO=deepfakes/faceswap
-  - REPO=toddmotto/public-apis
-  - REPO=avinashpaliwal/Super-SloMo
-  - REPO=donnemartin/system-design-primer
-  - REPO=rg3/youtube-dl
-  - REPO=iperov/DeepFaceLab
-  - REPO=facebookresearch/pytext
-  - REPO=niklasb/35c3ctf-challs
-  - REPO=tensorflow/models
-  - REPO=keras-team/keras
-  - REPO=akanimax/pro_gan_pytorch
-  - REPO=vinta/awesome-python
-  - REPO=google-research/bert
-  - REPO=TheAlgorithms/Python
-  - REPO=nurdtechie98/drive-cli
-  - REPO=jhfjhfj1/autokeras
-  - REPO=requests/requests
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=malwaredllc/byob
-  - REPO=got-10k/toolkit
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=ibm-watson-iot/functions
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
