@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=stepcode/stepcode
+  - REPO=tensorflow/tensor2tensor
 
 install:
   #- pip install -r requirements.txt
