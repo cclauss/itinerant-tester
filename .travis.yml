@@ -15,21 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=testerSunshine/12306
-  - REPO=testerSunshine/12306-captcha
-  - REPO=testerSunshine/Airtest  # has .travis.yml file
-  - REPO=testerSunshine/auto_md
-  - REPO=testerSunshine/feixunTools
-  - REPO=testerSunshine/kk
-  - REPO=testerSunshine/kk_django
-  - REPO=testerSunshine/mengdianApi
-  - REPO=testerSunshine/python-douyin
-  - REPO=testerSunshine/sendSms
-  - REPO=testerSunshine/t12306
-  - REPO=testerSunshine/video_spider
-  - REPO=testerSunshine/weiChatTools
-  - REPO=testerSunshine/weibo
-  - REPO=testerSunshine/zhihu_spider
+  - REPO=stepcode/stepcode
 
 install:
   #- pip install -r requirements.txt
