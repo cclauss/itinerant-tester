@@ -15,7 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=tensorflow/tensor2tensor
+  - REPO=piyush-kgp/Music-Generation-with-deep-learning
+  - REPO=webpy/webpy
 
 install:
   #- pip install -r requirements.txt
