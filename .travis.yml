@@ -15,19 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jonwinters/17python.com
-  - REPO=jonwinters/gevent-localsocks5
-  - REPO=jonwinters/notification
-  - REPO=jonwinters/proxy_list
-  - REPO=jonwinters/python3_p2pkill
-  - REPO=jonwinters/qzkj_verifycode
-  - REPO=jonwinters/simple_python_script
-  - REPO=jonwinters/upload_img
-  - REPO=jonwinters/zhao
-  - REPO=MrAnde7son/Hunting
-  - REPO=MrAnde7son/Snort
-  - REPO=MrAnde7son/impacket
-  
+  - REPO=testerSunshine/12306
+  - REPO=ecthros/uncaptcha2
+  - REPO=meolu/walle-web
+  - REPO=dbcli/litecli
+  - REPO=zalandoresearch/flair
+  - REPO=elliottzheng/CopyTranslator
+  - REPO=knazeri/edge-connect
+  - REPO=d2l-ai/d2l-en
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=tensorflow/models
+  - REPO=deepfakes/faceswap
+  - REPO=google-research/bert
+  - REPO=d2l-ai/d2l-zh
+  - REPO=toddmotto/public-apis
+  - REPO=donnemartin/system-design-primer
+  - REPO=vinta/awesome-python
+  - REPO=TheYahya/sherlock
+  - REPO=ZhaoJ9014/face.evoLVe.PyTorch
+  - REPO=mindsdb/mindsdb
+  - REPO=emtunc/SlackPirate
+  - REPO=keras-team/keras
+  - REPO=rg3/youtube-dl
+  - REPO=offu/WeRoBot
+  - REPO=TheAlgorithms/Python
+  - REPO=pallets/flask
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=ibm-watson-iot/functions
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
