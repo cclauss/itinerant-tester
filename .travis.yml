@@ -15,7 +15,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=FreeCAD/FreeCAD-Homepage
+  - REPO=jonwinters/17python.com
+  - REPO=jonwinters/gevent-localsocks5
+  - REPO=jonwinters/notification
+  - REPO=jonwinters/proxy_list
+  - REPO=jonwinters/python3_p2pkill
+  - REPO=jonwinters/qzkj_verifycode
+  - REPO=jonwinters/simple_python_script
+  - REPO=jonwinters/upload_img
+  - REPO=jonwinters/zhao
+  - REPO=MrAnde7son/Hunting
+  - REPO=MrAnde7son/Snort
+  - REPO=MrAnde7son/impacket
   
 install:
   #- pip install -r requirements.txt
