@@ -15,36 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=moloch--/BARTHue
-  - REPO=moloch--/BARTpy
-  - REPO=moloch--/BTSyncBot
-  - REPO=moloch--/BorgBrowser
-  - REPO=moloch--/CSP-Bypass
-  - REPO=moloch--/Code-Injection
-  - REPO=moloch--/Fortify-XML-Converter
-  - REPO=moloch--/Hash-Algorithm-Identifier
-  - REPO=moloch--/HopperScripts
-  - REPO=moloch--/Hotel-kilo
-  - REPO=moloch--/IDA-Python
-  - REPO=moloch--/Objc-Analyzer
-  - REPO=moloch--/PACKlib
-  - REPO=moloch--/PyTEA
-  - REPO=moloch--/Replicant
-  - REPO=moloch--/TLDR
-  - REPO=moloch--/The-Planetary-Assault-System
-  - REPO=moloch--/TornadoAppTemplate
-  - REPO=moloch--/Veil
-  - REPO=moloch--/Yoshimi-Botnet
-  - REPO=moloch--/big-rainbow
-  - REPO=moloch--/chipsec
-  - REPO=moloch--/codename
-  - REPO=moloch--/dcsv
-  - REPO=moloch--/hashlookup
-  - REPO=moloch--/hue-weather
-  - REPO=moloch--/ios-hooker
-  - REPO=moloch--/pupy
-  - REPO=moloch--/wire-transfer
-  - REPO=moloch--/xsshunter
+  - REPO=FreeCAD/FreeCAD-Homepage
   
 install:
   #- pip install -r requirements.txt
