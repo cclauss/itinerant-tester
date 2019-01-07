@@ -15,12 +15,29 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Mosrod/Moderator-Bot
-  - REPO=Mosrod/NumberGuesser
-  - REPO=Mosrod/PySuite
-  - REPO=Mosrod/Python  # has .travis.yml file
-  - REPO=Mosrod/PythonDictionary
-  - REPO=Mosrod/PythonSnippets
+  - REPO=skorov/RootTheBox
+  - REPO=skorov/coinbase-python  # has .travis.yml file
+  - REPO=skorov/ewallet2hash
+  - REPO=skorov/rduserenum
+  - REPO=skorov/ridrelay
+  - REPO=skorov/send-cli
+  - REPO=skorov/subdomainator
+  - REPO=geekcomputers/Python  # has .travis.yml file
+  - REPO=geekcomputers/Pythonista
+  - REPO=geekcomputers/Snippets
+  - REPO=omz/Pythonista-Issues
+  - REPO=omz/PythonistaAppTemplate
+  - REPO=omz/black-white
+  - REPO=FreeCAD/FreeCAD-addons
+  - REPO=FreeCAD/FreeCAD-blog
+  - REPO=FreeCAD/FreeCAD-library
+  - REPO=FreeCAD/FreeCAD-macros
+  - REPO=FreeCAD/FreeCAD-render
+  - REPO=FreeCAD/FreeCAD-symbols
+  - REPO=FreeCAD/Workbench-Starterkit
+  - REPO=FreeCAD/freecad.plot
+  - REPO=FreeCAD/freecad.ship
+  - REPO=FreeCAD/pivy  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
