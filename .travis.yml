@@ -15,7 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=OpenCobolIDE/OpenCobolIDE
+  - REPO=kubeflow/kubeflow
+  - REPO=ColinDuquesnoy/QCrash  # has .travis.yml file
+  - REPO=ColinDuquesnoy/QDarkStyleSheet  # has .travis.yml file
+  - REPO=ColinDuquesnoy/QPygletWidget
+  - REPO=ColinDuquesnoy/QRegexEditor
+  - REPO=ColinDuquesnoy/Time2Pull
+  - REPO=ColinDuquesnoy/pyqt_distutils
 
 install:
   #- pip install -r requirements.txt
