@@ -15,12 +15,22 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Gallopsled/Stregsystem-Server
-  - REPO=Gallopsled/pwncrypto
-  - REPO=Gallopsled/pwntools
-  - REPO=Gallopsled/pwntools-regression
-  - REPO=Gallopsled/pwntools-tutorial
-  - REPO=Gallopsled/pwntools-write-ups
+  - REPO=pdmack/StarCluster  # has .travis.yml file
+  - REPO=pdmack/ambassador  # has .travis.yml file
+  - REPO=pdmack/docker-python
+  - REPO=pdmack/hue
+  - REPO=pdmack/kubeflow
+  - REPO=pdmack/kubespawner  # has .travis.yml file
+  - REPO=pdmack/nationalparks-py
+  - REPO=pdmack/nflcmd
+  - REPO=pdmack/nfldb
+  - REPO=pdmack/nflgame
+  - REPO=pdmack/rdoinfo  # has .travis.yml file
+  - REPO=pdmack/rpm-packaging
+  - REPO=pdmack/testing
+  - REPO=pdmack/trove
+  - REPO=pdmack/trove-integration
+  - REPO=pdmack/winemap
 
 install:
   #- pip install -r requirements.txt
