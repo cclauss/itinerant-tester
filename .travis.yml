@@ -15,8 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ArunVenkata/HandyScripts
-  - REPO=ArunVenkata/WindowsWallpaperScript
+  - REPO=woj-ciech/Daily-dose-of-malware
+  - REPO=woj-ciech/Danger-zone
+  - REPO=woj-ciech/LeakLooker
+  - REPO=woj-ciech/Social-media-c2
+  - REPO=woj-ciech/Wallet-watcher
+  - REPO=woj-ciech/kamerka
+  - REPO=woj-ciech/other
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
