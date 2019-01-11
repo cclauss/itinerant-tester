@@ -15,13 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=woj-ciech/Daily-dose-of-malware
-  - REPO=woj-ciech/Danger-zone
-  - REPO=woj-ciech/LeakLooker
-  - REPO=woj-ciech/Social-media-c2
-  - REPO=woj-ciech/Wallet-watcher
-  - REPO=woj-ciech/kamerka
-  - REPO=woj-ciech/other
+  - REPO=kimiyoung/transformer-xl
+  - REPO=yzhao062/pyod
+  - REPO=TencentYoutuResearch/ObjectDetection-OneStageDet
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
