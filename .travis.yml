@@ -15,9 +15,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=kimiyoung/ParlAI
+  - REPO=kimiyoung/fg-gating
+  - REPO=kimiyoung/planetoid
+  - REPO=kimiyoung/semantics_project
+  - REPO=kimiyoung/shadowsocksr  # has .travis.yml file
+  - REPO=kimiyoung/ssl_bad_gan
+  - REPO=kimiyoung/transfer
   - REPO=kimiyoung/transformer-xl
-  - REPO=yzhao062/pyod
-  - REPO=TencentYoutuResearch/ObjectDetection-OneStageDet
+  - REPO=zihangdai/ERAC-VAML
+  - REPO=zihangdai/RecursiveNN
+  - REPO=zihangdai/cegan_iclr2017
+  - REPO=zihangdai/datautils
+  - REPO=zihangdai/matplotlib-tutorial
+  - REPO=zihangdai/mos
+  - REPO=zihangdai/neural_package
+  - REPO=zihangdai/pytorch_xworld
+  - REPO=zihangdai/rnn_benchmarks
+  - REPO=zihangdai/tensorflow_feature_test
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
