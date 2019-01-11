@@ -15,20 +15,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=iodide-project/iodide
-  - REPO=iodide-project/pyodide
-  - REPO=iodide-project/data-benchmark
-  - REPO=iodide-project/testpilot-reports
-  - REPO=mozilla/testpilot-reports
-  - REPO=pypyjs/pypy
-  - REPO=pypyjs/pypyjs
-  - REPO=pypyjs/pypyjs-release
-  - REPO=pypyjs/pypyjs-release-nojit
-  - REPO=RustPython/RustPython
-  - REPO=brython-dev/brython  # has .travis.yml file
-  - REPO=brython-dev/brython-pygame
-  - REPO=grumpyhome/grumpy
-
+  - REPO=IBM/MAX-Facial-Age-Estimator-Web-App  # has .travis.yml file
+  - REPO=IBM/MAX-Image-Caption-Generator  # has .travis.yml file
+  - REPO=IBM/MAX-Image-Completer  # has .travis.yml file
+  - REPO=IBM/Portfolio-Optimize  # has .travis.yml file
+  - REPO=IBM/Portfolio-compute  # has .travis.yml file
+  - REPO=IBM/Predictive-Market-Stress-Testing  # has .travis.yml file
+  - REPO=IBM/cognitive-moderator-service
+  - REPO=IBM/distributed-evolutionary-ml
+  - REPO=IBM/dnn-object-detection  # has .travis.yml file
+  - REPO=IBM/dsrc
+  - REPO=IBM/era_gazebo
+  - REPO=IBM/ibm-cos-sdk-python
+  - REPO=IBM/ibm-cos-sdk-python-core
+  - REPO=IBM/ibm-cos-sdk-python-s3transfer  # has .travis.yml file
+  - REPO=IBM/kg-goal-oriented-dialog
+  - REPO=IBM/mi-prometheus
+  - REPO=IBM/nlc-icd10-classifier  # has .travis.yml file
+  - REPO=IBM/page-lab
+  - REPO=IBM/powerai-image-memorability
+  - REPO=IBM/powerai-transfer-learning
+  - REPO=IBM/python-itoolkit  # has .travis.yml file
+  - REPO=IBM/serverless-app-python
+  - REPO=IBM/stix-shifter  # has .travis.yml file
+  - REPO=IBM/tensorflow-hangul-recognition  # has .travis.yml file
+  - REPO=IBM/tensorflow-kubernetes-art-classification
+  - REPO=IBM/tensorflow-large-model-support
+  - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
+  - REPO=IBM/watson-online-store  # has .travis.yml file
+  - REPO=IBM/wc-devops-utilities
+  - REPO=IBM/yaps  # has .travis.yml file
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
