@@ -15,18 +15,19 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=chubin/cheat.sh  # has .travis.yml file
-  - REPO=chubin/github-stats
-  - REPO=chubin/late.nz
-  - REPO=chubin/pyphoon
-  - REPO=chubin/qrenco.de
-  - REPO=chubin/rate.sx
-  - REPO=chubin/rpi-homerouter
-  - REPO=chubin/syncer
-  - REPO=chubin/tailer
-  - REPO=chubin/terminaltables  # has .travis.yml file
-  - REPO=chubin/tmuxwm
-  - REPO=chubin/wttr.in  # has .travis.yml file
+  - REPO=iodide-project/iodide
+  - REPO=iodide-project/pyodide
+  - REPO=iodide-project/data-benchmark
+  - REPO=iodide-project/testpilot-reports
+  - REPO=mozilla/testpilot-reports
+  - REPO=pypyjs/pypy
+  - REPO=pypyjs/pypyjs
+  - REPO=pypyjs/pypyjs-release
+  - REPO=pypyjs/pypyjs-release-nojit
+  - REPO=RustPython/RustPython
+  - REPO=brython-dev/brython  # has .travis.yml file
+  - REPO=brython-dev/brython-pygame
+  - REPO=grumpyhome/grumpy
 
 install:
   #- pip install -r requirements.txt
