@@ -15,24 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=kimiyoung/ParlAI
-  - REPO=kimiyoung/fg-gating
-  - REPO=kimiyoung/planetoid
-  - REPO=kimiyoung/semantics_project
-  - REPO=kimiyoung/shadowsocksr  # has .travis.yml file
-  - REPO=kimiyoung/ssl_bad_gan
-  - REPO=kimiyoung/transfer
+  - REPO=testerSunshine/12306
+  - REPO=lancopku/pkuseg-python
+  - REPO=elliottzheng/CopyTranslator
+  - REPO=yoyoyo-yo/Gasyori100knock
+  - REPO=pjialin/py12306
+  - REPO=meolu/walle-web
+  - REPO=ecthros/uncaptcha2
+  - REPO=jakubroztocil/httpie
+  - REPO=vinta/awesome-python
   - REPO=kimiyoung/transformer-xl
-  - REPO=zihangdai/ERAC-VAML
-  - REPO=zihangdai/RecursiveNN
-  - REPO=zihangdai/cegan_iclr2017
-  - REPO=zihangdai/datautils
-  - REPO=zihangdai/matplotlib-tutorial
-  - REPO=zihangdai/mos
-  - REPO=zihangdai/neural_package
-  - REPO=zihangdai/pytorch_xworld
-  - REPO=zihangdai/rnn_benchmarks
-  - REPO=zihangdai/tensorflow_feature_test
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=yzhao062/pyod
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=Delgan/loguru
+  - REPO=xinntao/ESRGAN
+  - REPO=TheAlgorithms/Python
+  - REPO=NervanaSystems/nlp-architect
+  - REPO=rg3/youtube-dl
+  - REPO=google-research/bert
+  - REPO=keras-team/keras
+  - REPO=d2l-ai/d2l-zh
+  - REPO=woj-ciech/LeakLooker
+  - REPO=TencentYoutuResearch/ObjectDetection-OneStageDet
+  - REPO=avinashpaliwal/Super-SloMo
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
