@@ -15,36 +15,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/GiftStick  # has .travis.yml file
-  - REPO=google/aistreamer
-  - REPO=google/capirca  # has .travis.yml file
-  - REPO=google/ci_edit
-  - REPO=google/citest
-  - REPO=google/containerregistry  # has .travis.yml file
-  - REPO=google/crmint  # has .travis.yml file
-  - REPO=google/elemental2
-  - REPO=google/flight-lab
-  - REPO=google/ggrc-core
-  - REPO=google/grr  # has .travis.yml file
-  - REPO=google/grr-doc
-  - REPO=google/jax  # has .travis.yml file
-  - REPO=google/loaner  # has .travis.yml file
-  - REPO=google/mirandum
-  - REPO=google/myelin-acorn-electron-hardware
-  - REPO=google/nucleus
-  - REPO=google/openhtf  # has .travis.yml file
-  - REPO=google/pasta  # has .travis.yml file
-  - REPO=google/python-adb  # has .travis.yml file
-  - REPO=google/python-spanner-orm
-  - REPO=google/pytype  # has .travis.yml file
-  - REPO=google/sanitizers
-  - REPO=google/starlark-rust  # has .travis.yml file
-  - REPO=google/swift-jupyter
-  - REPO=google/tf_mesh_renderer
-  - REPO=google/timesketch  # has .travis.yml file
-  - REPO=google/turbinia  # has .travis.yml file
-  - REPO=google/uis-rnn  # has .travis.yml file
-  - REPO=google/yapf  # has .travis.yml file
+  - REPO=dropbox/DropboxBusinessScripts
+  - REPO=dropbox/PyHive  # has .travis.yml file
+  - REPO=dropbox/changes-mesos-framework
+  - REPO=dropbox/dropbox-api-v2-repl
+  - REPO=dropbox/dropbox-sdk-python  # has .travis.yml file
+  - REPO=dropbox/dropbox_hook
+  - REPO=dropbox/git-rbr  # has .travis.yml file
+  - REPO=dropbox/groupy  # has .travis.yml file
+  - REPO=dropbox/hermes  # has .travis.yml file
+  - REPO=dropbox/kafka-python  # has .travis.yml file
+  - REPO=dropbox/llama  # has .travis.yml file
+  - REPO=dropbox/mdwebhook
+  - REPO=dropbox/merou  # has .travis.yml file
+  - REPO=dropbox/nautilus-dropbox
+  - REPO=dropbox/nsot  # has .travis.yml file
+  - REPO=dropbox/plyj  # has .travis.yml file
+  - REPO=dropbox/pyannotate  # has .travis.yml file
+  - REPO=dropbox/pygerduty  # has .travis.yml file
+  - REPO=dropbox/pynsot  # has .travis.yml file
+  - REPO=dropbox/pyston  # has .travis.yml file
+  - REPO=dropbox/pyston-perf
+  - REPO=dropbox/pytest-flakefinder  # has .travis.yml file
+  - REPO=dropbox/pyxl
+  - REPO=dropbox/rules_node
+  - REPO=dropbox/securitybot  # has .travis.yml file
+  - REPO=dropbox/sfmdemo
+  - REPO=dropbox/sqlalchemy-stubs  # has .travis.yml file
+  - REPO=dropbox/stone  # has .travis.yml file
+  - REPO=dropbox/stopwatch  # has .travis.yml file
+  - REPO=dropbox/trapperkeeper
 
 install:
   #- pip install -r requirements.txt
