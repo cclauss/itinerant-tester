@@ -15,53 +15,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=testerSunshine/12306
-  - REPO=kimiyoung/transformer-xl
-  - REPO=learnbyexample/py_regular_expressions
-  - REPO=lancopku/pkuseg-python
-  - REPO=youyuge34/Anime-InPainting
-  - REPO=yzhao062/pyod
-  - REPO=jakubroztocil/httpie
-  - REPO=elliottzheng/CopyTranslator
-  - REPO=toddmotto/public-apis
-  - REPO=tensorflow/models
-  - REPO=rg3/youtube-dl
-  - REPO=pjialin/py12306
-  - REPO=TheAlgorithms/Python
-  - REPO=vinta/awesome-python
-  - REPO=d2l-ai/d2l-en
-  - REPO=ecthros/uncaptcha2
-  - REPO=hack12306/12306-booking
-  - REPO=donnemartin/system-design-primer
-  - REPO=mahmoud/awesome-python-applications
-  - REPO=zalandoresearch/flair
-  - REPO=YunYang1994/tensorflow-yolov3
-  - REPO=django/django
-  - REPO=knazeri/edge-connect
-  - REPO=google-research/google-research
-  - REPO=ageitgey/face_recognition
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=microsoft/ApplicationInsights-Python  # has .travis.yml file
+  - REPO=microsoft/AzureML-BERT
+  - REPO=microsoft/ELL-PiDataCenter
+  - REPO=microsoft/MMdnn  # has .travis.yml file
+  - REPO=microsoft/NimbusML
+  - REPO=microsoft/SparseSC
+  - REPO=microsoft/TextWorld  # has .travis.yml file
+  - REPO=microsoft/agogosml
+  - REPO=microsoft/azure-devops-python-api
+  - REPO=microsoft/cmd-call-graph
+  - REPO=microsoft/dowhy
+  - REPO=microsoft/dpu-utils
+  - REPO=microsoft/edx-configuration  # has .travis.yml file
+  - REPO=microsoft/edx-platform
+  - REPO=microsoft/human-pose-estimation.pytorch
+  - REPO=microsoft/jupyter-Kqlmagic
+  - REPO=microsoft/logmerge
+  - REPO=microsoft/mu
+  - REPO=microsoft/mu_pip_build
+  - REPO=microsoft/mu_pip_environment
+  - REPO=microsoft/mu_pip_python_library
+  - REPO=microsoft/mvnfeed-cli
+  - REPO=microsoft/presidio-genproto
+  - REPO=microsoft/ptvsd  # has .travis.yml file
+  - REPO=microsoft/pvscbot
+  - REPO=microsoft/qmt
+  - REPO=microsoft/ros_azure_iothub
+  - REPO=microsoft/samples-for-ai
+  - REPO=microsoft/service-fabric-cli  # has .travis.yml file
+  - REPO=microsoft/vsts-cli
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
