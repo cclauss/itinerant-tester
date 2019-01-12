@@ -15,37 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dropbox/DropboxBusinessScripts
-  - REPO=dropbox/PyHive  # has .travis.yml file
-  - REPO=dropbox/changes-mesos-framework
-  - REPO=dropbox/dropbox-api-v2-repl
-  - REPO=dropbox/dropbox-sdk-python  # has .travis.yml file
-  - REPO=dropbox/dropbox_hook
-  - REPO=dropbox/git-rbr  # has .travis.yml file
-  - REPO=dropbox/groupy  # has .travis.yml file
-  - REPO=dropbox/hermes  # has .travis.yml file
-  - REPO=dropbox/kafka-python  # has .travis.yml file
-  - REPO=dropbox/llama  # has .travis.yml file
-  - REPO=dropbox/mdwebhook
-  - REPO=dropbox/merou  # has .travis.yml file
-  - REPO=dropbox/nautilus-dropbox
-  - REPO=dropbox/nsot  # has .travis.yml file
-  - REPO=dropbox/plyj  # has .travis.yml file
-  - REPO=dropbox/pyannotate  # has .travis.yml file
-  - REPO=dropbox/pygerduty  # has .travis.yml file
-  - REPO=dropbox/pynsot  # has .travis.yml file
-  - REPO=dropbox/pyston  # has .travis.yml file
-  - REPO=dropbox/pyston-perf
-  - REPO=dropbox/pytest-flakefinder  # has .travis.yml file
-  - REPO=dropbox/pyxl
-  - REPO=dropbox/rules_node
-  - REPO=dropbox/securitybot  # has .travis.yml file
-  - REPO=dropbox/sfmdemo
-  - REPO=dropbox/sqlalchemy-stubs  # has .travis.yml file
-  - REPO=dropbox/stone  # has .travis.yml file
-  - REPO=dropbox/stopwatch  # has .travis.yml file
-  - REPO=dropbox/trapperkeeper
-
+  - REPO=testerSunshine/12306
+  - REPO=kimiyoung/transformer-xl
+  - REPO=learnbyexample/py_regular_expressions
+  - REPO=lancopku/pkuseg-python
+  - REPO=youyuge34/Anime-InPainting
+  - REPO=yzhao062/pyod
+  - REPO=jakubroztocil/httpie
+  - REPO=elliottzheng/CopyTranslator
+  - REPO=toddmotto/public-apis
+  - REPO=tensorflow/models
+  - REPO=rg3/youtube-dl
+  - REPO=pjialin/py12306
+  - REPO=TheAlgorithms/Python
+  - REPO=vinta/awesome-python
+  - REPO=d2l-ai/d2l-en
+  - REPO=ecthros/uncaptcha2
+  - REPO=hack12306/12306-booking
+  - REPO=donnemartin/system-design-primer
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=zalandoresearch/flair
+  - REPO=YunYang1994/tensorflow-yolov3
+  - REPO=django/django
+  - REPO=knazeri/edge-connect
+  - REPO=google-research/google-research
+  - REPO=ageitgey/face_recognition
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
