@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Dhrumilcse/Interactive-Dictionary-in-Python/blob/master/README.md
+  - REPO=Dhrumilcse/Interactive-Dictionary-in-Python
 
 install:
   #- pip install -r requirements.txt
