@@ -15,37 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=microsoft/ApplicationInsights-Python  # has .travis.yml file
-  - REPO=microsoft/AzureML-BERT
-  - REPO=microsoft/ELL-PiDataCenter
-  - REPO=microsoft/MMdnn  # has .travis.yml file
-  - REPO=microsoft/NimbusML
-  - REPO=microsoft/SparseSC
-  - REPO=microsoft/TextWorld  # has .travis.yml file
-  - REPO=microsoft/agogosml
-  - REPO=microsoft/azure-devops-python-api
-  - REPO=microsoft/cmd-call-graph
-  - REPO=microsoft/dowhy
-  - REPO=microsoft/dpu-utils
-  - REPO=microsoft/edx-configuration  # has .travis.yml file
-  - REPO=microsoft/edx-platform
-  - REPO=microsoft/human-pose-estimation.pytorch
-  - REPO=microsoft/jupyter-Kqlmagic
-  - REPO=microsoft/logmerge
-  - REPO=microsoft/mu
-  - REPO=microsoft/mu_pip_build
-  - REPO=microsoft/mu_pip_environment
-  - REPO=microsoft/mu_pip_python_library
-  - REPO=microsoft/mvnfeed-cli
-  - REPO=microsoft/presidio-genproto
-  - REPO=microsoft/ptvsd  # has .travis.yml file
-  - REPO=microsoft/pvscbot
-  - REPO=microsoft/qmt
-  - REPO=microsoft/ros_azure_iothub
-  - REPO=microsoft/samples-for-ai
-  - REPO=microsoft/service-fabric-cli  # has .travis.yml file
-  - REPO=microsoft/vsts-cli
-
+  - REPO=testerSunshine/12306
+  - REPO=kimiyoung/transformer-xl
+  - REPO=learnbyexample/py_regular_expressions
+  - REPO=d2l-ai/d2l-en
+  - REPO=lancopku/pkuseg-python
+  - REPO=hack12306/12306-booking
+  - REPO=youyuge34/Anime-InPainting
+  - REPO=tensorflow/models
+  - REPO=rg3/youtube-dl
+  - REPO=yzhao062/pyod
+  - REPO=donnemartin/system-design-primer
+  - REPO=elliottzheng/CopyTranslator
+  - REPO=vinta/awesome-python
+  - REPO=TheAlgorithms/Python
+  - REPO=toddmotto/public-apis
+  - REPO=pjialin/py12306
+  - REPO=ecthros/uncaptcha2
+  - REPO=deepfakes/faceswap
+  - REPO=zalandoresearch/flair
+  - REPO=keras-team/keras
+  - REPO=jakubroztocil/httpie
+  - REPO=mraza007/Python-for-beginners
+  - REPO=YunYang1994/tensorflow-yolov3
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=makkoncept/pyvoc
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
