@@ -15,14 +15,27 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=istio/istio
-  - REPO=istio/tools
-  - REPO=istio/proxy
-  - REPO=istio/envoy
-  - REPO=istio/api
-  - REPO=istio/test-infra
-  - REPO=istio/istio.io
-  - REPO=envoyproxy/envoy
+  - REPO=goldmann/FedoraReview
+  - REPO=goldmann/appliance-tools
+  - REPO=goldmann/application-templates
+  - REPO=goldmann/atomic-reactor  # has .travis.yml file
+  - REPO=goldmann/base-1
+  - REPO=goldmann/cct
+  - REPO=goldmann/ce-ctf-tests
+  - REPO=goldmann/cekit
+  - REPO=goldmann/collector
+  - REPO=goldmann/concreate-test-steps
+  - REPO=goldmann/ctf-cli
+  - REPO=goldmann/docker-registry  # has .travis.yml file
+  - REPO=goldmann/docker-squash  # has .travis.yml file
+  - REPO=goldmann/dogen
+  - REPO=goldmann/dstat
+  - REPO=goldmann/errata-tool  # has .travis.yml file
+  - REPO=goldmann/git-scrapper
+  - REPO=goldmann/pnc-cli
+  - REPO=goldmann/sdp
+  - REPO=goldmann/standalone-eap
+  - REPO=goldmann/tools
 
 install:
   #- pip install -r requirements.txt
