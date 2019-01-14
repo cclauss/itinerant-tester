@@ -15,13 +15,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/wc-devops-utilities
-  - REPO=IBM/tensorflow-large-model-support
-  - REPO=osforscience/deep-learning-ocean 
-  - REPO=zisianw/FaceBoxes.PyTorch 
-  - REPO=super-inspire/super-inspire-end   
-  - REPO=TheYahya/sherlock
-  - REPO=YunYang1994/tensorflow-yolov3
+  - REPO=istio/istio
+  - REPO=istio/tools
+  - REPO=istio/proxy
+  - REPO=istio/envoy
+  - REPO=istio/api
+  - REPO=istio/test-infra
+  - REPO=istio/istio.io
+  - REPO=envoyproxy/envoy
 
 install:
   #- pip install -r requirements.txt
