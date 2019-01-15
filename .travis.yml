@@ -15,11 +15,41 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=gitpython-developers/GitPython  # has .travis.yml file
-  - REPO=gitpython-developers/async  # has .travis.yml file
-  - REPO=gitpython-developers/gitdb  # has .travis.yml file
-  - REPO=gitpython-developers/gitpython_issue_301
-  - REPO=gitpython-developers/smmap  # has .travis.yml file
+  - REPO=BookBrainz/CaliBBre
+  - REPO=BookBrainz/bookbrainz-dev-docs
+  - REPO=BookBrainz/bookbrainz-schema  # has .travis.yml file
+  - REPO=BookBrainz/bookbrainz-ws  # has .travis.yml file
+  - REPO=BookBrainz/python-bookbrainz  # has .travis.yml file
+  - REPO=metabrainz/acousticbrainz-dataset-runner
+  - REPO=metabrainz/acousticbrainz-server
+  - REPO=metabrainz/bm
+  - REPO=metabrainz/brainzbot-plugins  # has .travis.yml file
+  - REPO=metabrainz/brainzutils-python  # has .travis.yml file
+  - REPO=metabrainz/changed-mbid-feed
+  - REPO=metabrainz/critiquebrainz
+  - REPO=metabrainz/listenbrainz-recommendation-playground
+  - REPO=metabrainz/listenbrainz-server  # has .travis.yml file
+  - REPO=metabrainz/locustfiles
+  - REPO=metabrainz/logster
+  - REPO=metabrainz/mb-rngpy
+  - REPO=metabrainz/mb2wikidatabot
+  - REPO=metabrainz/mbs_logs_parsers
+  - REPO=metabrainz/mbspotify
+  - REPO=metabrainz/mbsssss
+  - REPO=metabrainz/mbstats
+  - REPO=metabrainz/mlhd-import
+  - REPO=metabrainz/musicbrainz-logs
+  - REPO=metabrainz/musicbrainz-server-log-analysis
+  - REPO=metabrainz/newhost-replication-fix
+  - REPO=metabrainz/nginx-upstream-manager  # has .travis.yml file
+  - REPO=metabrainz/picard  # has .travis.yml file
+  - REPO=metabrainz/picard-plugin-tools
+  - REPO=metabrainz/picard-plugins
+  - REPO=metabrainz/python-quickbooks  # has .travis.yml file
+  - REPO=metabrainz/search-indexer
+  - REPO=metabrainz/sir
+  - REPO=metabrainz/sys-tools
+  - REPO=metabrainz/xmpp-messaging-server
 
 install:
   #- pip install -r requirements.txt
