@@ -15,53 +15,12 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pjialin/py12306
-  - REPO=testerSunshine/12306
-  - REPO=bjoernkarmann/project_alias
-  - REPO=osforscience/deep-learning-ocean
-  - REPO=mahmoud/awesome-python-applications
-  - REPO=krocki/dnc
-  - REPO=lancopku/pkuseg-python
-  - REPO=p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch
-  - REPO=super-inspire/super-inspire-end
-  - REPO=mindsdb/mindsdb
-  - REPO=donnemartin/system-design-primer
-  - REPO=tensorflow/models
-  - REPO=V-I-C-T-O-R/12306
-  - REPO=google-research/bert
-  - REPO=rg3/youtube-dl
-  - REPO=TheAlgorithms/Python
-  - REPO=vinta/awesome-python
-  - REPO=hack12306/12306-booking
-  - REPO=kimiyoung/transformer-xl
-  - REPO=versionzhang/python_12306
-  - REPO=chengyangfu/retinamask
-  - REPO=zisianw/FaceBoxes.PyTorch
-  - REPO=rtqichen/torchdiffeq
-  - REPO=deepfakes/faceswap
-  - REPO=elliottzheng/CopyTranslator
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=gitpython-developers/GitPython  # has .travis.yml file
+  - REPO=gitpython-developers/async  # has .travis.yml file
+  - REPO=gitpython-developers/gitdb  # has .travis.yml file
+  - REPO=gitpython-developers/gitpython_issue_301
+  - REPO=gitpython-developers/smmap  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
