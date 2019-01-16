@@ -15,31 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=testerSunshine/12306
   - REPO=pjialin/py12306
-  - REPO=mahmoud/awesome-python-applications
+  - REPO=testerSunshine/12306
   - REPO=bjoernkarmann/project_alias
   - REPO=osforscience/deep-learning-ocean
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=Bashfuscator/Bashfuscator
+  - REPO=elliottzheng/CopyTranslator
   - REPO=0xgalz/Virtuailor
   - REPO=super-inspire/super-inspire-end
-  - REPO=lancopku/pkuseg-python
-  - REPO=Bashfuscator/Bashfuscator
-  - REPO=p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch
-  - REPO=krocki/dnc
-  - REPO=V-I-C-T-O-R/12306
-  - REPO=donnemartin/system-design-primer
+  - REPO=yoyoyo-yo/Gasyori100knock
   - REPO=tensorflow/models
-  - REPO=versionzhang/python_12306
-  - REPO=rg3/youtube-dl
-  - REPO=kimiyoung/transformer-xl
   - REPO=google-research/bert
+  - REPO=V-I-C-T-O-R/12306
+  - REPO=lancopku/pkuseg-python
+  - REPO=kimiyoung/transformer-xl
+  - REPO=donnemartin/system-design-primer
+  - REPO=TaDaa/vimade
+  - REPO=justusschock/delira
+  - REPO=p-christ/Deep-Reinforcement-Learning-Algorithms-with-PyTorch
+  - REPO=versionzhang/python_12306
+  - REPO=keras-team/keras
   - REPO=vinta/awesome-python
   - REPO=rtqichen/torchdiffeq
-  - REPO=TaDaa/vimade
   - REPO=TheAlgorithms/Python
-  - REPO=ipsingh06/ml-desnapify
-  - REPO=justusschock/delira
-  - REPO=elliottzheng/CopyTranslator
+  - REPO=ageitgey/face_recognition
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
   - REPO=Tribler/tribler
