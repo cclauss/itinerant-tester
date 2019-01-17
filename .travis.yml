@@ -15,7 +15,52 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=RaRe-Technologies/smart_open
+  - REPO=pjialin/py12306
+  - REPO=testerSunshine/12306
+  - REPO=osforscience/deep-learning-ocean
+  - REPO=fs0c131y/ESFileExplorerOpenPortVuln
+  - REPO=bjoernkarmann/project_alias
+  - REPO=TencentYoutuResearch/ObjectDetection-OneStageDet
+  - REPO=mars-project/mars
+  - REPO=super-inspire/super-inspire-end
+  - REPO=elliottzheng/CopyTranslator
+  - REPO=mps-youtube/mps-youtube
+  - REPO=mahmoud/awesome-python-applications
+  - REPO=tensorflow/models
+  - REPO=1991viet/Very-deep-cnn-tensorflow
+  - REPO=1991viet/Character-level-cnn-pytorch
+  - REPO=vinta/awesome-python
+  - REPO=1991viet/Character-level-cnn-tensorflow
+  - REPO=1991viet/Very-deep-cnn-pytorch
+  - REPO=keras-team/keras
+  - REPO=0xgalz/Virtuailor
+  - REPO=google-research/bert
+  - REPO=toddmotto/public-apis
+  - REPO=libuyu/GHM_Detection
+  - REPO=lancopku/pkuseg-python
+  - REPO=yoyoyo-yo/Gasyori100knock
+  - REPO=rg3/youtube-dl
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
   - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
