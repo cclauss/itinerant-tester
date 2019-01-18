@@ -15,53 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=schollz/howmanypeoplearearound
-  - REPO=pjialin/py12306
-  - REPO=testerSunshine/12306
-  - REPO=osforscience/deep-learning-ocean
-  - REPO=mars-project/mars
-  - REPO=vinta/awesome-python
-  - REPO=fs0c131y/ESFileExplorerOpenPortVuln
-  - REPO=TencentYoutuResearch/ObjectDetection-OneStageDet
-  - REPO=tensorflow/models
-  - REPO=bjoernkarmann/project_alias
-  - REPO=super-inspire/super-inspire-end
-  - REPO=wonderfulsuccess/weixin_crawler
-  - REPO=Canjie-Luo/MORAN_v2
-  - REPO=donnemartin/system-design-primer
-  - REPO=PaddlePaddle/PARL
-  - REPO=google-research/bert
-  - REPO=mahmoud/awesome-python-applications
-  - REPO=mps-youtube/mps-youtube
-  - REPO=1991viet/Character-level-cnn-tensorflow
-  - REPO=lancopku/pkuseg-python
-  - REPO=elliottzheng/CopyTranslator
-  - REPO=rg3/youtube-dl
-  - REPO=keras-team/keras
-  - REPO=1991viet/Very-deep-cnn-pytorch
-  - REPO=1991viet/Very-deep-cnn-tensorflow
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=open-mmlab/mmcv  # has .travis.yml file
+  - REPO=open-mmlab/mmdetection  # has .travis.yml file
+  - REPO=open-mmlab/yfcc_download
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
