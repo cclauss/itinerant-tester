@@ -15,7 +15,38 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=waf-project/waf
+  - REPO=edx/edx-platform
+  - REPO=edx/edx-e2e-tests  # has .travis.yml file
+  - REPO=edx/testeng-ci  # has .travis.yml file
+  - REPO=edx/notifier  # has .travis.yml file
+  - REPO=edx/ecommerce-worker  # has .travis.yml file
+  - REPO=edx/configuration  # has .travis.yml file
+  - REPO=edx/ecommerce  # has .travis.yml file
+  - REPO=edx/edx-analytics-data-api  # has .travis.yml file
+  - REPO=edx/edx-analytics-pipeline  # has .travis.yml file
+  - REPO=edx/edx-gomatic  # has .travis.yml file
+  - REPO=edx/edx-notes-api  # has .travis.yml file
+  - REPO=edx/edx-ora2  # has .travis.yml file
+  - REPO=edx/edx-submissions  # has .travis.yml file
+  - REPO=edx/edx-val  # has .travis.yml file
+  - REPO=edx/edx-video-pipeline  # has .travis.yml file
+  - REPO=edx/edx-video-worker  # has .travis.yml file
+  - REPO=edx/xblock-lti-consumer  # has .travis.yml file
+  - REPO=edx/xqueue  # has .travis.yml file
+  # The rest are currently green...
+  - REPO=edx/code-annotations  # has .travis.yml file
+  - REPO=edx/course-discovery  # has .travis.yml file
+  - REPO=edx/credentials  # has .travis.yml file
+  - REPO=edx/django-oauth2-provider  # has .travis.yml file
+  - REPO=edx/edx-enterprise  # has .travis.yml file
+  - REPO=edx/edx-enterprise-data  # has .travis.yml file
+  - REPO=edx/edx-proctoring  # has .travis.yml file
+  - REPO=edx/mdrst
+  - REPO=edx/opaque-keys  # has .travis.yml file
+  - REPO=edx/openedx-census
+  - REPO=edx/repo-tools  # has .travis.yml file
+  - REPO=edx/tubular  # has .travis.yml file
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
