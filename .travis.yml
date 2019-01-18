@@ -15,13 +15,6 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ArduPilot/ChibiOS
-  - REPO=ArduPilot/googletest
-  - REPO=google/googletest
-  - REPO=ArduPilot/uavcan
-  - REPO=UAVCAN/libuavcan
-  - REPO=UAVCAN/pyuavcan
-  - REPO=ArduPilot/waf
   - REPO=waf-project/waf
 install:
   #- pip install -r requirements.txt
