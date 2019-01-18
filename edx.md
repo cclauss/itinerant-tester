@@ -1,0 +1,31 @@
+EdX Python effort
+
+1. __edx/edx-platform__
+    * https://github.com/edx/edx-platform/pull/19620
+    * https://github.com/edx/edx-platform/pull/19621
+    * https://github.com/edx/edx-platform/pull/19622
+    * https://github.com/edx/edx-platform/pull/19628
+    * https://github.com/edx/edx-platform/pull/19629
+2. __edx/edx-e2e-tests__
+    * https://github.com/edx/edx-e2e-tests/pull/370
+    * https://github.com/edx/edx-e2e-tests/pull/371
+3. __edx/testeng-ci__
+    * https://github.com/edx/testeng-ci/pull/196
+4. __edx/notifier__
+    * https://github.com/edx/notifier/pull/71
+    * https://github.com/edx/notifier/pull/72
+5. __edx/ecommerce-worker__
+    * https://github.com/edx/ecommerce-worker/pull/51
+6. __edx/configuration__
+7. __edx/ecommerce__
+8. __edx/edx-analytics-data-api__
+9. __edx/edx-analytics-pipeline__
+10. __edx/edx-gomatic__
+11. __edx/edx-notes-api__
+12. __edx/edx-ora2__
+13. __edx/edx-submissions__
+14. __edx/edx-val__
+15. __edx/edx-video-pipeline__
+16. __edx/edx-video-worker__
+17. __edx/xblock-lti-consumer__
+18. __edx/xqueue__
