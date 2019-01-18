@@ -15,14 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=patx/pickledb
-  - REPO=patx/sandbox
-  #- REPO=michaelyoungstrom/ansible
-  #- REPO=michaelyoungstrom/django_tutorial
-  #- REPO=michaelyoungstrom/edx-platform
-  - REPO=michaelyoungstrom/golfpool
-  - REPO=michaelyoungstrom/spigot  # has .travis.yml file
-  - REPO=michaelyoungstrom/victor_bot_scraper
+  - REPO=onelogin/onelogin-python-aws-assume-role
+  - REPO=onelogin/onelogin-python-sdk  # has .travis.yml file
+  - REPO=onelogin/python-saml  # has .travis.yml file
+  - REPO=onelogin/python3-saml  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
