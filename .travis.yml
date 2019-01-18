@@ -20,6 +20,7 @@ env:
   - REPO=google/googletest
   - REPO=ArduPilot/uavcan
   - REPO=UAVCAN/libuavcan
+  - REPO=UAVCAN/pyuavcan
   - REPO=ArduPilot/waf
   - REPO=waf-project/waf
 install:
