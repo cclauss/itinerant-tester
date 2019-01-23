@@ -15,21 +15,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=web-platform-tests/pulls.web-platform-tests.org
-  - REPO=web-platform-tests/results-collection  # has .travis.yml file
-  - REPO=qunarcorp/open_dnsdb
-  - REPO=qunarcorp/qg.core  # has .travis.yml file
-  - REPO=qunarcorp/qg.db  # has .travis.yml file
-  - REPO=qunarcorp/qg.test  # has .travis.yml file
-  - REPO=qunarcorp/qg.web  # has .travis.yml file
-  - REPO=qunarcorp/qtalk_search
-  - REPO=ArduPilot/FWLoad
-  - REPO=ArduPilot/MAVProxy
-  - REPO=ArduPilot/SITL_Models
-  - REPO=ArduPilot/ardupilot_wiki
-  - REPO=ArduPilot/ardupilot_wiki_copy
-  - REPO=ArduPilot/pymavlink  # has .travis.yml file
-  - REPO=ArduPilot/waf
+  - REPO=houglum/apitools  # has .travis.yml file
+  - REPO=houglum/boto  # has .travis.yml file
+  - REPO=houglum/google-reauth-python  # has .travis.yml file
+  - REPO=houglum/gsutil  # has .travis.yml file
+  - REPO=houglum/httplib2
+  - REPO=houglum/mock  # has .travis.yml file
+  - REPO=houglum/oauth2client  # has .travis.yml file
+  - REPO=houglum/pyu2f  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
