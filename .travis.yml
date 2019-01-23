@@ -15,16 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jaredhobbs/agithub
-  - REPO=jaredhobbs/channels
-  - REPO=jaredhobbs/dash-party-lights
-  - REPO=jaredhobbs/django-extensions  # has .travis.yml file
-  - REPO=jaredhobbs/django-localflavor  # has .travis.yml file
-  - REPO=jaredhobbs/django-two-factor-auth  # has .travis.yml file
-  - REPO=jaredhobbs/gevent  # has .travis.yml file
-  - REPO=jaredhobbs/paramiko  # has .travis.yml file
-  - REPO=jaredhobbs/pelican  # has .travis.yml file
-  - REPO=jaredhobbs/wee-slack  # has .travis.yml file
+  - REPO=getpelican/pelican  # has .travis.yml file  
+  - REPO=getpelican/pelican-plugins
+  - REPO=getpelican/feedgenerator
+  - REPO=getpelican/pelican-tools
   
 install:
   #- pip install -r requirements.txt
