@@ -15,8 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/grr
-  
+  - REPO=facebookresearch/LASER
+  - REPO=skorokithakis/catt
+  - REPO=fighting41love/funNLP
+  - REPO=ycszen/TorchSeg
+  - REPO=osforscience/deep-learning-ocean
+  - REPO=upresearch/statarb
+  - REPO=StevenBlack/hosts
+  - REPO=testerSunshine/12306
+  - REPO=pyouroboros/ouroboros
+  - REPO=pjialin/py12306
+  - REPO=tensorflow/models
+  - REPO=schollz/howmanypeoplearearound
+  - REPO=donnemartin/system-design-primer
+  - REPO=vinta/awesome-python
+  - REPO=AirtestProject/Airtest
+  - REPO=TheAlgorithms/Python
+  - REPO=tensorflow/datasets
+  - REPO=google-research/bert
+  - REPO=IntelAI/nauta
+  - REPO=xingyizhou/ExtremeNet
+  - REPO=0xHJK/music-dl
+  - REPO=rg3/youtube-dl
+  - REPO=rockyzhengwu/nsfw
+  - REPO=google-research-datasets/natural-questions
+  - REPO=toddmotto/public-apis
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
