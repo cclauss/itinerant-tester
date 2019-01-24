@@ -15,10 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=getpelican/pelican  # has .travis.yml file  
-  - REPO=getpelican/pelican-plugins
-  - REPO=getpelican/feedgenerator
-  - REPO=getpelican/pelican-tools
+  - REPO=google/grr
   
 install:
   #- pip install -r requirements.txt
