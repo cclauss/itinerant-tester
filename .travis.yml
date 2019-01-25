@@ -15,20 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=raghur/easyblogger  # has .travis.yml file
-  - REPO=raghur/euler
-  - REPO=raghur/fruzzy
-  - REPO=raghur/github_commit_mailer
-  - REPO=raghur/neovim-remote
-  - REPO=raghur/password-store
-  - REPO=raghur/powertool  # has .travis.yml file
-  - REPO=raghur/pushover
-  - REPO=raghur/pywakeonlan  # has .travis.yml file
-  - REPO=raghur/qbittorrent.py
-  - REPO=raghur/vim-ghost
-  - REPO=raghur/vim-hug-neovim-rpc
-  - REPO=raghur/vim-snippets  # has .travis.yml file
-
+  - REPO=fighting41love/funNLP
+  - REPO=facebookresearch/LASER
+  - REPO=skorokithakis/catt
+  - REPO=YongHaoWu/NeteaseCloudMusicFlac
+  - REPO=osforscience/deep-learning-ocean
+  - REPO=StevenBlack/hosts
+  - REPO=deepmind/pysc2
+  - REPO=deeppomf/DeepCreamPy
+  - REPO=donnemartin/system-design-primer
+  - REPO=rockyzhengwu/nsfw
+  - REPO=tensorflow/models
+  - REPO=google-research-datasets/natural-questions
+  - REPO=pjialin/py12306
+  - REPO=xingyizhou/ExtremeNet
+  - REPO=testerSunshine/12306
+  - REPO=vinta/awesome-python
+  - REPO=AirtestProject/Airtest
+  - REPO=IntelAI/nauta
+  - REPO=osforscience/TensorFlow-Course
+  - REPO=ycszen/TorchSeg
+  - REPO=devAmoghS/Machine-Learning-with-Python
+  - REPO=neo-ai/neo-ai-dlr
+  - REPO=schollz/howmanypeoplearearound
+  - REPO=openai/spinningup
+  - REPO=toddmotto/public-apis
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
