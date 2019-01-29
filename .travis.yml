@@ -15,14 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=caronc/apprise  # has .travis.yml file
-  - REPO=caronc/newsreap  # has .travis.yml file
-  - REPO=caronc/nzb-notify
-  - REPO=caronc/nzb-subliminal
-  - REPO=caronc/nzbget-dirwatch
-  - REPO=caronc/nzbget-tidyit
-  - REPO=caronc/pynzbget  # has .travis.yml file
-  - REPO=caronc/subliminal  # has .travis.yml file
+  - REPO=apple/ccs-calendarserver  # has .travis.yml file
+  - REPO=apple/ccs-pycalendar
+  - REPO=apple/ccs-pyosxframeworks
+  - REPO=apple/ccs-pysecuretransport
+  - REPO=apple/ccs-twistedextensions
+  - REPO=apple/coremltools
+  - REPO=apple/ml-all-pairs
+  - REPO=apple/swift-integration-tests
+  - REPO=apple/swift-source-compat-suite
+  - REPO=travis-ci/enterprise-extras
+  - REPO=travis-ci/gesund  # has .travis.yml file
+  - REPO=travis-ci/nat-conntracker  # has .travis.yml file
+  - REPO=travis-ci/travis-intro-python
+  - REPO=travis-ci/travis_staging_test  # has .travis.yml file
+  - REPO=adobe/DrawAIng
+  - REPO=adobe/NLP-Cube
+  - REPO=adobe/brackets-shell
+  - REPO=adobe/experience-platform-dsw-reference
+  - REPO=adobe/havoc
+  - REPO=adobe/incubator-airflow  # has .travis.yml file
+  - REPO=adobe/messer
+  - REPO=adobe/prometheus_tftp_exporter
+  - REPO=adobe/rules_docker  # has .travis.yml file
+  - REPO=adobe/soul
+  - REPO=adobe/telemetry-utils
 
 install:
   #- pip install -r requirements.txt
