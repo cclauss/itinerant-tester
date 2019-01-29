@@ -15,53 +15,15 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=caronc/apprise
-  - REPO=yodaos-project/yodaos
-  - REPO=fighting41love/funNLP
-  - REPO=michael-lazar/rtv
-  - REPO=d2l-ai/d2l-zh
-  - REPO=vinta/awesome-python
-  - REPO=testerSunshine/12306
-  - REPO=donnemartin/system-design-primer
-  - REPO=pjialin/py12306
-  - REPO=tensorflow/models
-  - REPO=Unity-Technologies/obstacle-tower-env
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=dmis-lab/biobert
-  - REPO=fredrik-corneliusson/click-web
-  - REPO=rg3/youtube-dl
-  - REPO=toddmotto/public-apis
-  - REPO=facebookresearch/LASER
-  - REPO=layumi/Person_reID_baseline_pytorch
-  - REPO=CyberDiscovery/cyberdisc-bot
-  - REPO=google-research/bert
-  - REPO=keras-team/keras
-  - REPO=osforscience/TensorFlow-Course
-  - REPO=TheAlgorithms/Python
-  - REPO=xingyizhou/ExtremeNet
-  - REPO=ansible/ansible
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=caronc/apprise  # has .travis.yml file
+  - REPO=caronc/newsreap  # has .travis.yml file
+  - REPO=caronc/nzb-notify
+  - REPO=caronc/nzb-subliminal
+  - REPO=caronc/nzbget-dirwatch
+  - REPO=caronc/nzbget-tidyit
+  - REPO=caronc/pynzbget  # has .travis.yml file
+  - REPO=caronc/subliminal  # has .travis.yml file
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
