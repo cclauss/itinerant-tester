@@ -15,7 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=benjaminp/six
+  - REPO=web-platform-tests/wpt
+  - REPO=web-platform-tests/wpt.fyi 
+  - REPO=web-platform-tests/pulls.web-platform-tests.org
+  - REPO=web-platform-tests/results-collection  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
