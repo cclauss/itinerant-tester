@@ -15,8 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pyTaxPrep/taxes-2018
-install:
+  - REPO=yinpeng/MongoAlchemy
+  - REPO=yinpeng/PyCAPTCHA
+  - REPO=yinpeng/pillow-pil
+  - REPO=yinpeng/pyramid  # has .travis.yml fileinstall:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
