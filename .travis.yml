@@ -15,10 +15,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=yinpeng/MongoAlchemy
-  - REPO=yinpeng/PyCAPTCHA
-  - REPO=yinpeng/pillow-pil
-  - REPO=yinpeng/pyramid  # has .travis.yml fileinstall:
+  - REPO=Pylons/colander  # has .travis.yml file
+  - REPO=Pylons/deformdemo  # has .travis.yml file
+  - REPO=Pylons/docs-style-guide  # has .travis.yml file
+  - REPO=Pylons/hupper  # has .travis.yml file
+  - REPO=Pylons/paginate  # has .travis.yml file
+  - REPO=Pylons/pastedeploy  # has .travis.yml file
+  - REPO=Pylons/peppercorn  # has .travis.yml file
+  - REPO=Pylons/plaster  # has .travis.yml file
+  - REPO=Pylons/plaster_pastedeploy  # has .travis.yml file
+  - REPO=Pylons/pyramid  # has .travis.yml file
+  - REPO=Pylons/pyramid-bundling-example
+  - REPO=Pylons/pyramid-cookiecutter-alchemy  # has .travis.yml file
+  - REPO=Pylons/pyramid-cookiecutter-starter  # has .travis.yml file
+  - REPO=Pylons/pyramid-cookiecutter-zodb  # has .travis.yml file
+  - REPO=Pylons/pyramid_beaker
+  - REPO=Pylons/pyramid_blogr
+  - REPO=Pylons/pyramid_cookbook  # has .travis.yml file
+  - REPO=Pylons/pyramid_debugtoolbar  # has .travis.yml file
+  - REPO=Pylons/pyramid_jinja2  # has .travis.yml file
+  - REPO=Pylons/pyramid_mailer  # has .travis.yml file
+  - REPO=Pylons/pyramid_retry  # has .travis.yml file
+  - REPO=Pylons/pyramid_tm  # has .travis.yml file
+  - REPO=Pylons/pyramid_tutorials
+  - REPO=Pylons/pyramid_zcml  # has .travis.yml file
+  - REPO=Pylons/substanced  # has .travis.yml file
+  - REPO=Pylons/venusian  # has .travis.yml file
+  - REPO=Pylons/waitress  # has .travis.yml file
+  - REPO=Pylons/webob  # has .travis.yml file
+  - REPO=Pylons/webtest  # has .travis.yml file
+  - REPO=Pylons/zodburi  # has .travis.yml file
+install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
