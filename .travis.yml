@@ -4,7 +4,6 @@ language: python
 cache: pip
 python:
   #- 2.7
-  #- 3.4
   #- 3.5
   #- 3.6
   - 3.7
@@ -15,32 +14,17 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=labrys/Anansi
-  - REPO=labrys/Medusa  # has .travis.yml file
-  - REPO=labrys/PyTrakt  # has .travis.yml file
-  - REPO=labrys/XBMCnfoMoviesImporter.bundle
-  - REPO=labrys/adba
-  - REPO=labrys/cookiecutter-pylibrary  # has .travis.yml file
-  - REPO=labrys/cpython  # has .travis.yml file
-  - REPO=labrys/feedparser
-  - REPO=labrys/flake8-import-order  # has .travis.yml file
-  - REPO=labrys/flake8-tidy-imports  # has .travis.yml file
-  - REPO=labrys/guessit  # has .travis.yml file
-  - REPO=labrys/html5lib-python  # has .travis.yml file
-  - REPO=labrys/imdb-pie  # has .travis.yml file
-  - REPO=labrys/jsonrpclib  # has .travis.yml file
-  - REPO=labrys/knowit  # has .travis.yml file
-  - REPO=labrys/panoptes  # has .travis.yml file
-  - REPO=labrys/pint  # has .travis.yml file
-  - REPO=labrys/plexpy
-  - REPO=labrys/py-unrar2
-  - REPO=labrys/python-anhinga  # has .travis.yml file
-  - REPO=labrys/pytvmaze
-  - REPO=labrys/saber  # has .travis.yml file
-  - REPO=labrys/sabnzbd
-  - REPO=labrys/sickbeard_mp4_automator
-  - REPO=labrys/tox  # has .travis.yml file
-  - REPO=labrys/tvmaze  # has .travis.yml file
+  - REPO=openaps/oref0
+  - REPO=openaps/decocare  # has .travis.yml file
+  - REPO=openaps/decocare-clean  # has .travis.yml file
+  - REPO=openaps/dexcom_reader
+  - REPO=openaps/oacids
+  - REPO=openaps/openaps  # has .travis.yml file
+  - REPO=openaps/openaps-agp
+  - REPO=openaps/openaps-contrib
+  - REPO=openaps/openxshareble
+  - REPO=openaps/stdprojectexample
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
