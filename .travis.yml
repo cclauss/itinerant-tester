@@ -15,13 +15,28 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IronLanguages/iron-websites
-  - REPO=IronLanguages/ironpython-docs
-  - REPO=IronLanguages/ironpython2
-  - REPO=IronLanguages/ironpython3
-  - REPO=IronLanguages/main
-  - REPO=IronLanguages/setuptools  # has .travis.yml file
-  - REPO=IronLanguages/virtualenv  # has .travis.yml file
+  - REPO=sagemath/binary-pkg
+  - REPO=sagemath/cypari2  # has .travis.yml file
+  - REPO=sagemath/cysignals  # has .travis.yml file
+  - REPO=sagemath/git-developer-guide
+  - REPO=sagemath/git-trac-command  # has .travis.yml file
+  - REPO=sagemath/planet
+  - REPO=sagemath/sage
+  - REPO=sagemath/sage-combinat-widgets
+  - REPO=sagemath/sage-explorer
+  - REPO=sagemath/sage-patchbot
+  - REPO=sagemath/sage-workflow
+  - REPO=sagemath/sage_sample  # has .travis.yml file
+  - REPO=sagemath/sage_trac
+  - REPO=sagemath/sage_trac_plugin
+  - REPO=sagemath/sagelib
+  - REPO=sagemath/sagenb
+  - REPO=sagemath/sagesmc
+  - REPO=sagemath/sagetrac-mirror
+  - REPO=sagemath/sphinx-sagecell-ext
+  - REPO=sagemath/trac-git-plugin
+  - REPO=sagemath/trac-githooks
+  - REPO=sagemath/utmost-website
 
 install:
   #- pip install -r requirements.txt
