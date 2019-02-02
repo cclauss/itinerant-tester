@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=torfsen/python-systemd-tutorial
+  - REPO=httpsNtesEyes/pylane
   - REPO=GWUvision/Hotels-50K
 install:
   #- pip install -r requirements.txt
