@@ -15,8 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nodejs/build
-  - REPO=nodejs/node
+  - REPO=torfsen/python-systemd-tutorial
+  - REPO=GWUvision/Hotels-50K
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
