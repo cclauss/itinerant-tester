@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bmsdave/v8
+  - REPO=vuvova/gdb-tools
 
 install:
   #- pip install -r requirements.txt
