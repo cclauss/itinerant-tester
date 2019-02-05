@@ -2,21 +2,21 @@ group: travis_latest
 dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
-python:
-  - 2.7
-  #- 3.4
-  #- 3.5
-  #- 3.6
-  - 3.7
-matrix:
-  allow_failures:
-    - python: 2.7
-    - python: nightly
-    - python: pypy
-    - python: pypy3
 env:
-  - REPO=tensorflow/tensorflow
-
+  global:
+    - TESTCASE=tests/tests_docs.py
+    - TESTCASE=tests/test_handler.py
+    - TESTCASE=tests/tests_middleware.py
+    - TESTCASE=tests/tests_placebo.py
+    - TESTCASE=tests/tests_async.py
+    - TESTCASE=tests/tests.py
+  matrix:
+    include:
+      - python: "2.7"
+      - python: "3.6"
+      - python: "3.7"
+        dist: xenial
+        
 before_install: pip list --format columns
 install:
   #- pip install -r requirements.txt
