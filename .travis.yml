@@ -2,8 +2,8 @@ group: travis_latest
 dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
-matrix:
-  env:
+env:
+  matrix:
     global:
       - TESTCASE=tests/tests_docs.py
       - TESTCASE=tests/test_handler.py
