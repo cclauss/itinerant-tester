@@ -4,12 +4,13 @@ language: python
 cache: pip
 TESTCASES: &TESTCASES
   env:
-    - TESTCASE=tests/tests_docs.py
-    - TESTCASE=tests/test_handler.py
-    - TESTCASE=tests/tests_middleware.py
-    - TESTCASE=tests/tests_placebo.py
-    - TESTCASE=tests/tests_async.py
-    - TESTCASE=tests/tests.py
+    global:
+      - TESTCASE=tests/tests_docs.py
+      - TESTCASE=tests/test_handler.py
+      - TESTCASE=tests/tests_middleware.py
+      - TESTCASE=tests/tests_placebo.py
+      - TESTCASE=tests/tests_async.py
+      - TESTCASE=tests/tests.py
 matrix:
   include:
     - python: "2.7"
