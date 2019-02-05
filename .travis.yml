@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=rsms/inter
+  - REPO=web-platform-tests/wpt
 
 before_install: pip list --format columns
 install:
