@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=web-platform-tests/wpt
+  - REPO=tensorflow/tensorflow
 
 before_install: pip list --format columns
 install:
