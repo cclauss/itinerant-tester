@@ -15,31 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=toddmotto/public-apis
-  - REPO=gto76/python-cheatsheet
   - REPO=rsms/inter
+  - REPO=gto76/python-cheatsheet
+  - REPO=toddmotto/public-apis
   - REPO=NVlabs/stylegan
-  - REPO=NVlabs/ffhq-dataset
   - REPO=vietnguyen91/QuickDraw
-  - REPO=deepmind/hanabi-learning-environment
   - REPO=facebookresearch/XLM
-  - REPO=nosarthur/gita
+  - REPO=NVlabs/ffhq-dataset
   - REPO=caronc/apprise
+  - REPO=deepmind/hanabi-learning-environment
   - REPO=stanfordnlp/stanfordnlp
   - REPO=donnemartin/system-design-primer
-  - REPO=minimaxir/big-list-of-naughty-strings
-  - REPO=tensorflow/models
-  - REPO=s0md3v/Photon
-  - REPO=UltimateSoftware/AGENT
-  - REPO=vinta/awesome-python
-  - REPO=pirate/ArchiveBox
   - REPO=jliljebl/flowblade
-  - REPO=vietnguyen91/ASCII-generator
+  - REPO=torfsen/python-systemd-tutorial
+  - REPO=tensorflow/models
+  - REPO=vinta/awesome-python
+  - REPO=UltimateSoftware/AGENT
+  - REPO=nosarthur/gita
   - REPO=rg3/youtube-dl
+  - REPO=depthsecurity/armory
+  - REPO=deepfakes/faceswap
+  - REPO=ageitgey/face_recognition
   - REPO=bourdakos1/tfjs-object-detection-training
-  - REPO=tldr-pages/tldr
-  - REPO=twintproject/twint
-  - REPO=ansible/ansible
+  - REPO=vietnguyen91/ASCII-generator
+  - REPO=TheAlgorithms/Python
+  - REPO=keras-team/keras
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
   - REPO=Tribler/tribler
