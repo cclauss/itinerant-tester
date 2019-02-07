@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,8 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mltframework/mlt
-  - REPO=mltframework/webvfx
+  - REPO=jliljebl/flowblade
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
