@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jliljebl/flowblade
+  - REPO=sobotka/blender
 
 install:
   #- pip install -r requirements.txt
