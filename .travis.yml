@@ -15,53 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/clusterfuzz
-  - REPO=toddmotto/public-apis
-  - REPO=NVlabs/stylegan
-  - REPO=gto76/python-cheatsheet
-  - REPO=rsms/inter
-  - REPO=NVlabs/ffhq-dataset
-  - REPO=donnemartin/system-design-primer
-  - REPO=modin-project/modin
-  - REPO=tensorflow/models
-  - REPO=vinta/awesome-python
-  - REPO=stanfordnlp/stanfordnlp
-  - REPO=TheAlgorithms/Python
-  - REPO=depthsecurity/armory
-  - REPO=RiotGames/leaguedirector
-  - REPO=keras-team/keras
-  - REPO=rg3/youtube-dl
-  - REPO=django/django
-  - REPO=jliljebl/flowblade
-  - REPO=bourdakos1/tfjs-object-detection-training
-  - REPO=google-research/bert
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=facebookresearch/XLM
-  - REPO=ansible/ansible
-  - REPO=ambv/black
-  - REPO=pallets/flask
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=goddenrich/Barebones-Flask-and-Caffe-Classifier
+  - REPO=goddenrich/deep-learning-for-human-part-discovery-in-images
+  - REPO=goddenrich/harbormaster-resource
+  - REPO=goddenrich/screening_webapp
+  - REPO=goddenrich/tennis_database
+  - REPO=goddenrich/tf_classification
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
