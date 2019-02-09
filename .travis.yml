@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,12 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=goddenrich/Barebones-Flask-and-Caffe-Classifier
-  - REPO=goddenrich/deep-learning-for-human-part-discovery-in-images
-  - REPO=goddenrich/harbormaster-resource
-  - REPO=goddenrich/screening_webapp
-  - REPO=goddenrich/tennis_database
-  - REPO=goddenrich/tf_classification
+  - REPO=Gallopsled/pwntools
 
 install:
   #- pip install -r requirements.txt
@@ -28,7 +23,7 @@ install:
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+  - git clone --depth=50 ${URL} ~/${REPO} --branch=dev3
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
