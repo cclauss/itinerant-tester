@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/clusterfuzz
+  - REPO=layumi/Person_reID_baseline_pytorch
   - REPO=pyca/cryptography  # has .travis.yml file
   - REPO=pyca/ed25519  # has .travis.yml file
   - REPO=pyca/pyopenssl  # has .travis.yml file
