@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,7 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cpplint/cpplint
+  - REPO=openai/gpt-2
+  - REPO=NVlabs/stylegan
+  - REPO=uber/ludwig
+  - REPO=toddmotto/public-apis
+  - REPO=donnemartin/system-design-primer
+  - REPO=neuroradiology/InsideReCaptcha
+  - REPO=google/clusterfuzz
+  - REPO=initstring/dirty_sock
+  - REPO=toodef/neural-pipeline
+  - REPO=encode/databases
+  - REPO=google/jax
+  - REPO=tensorflow/models
+  - REPO=gto76/python-cheatsheet
+  - REPO=zalandoresearch/flair
+  - REPO=vinta/awesome-python
+  - REPO=ageitgey/face_recognition
+  - REPO=TheAlgorithms/Python
+  - REPO=google-research/bert
+  - REPO=ansible/ansible
+  - REPO=home-assistant/home-assistant
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=keras-team/keras
+  - REPO=python/cpython
+  - REPO=pjialin/py12306
+  - REPO=django/django
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=vnpy/vnpy
+  - REPO=oaubert/python-vlc
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
