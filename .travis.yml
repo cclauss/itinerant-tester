@@ -15,56 +15,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=openai/gpt-2
-  - REPO=NVlabs/stylegan
-  - REPO=uber/ludwig
-  - REPO=RasaHQ/rasa_core
-  - REPO=google-research/planet
-  - REPO=toddmotto/public-apis
-  - REPO=toodef/neural-pipeline
-  - REPO=tensorflow/models
-  - REPO=donnemartin/system-design-primer
-  - REPO=warner/magic-wormhole
-  - REPO=rg3/youtube-dl
-  - REPO=google/clusterfuzz
-  - REPO=vinta/awesome-python
-  - REPO=gto76/python-cheatsheet
-  - REPO=TheAlgorithms/Python
-  - REPO=keras-team/keras
-  - REPO=timgrossmann/InstaPy
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=python/cpython
-  - REPO=deepfakes/faceswap
-  - REPO=home-assistant/home-assistant
-  - REPO=initstring/dirty_sock
-  - REPO=wmliang/pe-afl
-  - REPO=google-research/bert
-  - REPO=scikit-learn/scikit-learn
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=mltframework/mlt
+  
 install:
   #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testing frameworks later
+  - pip install cpplint  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -73,9 +28,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-  - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  - time cpplint .
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
