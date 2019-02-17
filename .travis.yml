@@ -28,7 +28,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time cpplint –recursive .
+  - time cpplint –-recursive .
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
