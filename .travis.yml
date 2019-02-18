@@ -15,10 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jliljebl/flowblade
-  - REPO=tyiannak/pyAudioAnalysis
-  - REPO=wmliang/pe-afl
-  - REPO=ansible/ansible
+  - REPO=google/styleguide
 
 install:
   #- pip install -r requirements.txt
