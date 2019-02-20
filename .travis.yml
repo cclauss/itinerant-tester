@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=edx/acid-block
+  - REPO=edx/bok-choy
 
 install:
   #- pip install -r requirements.txt
