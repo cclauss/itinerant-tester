@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ColdGrub1384/Pyto
+  - REPO=TheAlgorithms/Python
 
 install:
   #- pip install -r requirements.txt
