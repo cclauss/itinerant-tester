@@ -15,7 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=samgiles/slumber
+  - REPO=edx/edx-lint
+  - REPO=click-contrib/click-log
+  
 
 install:
   #- pip install -r requirements.txt
