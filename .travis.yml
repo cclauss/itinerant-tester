@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=edx/edx-platform
+  - REPO=edx/acid-block
 
 install:
   #- pip install -r requirements.txt
