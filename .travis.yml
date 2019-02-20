@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
+  - REPO=edx/edx-platform
 
 install:
   #- pip install -r requirements.txt
