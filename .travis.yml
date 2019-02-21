@@ -15,53 +15,38 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=deepfakes/faceswap
-  - REPO=vinta/awesome-python
-  - REPO=taki0112/Tensorflow-Cookbook
-  - REPO=openai/gpt-2
-  - REPO=TheAlgorithms/Python
-  - REPO=JoYoungjoo/SC-FEGAN
-  - REPO=ray-project/ray
-  - REPO=faif/python-patterns
-  - REPO=donnemartin/system-design-primer
-  - REPO=toddmotto/public-apis
-  - REPO=Yorko/mlcourse.ai
-  - REPO=tensorflow/models
-  - REPO=wzpan/wukong-robot
-  - REPO=uber/ludwig
-  - REPO=linsamtw/FinMind
-  - REPO=ownthink/Jiagu
-  - REPO=google-research/bert
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=gto76/python-cheatsheet
-  - REPO=swisskyrepo/PayloadsAllTheThings
-  - REPO=knazeri/edge-connect
-  - REPO=apachecn/awesome-algorithm
-  - REPO=ansible/ansible
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=rg3/youtube-dl
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=vnpy/vnpy
-  - REPO=oaubert/python-vlc
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=oVirt/fabric-ovirt
+  - REPO=oVirt/gerrit-admin
+  - REPO=oVirt/imgbased  # has .travis.yml file
+  - REPO=oVirt/infra-docs
+  - REPO=oVirt/jenkins
+  - REPO=oVirt/otopi
+  - REPO=oVirt/ovirt-ansible-cluster-upgrade  # has .travis.yml file
+  - REPO=oVirt/ovirt-ansible-disaster-recovery  # has .travis.yml file
+  - REPO=oVirt/ovirt-ansible-dpdk-setup  # has .travis.yml file
+  - REPO=oVirt/ovirt-ansible-infra  # has .travis.yml file
+  - REPO=oVirt/ovirt-appliance
+  - REPO=oVirt/ovirt-demo-tool
+  - REPO=oVirt/ovirt-engine
+  - REPO=oVirt/ovirt-engine-sdk  # has .travis.yml file
+  - REPO=oVirt/ovirt-fast-forward-upgrade
+  - REPO=oVirt/ovirt-host-deploy
+  - REPO=oVirt/ovirt-hosted-engine-ha
+  - REPO=oVirt/ovirt-hosted-engine-setup
+  - REPO=oVirt/ovirt-imageio
+  - REPO=oVirt/ovirt-lldp-labeler
+  - REPO=oVirt/ovirt-log-collector
+  - REPO=oVirt/ovirt-node-ng
+  - REPO=oVirt/ovirt-provider-ovn
+  - REPO=oVirt/ovirt-setup-lib
+  - REPO=oVirt/ovirt-system-tests
+  - REPO=oVirt/ovirt-vmconsole
+  - REPO=oVirt/pthreading
+  - REPO=oVirt/releng-tools
+  - REPO=oVirt/repoman
+  - REPO=oVirt/v2v-conversion-host  # has .travis.yml file
+  - REPO=oVirt/vdsm  # has .travis.yml file
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
