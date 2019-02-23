@@ -15,29 +15,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=coryleeio/Telephone
-  - REPO=coryleeio/django-seed
-  - REPO=coryleeio/simple-docker-demo
-(PyPI_Top_5000_Notifier) ccc-macbook-pro-2:trending_tester cclauss$ ./re* singuliere
-https://github.com/singuliere?tab=repositories&language=python
-  - REPO=singuliere/ansible-ansible_plugins  # has .travis.yml file
-  - REPO=singuliere/codejail
-  - REPO=singuliere/django-pyfs  # has .travis.yml file
-  - REPO=singuliere/edx-platform
-  - REPO=singuliere/edx-val  # has .travis.yml file
-  - REPO=singuliere/enough
-  - REPO=singuliere/event-tracking  # has .travis.yml file
-  - REPO=singuliere/hvac  # has .travis.yml file
-  - REPO=singuliere/molecule  # has .travis.yml file
-  - REPO=singuliere/open-edx-proposals
-  - REPO=singuliere/pykeepass  # has .travis.yml file
-  - REPO=singuliere/pylint-celery  # has .travis.yml file
-  - REPO=singuliere/python-icinga2api
-  - REPO=singuliere/securedrop  # has .travis.yml file
-  - REPO=singuliere/testinfra  # has .travis.yml file
-  - REPO=singuliere/vault-cli  # has .travis.yml file
-  - REPO=singuliere/vault-keepass-import
-  - REPO=singuliere/web-fragments  # has .travis.yml file
+  - REPO=solashirai/ASSISTments_openresponse_grade
+  - REPO=solashirai/NeuralNetIQPGenerator  # has .travis.yml file
+  - REPO=solashirai/QLearnCheckerBoye
+  - REPO=solashirai/crowdsourcehinter
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
