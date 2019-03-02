@@ -15,8 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=tensorflow/transform
-  - REPO=apache/beam
+  - REPO=ColdGrub1384/Pyto
 
 install:
   #- pip install -r requirements.txt
