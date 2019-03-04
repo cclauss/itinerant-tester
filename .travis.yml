@@ -15,31 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=donnemartin/system-design-primer
   - REPO=remoteinterview/zero
   - REPO=chiphuyen/lazynlp
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=d6t/d6tflow
-  - REPO=aiven/pghoard
   - REPO=deepfakes/faceswap
   - REPO=toddmotto/public-apis
-  - REPO=donnemartin/system-design-primer
+  - REPO=d6t/d6tflow
   - REPO=smacke/subsync
-  - REPO=boramalper/pydis
-  - REPO=zulip/zulip
-  - REPO=Mckinsey666/bullet
-  - REPO=Luolc/AdaBound
-  - REPO=taki0112/Tensorflow-Cookbook
-  - REPO=vinta/awesome-python
-  - REPO=djrobstep/migra
+  - REPO=SmirkCao/Lihang
   - REPO=tensorflow/models
-  - REPO=TheAlgorithms/Python
+  - REPO=Mckinsey666/bullet
+  - REPO=vinta/awesome-python
+  - REPO=zjhuang22/maskscoring_rcnn
+  - REPO=sdispater/poetry
+  - REPO=zulip/zulip
+  - REPO=aiven/pghoard
   - REPO=rg3/youtube-dl
-  - REPO=earhian/Humpback-Whale-Identification-1st-
+  - REPO=Luolc/AdaBound
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=TheAlgorithms/Python
+  - REPO=google-research/nasbench
   - REPO=openai/gpt-2
-  - REPO=OpenMined/PySyft
   - REPO=gto76/python-cheatsheet
-  - REPO=keras-team/keras
-  - REPO=grib0ed0v/face_recognition.pytorch
+  - REPO=taki0112/Tensorflow-Cookbook
+  - REPO=spacetimeengineer/spacetimeengine
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
   - REPO=Tribler/tribler
