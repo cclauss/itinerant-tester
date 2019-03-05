@@ -3,7 +3,7 @@
     Update the repo's '.travis.yml' to trigger Travis CI to run flake8 tests on
     the top 25 GitHub Trending Python repos.
 
-    Requires: pip3 install --update beautifulsoup4 github3.py requests lxml
+    Requires: pip3 install --upgrade beautifulsoup4 github3.py requests lxml
         If lxml is not available, html5lib should be a workable substitute
 """
 
@@ -78,12 +78,12 @@ repos = (repo.text.strip().replace(' ', '') for repo in repos
 repos = list(repos) + ['PythonCharmers/python-future',
     # 'ansible/awx', 'cheshirekow/cmake_format', 'n1nj4sec/pupy',
     # 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
-    'ansible/ansible', 'Tribler/tribler', 'vnpy/vnpy', 'oaubert/python-vlc',
-    'getsentry/sentry', 'CoreSecurity/impacket', 'ibm-watson-iot/functions',
-    'nodejs/node', 'nodejs/node-gyp', 'internetarchive/openlibrary', 'google/ffn',
+    'ansible/ansible', 'Tribler/tribler', 'oaubert/python-vlc', 'ColdGrub1384/Pyto',
+    'getsentry/sentry', 'CoreSecurity/impacket', 'nodejs/node',
+    'nodejs/node-gyp', 'internetarchive/openlibrary', 'google/ffn',
     'webpy/webpy', 'ibm-watson-iot/connector-cloudant', 'ibm-watson-iot/device-kodi',
     'ArduPilot/ardupilot', 'matplotlib/matplotlib', 'ckan/ckan', 'ggtracker/sc2reader',
-    'apache/beam', 'apache/incubator-mxnet', 'apache/spark',
+    'apache/beam', 'apache/incubator-mxnet', 'apache/spark', 'ibm-watson-iot/functions',
 ]
     # 'httplib2/httplib2', 'Supervisor/supervisor'
     # 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python']
