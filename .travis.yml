@@ -15,31 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bitsadmin/wesng
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=remoteinterview/zero
-  - REPO=zjhuang22/maskscoring_rcnn
-  - REPO=donnemartin/system-design-primer
-  - REPO=SmirkCao/Lihang
   - REPO=BayesWitnesses/m2cgen
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=USTC-Resource/USTC-Course
   - REPO=openai/neural-mmo
-  - REPO=chiphuyen/lazynlp
+  - REPO=zjhuang22/maskscoring_rcnn
+  - REPO=uber/ludwig
+  - REPO=Mckinsey666/bullet
   - REPO=deepfakes/faceswap
   - REPO=toddmotto/public-apis
-  - REPO=JoYoungjoo/SC-FEGAN
-  - REPO=smacke/subsync
-  - REPO=openai/gpt-2
+  - REPO=remoteinterview/zero
+  - REPO=donnemartin/system-design-primer
   - REPO=tensorflow/models
-  - REPO=SafeBreach-Labs/SirepRAT
-  - REPO=TheAlgorithms/Python
-  - REPO=vinta/awesome-python
-  - REPO=Mckinsey666/bullet
-  - REPO=Luolc/AdaBound
+  - REPO=openai/gpt-2
   - REPO=tensorflow/lingvo
-  - REPO=521xueweihan/HelloGitHub
+  - REPO=foolwood/SiamMask
+  - REPO=vinta/awesome-python
+  - REPO=bitsadmin/wesng
+  - REPO=albu/albumentations
+  - REPO=boramalper/pydis
+  - REPO=earhian/Humpback-Whale-Identification-1st-
+  - REPO=keras-team/keras
+  - REPO=google-research/bert
+  - REPO=chiphuyen/lazynlp
   - REPO=ageitgey/face_recognition
-  - REPO=rg3/youtube-dl
-  - REPO=OWASP/CheatSheetSeries
+  - REPO=smacke/subsync
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
   - REPO=Tribler/tribler
@@ -73,7 +73,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --count --select=E901,E999,F633,F821,F822,F823 --show-source --statistics
+  - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
