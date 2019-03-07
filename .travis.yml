@@ -15,31 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=BayesWitnesses/m2cgen
+  - REPO=CriseLYJ/awesome-python-login-model
   - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=BayesWitnesses/m2cgen
   - REPO=USTC-Resource/USTC-Course
   - REPO=openai/neural-mmo
-  - REPO=zjhuang22/maskscoring_rcnn
-  - REPO=uber/ludwig
-  - REPO=Mckinsey666/bullet
-  - REPO=deepfakes/faceswap
-  - REPO=toddmotto/public-apis
-  - REPO=remoteinterview/zero
-  - REPO=donnemartin/system-design-primer
   - REPO=tensorflow/models
-  - REPO=openai/gpt-2
-  - REPO=tensorflow/lingvo
+  - REPO=uber/ludwig
+  - REPO=zjhuang22/maskscoring_rcnn
+  - REPO=toddmotto/public-apis
+  - REPO=donnemartin/system-design-primer
+  - REPO=Mckinsey666/bullet
+  - REPO=remoteinterview/zero
+  - REPO=deepfakes/faceswap
   - REPO=foolwood/SiamMask
+  - REPO=openai/gpt-2
   - REPO=vinta/awesome-python
-  - REPO=bitsadmin/wesng
-  - REPO=albu/albumentations
-  - REPO=boramalper/pydis
   - REPO=earhian/Humpback-Whale-Identification-1st-
-  - REPO=keras-team/keras
+  - REPO=TheAlgorithms/Python
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=tensorflow/lingvo
   - REPO=google-research/bert
-  - REPO=chiphuyen/lazynlp
+  - REPO=albu/albumentations
+  - REPO=bitsadmin/wesng
+  - REPO=fuergaosi233/gitbook2pdf
   - REPO=ageitgey/face_recognition
-  - REPO=smacke/subsync
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
   - REPO=Tribler/tribler
@@ -73,7 +73,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  - time flake8 . --count --select=E9,F63,F72,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
