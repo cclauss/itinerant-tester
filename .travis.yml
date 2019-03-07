@@ -15,19 +15,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=discdiver/argparse-example
-  - REPO=discdiver/categorical-encoding  # has .travis.yml file
-  - REPO=discdiver/diet
-  - REPO=discdiver/fastai-v3
-  - REPO=discdiver/fluentopt  # has .travis.yml file
-  - REPO=discdiver/gendertxt
-  - REPO=discdiver/intro-data-capstone-musclehub
-  - REPO=discdiver/name-equals-main
-  - REPO=discdiver/os-examples
-  - REPO=discdiver/pandas  # has .travis.yml file
-  - REPO=discdiver/pytest  # has .travis.yml file
-  - REPO=discdiver/readthedocs.org  # has .travis.yml file
-  - REPO=discdiver/tpot  # has .travis.yml file
+  - REPO=rtfd/CommonMark-py  # has .travis.yml file
+  - REPO=rtfd/ads-for-opensource
+  - REPO=rtfd/analytical  # has .travis.yml file
+  - REPO=rtfd/common
+  - REPO=rtfd/django-storages  # has .travis.yml file
+  - REPO=rtfd/guidelines
+  - REPO=rtfd/pydoc.io  # has .travis.yml file
+  - REPO=rtfd/readthedocs-build  # has .travis.yml file
+  - REPO=rtfd/readthedocs-sphinx-ext  # has .travis.yml file
+  - REPO=rtfd/readthedocs.org  # has .travis.yml file
+  - REPO=rtfd/recommonmark  # has .travis.yml file
+  - REPO=rtfd/rtd-sphinx-themes-examples
+  - REPO=rtfd/sphinx-autoapi  # has .travis.yml file
+  - REPO=rtfd/sphinx-notfound-page
+  - REPO=rtfd/sphinxcontrib-dotnetdomain  # has .travis.yml file
+  - REPO=rtfd/sphinxcontrib-multisrc
+  - REPO=rtfd/template
 
 install:
   #- pip install -r requirements.txt
