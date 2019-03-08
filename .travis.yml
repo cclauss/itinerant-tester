@@ -15,24 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=rtfd/CommonMark-py  # has .travis.yml file
-  - REPO=rtfd/ads-for-opensource
-  - REPO=rtfd/analytical  # has .travis.yml file
-  - REPO=rtfd/common
-  - REPO=rtfd/django-storages  # has .travis.yml file
-  - REPO=rtfd/guidelines
-  - REPO=rtfd/pydoc.io  # has .travis.yml file
-  - REPO=rtfd/readthedocs-build  # has .travis.yml file
-  - REPO=rtfd/readthedocs-sphinx-ext  # has .travis.yml file
-  - REPO=rtfd/readthedocs.org  # has .travis.yml file
-  - REPO=rtfd/recommonmark  # has .travis.yml file
-  - REPO=rtfd/rtd-sphinx-themes-examples
-  - REPO=rtfd/sphinx-autoapi  # has .travis.yml file
-  - REPO=rtfd/sphinx-notfound-page
-  - REPO=rtfd/sphinxcontrib-dotnetdomain  # has .travis.yml file
-  - REPO=rtfd/sphinxcontrib-multisrc
-  - REPO=rtfd/template
-
+  - REPO=CriseLYJ/awesome-python-login-model
+  - REPO=Giphy/celeb-detection-oss
+  - REPO=USTC-Resource/USTC-Course
+  - REPO=foolwood/SiamMask
+  - REPO=deepfakes/faceswap
+  - REPO=fuergaosi233/gitbook2pdf
+  - REPO=remoteinterview/zero
+  - REPO=tensorflow/models
+  - REPO=toddmotto/public-apis
+  - REPO=BayesWitnesses/m2cgen
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/privacy
+  - REPO=donnemartin/system-design-primer
+  - REPO=rusty1s/pytorch_geometric
+  - REPO=google/compare_gan
+  - REPO=zodiac182/autoxuexi
+  - REPO=TheAlgorithms/Python
+  - REPO=openai/neural-mmo
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=keras-team/keras
+  - REPO=plotly/dash
+  - REPO=Mckinsey666/bullet
+  - REPO=openai/gpt-2
+  - REPO=python/cpython
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
