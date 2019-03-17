@@ -15,7 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=indico/indico
+  - REPO=RusticiSoftware/SCORMCloud_GoogAppEngApp
+  - REPO=RusticiSoftware/SCORMCloud_PythonDemoApp
+  - REPO=RusticiSoftware/SCORMCloud_PythonLibrary
+  - REPO=RusticiSoftware/TinCanPython  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
@@ -27,7 +30,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --count --select=F401 --show-source --statistics
+  - time flake8 . --count --select=E9,F63,F72,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
