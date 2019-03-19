@@ -15,53 +15,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Wookai/paper-tips-and-tricks
-  - REPO=CriseLYJ/awesome-python-login-model
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=PaddlePaddle/LARK
-  - REPO=deepfakes/faceswap
-  - REPO=tensorflow/models
-  - REPO=adeshpande3/March-Madness-ML
-  - REPO=ofek/bit
-  - REPO=vinta/awesome-python
-  - REPO=dragonfly/dragonfly
-  - REPO=TheAlgorithms/Python
-  - REPO=geekcomputers/Python
-  - REPO=DeepX-inc/machina
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=donnemartin/system-design-primer
-  - REPO=shengqiangzhang/examples-of-web-crawlers
-  - REPO=vita-epfl/openpifpaf
-  - REPO=USTC-Resource/USTC-Course
-  - REPO=django/django
-  - REPO=toddmotto/public-apis
-  - REPO=keras-team/keras
-  - REPO=encode/orm
-  - REPO=AdrianVollmer/PowerHub
-  - REPO=paranoidninja/CarbonCopy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=pybee/Python-Windows-template
+  - REPO=pybee/beefore
+  - REPO=pybee/beekeeper
+  - REPO=pybee/beeware
+  - REPO=pybee/briefcase
+  - REPO=pybee/briefcase-template
+  - REPO=pybee/colosseum
+  - REPO=pybee/cricket
+  - REPO=pybee/duvet  # has .travis.yml file
+  - REPO=pybee/legless-lizard
+  - REPO=pybee/lektor-gravatar
+  - REPO=pybee/liquid-demo
+  - REPO=pybee/ouroboros  # has .travis.yml file
+  - REPO=pybee/pytest-circleci
+  - REPO=pybee/rubicon-objc  # has .travis.yml file
+  - REPO=pybee/sealang  # has .travis.yml file
+  - REPO=pybee/slick
+  - REPO=pybee/tkreadonly
+  - REPO=pybee/toga
+  - REPO=pybee/toga-android
+  - REPO=pybee/toga-cocoa
+  - REPO=pybee/toga-core
+  - REPO=pybee/toga-demo
+  - REPO=pybee/toga-gtk
+  - REPO=pybee/toga-iOS
+  - REPO=pybee/toga_chart
+  - REPO=pybee/travertino
+  - REPO=pybee/voc
+  - REPO=pybee/waggle
+  - REPO=pybee/yorkshire4
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
