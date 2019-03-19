@@ -15,36 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pybee/Python-Windows-template
-  - REPO=pybee/beefore
-  - REPO=pybee/beekeeper
-  - REPO=pybee/beeware
-  - REPO=pybee/briefcase
-  - REPO=pybee/briefcase-template
-  - REPO=pybee/colosseum
-  - REPO=pybee/cricket
-  - REPO=pybee/duvet  # has .travis.yml file
-  - REPO=pybee/legless-lizard
-  - REPO=pybee/lektor-gravatar
-  - REPO=pybee/liquid-demo
-  - REPO=pybee/ouroboros  # has .travis.yml file
-  - REPO=pybee/pytest-circleci
-  - REPO=pybee/rubicon-objc  # has .travis.yml file
-  - REPO=pybee/sealang  # has .travis.yml file
-  - REPO=pybee/slick
-  - REPO=pybee/tkreadonly
-  - REPO=pybee/toga
-  - REPO=pybee/toga-android
-  - REPO=pybee/toga-cocoa
-  - REPO=pybee/toga-core
-  - REPO=pybee/toga-demo
-  - REPO=pybee/toga-gtk
-  - REPO=pybee/toga-iOS
-  - REPO=pybee/toga_chart
-  - REPO=pybee/travertino
-  - REPO=pybee/voc
-  - REPO=pybee/waggle
-  - REPO=pybee/yorkshire4
+  - REPO=edx/edx-platform
 
 install:
   #- pip install -r requirements.txt
