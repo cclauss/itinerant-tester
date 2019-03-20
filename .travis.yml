@@ -16,6 +16,8 @@ matrix:
     - python: pypy3
 env:
   - REPO=edx/edx-platform
+  - REPO=rootm0s/WinPwnage
+
 
 install:
   #- pip install -r requirements.txt
