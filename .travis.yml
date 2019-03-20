@@ -18,6 +18,7 @@ env:
   - REPO=edx/edx-platform
   - REPO=rootm0s/WinPwnage
   - REPO=n1nj4sec/pupy
+  - REPO=Neohapsis/creddump7
 
 
 install:
