@@ -15,6 +15,52 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=tiangolo/fastapi
+  - REPO=CriseLYJ/awesome-python-login-model
+  - REPO=Wookai/paper-tips-and-tricks
+  - REPO=instantbox/instantbox
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=sebastianruder/NLP-progress
+  - REPO=encode/requests-async
+  - REPO=paranoidninja/CarbonCopy
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=deepfakes/faceswap
+  - REPO=vinta/awesome-python
+  - REPO=TheAlgorithms/Python
+  - REPO=thevarunsharma/Animoji-Animate
+  - REPO=tensorflow/magenta
+  - REPO=kartickvad/Tax-Calculator
+  - REPO=USTC-Resource/USTC-Course
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=shengqiangzhang/examples-of-web-crawlers
+  - REPO=google-research/bert
+  - REPO=terrifyzhao/bert-utils
+  - REPO=keras-team/keras
+  - REPO=ytdl-org/youtube-dl
+  - REPO=huggingface/knockknock
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
   - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
@@ -25,8 +71,6 @@ before_script:
   - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
-  - export PYVER=$(python -c "import sys ; print('{}.{}.{}'.format(*sys.version_info))")
-  - echo $PYVER
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - time flake8 . --count --select=E9,F63,F72,F82 --show-source --statistics
