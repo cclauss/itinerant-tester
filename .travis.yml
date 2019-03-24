@@ -15,30 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=victordomingos/ContarDinheiro.py
-  - REPO=victordomingos/Count-files
-  - REPO=victordomingos/Learning_Flask-REST
-  - REPO=victordomingos/NPK-Backup
-  - REPO=victordomingos/PT-Tracking
-  - REPO=victordomingos/PerformanceTests
-  - REPO=victordomingos/RepService
-  - REPO=victordomingos/The-NPK-Weather-App
-  - REPO=victordomingos/The-No-Title-Tech-Blog
-  - REPO=victordomingos/centraldedados.pt
-  - REPO=victordomingos/challenges
-  - REPO=victordomingos/diffimg
-  - REPO=victordomingos/optimize-images
-  - REPO=victordomingos/other_stuff
-  - REPO=victordomingos/pelican-advthumbnailer
-  - REPO=victordomingos/pelican-plugins  # has .travis.yml file
-  - REPO=victordomingos/planet
-  - REPO=victordomingos/puremagic  # has .travis.yml file
-  - REPO=victordomingos/snowy  # has .travis.yml file
-  - REPO=victordomingos/telescope-planner
-  - REPO=victordomingos/termtosvg  # has .travis.yml file
-  - REPO=victordomingos/tkcalendar  # has .travis.yml file
-  - REPO=victordomingos/ttkwidgets  # has .travis.yml file
-  - REPO=victordomingos/victordomingos.com
+  - REPO=earswideopen/ewo-core
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
