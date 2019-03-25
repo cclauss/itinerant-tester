@@ -15,17 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=AlessandroZ/BeRoot
-  - REPO=AlessandroZ/LaZagne  # has .travis.yml file
-  - REPO=AlessandroZ/LaZagneForensic
-  - REPO=AlessandroZ/WinPwnage
-  - REPO=AlessandroZ/changeme  # has .travis.yml file
-  - REPO=AlessandroZ/dpapilab
-  - REPO=AlessandroZ/memorpy
-  - REPO=AlessandroZ/pupy  # has .travis.yml file
-  - REPO=AlessandroZ/pypykatz
-  - REPO=AlessandroZ/pywerview
-  - REPO=AlessandroZ/sparta
+  - REPO=libkeepass/libkeepass
   
 install:
   #- pip install -r requirements.txt
