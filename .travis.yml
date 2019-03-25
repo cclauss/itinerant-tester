@@ -15,8 +15,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/watson-assistant-workbench
-
+  - REPO=AlessandroZ/BeRoot
+  - REPO=AlessandroZ/LaZagne  # has .travis.yml file
+  - REPO=AlessandroZ/LaZagneForensic
+  - REPO=AlessandroZ/WinPwnage
+  - REPO=AlessandroZ/changeme  # has .travis.yml file
+  - REPO=AlessandroZ/dpapilab
+  - REPO=AlessandroZ/memorpy
+  - REPO=AlessandroZ/pupy  # has .travis.yml file
+  - REPO=AlessandroZ/pypykatz
+  - REPO=AlessandroZ/pywerview
+  - REPO=AlessandroZ/sparta
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
