@@ -16,13 +16,13 @@ matrix:
     - python: pypy3
 env:
   - REPO=envoyproxy/envoy
-	- REPO=envoyproxy/envoy-filter-example
+  - REPO=envoyproxy/envoy-filter-example
   - REPO=envoyproxy/envoy-perf
   - REPO=envoyproxy/envoy-tools
   - REPO=envoyproxy/sql-parser
   - REPO=hyrise/sql-parser
-	- REPO=hyrise/benchmark
-	- REPO=hyrise/pcm-graph
+  - REPO=hyrise/benchmark
+  - REPO=hyrise/pcm-graph
   
 install:
   #- pip install -r requirements.txt
