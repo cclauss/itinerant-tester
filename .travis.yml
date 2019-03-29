@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,53 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=youyuge34/PI-REC
-  - REPO=Microsoft/pyright
-  - REPO=lyft/cartography
-  - REPO=toddmotto/public-apis
-  - REPO=donnemartin/system-design-primer
-  - REPO=CriseLYJ/awesome-python-login-model
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=minimaxir/automl-gs
-  - REPO=vinta/awesome-python
-  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
-  - REPO=tensorflow/models
-  - REPO=SoftwareGift/FeatheNets_Face-Anti-spoofing-Attack-Detection-Challenge-CVPR2019
-  - REPO=akanimax/BMSG-GAN
-  - REPO=deepfakes/faceswap
-  - REPO=Alivon/Panda-Learning
-  - REPO=Nick-Gottschlich/Social-Amnesia
-  - REPO=TheAlgorithms/Python
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=instantbox/instantbox
-  - REPO=PrefectHQ/prefect
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=ytdl-org/youtube-dl
-  - REPO=django/django
-  - REPO=keras-team/keras
-  - REPO=goru001/inltk
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
