@@ -15,7 +15,12 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
+  - REPO=InvestmentSystems/class-only-design  # has .travis.yml file
+  - REPO=InvestmentSystems/function-pipe
+  - REPO=InvestmentSystems/staged-recipes  # has .travis.yml file
+  - REPO=InvestmentSystems/static-frame  # has .travis.yml file
+  - REPO=InvestmentSystems/table-compositor
+  - REPO=flexatone/music21
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
