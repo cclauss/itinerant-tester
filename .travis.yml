@@ -15,7 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=skelsec/pypykatz
+  - REPO=andrewbihl/bsed
+  - REPO=CriseLYJ/Python-crawler-tutorial-starts-from-zero
 
 install:
   #- pip install -r requirements.txt
