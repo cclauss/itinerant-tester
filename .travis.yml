@@ -15,53 +15,40 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=geekinglcq/CDCS
-  - REPO=facebookresearch/PyTorch-BigGraph
-  - REPO=toddmotto/public-apis
-  - REPO=ustayready/fireprox
-  - REPO=CriseLYJ/Python-crawler-tutorial-starts-from-zero
-  - REPO=CriseLYJ/awesome-python-login-model
-  - REPO=tensorflow/models
-  - REPO=donnemartin/system-design-primer
-  - REPO=vinta/awesome-python
-  - REPO=williamFalcon/pytorch-lightning
-  - REPO=TheAlgorithms/Python
-  - REPO=USTC-Resource/USTC-Course
-  - REPO=pallets/flask
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=pytorch/fairseq
-  - REPO=andrewbihl/bsed
-  - REPO=ethereum/trinity
-  - REPO=minimaxir/automl-gs
-  - REPO=deepfakes/faceswap
-  - REPO=Lotayou/densebody_pytorch
-  - REPO=bacook17/acronym
-  - REPO=Microsoft/pyright
-  - REPO=keras-team/keras
-  - REPO=iojw/socialscan
-  - REPO=megagonlabs/ginza
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
+  - REPO=IBM-Cloud/get-started-python
+  - REPO=IBM-Cloud/Bluemix-ServiceBroker
+  - REPO=IBM-Cloud/Bluemix-onprem-data
+  - REPO=IBM-Cloud/HackMETU-15
+  - REPO=IBM-Cloud/application-log-analysis
+  - REPO=IBM-Cloud/cf-deployment-tracker-client-python  # has .travis.yml file
+  - REPO=IBM-Cloud/clouddatabases-postgresql-helloworld-python
+  - REPO=IBM-Cloud/clouddatabases-redis-helloworld-python
+  - REPO=IBM-Cloud/concept-insights-eclipse-faq
+  - REPO=IBM-Cloud/data-store-for-memcache-client
+  - REPO=IBM-Cloud/django-boilerplate
+  - REPO=IBM-Cloud/github-traffic-stats
+  - REPO=IBM-Cloud/gp-python-client  # has .travis.yml file
+  - REPO=IBM-Cloud/key-protect-helloworld-python
+  - REPO=IBM-Cloud/kube-samples
+  - REPO=IBM-Cloud/logistics-wizard-controller  # has .travis.yml file
+  - REPO=IBM-Cloud/python-iot-raspberry-pi
+  - REPO=IBM-Cloud/service-discovery-client-python  # has .travis.yml file
+  - REPO=IBM-Cloud/sql-query-clients
+  - REPO=watson-developer-cloud/community
+  - REPO=watson-developer-cloud/personality-insights-twitter-python  # has .travis.yml file
+  - REPO=watson-developer-cloud/python-primer-companion-code  # has .travis.yml file
+  - REPO=watson-developer-cloud/python-sdk  # has .travis.yml file
+  - REPO=watson-developer-cloud/speech-to-text-websockets-python
   - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/connector-qradar
+  - REPO=ibm-watson-iot/connector-statsd  # has .travis.yml file
   - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=ibm-watson-iot/functions  # has .travis.yml file
+  - REPO=ibm-watson-iot/gateway-hue
+  - REPO=ibm-watson-iot/gateway-lightify  # has .travis.yml file
+  - REPO=ibm-watson-iot/iot-python  # has .travis.yml file
+  - REPO=ibm-watson-iot/wi-websphere-auth
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
