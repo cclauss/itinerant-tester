@@ -15,39 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM-Cloud/get-started-python
-  - REPO=IBM-Cloud/Bluemix-ServiceBroker
-  - REPO=IBM-Cloud/Bluemix-onprem-data
-  - REPO=IBM-Cloud/HackMETU-15
-  - REPO=IBM-Cloud/application-log-analysis
-  - REPO=IBM-Cloud/cf-deployment-tracker-client-python  # has .travis.yml file
-  - REPO=IBM-Cloud/clouddatabases-postgresql-helloworld-python
-  - REPO=IBM-Cloud/clouddatabases-redis-helloworld-python
-  - REPO=IBM-Cloud/concept-insights-eclipse-faq
-  - REPO=IBM-Cloud/data-store-for-memcache-client
-  - REPO=IBM-Cloud/django-boilerplate
-  - REPO=IBM-Cloud/github-traffic-stats
-  - REPO=IBM-Cloud/gp-python-client  # has .travis.yml file
-  - REPO=IBM-Cloud/key-protect-helloworld-python
-  - REPO=IBM-Cloud/kube-samples
-  - REPO=IBM-Cloud/logistics-wizard-controller  # has .travis.yml file
-  - REPO=IBM-Cloud/python-iot-raspberry-pi
-  - REPO=IBM-Cloud/service-discovery-client-python  # has .travis.yml file
-  - REPO=IBM-Cloud/sql-query-clients
-  - REPO=watson-developer-cloud/community
-  - REPO=watson-developer-cloud/personality-insights-twitter-python  # has .travis.yml file
-  - REPO=watson-developer-cloud/python-primer-companion-code  # has .travis.yml file
-  - REPO=watson-developer-cloud/python-sdk  # has .travis.yml file
-  - REPO=watson-developer-cloud/speech-to-text-websockets-python
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/connector-qradar
-  - REPO=ibm-watson-iot/connector-statsd  # has .travis.yml file
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions  # has .travis.yml file
-  - REPO=ibm-watson-iot/gateway-hue
-  - REPO=ibm-watson-iot/gateway-lightify  # has .travis.yml file
-  - REPO=ibm-watson-iot/iot-python  # has .travis.yml file
-  - REPO=ibm-watson-iot/wi-websphere-auth
+  - REPO=curl/curl
 
 install:
   #- pip install -r requirements.txt
