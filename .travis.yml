@@ -15,14 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=guardicore/monkey
-  - REPO=n1nj4sec/LaZagne
-  - REPO=n1nj4sec/memorpy
-  - REPO=n1nj4sec/mimipy
-  - REPO=n1nj4sec/pr0cks
-  - REPO=n1nj4sec/psutil  # has .travis.yml file
-  - REPO=n1nj4sec/pupy  # has .travis.yml file
-  - REPO=n1nj4sec/pymemimporter
+  - REPO=PyGithub/PyGithub
 
 install:
   #- pip install -r requirements.txt
