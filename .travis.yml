@@ -15,8 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Accenture/AmpliGraph
-  - REPO=deepmind/mathematics_dataset
+  - REPO=travis-ci/travis-build
+  - REPO=travis-ci/worker
+
   
 install:
   #- pip install -r requirements.txt
