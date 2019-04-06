@@ -15,8 +15,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=travis-ci/travis-build
-  - REPO=travis-ci/worker
+  - REPO=travis-ci/packer-templates-mac
+  - REPO=travis-ci/travis_staging_test
+  - REPO=BanzaiMan/travis_staging_test
+  - REPO=travis-ci/travis-intro-python 
+
 
   
 install:
