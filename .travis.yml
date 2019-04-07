@@ -15,13 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=travis-ci/packer-templates-mac
-  - REPO=travis-ci/travis_staging_test
-  - REPO=BanzaiMan/travis_staging_test
-  - REPO=travis-ci/travis-intro-python 
-
-
-  
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=toddmotto/public-apis
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=tensorflow/models
+  - REPO=CriseLYJ/awesome-python-login-model
+  - REPO=donnemartin/system-design-primer
+  - REPO=vinta/awesome-python
+  - REPO=ytdl-org/youtube-dl
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=OUCMachineLearning/OUCML
+  - REPO=deepmind/mathematics_dataset
+  - REPO=TheAlgorithms/Python
+  - REPO=deepfakes/faceswap
+  - REPO=keras-team/keras
+  - REPO=Microsoft/pyright
+  - REPO=facebookresearch/PyTorch-BigGraph
+  - REPO=google-research/bert
+  - REPO=CriseLYJ/Python-crawler-tutorial-starts-from-zero
+  - REPO=guildai/guildai
+  - REPO=home-assistant/home-assistant
+  - REPO=ageitgey/face_recognition
+  - REPO=python/cpython
+  - REPO=CTFd/CTFd
+  - REPO=Accenture/AmpliGraph
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
