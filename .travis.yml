@@ -15,12 +15,20 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=palantir/asana_mailer
-  - REPO=palantir/conjure-python-client
-  - REPO=palantir/python-jsonrpc-server
-  - REPO=palantir/python-language-server
-  - REPO=palantir/sqlite3worker
-  - REPO=palantir/typedjsonrpc
+  - REPO=fighting41love/funNLP
+  - REPO=google/clusterfuzz
+  - REPO=google/clusterfuzz-tools
+  - REPO=google/googletest
+  - REPO=mherrmann/fbs
+  - REPO=tensorflow/models
+  - REPO=getsentry/sentry
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=Tribler/tribler
+  - REPO=edx/edx-platform
+  - REPO=internetarchive/infogami
+  - REPO=internetarchive/openlibrary
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
