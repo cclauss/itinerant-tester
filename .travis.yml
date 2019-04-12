@@ -15,20 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=fighting41love/funNLP
-  - REPO=google/clusterfuzz
-  - REPO=google/clusterfuzz-tools
-  - REPO=google/googletest
-  - REPO=mherrmann/fbs
+  - REPO=achael/eht-imaging
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=USTC-Resource/USTC-Course
+  - REPO=carykh/jumpcutter
+  - REPO=TheAlgorithms/Python
+  - REPO=TencentYoutuResearch/FaceDetection-DSFD
+  - REPO=edgedb/edgedb
   - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=CriseLYJ/awesome-python-login-model
+  - REPO=tianzhi0549/FCOS
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=OUCMachineLearning/OUCML
+  - REPO=toddmotto/public-apis
+  - REPO=vinta/awesome-python
+  - REPO=vaexio/vaex
+  - REPO=facebookresearch/pytorch_GAN_zoo
+  - REPO=HKUST-Aerial-Robotics/Stereo-RCNN
+  - REPO=django/django
+  - REPO=google-research/bert
+  - REPO=keras-team/keras
+  - REPO=fighting41love/funNLP
+  - REPO=deepfakes/faceswap
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
   - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
   - REPO=nodejs/node
   - REPO=nodejs/node-gyp
-  - REPO=Tribler/tribler
-  - REPO=edx/edx-platform
-  - REPO=internetarchive/infogami
   - REPO=internetarchive/openlibrary
-
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
