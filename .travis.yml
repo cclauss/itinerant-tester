@@ -15,7 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=learning-apache-openwhisk/chapter7-python
+  - REPO=iodide-project/pyodide
+  - REPO=iodide-project/iodide
+  - REPO=RustPython/RustPython
+  - REPO=pypyjs/pypyjs
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
