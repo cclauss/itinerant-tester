@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/worklog
+  - REPO=IBM/serverless-language-translation
 
 install:
   #- pip install -r requirements.txt
