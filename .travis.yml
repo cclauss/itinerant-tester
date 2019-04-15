@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=travis-ci/packer-templates-mac
+  - REPO=IBM/worklog
 
 install:
   #- pip install -r requirements.txt
