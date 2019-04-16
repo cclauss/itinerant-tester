@@ -15,16 +15,44 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=nodejs/node-auto-test
-  - REPO=nodejs/node-chakracore
-  - REPO=nodejs/node-v8
-  - REPO=nodejs/build
-  - REPO=nodejs/ffi
-  - REPO=nodejs/nan
-  - REPO=nodejs/testing
+  - REPO=cgnorthcutt/benchmarking-keras-pytorch
+  - REPO=cgnorthcutt/cleanlab  # has .travis.yml file
+  - REPO=cgnorthcutt/dotbot  # has .travis.yml file
+  - REPO=cgnorthcutt/dotfiles
+  - REPO=cgnorthcutt/examples
+  - REPO=cgnorthcutt/hypopt  # has .travis.yml file
+  - REPO=cgnorthcutt/m2r  # has .travis.yml file
+  - REPO=cgnorthcutt/models
+  - REPO=cgnorthcutt/scholar.py
+  - REPO=cgnorthcutt/tox_cov_travis_pytest_framework  # has .travis.yml file
+  - REPO=zackw/ML_project
+  - REPO=zackw/OpenWPM  # has .travis.yml file
+  - REPO=zackw/PySocks
+  - REPO=zackw/angular_trunks
+  - REPO=zackw/big-list-of-naughty-strings
+  - REPO=zackw/citizenlab-test-lists  # has .travis.yml file
+  - REPO=zackw/cxxfmt
+  - REPO=zackw/exitmap  # has .travis.yml file
+  - REPO=zackw/feedgenerator
+  - REPO=zackw/font-subset
+  - REPO=zackw/gallery.owlfolio.org
+  - REPO=zackw/header-survey
+  - REPO=zackw/iclab-ch-tasks
+  - REPO=zackw/langid.py
+  - REPO=zackw/mecab-python3  # has .travis.yml file
+  - REPO=zackw/mini-amf  # has .travis.yml file
+  - REPO=zackw/minify-mathjax
+  - REPO=zackw/pandoc_reader
+  - REPO=zackw/pdfopt
+  - REPO=zackw/pdfsizeopt
+  - REPO=zackw/pelican  # has .travis.yml file
+  - REPO=zackw/pelican-plugins  # has .travis.yml file
+  - REPO=zackw/python-zstd  # has .travis.yml file
+  - REPO=zackw/readings.owlfolio.org
+  - REPO=zackw/requests
+  - REPO=zackw/rure-python  # has .travis.yml file
+  - REPO=zackw/subprocmgr
+  - REPO=zackw/tbbscraper
 
 install:
   #- pip install -r requirements.txt
