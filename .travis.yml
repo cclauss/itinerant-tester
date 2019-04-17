@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.4
   #- 3.5
   #- 3.6
@@ -15,45 +15,53 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cgnorthcutt/benchmarking-keras-pytorch
-  - REPO=cgnorthcutt/cleanlab  # has .travis.yml file
-  - REPO=cgnorthcutt/dotbot  # has .travis.yml file
-  - REPO=cgnorthcutt/dotfiles
-  - REPO=cgnorthcutt/examples
-  - REPO=cgnorthcutt/hypopt  # has .travis.yml file
-  - REPO=cgnorthcutt/m2r  # has .travis.yml file
-  - REPO=cgnorthcutt/models
-  - REPO=cgnorthcutt/scholar.py
-  - REPO=cgnorthcutt/tox_cov_travis_pytest_framework  # has .travis.yml file
-  - REPO=zackw/ML_project
-  - REPO=zackw/OpenWPM  # has .travis.yml file
-  - REPO=zackw/PySocks
-  - REPO=zackw/angular_trunks
-  - REPO=zackw/big-list-of-naughty-strings
-  - REPO=zackw/citizenlab-test-lists  # has .travis.yml file
-  - REPO=zackw/cxxfmt
-  - REPO=zackw/exitmap  # has .travis.yml file
-  - REPO=zackw/feedgenerator
-  - REPO=zackw/font-subset
-  - REPO=zackw/gallery.owlfolio.org
-  - REPO=zackw/header-survey
-  - REPO=zackw/iclab-ch-tasks
-  - REPO=zackw/langid.py
-  - REPO=zackw/mecab-python3  # has .travis.yml file
-  - REPO=zackw/mini-amf  # has .travis.yml file
-  - REPO=zackw/minify-mathjax
-  - REPO=zackw/pandoc_reader
-  - REPO=zackw/pdfopt
-  - REPO=zackw/pdfsizeopt
-  - REPO=zackw/pelican  # has .travis.yml file
-  - REPO=zackw/pelican-plugins  # has .travis.yml file
-  - REPO=zackw/python-zstd  # has .travis.yml file
-  - REPO=zackw/readings.owlfolio.org
-  - REPO=zackw/requests
-  - REPO=zackw/rure-python  # has .travis.yml file
-  - REPO=zackw/subprocmgr
-  - REPO=zackw/tbbscraper
-
+  - REPO=USTC-Resource/USTC-Course
+  - REPO=wasmerio/python-ext-wasm
+  - REPO=achael/eht-imaging
+  - REPO=iodide-project/pyodide
+  - REPO=terrychenism/OctaveConv
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=PolyAI-LDN/conversational-datasets
+  - REPO=NVlabs/SPADE
+  - REPO=tensorflow/models
+  - REPO=carykh/jumpcutter
+  - REPO=vinta/awesome-python
+  - REPO=zzh8829/yolov3-tf2
+  - REPO=donnemartin/system-design-primer
+  - REPO=TheAlgorithms/Python
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=toddmotto/public-apis
+  - REPO=keras-team/keras
+  - REPO=Microsoft/pyright
+  - REPO=jackfrued/Python-100-Days
+  - REPO=tianzhi0549/FCOS
+  - REPO=meolu/walle-web
+  - REPO=fighting41love/funNLP
+  - REPO=soimort/you-get
+  - REPO=tiangolo/fastapi
+  - REPO=ytdl-org/youtube-dl
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=Tribler/tribler
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=apache/spark
+  - REPO=ibm-watson-iot/functions
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
