@@ -15,53 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ines/spacy-course
-  - REPO=xingyizhou/CenterNet
-  - REPO=iodide-project/pyodide
-  - REPO=Duankaiwen/CenterNet
-  - REPO=alicevision/meshroom
-  - REPO=apachecn/AiLearning
-  - REPO=google-research/morph-net
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=maqp/tfc
-  - REPO=tensorflow/models
-  - REPO=terrychenism/OctaveConv
-  - REPO=achael/eht-imaging
-  - REPO=kk7nc/Text_Classification
-  - REPO=zzh8829/yolov3-tf2
-  - REPO=donnemartin/system-design-primer
-  - REPO=lxtGH/OctaveConv_pytorch
-  - REPO=vinta/awesome-python
-  - REPO=TheAlgorithms/Python
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=NVlabs/SPADE
-  - REPO=iacolippo/octconv-pytorch
-  - REPO=PolyAI-LDN/conversational-datasets
-  - REPO=toddmotto/public-apis
-  - REPO=google-research/bert
-  - REPO=django/django
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=cocodataset/cocoapi
+  - REPO=cocodataset/panopticapi
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
