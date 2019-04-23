@@ -15,10 +15,19 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=grafana/grafana-docker-dev-env
-  - REPO=grafana/grafana-oss-msi-generator
-  - REPO=grafana/synthesize
-
+  - REPO=cloudant/bigcouch  # has .travis.yml file
+  - REPO=cloudant/buildbot
+  - REPO=cloudant/cirrus  # has .travis.yml file
+  - REPO=cloudant/couchdb-documentation  # has .travis.yml file
+  - REPO=cloudant/hdfs
+  - REPO=cloudant/locust  # has .travis.yml file
+  - REPO=cloudant/multiloggy
+  - REPO=cloudant/public-examples
+  - REPO=cloudant/python-cloudant  # has .travis.yml file
+  - REPO=cloudant/quimby
+  - REPO=cloudant/sensu-trapd  # has .travis.yml file
+  - REPO=cloudant/slapi
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
