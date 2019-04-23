@@ -15,53 +15,16 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cool-RR/PySnooper
-  - REPO=jackfrued/Python-100-Days
-  - REPO=3b1b/manim
-  - REPO=apachecn/AiLearning
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=databricks/koalas
-  - REPO=pe3zx/huawei-block-list
-  - REPO=shengqiangzhang/examples-of-web-crawlers
-  - REPO=guanguans/notes
-  - REPO=tensorflow/models
-  - REPO=princeton-vl/CornerNet-Lite
-  - REPO=mlflow/mlflow
-  - REPO=Duankaiwen/CenterNet
-  - REPO=dephell/dephell
-  - REPO=TheAlgorithms/Python
-  - REPO=donnemartin/system-design-primer
-  - REPO=vinta/awesome-python
-  - REPO=toddmotto/public-apis
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=xingyizhou/CenterNet
-  - REPO=LaQuay/TDTChannels
-  - REPO=0xacb/viewgen
-  - REPO=kennethreitz/requests3
-  - REPO=Microsoft/NeuronBlocks
-  - REPO=hzwer/LearningToPaint
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=Tribler/tribler
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
   - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/connector-qradar
+  - REPO=ibm-watson-iot/connector-statsd  # has .travis.yml file
   - REPO=ibm-watson-iot/device-kodi
-  - REPO=ArduPilot/ardupilot
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=apache/spark
-  - REPO=ibm-watson-iot/functions
+  - REPO=ibm-watson-iot/functions  # has .travis.yml file
+  - REPO=ibm-watson-iot/gateway-hue
+  - REPO=ibm-watson-iot/gateway-lightify  # has .travis.yml file
+  - REPO=ibm-watson-iot/iot-python  # has .travis.yml file
+  - REPO=ibm-watson-iot/wi-websphere-auth
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
