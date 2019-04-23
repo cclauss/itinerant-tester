@@ -15,22 +15,35 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ros2/apex_rostest
-  - REPO=ros2/ci
-  - REPO=ros2/examples
-  - REPO=ros2/joystick_drivers
-  - REPO=ros2/launch
-  - REPO=ros2/launch_ros
-  - REPO=ros2/rclpy
-  - REPO=ros2/ros2_documentation  # has .travis.yml file
-  - REPO=ros2/ros2cli
-  - REPO=ros2/ros2doc
-  - REPO=ros2/ros_buildfarm_config
-  - REPO=ros2/ros_core_documentation
-  - REPO=ros2/rosbridge_suite  # has .travis.yml file
-  - REPO=ros2/rosidl
-  - REPO=ros2/sros2
-  - REPO=ros2/teleop_twist_keyboard
+    - REPO=jtolds/pynarcissus
+    - REPO=andresriancho/w3af
+    - REPO=libkeepass/libkeepass
+    - REPO=nccgroup/redsnarf
+    - REPO=volatilityfoundation/volatility
+    - REPO=AlessandroZ/LaZagne
+    - REPO=n1nj4sec/pupy
+    - REPO=endgameinc/gym-malware
+    - REPO=zsdonghao/tensorlayer
+    - REPO=PlasmaPy/PlasmaPy 
+    - REPO=Seanld/Latte
+    - REPO=juanjux/client-python
+    - REPO=erocarrera/pefile
+    - REPO=vbuterin/pybitcointools
+    - REPO=xoreaxeaxeax/sandsifter
+    - REPO=neozhaoliang/pywonderland
+    - REPO=zerosum0x0/koadic
+    - REPO=bugcrowdlabs/HUNT
+    - REPO=tensorflow/models
+    - REPO=fendouai/FaceRank
+    - REPO=persepolisdm/persepolis
+    - REPO=pallets/flask
+    - REPO=HelloZeroNet/ZeroNet
+    - REPO=scikit-learn/scikit-learn
+    - REPO=huwwp/cryptop
+    - REPO=brightmart/text_classification
+    - REPO=alexellis/docker-blinkt-workshop
+    - REPO=josephmisiti/awesome-machine-learning
+    - REPO=monoxgas/sRDI
 
 install:
   #- pip install -r requirements.txt
