@@ -15,16 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/connector-qradar
-  - REPO=ibm-watson-iot/connector-statsd  # has .travis.yml file
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions  # has .travis.yml file
-  - REPO=ibm-watson-iot/gateway-hue
-  - REPO=ibm-watson-iot/gateway-lightify  # has .travis.yml file
-  - REPO=ibm-watson-iot/iot-python  # has .travis.yml file
-  - REPO=ibm-watson-iot/wi-websphere-auth
-  - REPO=ibm-watson-iot/grafana4iot
+  - REPO=grafana/grafana-docker-dev-env
+  - REPO=grafana/grafana-oss-msi-generator
+  - REPO=grafana/synthesize
 
 install:
   #- pip install -r requirements.txt
