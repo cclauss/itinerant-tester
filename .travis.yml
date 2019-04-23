@@ -15,27 +15,22 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ros/angles
-  - REPO=ros/catkin
-  - REPO=ros/documentation
-  - REPO=ros/dynamic_reconfigure
-  - REPO=ros/executive_smach
-  - REPO=ros/gencpp
-  - REPO=ros/genlisp
-  - REPO=ros/genmsg
-  - REPO=ros/genpy
-  - REPO=ros/genpybindings
-  - REPO=ros/gentypelibxml
-  - REPO=ros/geometry_tutorials
-  - REPO=ros/joint_state_publisher
-  - REPO=ros/ros
-  - REPO=ros/ros_comm
-  - REPO=ros/rosbag_image_compressor
-  - REPO=ros/rosdistro  # has .travis.yml file
-  - REPO=ros/roslint
-  - REPO=ros/tf2_visualization
-  - REPO=ros/urdf_parser_py
-  - REPO=ros/xacro
+  - REPO=ros2/apex_rostest
+  - REPO=ros2/ci
+  - REPO=ros2/examples
+  - REPO=ros2/joystick_drivers
+  - REPO=ros2/launch
+  - REPO=ros2/launch_ros
+  - REPO=ros2/rclpy
+  - REPO=ros2/ros2_documentation  # has .travis.yml file
+  - REPO=ros2/ros2cli
+  - REPO=ros2/ros2doc
+  - REPO=ros2/ros_buildfarm_config
+  - REPO=ros2/ros_core_documentation
+  - REPO=ros2/rosbridge_suite  # has .travis.yml file
+  - REPO=ros2/rosidl
+  - REPO=ros2/sros2
+  - REPO=ros2/teleop_twist_keyboard
 
 install:
   #- pip install -r requirements.txt
