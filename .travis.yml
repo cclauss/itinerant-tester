@@ -15,19 +15,28 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cloudant/bigcouch  # has .travis.yml file
-  - REPO=cloudant/buildbot
-  - REPO=cloudant/cirrus  # has .travis.yml file
-  - REPO=cloudant/couchdb-documentation  # has .travis.yml file
-  - REPO=cloudant/hdfs
-  - REPO=cloudant/locust  # has .travis.yml file
-  - REPO=cloudant/multiloggy
-  - REPO=cloudant/public-examples
-  - REPO=cloudant/python-cloudant  # has .travis.yml file
-  - REPO=cloudant/quimby
-  - REPO=cloudant/sensu-trapd  # has .travis.yml file
-  - REPO=cloudant/slapi
-  
+  - REPO=ros/angles
+  - REPO=ros/catkin
+  - REPO=ros/documentation
+  - REPO=ros/dynamic_reconfigure
+  - REPO=ros/executive_smach
+  - REPO=ros/gencpp
+  - REPO=ros/genlisp
+  - REPO=ros/genmsg
+  - REPO=ros/genpy
+  - REPO=ros/genpybindings
+  - REPO=ros/gentypelibxml
+  - REPO=ros/geometry_tutorials
+  - REPO=ros/joint_state_publisher
+  - REPO=ros/ros
+  - REPO=ros/ros_comm
+  - REPO=ros/rosbag_image_compressor
+  - REPO=ros/rosdistro  # has .travis.yml file
+  - REPO=ros/roslint
+  - REPO=ros/tf2_visualization
+  - REPO=ros/urdf_parser_py
+  - REPO=ros/xacro
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
