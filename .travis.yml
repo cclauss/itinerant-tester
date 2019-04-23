@@ -24,6 +24,7 @@ env:
   - REPO=ibm-watson-iot/gateway-lightify  # has .travis.yml file
   - REPO=ibm-watson-iot/iot-python  # has .travis.yml file
   - REPO=ibm-watson-iot/wi-websphere-auth
+  - REPO=ibm-watson-iot/grafana4iot
 
 install:
   #- pip install -r requirements.txt
