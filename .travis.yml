@@ -15,36 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=kennethreitz/awesome-guides
-  - REPO=kennethreitz/bash.py
-  - REPO=kennethreitz/blindspin  # has .travis.yml file
-  - REPO=kennethreitz/clint  # has .travis.yml file
-  - REPO=kennethreitz/crayons
-  - REPO=kennethreitz/delegator.py
-  - REPO=kennethreitz/dj-database-url  # has .travis.yml file
-  - REPO=kennethreitz/em-keyboard
-  - REPO=kennethreitz/env  # has .travis.yml file
-  - REPO=kennethreitz/flask-common
-  - REPO=kennethreitz/flask-sslify
-  - REPO=kennethreitz/grequests
-  - REPO=kennethreitz/legit  # has .travis.yml file
-  - REPO=kennethreitz/maya  # has .travis.yml file
-  - REPO=kennethreitz/morepython.org
-  - REPO=kennethreitz/pipenv-sublime
-  - REPO=kennethreitz/pytheory
-  - REPO=kennethreitz/records  # has .travis.yml file
-  - REPO=kennethreitz/records-migrate
-  - REPO=kennethreitz/requests  # has .travis.yml file
-  - REPO=kennethreitz/requests-async  # has .travis.yml file
-  - REPO=kennethreitz/requests3
-  - REPO=kennethreitz/responder  # has .travis.yml file
-  - REPO=kennethreitz/s3monkey
-  - REPO=kennethreitz/saythanks.io
-  - REPO=kennethreitz/setup.py
-  - REPO=kennethreitz/showme
-  - REPO=kennethreitz/std
-  - REPO=kennethreitz/tablib  # has .travis.yml file
-  - REPO=kennethreitz/twitter-scraper
+  - REPO=indico/indico
+  - REPO=mitodl/django-cas
 
 install:
   #- pip install -r requirements.txt
