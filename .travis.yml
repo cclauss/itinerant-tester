@@ -15,8 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=indico/indico
-  - REPO=mitodl/django-cas
+  - REPO=CharlesShang/DCNv2
 
 install:
   #- pip install -r requirements.txt
