@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=LiuChangFreeman/C--Compiler
+  - REPO=leaderj1001/Attention-Augmented-Conv2d
 
 install:
   #- pip install -r requirements.txt
