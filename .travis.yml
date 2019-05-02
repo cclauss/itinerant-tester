@@ -15,23 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=geoadmin/3d-forge
-  - REPO=geoadmin/deploy-1
-  - REPO=geoadmin/dynamodump
-  - REPO=geoadmin/geopackage-python  # has .travis.yml file
-  - REPO=geoadmin/lib-esrijson  # has .travis.yml file
-  - REPO=geoadmin/lib-gatilegrid  # has .travis.yml file
-  - REPO=geoadmin/lib-poolmanager  # has .travis.yml file
-  - REPO=geoadmin/mapproxy  # has .travis.yml file
-  - REPO=geoadmin/mf-chsdi3
-  - REPO=geoadmin/service-alti
-  - REPO=geoadmin/service-image
-  - REPO=geoadmin/service-mapproxy
-  - REPO=geoadmin/service-owschecker
-  - REPO=geoadmin/service-print
-  - REPO=geoadmin/service-sphinxsearch
-  - REPO=geoadmin/tool-aws  # has .travis.yml file
-  - REPO=geoadmin/tool-mbutil  # has .travis.yml file
+  - REPO=fancompute/angler
+  - REPO=fancompute/fdfdpy
+  - REPO=fancompute/neuroptica  # has .travis.yml file
+  - REPO=fancompute/wavetorch
 
 install:
   #- pip install -r requirements.txt
