@@ -15,7 +15,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=hzwer/LearningToPaint
+  - REPO=blarghmatey/Aliaster
+  - REPO=blarghmatey/BigQuery-Python  # has .travis.yml file
+  - REPO=blarghmatey/autovpn
+  - REPO=blarghmatey/corduroy
+  - REPO=blarghmatey/harvey
+  - REPO=blarghmatey/invoke  # has .travis.yml file
+  - REPO=blarghmatey/kivy  # has .travis.yml file
+  - REPO=blarghmatey/myscripts
+  - REPO=blarghmatey/ops-utils
+  - REPO=blarghmatey/pip  # has .travis.yml file
+  - REPO=blarghmatey/podcastinit
+  - REPO=blarghmatey/pre-commit  # has .travis.yml file
+  - REPO=blarghmatey/pytest-mirror
+  - REPO=blarghmatey/salt
+  - REPO=blarghmatey/spaCy  # has .travis.yml file
+  - REPO=blarghmatey/testinfra  # has .travis.yml file
+  - REPO=blarghmatey/xonsh  # has .travis.yml file
+  - REPO=blarghmatey/xontrib-fzf-widgets
 
 install:
   #- pip install -r requirements.txt
