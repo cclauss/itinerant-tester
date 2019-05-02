@@ -15,24 +15,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=blarghmatey/Aliaster
-  - REPO=blarghmatey/BigQuery-Python  # has .travis.yml file
-  - REPO=blarghmatey/autovpn
-  - REPO=blarghmatey/corduroy
-  - REPO=blarghmatey/harvey
-  - REPO=blarghmatey/invoke  # has .travis.yml file
-  - REPO=blarghmatey/kivy  # has .travis.yml file
-  - REPO=blarghmatey/myscripts
-  - REPO=blarghmatey/ops-utils
-  - REPO=blarghmatey/pip  # has .travis.yml file
-  - REPO=blarghmatey/podcastinit
-  - REPO=blarghmatey/pre-commit  # has .travis.yml file
-  - REPO=blarghmatey/pytest-mirror
-  - REPO=blarghmatey/salt
-  - REPO=blarghmatey/spaCy  # has .travis.yml file
-  - REPO=blarghmatey/testinfra  # has .travis.yml file
-  - REPO=blarghmatey/xonsh  # has .travis.yml file
-  - REPO=blarghmatey/xontrib-fzf-widgets
+  - REPO=geoadmin/3d-forge
+  - REPO=geoadmin/deploy-1
+  - REPO=geoadmin/dynamodump
+  - REPO=geoadmin/geopackage-python  # has .travis.yml file
+  - REPO=geoadmin/lib-esrijson  # has .travis.yml file
+  - REPO=geoadmin/lib-gatilegrid  # has .travis.yml file
+  - REPO=geoadmin/lib-poolmanager  # has .travis.yml file
+  - REPO=geoadmin/mapproxy  # has .travis.yml file
+  - REPO=geoadmin/mf-chsdi3
+  - REPO=geoadmin/service-alti
+  - REPO=geoadmin/service-image
+  - REPO=geoadmin/service-mapproxy
+  - REPO=geoadmin/service-owschecker
+  - REPO=geoadmin/service-print
+  - REPO=geoadmin/service-sphinxsearch
+  - REPO=geoadmin/tool-aws  # has .travis.yml file
+  - REPO=geoadmin/tool-mbutil  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
