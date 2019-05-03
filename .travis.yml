@@ -1,6 +1,5 @@
 language: rust
 env:
-  - REPO=996icu/996.ICU
   - REPO=kyren/luster
   - REPO=wasmerio/ruby-ext-wasm
   - REPO=wasmerio/wasmer
@@ -10,7 +9,6 @@ env:
   - REPO=BurntSushi/ripgrep
   - REPO=sharkdp/bat
   - REPO=iceiix/stevenarella
-  - REPO=MaxBittker/sandspiel
   - REPO=vislyhq/stretch
   - REPO=ivanceras/sauron
   - REPO=rust-lang/rust
@@ -20,7 +18,6 @@ env:
   - REPO=valeriansaliou/sonic
   - REPO=tokio-rs/tokio
   - REPO=hecrj/coffee
-  - REPO=dessalines/lemmy
   - REPO=sharkdp/fd
   - REPO=rayon-rs/rayon
   - REPO=rabite0/hunter
