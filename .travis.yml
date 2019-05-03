@@ -1,36 +1,35 @@
-group: travis_latest
-dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
-language: python
-cache: pip
-python:
-  - 2.7
-  #- 3.5
-  #- 3.6
-  - 3.7
-matrix:
-  allow_failures:
-    - python: 2.7
-    - python: nightly
-    - python: pypy
-    - python: pypy3
+language: rust
 env:
-  - REPO=jliljebl/flowblade
-
-install:
-  #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testing frameworks later
+  - REPO=996icu/996.ICU
+  - REPO=kyren/luster
+  - REPO=wasmerio/ruby-ext-wasm
+  - REPO=wasmerio/wasmer
+  - REPO=jwilm/alacritty
+  - REPO=dtolnay/select-rustc
+  - REPO=rth/vtext
+  - REPO=BurntSushi/ripgrep
+  - REPO=sharkdp/bat
+  - REPO=iceiix/stevenarella
+  - REPO=MaxBittker/sandspiel
+  - REPO=vislyhq/stretch
+  - REPO=ivanceras/sauron
+  - REPO=rust-lang/rust
+  - REPO=ggez/ggez
+  - REPO=amethyst/rendy
+  - REPO=xliiv/fui
+  - REPO=valeriansaliou/sonic
+  - REPO=tokio-rs/tokio
+  - REPO=hecrj/coffee
+  - REPO=dessalines/lemmy
+  - REPO=sharkdp/fd
+  - REPO=rayon-rs/rayon
+  - REPO=rabite0/hunter
+  - REPO=swc-project/swc
 before_script:
   - URL=https://github.com/${REPO}
-  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+  - echo ; echo -n "Testing of ${URL} on " ; rustc --version
   - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
-script:
-  - echo stop the build if there are Python syntax errors or undefined names
-  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --builtins=_ --count --select=E9,F63,F72,F82 --show-source --statistics
-  - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  #- true  # pytest --capture=sys
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
