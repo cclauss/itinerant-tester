@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.5
   #- 3.6
   - 3.7
@@ -14,7 +14,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=PySimpleGUI/PySimpleGUI
+  - REPO=tonybaloney/StackStorm-infoblox
+  - REPO=tonybaloney/attrs  # has .travis.yml file
+  - REPO=tonybaloney/azure-pipelines-python-examples
+  - REPO=tonybaloney/azure-python-boilerplate
+  - REPO=tonybaloney/baloneyscript
+  - REPO=tonybaloney/black  # has .travis.yml file
+  - REPO=tonybaloney/cards  # has .travis.yml file
+  - REPO=tonybaloney/cloud-scanner
+  - REPO=tonybaloney/cpython  # has .travis.yml file
+  - REPO=tonybaloney/email-toolbox
+  - REPO=tonybaloney/infoblox-client  # has .travis.yml file
+  - REPO=tonybaloney/notations
+  - REPO=tonybaloney/pathgather  # has .travis.yml file
+  - REPO=tonybaloney/pip  # has .travis.yml file
+  - REPO=tonybaloney/pipelines-python-django
+  - REPO=tonybaloney/pluralsight  # has .travis.yml file
+  - REPO=tonybaloney/pytest  # has .travis.yml file
+  - REPO=tonybaloney/pytest-azurepipelines
+  - REPO=tonybaloney/python-zeep  # has .travis.yml file
+  - REPO=tonybaloney/requests-staticmock  # has .travis.yml file
+  - REPO=tonybaloney/retox  # has .travis.yml file
+  - REPO=tonybaloney/salt
+  - REPO=tonybaloney/sciencelogic  # has .travis.yml file
+  - REPO=tonybaloney/stackstorm-infoblox-1
+  - REPO=tonybaloney/stackstorm-servicenow
+  - REPO=tonybaloney/tox-nuitka  # has .travis.yml file
+  - REPO=tonybaloney/tox-pipenv  # has .travis.yml file
+  - REPO=tonybaloney/wily
+  - REPO=tonybaloney/woof
+  - REPO=tonybaloney/workday  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
