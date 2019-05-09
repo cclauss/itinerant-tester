@@ -14,36 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Esri/Arcpy-sdk-analytics-examples
-  - REPO=Esri/CTM
-  - REPO=Esri/PySAL-ArcGIS-Toolbox
-  - REPO=Esri/ago-clone-items
-  - REPO=Esri/arcgis-python-api
-  - REPO=Esri/collector-integration
-  - REPO=Esri/collector-tools
-  - REPO=Esri/create-updm-geodatabase-tool
-  - REPO=Esri/crowdsource-reporter-scripts
-  - REPO=Esri/data-assistant
-  - REPO=Esri/defense-solutions-feature-toolbox
-  - REPO=Esri/environmental-impact-tools
-  - REPO=Esri/executive-dashboard
-  - REPO=Esri/explorer-integration
-  - REPO=Esri/geoprocessing-tools-for-hadoop
-  - REPO=Esri/glad
-  - REPO=Esri/incident-import-tools
-  - REPO=Esri/insights-scripting-guide
-  - REPO=Esri/mdcs-py
-  - REPO=Esri/military-tools-geoprocessing-toolbox
-  - REPO=Esri/overwrite-hosted-features
-  - REPO=Esri/portalpy
-  - REPO=Esri/public-transit-tools
-  - REPO=Esri/raster-deep-learning
-  - REPO=Esri/raster-functions
-  - REPO=Esri/raster-tiles-compactcache
-  - REPO=Esri/raster2gpkg
-  - REPO=Esri/solutions-geoprocessing-toolbox
-  - REPO=Esri/transportation-safety-tools
-  - REPO=Esri/weighted-raster-overlay-service-toolbox
+  - REPO=tensorflow/probability
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
