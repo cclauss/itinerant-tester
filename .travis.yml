@@ -14,30 +14,6 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TACC/HackOurSpringsPortal
-  - REPO=TACC/Themis
-  - REPO=TACC/abaco
-  - REPO=TACC/abaco-autoscaling
-  - REPO=TACC/abaco-docs
-  - REPO=TACC/agave-files
-  - REPO=TACC/agavedb  # has .travis.yml file
-  - REPO=TACC/agavepy  # has .travis.yml file
-  - REPO=TACC/boinc-launcher
-  - REPO=TACC/channelpy
-  - REPO=TACC/deployer-docs
-  - REPO=TACC/dockerspawner  # has .travis.yml file
-  - REPO=TACC/irksome-guacamole
-  - REPO=TACC/jupyterhub
-  - REPO=TACC/jupyterhub_images
-  - REPO=TACC/metrics_api
-  - REPO=TACC/oauthenticator
-  - REPO=TACC/pylauncher
-  - REPO=TACC/tacconfig  # has .travis.yml file
-  - REPO=TACC/taccster18_Cloud_Tutorial
-  - REPO=TACC/vis-workloads
-  - REPO=rtmclay/Lmod
-  - REPO=easybuilders/CSCS
-  - REPO=easybuilders/JSC
   - REPO=easybuilders/easybuild  # has .travis.yml file
   - REPO=easybuilders/easybuild-easyblocks  # has .travis.yml file
   - REPO=easybuilders/easybuild-easyconfigs  # has .travis.yml file
@@ -49,7 +25,7 @@ install:
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+  - git clone --depth=50 ${URL} ~/${REPO} --branch=develop
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
