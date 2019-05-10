@@ -14,8 +14,17 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=tensorflow/probability
-  - REPO=indico/indico
+  - REPO=Qiskit/qiskit  # has .travis.yml file
+  - REPO=Qiskit/qiskit-aer  # has .travis.yml file
+  - REPO=Qiskit/qiskit-api-py  # has .travis.yml file
+  - REPO=Qiskit/qiskit-aqua  # has .travis.yml file
+  - REPO=Qiskit/qiskit-aqua-interfaces  # has .travis.yml file
+  - REPO=Qiskit/qiskit-chemistry  # has .travis.yml file
+  - REPO=Qiskit/qiskit-ibmq-provider  # has .travis.yml file
+  - REPO=Qiskit/qiskit-ignis  # has .travis.yml file
+  - REPO=Qiskit/qiskit-projectq-provider  # has .travis.yml file
+  - REPO=Qiskit/qiskit-qcgpu-provider  # has .travis.yml file
+  - REPO=Qiskit/qiskit-terra  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
