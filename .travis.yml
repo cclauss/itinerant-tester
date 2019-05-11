@@ -14,11 +14,64 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=easybuilders/easybuild  # has .travis.yml file
-  - REPO=easybuilders/easybuild-easyblocks  # has .travis.yml file
-  - REPO=easybuilders/easybuild-easyconfigs  # has .travis.yml file
-  - REPO=easybuilders/easybuild-framework  # has .travis.yml file
-  
+  - REPO=tensorflow/graphics
+  - REPO=tensorflow/probability
+  - REPO=TheAlgorithms/Python
+  - REPO=edgedb/edgedb
+  - REPO=TurboGears/tg2
+  - REPO=gruns/icecream
+  - REPO=cool-RR/PySnooper
+  - REPO=orangetw/awesome-jenkins-rce-2019
+  - REPO=vinta/awesome-python
+  - REPO=tensorflow/models
+  - REPO=donnemartin/system-design-primer
+  - REPO=apachecn/AiLearning
+  - REPO=huggingface/transfer-learning-conv-ai
+  - REPO=cisco/mindmeld
+  - REPO=ytdl-org/youtube-dl
+  - REPO=Guanghan/lighttrack
+  - REPO=home-assistant/home-assistant
+  - REPO=deepfakes/faceswap
+  - REPO=microsoft/NeuronBlocks
+  - REPO=django/django
+  - REPO=xairy/easy-linux-pwn
+  - REPO=python/black
+  - REPO=NVlabs/SPADE
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=fighting41love/funNLP
+  - REPO=krateng/maloja
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
