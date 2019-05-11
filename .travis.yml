@@ -14,37 +14,24 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=maxnoe/HoppladiHopplada
-  - REPO=maxnoe/adventofcode2017
-  - REPO=maxnoe/astericsschool18-gitdemo
-  - REPO=maxnoe/astropy  # has .travis.yml file
-  - REPO=maxnoe/cpython  # has .travis.yml file
-  - REPO=maxnoe/ctapipe  # has .travis.yml file
-  - REPO=maxnoe/ctapipe-extra
-  - REPO=maxnoe/cython-demo
-  - REPO=maxnoe/dask-drmaa  # has .travis.yml file
-  - REPO=maxnoe/drmaa-python  # has .travis.yml file
-  - REPO=maxnoe/emcee  # has .travis.yml file
-  - REPO=maxnoe/fontfinder  # has .travis.yml file
-  - REPO=maxnoe/funfolding  # has .travis.yml file
-  - REPO=maxnoe/git_demo_20180528  # has .travis.yml file
-  - REPO=maxnoe/gridmap  # has .travis.yml file
-  - REPO=maxnoe/matplotlib  # has .travis.yml file
-  - REPO=maxnoe/mensabot
-  - REPO=maxnoe/obelics-git-demo  # has .travis.yml file
-  - REPO=maxnoe/peewee  # has .travis.yml file
-  - REPO=maxnoe/pizza2
-  - REPO=maxnoe/plz_plot
-  - REPO=maxnoe/pyhexgrid
-  - REPO=maxnoe/python-plotting
-  - REPO=maxnoe/python-solarsystem
-  - REPO=maxnoe/python_package_template  # has .travis.yml file
-  - REPO=maxnoe/restructuredtext-lint  # has .travis.yml file
-  - REPO=maxnoe/scikit-learn  # has .travis.yml file
-  - REPO=maxnoe/texlive-batch-installation  # has .travis.yml file
-  - REPO=maxnoe/toolbox2018-git-demo
-  - REPO=maxnoe/vim-snippets  # has .travis.yml file
-  - REPO=maxnoe/who-dropped-python2
+  - REPO=IBM-Cloud/ibmcloud-sdk
+  - REPO=IBM-Cloud/Bluemix-ServiceBroker
+  - REPO=IBM-Cloud/Bluemix-onprem-data
+  - REPO=IBM-Cloud/HackMETU-15
+  - REPO=IBM-Cloud/application-log-analysis
+  - REPO=IBM-Cloud/cf-deployment-tracker-client-python  # has .travis.yml file
+  - REPO=IBM-Cloud/clouddatabases-postgresql-helloworld-python
+  - REPO=IBM-Cloud/clouddatabases-redis-helloworld-python
+  - REPO=IBM-Cloud/concept-insights-eclipse-faq
+  - REPO=IBM-Cloud/data-store-for-memcache-client
+  - REPO=IBM-Cloud/django-boilerplate
+  - REPO=IBM-Cloud/github-traffic-stats
+  - REPO=IBM-Cloud/gp-python-client  # has .travis.yml file
+  - REPO=IBM-Cloud/key-protect-helloworld-python
+  - REPO=IBM-Cloud/logistics-wizard-controller  # has .travis.yml file
+  - REPO=IBM-Cloud/python-iot-raspberry-pi
+  - REPO=IBM-Cloud/service-discovery-client-python  # has .travis.yml file
+  - REPO=IBM-Cloud/sql-query-clients
 
 install:
   #- pip install -r requirements.txt
