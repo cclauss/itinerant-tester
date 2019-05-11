@@ -14,16 +14,37 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dephell/dephell  # has .travis.yml file
-  - REPO=dephell/dephell_archive  # has .travis.yml file
-  - REPO=dephell/dephell_discover  # has .travis.yml file
-  - REPO=dephell/dephell_licenses  # has .travis.yml file
-  - REPO=dephell/dephell_links  # has .travis.yml file
-  - REPO=dephell/dephell_markers  # has .travis.yml file
-  - REPO=dephell/dephell_pythons  # has .travis.yml file
-  - REPO=dephell/dephell_shells  # has .travis.yml file
-  - REPO=dephell/dephell_specifier  # has .travis.yml file
-  - REPO=dephell/dephell_venvs  # has .travis.yml file
+  - REPO=maxnoe/HoppladiHopplada
+  - REPO=maxnoe/adventofcode2017
+  - REPO=maxnoe/astericsschool18-gitdemo
+  - REPO=maxnoe/astropy  # has .travis.yml file
+  - REPO=maxnoe/cpython  # has .travis.yml file
+  - REPO=maxnoe/ctapipe  # has .travis.yml file
+  - REPO=maxnoe/ctapipe-extra
+  - REPO=maxnoe/cython-demo
+  - REPO=maxnoe/dask-drmaa  # has .travis.yml file
+  - REPO=maxnoe/drmaa-python  # has .travis.yml file
+  - REPO=maxnoe/emcee  # has .travis.yml file
+  - REPO=maxnoe/fontfinder  # has .travis.yml file
+  - REPO=maxnoe/funfolding  # has .travis.yml file
+  - REPO=maxnoe/git_demo_20180528  # has .travis.yml file
+  - REPO=maxnoe/gridmap  # has .travis.yml file
+  - REPO=maxnoe/matplotlib  # has .travis.yml file
+  - REPO=maxnoe/mensabot
+  - REPO=maxnoe/obelics-git-demo  # has .travis.yml file
+  - REPO=maxnoe/peewee  # has .travis.yml file
+  - REPO=maxnoe/pizza2
+  - REPO=maxnoe/plz_plot
+  - REPO=maxnoe/pyhexgrid
+  - REPO=maxnoe/python-plotting
+  - REPO=maxnoe/python-solarsystem
+  - REPO=maxnoe/python_package_template  # has .travis.yml file
+  - REPO=maxnoe/restructuredtext-lint  # has .travis.yml file
+  - REPO=maxnoe/scikit-learn  # has .travis.yml file
+  - REPO=maxnoe/texlive-batch-installation  # has .travis.yml file
+  - REPO=maxnoe/toolbox2018-git-demo
+  - REPO=maxnoe/vim-snippets  # has .travis.yml file
+  - REPO=maxnoe/who-dropped-python2
 
 install:
   #- pip install -r requirements.txt
