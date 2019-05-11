@@ -78,7 +78,7 @@ install:
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO} --branch=4.x
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=4.x
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
