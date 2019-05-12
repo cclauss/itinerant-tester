@@ -14,25 +14,34 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM-Cloud/ibmcloud-sdk
-  - REPO=IBM-Cloud/Bluemix-ServiceBroker
-  - REPO=IBM-Cloud/Bluemix-onprem-data
-  - REPO=IBM-Cloud/HackMETU-15
-  - REPO=IBM-Cloud/application-log-analysis
-  - REPO=IBM-Cloud/cf-deployment-tracker-client-python  # has .travis.yml file
-  - REPO=IBM-Cloud/clouddatabases-postgresql-helloworld-python
-  - REPO=IBM-Cloud/clouddatabases-redis-helloworld-python
-  - REPO=IBM-Cloud/concept-insights-eclipse-faq
-  - REPO=IBM-Cloud/data-store-for-memcache-client
-  - REPO=IBM-Cloud/django-boilerplate
-  - REPO=IBM-Cloud/github-traffic-stats
-  - REPO=IBM-Cloud/gp-python-client  # has .travis.yml file
-  - REPO=IBM-Cloud/key-protect-helloworld-python
-  - REPO=IBM-Cloud/logistics-wizard-controller  # has .travis.yml file
-  - REPO=IBM-Cloud/python-iot-raspberry-pi
-  - REPO=IBM-Cloud/service-discovery-client-python  # has .travis.yml file
-  - REPO=IBM-Cloud/sql-query-clients
-
+  - REPO=jython/devguide  # has .travis.yml file
+  - REPO=jython/jython3  # has .travis.yml file
+  - REPO=jython/swingutils
+  - REPO=jimbaker/clamped
+  - REPO=jimbaker/coffeefilter
+  - REPO=jimbaker/craton  # has .travis.yml file
+  - REPO=jimbaker/hellowsgi
+  - REPO=jimbaker/html5lib-python  # has .travis.yml file
+  - REPO=jimbaker/jvm-language-summit
+  - REPO=jimbaker/jython-storm-starter
+  - REPO=jimbaker/pip  # has .travis.yml file
+  - REPO=jimbaker/presentation
+  - REPO=jimbaker/socket-reboot
+  - REPO=jimbaker/sqlalchemy_schemadisplay  # has .travis.yml file
+  - REPO=jimbaker/webob  # has .travis.yml file
+  - REPO=jeff5/inside-jython
+  - REPO=jeff5/jython-devguide  # has .travis.yml file
+  - REPO=jeff5/jython3  # has .travis.yml file
+  - REPO=jeff5/my-first-blog
+  - REPO=jeff5/slow-jython-story
+  - REPO=darjus/boto
+  - REPO=darjus/botoflow
+  - REPO=darjus/clamp
+  - REPO=darjus/clamped
+  - REPO=darjus/django-celery
+  - REPO=darjus/jython  # has .travis.yml file
+  - REPO=darjus/mypy  # has .travis.yml file
+  - REPO=darjus/typeshed  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
