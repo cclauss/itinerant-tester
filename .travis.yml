@@ -14,33 +14,26 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=williamjacksn/birthdayfeed
-  - REPO=williamjacksn/bots_info
-  - REPO=williamjacksn/candy-land
-  - REPO=williamjacksn/chutes-and-ladders
-  - REPO=williamjacksn/clrkio
-  - REPO=williamjacksn/find-duplicates
-  - REPO=williamjacksn/fresnel
-  - REPO=williamjacksn/groupme-backup
-  - REPO=williamjacksn/groupmemail
-  - REPO=williamjacksn/humphrey
-  - REPO=williamjacksn/irc-kernel
-  - REPO=williamjacksn/kinder
-  - REPO=williamjacksn/pg-backup
-  - REPO=williamjacksn/piecash  # has .travis.yml file
-  - REPO=williamjacksn/podcast-tools
-  - REPO=williamjacksn/python-rainwave-client
-  - REPO=williamjacksn/rainwave-announce
-  - REPO=williamjacksn/rainwave-tools
-  - REPO=williamjacksn/rw-rate-all
-  - REPO=williamjacksn/slirck
-  - REPO=williamjacksn/speech-recognition
-  - REPO=williamjacksn/swagbucks
-  - REPO=williamjacksn/tilde-description-protocol
-  - REPO=williamjacksn/twister
-  - REPO=williamjacksn/wanja
-  - REPO=williamjacksn/wormgas
-  - REPO=williamjacksn/yavin
+  - REPO=jython/book
+  - REPO=jython/jython.github.io
+  - REPO=jython/jython3
+  - REPO=jython/swingutils
+  - REPO=pjenvey/asyncio  # has .travis.yml file
+  - REPO=pjenvey/boto  # has .travis.yml file
+  - REPO=pjenvey/google-cloud-python
+  - REPO=pjenvey/hellanzb
+  - REPO=pjenvey/isort  # has .travis.yml file
+  - REPO=pjenvey/loadswatch
+  - REPO=pjenvey/mako
+  - REPO=pjenvey/modjy-pjenvey
+  - REPO=pjenvey/molotov  # has .travis.yml file
+  - REPO=pjenvey/path-pep
+  - REPO=pjenvey/pip-tools  # has .travis.yml file
+  - REPO=pjenvey/powerhose  # has .travis.yml file
+  - REPO=pjenvey/snaek
+  - REPO=pjenvey/spanner-tests
+  - REPO=pjenvey/subscriber_demo
+  - REPO=pjenvey/twisted
 
 install:
   #- pip install -r requirements.txt
