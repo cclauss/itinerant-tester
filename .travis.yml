@@ -14,34 +14,34 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jython/devguide  # has .travis.yml file
-  - REPO=jython/jython3  # has .travis.yml file
-  - REPO=jython/swingutils
-  - REPO=jimbaker/clamped
-  - REPO=jimbaker/coffeefilter
-  - REPO=jimbaker/craton  # has .travis.yml file
-  - REPO=jimbaker/hellowsgi
-  - REPO=jimbaker/html5lib-python  # has .travis.yml file
-  - REPO=jimbaker/jvm-language-summit
-  - REPO=jimbaker/jython-storm-starter
-  - REPO=jimbaker/pip  # has .travis.yml file
-  - REPO=jimbaker/presentation
-  - REPO=jimbaker/socket-reboot
-  - REPO=jimbaker/sqlalchemy_schemadisplay  # has .travis.yml file
-  - REPO=jimbaker/webob  # has .travis.yml file
-  - REPO=jeff5/inside-jython
-  - REPO=jeff5/jython-devguide  # has .travis.yml file
-  - REPO=jeff5/jython3  # has .travis.yml file
-  - REPO=jeff5/my-first-blog
-  - REPO=jeff5/slow-jython-story
-  - REPO=darjus/boto
-  - REPO=darjus/botoflow
-  - REPO=darjus/clamp
-  - REPO=darjus/clamped
-  - REPO=darjus/django-celery
-  - REPO=darjus/jython  # has .travis.yml file
-  - REPO=darjus/mypy  # has .travis.yml file
-  - REPO=darjus/typeshed  # has .travis.yml file
+  - REPO=williamjacksn/birthdayfeed
+  - REPO=williamjacksn/bots_info
+  - REPO=williamjacksn/candy-land
+  - REPO=williamjacksn/chutes-and-ladders
+  - REPO=williamjacksn/clrkio
+  - REPO=williamjacksn/find-duplicates
+  - REPO=williamjacksn/fresnel
+  - REPO=williamjacksn/groupme-backup
+  - REPO=williamjacksn/groupmemail
+  - REPO=williamjacksn/humphrey
+  - REPO=williamjacksn/irc-kernel
+  - REPO=williamjacksn/kinder
+  - REPO=williamjacksn/pg-backup
+  - REPO=williamjacksn/piecash  # has .travis.yml file
+  - REPO=williamjacksn/podcast-tools
+  - REPO=williamjacksn/python-rainwave-client
+  - REPO=williamjacksn/rainwave-announce
+  - REPO=williamjacksn/rainwave-tools
+  - REPO=williamjacksn/rw-rate-all
+  - REPO=williamjacksn/slirck
+  - REPO=williamjacksn/speech-recognition
+  - REPO=williamjacksn/swagbucks
+  - REPO=williamjacksn/tilde-description-protocol
+  - REPO=williamjacksn/twister
+  - REPO=williamjacksn/wanja
+  - REPO=williamjacksn/wormgas
+  - REPO=williamjacksn/yavin
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
