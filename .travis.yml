@@ -14,36 +14,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jayvdb/asciimatics  # has .travis.yml file
-  - REPO=jayvdb/coverage_config_reload_plugin  # has .travis.yml file
-  - REPO=jayvdb/coverage_env_plugin  # has .travis.yml file
-  - REPO=jayvdb/django-compat-patcher
-  - REPO=jayvdb/django-cors-headers  # has .travis.yml file
-  - REPO=jayvdb/django-extensions  # has .travis.yml file
-  - REPO=jayvdb/django-invitations  # has .travis.yml file
-  - REPO=jayvdb/django-rest-auth  # has .travis.yml file
-  - REPO=jayvdb/django-rest-knox  # has .travis.yml file
-  - REPO=jayvdb/django-rest-social-auth  # has .travis.yml file
-  - REPO=jayvdb/exif-py  # has .travis.yml file
-  - REPO=jayvdb/flower  # has .travis.yml file
-  - REPO=jayvdb/hyper  # has .travis.yml file
-  - REPO=jayvdb/idna-ssl  # has .travis.yml file
-  - REPO=jayvdb/ijson  # has .travis.yml file
-  - REPO=jayvdb/jwt-oauth2
-  - REPO=jayvdb/minio-py  # has .travis.yml file
-  - REPO=jayvdb/pew  # has .travis.yml file
-  - REPO=jayvdb/pipenv
-  - REPO=jayvdb/plotly.py
-  - REPO=jayvdb/pypistats  # has .travis.yml file
-  - REPO=jayvdb/python-quilt  # has .travis.yml file
-  - REPO=jayvdb/pythonz
-  - REPO=jayvdb/requirementslib  # has .travis.yml file
-  - REPO=jayvdb/resumable-urlretrieve  # has .travis.yml file
-  - REPO=jayvdb/rpm-py-installer  # has .travis.yml file
-  - REPO=jayvdb/social-core  # has .travis.yml file
-  - REPO=jayvdb/tablib  # has .travis.yml file
-  - REPO=jayvdb/thumbor  # has .travis.yml file
-  - REPO=jayvdb/tox_appveyor
+  - REPO=v8/v8
+  - REPO=v8/sampling-heap-profiler
+
 
 install:
   #- pip install -r requirements.txt
