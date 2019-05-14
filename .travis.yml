@@ -14,9 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
-  - REPO=v8/sampling-heap-profiler
-
+  - REPO=machinelearningmindset/machine-learning-course
+  - REPO=TheAlgorithms/Python
+  - REPO=STVIR/pysot
+  - REPO=wandb/client
+  - REPO=revalo/pishot
+  - REPO=cloudmarker/cloudmarker
+  - REPO=cool-RR/PySnooper
+  - REPO=tensorflow/models
+  - REPO=tensorflow/graphics
+  - REPO=xiaolai-sqlai/mobilenetv3
+  - REPO=apachecn/AiLearning
+  - REPO=rwightman/pytorch-image-models
+  - REPO=fighting41love/funNLP
+  - REPO=donnemartin/system-design-primer
+  - REPO=vinta/awesome-python
+  - REPO=ranahanocka/MeshCNN
+  - REPO=edgedb/edgedb
+  - REPO=TideSec/TideFinger
+  - REPO=toddmotto/public-apis
+  - REPO=google-research/bert
+  - REPO=ansible/ansible
+  - REPO=ytdl-org/youtube-dl
+  - REPO=TDAmeritrade/stumpy
+  - REPO=3b1b/manim
+  - REPO=Doragd/Chinese-Chatbot-PyTorch-Implementation
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
 
 install:
   #- pip install -r requirements.txt
