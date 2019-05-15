@@ -14,31 +14,69 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=discordapp/Piexif  # has .travis.yml file
-  - REPO=discordapp/bazel_jar_jar
-  - REPO=discordapp/chromium-build
-  - REPO=discordapp/discord-oauth2-example
-  - REPO=discordapp/erlpack
-  - REPO=discordapp/flask-oauthlib  # has .travis.yml file
-  - REPO=discordapp/hyper-h2  # has .travis.yml file
-  - REPO=discordapp/incubator-airflow  # has .travis.yml file
-  - REPO=discordapp/lilliput-bench
-  - REPO=discordapp/luigi  # has .travis.yml file
-  - REPO=discordapp/node-gyp
-  - REPO=discordapp/redis-py  # has .travis.yml file
-  - REPO=discordapp/rules_jsonnet
-  - REPO=discordapp/rules_k8s
-  - REPO=discordapp/rules_python  # has .travis.yml file
-  - REPO=discordapp/rules_pyz
-  - REPO=discordapp/rules_scala  # has .travis.yml file
-
+  - REPO=stewartmcgown/uds
+  - REPO=machinelearningmindset/machine-learning-course
+  - REPO=TheAlgorithms/Python
+  - REPO=wandb/client
+  - REPO=cool-RR/PySnooper
+  - REPO=tensorflow/model-optimization
+  - REPO=apachecn/AiLearning
+  - REPO=donnemartin/system-design-primer
+  - REPO=tensorflow/models
+  - REPO=STVIR/pysot
+  - REPO=vinta/awesome-python
+  - REPO=rwightman/pytorch-image-models
+  - REPO=ytdl-org/youtube-dl
+  - REPO=keras-team/keras
+  - REPO=Doragd/Chinese-Chatbot-PyTorch-Implementation
+  - REPO=TideSec/TideFinger
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=HelloZeroNet/ZeroNet
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=pallets/flask
+  - REPO=ansible/ansible
+  - REPO=machinelearningmindset/TensorFlow-Course
+  - REPO=tensorflow/graphics
+  - REPO=revalo/pishot
+  - REPO=toddmotto/public-apis
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=4.x
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
