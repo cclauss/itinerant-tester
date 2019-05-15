@@ -14,48 +14,21 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ccampbell/chromelogger-python
-  - REPO=FreeCAD/FreeCAD
-  - REPO=getredash/redash
-  - REPO=joeyespo/pytest-watch
-  - REPO=mitsuhiko/python-geoip
-  - REPO=maxmind/GeoIP2-python  # has .travis.yml file
-  - REPO=maxmind/HTTPretty  # has .travis.yml file
-  - REPO=maxmind/MaxMind-DB-Reader-python  # has .travis.yml file
-  - REPO=maxmind/minfraud-api-python  # has .travis.yml file
-  - REPO=maxmind/pootle  # has .travis.yml file
-  - REPO=druid-io/pydruid  # has .travis.yml file
-  - REPO=ibmdb/python-ibmdb
-  - REPO=dropbox/DropboxBusinessScripts
-  - REPO=dropbox/PyHive  # has .travis.yml file
-  - REPO=dropbox/changes-mesos-framework
-  - REPO=dropbox/dropbox-api-v2-repl
-  - REPO=dropbox/dropbox-sdk-python  # has .travis.yml file
-  - REPO=dropbox/dropbox_hook
-  - REPO=dropbox/git-rbr  # has .travis.yml file
-  - REPO=dropbox/groupy  # has .travis.yml file
-  - REPO=dropbox/hermes  # has .travis.yml file
-  - REPO=dropbox/kafka-python  # has .travis.yml file
-  - REPO=dropbox/llama-archive  # has .travis.yml file
-  - REPO=dropbox/mdwebhook
-  - REPO=dropbox/merou  # has .travis.yml file
-  - REPO=dropbox/nautilus-dropbox
-  - REPO=dropbox/nsot  # has .travis.yml file
-  - REPO=dropbox/plyj  # has .travis.yml file
-  - REPO=dropbox/pyannotate  # has .travis.yml file
-  - REPO=dropbox/pygerduty  # has .travis.yml file
-  - REPO=dropbox/pynsot  # has .travis.yml file
-  - REPO=dropbox/pyston  # has .travis.yml file
-  - REPO=dropbox/pyston-perf
-  - REPO=dropbox/pytest-flakefinder  # has .travis.yml file
-  - REPO=dropbox/pyxl
-  - REPO=dropbox/rules_node
-  - REPO=dropbox/securitybot  # has .travis.yml file
-  - REPO=dropbox/sfmdemo
-  - REPO=dropbox/sqlalchemy-stubs  # has .travis.yml file
-  - REPO=dropbox/stone  # has .travis.yml file
-  - REPO=dropbox/stopwatch  # has .travis.yml file
-  - REPO=dropbox/trapperkeeper
+  - REPO=gmjosack/annex
+  - REPO=gmjosack/bittle
+  - REPO=gmjosack/clowncar
+  - REPO=gmjosack/expvar
+  - REPO=gmjosack/getotp
+  - REPO=gmjosack/gsh
+  - REPO=gmjosack/loqui
+  - REPO=gmjosack/meme_engine
+  - REPO=gmjosack/modlunky
+  - REPO=gmjosack/mrproxy
+  - REPO=gmjosack/nsot  # has .travis.yml file
+  - REPO=gmjosack/pyauditor
+  - REPO=gmjosack/pygerduty  # has .travis.yml file
+  - REPO=gmjosack/sshpubkey
+  - REPO=gmjosack/tattrdb
 
 install:
   #- pip install -r requirements.txt
