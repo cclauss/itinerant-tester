@@ -14,21 +14,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=gmjosack/annex
-  - REPO=gmjosack/bittle
-  - REPO=gmjosack/clowncar
-  - REPO=gmjosack/expvar
-  - REPO=gmjosack/getotp
-  - REPO=gmjosack/gsh
-  - REPO=gmjosack/loqui
-  - REPO=gmjosack/meme_engine
-  - REPO=gmjosack/modlunky
-  - REPO=gmjosack/mrproxy
-  - REPO=gmjosack/nsot  # has .travis.yml file
-  - REPO=gmjosack/pyauditor
-  - REPO=gmjosack/pygerduty  # has .travis.yml file
-  - REPO=gmjosack/sshpubkey
-  - REPO=gmjosack/tattrdb
+  - REPO=discordapp/Piexif  # has .travis.yml file
+  - REPO=discordapp/bazel_jar_jar
+  - REPO=discordapp/chromium-build
+  - REPO=discordapp/discord-oauth2-example
+  - REPO=discordapp/erlpack
+  - REPO=discordapp/flask-oauthlib  # has .travis.yml file
+  - REPO=discordapp/hyper-h2  # has .travis.yml file
+  - REPO=discordapp/incubator-airflow  # has .travis.yml file
+  - REPO=discordapp/lilliput-bench
+  - REPO=discordapp/luigi  # has .travis.yml file
+  - REPO=discordapp/node-gyp
+  - REPO=discordapp/redis-py  # has .travis.yml file
+  - REPO=discordapp/rules_jsonnet
+  - REPO=discordapp/rules_k8s
+  - REPO=discordapp/rules_python  # has .travis.yml file
+  - REPO=discordapp/rules_pyz
+  - REPO=discordapp/rules_scala  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
