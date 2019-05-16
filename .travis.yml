@@ -14,15 +14,69 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=HelloZeroNet/ZeroNet
-
+  - REPO=stewartmcgown/uds
+  - REPO=machinelearningmindset/machine-learning-course
+  - REPO=TheAlgorithms/Python
+  - REPO=Roujack/mathAI
+  - REPO=wandb/client
+  - REPO=cool-RR/PySnooper
+  - REPO=tensorflow/models
+  - REPO=tensorflow/model-optimization
+  - REPO=donnemartin/system-design-primer
+  - REPO=apachecn/AiLearning
+  - REPO=vinta/awesome-python
+  - REPO=keras-team/keras
+  - REPO=STVIR/pysot
+  - REPO=ytdl-org/youtube-dl
+  - REPO=minimaxir/textgenrnn
+  - REPO=toddmotto/public-apis
+  - REPO=ansible/ansible
+  - REPO=pallets/flask
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=ageitgey/face_recognition
+  - REPO=python/cpython
+  - REPO=Doragd/Chinese-Chatbot-PyTorch-Implementation
+  - REPO=WenjieZ/TSCV
+  - REPO=google-research/bert
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO} --branch=py3  # master
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
