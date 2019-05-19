@@ -14,8 +14,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=o-lim/generate-ninja
-  - REPO=hyperledger/iroha-python
+  - REPO=pyca/cryptography  # has .travis.yml file
+  - REPO=pyca/ed25519  # has .travis.yml file
+  - REPO=pyca/pyopenssl  # has .travis.yml file
+  - REPO=pyca/service_identity  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
