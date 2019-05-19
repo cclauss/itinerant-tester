@@ -14,11 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pyca/cryptography  # has .travis.yml file
-  - REPO=pyca/ed25519  # has .travis.yml file
-  - REPO=pyca/pyopenssl  # has .travis.yml file
-  - REPO=pyca/service_identity  # has .travis.yml file
-
+  - REPO=machinelearningmindset/machine-learning-course
+  - REPO=TheAlgorithms/Python
+  - REPO=swisskyrepo/PayloadsAllTheThings
+  - REPO=python/black
+  - REPO=stewartmcgown/uds
+  - REPO=TheKingOfDuck/fuzzDicts
+  - REPO=microsoft/interpret
+  - REPO=donnemartin/system-design-primer
+  - REPO=kaushaltrivedi/fast-bert
+  - REPO=toddmotto/public-apis
+  - REPO=tensorflow/models
+  - REPO=keras-team/keras
+  - REPO=ytdl-org/youtube-dl
+  - REPO=python/cpython
+  - REPO=vinta/awesome-python
+  - REPO=ageitgey/face_recognition
+  - REPO=cool-RR/PySnooper
+  - REPO=twintproject/twint
+  - REPO=apachecn/AiLearning
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=home-assistant/home-assistant
+  - REPO=pallets/flask
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=d2l-ai/d2l-zh
+  - REPO=django/django
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
