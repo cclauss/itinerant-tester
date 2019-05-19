@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=xxao/pero
+  - REPO=o-lim/generate-ninja
 
 install:
   #- pip install -r requirements.txt
