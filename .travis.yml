@@ -14,21 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=apachecn/home
-  - REPO=apachecn/scikit-learn-doc-zh
-  - REPO=apachecn/hands-on-ml-zh
-  - REPO=apachecn/fasttext-doc-zh
-  - REPO=apachecn/pytorch-doc-zh
-  - REPO=apachecn/kudu-doc-zh
-  - REPO=apachecn/spring-boot-doc-zh
-  - REPO=apachecn/elasticsearch-doc-zh
-  - REPO=apachecn/zeppelin-doc-zh
-  - REPO=apachecn/kibana-doc-zh
-  - REPO=apachecn/ailearning-site
-  - REPO=apachecn/beam-site-zh
-  - REPO=apachecn/asf-site-zh
-  - REPO=apachecn/spark-doc-zh
-  - REPO=apachecn/AiLearning
+  - REPO=Lockvictor/MovieLens-RecSys
 
 install:
   #- pip install -r requirements.txt
