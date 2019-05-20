@@ -14,7 +14,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Lockvictor/MovieLens-RecSys
+    - REPO=microsoft/interpret
+    - REPO=sustrik/uxy
+    - REPO=digital-missiles/CVE-2019-0708-PoC-Hitting-Path
+    - REPO=feedly/transfer-nlp
 
 install:
   #- pip install -r requirements.txt
