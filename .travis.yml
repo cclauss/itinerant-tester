@@ -17,6 +17,7 @@ env:
   - REPO=electron/electron
   - REPO=electron/gyp
   - REPO=electron/libchromiumcontent
+  - REPO=nodejs/node-gyp
   
 install:
   #- pip install -r requirements.txt
