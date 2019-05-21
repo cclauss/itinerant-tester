@@ -14,16 +14,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=joseangel-sc/dashing-planets
-  - REPO=joseangel-sc/face_recognition
-  - REPO=joseangel-sc/firmasautomaticas
-  - REPO=joseangel-sc/instagram-terminal-news-feed
-  - REPO=joseangel-sc/mexicanStalker
-  - REPO=joseangel-sc/ruleta
-  - REPO=joseangel-sc/simplepoll-
-  - REPO=joseangel-sc/yamlOpenAlpr
-  - REPO=kaushaltrivedi/cnn-text-classification-tf
-  - REPO=kaushaltrivedi/fast-bert
+  - REPO=electron/electron
+  - REPO=electron/gyp
+  - REPO=electron/libchromiumcontent
   
 install:
   #- pip install -r requirements.txt
