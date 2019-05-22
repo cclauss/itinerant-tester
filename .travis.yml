@@ -14,22 +14,43 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bnajafi/Gaussian_Naive_Bayes_SKLearn
-  - REPO=bnajafi/MachineLearning-for-Trading-PipeLine
-  - REPO=bnajafi/MyProjectFilesTest
-  - REPO=bnajafi/PyEIS
-  - REPO=bnajafi/SVM-Classification-Terrain
-  - REPO=bnajafi/Scientific_Python_Assignments_POLIMI_EETBS
-  - REPO=bnajafi/SimpleBuilding
-  - REPO=bnajafi/Thesis
-  - REPO=bnajafi/adanet
-  - REPO=bnajafi/keras-english-resume-parser-and-analyzer
-  - REPO=bnajafi/mlxtend  # has .travis.yml file
-  - REPO=bnajafi/myNewRepo19Jan
-  - REPO=bnajafi/myNewRepository
-  - REPO=bnajafi/pandas_degreedays  # has .travis.yml file
-  - REPO=bnajafi/pyspark-tutorial
-  - REPO=bnajafi/python4ScientificComputing_Numpy_Pandas_MATPLotLIB
+  - REPO=CODAIT/node-red-contrib-model-asset-exchange
+  - REPO=codait/MAX-Facial-Age-Estimator-Mini-Web-App  # has .travis.yml file
+  - REPO=codait/graph_def_editor
+  - REPO=codait/max-base
+  - REPO=IBM/FfDL
+  - REPO=IBM/max-developer-tutorial
+  - REPO=IBM/MAX-Base
+  - REPO=IBM/AIF360  # has .travis.yml file
+  - REPO=IBM/HackerOne-Notifications-Events-via-IBM-Cloud-Slack
+  - REPO=IBM/MAX-Breast-Cancer-Mitosis-Detector  # has .travis.yml file
+  - REPO=IBM/MAX-Facial-Age-Estimator  # has .travis.yml file
+  - REPO=IBM/MAX-Facial-Age-Estimator-Web-App  # has .travis.yml file
+  - REPO=IBM/MAX-Facial-Emotion-Classifier  # has .travis.yml file
+  - REPO=IBM/MAX-Fast-Neural-Style-Transfer  # has .travis.yml file
+  - REPO=IBM/MAX-Framework  # has .travis.yml file
+  - REPO=IBM/MAX-Image-Colorizer  # has .travis.yml file
+  - REPO=IBM/MAX-Image-Completer  # has .travis.yml file
+  - REPO=IBM/MAX-Inception-ResNet-v2  # has .travis.yml file
+  - REPO=IBM/MAX-Named-Entity-Tagger  # has .travis.yml file
+  - REPO=IBM/MAX-News-Text-Generator  # has .travis.yml file
+  - REPO=IBM/MAX-Object-Detector  # has .travis.yml file
+  - REPO=IBM/MAX-ResNet-50  # has .travis.yml file
+  - REPO=IBM/MAX-Review-Text-Generator  # has .travis.yml file
+  - REPO=IBM/MAX-Scene-Classifier  # has .travis.yml file
+  - REPO=IBM/castor-messaging
+  - REPO=IBM/django-web-app
+  - REPO=IBM/ibm-block-csi-driver
+  - REPO=IBM/mi-prometheus
+  - REPO=IBM/osslm-ansible-resource-manager
+  - REPO=IBM/probabilistic-federated-neural-matching
+  - REPO=IBM/python-itoolkit  # has .travis.yml file
+  - REPO=IBM/python-sdk-core  # has .travis.yml file
+  - REPO=IBM/pytorchpipe  # has .travis.yml file
+  - REPO=IBM/stix-shifter  # has .travis.yml file
+  - REPO=IBM/stomp
+  - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
+  - REPO=IBM/watson-box-skills-with-nlu
   
 install:
   #- pip install -r requirements.txt
