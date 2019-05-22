@@ -14,44 +14,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=CODAIT/node-red-contrib-model-asset-exchange
-  - REPO=codait/MAX-Facial-Age-Estimator-Mini-Web-App  # has .travis.yml file
-  - REPO=codait/graph_def_editor
-  - REPO=codait/max-base
-  - REPO=IBM/FfDL
-  - REPO=IBM/max-developer-tutorial
-  - REPO=IBM/MAX-Base
-  - REPO=IBM/AIF360  # has .travis.yml file
-  - REPO=IBM/HackerOne-Notifications-Events-via-IBM-Cloud-Slack
-  - REPO=IBM/MAX-Breast-Cancer-Mitosis-Detector  # has .travis.yml file
-  - REPO=IBM/MAX-Facial-Age-Estimator  # has .travis.yml file
-  - REPO=IBM/MAX-Facial-Age-Estimator-Web-App  # has .travis.yml file
-  - REPO=IBM/MAX-Facial-Emotion-Classifier  # has .travis.yml file
-  - REPO=IBM/MAX-Fast-Neural-Style-Transfer  # has .travis.yml file
-  - REPO=IBM/MAX-Framework  # has .travis.yml file
-  - REPO=IBM/MAX-Image-Colorizer  # has .travis.yml file
-  - REPO=IBM/MAX-Image-Completer  # has .travis.yml file
-  - REPO=IBM/MAX-Inception-ResNet-v2  # has .travis.yml file
-  - REPO=IBM/MAX-Named-Entity-Tagger  # has .travis.yml file
-  - REPO=IBM/MAX-News-Text-Generator  # has .travis.yml file
-  - REPO=IBM/MAX-Object-Detector  # has .travis.yml file
-  - REPO=IBM/MAX-ResNet-50  # has .travis.yml file
-  - REPO=IBM/MAX-Review-Text-Generator  # has .travis.yml file
-  - REPO=IBM/MAX-Scene-Classifier  # has .travis.yml file
-  - REPO=IBM/castor-messaging
-  - REPO=IBM/django-web-app
-  - REPO=IBM/ibm-block-csi-driver
-  - REPO=IBM/mi-prometheus
-  - REPO=IBM/osslm-ansible-resource-manager
-  - REPO=IBM/probabilistic-federated-neural-matching
-  - REPO=IBM/python-itoolkit  # has .travis.yml file
-  - REPO=IBM/python-sdk-core  # has .travis.yml file
-  - REPO=IBM/pytorchpipe  # has .travis.yml file
-  - REPO=IBM/stix-shifter  # has .travis.yml file
-  - REPO=IBM/stomp
-  - REPO=IBM/watson-assistant-workbench  # has .travis.yml file
-  - REPO=IBM/watson-box-skills-with-nlu
-  
+  - REPO=with-watson/multilingual-chatbot
+  - REPO=with-watson/watson-box-skills-lab-docs
+  - REPO=with-watson/wcs-deployment-utils
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
