@@ -14,36 +14,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pschmitt/docker-picamera  # has .travis.yml file
-  - REPO=pschmitt/easypysmb
-  - REPO=pschmitt/fortipy
-  - REPO=pschmitt/guacapy
-  - REPO=pschmitt/hass-config  # has .travis.yml file
-  - REPO=pschmitt/hassio-addons  # has .travis.yml file
-  - REPO=pschmitt/home-assistant  # has .travis.yml file
-  - REPO=pschmitt/keyring-vault-backend
-  - REPO=pschmitt/libkeepass-unicode
-  - REPO=pschmitt/pydorita
-  - REPO=pschmitt/pykeepass  # has .travis.yml file
-  - REPO=pschmitt/pymail_utils
-  - REPO=pschmitt/pynello
-  - REPO=pschmitt/pynuki
-  - REPO=pschmitt/pyrundeck
-  - REPO=pschmitt/pysmb_utils
-  - REPO=pschmitt/pysonyavr
-  - REPO=pschmitt/pyteleloisirs
-  - REPO=pschmitt/python-liveboxplaytv
-  - REPO=pschmitt/python-opsview
-  - REPO=pschmitt/python-restorepoint
-  - REPO=pschmitt/python-songpal  # has .travis.yml file
-  - REPO=pschmitt/rocketchat_API
-  - REPO=pschmitt/roombapy
-  - REPO=pschmitt/sherlockbikepy
-  - REPO=pschmitt/shortmomi
-  - REPO=pschmitt/tahoma-api
-  - REPO=pschmitt/vault-keepass-import
-  - REPO=pschmitt/welog
-  - REPO=pschmitt/zhue
+  - REPO=Kitt-AI/parsetron  # has .travis.yml file
+  - REPO=Kitt-AI/parsetron-tutorial
+  - REPO=Kitt-AI/snowboy
 
 install:
   #- pip install -r requirements.txt
