@@ -14,9 +14,17 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=with-watson/multilingual-chatbot
-  - REPO=with-watson/watson-box-skills-lab-docs
-  - REPO=with-watson/wcs-deployment-utils
+  - REPO=alberanid/arduino4impress
+  - REPO=alberanid/cthulhusay
+  - REPO=alberanid/diffido
+  - REPO=alberanid/fortunes-spam
+  - REPO=alberanid/imdbpy  # has .travis.yml file
+  - REPO=alberanid/owasp-esapi-python
+  - REPO=alberanid/pkgquiz
+  - REPO=alberanid/python-iplib  # has .travis.yml file
+  - REPO=alberanid/thoughts-and-prayers
+  - REPO=alberanid/toot-my-t-shirt
+  - REPO=alberanid/youtube-dl  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
