@@ -14,9 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Kitt-AI/parsetron  # has .travis.yml file
-  - REPO=Kitt-AI/parsetron-tutorial
-  - REPO=Kitt-AI/snowboy
+  - REPO=nodejs/node-v8
 
 install:
   #- pip install -r requirements.txt
