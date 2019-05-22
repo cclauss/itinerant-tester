@@ -14,8 +14,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nodejs/node-v8
-
+  - REPO=bnajafi/Gaussian_Naive_Bayes_SKLearn
+  - REPO=bnajafi/MachineLearning-for-Trading-PipeLine
+  - REPO=bnajafi/MyProjectFilesTest
+  - REPO=bnajafi/PyEIS
+  - REPO=bnajafi/SVM-Classification-Terrain
+  - REPO=bnajafi/Scientific_Python_Assignments_POLIMI_EETBS
+  - REPO=bnajafi/SimpleBuilding
+  - REPO=bnajafi/Thesis
+  - REPO=bnajafi/adanet
+  - REPO=bnajafi/keras-english-resume-parser-and-analyzer
+  - REPO=bnajafi/mlxtend  # has .travis.yml file
+  - REPO=bnajafi/myNewRepo19Jan
+  - REPO=bnajafi/myNewRepository
+  - REPO=bnajafi/pandas_degreedays  # has .travis.yml file
+  - REPO=bnajafi/pyspark-tutorial
+  - REPO=bnajafi/python4ScientificComputing_Numpy_Pandas_MATPLotLIB
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
