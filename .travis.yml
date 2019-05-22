@@ -14,11 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=ColdGrub1384/Pyto
+  - REPO=HelloZeroNet/ZeroNet
+  - REPO=Helpsypoo/primer
+  - REPO=MVIG-SJTU/AlphaPose
+  - REPO=Netflix/bless
+  - REPO=Netflix/photon
+  - REPO=SecureAuthCorp/impacket
+  - REPO=TheAlgorithms/Python
+  - REPO=TheKingOfDuck/fuzzDicts
+  - REPO=WenjieZ/TSCV
+  - REPO=achael/eht-imaging
+  - REPO=achaiah/pywick
+  - REPO=alicevision/meshroom
+  - REPO=apache/beam
+  - REPO=apachecn/AiLearning
+  - REPO=cclauss/Pyto-module-versions
+  - REPO=cclauss/pythonista-module-versions
+  - REPO=cvpe/Pythonista-scripts
+  - REPO=druid-io/pydruid
+  - REPO=edx/codejail
+  - REPO=edx/edx-search
+  - REPO=edx/edx-val
   - REPO=electron/electron
-  - REPO=electron/gyp
-  - REPO=electron/libchromiumcontent
+  - REPO=getredash/redash
+  - REPO=gmjosack/mrproxy
+  - REPO=ibm-watson-iot/functions
+  - REPO=ibmdb/python-ibmdb
+  - REPO=johanjanssen/ChocolateyPackages
+  - REPO=jython/book
+  - REPO=kaushaltrivedi/fast-bert
+  - REPO=keras-team/keras
+  - REPO=kubeflow/kubeflow
+  - REPO=libkeepass/libkeepass
+  - REPO=nodejs/TSC
+  - REPO=nodejs/build
+  - REPO=nodejs/code-and-learn
+  - REPO=nodejs/moderation
+  - REPO=nodejs/node
+  - REPO=nodejs/node-chakracore
   - REPO=nodejs/node-gyp
-  
+  - REPO=nodejs/node-v8
+  - REPO=o-lim/generate-ninja
+  - REPO=omz/Pythonista-Issues
+  - REPO=proudcanadianeh/ChocoPackages
+  - REPO=pyca/pyopenssl
+  - REPO=pypa/pip
+  - REPO=python/typed_ast
+  - REPO=pytries/datrie
+  - REPO=revalo/pishot
+  - REPO=spotify/snakebite
+  - REPO=tensorflow/probability
+  - REPO=thunlp/ERNIE
+  - REPO=tiangolo/meinheld-gunicorn-flask-docker
+  - REPO=wandb/client
+  - REPO=williamjacksn/python-rainwave-client
+  - REPO=xonsh/xonsh  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
