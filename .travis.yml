@@ -14,36 +14,36 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pytest-dev/cookiecutter-pytest-plugin  # has .travis.yml file
-  - REPO=pytest-dev/execnet  # has .travis.yml file
-  - REPO=pytest-dev/pluggy  # has .travis.yml file
-  - REPO=pytest-dev/py  # has .travis.yml file
-  - REPO=pytest-dev/pytest  # has .travis.yml file
-  - REPO=pytest-dev/pytest-asyncio  # has .travis.yml file
-  - REPO=pytest-dev/pytest-bdd  # has .travis.yml file
-  - REPO=pytest-dev/pytest-cov  # has .travis.yml file
-  - REPO=pytest-dev/pytest-django  # has .travis.yml file
-  - REPO=pytest-dev/pytest-flask  # has .travis.yml file
-  - REPO=pytest-dev/pytest-forked  # has .travis.yml file
-  - REPO=pytest-dev/pytest-html  # has .travis.yml file
-  - REPO=pytest-dev/pytest-instafail  # has .travis.yml file
-  - REPO=pytest-dev/pytest-mock  # has .travis.yml file
-  - REPO=pytest-dev/pytest-play  # has .travis.yml file
-  - REPO=pytest-dev/pytest-print
-  - REPO=pytest-dev/pytest-qt  # has .travis.yml file
-  - REPO=pytest-dev/pytest-randomly  # has .travis.yml file
-  - REPO=pytest-dev/pytest-repeat  # has .travis.yml file
-  - REPO=pytest-dev/pytest-rerunfailures  # has .travis.yml file
-  - REPO=pytest-dev/pytest-runner  # has .travis.yml file
-  - REPO=pytest-dev/pytest-selenium  # has .travis.yml file
-  - REPO=pytest-dev/pytest-slack  # has .travis.yml file
-  - REPO=pytest-dev/pytest-splinter  # has .travis.yml file
-  - REPO=pytest-dev/pytest-subtests  # has .travis.yml file
-  - REPO=pytest-dev/pytest-twisted  # has .travis.yml file
-  - REPO=pytest-dev/pytest-variables  # has .travis.yml file
-  - REPO=pytest-dev/pytest-xdist  # has .travis.yml file
-  - REPO=pytest-dev/regendoc
-  - REPO=pytest-dev/unittest2pytest  # has .travis.yml file
+  - REPO=jaraco/backports.datetime_timestamp  # has .travis.yml file
+  - REPO=jaraco/backports.pdb  # has .travis.yml file
+  - REPO=jaraco/cmdix  # has .travis.yml file
+  - REPO=jaraco/configparser  # has .travis.yml file
+  - REPO=jaraco/cpython  # has .travis.yml file
+  - REPO=jaraco/deepdiff  # has .travis.yml file
+  - REPO=jaraco/irc  # has .travis.yml file
+  - REPO=jaraco/jaraco.collections  # has .travis.yml file
+  - REPO=jaraco/jaraco.compat  # has .travis.yml file
+  - REPO=jaraco/jaraco.functools  # has .travis.yml file
+  - REPO=jaraco/jaraco.itertools  # has .travis.yml file
+  - REPO=jaraco/jaraco.logging  # has .travis.yml file
+  - REPO=jaraco/jaraco.mongodb  # has .travis.yml file
+  - REPO=jaraco/jaraco.net  # has .travis.yml file
+  - REPO=jaraco/jaraco.text  # has .travis.yml file
+  - REPO=jaraco/jaraco.tidelift  # has .travis.yml file
+  - REPO=jaraco/keyring  # has .travis.yml file
+  - REPO=jaraco/mongo-python-driver  # has .travis.yml file
+  - REPO=jaraco/path.py  # has .travis.yml file
+  - REPO=jaraco/peps  # has .travis.yml file
+  - REPO=jaraco/pip-run  # has .travis.yml file
+  - REPO=jaraco/pipx  # has .travis.yml file
+  - REPO=jaraco/portend  # has .travis.yml file
+  - REPO=jaraco/pyjwt  # has .travis.yml file
+  - REPO=jaraco/pytest-black  # has .travis.yml file
+  - REPO=jaraco/pytest-black-multipy  # has .travis.yml file
+  - REPO=jaraco/skeleton  # has .travis.yml file
+  - REPO=jaraco/svg.charts  # has .travis.yml file
+  - REPO=jaraco/tempora  # has .travis.yml file
+  - REPO=jaraco/zipp  # has .travis.yml file
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
