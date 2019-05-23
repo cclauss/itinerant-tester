@@ -14,18 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=alberanid/arduino4impress
-  - REPO=alberanid/cthulhusay
-  - REPO=alberanid/diffido
-  - REPO=alberanid/fortunes-spam
-  - REPO=alberanid/imdbpy  # has .travis.yml file
-  - REPO=alberanid/owasp-esapi-python
-  - REPO=alberanid/pkgquiz
-  - REPO=alberanid/python-iplib  # has .travis.yml file
-  - REPO=alberanid/thoughts-and-prayers
-  - REPO=alberanid/toot-my-t-shirt
-  - REPO=alberanid/youtube-dl  # has .travis.yml file
-
+  - REPO=facebookresearch/pythia
+  - REPO=TheAlgorithms/Python
+  - REPO=weskerfoot/DeleteFB
+  - REPO=jakubroztocil/httpie
+  - REPO=machinelearningmindset/machine-learning-course
+  - REPO=tensorflow/models
+  - REPO=apachecn/AiLearning
+  - REPO=cool-RR/PySnooper
+  - REPO=donnemartin/system-design-primer
+  - REPO=vinta/awesome-python
+  - REPO=shengqiangzhang/examples-of-web-crawlers
+  - REPO=python/black
+  - REPO=stewartmcgown/uds
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=ytdl-org/youtube-dl
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=TheKingOfDuck/fuzzDicts
+  - REPO=ray-project/ray
+  - REPO=ageitgey/face_recognition
+  - REPO=python/cpython
+  - REPO=keras-team/keras
+  - REPO=toddmotto/public-apis
+  - REPO=ansible/ansible
+  - REPO=scikit-learn/scikit-learn
+  - REPO=home-assistant/home-assistant
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
