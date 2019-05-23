@@ -14,36 +14,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jaraco/backports.datetime_timestamp  # has .travis.yml file
-  - REPO=jaraco/backports.pdb  # has .travis.yml file
-  - REPO=jaraco/cmdix  # has .travis.yml file
-  - REPO=jaraco/configparser  # has .travis.yml file
-  - REPO=jaraco/cpython  # has .travis.yml file
-  - REPO=jaraco/deepdiff  # has .travis.yml file
-  - REPO=jaraco/irc  # has .travis.yml file
-  - REPO=jaraco/jaraco.collections  # has .travis.yml file
-  - REPO=jaraco/jaraco.compat  # has .travis.yml file
-  - REPO=jaraco/jaraco.functools  # has .travis.yml file
-  - REPO=jaraco/jaraco.itertools  # has .travis.yml file
-  - REPO=jaraco/jaraco.logging  # has .travis.yml file
-  - REPO=jaraco/jaraco.mongodb  # has .travis.yml file
-  - REPO=jaraco/jaraco.net  # has .travis.yml file
-  - REPO=jaraco/jaraco.text  # has .travis.yml file
-  - REPO=jaraco/jaraco.tidelift  # has .travis.yml file
-  - REPO=jaraco/keyring  # has .travis.yml file
-  - REPO=jaraco/mongo-python-driver  # has .travis.yml file
-  - REPO=jaraco/path.py  # has .travis.yml file
-  - REPO=jaraco/peps  # has .travis.yml file
-  - REPO=jaraco/pip-run  # has .travis.yml file
-  - REPO=jaraco/pipx  # has .travis.yml file
-  - REPO=jaraco/portend  # has .travis.yml file
-  - REPO=jaraco/pyjwt  # has .travis.yml file
-  - REPO=jaraco/pytest-black  # has .travis.yml file
-  - REPO=jaraco/pytest-black-multipy  # has .travis.yml file
-  - REPO=jaraco/skeleton  # has .travis.yml file
-  - REPO=jaraco/svg.charts  # has .travis.yml file
-  - REPO=jaraco/tempora  # has .travis.yml file
-  - REPO=jaraco/zipp  # has .travis.yml file
+  - REPO=jliljebl/flowblade
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
