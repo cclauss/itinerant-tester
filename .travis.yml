@@ -14,16 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=keybase/django-keybase-proofs  # has .travis.yml file
-  - REPO=keybase/python-triplesec  # has .travis.yml file
-  - REPO=keybase/saltpack-python  # has .travis.yml file
-  - REPO=keybase/twofish  # has .travis.yml file
-  - REPO=menegazzo/click  # has .travis.yml file
-  - REPO=menegazzo/err-jenkins
-  - REPO=menegazzo/pymelapse
-  - REPO=menegazzo/pytest-stash  # has .travis.yml file
-  - REPO=menegazzo/travispy  # has .travis.yml file
-  - REPO=menegazzo/tron-ci
+  - REPO=keybase/python-twofish  # has .travis.yml file
 
 install:
   #- pip install -r requirements.txt
