@@ -14,18 +14,15 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=FiloSottile/GoOracle
-  - REPO=FiloSottile/Griffith
-  - REPO=FiloSottile/HNTitles
-  - REPO=FiloSottile/PyScribe  # has .travis.yml file
-  - REPO=FiloSottile/crypto.py  # has .travis.yml file
-  - REPO=FiloSottile/hs-api-playground
-  - REPO=FiloSottile/linux_ebooks
-  - REPO=FiloSottile/nest_thermostat
-  - REPO=FiloSottile/torspec
-  - REPO=FiloSottile/travis-cron  # has .travis.yml file
-  - REPO=FiloSottile/youtube-dl  # has .travis.yml file
-
+  - REPO=seungeunrho/minimalRL
+  - REPO=woj-ciech/LeakLooker
+  - REPO=chris104957/maildown
+  - REPO=STVIR/pysot
+  - REPO=weskerfoot/DeleteFB
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=opendevops-cn/opendevops
+  - REPO=zalando-incubator/kopf
+  - REPO=OWASP/CheatSheetSeries
 
 install:
   #- pip install -r requirements.txt
