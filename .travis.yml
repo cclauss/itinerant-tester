@@ -14,15 +14,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=seungeunrho/minimalRL
-  - REPO=woj-ciech/LeakLooker
-  - REPO=chris104957/maildown
-  - REPO=STVIR/pysot
-  - REPO=weskerfoot/DeleteFB
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=opendevops-cn/opendevops
-  - REPO=zalando-incubator/kopf
-  - REPO=OWASP/CheatSheetSeries
+  - REPO=youknowone/ring
+  - REPO=0x4D31/fatt
 
 install:
   #- pip install -r requirements.txt
