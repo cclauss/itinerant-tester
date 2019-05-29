@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=tensorflow/graphics
+  - REPO=Leoid/CVE-2019-0708
 
 install:
   #- pip install -r requirements.txt
