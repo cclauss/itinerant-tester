@@ -14,8 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=youknowone/ring
-  - REPO=0x4D31/fatt
+  - REPO=tensorflow/graphics
 
 install:
   #- pip install -r requirements.txt
