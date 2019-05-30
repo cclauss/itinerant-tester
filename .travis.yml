@@ -14,7 +14,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Leoid/CVE-2019-0708
+  - REPO=sogou/SMRCToolkit
+  - REPO=opencv/open_model_zoo
+  - REPO=mcfunley/pugsql
+  - REPO=lijiejie/idea_exploit
+  - REPO=itgoyo/TeamViewer-Free
 
 install:
   #- pip install -r requirements.txt
