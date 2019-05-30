@@ -14,12 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=TheAlgorithms/Python
   - REPO=sogou/SMRCToolkit
-  - REPO=opencv/open_model_zoo
   - REPO=mcfunley/pugsql
+  - REPO=opencv/open_model_zoo
+  - REPO=tensorflow/models
   - REPO=lijiejie/idea_exploit
+  - REPO=apachecn/AiLearning
+  - REPO=opendevops-cn/opendevops
+  - REPO=ytdl-org/youtube-dl
+  - REPO=python/cpython
+  - REPO=cool-RR/PySnooper
+  - REPO=vinta/awesome-python
+  - REPO=donnemartin/system-design-primer
+  - REPO=toddmotto/public-apis
+  - REPO=soimort/you-get
+  - REPO=ageitgey/face_recognition
+  - REPO=OWASP/CheatSheetSeries
   - REPO=itgoyo/TeamViewer-Free
-
+  - REPO=django/django
+  - REPO=tensorflow/graphics
+  - REPO=weskerfoot/DeleteFB
+  - REPO=facebookresearch/qmnist
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=0x4D31/fatt
+  - REPO=deepfakes/faceswap
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=n1nj4sec/pupy
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=Supervisor/supervisor
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=hyperledger/iroha-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
