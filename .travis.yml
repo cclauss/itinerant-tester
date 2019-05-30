@@ -39,12 +39,8 @@ env:
   - REPO=imhuay/Algorithm_Interview_Notes-Chinese
   - REPO=0x4D31/fatt
   - REPO=deepfakes/faceswap
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
   - REPO=n1nj4sec/pupy
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
+  - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
   - REPO=oaubert/python-vlc
   - REPO=ColdGrub1384/Pyto
@@ -58,18 +54,22 @@ env:
   - REPO=ibm-watson-iot/device-kodi
   - REPO=apache/beam
   - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
   - REPO=ibm-watson-iot/functions
   - REPO=apache/spark
   - REPO=Tribler/tribler
   - REPO=nodejs/node
   - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
   - REPO=matplotlib/matplotlib
   - REPO=ckan/ckan
   - REPO=ggtracker/sc2reader
   - REPO=httplib2/httplib2
-  - REPO=Supervisor/supervisor
   - REPO=hyperledger/fabric-sdk-py
-  - REPO=hyperledger/iroha-python
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
