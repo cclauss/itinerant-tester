@@ -14,33 +14,29 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mattgwwalker/SwiftThinkBayes
-  - REPO=mattgwwalker/automated-testing-example
-  - REPO=mattgwwalker/msg-extractor  # has .travis.yml file
-  - REPO=mattgwwalker/nz-bank-credit-ratings
-  - REPO=trio/trio
-  - REPO=trio/unasync
-  - REPO=trio/triopg
-  - REPO=trio/urllib3
-  - REPO=trio/trio-typing
-  - REPO=trio/trustme
-  - REPO=trio/sniffio
-  - REPO=trio/sphinxcontrib-trio
-  - REPO=trio/trio-asyncio
-  - REPO=trio/async_generator
-  - REPO=trio/pytest-trio
-  - REPO=trio/hypothesis-trio
-  - REPO=trio/exceptiongroup
-  - REPO=trio/trio-mysql
-  - REPO=trio/trio-click
-  - REPO=trio/trimeter
-  - REPO=trio/trio-amqp
-  - REPO=trio/outcome
-  - REPO=trio/trio-owfs
-  - REPO=trio/trio-gpio
-  - REPO=trio/cookiecutter-trio
-  - REPO=trio/trio-monitor
-  - REPO=trio/trzmq 
+  - REPO=python-trio/trio
+  - REPO=python-trio/unasync
+  - REPO=python-trio/triopg
+  - REPO=python-trio/urllib3
+  - REPO=python-trio/trio-typing
+  - REPO=python-trio/trustme
+  - REPO=python-trio/sniffio
+  - REPO=python-trio/sphinxcontrib-trio
+  - REPO=python-trio/trio-asyncio
+  - REPO=python-trio/async_generator
+  - REPO=python-trio/pytest-trio
+  - REPO=python-trio/hypothesis-trio
+  - REPO=python-trio/exceptiongroup
+  - REPO=python-trio/trio-mysql
+  - REPO=python-trio/trio-click
+  - REPO=python-trio/trimeter
+  - REPO=python-trio/trio-amqp
+  - REPO=python-trio/outcome
+  - REPO=python-trio/trio-owfs
+  - REPO=python-trio/trio-gpio
+  - REPO=python-trio/cookiecutter-trio
+  - REPO=python-trio/trio-monitor
+  - REPO=python-trio/trzmq 
 
 install:
   #- pip install -r requirements.txt
