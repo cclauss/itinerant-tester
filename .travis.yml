@@ -14,28 +14,34 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=giampaolo/aioftp  # has .travis.yml file
-  - REPO=giampaolo/confix  # has .travis.yml file
-  - REPO=giampaolo/coveragepy  # has .travis.yml file
-  - REPO=giampaolo/cpython  # has .travis.yml file
-  - REPO=giampaolo/curio  # has .travis.yml file
-  - REPO=giampaolo/devguide  # has .travis.yml file
-  - REPO=giampaolo/fulltext  # has .travis.yml file
-  - REPO=giampaolo/msg-extractor
-  - REPO=giampaolo/ntfs
-  - REPO=giampaolo/paramiko  # has .travis.yml file
-  - REPO=giampaolo/peps  # has .travis.yml file
-  - REPO=giampaolo/pipenv
-  - REPO=giampaolo/psutil  # has .travis.yml file
-  - REPO=giampaolo/psutil-cli  # has .travis.yml file
-  - REPO=giampaolo/pyftpdlib  # has .travis.yml file
-  - REPO=giampaolo/pyinstaller  # has .travis.yml file
-  - REPO=giampaolo/pysendfile  # has .travis.yml file
-  - REPO=giampaolo/pytest  # has .travis.yml file
-  - REPO=giampaolo/sysconf
-  - REPO=giampaolo/trio  # has .travis.yml file
-  - REPO=giampaolo/urllib3  # has .travis.yml file
-  
+  - REPO=mattgwwalker/SwiftThinkBayes
+  - REPO=mattgwwalker/automated-testing-example
+  - REPO=mattgwwalker/msg-extractor  # has .travis.yml file
+  - REPO=mattgwwalker/nz-bank-credit-ratings
+  - REPO=trio/trio
+  - REPO=trio/unasync
+  - REPO=trio/triopg
+  - REPO=trio/urllib3
+  - REPO=trio/trio-typing
+  - REPO=trio/trustme
+  - REPO=trio/sniffio
+  - REPO=trio/sphinxcontrib-trio
+  - REPO=trio/trio-asyncio
+  - REPO=trio/async_generator
+  - REPO=trio/pytest-trio
+  - REPO=trio/hypothesis-trio
+  - REPO=trio/exceptiongroup
+  - REPO=trio/trio-mysql
+  - REPO=trio/trio-click
+  - REPO=trio/trimeter
+  - REPO=trio/trio-amqp
+  - REPO=trio/outcome
+  - REPO=trio/trio-owfs
+  - REPO=trio/trio-gpio
+  - REPO=trio/cookiecutter-trio
+  - REPO=trio/trio-monitor
+  - REPO=trio/trzmq 
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
