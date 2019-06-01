@@ -14,7 +14,27 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pdoc3/pdoc
+  - REPO=giampaolo/aioftp  # has .travis.yml file
+  - REPO=giampaolo/confix  # has .travis.yml file
+  - REPO=giampaolo/coveragepy  # has .travis.yml file
+  - REPO=giampaolo/cpython  # has .travis.yml file
+  - REPO=giampaolo/curio  # has .travis.yml file
+  - REPO=giampaolo/devguide  # has .travis.yml file
+  - REPO=giampaolo/fulltext  # has .travis.yml file
+  - REPO=giampaolo/msg-extractor
+  - REPO=giampaolo/ntfs
+  - REPO=giampaolo/paramiko  # has .travis.yml file
+  - REPO=giampaolo/peps  # has .travis.yml file
+  - REPO=giampaolo/pipenv
+  - REPO=giampaolo/psutil  # has .travis.yml file
+  - REPO=giampaolo/psutil-cli  # has .travis.yml file
+  - REPO=giampaolo/pyftpdlib  # has .travis.yml file
+  - REPO=giampaolo/pyinstaller  # has .travis.yml file
+  - REPO=giampaolo/pysendfile  # has .travis.yml file
+  - REPO=giampaolo/pytest  # has .travis.yml file
+  - REPO=giampaolo/sysconf
+  - REPO=giampaolo/trio  # has .travis.yml file
+  - REPO=giampaolo/urllib3  # has .travis.yml file
   
 install:
   #- pip install -r requirements.txt
