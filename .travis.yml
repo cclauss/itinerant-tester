@@ -14,62 +14,14 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=lukemelas/EfficientNet-PyTorch
-  - REPO=TheAlgorithms/Python
-  - REPO=vietnguyen91/Super-mario-bros-A3C-pytorch
-  - REPO=thomasahle/sunfish
-  - REPO=rwightman/pytorch-image-models
-  - REPO=donnemartin/system-design-primer
-  - REPO=huggingface/naacl_transfer_learning_tutorial
-  - REPO=apachecn/AiLearning
-  - REPO=zsef123/EfficientNets-PyTorch
-  - REPO=Ekultek/BlueKeep
-  - REPO=algo7/bluekeep_CVE-2019-0708_poc_to_exploit
-  - REPO=tensorflow/models
-  - REPO=fighting41love/funNLP
-  - REPO=microsoft/pyright
-  - REPO=cool-RR/PySnooper
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=taki0112/SPADE-Tensorflow
-  - REPO=ytdl-org/youtube-dl
-  - REPO=vinta/awesome-python
-  - REPO=ageitgey/face_recognition
+  - REPO=Zucccs/Hatch
+  - REPO=Zucccs/Lunar
+  - REPO=Zucccs/Mercury
   - REPO=Zucccs/PhoneSploit
-  - REPO=toddmotto/public-apis
-  - REPO=ray-project/ray
-  - REPO=lufeirider/CVE-2019-2725
-  - REPO=qubvel/efficientnet
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=Zucccs/Tortuga
+  - REPO=Zucccs/pyHAWK
+  - REPO=Zucccs/txtduino
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
