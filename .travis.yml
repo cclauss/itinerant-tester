@@ -14,29 +14,26 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nodejs/abi-stable-node-addon-examples
-  - REPO=nodejs/build
-  - REPO=nodejs/ecmascript-modules
-  - REPO=nodejs/ffi
-  - REPO=nodejs/http-parser
-  - REPO=nodejs/http2
-  - REPO=nodejs/llhttp
-  - REPO=nodejs/llnode
-  - REPO=nodejs/nan
-  - REPO=nodejs/node
-  - REPO=nodejs/node-addon-api
-  - REPO=nodejs/node-addon-examples
-  - REPO=nodejs/node-auto-test
-  - REPO=nodejs/node-chakracore
-  - REPO=nodejs/node-convergence-archive
-  - REPO=nodejs/node-gyp
-  - REPO=nodejs/node-report
-  - REPO=nodejs/node-v8
-  - REPO=nodejs/perfetto-nodejs-wip
-  - REPO=nodejs/quic
-  - REPO=nodejs/testing
-  - REPO=nodejs/v8
-  - REPO=nodejs/worker
+  - REPO=geops/batyr
+  - REPO=geops/bodo
+  - REPO=geops/django-ajaximage
+  - REPO=geops/fabric_debian
+  - REPO=geops/geoserver-documentor
+  - REPO=geops/gtfsman
+  - REPO=geops/mapfish-print
+  - REPO=geops/ole-mapfish
+  - REPO=geops/ole-zend
+  - REPO=geops/osm2vectortiles
+  - REPO=geops/pgwrench
+  - REPO=geops/pg_routejoin
+  - REPO=geops/phpunit-utils
+  - REPO=geops/postgis
+  - REPO=geops/pysaml2
+  - REPO=geops/python-gitoliteparser
+  - REPO=geops/python-templatedict
+  - REPO=geops/redis-websocket-api
+  - REPO=geops/vdv2pg
+  - REPO=geops/WasteMindR
 
 install:
   #- pip install -r requirements.txt
