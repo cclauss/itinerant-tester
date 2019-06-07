@@ -14,8 +14,39 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=kaushaltrivedi/fast-bert
-  - REPO=IBM/ZOSVRG-BlackBox-Adv      # 2018-10-30
+  - REPO=kadler/activejobdashboardlab  # 2016-05-18
+  - REPO=kadler/cpython               # 2019-05-30 python/cpython
+  - REPO=python/cpython
+  - REPO=kadler/dnf                   # 2018-12-10 rpm-software-management/dnf
+  - REPO=rpm-software-management/dnf
+  - REPO=kadler/git                   # 2019-03-16 git/git
+  - REPO=git/git
+  - REPO=kadler/go                    # 2019-01-31 golang/go
+  - REPO=golang/go
+  - REPO=kadler/htop                  # 2016-11-22 hishamhm/htop
+  - REPO=hishamhm/htop
+  - REPO=kadler/libuv                 # 2019-01-17 libuv/libuv
+  - REPO=libuv/libuv
+  - REPO=kadler/libwordcount          # 2018-05-15
+  - REPO=kadler/openssl               # 2019-04-25 openssl/openssl
+  - REPO=openssl/openssl
+  - REPO=kadler/pyodbc                # 2019-04-26 mkleehammer/pyodbc
+  - REPO=mkleehammer/pyodbc
+  - REPO=kadler/python-for-IBM-i-examples  # 2018-01-23 Club-Seiden/python-for-IBM-i-examples
+  - REPO=Club-Seiden/python-for-IBM-i-examples
+  - REPO=kadler/python-ibmdb          # 2019-06-05 ibmdb/python-ibmdb
+  - REPO=ibmdb/python-ibmdb
+  - REPO=kadler/python-ibmdb-django   # 2019-03-12 ibmdb/python-ibmdb-django
+  - REPO=ibmdb/python-ibmdb-django
+  - REPO=kadler/python-ibmdbdjango    # 2015-04-23
+  - REPO=kadler/python-ibmdbsa        # 2018-11-27 ibmdb/python-ibmdbsa
+  - REPO=ibmdb/python-ibmdbsa
+  - REPO=kadler/shellingham           # 2019-03-14 sarugaku/shellingham
+  - REPO=sarugaku/shellingham
+  - REPO=kadler/sndgmail              # 2018-10-02 sanotto/sndgmail
+  - REPO=sanotto/sndgmail
+  - REPO=kadler/stupid-python-tricks  # 2018-06-14
+  - REPO=kadler/xmlservice            # 2019-01-31
 
 install:
   #- pip install -r requirements.txt
