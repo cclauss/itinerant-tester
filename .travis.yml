@@ -14,8 +14,47 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=awslabs/gluon-ts
-
+  - REPO=ibm-watson-iot/blockchain-samples  # 2019-03-04
+  - REPO=ibm-watson-iot/connector-qradar  # 2018-11-11
+  - REPO=ibm-watson-iot/connector-statsd  # 2018-12-03
+  - REPO=ibm-watson-iot/device-kodi   # 2018-07-27
+  - REPO=ibm-watson-iot/functions     # 2019-06-07
+  - REPO=ibm-watson-iot/gateway-lightify  # 2019-04-02
+  - REPO=ibm-watson-iot/grafana4iot   # 2019-05-30
+  - REPO=ibm-watson-iot/iot-python    # 2019-06-06
+  - REPO=ibm-watson-iot/wi-websphere-auth  # 2019-05-08
+  - REPO=GoogleCloudPlatform/appengine-search-python-java
+  - REPO=microservices-demo/carts
+  - REPO=microservices-demo/catalogue
+  - REPO=GoogleCloudPlatform/DataflowSDK-examples
+  - REPO=docker/docker-registry
+  - REPO=bpradipt/FfDL                # 2018-03-23 IBM/FfDL
+  - REPO=IBM/FfDL
+  - REPO=michaljemala/hello-python
+  - REPO=influxdata/influxdb
+  - REPO=bpradipt/istio               # 2018-05-24 istio/istio
+  - REPO=istio/istio
+  - REPO=kubernetes/kubernetes
+  - REPO=libvirt/libvirt
+  - REPO=bpradipt/orders              # 2017-05-10 microservices-demo/orders
+  - REPO=microservices-demo/orders
+  - REPO=bpradipt/payment             # 2017-03-21 microservices-demo/payment
+  - REPO=microservices-demo/payment
+  - REPO=bpradipt/pipeline            # 2017-02-17 PipelineAI/pipeline
+  - REPO=PipelineAI/pipeline
+  - REPO=bpradipt/queue-master        # 2017-04-11 microservices-demo/queue-master
+  - REPO=microservices-demo/queue-master
+  - REPO=bpradipt/rethinkdb           # 2017-02-10 rethinkdb/rethinkdb
+  - REPO=rethinkdb/rethinkdb
+  - REPO=bpradipt/sampleflaskapp      # 2018-04-03 jay3dec/PythonFlaskMySQLApp---Part-1
+  - REPO=jay3dec/PythonFlaskMySQLApp---Part-1
+  - REPO=bpradipt/shipping            # 2017-05-10 microservices-demo/shipping
+  - REPO=microservices-demo/shipping
+  - REPO=bpradipt/system-design-primer  # 2018-08-07 donnemartin/system-design-primer
+  - REPO=donnemartin/system-design-primer
+  - REPO=bpradipt/vAdvisor            # 2018-07-08 kubevirt/vAdvisor
+  - REPO=kubevirt/vAdvisor
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
