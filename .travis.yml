@@ -14,14 +14,40 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=forseti-security/forseti-security  # 2019-06-07
-  - REPO=forseti-security/policy-library  # 2019-06-07
-  - REPO=forseti-security/real-time-enforcer  # 2019-05-23
-  - REPO=forseti-security/resource-policy-evaluation-library  # 2019-05-29
-  - REPO=forseti-security/terraform-google-forseti  # 2019-06-07
-  - REPO=forseti-security/upstream-helm-charts  # 2019-06-07 helm/charts
-  - REPO=helm/charts
-  - REPO=helm/chartmuseum             # 2019-05-29
+  - REPO=poyea/ACM-ICPC-Algorithms    # 2019-02-26 matthewsamuel95/ACM-ICPC-Algorithms
+  - REPO=matthewsamuel95/ACM-ICPC-Algorithms
+  - REPO=poyea/apple-daily-hk-crawler  # 2019-05-05 g0vhk-io/apple-daily-hk-crawler
+  - REPO=g0vhk-io/apple-daily-hk-crawler
+  - REPO=poyea/awesome-algorithm      # 2019-05-21 apachecn/awesome-algorithm
+  - REPO=apachecn/awesome-algorithm
+  - REPO=poyea/awesome-deep-learning-papers  # 2018-03-26 terryum/awesome-deep-learning-papers
+  - REPO=terryum/awesome-deep-learning-papers
+  - REPO=poyea/competitive-programming  # 2019-05-21
+  - REPO=poyea/Complete-Python-3-Bootcamp  # 2018-04-05 Pierian-Data/Complete-Python-3-Bootcamp
+  - REPO=Pierian-Data/Complete-Python-3-Bootcamp
+  - REPO=poyea/face_recognition       # 2018-04-02 ageitgey/face_recognition
+  - REPO=ageitgey/face_recognition
+  - REPO=poyea/Hacktoberfest-2018     # 2018-10-26 rishabh-malik/Hacktoberfest-2018
+  - REPO=rishabh-malik/Hacktoberfest-2018
+  - REPO=poyea/handson-ml             # 2019-03-15 ageron/handson-ml
+  - REPO=ageron/handson-ml
+  - REPO=poyea/keras                  # 2018-04-14 keras-team/keras
+  - REPO=keras-team/keras
+  - REPO=poyea/numpy                  # 2019-05-27 numpy/numpy
+  - REPO=numpy/numpy
+  - REPO=poyea/Python                 # 2018-04-14 TheAlgorithms/Python
+  - REPO=TheAlgorithms/Python
+  - REPO=poyea/python-scripts         # 2019-05-03
+  - REPO=poyea/PythonDataScienceHandbook  # 2018-04-08 jakevdp/PythonDataScienceHandbook
+  - REPO=jakevdp/PythonDataScienceHandbook
+  - REPO=poyea/PyTorchZeroToAll       # 2018-12-31 hunkim/PyTorchZeroToAll
+  - REPO=hunkim/PyTorchZeroToAll
+  - REPO=poyea/scikit-learn           # 2018-04-14 scikit-learn/scikit-learn
+  - REPO=scikit-learn/scikit-learn
+  - REPO=poyea/tensorflow             # 2017-11-08 tensorflow/tensorflow
+  - REPO=tensorflow/tensorflow
+  - REPO=poyea/TensorFlow-Examples    # 2018-04-09 aymericdamien/TensorFlow-Examples
+  - REPO=aymericdamien/TensorFlow-Examples
 
 install:
   #- pip install -r requirements.txt
