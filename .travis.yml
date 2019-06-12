@@ -14,7 +14,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=giampaolo/psutil
+  - REPO=watson-developer-cloud/app-insights-discovery  # 2017-05-26
+  - REPO=watson-developer-cloud/assistant-improve-recommendations-notebook  # 2019-05-29
+  - REPO=watson-developer-cloud/community  # 2019-06-02
+  - REPO=watson-developer-cloud/discovery-starter-kit  # 2019-02-17
+  - REPO=watson-developer-cloud/doc-tutorial-downloads  # 2019-04-08
+  - REPO=watson-developer-cloud/go-sdk  # 2019-05-10
+  - REPO=watson-developer-cloud/java-sdk  # 2019-06-10
+  - REPO=watson-developer-cloud/java-sdk-core  # 2019-02-11
+  - REPO=watson-developer-cloud/python-sdk  # 2019-06-07
+  - REPO=watson-developer-cloud/salesforce-sdk  # 2019-05-15
+  - REPO=watson-developer-cloud/speech-to-text-websockets-python  # 2019-05-28 daniel-bolanos/speech-to-text-websockets-python
+  - REPO=daniel-bolanos/speech-to-text-websockets-python
 
 install:
   #- pip install -r requirements.txt
