@@ -14,18 +14,38 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=watson-developer-cloud/app-insights-discovery  # 2017-05-26
-  - REPO=watson-developer-cloud/assistant-improve-recommendations-notebook  # 2019-05-29
-  - REPO=watson-developer-cloud/community  # 2019-06-02
-  - REPO=watson-developer-cloud/discovery-starter-kit  # 2019-02-17
-  - REPO=watson-developer-cloud/doc-tutorial-downloads  # 2019-04-08
-  - REPO=watson-developer-cloud/go-sdk  # 2019-05-10
-  - REPO=watson-developer-cloud/java-sdk  # 2019-06-10
-  - REPO=watson-developer-cloud/java-sdk-core  # 2019-02-11
-  - REPO=watson-developer-cloud/python-sdk  # 2019-06-07
-  - REPO=watson-developer-cloud/salesforce-sdk  # 2019-05-15
-  - REPO=watson-developer-cloud/speech-to-text-websockets-python  # 2019-05-28 daniel-bolanos/speech-to-text-websockets-python
-  - REPO=daniel-bolanos/speech-to-text-websockets-python
+  - REPO=IBM-Cloud/appid-samples      # 2018-08-02
+  - REPO=IBM-Cloud/application-log-analysis  # 2019-04-12
+  - REPO=IBM-Cloud/Bluemix-ContextPathRouting  # 2017-04-21
+  - REPO=IBM-Cloud/Bluemix-onprem-data  # 2017-11-29
+  - REPO=IBM-Cloud/Bluemix-ServiceBroker  # 2018-12-04
+  - REPO=IBM-Cloud/cloud-sql-database  # 2018-10-31
+  - REPO=IBM-Cloud/clouddatabases-migration-examples  # 2019-03-12
+  - REPO=IBM-Cloud/clouddatabases-postgresql-helloworld-python  # 2019-01-22
+  - REPO=IBM-Cloud/clouddatabases-redis-helloworld-python  # 2018-11-29
+  - REPO=IBM-Cloud/codeignitor-db     # 2015-12-10
+  - REPO=IBM-Cloud/concept-insights-eclipse-faq  # 2018-01-29
+  - REPO=IBM-Cloud/data-store-for-memcache-client  # 2019-01-15
+  - REPO=IBM-Cloud/django-boilerplate  # 2016-02-12
+  - REPO=IBM-Cloud/get-started-python  # 2019-05-14
+  - REPO=IBM-Cloud/github-traffic-stats  # 2019-05-24
+  - REPO=IBM-Cloud/gp-deliverypipeline  # 2019-02-05
+  - REPO=IBM-Cloud/gp-python-client   # 2019-05-08
+  - REPO=IBM-Cloud/HackMETU-15        # 2015-02-20 om3rcitak/HackMETU-15
+  - REPO=om3rcitak/HackMETU-15
+  - REPO=IBM-Cloud/ibmcloud-sdk       # 2019-05-16
+  - REPO=IBM-Cloud/k8s-stackdriver    # 2018-01-25 GoogleCloudPlatform/k8s-stackdriver
+  - REPO=GoogleCloudPlatform/k8s-stackdriver
+  - REPO=IBM-Cloud/logistics-wizard-controller  # 2018-11-28
+  - REPO=IBM-Cloud/python-iot-raspberry-pi  # 2017-07-11
+  - REPO=IBM-Cloud/service-discovery-client-python  # 2018-01-29
+  - REPO=IBM-Cloud/sql-query-clients  # 2019-04-03
+  - REPO=IBM-Cloud/support            # 2018-09-07
+  - REPO=IBM-Cloud/terraform-provider-ibm  # 2019-06-12
+  - REPO=IBM-Cloud/todo-apps          # 2019-03-27
+  - REPO=IBM-Cloud/vpc-api-samples    # 2019-06-05
+  - REPO=IBM-Cloud/vpc-tutorials      # 2019-06-07
+  - REPO=IBM-Cloud/ziggy              # 2018-02-10
 
 install:
   #- pip install -r requirements.txt
