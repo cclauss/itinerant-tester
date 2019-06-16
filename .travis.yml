@@ -14,62 +14,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=donnemartin/system-design-primer
-  - REPO=sfyc23/EverydayWechat
-  - REPO=TheAlgorithms/Python
-  - REPO=zuoym15/craves.ai
-  - REPO=tensorflow/models
-  - REPO=vinta/awesome-python
-  - REPO=d2l-ai/d2l-zh
-  - REPO=CompVis/metric-learning-divide-and-conquer
-  - REPO=ytdl-org/youtube-dl
-  - REPO=deepfakes/faceswap
-  - REPO=keras-team/keras
-  - REPO=google-research/football
-  - REPO=MasoniteFramework/masonite
-  - REPO=momosecurity/aswan
-  - REPO=public-apis/public-apis
-  - REPO=fighting41love/funNLP
-  - REPO=conda/conda
-  - REPO=google-research/bert
-  - REPO=ageitgey/face_recognition
-  - REPO=lufeirider/CVE-2019-2725
-  - REPO=soimort/you-get
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=CriseLYJ/awesome-python-login-model
-  - REPO=mireq/rEFInd-Catalina
-  - REPO=3b1b/manim
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=ebursztein/malusb            # 2018-02-27
+  - REPO=ebursztein/perfcounters      # 2018-12-05
+  - REPO=ebursztein/SiteFab           # 2018-08-07
+  - REPO=ebursztein/SiteRelease       # 2017-12-07
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
