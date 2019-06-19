@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Azure/azure-cli
+  - REPO=fbsamples/fbctf-2019-challenges
   
 install:
   #- pip install -r requirements.txt
