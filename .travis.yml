@@ -14,14 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=CorentinJ/librispeech-alignments  # 2019-03-25
-  - REPO=CorentinJ/logmmse            # 2019-06-02 wilsonchingg/logmmse
-  - REPO=wilsonchingg/logmmse
-  - REPO=CorentinJ/PyTRS              # 2019-03-26
-  - REPO=CorentinJ/Real-Time-Voice-Cloning  # 2019-06-20
-  - REPO=CorentinJ/SourceSeparation   # 2019-05-09
-  - REPO=CorentinJ/WeatherCollector   # 2019-03-25
-  
+  - REPO=foxlet/macOS-Simple-KVM
+  - REPO=open-mmlab/mmdetection
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=allegroai/trains
+  - REPO=sergiomsilva/alpr-unconstrained
+  - REPO=ConvLab/ConvLab
+  - REPO=GoogleCloudPlatform/python-docs-samples
+  - REPO=STVIR/pysot
+  - REPO=grayddq/GScan
+  - REPO=CorentinJ/Real-Time-Voice-Cloning
+  - REPO=NVlabs/SPADE
+  - REPO=facebookresearch/inversecooking
+  - REPO=CoreyMSchafer/code_snippets
+  - REPO=xcp-ng/xcp
+  - REPO=mlflow/mlflow
+  - REPO=clovaai/deep-text-recognition-benchmark
+  - REPO=tensorflow/adanet
+  - REPO=TheAlgorithms/Python
+  - REPO=realsirjoe/instagram-scraper
+  - REPO=lukhy/masr
+  - REPO=Azure/azure-cli
+  - REPO=m4ll0k/Konan
+  - REPO=NVIDIA/pix2pixHD
+  - REPO=SySS-Research/Seth
+  - REPO=donnemartin/system-design-primer
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
