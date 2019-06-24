@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=envoyproxy/envoy
+  - REPO=google/yapf
 
 install:
   #- pip install -r requirements.txt
