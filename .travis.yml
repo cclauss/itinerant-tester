@@ -14,38 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nodejs/build                 # 2019-06-22
-  - REPO=nodejs/ecmascript-modules    # 2019-06-25
-  - REPO=nodejs/ffi                   # 2017-07-28
-  - REPO=nodejs/http-parser           # 2019-06-20
-  - REPO=nodejs/llhttp                # 2019-06-10
-  - REPO=nodejs/llnode                # 2019-04-02
-  - REPO=nodejs/nan                   # 2019-06-12
-  - REPO=nodejs/node                  # 2019-06-25
-  - REPO=nodejs/node-addon-api        # 2019-06-18
-  - REPO=nodejs/node-addon-examples   # 2019-04-02
-  - REPO=nodejs/node-auto-test        # 2019-06-05
-  - REPO=nodejs/node-chakracore       # 2019-06-18
-  - REPO=nodejs/node-gyp              # 2019-06-25
-  - REPO=nodejs/node-report           # 2019-06-06
-  - REPO=nodejs/node-v8               # 2019-06-21
-  - REPO=nodejs/perfetto-nodejs-wip   # 2019-06-04
-  - REPO=nodejs/quic                  # 2019-06-20
-  - REPO=v8/v8
-  - REPO=nodejs/worker                # 2017-05-23
-  - REPO=swagger-api/swagger-play     # 2019-06-20  
-  - REPO=swagger-api/swagger-codegen
-  - REPO=envoyproxy/data-plane-api    # 2019-06-24
-  - REPO=envoyproxy/envoy             # 2019-06-25
-  - REPO=envoyproxy/envoy-filter-example  # 2019-06-24
-  - REPO=envoyproxy/envoy-perf        # 2019-04-16
-  - REPO=envoyproxy/envoy-tools       # 2018-10-25
-  - REPO=envoyproxy/envoy-wasm        # 2019-06-20
-  - REPO=envoyproxy/katacoda-scenarios  # 2019-06-17
-  - REPO=envoyproxy/nighthawk         # 2019-06-25
-  - REPO=envoyproxy/protoc-gen-validate  # 2019-06-25
-  - REPO=envoyproxy/sql-parser        # 2018-12-06 hyrise/sql-parser
-  - REPO=hyrise/sql-parser
+  - REPO=orwell1984/fundamentalists-and-quotemining
 
 install:
   #- pip install -r requirements.txt
