@@ -14,10 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=OpenLiberty/open-liberty     # 2019-06-26
-  - REPO=OpenLiberty/openliberty.io   # 2019-06-25
-  - REPO=OpenLiberty/space-sentry-challenge  # 2019-06-25
-
+  - REPO=bokeh/bokeh
+  - REPO=raspberrypi/documentation
+  - REPO=celery/celery
+  - REPO=ZhuiyiTechnology/nl2sql_baseline
+  - REPO=apache/airflow
+  - REPO=fishtown-analytics/dbt
+  - REPO=tweepy/tweepy
+  - REPO=facebookresearch/Detectron
+  - REPO=mlflow/mlflow
+  - REPO=USTC-Resource/USTC-Course
+  - REPO=tensorflow/tensor2tensor
+  - REPO=dmlc/tvm
+  - REPO=openshift/openshift-ansible
+  - REPO=python-telegram-bot/python-telegram-bot
+  - REPO=rbgirshick/py-faster-rcnn
+  - REPO=microsoft/nni
+  - REPO=locustio/locust
+  - REPO=googleapis/google-cloud-python
+  - REPO=huge-success/sanic
+  - REPO=edx/edx-platform
+  - REPO=MobSF/Mobile-Security-Framework-MobSF
+  - REPO=sabricot/django-elasticsearch-dsl
+  - REPO=Julian/jsonschema
+  - REPO=scrapy/scrapy
+  - REPO=Neo23x0/sigma
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
