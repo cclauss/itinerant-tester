@@ -14,8 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=GoogleCloudPlatform/cloudml-samples
-
+  - REPO=bytedance/byteps
+  - REPO=bokeh/bokeh
+  - REPO=TheresAFewConors/Sooty
+  - REPO=deepfakes/faceswap
+  - REPO=pandas-profiling/pandas-profiling
+  - REPO=microsoft/MASS
+  - REPO=iovisor/bcc
+  - REPO=dmlc/tvm
+  - REPO=home-assistant/home-assistant
+  - REPO=raspberrypi/documentation
+  - REPO=microsoft/nni
+  - REPO=tensorflow/models
+  - REPO=scrapy/scrapy
+  - REPO=hanxiao/bert-as-service
+  - REPO=LaQuay/TDTChannels
+  - REPO=chakki-works/doccano
+  - REPO=JaDogg/pydoro
+  - REPO=google-research/bert
+  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
+  - REPO=apache/airflow
+  - REPO=DefectDojo/django-DefectDojo
+  - REPO=sfyc23/EverydayWechat
+  - REPO=edx/edx-platform
+  - REPO=django-oscar/django-oscar
+  - REPO=pwxcoo/chinese-xinhua
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
