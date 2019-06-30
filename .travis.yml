@@ -14,62 +14,26 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bytedance/byteps
-  - REPO=TheAlgorithms/Python
-  - REPO=deepfakes/faceswap
-  - REPO=d2l-ai/d2l-zh
-  - REPO=llSourcell/deepfakes
-  - REPO=PrefectHQ/prefect
-  - REPO=geekcomputers/Python
-  - REPO=tensorflow/models
-  - REPO=openbmc/openbmc
-  - REPO=openai/baselines
-  - REPO=frappe/erpnext
-  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
-  - REPO=tensorflow/tfx
-  - REPO=tiangolo/fastapi
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=ansible/ansible
-  - REPO=zhaoolee/ChineseBQB
-  - REPO=deepinsight/insightface
-  - REPO=PaddlePaddle/PaddleHub
-  - REPO=HexHive/retrowrite
-  - REPO=dmlc/gluon-cv
-  - REPO=aleju/imgaug
-  - REPO=kubeflow/pipelines
-  - REPO=jupyterhub/jupyterhub
-  - REPO=joshua-wu/deepfakes_faceswap
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=kubernetes/autoscaler        # 2019-06-30
+  - REPO=kubernetes/client-go         # 2019-06-29
+  - REPO=kubernetes/cloud-provider-aws  # 2019-06-28
+  - REPO=kubernetes/cloud-provider-azure  # 2019-06-30
+  - REPO=kubernetes/cloud-provider-gcp  # 2019-06-28
+  - REPO=kubernetes/community         # 2019-06-29
+  - REPO=kubernetes/examples          # 2019-06-28
+  - REPO=kubernetes/frakti            # 2019-03-08
+  - REPO=kubernetes/ingress-nginx     # 2019-06-30
+  - REPO=kubernetes/k8s.io            # 2019-06-27
+  - REPO=kubernetes/kops              # 2019-06-28
+  - REPO=kubernetes/kubernetes        # 2019-06-30
+  - REPO=kubernetes/minikube          # 2019-06-30
+  - REPO=kubernetes/org               # 2019-06-28
+  - REPO=kubernetes/perf-tests        # 2019-06-29
+  - REPO=kubernetes/release           # 2019-06-30
+  - REPO=kubernetes/repo-infra        # 2019-06-24
+  - REPO=kubernetes/test-infra        # 2019-06-30
+  - REPO=kubernetes/website           # 2019-06-30
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
