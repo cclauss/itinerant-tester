@@ -14,62 +14,26 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bytedance/byteps
-  - REPO=lazyprogrammer/machine_learning_examples
-  - REPO=rmusser01/Infosec_Reference
-  - REPO=TheAlgorithms/Python
-  - REPO=Avik-Jain/100-Days-Of-ML-Code
-  - REPO=llSourcell/deepfakes
-  - REPO=alicevision/meshroom
-  - REPO=deepfakes/faceswap
-  - REPO=tensorflow/hub
-  - REPO=pandas-profiling/pandas-profiling
-  - REPO=matplotlib/matplotlib
-  - REPO=iperov/DeepFaceLab
-  - REPO=aws/aws-cli
-  - REPO=home-assistant/home-assistant
-  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
-  - REPO=XX-net/XX-Net
-  - REPO=CorentinJ/Real-Time-Voice-Cloning
-  - REPO=tgalal/yowsup
-  - REPO=AtlasNX/Kosmos
-  - REPO=vinta/awesome-python
-  - REPO=ytdl-org/youtube-dl
-  - REPO=Ganapati/RsaCtfTool
-  - REPO=miguelgrinberg/microblog
-  - REPO=KalleHallden/ProjectInitializationAutomation
-  - REPO=mrjbq7/ta-lib
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=XanaduAI/blackbird           # 2019-06-13
+  - REPO=XanaduAI/BulkOPOs            # 2019-06-13
+  - REPO=XanaduAI/constrained-quantum-learning  # 2018-09-14
+  - REPO=XanaduAI/fockgaussian        # 2019-05-02
+  - REPO=XanaduAI/hafnian             # 2019-07-01
+  - REPO=XanaduAI/OpenFermion         # 2018-06-21 quantumlib/OpenFermion
+  - REPO=quantumlib/OpenFermion
+  - REPO=XanaduAI/pennylane           # 2019-06-28
+  - REPO=XanaduAI/pennylane-pq        # 2019-06-29
+  - REPO=XanaduAI/pennylane-qiskit    # 2019-07-01
+  - REPO=XanaduAI/PennyLane-qsharp    # 2019-06-29
+  - REPO=XanaduAI/pennylane-sf        # 2019-06-26
+  - REPO=XanaduAI/QMLT                # 2019-04-25
+  - REPO=XanaduAI/quantum-inspired-algorithms  # 2019-05-28
+  - REPO=XanaduAI/quantum-learning    # 2018-10-25
+  - REPO=XanaduAI/quantum-neural-networks  # 2019-06-27
+  - REPO=XanaduAI/realistic-quantum-states  # 2019-05-20
+  - REPO=XanaduAI/SFOpenBoson         # 2018-09-26
+  - REPO=XanaduAI/strawberryfields    # 2019-07-01
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
