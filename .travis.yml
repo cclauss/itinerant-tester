@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-   - REPO=satwikkansal/atari_gan       # 2018-06-21
+  - REPO=satwikkansal/atari_gan       # 2018-06-21
   - REPO=satwikkansal/Bugs-Annoy      # 2017-08-10
   - REPO=satwikkansal/coala           # 2017-08-16 coala/coala
   - REPO=coala/coala
