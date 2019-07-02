@@ -3,7 +3,7 @@ dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.5
   #- 3.6
   - 3.7
@@ -14,62 +14,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bytedance/byteps
-  - REPO=lazyprogrammer/machine_learning_examples
-  - REPO=rmusser01/Infosec_Reference
-  - REPO=TheAlgorithms/Python
-  - REPO=Avik-Jain/100-Days-Of-ML-Code
-  - REPO=llSourcell/deepfakes
-  - REPO=alicevision/meshroom
-  - REPO=deepfakes/faceswap
-  - REPO=tensorflow/hub
-  - REPO=pandas-profiling/pandas-profiling
-  - REPO=matplotlib/matplotlib
-  - REPO=iperov/DeepFaceLab
-  - REPO=aws/aws-cli
-  - REPO=home-assistant/home-assistant
-  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
-  - REPO=XX-net/XX-Net
-  - REPO=CorentinJ/Real-Time-Voice-Cloning
-  - REPO=tgalal/yowsup
-  - REPO=AtlasNX/Kosmos
-  - REPO=vinta/awesome-python
-  - REPO=ytdl-org/youtube-dl
-  - REPO=Ganapati/RsaCtfTool
-  - REPO=miguelgrinberg/microblog
-  - REPO=KalleHallden/ProjectInitializationAutomation
-  - REPO=mrjbq7/ta-lib
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=deepinsight/insightface
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
@@ -81,7 +27,7 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+  - time flake8 . --count --select=E9 --show-source --statistics  # ,F63,F7,F82
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- true  # pytest --capture=sys
