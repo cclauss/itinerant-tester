@@ -14,33 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dmlc/caffe                   # 2016-09-29 BVLC/caffe
-  - REPO=BVLC/caffe
-  - REPO=dmlc/cxxnet                  # archived
-  - REPO=dmlc/dgl                     # 2019-07-02
-  - REPO=dmlc/dlpack                  # 2019-05-30
-  - REPO=dmlc/dmlc-core               # 2019-06-18
-  - REPO=dmlc/docs-redirect-for-mxnet  # 2016-12-05
-  - REPO=dmlc/experimental-mf         # 2016-06-29
-  - REPO=dmlc/gluon-cv                # 2019-07-01
-  - REPO=dmlc/gluon-nlp               # 2019-07-02
-  - REPO=dmlc/keras                   # 2018-09-06 keras-team/keras
-  - REPO=keras-team/keras
-  - REPO=dmlc/minerva                 # 2018-11-01
-  - REPO=dmlc/minpy                   # 2018-02-19
-  - REPO=dmlc/mxnet-deepmark          # 2017-02-16
-  - REPO=dmlc/mxnet-gtc-tutorial      # 2016-04-17
-  - REPO=dmlc/mxnet-memonger          # 2017-08-08
-  - REPO=dmlc/mxnet-notebooks         # 2018-01-28
-  - REPO=dmlc/MXNet.cpp               # 2017-03-22
-  - REPO=dmlc/nnvm                    # 2018-09-11
-  - REPO=dmlc/ps-lite                 # 2019-06-03
-  - REPO=dmlc/rabit                   # 2019-06-26
-  - REPO=dmlc/tensorboard             # 2019-06-24
-  - REPO=dmlc/treelite                # 2019-06-19
-  - REPO=dmlc/tvm                     # 2019-07-02
-  - REPO=dmlc/web-data                # 2019-06-30
-  - REPO=dmlc/xgboost                 # 2019-07-01
+  - REPO=Ganapati/RsaCtfTool
 
 install:
   #- pip install -r requirements.txt
