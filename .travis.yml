@@ -14,7 +14,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Ganapati/RsaCtfTool
+  - REPO=RobotWebTools/depthcloud_encoder  # 2019-05-07
+  - REPO=RobotWebTools/rclnodejs      # 2019-07-02
+  - REPO=RobotWebTools/rosbridge_suite  # 2019-06-25
+  - REPO=RobotWebTools/tf2_web_republisher  # 2019-05-08
+  - REPO=RobotWebTools/webrtc_ros     # 2019-01-25
 
 install:
   #- pip install -r requirements.txt
