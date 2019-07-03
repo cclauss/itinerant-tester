@@ -14,74 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=AutoAI/experiments
-  - REPO=Azure/msrest-for-python
-  - REPO=CellProfiler/CellProfiler-plugins
-  - REPO=ConvLab/ConvLab
-  - REPO=DefectDojo/django-DefectDojo
-  - REPO=Ganapati/RsaCtfTool
-  - REPO=GoogleCloudPlatform/cloudml-samples
-  - REPO=Hellowlol/bw_plex
-  - REPO=IBM/cloud-operators
-  - REPO=IBM/ibm-cos-sdk-js
-  - REPO=IBM/ocean-tensor-package
-  - REPO=MobSF/Mobile-Security-Framework-MobSF
-  - REPO=Neo23x0/sigma
-  - REPO=OpenLiberty/open-liberty
-  - REPO=PrefectHQ/prefect
-  - REPO=PyGithub/PyGithub
-  - REPO=PySimpleGUI/PySimpleGUI
-  - REPO=RobotWebTools/rosbridge_suite
-  - REPO=TheAlgorithms/Python
-  - REPO=XanaduAI/strawberryfields
   - REPO=ZhuiyiTechnology/nl2sql_baseline
-  - REPO=aaronpenne/generative_art
-  - REPO=aws/aws-cli
-  - REPO=bnoordhuis/io.js
-  - REPO=cclauss/pythonista-module-versions
-  - REPO=cncf/gitdm
-  - REPO=cookiecutter/cookiecutter
-  - REPO=deepinsight/insightface
-  - REPO=dmlc/dmlc-core
-  - REPO=dmlc/gluon-nlp
-  - REPO=dmlc/tvm
-  - REPO=elastic/helm-charts
-  - REPO=emscripten-core/emscripten
-  - REPO=envoyproxy/envoy
-  - REPO=epfl-idevelop/jahia2wp
-  - REPO=fishtown-analytics/dbt
-  - REPO=garethdmm/gryphon
-  - REPO=ggtracker/sc2reader
-  - REPO=ialhashim/DenseDepth
-  - REPO=instabot-py/instabot.py
-  - REPO=iovisor/bcc
-  - REPO=iperov/DeepFaceLab
-  - REPO=kubeflow/pipelines
-  - REPO=kubernetes/autoscaler
-  - REPO=kubernetes/k8s.io
-  - REPO=kubernetes/repo-infra
-  - REPO=locustio/locust
-  - REPO=microsoft/nni
-  - REPO=mindsdb/mindsdb
-  - REPO=momosecurity/aswan
-  - REPO=nodejs/TSC
-  - REPO=nodejs/build
-  - REPO=nodejs/moderation
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=nodejs/node-v8
-  - REPO=openbmc/openbmc
-  - REPO=oppia/oppia
-  - REPO=pytries/datrie
-  - REPO=rust-lang/rust
-  - REPO=satwikkansal/python_automated_pipeline
-  - REPO=satwikkansal/wtfpython
-  - REPO=spesmilo/electrum
-  - REPO=tensorflow/cleverhans
-  - REPO=v8/v8
-  - REPO=watson-developer-cloud/java-sdk
-  - REPO=watson-developer-cloud/tone-analyzer-nodejs
-  - REPO=yeikel/test
 
 install:
   #- pip install -r requirements.txt
@@ -89,7 +22,7 @@ install:
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+  - git clone --depth=50 ${URL} ~/${REPO} --branch=python3
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
