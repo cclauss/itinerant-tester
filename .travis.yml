@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ZhuiyiTechnology/nl2sql_baseline
+  - REPO=emscripten-core/emscripten
 
 install:
   #- pip install -r requirements.txt
@@ -22,7 +22,7 @@ install:
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO} --branch=python3
+  - git clone --depth=50 ${URL} ~/${REPO}. # --branch=python3
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
