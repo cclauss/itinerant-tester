@@ -14,15 +14,69 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=deepmipt/DeepPavlov
-
+  - REPO=open-deepnude/open-deepnude
+  - REPO=yuanxiaosc/DeepNude-an-Image-to-Image-technology
+  - REPO=TheAlgorithms/Python
+  - REPO=lazyprogrammer/machine_learning_examples
+  - REPO=al0ne/Vxscan
+  - REPO=saltstack/salt
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=CorentinJ/Real-Time-Voice-Cloning
+  - REPO=wizyoung/YOLOv3_TensorFlow
+  - REPO=scikit-learn/scikit-learn
+  - REPO=allegroai/trains
+  - REPO=bitcoinbook/bitcoinbook
+  - REPO=liangliangyy/DjangoBlog
+  - REPO=lukemelas/EfficientNet-PyTorch
+  - REPO=Determined22/zh-NER-TF
+  - REPO=rusty1s/pytorch_geometric
+  - REPO=lmcinnes/umap
+  - REPO=argoai/argoverse-api
+  - REPO=tensorlayer/tensorlayer
+  - REPO=EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+  - REPO=spack/spack
+  - REPO=zhaoolee/ChineseBQB
+  - REPO=microsoft/dowhy
+  - REPO=ansible/ansible
+  - REPO=hindupuravinash/the-gan-zoo
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=python3
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
   - echo stop the build if there are Python syntax errors or undefined names
