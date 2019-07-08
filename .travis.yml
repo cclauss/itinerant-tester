@@ -14,9 +14,60 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=laffra/happymac
-  - REPO=jaredks/rumps
-
+  - REPO=ddbourgin/numpy-ml
+  - REPO=materialsintelligence/mat2vec
+  - REPO=Lam1360/YOLOv3-model-pruning
+  - REPO=ytisf/theZoo
+  - REPO=alibaba/esim-response-selection
+  - REPO=bokeh/bokeh
+  - REPO=NVIDIA/pix2pixHD
+  - REPO=vaastav/Fantasy-Premier-League
+  - REPO=fluentpython/example-code
+  - REPO=iterative/dvc
+  - REPO=AnonGit90210/RamanujanMachine
+  - REPO=vinta/awesome-python
+  - REPO=persepolisdm/persepolis
+  - REPO=bmoscon/cryptofeed
+  - REPO=HIPS/autograd
+  - REPO=jimmy201602/webterminal
+  - REPO=CoreyMSchafer/code_snippets
+  - REPO=nndl/exercise
+  - REPO=jofpin/trape
+  - REPO=zhaoolee/ChineseBQB
+  - REPO=wifiphisher/wifiphisher
+  - REPO=raghakot/keras-vis
+  - REPO=kivy/kivy
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
