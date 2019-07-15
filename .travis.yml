@@ -1,5 +1,4 @@
 group: travis_latest
-dist: xenial  # required for Python >= 3.7 (travis-ci/travis-ci#9069)
 language: python
 cache: pip
 python:
@@ -15,28 +14,29 @@ matrix:
     - python: pypy3
 env:
   - REPO=sherlock-project/sherlock
-  - REPO=sfyc23/EverydayWechat
-  - REPO=P1sec/QCSuper
-  - REPO=vaexio/vaex
-  - REPO=hhyo/Archery
-  - REPO=awslabs/serverless-application-model
-  - REPO=apache/airflow
-  - REPO=Alivon/Panda-Learning
-  - REPO=NVlabs/DG-Net
-  - REPO=kekingcn/kkFileView
-  - REPO=qubvel/segmentation_models
-  - REPO=ildoonet/tf-pose-estimation
+  - REPO=pydata/xarray
+  - REPO=ytdl-org/youtube-dl
   - REPO=gto76/python-cheatsheet
-  - REPO=PacktPublishing/Advanced-Deep-Learning-with-Keras
-  - REPO=sc1341/InstagramOSINT
-  - REPO=xinshuoweng/AB3DMOT
-  - REPO=13o-bbr-bbq/machine_learning_security
-  - REPO=kovidgoyal/calibre
-  - REPO=home-assistant/home-assistant
-  - REPO=cool-RR/PySnooper
-  - REPO=facebookresearch/XLM
-  - REPO=tianzhi0549/FCOS
-  - REPO=rusty1s/pytorch_geometric
+  - REPO=dae/anki
+  - REPO=DrDonk/unlocker
+  - REPO=scikit-learn/scikit-learn
+  - REPO=asciimoo/searx
+  - REPO=Kyubyong/dc_tts
+  - REPO=explosion/spaCy
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=Roibal/Cryptocurrency-Trading-Bots-Python-Beginner-Advance
+  - REPO=asyml/texar-pytorch
+  - REPO=mirth-lang/mirth
+  - REPO=python-telegram-bot/python-telegram-bot
+  - REPO=pytest-dev/pytest
+  - REPO=Azure/azure-cli
+  - REPO=lazyprogrammer/machine_learning_examples
+  - REPO=DEAP/deap
+  - REPO=killgcd/chromego
+  - REPO=vprusso/youtube_tutorials
+  - REPO=spesmilo/electrum
+  - REPO=bitcoin/bips
+  - REPO=vaexio/vaex
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
