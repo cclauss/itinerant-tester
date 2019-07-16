@@ -1,4 +1,5 @@
 group: travis_latest
+dist: xenial  # This should NOT be needed anymore
 language: python
 cache: pip
 python:
@@ -14,29 +15,30 @@ matrix:
     - python: pypy3
 env:
   - REPO=sherlock-project/sherlock
-  - REPO=pydata/xarray
+  - REPO=j3ssie/Osmedeus
   - REPO=ytdl-org/youtube-dl
-  - REPO=gto76/python-cheatsheet
-  - REPO=dae/anki
-  - REPO=DrDonk/unlocker
-  - REPO=scikit-learn/scikit-learn
-  - REPO=asciimoo/searx
+  - REPO=uber/ludwig
+  - REPO=tkat0/PyTorch_BlazeFace
   - REPO=Kyubyong/dc_tts
-  - REPO=explosion/spaCy
-  - REPO=josephmisiti/awesome-machine-learning
-  - REPO=Roibal/Cryptocurrency-Trading-Bots-Python-Beginner-Advance
-  - REPO=asyml/texar-pytorch
-  - REPO=mirth-lang/mirth
-  - REPO=python-telegram-bot/python-telegram-bot
-  - REPO=pytest-dev/pytest
-  - REPO=Azure/azure-cli
-  - REPO=lazyprogrammer/machine_learning_examples
-  - REPO=DEAP/deap
-  - REPO=killgcd/chromego
-  - REPO=vprusso/youtube_tutorials
-  - REPO=spesmilo/electrum
-  - REPO=bitcoin/bips
+  - REPO=gto76/python-cheatsheet
+  - REPO=bbfamily/abu
+  - REPO=DrDonk/unlocker
+  - REPO=BlackHC/tfpyth
+  - REPO=sundowndev/PhoneInfoga
+  - REPO=public-apis/public-apis
+  - REPO=twintproject/twint
+  - REPO=liuhuanyong/QASystemOnMedicalKG
   - REPO=vaexio/vaex
+  - REPO=MrS0m30n3/youtube-dl-gui
+  - REPO=MozillaSecurity/grizzly
+  - REPO=scikit-learn/scikit-learn
+  - REPO=bitcoin/bips
+  - REPO=xinshuoweng/AB3DMOT
+  - REPO=smartHomeHub/SmartIR
+  - REPO=sfyc23/EverydayWechat
+  - REPO=home-assistant/home-assistant
+  - REPO=msgi/nlp-journey
+  - REPO=gunthercox/ChatterBot
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
