@@ -14,62 +14,25 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=gto76/python-cheatsheet
-  - REPO=j3ssie/Osmedeus
-  - REPO=tangzixiang0304/Shielded_detector
-  - REPO=uber/ludwig
-  - REPO=xinshuoweng/AB3DMOT
-  - REPO=NVlabs/stylegan
-  - REPO=dagster-io/dagster
-  - REPO=tensorflow/models
-  - REPO=eragonruan/text-detection-ctpn
-  - REPO=sherlock-project/sherlock
-  - REPO=deepfakes/faceswap
-  - REPO=nbei/Deep-Flow-Guided-Video-Inpainting
-  - REPO=iovisor/bcc
-  - REPO=Roibal/Cryptocurrency-Trading-Bots-Python-Beginner-Advance
-  - REPO=NVIDIA/DeepLearningExamples
-  - REPO=BlackHC/tfpyth
-  - REPO=clovaai/deep-text-recognition-benchmark
-  - REPO=tkat0/PyTorch_BlazeFace
-  - REPO=OpenMined/PySyft
-  - REPO=CoreyMSchafer/code_snippets
-  - REPO=public-apis/public-apis
-  - REPO=d2l-ai/d2l-zh
-  - REPO=apache/airflow
-  - REPO=beecost/bee-university
-  - REPO=sundowndev/PhoneInfoga
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=nodejs/node-gyp
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=travis-ci/enterprise-extras  # 2016-07-22
+  - REPO=travis-ci/gesund             # 2018-10-02
+  - REPO=travis-ci/gimme              # 2019-05-07
+  - REPO=travis-ci/nat-conntracker    # 2018-06-26
+  - REPO=travis-ci/packer-templates-mac  # 2019-07-12
+  - REPO=travis-ci/pagerduty-oncall   # 2019-07-05
+  - REPO=travis-ci/phantomjs          # 2017-10-07 ariya/phantomjs
+  - REPO=ariya/phantomjs
+  - REPO=travis-ci/requestbin         # 2018-03-23 Runscope/requestbin
+  - REPO=Runscope/requestbin
+  - REPO=travis-ci/terraform-config   # 2019-07-16
+  - REPO=travis-ci/tfw                # 2019-03-26
+  - REPO=travis-ci/travis-intro-python  # 2018-05-04
+  - REPO=travis-ci/travis_staging_test  # 2018-05-30 BanzaiMan/travis_staging_test
+  - REPO=BanzaiMan/travis_staging_test
+  - REPO=travis-ci/vitess             # 2015-06-04 vitessio/vitess
+  - REPO=vitessio/vitess
+  - REPO=travis-ci/worker             # 2019-07-15
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
