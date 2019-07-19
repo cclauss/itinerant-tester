@@ -14,8 +14,25 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/C
-  - REPO=TheAlgorithms/C-Plus-Plus
+  - REPO=kubernetes/autoscaler        # 2019-06-30
+  - REPO=kubernetes/client-go         # 2019-06-29
+  - REPO=kubernetes/cloud-provider-aws  # 2019-06-28
+  - REPO=kubernetes/cloud-provider-azure  # 2019-06-30
+  - REPO=kubernetes/cloud-provider-gcp  # 2019-06-28
+  - REPO=kubernetes/community         # 2019-06-29
+  - REPO=kubernetes/examples          # 2019-06-28
+  - REPO=kubernetes/frakti            # 2019-03-08
+  - REPO=kubernetes/ingress-nginx     # 2019-06-30
+  - REPO=kubernetes/k8s.io            # 2019-06-27
+  - REPO=kubernetes/kops              # 2019-06-28
+  - REPO=kubernetes/kubernetes        # 2019-06-30
+  - REPO=kubernetes/minikube          # 2019-06-30
+  - REPO=kubernetes/org               # 2019-06-28
+  - REPO=kubernetes/perf-tests        # 2019-06-29
+  - REPO=kubernetes/release           # 2019-06-30
+  - REPO=kubernetes/repo-infra        # 2019-06-24
+  - REPO=kubernetes/test-infra        # 2019-06-30
+  - REPO=kubernetes/website           # 2019-06-30
 
 install:
   #- pip install -r requirements.txt
