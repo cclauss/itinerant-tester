@@ -14,29 +14,65 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=kubernetes/autoscaler        # 2019-06-30
-  - REPO=kubernetes/client-go         # 2019-06-29
-  - REPO=kubernetes/cloud-provider-aws  # 2019-06-28
-  - REPO=kubernetes/cloud-provider-azure  # 2019-06-30
-  - REPO=kubernetes/cloud-provider-gcp  # 2019-06-28
-  - REPO=kubernetes/community         # 2019-06-29
-  - REPO=kubernetes/examples          # 2019-06-28
-  - REPO=kubernetes/frakti            # 2019-03-08
-  - REPO=kubernetes/ingress-nginx     # 2019-06-30
-  - REPO=kubernetes/k8s.io            # 2019-06-27
-  - REPO=kubernetes/kops              # 2019-06-28
-  - REPO=kubernetes/kubernetes        # 2019-06-30
-  - REPO=kubernetes/minikube          # 2019-06-30
-  - REPO=kubernetes/org               # 2019-06-28
-  - REPO=kubernetes/perf-tests        # 2019-06-29
-  - REPO=kubernetes/release           # 2019-06-30
-  - REPO=kubernetes/repo-infra        # 2019-06-24
-  - REPO=kubernetes/test-infra        # 2019-06-30
-  - REPO=kubernetes/website           # 2019-06-30
-
+  - REPO=0voice/interview_internal_reference
+  - REPO=zllrunning/video-object-removal
+  - REPO=huggingface/pytorch-transformers
+  - REPO=NVIDIA/DeepLearningExamples
+  - REPO=vipstone/faceai
+  - REPO=foolwood/SiamMask
+  - REPO=home-assistant/home-assistant
+  - REPO=microsoft/nni
+  - REPO=wistbean/learn_python3_spider
+  - REPO=Tencent/NeuralNLP-NeuralClassifier
+  - REPO=openai/gym
+  - REPO=cchen156/Learning-to-See-in-the-Dark
+  - REPO=danaugrs/huskarl
+  - REPO=vincent-thevenin/Realistic-Neural-Talking-Head-Models
+  - REPO=PaddlePaddle/models
+  - REPO=openatx/uiautomator2
+  - REPO=thtrieu/darkflow
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=Azure/azure-sdk-for-python
+  - REPO=idealo/image-super-resolution
+  - REPO=awslabs/gluon-ts
+  - REPO=Rayhane-mamah/Tacotron-2
+  - REPO=gogcom/galaxy-integrations-python-api
+  - REPO=sergiomsilva/alpr-unconstrained
+  - REPO=mlflow/mlflow
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
-  - pip install cpplint  # add other testing frameworks later
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -45,8 +81,10 @@ before_script:
 script:
   - echo stop the build if there are Python syntax errors or undefined names
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time cpplint --recursive .
-  # - time cmake "-DCMAKE_CXX_CPPLINT=cpplint" ..
+  - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+  - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  #- true  # pytest --capture=sys
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
