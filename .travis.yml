@@ -14,7 +14,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=kabanero-io/kabanero-website
+  - REPO=mahbubcseju/DroneFlight      # 2019-07-01
+  - REPO=mahbubcseju/JUFoodie         # 2018-10-15
+  - REPO=mahbubcseju/OnlineJudge      # 2019-05-07
+  - REPO=mahbubcseju/Python           # 2019-07-19 TheAlgorithms/Python
+  - REPO=TheAlgorithms/Python
+  - REPO=mahbubcseju/Rasa_Japanese    # 2019-07-04
+  - REPO=mahbubcseju/Real_time_object_detection_using_tensorflow  # 2018-01-28 ElephantHunters/Real_time_object_detection_using_tensorflow
+  - REPO=ElephantHunters/Real_time_object_detection_using_tensorflow
+  - REPO=mahbubcseju/Side-channel-Attack  # 2018-11-23
+  - REPO=mahbubcseju/TensorFlow-Examples  # 2018-07-31 aymericdamien/TensorFlow-Examples
+  - REPO=aymericdamien/TensorFlow-Examples
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
