@@ -15,4 +15,6 @@ env:
   - REPO=google-cloud-go-testing
 install: curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin latest
 before_script: golangci-lint --version
-script: golangci-lint run "$(pwd)/.."
+script:
+  - ls -Flar
+  - golangci-lint run
