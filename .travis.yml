@@ -21,6 +21,7 @@ before_script:
   - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
+  - ls -Flar
   - go mod download
   - golangci-lint --version
   - golangci-lint run
