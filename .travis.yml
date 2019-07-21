@@ -13,5 +13,6 @@ env:
   - REPO=gnostic-go-generator
   - REPO=gax-go
   - REPO=google-cloud-go-testing
-before_script: go get https://github.com/golangci/golangci-lint
+install: mkdir ./vendor
+before_script: go install ./vendor/github.com/golangci/golangci-lint/cmd/golangci-lint
 script: golangci-lint run
