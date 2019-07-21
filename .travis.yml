@@ -13,8 +13,13 @@ env:
   - REPO=gnostic-go-generator
   - REPO=gax-go
   - REPO=google-cloud-go-testing
-install: curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin latest
-before_script: golangci-lint --version
+install:
+  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin latest
+before_script:
+  - URL=https://github.com/${REPO}
+  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+  - cd ~/${REPO}
 script:
-  - ls -Flar
+  - golangci-lint --version
   - golangci-lint run
