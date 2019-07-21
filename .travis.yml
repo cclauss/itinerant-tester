@@ -14,9 +14,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=BishopFox/GitGot
-  - REPO=stanfordnlp/stanfordnlp
-  - REPO=private-dreamnet/dreamtime
+  - REPO=python-pillow/Pillow
+  - REPO=SeleniumHQ/Selenium
 
 install:
   #- pip install -r requirements.txt
