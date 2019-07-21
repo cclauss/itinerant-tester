@@ -1,92 +1,17 @@
 group: travis_latest
 dist: xenial  # This should NOT be needed anymore
-language: python
-cache: pip
-python:
-  #- 2.7
-  #- 3.5
-  #- 3.6
-  - 3.7
-matrix:
-  allow_failures:
-    - python: 2.7
-    - python: nightly
-    - python: pypy
-    - python: pypy3
+language: go
 env:
-  - REPO=googleapis/gax-nodejs        # 2019-07-19
-  - REPO=googleapis/node-gtoken       # 2019-07-09
-  - REPO=googleapis/nodejs-asset      # 2019-07-04
-  - REPO=googleapis/nodejs-automl     # 2019-07-15
-  - REPO=googleapis/nodejs-bigquery   # 2019-07-17
-  - REPO=googleapis/nodejs-bigquery-data-transfer  # 2019-07-16
-  - REPO=googleapis/nodejs-bigtable   # 2019-07-20
-  - REPO=googleapis/nodejs-cloud-container  # 2019-06-28
-  - REPO=googleapis/nodejs-common     # 2019-07-16
-  - REPO=googleapis/nodejs-common-grpc  # 2019-06-28
-  - REPO=googleapis/nodejs-compute    # 2019-06-28
-  - REPO=googleapis/nodejs-containeranalysis  # 2019-07-15
-  - REPO=googleapis/nodejs-datacatalog  # 2019-07-18
-  - REPO=googleapis/nodejs-datalabeling  # 2019-07-16
-  - REPO=googleapis/nodejs-dataproc   # 2019-06-28
-  - REPO=googleapis/nodejs-datastore  # 2019-07-21
-  - REPO=googleapis/nodejs-datastore-session  # 2019-06-28
-  - REPO=googleapis/nodejs-dialogflow  # 2019-07-19
-  - REPO=googleapis/nodejs-dlp        # 2019-07-09
-  - REPO=googleapis/nodejs-dns        # 2019-07-17
-  - REPO=googleapis/nodejs-error-reporting  # 2019-06-28
-  - REPO=googleapis/nodejs-firestore  # 2019-07-17
-  - REPO=googleapis/nodejs-firestore-session  # 2019-06-28
-  - REPO=googleapis/nodejs-googleapis-common  # 2019-07-01
-  - REPO=googleapis/nodejs-grafeas    # 2019-06-28
-  - REPO=googleapis/nodejs-iot        # 2019-07-09
-  - REPO=googleapis/nodejs-irm        # 2019-07-10
-  - REPO=googleapis/nodejs-kms        # 2019-07-15
-  - REPO=googleapis/nodejs-language   # 2019-06-28
-  - REPO=googleapis/nodejs-logging    # 2019-07-17
-  - REPO=googleapis/nodejs-logging-bunyan  # 2019-06-28
-  - REPO=googleapis/nodejs-logging-winston  # 2019-07-21
-  - REPO=googleapis/nodejs-monitoring  # 2019-06-28
-  - REPO=googleapis/nodejs-os-login   # 2019-06-28
-  - REPO=googleapis/nodejs-paginator  # 2019-07-20
-  - REPO=googleapis/nodejs-phishing-protection  # 2019-07-20
-  - REPO=googleapis/nodejs-precise-date  # 2019-06-28
-  - REPO=googleapis/nodejs-projectify  # 2019-06-28
-  - REPO=googleapis/nodejs-promisify  # 2019-06-28
-  - REPO=googleapis/nodejs-proto-files  # 2019-06-28
-  - REPO=googleapis/nodejs-pubsub     # 2019-07-21
-  - REPO=googleapis/nodejs-rcloadenv  # 2019-06-28
-  - REPO=googleapis/nodejs-recaptcha-enterprise  # 2019-06-28
-  - REPO=googleapis/nodejs-redis      # 2019-06-28
-  - REPO=googleapis/nodejs-resource   # 2019-06-28
-  - REPO=googleapis/nodejs-scheduler  # 2019-06-28
-  - REPO=googleapis/nodejs-security-center  # 2019-07-21
-  - REPO=googleapis/nodejs-spanner    # 2019-07-19
-  - REPO=googleapis/nodejs-speech     # 2019-07-04
-  - REPO=googleapis/nodejs-storage    # 2019-07-21
-  - REPO=googleapis/nodejs-talent     # 2019-07-19
-  - REPO=googleapis/nodejs-tasks      # 2019-07-02
-  - REPO=googleapis/nodejs-text-to-speech  # 2019-06-28
-  - REPO=googleapis/nodejs-translate  # 2019-07-01
-  - REPO=googleapis/nodejs-video-intelligence  # 2019-07-12
-  - REPO=googleapis/nodejs-vision     # 2019-06-28
-  - REPO=googleapis/nodejs-web-risk   # 2019-07-20
-
-install:
-  #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testing frameworks later
-before_script:
-  - URL=https://github.com/${REPO}
-  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
-  - cd ~/${REPO}
-script:
-  - echo stop the build if there are Python syntax errors or undefined names
-  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
-  - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-  - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  #- true  # pytest --capture=sys
-notifications:
-  on_success: change
-  on_failure: change  # `always` will be the setting once code changes slow down
+  - REPO=google-api-go-client
+  - REPO=gapic-generator-go
+  - REPO=google-cloud-go
+  - REPO=conformance-tests
+  - REPO=gapic-config-validator
+  - REPO=api-linter
+  - REPO=gapic-showcase
+  - REPO=grpc-fallback-go
+  - REPO=gnostic-go-generator
+  - REPO=gax-go
+  - REPO=google-cloud-go-testing
+before_script: go install ./vendor/github.com/golangci/golangci-lint/cmd/golangci-lint
+script: golangci-lint run
