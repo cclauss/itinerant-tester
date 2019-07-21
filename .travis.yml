@@ -2,17 +2,17 @@ group: travis_latest
 dist: xenial  # This should NOT be needed anymore
 language: go
 env:
-  - REPO=google-api-go-client
-  - REPO=gapic-generator-go
-  - REPO=google-cloud-go
-  - REPO=conformance-tests
-  - REPO=gapic-config-validator
-  - REPO=api-linter
-  - REPO=gapic-showcase
-  - REPO=grpc-fallback-go
-  - REPO=gnostic-go-generator
-  - REPO=gax-go
-  - REPO=google-cloud-go-testing
+  - REPO=googleapi/google-api-go-client
+  - REPO=googleapi/gapic-generator-go
+  - REPO=googleapi/google-cloud-go
+  - REPO=googleapi/conformance-tests
+  - REPO=googleapi/gapic-config-validator
+  - REPO=googleapi/api-linter
+  - REPO=googleapi/gapic-showcase
+  - REPO=googleapi/grpc-fallback-go
+  - REPO=googleapi/gnostic-go-generator
+  - REPO=googleapi/gax-go
+  - REPO=googleapi/google-cloud-go-testing
 install:
   - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin latest
 before_script:
