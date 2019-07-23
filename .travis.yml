@@ -1,27 +1,89 @@
 group: travis_latest
 dist: xenial  # This should NOT be needed anymore
-language: go
+language: python
+cache: pip
+python:
+  #- 2.7
+  #- 3.5
+  #- 3.6
+  - 3.7
+matrix:
+  allow_failures:
+    - python: 2.7
+    - python: nightly
+    - python: pypy
+    - python: pypy3
 env:
-  - REPO=googleapis/google-api-go-client
-  - REPO=googleapis/gapic-generator-go
-  - REPO=googleapis/google-cloud-go
-  - REPO=googleapis/conformance-tests
-  - REPO=googleapis/gapic-config-validator
-  - REPO=googleapis/api-linter
-  - REPO=googleapis/gapic-showcase
-  - REPO=googleapis/grpc-fallback-go
-  - REPO=googleapis/gnostic-go-generator
-  - REPO=googleapis/gax-go
-  - REPO=googleapis/google-cloud-go-testing
+  - REPO=0voice/interview_internal_reference
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=BishopFox/GitGot
+  - REPO=cchen156/Learning-to-See-in-the-Dark
+  - REPO=CoreyMSchafer/code_snippets
+  - REPO=donnemartin/system-design-primer
+  - REPO=InstaPy/instapy-quickstart
+  - REPO=trailofbits/algo
+  - REPO=TheSpeedX/TBomb
+  - REPO=home-assistant/home-assistant
+  - REPO=lazyprogrammer/machine_learning_examples
+  - REPO=stanfordnlp/stanfordnlp
+  - REPO=Avik-Jain/100-Days-Of-ML-Code
+  - REPO=shengqiangzhang/examples-of-web-crawlers
+  - REPO=vipstone/faceai
+  - REPO=RustPython/RustPython
+  - REPO=keon/algorithms
+  - REPO=aburkov/theMLbook
+  - REPO=amueller/word_cloud
+  - REPO=scikit-learn/scikit-learn
+  - REPO=certbot/certbot
+  - REPO=mbadry1/DeepLearning.ai-Summary
+  - REPO=deepmind/trfl
+  - REPO=derv82/wifite2
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
-  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin latest
+  #- pip install -r requirements.txt
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
   - cd ~/${REPO}
 script:
-  # - ls -Flar
-  - go mod download
-  - golangci-lint --version
-  - golangci-lint run
+  - echo stop the build if there are Python syntax errors or undefined names
+  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+  - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+  - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
+  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  #- true  # pytest --capture=sys
+notifications:
+  on_success: change
+  on_failure: change  # `always` will be the setting once code changes slow down
