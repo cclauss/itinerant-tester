@@ -1,0 +1,27 @@
+group: travis_latest
+dist: xenial  # This should NOT be needed anymore
+language: go
+env:
+  - REPO=googleapis/google-api-go-client
+  - REPO=googleapis/gapic-generator-go
+  - REPO=googleapis/google-cloud-go
+  - REPO=googleapis/conformance-tests
+  - REPO=googleapis/gapic-config-validator
+  - REPO=googleapis/api-linter
+  - REPO=googleapis/gapic-showcase
+  - REPO=googleapis/grpc-fallback-go
+  - REPO=googleapis/gnostic-go-generator
+  - REPO=googleapis/gax-go
+  - REPO=googleapis/google-cloud-go-testing
+install:
+  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin latest
+before_script:
+  - URL=https://github.com/${REPO}
+  - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
+  - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
+  - cd ~/${REPO}
+script:
+  # - ls -Flar
+  - go mod download
+  - golangci-lint --version
+  - golangci-lint run
