@@ -14,7 +14,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=watson-developer-cloud/java-sdk
+  - REPO=davidicus/ReactNativeComponents  # 2016-06-23
+  - REPO=davidicus/ReactNativeStarter  # 2016-06-30
+  - REPO=davidicus/UserLogin          # 2016-06-28
   
 install:
   #- pip install -r requirements.txt
