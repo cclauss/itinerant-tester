@@ -14,10 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=davidicus/ReactNativeComponents  # 2016-06-23
-  - REPO=davidicus/ReactNativeStarter  # 2016-06-30
-  - REPO=davidicus/UserLogin          # 2016-06-28
-  
+  - REPO=open-mmlab/mmaction
+  - REPO=chinese-poetry/chinese-poetry
+  - REPO=leisurelicht/wtfpython-cn
+  - REPO=0xeb-bp/bluekeep
+  - REPO=imhuay/Algorithm_Interview_Notes-Chinese
+  - REPO=hellerve/programming-talks
+  - REPO=zhaoolee/ChromeAppHeroes
+  - REPO=satwikkansal/wtfpython
+  - REPO=blackorbird/APT_REPORT
+  - REPO=tensorflow/tensor2tensor
+  - REPO=jupyterhub/jupyterhub
+  - REPO=deepmind/pysc2
+  - REPO=apache/airflow
+  - REPO=wangzheng0822/algo
+  - REPO=edx/edx-platform
+  - REPO=numba/numba
+  - REPO=cloudtools/troposphere
+  - REPO=lauris/awesome-scala
+  - REPO=tensorflow/addons
+  - REPO=thunlp/OpenKE
+  - REPO=ansible/ansible
+  - REPO=cornellius-gp/gpytorch
+  - REPO=wagtail/wagtail
+  - REPO=keras-rl/keras-rl
+  - REPO=TuSimple/simpledet
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=nodejs/node-gyp
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
