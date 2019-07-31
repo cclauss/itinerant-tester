@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=kkroening/ffmpeg-python
+  - REPO=dagster-io/dagster
 
 install:
   #- pip install -r requirements.txt
