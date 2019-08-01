@@ -14,11 +14,61 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=sdementen/piecash
-  - REPO=Gnucash/gnucash              # 2019-07-30
-  - REPO=Gnucash/gnucash-on-osx       # 2019-06-30
-  - REPO=Gnucash/gnucash-on-windows   # 2019-06-30
-
+  - REPO=pytorch/fairseq
+  - REPO=adobe/antialiased-cnns
+  - REPO=ymcui/Chinese-BERT-wwm
+  - REPO=google-research/football
+  - REPO=pandas-profiling/pandas-profiling
+  - REPO=tensorflow/models
+  - REPO=facebookresearch/kill-the-bits
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=rwightman/pytorch-image-models
+  - REPO=pandas-dev/pandas
+  - REPO=PaddlePaddle/ERNIE
+  - REPO=mravanelli/pytorch-kaldi
+  - REPO=python/mypy
+  - REPO=hexway/apple_bleee
+  - REPO=encode/httpx
+  - REPO=hhyo/Archery
+  - REPO=ytdl-org/youtube-dl
+  - REPO=liuhuanyong/QASystemOnMedicalKG
+  - REPO=NVlabs/SPADE
+  - REPO=openai/spinningup
+  - REPO=facebookresearch/FixRes
+  - REPO=keras-team/keras
+  - REPO=Bisonai/awesome-edge-machine-learning
+  - REPO=cloud-custodian/cloud-custodian
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
