@@ -15,6 +15,9 @@ matrix:
     - python: pypy3
 env:
   - REPO=sdementen/piecash
+  - REPO=Gnucash/gnucash              # 2019-07-30
+  - REPO=Gnucash/gnucash-on-osx       # 2019-06-30
+  - REPO=Gnucash/gnucash-on-windows   # 2019-06-30
 
 install:
   #- pip install -r requirements.txt
