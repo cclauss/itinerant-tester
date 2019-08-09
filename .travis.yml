@@ -17,6 +17,7 @@ env:
   - REPO=IBM/mi-prometheus
   - REPO=infogami/infogami
   - REPO=internetarchive/infogami
+  - REPO=mravanelli/pytorch-kaldi
 
 install:
   #- pip install -r requirements.txt
