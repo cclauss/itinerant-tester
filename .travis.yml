@@ -15,6 +15,8 @@ matrix:
     - python: pypy3
 env:
   - REPO=IBM/mi-prometheus
+  - REPO=infogami/infogami
+  - REPO=internetarchive/infogami
 
 install:
   #- pip install -r requirements.txt
