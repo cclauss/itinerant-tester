@@ -1,9 +1,9 @@
-Hi group: travis_latest
+group: travis_latest
 dist: bionic
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.5
   #- 3.6
   - 3.7
@@ -14,11 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/mi-prometheus
-  - REPO=infogami/infogami
-  - REPO=internetarchive/infogami
-  - REPO=mravanelli/pytorch-kaldi
-
+  - REPO=taki0112/UGATIT
+  - REPO=znxlwm/UGATIT-pytorch
+  - REPO=bijection/sistine
+  - REPO=makcedward/nlp
+  - REPO=ahmetozlu/tensorflow_object_counting_api
+  - REPO=danijar/handout
+  - REPO=didi/delta
+  - REPO=open-mmlab/mmdetection
+  - REPO=sherlock-project/sherlock
+  - REPO=google/python-fire
+  - REPO=vinta/awesome-python
+  - REPO=docker/compose
+  - REPO=0voice/interview_internal_reference
+  - REPO=googleapis/google-cloud-python
+  - REPO=thunil/TecoGAN
+  - REPO=dagster-io/dagster
+  - REPO=davekch/b
+  - REPO=vishnubob/wait-for-it
+  - REPO=HelloZeroNet/ZeroNet
+  - REPO=tianzhi0549/FCOS
+  - REPO=dmlc/dgl
+  - REPO=nutonomy/nuscenes-devkit
+  - REPO=localstack/localstack
+  - REPO=google/brain-tokyo-workshop
+  - REPO=huggingface/pytorch-transformers
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
