@@ -14,62 +14,23 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=sherlock-project/sherlock
-  - REPO=superhedgy/AttackSurfaceMapper
-  - REPO=0voice/interview_internal_reference
-  - REPO=makcedward/nlp
-  - REPO=rsms/inter
-  - REPO=RasaHQ/rasa
-  - REPO=xiaomi-automl/MoGA
-  - REPO=kubernetes-client/python
-  - REPO=xiaobei2008/Shadowsocks
-  - REPO=awslabs/gluon-ts
-  - REPO=openshift/openshift-ansible
-  - REPO=google-research/google-research
-  - REPO=pwxcoo/chinese-xinhua
-  - REPO=dagster-io/dagster
-  - REPO=didi/delta
-  - REPO=home-assistant/home-assistant
-  - REPO=allenai/allennlp
-  - REPO=open-mmlab/mmdetection
-  - REPO=vaastav/Fantasy-Premier-League
-  - REPO=huggingface/pytorch-transformers
-  - REPO=iperov/DeepFaceLab
-  - REPO=bokeh/bokeh
-  - REPO=MycroftAI/mycroft-core
-  - REPO=psf/black
-  - REPO=ansible/ansible
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=webpy/webpy
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=stepfencurryxiao/Cross-Fire
+  - REPO=stepfencurryxiao/Get-stock-prices
+  - REPO=RiptideBo/cnnframe           # 2019-05-21
+  - REPO=RiptideBo/csslab             # 2019-06-20 Sci-Robot/csslab
+  - REPO=Sci-Robot/csslab
+  - REPO=RiptideBo/deeplearningbook-chinese  # 2017-10-16 exacity/deeplearningbook-chinese
+  - REPO=exacity/deeplearningbook-chinese
+  - REPO=RiptideBo/folium             # 2017-10-12 python-visualization/folium
+  - REPO=python-visualization/folium
+  - REPO=RiptideBo/geoplotlib         # 2018-03-16 andrea-cuttone/geoplotlib
+  - REPO=andrea-cuttone/geoplotlib
+  - REPO=RiptideBo/powerlaw           # 2019-01-08 jeffalstott/powerlaw
+  - REPO=jeffalstott/powerlaw
+  - REPO=RiptideBo/Python             # 2019-05-21 TheAlgorithms/Python
+  - REPO=TheAlgorithms/Python
+  - REPO=RiptideBo/simpy              # 2018-06-01
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
