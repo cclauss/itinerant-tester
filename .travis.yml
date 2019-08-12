@@ -14,22 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=stepfencurryxiao/Cross-Fire
-  - REPO=stepfencurryxiao/Get-stock-prices
-  - REPO=RiptideBo/cnnframe           # 2019-05-21
-  - REPO=RiptideBo/csslab             # 2019-06-20 Sci-Robot/csslab
-  - REPO=Sci-Robot/csslab
-  - REPO=RiptideBo/deeplearningbook-chinese  # 2017-10-16 exacity/deeplearningbook-chinese
-  - REPO=exacity/deeplearningbook-chinese
-  - REPO=RiptideBo/folium             # 2017-10-12 python-visualization/folium
-  - REPO=python-visualization/folium
-  - REPO=RiptideBo/geoplotlib         # 2018-03-16 andrea-cuttone/geoplotlib
-  - REPO=andrea-cuttone/geoplotlib
-  - REPO=RiptideBo/powerlaw           # 2019-01-08 jeffalstott/powerlaw
-  - REPO=jeffalstott/powerlaw
-  - REPO=RiptideBo/Python             # 2019-05-21 TheAlgorithms/Python
-  - REPO=TheAlgorithms/Python
-  - REPO=RiptideBo/simpy              # 2018-06-01
+  - REPO=spesmilo/electrum
 
 install:
   #- pip install -r requirements.txt
