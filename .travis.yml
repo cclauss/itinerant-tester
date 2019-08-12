@@ -14,7 +14,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pvcraven/arcade
+  - REPO=alexsun8373/pythonista_wanglu_linguistic_material
+
 
 install:
   #- pip install -r requirements.txt
