@@ -14,8 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=alexsun8373/pythonista_wanglu_linguistic_material
-
+  - REPO=ros/genpy
 
 install:
   #- pip install -r requirements.txt
