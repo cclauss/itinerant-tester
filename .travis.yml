@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ros/genpy
+  - REPO=ros/ros
 
 install:
   #- pip install -r requirements.txt
