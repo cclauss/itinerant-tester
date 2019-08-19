@@ -16,6 +16,7 @@ matrix:
 env:
   - REPO=ChrisTheCoolHut/Firmware_Slap
   - REPO=NationalSecurityAgency/ghidra
+  - REPO=justfoxing/ghidra_bridge
 
 install:
   #- pip install -r requirements.txt
