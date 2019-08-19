@@ -14,9 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ChrisTheCoolHut/Firmware_Slap
-  - REPO=NationalSecurityAgency/ghidra
-  - REPO=justfoxing/ghidra_bridge
+  - REPO=getredash/redash
 
 install:
   #- pip install -r requirements.txt
