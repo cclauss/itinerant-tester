@@ -15,6 +15,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=ChrisTheCoolHut/Firmware_Slap
+  - REPO=NationalSecurityAgency/ghidra
 
 install:
   #- pip install -r requirements.txt
