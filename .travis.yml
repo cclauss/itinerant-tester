@@ -14,8 +14,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=inveniosoftware/requirements-builder
-  - REPO=zalando/connexion
+  - REPO=internetarchive/acs4_py
+  - REPO=internetarchive/infogami
+  - REPO=internetarchive/openlibrary 
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
