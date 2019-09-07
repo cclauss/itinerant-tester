@@ -14,8 +14,162 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
+  - REPO=testerSunshine/
 
+
+
+12306
+  - REPO=tensorflow/
+
+
+
+neural-structured-learning
+  - REPO=ckiplab/
+
+
+
+ckiptagger
+  - REPO=Yorko/
+
+
+
+mlcourse.ai
+  - REPO=pjialin/
+
+
+
+py12306
+  - REPO=ypeleg/
+
+
+
+HungaBunga
+  - REPO=openai/
+
+
+
+spinningup
+  - REPO=keras-team/
+
+
+
+keras
+  - REPO=aws/
+
+
+
+sagemaker-python-sdk
+  - REPO=twhughes/
+
+
+
+ceviche
+  - REPO=CorentinJ/
+
+
+
+Real-Time-Voice-Cloning
+  - REPO=hisxo/
+
+
+
+gitGraber
+  - REPO=donnemartin/
+
+
+
+data-science-ipython-notebooks
+  - REPO=JiawangBian/
+
+
+
+SC-SfMLearner-Release
+  - REPO=mne-tools/
+
+
+
+mne-python
+  - REPO=tensorflow/
+
+
+
+models
+  - REPO=d2l-ai/
+
+
+
+d2l-zh
+  - REPO=chiphuyen/
+
+
+
+stanford-tensorflow-tutorials
+  - REPO=chineseocr/
+
+
+
+chineseocr
+  - REPO=apachecn/
+
+
+
+awesome-data-comp-solution
+  - REPO=RasaHQ/
+
+
+
+rasa
+  - REPO=llSourcell/
+
+
+
+The-Neural-Qubit
+  - REPO=fizyr/
+
+
+
+keras-retinanet
+  - REPO=deepmind/
+
+
+
+bsuite
+  - REPO=zihangdai/
+
+
+
+xlnet
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
