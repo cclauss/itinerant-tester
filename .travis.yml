@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jliljebl/flowblade
+  - REPO=watson-developer-cloud/doc-tutorial-downloads
 
 install:
   #- pip install -r requirements.txt
