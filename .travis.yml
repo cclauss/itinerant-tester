@@ -14,7 +14,16 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cherrypy/cheroot
+  - REPO=Labelbox/Labelbox            # 2019-09-09
+  - REPO=Labelbox/labelbox-python     # 2019-07-16
+  - REPO=Labelbox/models              # 2018-09-26 tensorflow/models
+  - REPO=tensorflow/models
+  - REPO=Labelbox/pascal-voc-writer   # 2018-03-05 AndrewCarterUK/pascal-voc-writer
+  - REPO=AndrewCarterUK/pascal-voc-writer
+  - REPO=Labelbox/python-flask-template  # 2019-01-11 openfaas-incubator/python-flask-template
+  - REPO=openfaas-incubator/python-flask-template
+  - REPO=Labelbox/signed-url-example  # 2019-02-08
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
