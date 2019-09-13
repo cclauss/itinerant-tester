@@ -14,16 +14,62 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Labelbox/Labelbox            # 2019-09-09
-  - REPO=Labelbox/labelbox-python     # 2019-07-16
-  - REPO=Labelbox/models              # 2018-09-26 tensorflow/models
-  - REPO=tensorflow/models
-  - REPO=Labelbox/pascal-voc-writer   # 2018-03-05 AndrewCarterUK/pascal-voc-writer
-  - REPO=AndrewCarterUK/pascal-voc-writer
-  - REPO=Labelbox/python-flask-template  # 2019-01-11 openfaas-incubator/python-flask-template
-  - REPO=openfaas-incubator/python-flask-template
-  - REPO=Labelbox/signed-url-example  # 2019-02-08
-
+  - REPO=ytdl-org/youtube-dl
+  - REPO=pjialin/py12306
+  - REPO=testerSunshine/12306
+  - REPO=instagrambot/instabot
+  - REPO=zhaipro/easy12306
+  - REPO=ansible/ansible
+  - REPO=ddbourgin/numpy-ml
+  - REPO=getredash/redash
+  - REPO=facebookresearch/pythia
+  - REPO=bigbaser/TcloudServer
+  - REPO=explosion/spaCy
+  - REPO=psf/black
+  - REPO=NVIDIA/DeepLearningExamples
+  - REPO=facebookresearch/maskrcnn-benchmark
+  - REPO=astooke/rlpyt
+  - REPO=facebookresearch/VideoPose3D
+  - REPO=nuno-faria/tiler
+  - REPO=30-seconds/30-seconds-of-python
+  - REPO=eriklindernoren/PyTorch-YOLOv3
+  - REPO=AlexEMG/DeepLabCut
+  - REPO=jindongwang/transferlearning
+  - REPO=donnemartin/system-design-primer
+  - REPO=apachecn/AiLearning
+  - REPO=allenai/allennlp
+  - REPO=matterport/Mask_RCNN
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=webpy/webpy
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
