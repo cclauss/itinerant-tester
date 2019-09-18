@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
+  - REPO=appsody/stacks
 
 install:
   #- pip install -r requirements.txt
