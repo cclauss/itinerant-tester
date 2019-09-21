@@ -14,11 +14,34 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=llvm/llvm-lnt                # 2019-09-20
-  - REPO=llvm/llvm-project            # 2019-09-21
-  - REPO=llvm/llvm-project-legacy-branches  # 2019-05-14
-  - REPO=llvm/llvm-test-suite         # 2019-09-19
-  - REPO=llvm/llvm-zorg               # 2019-09-20
+  - REPO=intel/AALSDK                 # 2019-06-26
+  - REPO=intel/android-audio-hal      # 2018-06-29
+  - REPO=intel/android-bluez-bionic   # 2014-08-22
+  - REPO=intel/android-bluez-device-intel-mixins  # 2014-08-22
+  - REPO=intel/android-bluez-glib     # 2014-08-22
+  - REPO=intel/ansible                # 2019-09-05 ansible/ansible
+  - REPO=ansible/ansible
+  - REPO=intel/ansible-openstack      # 2015-06-11 yongfengdu/ansible-openstack
+  - REPO=yongfengdu/ansible-openstack
+  - REPO=intel/ansible-rsd-provisioning  # 2019-07-16
+  - REPO=arduino/Arduino
+  - REPO=intel/arduino101_kconfig     # 2016-03-28
+  - REPO=intel/arduino101_openocd     # 2016-03-09
+  - REPO=intel/ATKS                   # 2018-06-11
+  - REPO=intel/auto-pts               # 2019-09-16
+  - REPO=intel/AVBStreamHandler       # 2019-04-11
+  - REPO=intel/backport-iwlwifi       # 2019-09-12
+  - REPO=intel/baytrailaudio          # 2016-02-25
+  - REPO=intel/beignet                # 2019-08-01
+  - REPO=intel/bmap-tools             # 2019-08-15
+  - REPO=intel/Board-Instrumentation-Framework  # 2019-09-18
+  - REPO=intel/branch_hinting_tool    # 2018-03-15
+  - REPO=intel/brillo-edison-binaries  # 2016-10-11
+  - REPO=intel/caffe                  # 2019-06-26
+  - REPO=intel/cassandra-pmem         # 2019-09-19 apache/cassandra
+  - REPO=apache/cassandra
+  - REPO=intel/CeTune                 # 2019-05-09
+  - REPO=chainer/chainer
 
 install:
   #- pip install -r requirements.txt
