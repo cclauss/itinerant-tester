@@ -14,25 +14,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=llvm-mirror/clang            # 2019-09-21
-  - REPO=llvm-mirror/clang-tools-extra  # 2019-09-21
-  - REPO=llvm-mirror/compiler-rt      # 2019-09-21
-  - REPO=llvm-mirror/debuginfo-tests  # 2019-06-27
-  - REPO=llvm-mirror/dragonegg        # 2018-11-26
-  - REPO=llvm-mirror/klee             # 2016-12-14
-  - REPO=llvm-mirror/libclc           # 2019-08-05
-  - REPO=llvm-mirror/libcxx           # 2019-09-18
-  - REPO=llvm-mirror/libcxxabi        # 2019-09-13
-  - REPO=llvm-mirror/libunwind        # 2019-09-20
-  - REPO=llvm-mirror/lld              # 2019-09-20
-  - REPO=llvm-mirror/lldb             # 2019-09-20
-  - REPO=llvm-mirror/llvm             # 2019-09-21
-  - REPO=llvm-mirror/lnt              # 2019-09-20
-  - REPO=llvm-mirror/openmp           # 2019-09-04
-  - REPO=llvm-mirror/polly            # 2019-09-17
-  - REPO=llvm-mirror/poolalloc        # 2015-11-07
-  - REPO=llvm-mirror/test-suite       # 2019-09-18
-  - REPO=llvm-mirror/zorg             # 2019-09-20
+  - REPO=llvm/llvm-lnt                # 2019-09-20
+  - REPO=llvm/llvm-project            # 2019-09-21
+  - REPO=llvm/llvm-project-legacy-branches  # 2019-05-14
+  - REPO=llvm/llvm-test-suite         # 2019-09-19
+  - REPO=llvm/llvm-zorg               # 2019-09-20
 
 install:
   #- pip install -r requirements.txt
