@@ -14,13 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=micropython/micropython           # 2019-09-21
-  - REPO=micropython/micropython-esp32     # 2019-02-28
-  - REPO=micropython/micropython-infineon  # 2016-07-12
-  - REPO=micropython/micropython-lib       # 2019-09-06
-  - REPO=micropython/micropython-unicorn   # 2017-11-14
-  - REPO=micropython/pyboard               # 2016-01-20
-  - REPO=micropython/webrepl               # 2019-05-29
+  - REPO=geoserver/wps-remote
 
 install:
   #- pip install -r requirements.txt
