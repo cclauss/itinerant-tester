@@ -14,7 +14,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=tensorflow/models
+  - REPO=robotools/fontParts
 
 install:
   #- pip install -r requirements.txt
