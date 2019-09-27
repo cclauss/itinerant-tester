@@ -1,0 +1,12 @@
+on: push
+name: on push
+jobs:
+  gitHubActionForFlake8:
+    name: GitHub Action for Flake8
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: GitHub Action for Flake8
+      uses: cclauss/GitHub-Action-for-Flake8@master
+      with:
+        args: flake8 . --count --max-line-length=127 --show-source --statistics
