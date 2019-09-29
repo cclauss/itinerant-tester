@@ -17,11 +17,11 @@ import requests
 from github3 import login as github3_login
 
 username = getpass.getuser()  # Does local username == GitHub username?
-print('Please enter the GitHub password for user: {}'.format(username))
+print("Please enter the GitHub password for user: {}".format(username))
 gh = github3_login(username, getpass.getpass())
 
 # url = 'https://github.com/trending/jupyter-notebook'  # GitHub Trending top 25 repos
-url = 'https://github.com/trending/python'  # GitHub Trending top 25 repos
+url = "https://github.com/trending/python"  # GitHub Trending top 25 repos
 # url += '?since=weekly'
 # url += '?since=monthly'
 
@@ -67,33 +67,52 @@ notifications:
   on_failure: change  # `always` will be the setting once code changes slow down
 """
 
-print(f'{dt.now():%a %b %d %H:%M:%S %Z %Y}')
+print(f"{dt.now():%a %b %d %H:%M:%S %Z %Y}")
 # extract the repo names of GitHub's Top 25 Trending Python list
-soup = bs4.BeautifulSoup(requests.get(url).content, 'lxml')  # or 'html5lib'
+soup = bs4.BeautifulSoup(requests.get(url).content, "lxml")  # or 'html5lib'
 # 'python / cpython'
-repos = soup.find('ol', class_="repo-list").find_all('a', href=True)
+repos = soup.find("ol", class_="repo-list").find_all("a", href=True)
 # 'python/cpython'
-repos = (repo.text.strip().replace(' ', '') for repo in repos
-         if '/' in repo.text and '://' not in repo.text)
-repos = list(repos) + ['PythonCharmers/python-future',
+repos = (
+    repo.text.strip().replace(" ", "")
+    for repo in repos
+    if "/" in repo.text and "://" not in repo.text
+)
+repos = list(repos) + [
+    "PythonCharmers/python-future",
     # 'ansible/awx', 'cheshirekow/cmake_format', 'n1nj4sec/pupy',
     # 'ArduPilot/pymavlink', 'dronekit/dronekit-python',
-    'ansible/ansible', 'Tribler/tribler', 'oaubert/python-vlc', 'ColdGrub1384/Pyto',
-    'getsentry/sentry', 'CoreSecurity/impacket', 'nodejs/node',
-    'nodejs/node-gyp', 'internetarchive/openlibrary', 'google/ffn',
-    'webpy/webpy', 'ibm-watson-iot/connector-cloudant', 'ibm-watson-iot/device-kodi',
-    'ArduPilot/ardupilot', 'matplotlib/matplotlib', 'ckan/ckan', 'ggtracker/sc2reader',
-    'apache/beam', 'apache/incubator-mxnet', 'apache/spark', 'ibm-watson-iot/functions',
+    "ansible/ansible",
+    "Tribler/tribler",
+    "oaubert/python-vlc",
+    "ColdGrub1384/Pyto",
+    "getsentry/sentry",
+    "CoreSecurity/impacket",
+    "nodejs/node",
+    "nodejs/node-gyp",
+    "internetarchive/openlibrary",
+    "google/ffn",
+    "webpy/webpy",
+    "ibm-watson-iot/connector-cloudant",
+    "ibm-watson-iot/device-kodi",
+    "ArduPilot/ardupilot",
+    "matplotlib/matplotlib",
+    "ckan/ckan",
+    "ggtracker/sc2reader",
+    "apache/beam",
+    "apache/incubator-mxnet",
+    "apache/spark",
+    "ibm-watson-iot/functions",
 ]
-    # 'httplib2/httplib2', 'Supervisor/supervisor'
-    # 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python']
+# 'httplib2/httplib2', 'Supervisor/supervisor'
+# 'hyperledger/fabric-sdk-py', 'hyperledger/iroha-python']
 # '    - REPO=python/cpython'  also strip out any repos that are in ignore list
-repos = '\n'.join('  - REPO=' + repo for repo in repos)
+repos = "\n".join("  - REPO=" + repo for repo in repos)
 #                 if 'shadowsocks' not in repo and repo not in ignore)
 print(repos)
 travis_text = fmt % repos
 
 # log into GitHub and commit an update to .travis.yml which will trigger tests
-travis = gh.repository(username, 'itinerant-tester').file_contents('/.travis.yml')
-print(travis.update('trigger a new build', travis_text.encode('utf-8')))
-webbrowser.open('https://travis-ci.org/{}/itinerant-tester'.format(username))
+travis = gh.repository(username, "itinerant-tester").file_contents("/.travis.yml")
+print(travis.update("trigger a new build", travis_text.encode("utf-8")))
+webbrowser.open("https://travis-ci.org/{}/itinerant-tester".format(username))
