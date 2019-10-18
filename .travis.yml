@@ -6,7 +6,7 @@ python:
   #- 2.7
   #- 3.5
   #- 3.6
-  - 3.8
+  - 3.7
 matrix:
   allow_failures:
     - python: 2.7
@@ -14,8 +14,63 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=arangodb/arangodb
-
+  - REPO=ownthink/KnowledgeGraphData
+  - REPO=Avik-Jain/100-Days-of-ML-Code-Chinese-Version
+  - REPO=gto76/python-cheatsheet
+  - REPO=lancopku/pkuseg-python
+  - REPO=pytorch/botorch
+  - REPO=micahflee/onionshare
+  - REPO=cornellius-gp/gpytorch
+  - REPO=salesforce/policy_sentry
+  - REPO=python/cpython
+  - REPO=649453932/Chinese-Text-Classification-Pytorch
+  - REPO=dmlc/tvm
+  - REPO=GetTogetherComm/GetTogether
+  - REPO=Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB
+  - REPO=aws-samples/aws-cdk-examples
+  - REPO=sdispater/poetry
+  - REPO=ansible/awx
+  - REPO=0xInfection/Awesome-WAF
+  - REPO=yanshengjia/ml-road
+  - REPO=paralax/awesome-honeypots
+  - REPO=facebookresearch/detectron2
+  - REPO=facebookresearch/ReAgent
+  - REPO=spulec/moto
+  - REPO=Neo23x0/sigma
+  - REPO=tonybeltramelli/pix2code
+  - REPO=ownthink/Jiagu
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=v8/v8
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
