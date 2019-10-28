@@ -15,74 +15,22 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=chrmoritz/deno               # 2019-10-25 denoland/deno
-  - REPO=denoland/deno
-  - REPO=chrmoritz/deno_third_party   # 2019-10-21 denoland/deno_third_party
-  - REPO=denoland/deno_third_party
-  - REPO=chrmoritz/homebrew-boneyard  # 2016-04-27 necromant2005/homebrew-boneyard
-  - REPO=necromant2005/homebrew-boneyard
-  - REPO=chrmoritz/joplin             # 2019-05-09 laurent22/joplin
-  - REPO=laurent22/joplin
-  - REPO=chrmoritz/py-starbound       # 2015-02-24 blixt/py-starbound
-  - REPO=blixt/py-starbound
-  - REPO=chrmoritz/starcheat          # 2016-07-31 wizzomafizzo/starcheat
-  - REPO=wizzomafizzo/starcheat
-  - REPO=chrmoritz/three.js           # 2015-03-07 mrdoob/three.js
-  - REPO=mrdoob/three.js
-  - REPO=chrmoritz/zoxel              # 2016-02-24 grking/zoxel
-  - REPO=grking/zoxel
-  - REPO=jupyter/cdn.jupyter.org      # 2016-12-20
-  - REPO=jupyter/colaboratory         # archived
-  - REPO=jupyter/cookiecutter-docker-stacks  # 2019-01-26
-  - REPO=jupyter/docker-demo-images   # archived
-  - REPO=jupyter/docker-stacks        # 2019-10-21
-  - REPO=jupyter/echo_kernel          # 2018-10-22
-  - REPO=jupyter/enterprise_gateway   # 2019-10-15
-  - REPO=jupyter/jupyter              # 2019-10-22
-  - REPO=jupyter/jupyter-alabaster-theme  # 2018-06-08
-  - REPO=jupyter/jupyter-book         # 2019-10-25
-  - REPO=jupyter/jupyter-drive        # 2018-06-08
-  - REPO=jupyter/jupyter-packaging    # 2019-07-29
-  - REPO=jupyter/jupyter-sphinx       # 2019-10-25
-  - REPO=jupyter/jupyter-sphinx-theme  # 2018-06-08
-  - REPO=jupyter/jupyter.github.io    # 2019-10-24
-  - REPO=jupyter/jupyter_client       # 2019-10-20
-  - REPO=jupyter/jupyter_console      # 2019-08-29
-  - REPO=jupyter/jupyter_core         # 2019-10-27
-  - REPO=jupyter/jupyter_kernel_test  # 2018-12-02
-  - REPO=jupyter/jupyter_markdown     # 2017-07-08
-  - REPO=jupyter/jupyter_server       # 2019-10-26
-  - REPO=jupyter/kernels              # 2017-08-26
-  - REPO=jupyter/kernel_gateway       # 2019-09-01
-  - REPO=jupyter/kernel_gateway_demos  # 2019-04-26
-  - REPO=jupyter/lbnl-jupyterday      # 2017-08-26
-  - REPO=jupyter/nature-demo          # 2017-09-08
-  - REPO=jupyter/nb2kg                # 2019-07-30
-  - REPO=jupyter/nbconvert            # 2019-10-25
-  - REPO=jupyter/nbconvert-examples   # 2019-01-14
-  - REPO=jupyter/nbdime               # 2019-09-24
-  - REPO=jupyter/nbformat             # 2019-08-26
-  - REPO=jupyter/nbgrader             # 2019-10-22
-  - REPO=jupyter/nbmanager            # 2019-01-27
-  - REPO=jupyter/nbviewer             # 2019-10-16
-  - REPO=jupyter/ngcm-tutorial        # 2018-01-11
-  - REPO=jupyter/notebook             # 2019-10-24
-  - REPO=jupyter/qtconsole            # 2019-09-23
-  - REPO=jupyter/repo2docker          # 2019-10-23
-  - REPO=jupyter/scipy-advanced-tutorial  # 2017-08-26
-  - REPO=jupyter/sphinxcontrib_github_alt  # 2019-03-27
-  - REPO=jupyter/sphinx_rtd_theme     # 2017-02-14 readthedocs/sphinx_rtd_theme
-  - REPO=readthedocs/sphinx_rtd_theme
-  - REPO=jupyter/strata-sv-2015-tutorial  # 2015-02-18
-  - REPO=jupyter/surveys              # 2019-05-22
-  - REPO=jupyter/telemetry            # 2019-10-08
-  - REPO=jupyter/terminado            # 2019-06-10
-  - REPO=jupyter/testpath             # 2019-08-07
-  - REPO=jupyter/tmpnb                # archived
-  - REPO=jupyter/tmpnb-deploy         # 2017-12-08
-  - REPO=jupyter/tmpnb-redirector     # 2017-09-20
-  - REPO=jupyter/win-tornado-terminals  # 2017-11-20
-
+  - REPO=pallets/cachelib             # 2019-09-19
+  - REPO=pallets/click                # 2019-10-25
+  - REPO=pallets/flask                # 2019-10-28
+  - REPO=pallets/flask-docs           # archived
+  - REPO=pallets/flask-ext-migrate    # 2017-07-10
+  - REPO=pallets/flask-sphinx-themes  # archived
+  - REPO=pallets/flask-sqlalchemy     # 2019-10-24
+  - REPO=pallets/flask-website        # archived
+  - REPO=pallets/itsdangerous         # 2019-10-08
+  - REPO=pallets/jinja                # 2019-10-27
+  - REPO=pallets/markupsafe           # 2019-10-28
+  - REPO=pallets/pallets-sphinx-themes  # 2019-08-05
+  - REPO=pallets/secure-cookie        # 2019-01-22
+  - REPO=pallets/website              # 2019-10-21
+  - REPO=pallets/werkzeug             # 2019-10-17
+  
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
