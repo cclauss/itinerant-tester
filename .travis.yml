@@ -15,21 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pallets/cachelib             # 2019-09-19
-  - REPO=pallets/click                # 2019-10-25
-  - REPO=pallets/flask                # 2019-10-28
-  - REPO=pallets/flask-docs           # archived
-  - REPO=pallets/flask-ext-migrate    # 2017-07-10
-  - REPO=pallets/flask-sphinx-themes  # archived
-  - REPO=pallets/flask-sqlalchemy     # 2019-10-24
-  - REPO=pallets/flask-website        # archived
-  - REPO=pallets/itsdangerous         # 2019-10-08
-  - REPO=pallets/jinja                # 2019-10-27
-  - REPO=pallets/markupsafe           # 2019-10-28
-  - REPO=pallets/pallets-sphinx-themes  # 2019-08-05
-  - REPO=pallets/secure-cookie        # 2019-01-22
-  - REPO=pallets/website              # 2019-10-21
-  - REPO=pallets/werkzeug             # 2019-10-17
+  - REPO=nodejs/tap2junit
   
 install:
   #- pip install -r requirements.txt
