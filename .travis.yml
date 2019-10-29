@@ -16,6 +16,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=nodejs/tap2junit
+  - REPO=psf/black
   
 install:
   #- pip install -r requirements.txt
