@@ -17,6 +17,7 @@ matrix:
 env:
   - REPO=nodejs/tap2junit
   - REPO=psf/black
+  - REPO=IBM/powerai
   
 install:
   #- pip install -r requirements.txt
