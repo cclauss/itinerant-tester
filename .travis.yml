@@ -15,63 +15,10 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=iGhibli/iOS-DeviceSupport
-  - REPO=tamarott/SinGAN
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=plotly/dash
-  - REPO=sebastianruder/NLP-progress
-  - REPO=iovisor/bcc
-  - REPO=CorentinJ/Real-Time-Voice-Cloning
-  - REPO=geekcomputers/Python
-  - REPO=isocpp/CppCoreGuidelines
-  - REPO=bitcoinbook/bitcoinbook
-  - REPO=tensorflow/models
-  - REPO=princewen/tensorflow_practice
-  - REPO=bokeh/bokeh
-  - REPO=KubeOperator/KubeOperator
-  - REPO=python/mypy
-  - REPO=tensorflow/addons
-  - REPO=EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
-  - REPO=qubvel/segmentation_models.pytorch
-  - REPO=zhaoolee/ChromeAppHeroes
-  - REPO=evildmp/BrachioGraph
-  - REPO=dask/dask
-  - REPO=explosion/spaCy
-  - REPO=jupyterhub/jupyterhub
-  - REPO=pytorch/examples
-  - REPO=vinta/awesome-python
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=v8/v8
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=wifiphisher/roguehostapd
+  - REPO=wifiphisher/wifiphisher
+  - REPO=wifiphisher/WiPy
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
