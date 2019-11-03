@@ -15,10 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=streamlit/streamlit
-  - REPO=iGhibli/iOS-DeviceSupport
-  - REPO=tamarott/SinGAN
-  - REPO=piwheels/piwheels
+  - REPO=CAM-Gerlach/serviceinstaller
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
