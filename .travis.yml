@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bleemeo/bleemeo-agent
+  - REPO=SimpleLegal/pocket_protector
 
 install:
   #- pip install -r requirements.txt
