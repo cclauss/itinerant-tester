@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ArduPilot/MAVProxy
+  - REPO=etingof/pysnmp
 
 install:
   #- pip install -r requirements.txt
