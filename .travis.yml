@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=etingof/pysnmp
+  - REPO=streamlit/streamlit
 
 install:
   #- pip install -r requirements.txt
