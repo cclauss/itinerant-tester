@@ -15,28 +15,13 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ColdGrub1384/bc              # 2019-06-25 holzschu/bc
-  - REPO=holzschu/bc
-  - REPO=ColdGrub1384/dash            # 2019-08-17 plotly/dash
-  - REPO=plotly/dash
-  - REPO=ColdGrub1384/documentation   # 2018-02-26 raspberrypi/documentation
-  - REPO=raspberrypi/documentation
-  - REPO=ColdGrub1384/Edidown         # 2019-09-22
-  - REPO=ColdGrub1384/firefox-ios     # 2017-11-23 mozilla-mobile/firefox-ios
-  - REPO=mozilla-mobile/firefox-ios
-  - REPO=ColdGrub1384/Parat_iOS       # 2019-01-11 fadinglr/Parat
-  - REPO=fadinglr/Parat
-  - REPO=ColdGrub1384/PewDiePie-vs-TSeries  # 2019-02-04 undevdecatos/PewDiePie-vs-TSeries
-  - REPO=undevdecatos/PewDiePie-vs-TSeries
-  - REPO=ColdGrub1384/pycracker       # 2019-01-14 zymtom/pycracker
-  - REPO=zymtom/pycracker
-  - REPO=ColdGrub1384/pymacadmin      # 2019-10-03 MacSysadmin/pymacadmin
-  - REPO=MacSysadmin/pymacadmin
-  - REPO=ColdGrub1384/Pyto            # 2019-11-08
-  - REPO=ColdGrub1384/SeeLess         # 2019-11-03
-  - REPO=ColdGrub1384/Yellow          # 2017-04-12
-  - REPO=ColdGrub1384/youtube-dl_LibTerm  # 2019-01-19 ytdl-org/youtube-dl
-  - REPO=ytdl-org/youtube-dl
+  - REPO=networkx/documentation       # 2019-11-05
+  - REPO=networkx/grave               # 2018-09-10
+  - REPO=networkx/networkx            # 2019-11-08
+  - REPO=networkx/networkx-lemon      # 2015-07-31
+  - REPO=networkx/networkx-metis      # 2019-11-05
+  - REPO=networkx/old-documentation   # 2017-09-08
+  - REPO=networkx/website             # 2019-10-17
 
 install:
   #- pip install -r requirements.txt
