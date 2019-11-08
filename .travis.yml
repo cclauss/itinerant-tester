@@ -15,36 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=fighting41love/funNLP
-  - REPO=google/clusterfuzz
-  - REPO=google/clusterfuzz-tools
-  - REPO=google/googletest
-  - REPO=mherrmann/fbs -- Now Py3?
-  - REPO=tensorflow/models
-  - REPO=getsentry/sentry
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=Tribler/tribler
-  - REPO=internetarchive/openlibrary
-  - REPO=internetarchive/infogami
-  - REPO=edx/edx-platform
-  - REPO=edx/edx-e2e-tests
-  - REPO=edx/testeng-ci
-  - REPO=edx/notifier
-  - REPO=edx/ecommerce-worker
-  - REPO=edx/configuration
-  - REPO=edx/ecommerce
-  - REPO=edx/edx-analytics-data-api
-  - REPO=edx/edx-analytics-pipeline
-  - REPO=edx/edx-gomatic
-  - REPO=edx/edx-notes-api
-  - REPO=edx/edx-ora2
-  - REPO=edx/edx-submissions
-  - REPO=edx/edx-val
-  - REPO=edx/edx-video-pipeline
-  - REPO=edx/edx-video-worker
-  - REPO=edx/xblock-lti-consumer
-  - REPO=edx/xqueue
+  - REPO=meolu/walle-web
 
 install:
   #- pip install -r requirements.txt
