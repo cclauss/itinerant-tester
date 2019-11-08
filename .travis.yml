@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=meolu/walle-web
+  - REPO=njmcn/Pythonista
 
 install:
   #- pip install -r requirements.txt
