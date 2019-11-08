@@ -15,40 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mikaelho/asyncui             # 2017-10-23
-  - REPO=mikaelho/awz                 # 2016-03-17
-  - REPO=mikaelho/boo                 # 2019-08-08
-  - REPO=mikaelho/caves               # 2017-08-25
-  - REPO=mikaelho/dictdiffer          # 2017-10-10 inveniosoftware/dictdiffer
-  - REPO=inveniosoftware/dictdiffer
-  - REPO=mikaelho/docgen              # 2017-11-19
-  - REPO=mikaelho/extend              # 2018-08-22
-  - REPO=mikaelho/genr                # 2019-11-07
-  - REPO=mikaelho/multipeer           # 2018-07-24
-  - REPO=mikaelho/noter               # 2018-08-14
-  - REPO=mikaelho/python-magicmirror  # 2017-09-19
-  - REPO=mikaelho/pythonista-bsp      # 2017-02-07
-  - REPO=mikaelho/pythonista-composite  # 2018-08-02
-  - REPO=mikaelho/pythonista-gestures  # 2019-03-13
-  - REPO=mikaelho/pythonista-lambda-deploy  # 2017-10-06
-  - REPO=mikaelho/pythonista-markdownview  # 2018-05-10
-  - REPO=mikaelho/pythonista-misc     # 2019-11-04
-  - REPO=mikaelho/pythonista-reminderstore  # 2018-05-10
-  - REPO=mikaelho/pythonista-spritekit  # 2019-09-27
-  - REPO=mikaelho/pythonista-uiconstraints  # 2019-08-01
-  - REPO=mikaelho/pythonista-webview  # 2019-03-18
-  - REPO=mikaelho/Pyto                # 2019-07-29 ColdGrub1384/Pyto
-  - REPO=ColdGrub1384/Pyto
-  - REPO=mikaelho/ruuvi-temperatures  # 2017-06-04
-  - REPO=mikaelho/ruuvitag-sensor     # 2017-06-02 ttu/ruuvitag-sensor
-  - REPO=ttu/ruuvitag-sensor
-  - REPO=mikaelho/scripter            # 2019-08-08
-  - REPO=mikaelho/sm-assignment       # 2019-10-14
-  - REPO=mikaelho/tinysync            # 2019-10-16
-  - REPO=mikaelho/unsync              # 2019-09-24 alex-sherman/unsync
-  - REPO=alex-sherman/unsync
-  - REPO=mikaelho/vod                 # 2019-08-22
-  - REPO=mikaelho/youey               # 2019-02-03
+  - REPO=Chakazul/Lenia
 
 install:
   #- pip install -r requirements.txt
