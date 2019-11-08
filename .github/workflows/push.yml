@@ -5,8 +5,10 @@ jobs:
     name: GitHub Action for Flake8
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: GitHub Action for Flake8
-      uses: cclauss/GitHub-Action-for-Flake8@master
-      with:
-        args: flake8 . --count --max-line-length=127 --show-source --statistics
+      - uses: actions/checkout@v1
+      - uses: actions/setup-python@v1
+        with:
+          python-version: 3.x
+      - run: pip install black flake8
+      - run: black --check .
+      - run: flake8 . --count --max-line-length=88 --show-source --statistics
