@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=quantopian/zipline
+  - REPO=lazyprogrammer/machine_learning_examples
 
 install:
   #- pip install -r requirements.txt
