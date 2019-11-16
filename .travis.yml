@@ -15,8 +15,63 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-
+  - REPO=dragen1860/Deep-Learning-with-TensorFlow-book
+  - REPO=CorentinJ/Real-Time-Voice-Cloning
+  - REPO=wb14123/seq2seq-couplet
+  - REPO=quay/quay
+  - REPO=Azure/azure-cli
+  - REPO=Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB
+  - REPO=localstack/localstack
+  - REPO=microsoft/c9-python-getting-started
+  - REPO=qilingframework/qiling
+  - REPO=abc1763613206/TGBullshitGeneratorBot
+  - REPO=ageitgey/face_recognition
+  - REPO=pluto0x0/Bullshit-WebUI
+  - REPO=EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi
+  - REPO=xiyouMc/WebHubBot
+  - REPO=iperov/DeepFaceLab
+  - REPO=sdispater/poetry
+  - REPO=ZiniuLu/Python-100-Days
+  - REPO=thunlp/OpenNRE
+  - REPO=tensorflow/models
+  - REPO=google-research/bert
+  - REPO=boto/boto3
+  - REPO=sylnsfar/qrcode
+  - REPO=kubernetes-client/python
+  - REPO=facebookresearch/SlowFast
+  - REPO=Netflix/vmaf
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=v8/v8
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
