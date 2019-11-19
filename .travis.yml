@@ -15,8 +15,16 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=instabot-py/instabot.py
-  - REPO=openai/baselines
+  - REPO=ibmdb/db2gobuildpack         # 2015-01-12 cloudfoundry/go-buildpack
+  - REPO=cloudfoundry/go-buildpack
+  - REPO=ibmdb/db2pythonbuildpack     # 2018-10-30
+  - REPO=ibmdb/node-ibm_db            # 2019-11-14
+  - REPO=ibmdb/php-buildpack          # 2017-03-22 cloudfoundry/php-buildpack
+  - REPO=cloudfoundry/php-buildpack
+  - REPO=ibmdb/python-ibmdb           # 2019-11-04
+  - REPO=ibmdb/python-ibmdb-django    # 2019-10-11
+  - REPO=ibmdb/python-ibmdbalembic    # 2018-03-06
+  - REPO=ibmdb/python-ibmdbsa         # 2019-11-19
 
 install:
   #- pip install -r requirements.txt
