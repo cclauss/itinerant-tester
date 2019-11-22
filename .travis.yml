@@ -16,6 +16,7 @@ matrix:
     - python: pypy3
 env:
   - REPO=robotframework/robotframework
+  - REPO= ros-industrial/universal_robot
 
 install:
   #- pip install -r requirements.txt
