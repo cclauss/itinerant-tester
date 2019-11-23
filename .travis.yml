@@ -15,9 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=robotframework/robotframework
-  - REPO=ros-industrial/universal_robot
-
+  - REPO=zacbir/geometriq
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
