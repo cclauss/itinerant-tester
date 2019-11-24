@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=internetarchive/rulesengine
+  - REPO=IBM/iotp-oslc
 
 install:
   #- pip install -r requirements.txt
@@ -31,7 +31,6 @@ script:
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  - python -c "from sys import version_info ; print(version_info) ; print(pow(2, -1, 5))"
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
