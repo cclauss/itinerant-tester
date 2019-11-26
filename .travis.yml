@@ -15,8 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=heartexlabs/label-studio
-  - REPO=fredrik-johansson/mpmath
+  - REPO=easybuilders/easybuild
 
 install:
   #- pip install -r requirements.txt
