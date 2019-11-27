@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=easybuilders/easybuild
+  - REPO=KubeOperator/KubeOperator
 
 install:
   #- pip install -r requirements.txt
