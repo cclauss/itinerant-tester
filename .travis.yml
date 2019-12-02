@@ -15,63 +15,18 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=luka1199/geo-heatmap
-  - REPO=facebookresearch/demucs
-  - REPO=home-assistant/home-assistant
-  - REPO=521xueweihan/HelloGitHub
-  - REPO=Smerity/sha-rnn
-  - REPO=dragen1860/Deep-Learning-with-TensorFlow-book
-  - REPO=KalleHallden/BlackFridayScrape
-  - REPO=davidsandberg/facenet
-  - REPO=elaine-zheng/summer2020internships
-  - REPO=sebastianruder/NLP-progress
-  - REPO=minimaxir/big-list-of-naughty-strings
-  - REPO=mirumee/saleor
-  - REPO=asciimoo/searx
-  - REPO=lukemelas/EfficientNet-PyTorch
-  - REPO=hindupuravinash/the-gan-zoo
-  - REPO=testerSunshine/12306
-  - REPO=shmilylty/OneForAll
-  - REPO=Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB
-  - REPO=odoo/odoo
-  - REPO=pudae/kaggle-understanding-clouds
-  - REPO=samuelcolvin/pydantic
-  - REPO=ageitgey/face_recognition
-  - REPO=cornellius-gp/gpytorch
-  - REPO=facebookresearch/maskrcnn-benchmark
-  - REPO=facebookresearch/detectron2
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=v8/v8
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=MTlab/onnx2caffe             # 2019-05-27
+  - REPO=MTlab/rsgunet_image_enhance  # 2019-03-28
+  - REPO=Linzaer/A-Light-and-Fast-Face-Detector-for-Edge-Devices  # 2019-10-03 YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices
+  - REPO=YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices
+  - REPO=Linzaer/centerface           # 2019-10-16 Star-Clouds/CenterFace
+  - REPO=Star-Clouds/CenterFace
+  - REPO=Linzaer/Face-Track-Detect-Extract  # 2019-06-01
+  - REPO=Linzaer/insightface          # 2019-10-08 deepinsight/insightface
+  - REPO=deepinsight/insightface
+  - REPO=tensorflow/models
+  - REPO=Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB  # 2019-11-30
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
