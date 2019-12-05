@@ -35,7 +35,10 @@ install:
   - pip3 install beautifulsoup4
 before_script:
   - echo "pip"
-  - ls -FlaR $HOME/.cache/pip/wheels
+  - ls -R $HOME/.cache/pip
+  - ls -FR $HOME/.cache/pip
+  - ls -lR $HOME/.cache/pip
+  - ls -aR $HOME/.cache/pip
   - ls -FlaR $HOME/.cache/pip
   - echo "pip3"
   - ls $HOME/.cache/pip3
