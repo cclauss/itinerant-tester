@@ -1,7 +1,9 @@
 group: travis_latest
 dist: bionic
 language: python
-cache: pip
+cache:
+  - pip
+  - pip3
 python:
   #- 2.7
   #- 3.5
@@ -30,7 +32,12 @@ env:
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
+  - pip3 install beautifulsoup4
 before_script:
+  - echo "pip"
+  - ls Fla $HOME/.cache/pip
+  - echo "pip3"
+  - ls -Fla $HOME/.cache/pip3
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - git clone --depth=50 ${URL} ~/${REPO}  # --branch=master
