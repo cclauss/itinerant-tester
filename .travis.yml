@@ -35,7 +35,7 @@ install:
   - pip3 install beautifulsoup4
 before_script:
   - echo "pip"
-  - ls Fla $HOME/.cache/pip
+  - ls -Fla $HOME/.cache/pip
   - echo "pip3"
   - ls -Fla $HOME/.cache/pip3
   - URL=https://github.com/${REPO}
