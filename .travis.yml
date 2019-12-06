@@ -17,17 +17,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=MTlab/onnx2caffe             # 2019-05-27
-  - REPO=MTlab/rsgunet_image_enhance  # 2019-03-28
-  - REPO=Linzaer/A-Light-and-Fast-Face-Detector-for-Edge-Devices  # 2019-10-03 YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices
-  - REPO=YonghaoHe/A-Light-and-Fast-Face-Detector-for-Edge-Devices
-  - REPO=Linzaer/centerface           # 2019-10-16 Star-Clouds/CenterFace
-  - REPO=Star-Clouds/CenterFace
-  - REPO=Linzaer/Face-Track-Detect-Extract  # 2019-06-01
-  - REPO=Linzaer/insightface          # 2019-10-08 deepinsight/insightface
-  - REPO=deepinsight/insightface
-  - REPO=tensorflow/models
-  - REPO=Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB  # 2019-11-30
+  - REPO=Netflix/metaflow
 
 install:
   #- pip install -r requirements.txt
