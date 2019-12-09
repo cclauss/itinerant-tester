@@ -17,7 +17,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=AIDungeon/AIDungeon
+  - REPO=Jeremiah9000/Poker-with-Python
 
 install:
   #- pip install -r requirements.txt
