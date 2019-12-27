@@ -15,9 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=TheAlgorithms/Python
-  - REPO=TheAlgorithms/C-Plus-Plus
-  - REPO=internetarchive/openlibrary
+  - REPO=onelivesleft/PrettyErrors
 
 install:
   #- pip install -r requirements.txt
