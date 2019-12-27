@@ -15,7 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=onelivesleft/PrettyErrors
+  - REPO=dagster-io/dagster
+  - REPO=wkentaro/labelme
+  - REPO=google/trax
 
 install:
   #- pip install -r requirements.txt
