@@ -15,13 +15,66 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dagster-io/dagster
-  - REPO=wkentaro/labelme
+  - REPO=microsoft/nni
+  - REPO=donnemartin/system-design-primer
+  - REPO=jackzhenguo/python-small-examples
+  - REPO=CoreyMSchafer/code_snippets
+  - REPO=aws/sagemaker-python-sdk
+  - REPO=pytorch/fairseq
+  - REPO=lazyprogrammer/machine_learning_examples
   - REPO=google/trax
-
+  - REPO=jupyterhub/jupyterhub
+  - REPO=deezer/spleeter
+  - REPO=mgrankin/ru_transformers
+  - REPO=giswqs/qgis-earthengine-examples
+  - REPO=NVIDIA/apex
+  - REPO=Netflix/metaflow
+  - REPO=guyinatuxedo/nightmare
+  - REPO=iperov/DeepFaceLab
+  - REPO=PaddlePaddle/ERNIE
+  - REPO=Bogdanp/awesome-advent-of-code
+  - REPO=swisskyrepo/PayloadsAllTheThings
+  - REPO=huggingface/transformers
+  - REPO=huge-success/sanic
+  - REPO=Unity-Technologies/ml-agents
+  - REPO=tensorflow/tfx
+  - REPO=EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+  - REPO=home-assistant/home-assistant
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=v8/v8
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
-  - pip install codespell flake8  # pytest  # add other testing frameworks later
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -33,7 +86,6 @@ script:
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  - codespell
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
