@@ -15,7 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Jack-Cherish/python-spider
+  - REPO=google-research/ALBERT
+  - REPO=bridgecrewio/checkov 
 
 install:
   #- pip install -r requirements.txt
