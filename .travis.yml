@@ -15,7 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=PaddlePaddle/ERNIE
+  - REPO=rq/rq
+  - REPO=Ganapati/RsaCtfTool
 
 install:
   #- pip install -r requirements.txt
