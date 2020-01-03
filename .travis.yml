@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=doctoryes/code_block_timer
+  - REPO=PaddlePaddle/ERNIE
 
 install:
   #- pip install -r requirements.txt
