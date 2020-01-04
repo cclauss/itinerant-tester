@@ -15,10 +15,63 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Jan4V/hekate-ipl-50x
-  - REPO=CTCaer/hekate
-  - REPO=Atmosphere-NX/Atmosphere
-
+  - REPO=rq/rq
+  - REPO=vinta/awesome-python
+  - REPO=zero-to-mastery/coding_challenge-25
+  - REPO=cloud-custodian/cloud-custodian
+  - REPO=tensorflow/models
+  - REPO=notadamking/tensortrade
+  - REPO=ZQPei/deep_sort_pytorch
+  - REPO=JerBouma/ThePassiveInvestor
+  - REPO=Hackndo/lsassy
+  - REPO=d2l-ai/d2l-en
+  - REPO=streamlit/streamlit
+  - REPO=doccano/doccano
+  - REPO=robotframework/robotframework
+  - REPO=Asabeneh/30-Days-Of-Python
+  - REPO=isocpp/CppCoreGuidelines
+  - REPO=dmlc/dgl
+  - REPO=apache/airflow
+  - REPO=deepinsight/insightface
+  - REPO=kovidgoyal/kitty
+  - REPO=facebookresearch/Detectron
+  - REPO=tmrowco/electricitymap-contrib
+  - REPO=MobSF/Mobile-Security-Framework-MobSF
+  - REPO=minimaxir/big-list-of-naughty-strings
+  - REPO=huggingface/transformers
+  - REPO=elastic/helm-charts
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=getsentry/sentry
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=v8/v8
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=cheshirekow/cmake_format
+  - REPO=matplotlib/matplotlib
+  - REPO=ckan/ckan
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
