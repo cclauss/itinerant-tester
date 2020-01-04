@@ -15,16 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nx-python/BotW-SaveEditor    # 2018-04-29
-  - REPO=nx-python/hekate-ipl-4x      # 2018-05-10 Jan4V/hekate-ipl-50x
   - REPO=Jan4V/hekate-ipl-50x
-  - REPO=nx-python/imgui-switch       # 2018-08-16
-  - REPO=nx-python/nx                 # 2018-09-02
-  - REPO=nx-python/pygame_sdl2        # 2018-10-18 renpy/pygame_sdl2
-  - REPO=renpy/pygame_sdl2
-  - REPO=nx-python/PyNX               # 2018-11-01
-  - REPO=nx-python/renpy              # 2018-10-19 renpy/renpy
-  - REPO=renpy/renpy
+  - REPO=CTCaer/hekate
+  - REPO=Atmosphere-NX/Atmosphere
 
 install:
   #- pip install -r requirements.txt
