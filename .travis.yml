@@ -15,63 +15,27 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google-research/ALBERT
-  - REPO=vinta/awesome-python
-  - REPO=rq/rq
-  - REPO=huggingface/transformers
-  - REPO=google-research/bert
-  - REPO=tensorflow/models
-  - REPO=hankcs/HanLP
-  - REPO=socialpoint-labs/sheetfu
-  - REPO=apache/airflow
-  - REPO=localstack/localstack
-  - REPO=DavidBuchanan314/dlinject
-  - REPO=alexey-goloburdin/telegram-finance-bot
-  - REPO=TheKingOfDuck/fuzzDicts
-  - REPO=abhiTronix/vidgear
-  - REPO=pre-commit/pre-commit
-  - REPO=williamFalcon/pytorch-lightning
-  - REPO=Chakazul/Lenia
-  - REPO=microsoft/nlp-recipes
-  - REPO=clovaai/ext_portrait_segmentation
-  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
-  - REPO=facebookresearch/LASER
-  - REPO=microsoft/macaw
-  - REPO=amdegroot/ssd.pytorch
-  - REPO=oppia/oppia
-  - REPO=pallets/flask
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=getsentry/sentry
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=v8/v8
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=cheshirekow/cmake_format
-  - REPO=matplotlib/matplotlib
-  - REPO=ckan/ckan
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
+  - REPO=th3coop/amani-app            # 2013-10-29
+  - REPO=th3coop/developer-extension  # 2015-04-06 Komodo/developer-extension
+  - REPO=Komodo/developer-extension
+  - REPO=th3coop/Elf-Mania            # 2019-09-24
+  - REPO=th3coop/final                # 2015-09-19
+  - REPO=th3coop/Oracle-Database-Explorer  # 2017-06-07 Komodo/Oracle-Database-Explorer
+  - REPO=Komodo/Oracle-Database-Explorer
+  - REPO=th3coop/pgDriveCheck         # 2016-08-25
+  - REPO=th3coop/test-survey          # 2019-07-12
+  - REPO=th3coop/virustotal           # 2014-01-14 gawen/virustotal
+  - REPO=gawen/virustotal
+  - REPO=th3coop/VT-Scanner           # 2014-02-08
+  - REPO=open-mmlab/caffe             # 2017-09-14 BVLC/caffe
+  - REPO=BVLC/caffe
+  - REPO=open-mmlab/mmaction          # 2019-10-31
+  - REPO=open-mmlab/mmcv              # 2020-01-03
+  - REPO=open-mmlab/mmdetection       # 2020-01-04
+  - REPO=open-mmlab/mmfashion         # 2019-12-30
+  - REPO=open-mmlab/mmskeleton        # 2019-11-13
+  - REPO=open-mmlab/mmsr              # 2019-12-22
+
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
