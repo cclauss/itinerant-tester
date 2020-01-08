@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=appsody/stacks
+  - REPO=zpoint/CPython-Internals
 
 install:
   #- pip install -r requirements.txt
