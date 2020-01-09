@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=zpoint/CPython-Internals
+  - REPO=Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB
 
 install:
   #- pip install -r requirements.txt
