@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=emeryberger/scalene
+  - REPO=apache/incubator-tvm
 
 install:
   - pip install flake8  # pytest  # add other testing frameworks later
