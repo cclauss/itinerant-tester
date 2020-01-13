@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=apache/incubator-tvm
+  - REPO= mapbox/node-pre-gyp
 
 install:
   - pip install flake8  # pytest  # add other testing frameworks later
