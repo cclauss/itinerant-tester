@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mapbox/node-pre-gyp
+  - REPO=ProjectOpenSea/opensea-creatures
 
 install:
   - pip install flake8  # pytest  # add other testing frameworks later
