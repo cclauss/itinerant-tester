@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ProjectOpenSea/opensea-creatures
+  - REPO=tensorflow/kfac
 
 install:
   - pip install flake8  # pytest  # add other testing frameworks later
