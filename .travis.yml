@@ -15,7 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=odpi/OpenDS4All
+  - REPO=codespell-project/codespell
 
 install:
   - pip install codespell flake8  # pytest  # add other testing frameworks later
