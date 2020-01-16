@@ -29,7 +29,8 @@ script:
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
+  - time flake8 . --count --ignore=E722 --max-complexity=35 --max-line-length=127 --statistics
   - codespell --skip=./codespell_lib,./example/code.c
   #- pip install .
   #- python -m scalene test/testme.py
