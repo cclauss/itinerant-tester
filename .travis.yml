@@ -15,50 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=python/bedevere              # 2020-01-15
-  - REPO=python/blurb_it              # 2020-01-13
-  - REPO=python/bpo-builder           # 2018-05-18
-  - REPO=python/buildbot              # archived
-  - REPO=loewis/buildbot
-  - REPO=python/buildmaster-config    # 2020-01-15
-  - REPO=python/cherry-picker         # 2019-08-26
-  - REPO=python/codespeed             # 2019-05-27 tobami/codespeed
-  - REPO=tobami/codespeed
-  - REPO=python/community-starter-kit  # 2013-01-22
-  - REPO=python/core-workflow         # 2019-08-17
-  - REPO=python/cpython               # 2020-01-16
-  - REPO=python/devguide              # 2020-01-16
-  - REPO=python/devinabox             # 2016-05-09
-  - REPO=python/docker-bpo            # 2019-05-26
-  - REPO=python/docsbuild-scripts     # 2019-12-24
-  - REPO=python/getpython3.com        # 2018-06-08
-  - REPO=python/historic-python-materials  # 2012-05-11
-  - REPO=python/miss-islington        # 2020-01-09
-  - REPO=python/mypy                  # 2020-01-16
-  - REPO=python/mypy_extensions       # 2019-10-17
-  - REPO=python/peps                  # 2020-01-15
-  - REPO=python/planet                # 2020-01-14
-  - REPO=python/psf-chef              # 2020-01-07
-  - REPO=python/psf-docs              # 2015-08-13
-  - REPO=python/psf-election          # 2018-06-12
-  - REPO=python/psf-salt              # 2019-10-07
-  - REPO=python/psfoutreach           # 2012-10-05
-  - REPO=python/pyperformance         # 2019-12-17
-  - REPO=python/pypi-cdn-log-archiver  # 2017-04-09
-  - REPO=python/pypi-docs-proxy       # 2017-04-08
-  - REPO=python/pypi-infra            # 2020-01-15
-  - REPO=python/pypi-salt             # archived
-  - REPO=python/python-docs-theme     # 2020-01-15
-  - REPO=python/python-docs-zh-cn     # 2020-01-16
-  - REPO=python/pythondotorg          # 2020-01-13
-  - REPO=python/raspberryio           # 2014-04-22
-  - REPO=python/release-tools         # 2019-07-29
-  - REPO=python/speed.python.org      # 2016-09-07
-  - REPO=python/the-knights-who-say-ni  # 2020-01-09
-  - REPO=python/tlsproxy              # 2016-06-18
-  - REPO=python/typed_ast             # 2020-01-16
-  - REPO=python/typeshed              # 2020-01-16
-  - REPO=python/typing                # 2019-12-10
+  - REPO=guardicore/monkey
 
 install:
   #- pip install -r requirements.txt
