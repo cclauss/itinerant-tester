@@ -15,10 +15,66 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=clovaai/ext_portrait_segmentation
-
+  - REPO=donnemartin/system-design-primer
+  - REPO=bregman-arie/devops-exercises
+  - REPO=kon9chunkit/GitHub-Chinese-Top-Charts
+  - REPO=cisagov/check-cve-2019-19781
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=dmlc/dgl
+  - REPO=Code4PuertoRico/suministrospr
+  - REPO=huggingface/transformers
+  - REPO=kubeflow/pipelines
+  - REPO=GoogleCloudPlatform/python-docs-samples
+  - REPO=SeldonIO/seldon-core
+  - REPO=scikit-learn/scikit-learn
+  - REPO=pytorch/examples
+  - REPO=awslabs/autogluon
+  - REPO=rq/rq
+  - REPO=vishaalagartha/basketball_reference_scraper
+  - REPO=D-X-Y/AutoDL-Projects
+  - REPO=optuna/optuna
+  - REPO=nccgroup/ScoutSuite
+  - REPO=jupyterhub/jupyterhub
+  - REPO=python-poetry/poetry
+  - REPO=jselliott/NSACodebreaker19
+  - REPO=public-apis/public-apis
+  - REPO=PaddlePaddle/models
+  - REPO=NVlabs/few-shot-vid2vid
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
-  - pip install codespell flake8  # pytest  # add other testing frameworks later
+  #- pip install -r requirements.txt
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -29,12 +85,8 @@ script:
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=88 --statistics
-  - codespell --skip=./codespell_lib,./example/code.c
-  #- pip install .
-  #- python -m scalene test/testme.py
-  #- make
-  #- LD_PRELOAD=$PWD/libscalene.so PYTHONMALLOC=malloc python -m scalene test/testme.py
+  - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  #- true  # pytest --capture=sys
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
