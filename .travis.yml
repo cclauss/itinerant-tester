@@ -15,8 +15,63 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=guardicore/monkey
-
+  - REPO=optuna/optuna
+  - REPO=bregman-arie/devops-exercises
+  - REPO=magenta/ddsp
+  - REPO=donnemartin/system-design-primer
+  - REPO=CLUEbenchmark/CLUENER2020
+  - REPO=kon9chunkit/GitHub-Chinese-Top-Charts
+  - REPO=CLUEbenchmark/CLUE
+  - REPO=plotly/plotly.py
+  - REPO=davidsandberg/facenet
+  - REPO=kudelskisecurity/chainoffools
+  - REPO=microsoft/cascadia-code
+  - REPO=pschanely/CrossHair
+  - REPO=SeldonIO/seldon-core
+  - REPO=awslabs/aws-sam-cli
+  - REPO=swisskyrepo/PayloadsAllTheThings
+  - REPO=CorentinJ/Real-Time-Voice-Cloning
+  - REPO=pandas-profiling/pandas-profiling
+  - REPO=locustio/locust
+  - REPO=pandas-dev/pandas
+  - REPO=horovod/horovod
+  - REPO=celery/celery
+  - REPO=bazelbuild/rules_docker
+  - REPO=aws-samples/aws-cdk-examples
+  - REPO=pyinstaller/pyinstaller
+  - REPO=GoogleCloudPlatform/python-docs-samples
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install flake8  # pytest  # add other testing frameworks later
