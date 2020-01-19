@@ -74,7 +74,7 @@ env:
   - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testing frameworks later
+  - pip install codespell flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -86,6 +86,7 @@ script:
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  - codespell
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
