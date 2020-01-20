@@ -15,31 +15,31 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=rachpt/lanzou-gui
+  - REPO=donnemartin/system-design-primer
   - REPO=bregman-arie/devops-exercises
-  - REPO=lucidrains/reformer-pytorch
-  - REPO=microsoft/c9-python-getting-started
-  - REPO=Jack-Lee-Hiter/AlgorithmsByPython
-  - REPO=programthink/zhao
-  - REPO=keras-team/autokeras
-  - REPO=public-apis/public-apis
-  - REPO=smellslikeml/ActionAI
-  - REPO=home-assistant/home-assistant
-  - REPO=isocpp/CppCoreGuidelines
-  - REPO=mrjbq7/ta-lib
-  - REPO=BloodAxe/pytorch-toolbelt
-  - REPO=OpenMined/PySyft
-  - REPO=Avik-Jain/100-Days-Of-ML-Code
-  - REPO=bokeh/bokeh
-  - REPO=pennersr/django-allauth
-  - REPO=google-research/text-to-text-transfer-transformer
-  - REPO=microsoft/cascadia-code
-  - REPO=django/django
-  - REPO=tamarott/SinGAN
-  - REPO=scipy/scipy
-  - REPO=uber/ludwig
-  - REPO=ranaroussi/yfinance
-  - REPO=NVlabs/stylegan
   - REPO=tensortrade-org/tensortrade
+  - REPO=microsoft/c9-python-getting-started
+  - REPO=Yorko/mlcourse.ai
+  - REPO=mmotti/pihole-regex
+  - REPO=altair-viz/altair
+  - REPO=OpenMined/PySyft
+  - REPO=smellslikeml/ActionAI
+  - REPO=microsoft/DialoGPT
+  - REPO=awslabs/gluon-ts
+  - REPO=ray-project/ray
+  - REPO=aangfanboy/TripletLossFace
+  - REPO=aj-4/ig-followers
+  - REPO=Ascotbe/Medusa
+  - REPO=Jack-Lee-Hiter/AlgorithmsByPython
+  - REPO=NVlabs/stylegan
+  - REPO=keras-team/keras
+  - REPO=dmmiller612/bert-extractive-summarizer
+  - REPO=google-research/text-to-text-transfer-transformer
+  - REPO=puremourning/vimspector
+  - REPO=satwikkansal/wtfpython
+  - REPO=mikf/gallery-dl
+  - REPO=derv82/wifite2
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
@@ -74,7 +74,7 @@ env:
   - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
-  - pip install codespell flake8  # pytest  # add other testing frameworks later
+  - pip install flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -86,7 +86,6 @@ script:
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  - codespell
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
