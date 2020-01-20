@@ -15,7 +15,9 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=aangfanboy/TripletLossFace
+  - REPO=WoLpH/python-statsd
+  - REPO=jsocol/pystatsd
+  - REPO=sivy/pystatsd
 
 install:
   #- pip install -r requirements.txt
