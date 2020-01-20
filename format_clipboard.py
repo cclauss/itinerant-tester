@@ -8,7 +8,7 @@
 
 import subprocess
 
-EXPLAINATION = """
+EXPLANATION = """
 https://flake8.pycqa.org/en/latest/user/error-codes.html
 
 On the flake8 test selection, this PR does _not_ focus on "_style violations_" (the majority of flake8 error codes that [__psf/black__](https://github.com/psf/black) can autocorrect).  Instead these tests are focus on runtime safety and correctness:
@@ -41,7 +41,7 @@ def cleanup(text):
     lines[0] = START_TEXT.replace("\nflake8", FLAKE8_LINK) + lines[0]
     lines[1] = ""
     lines[2] = f'$ __{lines[2].split("$ time ")[-1]}__\n```'
-    return "\n".join(lines) + "\n```" + EXPLAINATION
+    return "\n".join(lines) + "\n```" + EXPLANATION
 
 
 def main():
