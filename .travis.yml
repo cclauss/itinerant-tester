@@ -3,7 +3,7 @@ dist: bionic
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.5
   #- 3.6
   #- 3.7
@@ -15,19 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=fighting41love/funNLP
-  - REPO=google/clusterfuzz
-  - REPO=google/clusterfuzz-tools
-  - REPO=google/googletest
-  - REPO=mherrmann/fbs
-  - REPO=tensorflow/models
-  - REPO=getsentry/sentry
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=Tribler/tribler
-  - REPO=edx/edx-platform
-  - REPO=internetarchive/openlibrary
-  - REPO=n1nj4sec/pup
+  - REPO=d2l-ai/d2l-en
 
 install:
   #- pip install -r requirements.txt
