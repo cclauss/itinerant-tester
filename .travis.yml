@@ -15,8 +15,52 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=internetarchive/openlibrary
-
+  - REPO=internetarchive/acs4_py      # 2019-10-15
+  - REPO=internetarchive/analyze_ocr  # 2011-11-30 mikemccabe/analyze_ocr
+  - REPO=mikemccabe/analyze_ocr
+  - REPO=internetarchive/archive-analysis  # 2016-07-12 vinaygoel/archive-analysis
+  - REPO=vinaygoel/archive-analysis
+  - REPO=internetarchive/autocrop     # 2013-04-25 rajbot/autocrop
+  - REPO=rajbot/autocrop
+  - REPO=internetarchive/bookserver   # 2018-11-01
+  - REPO=internetarchive/brozzler     # 2019-12-10
+  - REPO=internetarchive/CDX-Writer   # 2020-01-20 rajbot/CDX-Writer
+  - REPO=rajbot/CDX-Writer
+  - REPO=internetarchive/crawling-for-nomore404  # 2019-10-29
+  - REPO=internetarchive/doublethink  # 2019-05-17
+  - REPO=internetarchive/draintasker  # 2018-06-15
+  - REPO=internetarchive/dweb-gateway  # 2020-01-04
+  - REPO=internetarchive/dwebsummit-site-2  # 2019-11-01
+  - REPO=internetarchive/epub3        # 2019-12-05 deborahgu/abbyy-to-epub3
+  - REPO=deborahgu/abbyy-to-epub3
+  - REPO=internetarchive/fatcat       # 2020-01-19
+  - REPO=internetarchive/infogami     # 2020-01-20 infogami/infogami
+  - REPO=infogami/infogami
+  - REPO=internetarchive/liveweb      # 2019-10-22
+  - REPO=internetarchive/map-of-the-web  # 2018-08-17
+  - REPO=internetarchive/openlibrary  # 2020-01-22
+  - REPO=internetarchive/openlibrary-bots  # 2020-01-13
+  - REPO=internetarchive/openlibrary-client  # 2019-05-23
+  - REPO=internetarchive/py-wasapi-client  # 2017-09-22 unt-libraries/py-wasapi-client
+  - REPO=unt-libraries/py-wasapi-client
+  - REPO=internetarchive/rulesengine  # 2019-11-24
+  - REPO=internetarchive/rulesengine-client  # 2019-10-18
+  - REPO=internetarchive/scrapy-warcio  # 2019-12-21
+  - REPO=internetarchive/scribe-redux  # 2016-09-22
+  - REPO=internetarchive/snakebite-py3  # 2020-01-15
+  - REPO=internetarchive/surt         # 2019-12-10 rajbot/surt
+  - REPO=rajbot/surt
+  - REPO=internetarchive/trough       # 2020-01-16
+  - REPO=internetarchive/ultrajson    # 2019-11-04 esnme/ultrajson
+  - REPO=esnme/ultrajson
+  - REPO=internetarchive/umbra        # 2019-12-18
+  - REPO=internetarchive/warc         # 2018-04-20
+  - REPO=internetarchive/warcprox     # 2020-01-08
+  - REPO=internetarchive/warctools    # 2019-12-11
+  - REPO=internetarchive/wayback-discover-diff  # 2020-01-14 ftsalamp/wayback-discover-diff
+  - REPO=ftsalamp/wayback-discover-diff
+  - REPO=internetarchive/wmd          # 2019-08-20 derobins/wmd
+  - REPO=derobins/wmd
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
@@ -32,7 +76,7 @@ script:
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   - SKIP=./openlibrary/catalog/*,./openlibrary/i18n/*,./openlibrary/macros/*,./openlibrary/plugins/*
-  - codespell . -L ba,referer,te --skip=./.*,${SKIP},*.gif,*.js,*.pg_dump,*.png,*.xsd
+  - codespell . -L ba,referer,te --skip=./.*,${SKIP},./.scripts/20*,*.gif,*.js,*.pg_dump,*.png,*.xsd
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
