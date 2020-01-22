@@ -15,54 +15,11 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=IBM/AccDNN                   # 2019-12-02
-  - REPO=IBM/acme-freight-controller  # 2019-07-16
-  - REPO=IBM/admission-control        # 2019-09-05
-  - REPO=IBM/adversarial-robustness-toolbox  # 2020-01-21
-  - REPO=IBM/ai-minimization-toolkit  # 2020-01-14
-  - REPO=IBM/AIF360                   # 2020-01-13
-  - REPO=IBM/aihn-ucsd                # 2019-11-01
-  - REPO=IBM/airexit                  # 2019-06-26
-  - REPO=IBM/aix-ai-sample-wmlce      # 2019-08-26
-  - REPO=IBM/AIX360                   # 2020-01-22
-  - REPO=IBM/AMLSim                   # 2020-01-21
-  - REPO=IBM/ansible-for-i            # 2020-01-15
-  - REPO=IBM/ansible-role-infosvr-import-export  # 2019-08-27
-  - REPO=IBM/ansible-role-infosvr-metadata-asset-manager  # 2019-08-27
-  - REPO=IBM/apic-latency-analytics   # 2019-07-25
-  - REPO=IBM/appsody-template-object-storage-tutorial  # 2019-11-21
-  - REPO=IBM/asoc-devops-tooling      # 2019-06-18
-  - REPO=IBM/audioset-classification  # 2019-04-30
-  - REPO=IBM/Autozoom-Attack          # 2019-01-31
-  - REPO=IBM/avatar-based-dynamic-chatbot-with-ai-and-ar-capabilities  # 2020-01-22
-  - REPO=IBM/backwork                 # 2019-08-17
-  - REPO=IBM/backwork-backup-files    # 2019-08-17
-  - REPO=IBM/backwork-backup-mongo    # 2019-08-17
-  - REPO=IBM/backwork-backup-mysql    # 2019-08-17
-  - REPO=IBM/backwork-backup-postgresql  # 2019-08-18
-  - REPO=IBM/backwork-backup-xtrabackup  # 2019-08-18
-  - REPO=IBM/backwork-notifier-sentry  # 2019-08-18
-  - REPO=IBM/backwork-upload-cos      # 2019-08-17
-  - REPO=IBM/backwork-upload-swift    # 2019-08-18
-  - REPO=IBM/BAGAN                    # 2019-04-18
-  - REPO=IBM/banking-risk-mitigation-nlu-studio  # 2019-05-26
-  - REPO=IBM/BayesLTL                 # 2019-11-19
-  - REPO=IBM/BigLittleNet             # 2019-06-20
-  - REPO=IBM/blockchain-maximo        # 2020-01-16
-  - REPO=IBM/BlueMatter               # 2019-06-07
-  - REPO=IBM/BlueXolo                 # 2020-01-17
-  - REPO=IBM/bLVNet-TAM               # 2019-12-18
-  - REPO=IBM/build-deploy-manage-cloud-native-application-on-openshift  # 2020-01-16
-  - REPO=IBM/build-react-native-app-for-watson-discovery  # 2019-04-19
-  - REPO=IBM/CAST                     # 2020-01-22
-  - REPO=IBM/causallib                # 2019-07-12
-  - REPO=IBM/cc-dbp                   # 2019-12-09
-  - REPO=IBM/cdfsl-benchmark          # 2020-01-21
-  - REPO=IBM/charts                   # 2020-01-22
+  - REPO=internetarchive/openlibrary
 
 install:
   #- pip install -r requirements.txt
-  - pip install flake8  # pytest  # add other testing frameworks later
+  - pip install codespell flake8  # pytest  # add other testing frameworks later
 before_script:
   - URL=https://github.com/${REPO}
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
@@ -74,6 +31,7 @@ script:
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - time flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  - codespell .
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
