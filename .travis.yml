@@ -15,8 +15,7 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jfayre/voice-flight-following
-  - REPO=Qiskit/qiskit-ibmq-provider
+  - REPO=SimpleLegal/pocket_protector
 
 install:
   #- pip install -r requirements.txt
