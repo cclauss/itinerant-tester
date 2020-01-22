@@ -15,15 +15,8 @@ matrix:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Qiskit/qiskit
-  - REPO=Qiskit/qiskit-aer
-  - REPO=Qiskit/qiskit-aqt-provider
-  - REPO=Qiskit/qiskit-aqua
-  - REPO=Qiskit/qiskit-aqua-interfaces
-  - REPO=Qiskit/qiskit-bot
-  - REPO=Qiskit/qiskit-ibmmq-provider
-  - REPO=Qiskit/qiskit-ignis
-  - REPO=Qiskit/qiskit-terra
+  - REPO=jfayre/voice-flight-following
+  - REPO=Qiskit/qiskit-ibmq-provider
 
 install:
   #- pip install -r requirements.txt
