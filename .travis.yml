@@ -16,7 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bitcoin/bips
+  - REPO=public-apis/public-apis
+  - REPO=plotly/dash
+  - REPO=google-research/flax
+  - REPO=TheAlgorithms/Python
+  - REPO=pytorch/ignite
+  - REPO=aws/aws-cli
+  - REPO=Netflix/metaflow
+  - REPO=wagtail/wagtail
+  - REPO=TheSpeedX/TBomb
+  - REPO=ProtonVPN/protonvpn-cli-ng
+  - REPO=readthedocs/readthedocs.org
+  - REPO=quantumblacklabs/kedro
+  - REPO=NVlabs/stylegan2
+  - REPO=RasaHQ/rasa
+  - REPO=ckan/ckan
+  - REPO=datawire/ambassador
+  - REPO=googleapis/google-api-python-client
+  - REPO=minimaxir/big-list-of-naughty-strings
+  - REPO=elceef/dnstwist
+  - REPO=psf/black
+  - REPO=flairNLP/flair
+  - REPO=EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi
+  - REPO=scrapy/scrapy
+  - REPO=pandas-dev/pandas
+  - REPO=hindupuravinash/the-gan-zoo
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
@@ -31,8 +87,7 @@ script:
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  #- codespell . --ignore-words-list=ba,referer --skip=./.* --quiet-level=2 || true
-  - codespell . --ignore-words-list=ba,iff,minimise,mitre,ser,tim,uint,wit --skip=./.*,./bip-0039/*.txt --quiet-level=2
+  - codespell . --ignore-words-list=ba,referer --skip=./.* --quiet-level=2 || true
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
