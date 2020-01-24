@@ -32,7 +32,7 @@ script:
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   #- codespell . --ignore-words-list=ba,referer --skip=./.* --quiet-level=2 || true
-  - codespell . --ignore-words-list=ba,iff,mitre,ser,tim,uint --skip=./.*,./bip-0039/* --quiet-level=2
+  - codespell . --ignore-words-list=ba,iff,minimise,mitre,ser,tim,uint --skip=./.*,./bip-0039/*.txt --quiet-level=2
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
