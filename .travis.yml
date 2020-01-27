@@ -4,7 +4,7 @@ dist: bionic
 language: python
 cache: pip
 python:
-  #- 2.7
+  - 2.7
   #- 3.5
   #- 3.6
   #- 3.7
@@ -16,7 +16,22 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=home-assistant/home-assistant
+  - REPO=robgjansen/braids-tor-simulator  # 2015-03-13
+  - REPO=robgjansen/elf-loader        # 2016-08-11
+  - REPO=robgjansen/libutp            # 2013-09-09 bittorrent/libutp
+  - REPO=bittorrent/libutp
+  - REPO=robgjansen/noobs             # 2016-03-19 raspberrypi/noobs
+  - REPO=raspberrypi/noobs
+  - REPO=robgjansen/onionperf         # archived
+  - REPO=robgjansen/pbs               # 2016-03-31
+  - REPO=robgjansen/privcount         # 2018-08-23 privcount/privcount
+  - REPO=privcount/privcount
+  - REPO=robgjansen/shadow            # 2019-03-05 shadow/shadow
+  - REPO=shadow/shadow
+  - REPO=robgjansen/tor               # 2018-08-23 torproject/tor
+  - REPO=torproject/tor
+  - REPO=robgjansen/tor-ctl-logger    # 2018-02-28
+  - REPO=robgjansen/tps-one-simulator  # 2015-03-13
 
 install:
   #- pip install -r requirements.txt
