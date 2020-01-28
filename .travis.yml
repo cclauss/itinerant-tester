@@ -4,7 +4,7 @@ dist: bionic
 language: python
 cache: pip
 python:
-  - 2.7
+  #- 2.7
   #- 3.5
   #- 3.6
   #- 3.7
@@ -16,23 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=robgjansen/braids-tor-simulator  # 2015-03-13
-  - REPO=robgjansen/elf-loader        # 2016-08-11
-  - REPO=robgjansen/libutp            # 2013-09-09 bittorrent/libutp
-  - REPO=bittorrent/libutp
-  - REPO=robgjansen/noobs             # 2016-03-19 raspberrypi/noobs
-  - REPO=raspberrypi/noobs
-  - REPO=robgjansen/onionperf         # archived
-  - REPO=robgjansen/pbs               # 2016-03-31
-  - REPO=robgjansen/privcount         # 2018-08-23 privcount/privcount
-  - REPO=privcount/privcount
-  - REPO=robgjansen/shadow            # 2019-03-05 shadow/shadow
-  - REPO=shadow/shadow
-  - REPO=robgjansen/tor               # 2018-08-23 torproject/tor
-  - REPO=torproject/tor
-  - REPO=robgjansen/tor-ctl-logger    # 2018-02-28
-  - REPO=robgjansen/tps-one-simulator  # 2015-03-13
-
+  - REPO=lucidrains/reformer-pytorch
+  - REPO=home-assistant/home-assistant
+  - REPO=nextstrain/ncov
+  - REPO=public-apis/public-apis
+  - REPO=pandas-dev/pandas
+  - REPO=sundowndev/PhoneInfoga
+  - REPO=xMistt/fortnitepy-bot
+  - REPO=charles2gan/GDA-android-reversing-Tool
+  - REPO=n1nj4sec/pupy
+  - REPO=0xInfection/Awesome-WAF
+  - REPO=ioncodes/BlueGate
+  - REPO=byt3bl33d3r/MITMf
+  - REPO=rsms/inter
+  - REPO=autorope/donkeycar
+  - REPO=gunthercox/ChatterBot
+  - REPO=benoitc/gunicorn
+  - REPO=filtration/pullit
+  - REPO=epfml/attention-cnn
+  - REPO=hunters-forge/ThreatHunter-Playbook
+  - REPO=sqlmapproject/sqlmap
+  - REPO=xiaolai/regular-investing-in-box
+  - REPO=ytdl-org/youtube-dl
+  - REPO=Rapptz/discord.py
+  - REPO=deep-learning-indaba/Baobab
+  - REPO=Mebus/cupp
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
@@ -46,8 +86,8 @@ script:
   - echo ; echo -n "flake8 testing of ${URL} on " ; python -V
   - time flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
   - echo exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
-  #- flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-  - codespell . --ignore-words-list=hass,datas,files\',hist,iff,lightsensor,ser,unit,wan --skip=./.*,*.json --quiet-level=2 || true
+  - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+  - codespell . --ignore-words-list=ba,referer --skip=./.* --quiet-level=2 || true
   #- true  # pytest --capture=sys
 notifications:
   on_success: change
