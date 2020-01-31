@@ -7,4 +7,4 @@ jobs:
       - uses: actions/setup-python@v1
       - run: pip install black flake8
       - run: black --check .
-      - run: flake8 . --count --max-line-length=88 --show-source --statistics
+      - run: flake8 . --count --max-line-length=361 --show-source --statistics
