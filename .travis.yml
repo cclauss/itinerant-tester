@@ -18,6 +18,8 @@ jobs:
 env:
   - REPO=torproject/tor
   - REPO=quay/quay
+  - REPO=Cisco-Talos/GhIDA
+  - REPO=internetarchive/openlibrary
 
 install:
   #- pip install -r requirements.txt
