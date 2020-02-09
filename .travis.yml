@@ -16,11 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=torproject/tor
-  - REPO=quay/quay
-  - REPO=Cisco-Talos/GhIDA
+  - REPO=domlysz/BlenderGIS
+  - REPO=facebookresearch/pytorch3d
+  - REPO=facebookresearch/meshrcnn
+  - REPO=public-apis/public-apis
+  - REPO=ReFirmLabs/binwalk
+  - REPO=TheAlgorithms/Python
+  - REPO=ageitgey/face_recognition
+  - REPO=tensorflow/models
+  - REPO=Manisso/fsociety
+  - REPO=nvbn/thefuck
+  - REPO=cycz/jdBuyMask
+  - REPO=cyberman219/cloudflare-vpn-for-desktop
+  - REPO=python/cpython
+  - REPO=ytdl-org/youtube-dl
+  - REPO=KevinMusgrave/pytorch-metric-learning
+  - REPO=sherlock-project/sherlock
+  - REPO=aivivn/d2l-vn
+  - REPO=deepfakes/faceswap
+  - REPO=complexdb/zincbase
+  - REPO=hzy46/Deep-Learning-21-Examples
+  - REPO=EvilCult/iptv-m3u-maker
+  - REPO=programthink/zhao
+  - REPO=3b1b/manim
+  - REPO=airbus-cert/comida
+  - REPO=pytorch/examples
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
   - REPO=internetarchive/openlibrary
-
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
