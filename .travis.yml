@@ -16,48 +16,9 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=returntocorp/arrow           # 2019-08-23 apache/arrow
-  - REPO=apache/arrow
-  - REPO=returntocorp/badwords        # 2019-08-07
-  - REPO=returntocorp/bento           # 2020-02-14
-  - REPO=returntocorp/chalice         # 2019-08-23 aws/chalice
-  - REPO=aws/chalice
-  - REPO=returntocorp/check-docs      # 2019-11-13
-  - REPO=returntocorp/check_generic   # 2020-02-20
-  - REPO=returntocorp/cli             # 2019-12-02
-  - REPO=returntocorp/client          # 2019-09-13 wandb/client
-  - REPO=wandb/client
-  - REPO=returntocorp/cloud-custodian  # 2019-08-21 cloud-custodian/cloud-custodian
-  - REPO=cloud-custodian/cloud-custodian
-  - REPO=returntocorp/crossbar        # 2019-08-21 crossbario/crossbar
-  - REPO=crossbario/crossbar
-  - REPO=returntocorp/dagster         # 2019-08-21 dagster-io/dagster
-  - REPO=dagster-io/dagster
-  - REPO=returntocorp/databricks-cli  # 2019-08-21 databricks/databricks-cli
-  - REPO=databricks/databricks-cli
-  - REPO=returntocorp/dateutil        # 2019-08-27 dateutil/dateutil
-  - REPO=dateutil/dateutil
-  - REPO=git/git
-  - REPO=returntocorp/inputset-generator  # 2020-02-12
-  - REPO=returntocorp/jetkit-flask    # 2020-01-06 jetbridge/jetkit-flask
-  - REPO=jetbridge/jetkit-flask
-  - REPO=returntocorp/keras-resnet    # 2019-08-21 broadinstitute/keras-resnet
-  - REPO=broadinstitute/keras-resnet
-  - REPO=returntocorp/ocaml-tree-sitter  # 2020-02-21
-  - REPO=returntocorp/pfff            # 2020-02-21 aryx/pfff
-  - REPO=aryx/pfff
-  - REPO=returntocorp/salus           # 2020-01-14 coinbase/salus
-  - REPO=coinbase/salus
-  - REPO=returntocorp/salus-r2c       # 2020-01-17
-  - REPO=returntocorp/sgrep           # 2020-02-21
-  - REPO=returntocorp/sgrep-action    # 2020-02-02
-  - REPO=returntocorp/sgrep-rules     # 2020-02-21
-  - REPO=returntocorp/traits          # 2019-08-22 enthought/traits
-  - REPO=enthought/traits
-  - REPO=returntocorp/typeshed        # 2019-10-17 python/typeshed
-  - REPO=python/typeshed
-  - REPO=returntocorp/vcd-cli         # 2019-08-21 vmware/vcd-cli
-  - REPO=vmware/vcd-cli
+  - REPO=0voice/interview_internal_reference
+  - REPO=kovidgoyal/kitty         # 2019-08-21 vmware/vcd-cli
+  - REPO=PostHog/posthog
 
 install:
   #- pip install -r requirements.txt
