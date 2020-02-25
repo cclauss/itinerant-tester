@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-URL_BASE = "https://github.com/internetarchive/openlibrary/blob/master"
+URL_BASE = "../blob/master"
 lines = []
 start = ""
 with open("junk.txt") as in_file:
