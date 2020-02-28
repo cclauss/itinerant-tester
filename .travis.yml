@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Netflix/dispatch
+  - REPO=watson-developer-cloud/assistant-improve-recommendations-notebook 
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
