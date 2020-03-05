@@ -16,20 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nextcloud/android            # 2020-03-04
-  - REPO=nextcloud/appstore           # 2020-03-04
-  - REPO=nextcloud/calendar           # 2020-03-04
-  # - REPO=nextcloud/client_theming     # archived
-  - REPO=nextcloud/desktop            # 2020-03-04
-  - REPO=nextcloud/documentation      # 2020-03-04
-  # - REPO=nextcloud/gsoc_client        # archived
-  - REPO=nextcloud/news-updater       # 2018-01-12
-  - REPO=nextcloud/nextcloud-snap     # 2020-02-28
-  - REPO=nextcloud/nextcloudpi        # 2020-03-04
-  - REPO=nextcloud/spreedme-snap      # 2017-09-06
-  - REPO=nextcloud/talk-android       # 2020-03-04
-  - REPO=nextcloud/vm                 # 2020-03-04
-
+  - REPO=tiangolo/fastapi
+  - REPO=0voice/interview_internal_reference
+  - REPO=openai/gpt-2
+  - REPO=facebookresearch/ParlAI
+  - REPO=dmlc/dgl
+  - REPO=mkdocs/mkdocs
+  - REPO=google/fuzzbench
+  - REPO=AntixK/PyTorch-VAE
+  - REPO=pandas-dev/pandas
+  - REPO=miloyip/game-programmer
+  - REPO=public-apis/public-apis
+  - REPO=scikit-learn/scikit-learn
+  - REPO=ExpDev07/coronavirus-tracker-api
+  - REPO=faustomorales/keras-ocr
+  - REPO=tensorflow/models
+  - REPO=jettify/pytorch-optimizer
+  - REPO=paramiko/paramiko
+  - REPO=clovaai/CRAFT-pytorch
+  - REPO=matplotlib/matplotlib
+  - REPO=elastic/elasticsearch-dsl-py
+  - REPO=matterport/Mask_RCNN
+  - REPO=psf/black
+  - REPO=ktbyers/netmiko
+  - REPO=foosel/OctoPrint
+  - REPO=DataDog/integrations-core
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
