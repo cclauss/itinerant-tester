@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=open-Book-Genome-Project/sequencer
+  - REPO=Azure/azure-sdk-for-python
 
 install:
   #- pip install -r requirements.txt
