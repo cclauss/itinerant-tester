@@ -17,6 +17,12 @@ jobs:
     - python: pypy3
 env:
   - REPO=Azure/azure-sdk-for-python
+  - REPO=ibmdb/python-ibmdb
+  - REPO=ibmdb/python-ibmdb-django
+  - REPO=ibmdb/db2pythonbuildpack
+  - REPO=ibmdb/python-ibmdbsa
+  - REPO=ibmdb/python-ibmdbalembic
+  - REPO=ibmdb/db2gobuildpack
 
 install:
   #- pip install -r requirements.txt
