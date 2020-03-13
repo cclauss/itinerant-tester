@@ -17,6 +17,10 @@ jobs:
     - python: pypy3
 env:
   - REPO=AaronWard/covid-19-analysis
+  - REPO=bportaluri/AlaWeb            # 2018-02-11
+  - REPO=bportaluri/LightStrip        # 2018-02-18
+  - REPO=bportaluri/PiWClock          # 2017-11-12
+  - REPO=bportaluri/PyFaceRec         # 2017-02-22
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
