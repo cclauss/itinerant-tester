@@ -16,11 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=AaronWard/covid-19-analysis
-  - REPO=bportaluri/AlaWeb            # 2018-02-11
-  - REPO=bportaluri/LightStrip        # 2018-02-18
-  - REPO=bportaluri/PiWClock          # 2017-11-12
-  - REPO=bportaluri/PyFaceRec         # 2017-02-22
+  - REPO=ollypwn/SMBGhost
+  - REPO=minimaxir/big-list-of-naughty-strings
+  - REPO=google-research/electra
+  - REPO=ExpDev07/coronavirus-tracker-api
+  - REPO=sherlock-project/sherlock
+  - REPO=sedthh/pyxelate
+  - REPO=donnemartin/system-design-primer
+  - REPO=docker/compose
+  - REPO=tensorflow/models
+  - REPO=shenweichen/DeepCTR
+  - REPO=FoldingAtHome/coronavirus
+  - REPO=cve-2020-0796/cve-2020-0796
+  - REPO=google-research/bert
+  - REPO=firmai/pandasvault
+  - REPO=Tencent/DVQA
+  - REPO=mai-lang-chai/Middleware-Vulnerability-detection
+  - REPO=pytorch/fairseq
+  - REPO=PyTorchLightning/pytorch-lightning
+  - REPO=mindsdb/mindsdb
+  - REPO=microsoft/nni
+  - REPO=pre-commit/pre-commit
+  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
+  - REPO=KubeOperator/KubeOperator
+  - REPO=PaddlePaddle/models
+  - REPO=huggingface/transformers
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
