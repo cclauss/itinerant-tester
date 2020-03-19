@@ -16,8 +16,30 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pytonik/pytonik
-  - REPO=matterport/Mask_RCNN
+  - REPO=scottdangelo/AIF360          # 2018-09-24 IBM/AIF360
+  - REPO=IBM/AIF360
+  - REPO=scottdangelo/CinderAA-HAtesting  # 2016-08-12
+  - REPO=scottdangelo/cinderclient-api-microversions  # 2015-09-24
+  - REPO=scottdangelo/dotfiles        # 2019-01-15 cowboy/dotfiles
+  - REPO=cowboy/dotfiles
+  - REPO=scottdangelo/monitor-custom-ml-engine-with-watson-openscale  # 2019-06-10 IBM/monitor-custom-ml-engine-with-watson-openscale
+  - REPO=IBM/monitor-custom-ml-engine-with-watson-openscale
+  - REPO=scottdangelo/nlc-demo        # 2018-04-18 IBM/nlc-icd10-classifier
+  - REPO=IBM/nlc-icd10-classifier
+  - REPO=scottdangelo/pandas          # 2018-09-07 pandas-dev/pandas
+  - REPO=pandas-dev/pandas
+  - REPO=scottdangelo/python-sdk      # 2018-03-16 watson-developer-cloud/python-sdk
+  - REPO=watson-developer-cloud/python-sdk
+  - REPO=scottdangelo/RemoveVolumeMangerLocks  # 2015-09-24
+  - REPO=scottdangelo/route-explorer  # 2018-09-28 lantern-works/route-explorer
+  - REPO=lantern-works/route-explorer
+  - REPO=scottdangelo/scottsTools     # 2016-10-21
+  - REPO=scottdangelo/watson-deep-learning-tensorflow-lite  # 2018-07-31
+  - REPO=scottdangelo/watson-online-store  # 2017-08-04 IBM/watson-online-store
+  - REPO=IBM/watson-online-store
+  - REPO=scottdangelo/watson-waste-sorter  # 2018-03-01 IBM/watson-waste-sorter
+  - REPO=IBM/watson-waste-sorter
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
