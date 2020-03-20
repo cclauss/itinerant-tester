@@ -16,8 +16,20 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=internetarchive/crawling-for-nomore404
-
+  - REPO=comet-ml/comet-content       # 2018-11-08
+  - REPO=comet-ml/comet-examples      # 2020-03-12
+  - REPO=comet-ml/comet-for-mlflow    # 2020-03-12
+  - REPO=comet-ml/comet-sagemaker     # 2019-08-06
+  - REPO=comet-ml/dulwich             # 2020-02-10 dulwich/dulwich
+  - REPO=dulwich/dulwich
+  - REPO=comet-ml/fastai              # 2018-12-05 fastai/fastai
+  - REPO=fastai/fastai
+  - REPO=comet-ml/keras-fruit-classifer  # 2019-05-07
+  - REPO=comet-ml/kubeflow            # 2018-06-05 kubeflow/kubeflow
+  - REPO=kubeflow/kubeflow
+  - REPO=comet-ml/websocket-client    # 2019-02-20 websocket-client/websocket-client
+  - REPO=websocket-client/websocket-client
+  
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
