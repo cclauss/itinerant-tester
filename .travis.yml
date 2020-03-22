@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nodejs/node-auto-test
+  - REPO=dylanjcastillo/google_books_crawler
 
 install:
   #- pip install -r requirements.txt
