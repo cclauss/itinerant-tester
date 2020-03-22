@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dylanjcastillo/google_books_crawler
+  - REPO=Blizzard/s2protocol
 
 install:
   #- pip install -r requirements.txt
