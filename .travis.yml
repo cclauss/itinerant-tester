@@ -16,9 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=pyca/pyopenssl
-  - REPO=LeakCheck/leakcheck-api
-
+  - REPO=datasets/covid-19
+  - REPO=home-assistant/core
+  - REPO=coronasafe/care
+  - REPO=kon9chunkit/GitHub-Chinese-Top-Charts
+  - REPO=google/automl
+  - REPO=tensortrade-org/tensortrade
+  - REPO=J535D165/CoronaWatchNL
+  - REPO=StevenBlack/hosts
+  - REPO=turicas/covid19-br
+  - REPO=OpenMined/PySyft
+  - REPO=python-telegram-bot/python-telegram-bot
+  - REPO=hexway/r00kie-kr00kie
+  - REPO=crinny/b0mb3r
+  - REPO=ycm-core/YouCompleteMe
+  - REPO=Kr1s77/awesome-python-login-model
+  - REPO=sqlmapproject/sqlmap
+  - REPO=KalleHallden/BookOmatic
+  - REPO=apachecn/AiLearning
+  - REPO=Unity-Technologies/ml-agents
+  - REPO=xuannianz/EfficientDet
+  - REPO=COVID19Tracking/covid-tracking-data
+  - REPO=timgrossmann/InstaPy
+  - REPO=geekcomputers/Python
+  - REPO=deezer/spleeter
+  - REPO=scikit-learn/scikit-learn
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
