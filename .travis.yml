@@ -17,6 +17,7 @@ jobs:
     - python: pypy3
 env:
   - REPO=pyca/pyopenssl
+  - REPO=LeakCheck/leakcheck-api
 
 install:
   #- pip install -r requirements.txt
