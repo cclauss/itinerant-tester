@@ -16,10 +16,28 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Blizzard/s2protocol
-  - REPO=Blizzard/node-rdkafka
-  - REPO=Blizzard/heroprotocol
-  - REPO=Blizzard/s2client-proto
+  - REPO=Shokr/data-science-ipython-notebooks  # 2020-01-17 donnemartin/data-science-ipython-notebooks
+  - REPO=donnemartin/data-science-ipython-notebooks
+  - REPO=Shokr/Esalny-Final-Version   # 2020-01-17
+  - REPO=Shokr/HTTPLang               # 2015-08-25 f-prime/HTTPLang
+  - REPO=f-prime/HTTPLang
+  - REPO=Shokr/Image-Metadata-Viewer  # 2016-08-10
+  - REPO=Shokr/JARVIS                 # 2016-08-10
+  - REPO=Shokr/MagicBox               # 2020-03-01
+  - REPO=Shokr/MyMDB                  # 2019-01-13
+  - REPO=Shokr/nltk_tutorial          # 2019-12-14
+  - REPO=Shokr/playing_with_django    # 2020-01-17
+  - REPO=Shokr/Python                 # 2020-01-17 TheAlgorithms/Python
+  - REPO=TheAlgorithms/Python
+  - REPO=Shokr/Python-1               # 2020-02-07 geekcomputers/Python
+  - REPO=geekcomputers/Python
+  - REPO=Shokr/python-patterns        # 2020-01-17 faif/python-patterns
+  - REPO=faif/python-patterns
+  - REPO=Shokr/PythonScripts          # 2020-02-16
+  - REPO=Shokr/pytip                  # 2020-03-21
+  - REPO=Shokr/PyTricks               # 2019-07-08
+  - REPO=Shokr/Stocks-Screener        # 2020-03-08
+  - REPO=Shokr/yalla_invoice          # 2020-02-22
 
 install:
   #- pip install -r requirements.txt
