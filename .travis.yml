@@ -17,6 +17,9 @@ jobs:
     - python: pypy3
 env:
   - REPO=Blizzard/s2protocol
+  - REPO=Blizzard/node-rdkafka
+  - REPO=Blizzard/heroprotocol
+  - REPO=Blizzard/s2client-proto
 
 install:
   #- pip install -r requirements.txt
