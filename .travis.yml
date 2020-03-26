@@ -16,8 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=itsvaibhav01/Demo            # 2020-01-30
-  - REPO=itsvaibhav01/PODEM-py        # 2019-12-21
+  - REPO=apache/cassandra
 
 install:
   #- pip install -r requirements.txt
