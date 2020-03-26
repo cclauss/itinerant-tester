@@ -16,8 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=apache/cassandra
-
+  - REPO=facebookresearch/moco
+  - REPO=baowenbo/DAIN
+  - REPO=geohot/corona
+  - REPO=google-research/seed_rl
+  - REPO=aim-uofa/AdelaiDet
+  - REPO=CodeForPhilly/chime
+  - REPO=datasets/covid-19
+  - REPO=nextstrain/augur
+  - REPO=stanfordnlp/stanza
+  - REPO=tlbootcamp/tlroadmap
+  - REPO=home-assistant/core
+  - REPO=CTF-MissFeng/bayonet
+  - REPO=COVID19Tracking/covid-tracking-data
+  - REPO=huggingface/transformers
+  - REPO=eriklindernoren/ML-From-Scratch
+  - REPO=mpplab/mnssp3
+  - REPO=PyTorchLightning/pytorch-lightning
+  - REPO=mher/flower
+  - REPO=openai/gym
+  - REPO=aj-4/ig-followers
+  - REPO=deepinsight/insightface
+  - REPO=scikit-learn/scikit-learn
+  - REPO=Veil-Framework/Veil
+  - REPO=mkdocs/mkdocs
+  - REPO=astropy/astropy
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
