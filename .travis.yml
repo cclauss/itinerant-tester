@@ -16,32 +16,40 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nextstrain/augur             # 2020-03-27
-  - REPO=nextstrain/augurlinos        # 2019-07-24
-  - REPO=nextstrain/avian-flu         # 2019-12-13
-  - REPO=nextstrain/cli               # 2020-03-16
-  - REPO=nextstrain/cov               # 2020-01-28
-  - REPO=nextstrain/dengue            # 2019-12-11
-  - REPO=nextstrain/ebola             # 2019-12-14
-  - REPO=nextstrain/enterovirus_d68   # 2020-01-23
-  - REPO=nextstrain/fauna             # 2020-03-24
-  - REPO=nextstrain/flora             # 2018-04-11
-  - REPO=nextstrain/janus             # 2018-02-07
-  - REPO=nextstrain/lassa             # 2018-10-10
-  - REPO=nextstrain/measles           # 2019-12-11
-  - REPO=nextstrain/mers              # 2019-08-05
-  - REPO=nextstrain/mers-beast-tutorial  # 2018-09-27
-  - REPO=nextstrain/mumps             # 2020-01-16
-  - REPO=nextstrain/ncov              # 2020-03-27
-  - REPO=nextstrain/rsv               # 2019-01-22
-  - REPO=nextstrain/sacra             # 2018-06-21
-  - REPO=nextstrain/seasonal-cov      # 2020-03-26
-  - REPO=nextstrain/seasonal-flu      # 2020-03-03
-  - REPO=nextstrain/tb                # 2019-12-11
-  - REPO=nextstrain/WNV               # 2019-11-18
-  - REPO=nextstrain/yellow-fever      # 2019-07-04
-  - REPO=nextstrain/zika              # 2019-12-14
-  - REPO=nextstrain/zika-tutorial     # 2019-12-12
+  - REPO=Autodesk/animx               # 2018-11-05
+  - REPO=Autodesk/aomi                # 2020-01-03
+  - REPO=Autodesk/arnold-usd          # 2020-03-27
+  - REPO=Autodesk/bionano-wetLabAccelerator  # 2018-07-28
+  - REPO=Autodesk/cloud-compute-cannon  # 2018-04-28
+  - REPO=Autodesk/cryptorito          # 2018-02-08
+  - REPO=Autodesk/flame-family        # 2020-01-09
+  - REPO=Autodesk/genetic-constructor-ce  # 2019-10-15
+  - REPO=Autodesk/hubble              # 2020-03-23
+  - REPO=Autodesk/maya-usd            # 2020-03-27
+  - REPO=Autodesk/molecular-design-toolkit  # 2018-04-02
+  - REPO=Autodesk/nanodesign          # 2018-04-24
+  - REPO=Autodesk/notebook-molecular-visualization  # 2018-03-30
+  - REPO=Autodesk/propriecle          # 2017-10-03
+  - REPO=Autodesk/pyccc               # 2018-12-19
+  - REPO=Autodesk/quack               # 2019-07-22
+  - REPO=Autodesk/sitoa               # 2020-02-18
+  - REPO=Autodesk/synthesis           # 2020-03-27
+  - REPO=Autodesk/three.js            # 2015-05-14 mrdoob/three.js
+  - REPO=mrdoob/three.js
+  - REPO=StephenFrey/CookBook         # 2020-03-27
+  - REPO=StephenFrey/gspread          # 2019-12-07 burnash/gspread
+  - REPO=burnash/gspread
+  - REPO=StephenFrey/libxlsxwriter    # 2019-12-10 jmcnamara/libxlsxwriter
+  - REPO=jmcnamara/libxlsxwriter
+  - REPO=StephenFrey/pyinstaller      # 2019-12-06 pyinstaller/pyinstaller
+  - REPO=pyinstaller/pyinstaller
+  - REPO=StephenFrey/Pythonista       # 2019-11-21 tdamdouni/Pythonista
+  - REPO=tdamdouni/Pythonista
+  - REPO=StephenFrey/xlrd             # 2016-01-30 jmcnamara/xlrd
+  - REPO=jmcnamara/xlrd
+  - REPO=StephenFrey/XlsxWriter       # 2019-11-24 jmcnamara/XlsxWriter
+  - REPO=jmcnamara/XlsxWriter
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
