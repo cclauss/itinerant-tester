@@ -16,39 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Autodesk/animx               # 2018-11-05
-  - REPO=Autodesk/aomi                # 2020-01-03
-  - REPO=Autodesk/arnold-usd          # 2020-03-27
-  - REPO=Autodesk/bionano-wetLabAccelerator  # 2018-07-28
-  - REPO=Autodesk/cloud-compute-cannon  # 2018-04-28
-  - REPO=Autodesk/cryptorito          # 2018-02-08
-  - REPO=Autodesk/flame-family        # 2020-01-09
-  - REPO=Autodesk/genetic-constructor-ce  # 2019-10-15
-  - REPO=Autodesk/hubble              # 2020-03-23
-  - REPO=Autodesk/maya-usd            # 2020-03-27
-  - REPO=Autodesk/molecular-design-toolkit  # 2018-04-02
-  - REPO=Autodesk/nanodesign          # 2018-04-24
-  - REPO=Autodesk/notebook-molecular-visualization  # 2018-03-30
-  - REPO=Autodesk/propriecle          # 2017-10-03
-  - REPO=Autodesk/pyccc               # 2018-12-19
-  - REPO=Autodesk/quack               # 2019-07-22
-  - REPO=Autodesk/sitoa               # 2020-02-18
-  - REPO=Autodesk/synthesis           # 2020-03-27
-  - REPO=Autodesk/three.js            # 2015-05-14 mrdoob/three.js
-  - REPO=mrdoob/three.js
-  - REPO=StephenFrey/CookBook         # 2020-03-27
-  - REPO=StephenFrey/gspread          # 2019-12-07 burnash/gspread
-  - REPO=burnash/gspread
-  - REPO=StephenFrey/libxlsxwriter    # 2019-12-10 jmcnamara/libxlsxwriter
-  - REPO=jmcnamara/libxlsxwriter
-  - REPO=StephenFrey/pyinstaller      # 2019-12-06 pyinstaller/pyinstaller
-  - REPO=pyinstaller/pyinstaller
-  - REPO=StephenFrey/Pythonista       # 2019-11-21 tdamdouni/Pythonista
-  - REPO=tdamdouni/Pythonista
-  - REPO=StephenFrey/xlrd             # 2016-01-30 jmcnamara/xlrd
-  - REPO=jmcnamara/xlrd
-  - REPO=StephenFrey/XlsxWriter       # 2019-11-24 jmcnamara/XlsxWriter
-  - REPO=jmcnamara/XlsxWriter
+  - REPO=python-excel/xlrd
 
 install:
   #- pip install -r requirements.txt
