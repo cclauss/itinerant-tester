@@ -16,30 +16,31 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=amalgam8/a8ctl               # 2016-12-15
-  - REPO=amalgam8/amalgam8            # 2018-11-19
-  - REPO=amalgam8/console             # 2016-09-13
-  - REPO=amalgam8/envoy               # 2017-11-27 envoyproxy/envoy
-  - REPO=amalgam8/gremlin             # 2017-01-26
-  - REPO=amalgam8/integrations        # 2016-10-12
-  - REPO=envoyproxy/data-plane-api    # 2020-03-30
-  - REPO=envoyproxy/envoy             # 2020-03-31
-  - REPO=envoyproxy/envoy-openssl     # 2020-03-20
-  - REPO=envoyproxy/envoy-perf        # 2019-04-16
-  - REPO=envoyproxy/envoy-tools       # 2018-10-25
-  - REPO=envoyproxy/envoy-wasm        # 2020-03-30
-  - REPO=envoyproxy/katacoda-scenarios  # 2020-01-27
-  - REPO=envoyproxy/nighthawk         # 2020-03-27
-  - REPO=envoyproxy/protoc-gen-validate  # 2020-03-31
-  - REPO=envoyproxy/sql-parser        # 2020-01-10 hyrise/sql-parser
-  - REPO=hyrise/sql-parser
-  - REPO=istio/api                    # 2020-03-30
-  - REPO=istio/envoy                  # 2020-03-26 envoyproxy/envoy
-  - REPO=istio/istio                  # 2020-03-31
-  - REPO=istio/istio.io               # 2020-03-31
-  - REPO=istio/proxy                  # 2020-03-31
-  - REPO=istio/test-infra             # 2020-03-31
-  - REPO=istio/tools                  # 2020-03-30
+  - REPO=jitsi/asr-wer                # 2020-03-22
+  - REPO=jitsi/jicofo                 # 2020-03-31
+  - REPO=jitsi/jitsi-meet-electron-utils  # 2020-03-31
+  - REPO=jitsi/jitsi-meet-react       # archived
+  - REPO=jitsi/jitsi-meet-torture     # 2020-03-31
+  - REPO=jitsi/jitsi-psnr             # 2019-04-09
+  - REPO=jitsi/jitsi-videobridge      # 2020-03-31
+  - REPO=jitsi/node-ibeacons          # 2020-03-13
+  - REPO=jitsi/portaudio              # 2017-01-01
+  - REPO=jitsi/react-native-dual-pedometer  # 2019-11-08 wwdrew/react-native-dual-pedometer
+  - REPO=wwdrew/react-native-dual-pedometer
+  - REPO=jitsi/react-native-fast-image  # 2018-08-30 DylanVann/react-native-fast-image
+  - REPO=DylanVann/react-native-fast-image
+  - REPO=jitsi/react-native-gifted-chat  # 2019-01-07 FaridSafi/react-native-gifted-chat
+  - REPO=FaridSafi/react-native-gifted-chat
+  - REPO=jitsi/react-native-webrtc    # 2020-03-21 react-native-webrtc/react-native-webrtc
+  - REPO=react-native-webrtc/react-native-webrtc
+  - REPO=jitsi/robotjs                # 2020-01-14 octalmage/robotjs
+  - REPO=octalmage/robotjs
+  - REPO=jitsi/strophejs              # 2018-02-07 strophe/strophejs
+  - REPO=strophe/strophejs
+  - REPO=jitsi/webrtc                 # 2019-10-15
+  - REPO=jitsi/winrt-libs             # 2020-03-03
+  - REPO=jitsi/xpc-connect            # 2019-06-06 jongear/xpc-connect
+  - REPO=jongear/xpc-connect
 
 install:
   #- pip install -r requirements.txt
