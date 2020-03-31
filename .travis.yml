@@ -16,38 +16,31 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=cheshirekow/cmake_format
-  - REPO=ckan/ckan
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=matplotlib/matplotlib
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
-  - REPO=getsentry/sentry
-  - REPO=v8/v8
+  - REPO=amalgam8/a8ctl               # 2016-12-15
+  - REPO=amalgam8/amalgam8            # 2018-11-19
+  - REPO=amalgam8/console             # 2016-09-13
+  - REPO=amalgam8/envoy               # 2017-11-27 envoyproxy/envoy
+  - REPO=amalgam8/gremlin             # 2017-01-26
+  - REPO=amalgam8/integrations        # 2016-10-12
+  - REPO=envoyproxy/data-plane-api    # 2020-03-30
+  - REPO=envoyproxy/envoy             # 2020-03-31
+  - REPO=envoyproxy/envoy-openssl     # 2020-03-20
+  - REPO=envoyproxy/envoy-perf        # 2019-04-16
+  - REPO=envoyproxy/envoy-tools       # 2018-10-25
+  - REPO=envoyproxy/envoy-wasm        # 2020-03-30
+  - REPO=envoyproxy/katacoda-scenarios  # 2020-01-27
+  - REPO=envoyproxy/nighthawk         # 2020-03-27
+  - REPO=envoyproxy/protoc-gen-validate  # 2020-03-31
+  - REPO=envoyproxy/sql-parser        # 2020-01-10 hyrise/sql-parser
+  - REPO=hyrise/sql-parser
+  - REPO=istio/api                    # 2020-03-30
+  - REPO=istio/envoy                  # 2020-03-26 envoyproxy/envoy
+  - REPO=istio/istio                  # 2020-03-31
+  - REPO=istio/istio.io               # 2020-03-31
+  - REPO=istio/proxy                  # 2020-03-31
+  - REPO=istio/test-infra             # 2020-03-31
+  - REPO=istio/tools                  # 2020-03-30
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
