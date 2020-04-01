@@ -16,39 +16,10 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=thisismattmiller/carnegie-map  # 2018-02-13 askmike/realtime-webgl-globe
-  - REPO=askmike/realtime-webgl-globe
-  - REPO=thisismattmiller/case-law-judge-directory  # 2017-08-11
-  - REPO=thisismattmiller/catalog-network  # 2015-03-18
-  - REPO=thisismattmiller/ch-timeline-test  # 2018-07-26
-  - REPO=thisismattmiller/dbpedia-author-to-book  # 2015-02-19
-  - REPO=thisismattmiller/dh2013-humanities-citation  # 2013-07-14
-  - REPO=thisismattmiller/geohack-a-thon  # 2013-06-10
-  - REPO=thisismattmiller/gutenberg-authors  # 2015-04-02
-  - REPO=thisismattmiller/hurricane-track-draw  # 2017-10-13
-  - REPO=thisismattmiller/isbn-lookup  # 2018-02-08
-  - REPO=thisismattmiller/knightchallenge  # 2015-03-22
-  - REPO=thisismattmiller/lc-little-lists-bot  # 2018-03-19
-  - REPO=thisismattmiller/lcc-pdf-to-json  # 2015-08-03
-  - REPO=thisismattmiller/linked-jazz-network  # 2014-06-19
-  - REPO=thisismattmiller/marc-json-schema  # 2016-10-31
-  - REPO=thisismattmiller/marc-to-wikidata-mapping  # 2019-05-15
-  - REPO=thisismattmiller/metadata-proxy  # 2018-04-06
-  - REPO=thisismattmiller/metro-lod-webinar-2015  # 2015-07-23
-  - REPO=thisismattmiller/padb.net    # 2020-01-12
-  - REPO=thisismattmiller/pdcutup     # 2019-11-02
-  - REPO=thisismattmiller/pfch-lecture-reg-exp  # 2020-03-27
-  - REPO=thisismattmiller/rfc-experiment  # 2017-04-06
-  - REPO=thisismattmiller/scrape-iiif  # 2020-02-08
-  - REPO=thisismattmiller/smithsonian-open-access  # 2020-02-28
-  - REPO=thisismattmiller/sound-effect-bot  # 2019-09-06
-  - REPO=thisismattmiller/thisismattmiller  # 2020-02-28
-  - REPO=thisismattmiller/triple-builder  # 2019-07-27
-  - REPO=thisismattmiller/tulane-viz  # 2015-02-10
-  - REPO=thisismattmiller/viaf-match  # 2014-09-01 wjlevay/tulane-jazz-data
-  - REPO=wjlevay/tulane-jazz-data
-  - REPO=thisismattmiller/viz4lib-2015  # 2015-02-09
-  - REPO=thisismattmiller/zork-extract  # 2019-04-16
+  - REPO=nucleic/kiwi
+  - REPO=nucleic/atom
+  - REPO=nucleic/cppy
+  - REPO=nucleic/enaml 
   
 install:
   #- pip install -r requirements.txt
