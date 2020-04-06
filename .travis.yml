@@ -16,8 +16,13 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mikaelho/onedriver
-  
+  - REPO=cnr-isti-vclab/HexaLab       # 2019-07-21 c4stan/HexaLab
+  - REPO=c4stan/HexaLab
+  - REPO=cnr-isti-vclab/meshlab       # 2020-04-06
+  - REPO=cnr-isti-vclab/relight       # 2020-02-04
+  - REPO=cnr-isti-vclab/ReviewerNet   # 2020-04-06
+  - REPO=cnr-isti-vclab/TagLab        # 2020-03-10
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
