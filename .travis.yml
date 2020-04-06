@@ -16,10 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=nucleic/kiwi
-  - REPO=nucleic/atom
-  - REPO=nucleic/cppy
-  - REPO=nucleic/enaml 
+  - REPO=mikaelho/onedriver
   
 install:
   #- pip install -r requirements.txt
