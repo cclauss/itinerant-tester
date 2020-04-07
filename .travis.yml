@@ -16,13 +16,57 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cnr-isti-vclab/HexaLab       # 2019-07-21 c4stan/HexaLab
-  - REPO=c4stan/HexaLab
-  - REPO=cnr-isti-vclab/meshlab       # 2020-04-06
-  - REPO=cnr-isti-vclab/relight       # 2020-02-04
-  - REPO=cnr-isti-vclab/ReviewerNet   # 2020-04-06
-  - REPO=cnr-isti-vclab/TagLab        # 2020-03-10
-
+  - REPO=internetarchive/acs4_py      # 2020-01-22
+  - REPO=mikemccabe/analyze_ocr
+  - REPO=internetarchive/archive-analysis  # 2016-07-12 vinaygoel/archive-analysis
+  - REPO=vinaygoel/archive-analysis
+  - REPO=rajbot/autocrop
+  - REPO=internetarchive/bookserver   # 2018-11-01
+  - REPO=internetarchive/brozzler     # 2020-04-07
+  - REPO=internetarchive/CDX-Writer   # 2020-04-06 rajbot/CDX-Writer
+  - REPO=rajbot/CDX-Writer
+  - REPO=internetarchive/crawling-for-nomore404  # 2020-03-20
+  - REPO=internetarchive/doublethink  # 2019-05-17
+  - REPO=internetarchive/draintasker  # 2018-06-15
+  - REPO=internetarchive/dweb-gateway  # 2020-01-04
+  - REPO=internetarchive/dwebsummit-site-2  # 2020-02-12
+  - REPO=internetarchive/epub         # 2016-01-18
+  - REPO=internetarchive/epub3        # 2019-12-05 deborahgu/abbyy-to-epub3
+  - REPO=deborahgu/abbyy-to-epub3
+  - REPO=internetarchive/fatcat       # 2020-04-01
+  - REPO=internetarchive/IAWatchBot   # 2012-03-26 dmontalvo/IAWatchBot
+  - REPO=dmontalvo/IAWatchBot
+  - REPO=internetarchive/infogami     # 2020-03-25 infogami/infogami
+  - REPO=infogami/infogami
+  - REPO=internetarchive/liveweb      # 2019-10-22
+  - REPO=internetarchive/map-of-the-web  # 2018-08-17
+  - REPO=jlopez/maxmind-geoip
+  - REPO=internetarchive/openlibrary  # 2020-04-07
+  - REPO=internetarchive/openlibrary-bots  # 2020-04-07
+  - REPO=internetarchive/openlibrary-client  # 2020-03-22
+  - REPO=internetarchive/pdf_trio     # 2020-02-19 tralfamadude/pdf_trio
+  - REPO=tralfamadude/pdf_trio
+  - REPO=internetarchive/poppler-ia   # 2009-11-25
+  - REPO=internetarchive/py-wasapi-client  # 2017-09-22 unt-libraries/py-wasapi-client
+  - REPO=unt-libraries/py-wasapi-client
+  - REPO=internetarchive/rulesengine  # 2020-02-11
+  - REPO=internetarchive/rulesengine-client  # 2019-10-18
+  - REPO=internetarchive/scrapy-warcio  # 2019-12-21
+  - REPO=internetarchive/snakebite-py3  # 2020-01-15
+  - REPO=internetarchive/surt         # 2020-02-14 rajbot/surt
+  - REPO=rajbot/surt
+  - REPO=internetarchive/trough       # 2020-02-03
+  - REPO=internetarchive/ultrajson    # 2019-11-04 ultrajson/ultrajson
+  - REPO=ultrajson/ultrajson
+  - REPO=internetarchive/umbra        # 2019-12-18
+  - REPO=internetarchive/warc         # 2018-04-20
+  - REPO=internetarchive/warcprox     # 2020-02-06
+  - REPO=internetarchive/warctools    # 2019-12-11
+  - REPO=internetarchive/wayback-discover-diff  # 2020-01-14 ftsalamp/wayback-discover-diff
+  - REPO=ftsalamp/wayback-discover-diff
+  - REPO=internetarchive/wmd          # 2019-08-20 derobins/wmd
+  - REPO=derobins/wmd
+  
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
