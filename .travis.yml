@@ -16,51 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jjjake/api.archive.org       # 2015-05-26 ArchiveLabs/api.archivelab.org
-  - REPO=ArchiveLabs/api.archivelab.org
-  - REPO=jjjake/biorxvr               # 2014-09-19
-  - REPO=boto/botocore
-  - REPO=jjjake/courtlistener         # 2018-03-08 freelawproject/courtlistener
-  - REPO=freelawproject/courtlistener
-  - REPO=jjjake/darwin-online         # 2015-12-01
-  - REPO=ab2525/FlickrFckr
-  - REPO=jjjake/fyeo                  # 2014-05-05
-  - REPO=jjjake/giganews              # 2014-06-05
-  - REPO=jjjake/iagitup               # 2017-08-07 gdamdam/iagitup
-  - REPO=gdamdam/iagitup
-  - REPO=jjjake/iamine                # 2017-06-13
-  - REPO=jjjake/iawayback             # 2015-12-17 bitsgalore/iawayback
-  - REPO=bitsgalore/iawayback
-  - REPO=jjjake/ia_plugin             # 2016-08-16
-  - REPO=jjjake/ia_recent             # 2016-07-06 JesseWeinstein/ia_recent
-  - REPO=JesseWeinstein/ia_recent
-  - REPO=jjjake/ia_simplelists        # 2018-01-13
-  - REPO=jjjake/ingestion             # 2018-01-26 dpla/ingestion
-  - REPO=dpla/ingestion
-  - REPO=jjjake/Internet-Archive-NASA-Feed-Scraper  # 2012-05-16
-  - REPO=jjjake/internetarchive       # 2020-04-07
-  - REPO=jjjake/internetarchive-transfer-scripts  # 2016-02-16 helgeho/internetarchive-transfer-scripts
-  - REPO=helgeho/internetarchive-transfer-scripts
-  - REPO=jjjake/lazytable             # 2015-10-01 samuelinsf/lazytable
-  - REPO=samuelinsf/lazytable
-  - REPO=rajbot/NASA-Images-Facet-Extractor
-  - REPO=jjjake/O_C                   # 2017-02-06 timchurches/O_C
-  - REPO=timchurches/O_C
-  - REPO=jjjake/pex                   # 2016-08-03 pantsbuild/pex
-  - REPO=pantsbuild/pex
-  - REPO=jjjake/pubmed-arxivr         # 2014-10-02
-  - REPO=jjjake/pyyaml-wheels         # 2015-05-13 MacPython/pyyaml-wheels
-  - REPO=MacPython/pyyaml-wheels
-  - REPO=jjjake/soundcloud-cli        # 2014-12-20 zeekay/soundcloud-cli
-  - REPO=zeekay/soundcloud-cli
-  - REPO=jjjake/sporting-commons-utils  # 2019-10-25
-  - REPO=jjjake/tubeup                # 2019-07-09 bibanon/tubeup
-  - REPO=bibanon/tubeup
-  - REPO=jjjake/uspto_uploader        # 2014-05-02
-  - REPO=jjjake/voicebase             # 2015-09-24
-  - REPO=jjjake/World-Trade-Center-Scraper  # 2011-10-14
-  - REPO=jjjake/wptools               # 2016-11-07 siznax/wptools
-  - REPO=siznax/wptools
+  - REPO= fsevents/fsevents 
   
 install:
   #- pip install -r requirements.txt
