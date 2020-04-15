@@ -16,7 +16,17 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=keleshev/schema
+  - REPO=ScarlettRed/EQT_FRICTION_HACKS  # 2019-10-30 shivam-kapila/EQT_FRICTION_HACKS
+  - REPO=shivam-kapila/EQT_FRICTION_HACKS
+  - REPO=ScarlettRed/ExEplore         # 2019-10-30 Kartikay26/ExEplore
+  - REPO=Kartikay26/ExEplore
+  - REPO=ScarlettRed/flask_blog       # 2019-10-13 shivam-kapila/flask_blog
+  - REPO=shivam-kapila/flask_blog
+  - REPO=ScarlettRed/Flask__          # 2019-10-30 shubhamwert/Flask__
+  - REPO=shubhamwert/Flask__
+  - REPO=ScarlettRed/openlibrary      # 2020-04-14 internetarchive/openlibrary
+  - REPO=internetarchive/openlibrary
+  
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
