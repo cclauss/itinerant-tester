@@ -16,28 +16,8 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=SemanticLab/CSV2RDF          # 2018-04-25
-  - REPO=SemanticLab/DADAlytics-docker-nltk  # 2018-05-01
-  - REPO=SemanticLab/DADAlytics-ner-evaluation  # 2018-12-18
-  - REPO=SemanticLab/data-2-wikibase  # 2018-11-20
-  - REPO=SemanticLab/lj-api-network-dockerized  # 2020-01-25
-  - REPO=SemanticLab/Runs-in-the-Family  # 2018-05-01
-  - REPO=SemanticLab/simple-csv-to-rdf  # 2018-04-12
-  - REPO=SemanticLab/wikibase-load-scripts  # 2020-04-16
-  - REPO=SemanticLab/WikidataIntegrator  # 2018-03-02 SuLab/WikidataIntegrator
-  - REPO=SuLab/WikidataIntegrator
-  - REPO=cdrini/catharbot             # 2017-09-14 hornc/catharbot
-  - REPO=hornc/catharbot
-  - REPO=cdrini/DocsSyntaxHighlighting  # 2014-01-25
-  - REPO=cdrini/kotlin-web-site       # 2019-09-07 JetBrains/kotlin-web-site
-  - REPO=JetBrains/kotlin-web-site
-  - REPO=cdrini/openlibrary           # 2020-04-16 internetarchive/openlibrary
-  - REPO=internetarchive/openlibrary
-  - REPO=cdrini/openlibrary-client    # 2019-05-23 internetarchive/openlibrary-client
-  - REPO=internetarchive/openlibrary-client
-  - REPO=cdrini/openlibrary-wikidata-bot  # 2020-04-15
-  - REPO=cdrini/xtools                # 2015-10-24 x-tools/xtools-legacy
-  - REPO=x-tools/xtools-legacy
+  - REPO=LiftoffSoftware/htmltag
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
