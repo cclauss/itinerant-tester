@@ -16,7 +16,10 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=LiftoffSoftware/htmltag
+  - REPO=xxao/msread                  # 2020-04-10
+  - REPO=xxao/papyrus                 # 2019-11-27
+  - REPO=xxao/pero                    # 2020-04-21
+  - REPO=xxao/rebrick                 # 2020-01-07
 
 install:
   #- pip install -r requirements.txt
