@@ -16,12 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=bluedaze/bugcrowd-levelup-subdomain-enumeration  # 2019-02-05 appsecco/bugcrowd-levelup-subdomain-enumeration
-  - REPO=appsecco/bugcrowd-levelup-subdomain-enumeration
-  - REPO=bluedaze/CeasarCipher        # 2019-12-10
-  - REPO=bluedaze/GetComicsScraper    # 2019-08-02
-  - REPO=bluedaze/PredictitScripts    # 2020-04-19
-  - REPO=bluedaze/PythonCookBook      # 2019-10-25
+  - REPO=StephenFrey/CookBook
 
 install:
   #- pip install -r requirements.txt
