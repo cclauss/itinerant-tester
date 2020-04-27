@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=MartinPacker/filterCSV
+  - REPO=okken/cards
 
 install:
   #- pip install -r requirements.txt
