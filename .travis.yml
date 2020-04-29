@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=podgorskiy/ALAE
+  - REPO=igortg/pycon2020-pytest-regressions
 
 install:
   #- pip install -r requirements.txt
