@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=CFMTech/pytest-monitor
+  - REPO=ifzhang/FairMOT 
 
 install:
   #- pip install -r requirements.txt
