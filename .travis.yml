@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ifzhang/FairMOT 
+  - REPO=loretoparisi/lshash
 
 install:
   #- pip install -r requirements.txt
