@@ -16,22 +16,16 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=packit-service/dashboard     # 2020-04-15
-  - REPO=packit-service/deployment    # 2020-05-13
-  - REPO=packit-service/dist-git-to-source-git  # 2020-04-28
-  - REPO=packit-service/hello-world   # 2020-05-04
-  - REPO=packit-service/ogr           # 2020-05-12
-  - REPO=packit-service/packit        # 2020-05-11
-  - REPO=packit-service/packit-service  # 2020-05-13
-  - REPO=packit-service/packit-service-centosmsg  # 2020-05-06
-  - REPO=packit-service/packit-service-fedmsg  # 2020-05-06
-  - REPO=packit-service/pre-commit-hooks  # 2019-11-26
-  - REPO=packit-service/requre        # 2020-05-11
-  - REPO=packit-service/research      # 2020-05-06
-  - REPO=packit-service/sandcastle    # 2020-04-22
-  - REPO=packit-service/systemd-rhel8-flock  # 2020-02-18
-  - REPO=packit-service/upsint        # 2020-03-23
-
+  - REPO=quay/appr                    # 2020-04-27 app-registry/appr
+  - REPO=app-registry/appr
+  - REPO=quay/dba-operator            # 2020-01-03
+  - REPO=quay/mockldap                # 2020-01-20 psagers/mockldap
+  - REPO=psagers/mockldap
+  - REPO=quay/py-bitbucket            # 2020-01-29 coreos/py-bitbucket
+  - REPO=coreos/py-bitbucket
+  - REPO=quay/quay                    # 2020-05-14
+  - REPO=quay/quay-docs               # 2020-05-14
+  
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
