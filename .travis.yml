@@ -16,15 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=quay/appr                    # 2020-04-27 app-registry/appr
-  - REPO=app-registry/appr
-  - REPO=quay/dba-operator            # 2020-01-03
-  - REPO=quay/mockldap                # 2020-01-20 psagers/mockldap
-  - REPO=psagers/mockldap
-  - REPO=quay/py-bitbucket            # 2020-01-29 coreos/py-bitbucket
-  - REPO=coreos/py-bitbucket
-  - REPO=quay/quay                    # 2020-05-14
-  - REPO=quay/quay-docs               # 2020-05-14
+  - REPO=EONRaider/blackhat-python3
   
 install:
   #- pip install -r requirements.txt
