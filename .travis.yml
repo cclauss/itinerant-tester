@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=EONRaider/blackhat-python3
+  - REPO=ibm/visual-insights-custom-models
   
 install:
   #- pip install -r requirements.txt
