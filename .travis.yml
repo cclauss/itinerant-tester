@@ -16,8 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=jrnl-org/jrnl
-  - REPO=maebert/jrnl
+  - REPO=google/benchmark
   
 install:
   #- pip install -r requirements.txt
