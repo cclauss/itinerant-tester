@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=blackfireio/python-sdk
+  - REPO=songdi/webpy-socketio
 
 install:
   #- pip install -r requirements.txt
