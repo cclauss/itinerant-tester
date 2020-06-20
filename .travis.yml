@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Open-Book-Genome-Project/sequencer/issues
+  - REPO=Open-Book-Genome-Project/sequencer
 
 install:
   #- pip install -r requirements.txt
