@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=celery/kombu
+  - REPO=github/super-linter
 
 install:
   #- pip install -r requirements.txt
