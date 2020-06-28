@@ -16,63 +16,9 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=alievk/avatarify
-  - REPO=m4ll0k/Bug-Bounty-Toolz
-  - REPO=donnemartin/data-science-ipython-notebooks
-  - REPO=iduta/pyconv
-  - REPO=RasaHQ/rasa
-  - REPO=Deep-MI/FastSurfer
-  - REPO=willmcgugan/rich
-  - REPO=ildoonet/tf-pose-estimation
-  - REPO=d2l-ai/d2l-en
-  - REPO=Gallopsled/pwntools
-  - REPO=quantopian/zipline
-  - REPO=AlexxIT/YandexStation
-  - REPO=devanshbatham/Awesome-Bugbounty-Writeups
-  - REPO=deezer/spleeter
-  - REPO=vsitzmann/siren
-  - REPO=shenweichen/DeepCTR
-  - REPO=microsoft/forecasting
-  - REPO=PrefectHQ/prefect
-  - REPO=VPanjeta/ModiScript
-  - REPO=libratbag/piper
-  - REPO=Ultimaker/Cura
-  - REPO=frappe/erpnext
-  - REPO=deeppomf/DeepCreamPy
-  - REPO=wrenfairbank/telegram_gcloner
-  - REPO=wistbean/learn_python3_spider
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=cheshirekow/cmake_format
-  - REPO=ckan/ckan
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=matplotlib/matplotlib
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
-  - REPO=getsentry/sentry
-  - REPO=v8/v8
+  - REPO=Ultimaker/Uranium
+  
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
