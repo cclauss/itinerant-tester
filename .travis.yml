@@ -16,8 +16,8 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Neo23x0/sigma
-  - REPO=mandatoryprogrammer/TrustTrees
+  - REPO=tensorflow/tensorflow
+  - REPO=tensorflow/models
 
 install:
   #- pip install -r requirements.txt
