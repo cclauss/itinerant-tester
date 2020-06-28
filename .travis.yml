@@ -16,7 +16,8 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=ipython/ipython
+  - REPO=Neo23x0/sigma
+  - REPO=mandatoryprogrammer/TrustTrees
 
 install:
   #- pip install -r requirements.txt
