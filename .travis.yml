@@ -16,9 +16,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Ultimaker/Uranium
-  
-
+  - REPO=alievk/avatarify
+  - REPO=danielegrattarola/spektral
+  - REPO=m4ll0k/Bug-Bounty-Toolz
+  - REPO=QData/TextAttack
+  - REPO=donnemartin/data-science-ipython-notebooks
+  - REPO=zhzyker/exphub
+  - REPO=wistbean/learn_python3_spider
+  - REPO=bojone/bert4keras
+  - REPO=Gallopsled/pwntools
+  - REPO=521xueweihan/HelloGitHub
+  - REPO=Dod-o/Statistical-Learning-Method_Code
+  - REPO=deepglint/EasyQuant
+  - REPO=python-telegram-bot/python-telegram-bot
+  - REPO=sharanya02/Virtual-Hover-Pen
+  - REPO=yunjey/pytorch-tutorial
+  - REPO=willmcgugan/rich
+  - REPO=vsitzmann/siren
+  - REPO=clovaai/stargan-v2
+  - REPO=h2y/Shadowrocket-ADBlock-Rules
+  - REPO=hankcs/HanLP
+  - REPO=soimort/you-get
+  - REPO=ct-Open-Source/tuya-convert
+  - REPO=ildoonet/tf-pose-estimation
+  - REPO=swisskyrepo/PayloadsAllTheThings
+  - REPO=vyperlang/vyper
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
