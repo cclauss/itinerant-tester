@@ -16,7 +16,31 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=m4ll0k/Bug-Bounty-Toolz
+  - REPO=FIWARE/cloud.Cloto           # 2018-08-02
+  - REPO=FIWARE/cloud.Commons         # 2016-03-02
+  - REPO=FIWARE/cloud.Facts           # 2016-10-13
+  - REPO=FIWARE/cloud.PaaS            # 2018-10-17
+  - REPO=FIWARE/cloud.SDC             # 2016-09-30
+  - REPO=FIWARE/context.Orion-LD      # 2020-06-25 telefonicaid/fiware-orion
+  - REPO=telefonicaid/fiware-orion
+  - REPO=FIWARE/data-models           # 2020-06-26
+  - REPO=FIWARE/ops.Aiakos            # 2018-10-26
+  - REPO=FIWARE/ops.Fidash            # 2016-10-04
+  - REPO=FIWARE/ops.Flavor-sync       # 2016-09-08
+  - REPO=FIWARE/ops.Fuel-main-dev     # 2017-09-22
+  - REPO=FIWARE/ops.Glancesync        # 2016-11-15
+  - REPO=FIWARE/ops.Health            # 2018-06-05
+  - REPO=FIWARE/ops.Maintenance-calendar  # 2018-08-01
+  - REPO=FIWARE/ops.Monitoring        # 2016-11-30
+  - REPO=FIWARE/ops.Skuld             # 2016-11-28
+  - REPO=FIWARE/ops.Sla-dashboard     # 2016-05-05
+  - REPO=FIWARE/ops.Validator         # 2018-08-01
+  - REPO=FIWARE/test.Functional       # 2018-12-06
+  - REPO=FIWARE/tools.Fabre           # 2016-09-23
+  - REPO=FIWARE/tools.Md2pdf          # 2018-06-06
+  - REPO=FIWARE/tutorials.Edge-Computing  # 2020-05-26
+  - REPO=FIWARE/tutorials.TourGuide-App  # 2018-09-11
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
