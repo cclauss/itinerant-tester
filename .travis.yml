@@ -16,9 +16,8 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cal-pratt/SheetVision
-  - REPO=alievk/avatarify
-  - REPO=BurakDev/hotoloti
+  - REPO=cal-pratt/hotoloti
+  - REPO=QuantEcon/MatchingMarkets.py
 
 install:
   #- pip install -r requirements.txt
