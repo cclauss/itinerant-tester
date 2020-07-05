@@ -16,7 +16,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=hzeller/pi-registerplex
+  - REPO=KMx404/noahark
 
 install:
   #- pip install -r requirements.txt
