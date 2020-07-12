@@ -16,63 +16,10 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=deezer/spleeter
-  - REPO=huggingface/nlp
-  - REPO=iperov/DeepFaceLab
-  - REPO=Z4nzu/hackingtool
-  - REPO=Avik-Jain/100-Days-Of-ML-Code
-  - REPO=tiangolo/fastapi
-  - REPO=DarkSecDevelopers/HiddenEye
-  - REPO=python-telegram-bot/python-telegram-bot
-  - REPO=maudzung/Complex-YOLOv4-Pytorch
-  - REPO=unit8co/darts
-  - REPO=tensorflow/models
-  - REPO=lazyprogrammer/machine_learning_examples
-  - REPO=open-mmlab/mmsegmentation
-  - REPO=keras-team/keras
-  - REPO=home-assistant/core
-  - REPO=scikit-image/scikit-image
-  - REPO=corpnewt/gibMacOS
-  - REPO=Ericsson/codechecker
-  - REPO=matplotlib/matplotlib
-  - REPO=ranaroussi/yfinance
-  - REPO=openai/image-gpt
-  - REPO=google-research/torchsde
-  - REPO=freqtrade/freqtrade
-  - REPO=khast3x/h8mail
-  - REPO=mbadry1/DeepLearning.ai-Summary
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=CoreSecurity/impacket
-  - REPO=internetarchive/openlibrary
-  - REPO=google/ffn
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=cheshirekow/cmake_format
-  - REPO=ckan/ckan
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions
-  - REPO=apache/spark
-  - REPO=Tribler/tribler
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=matplotlib/matplotlib
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=hyperledger/fabric-sdk-py
-  - REPO=getsentry/sentry
-  - REPO=v8/v8
+  - REPO=nmccrea/EuclideanGeometryViewer  # 2013-11-08 dov/EuclideanGeometryViewer
+  - REPO=dov/EuclideanGeometryViewer
+  - REPO=nmccrea/sobot-rimulator      # 2019-05-24
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
