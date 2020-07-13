@@ -16,7 +16,70 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=v8/v8
+  - REPO=Roborock-OpenSource/Cullinan  # 2019-07-13
+  - REPO=RockRobo/BehaviorTree.CPP    # 2019-07-02 BehaviorTree/BehaviorTree.CPP
+  - REPO=BehaviorTree/BehaviorTree.CPP
+  - REPO=RockRobo/cartographer        # 2019-07-02 cartographer-project/cartographer
+  - REPO=cartographer-project/cartographer
+  - REPO=RockRobo/cartographer_ros    # 2019-07-02 ros2/cartographer_ros
+  - REPO=ros2/cartographer_ros
+  - REPO=RockRobo/geometry2           # 2019-07-02 ros2/geometry2
+  - REPO=ros2/geometry2
+  - REPO=RockRobo/move_base_flex      # 2020-03-24 magazino/move_base_flex
+  - REPO=magazino/move_base_flex
+  - REPO=RockRobo/navigation          # 2020-05-19 ros-planning/navigation
+  - REPO=ros-planning/navigation
+  - REPO=RockRobo/navigation2         # 2019-07-02 ros-planning/navigation2
+  - REPO=ros-planning/navigation2
+  - REPO=RockRobo/teb_local_planner   # 2020-05-22 rst-tu-dortmund/teb_local_planner
+  - REPO=rst-tu-dortmund/teb_local_planner
+  - REPO=Matze693/XiaomiVacuumCleanerTelegramBot
+  - REPO=PrefectHQ/prefect
+  - REPO=home-assistant/core
+  - REPO=rytilahti/aiodns             # 2020-04-06 saghul/aiodns
+  - REPO=saghul/aiodns
+  - REPO=rytilahti/aiohttp-socks      # 2020-04-02 romis2012/aiohttp-socks
+  - REPO=romis2012/aiohttp-socks
+  - REPO=rytilahti/android-backup-tools  # 2018-06-06 bluec0re/android-backup-tools
+  - REPO=bluec0re/android-backup-tools
+  - REPO=rytilahti/async_upnp_client  # 2018-12-10 StevenLooman/async_upnp_client
+  - REPO=StevenLooman/async_upnp_client
+  - REPO=rytilahti/dustcloud          # 2018-01-10 dgiese/dustcloud
+  - REPO=dgiese/dustcloud
+  - REPO=rytilahti/home-assistant     # 2020-07-10 home-assistant/core
+  - REPO=home-assistant/core
+  - REPO=rytilahti/home-assistant-cli  # 2018-01-20 home-assistant-ecosystem/home-assistant-cli
+  - REPO=home-assistant-ecosystem/home-assistant-cli
+  - REPO=rytilahti/homeassistant-mpris-bridge  # 2020-05-26
+  - REPO=rytilahti/homeassistant-upnp-availability  # 2020-05-20
+  - REPO=rytilahti/humblebundle-downloader  # 2020-05-17 xtream1101/humblebundle-downloader
+  - REPO=xtream1101/humblebundle-downloader
+  - REPO=rytilahti/netdisco           # 2019-03-02 home-assistant/netdisco
+  - REPO=home-assistant/netdisco
+  - REPO=rytilahti/pycares            # 2020-04-06 saghul/pycares
+  - REPO=saghul/pycares
+  - REPO=rytilahti/pyHS100            # 2019-11-11 GadgetReactor/pyHS100
+  - REPO=GadgetReactor/pyHS100
+  - REPO=rytilahti/pytest-voluptuous  # 2018-02-13 F-Secure/pytest-voluptuous
+  - REPO=F-Secure/pytest-voluptuous
+  - REPO=rytilahti/python-dbus-next   # 2020-05-02 altdesktop/python-dbus-next
+  - REPO=altdesktop/python-dbus-next
+  - REPO=rytilahti/python-eq3bt       # 2020-03-03
+  - REPO=rytilahti/python-firetv      # 2017-10-05 happyleavesaoc/python-firetv
+  - REPO=happyleavesaoc/python-firetv
+  - REPO=rytilahti/python-kasa        # 2020-07-12 python-kasa/python-kasa
+  - REPO=python-kasa/python-kasa
+  - REPO=rytilahti/python-miio        # 2020-07-12
+  - REPO=rytilahti/python-nucled      # 2018-10-02
+  - REPO=rytilahti/python-songpal     # 2020-06-21
+  - REPO=rytilahti/python-ubus        # 2018-05-22
+  - REPO=rytilahti/python-yeelight    # 2017-01-11 skorokithakis/python-yeelight
+  - REPO=skorokithakis/python-yeelight
+  - REPO=rytilahti/python-yeelightbt  # 2020-04-04
+  - REPO=rytilahti/ripe-atlas-tools   # 2017-04-13 RIPE-NCC/ripe-atlas-tools
+  - REPO=RIPE-NCC/ripe-atlas-tools
+  - REPO=rytilahti/zmap               # 2020-01-22 zmap/zmap
+  - REPO=zmap/zmap
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
