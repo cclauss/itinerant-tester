@@ -16,7 +16,138 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=cartographer-project/cartographer_ros
+  - REPO=calebstewart/
+
+
+pwncat
+  - REPO=MrMimic/
+
+
+data-scientist-roadmap
+  - REPO=gradio-app/
+
+
+gradio
+  - REPO=vishnubob/
+
+
+wait-for-it
+  - REPO=open-mmlab/
+
+
+mmdetection
+  - REPO=iGhibli/
+
+
+iOS-DeviceSupport
+  - REPO=great-expectations/
+
+
+great_expectations
+  - REPO=python-poetry/
+
+
+poetry
+  - REPO=Neo23x0/
+
+
+sigma
+  - REPO=RasaHQ/
+
+
+rasa
+  - REPO=facebookresearch/
+
+
+detectron2
+  - REPO=datawire/
+
+
+ambassador
+  - REPO=ncic-sugon/
+
+
+OODA-FLOW-Bioimage-Pipeline
+  - REPO=ncic-sugon/
+
+
+OODA-FLOW
+  - REPO=mnielsen/
+
+
+neural-networks-and-deep-learning
+  - REPO=ncic-sugon/
+
+
+OODA-FLOW-Gene-Pipeline
+  - REPO=snorkel-team/
+
+
+snorkel
+  - REPO=chipik/
+
+
+SAP_RECON
+  - REPO=JDAI-CV/
+
+
+fast-reid
+  - REPO=frappe/
+
+
+erpnext
+  - REPO=X-zhangyang/
+
+
+Real-World-Masked-Face-Dataset
+  - REPO=huggingface/
+
+
+transformers
+  - REPO=dagster-io/
+
+
+dagster
+  - REPO=zulip/
+
+
+zulip
+  - REPO=rafaelpadilla/
+
+
+Object-Detection-Metrics
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
