@@ -16,106 +16,106 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=calebstewart/
+  - REPO=fireeye/
 
 
-pwncat
+capa
+  - REPO=floodsung/
+
+
+Deep-Learning-Papers-Reading-Roadmap
   - REPO=MrMimic/
 
 
 data-scientist-roadmap
-  - REPO=gradio-app/
+  - REPO=obsidianforensics/
 
 
-gradio
-  - REPO=vishnubob/
+unfurl
+  - REPO=ray-project/
 
 
-wait-for-it
-  - REPO=open-mmlab/
-
-
-mmdetection
-  - REPO=iGhibli/
-
-
-iOS-DeviceSupport
-  - REPO=great-expectations/
-
-
-great_expectations
-  - REPO=python-poetry/
-
-
-poetry
-  - REPO=Neo23x0/
-
-
-sigma
-  - REPO=RasaHQ/
-
-
-rasa
-  - REPO=facebookresearch/
-
-
-detectron2
-  - REPO=datawire/
-
-
-ambassador
-  - REPO=ncic-sugon/
-
-
-OODA-FLOW-Bioimage-Pipeline
-  - REPO=ncic-sugon/
-
-
-OODA-FLOW
-  - REPO=mnielsen/
-
-
-neural-networks-and-deep-learning
-  - REPO=ncic-sugon/
-
-
-OODA-FLOW-Gene-Pipeline
-  - REPO=snorkel-team/
-
-
-snorkel
-  - REPO=chipik/
-
-
-SAP_RECON
-  - REPO=JDAI-CV/
-
-
-fast-reid
-  - REPO=frappe/
-
-
-erpnext
-  - REPO=X-zhangyang/
-
-
-Real-World-Masked-Face-Dataset
-  - REPO=huggingface/
-
-
-transformers
-  - REPO=dagster-io/
-
-
-dagster
+ray
   - REPO=zulip/
 
 
 zulip
-  - REPO=rafaelpadilla/
+  - REPO=openai/
 
 
-Object-Detection-Metrics
+gpt-2
+  - REPO=spack/
+
+
+spack
+  - REPO=calebstewart/
+
+
+pwncat
+  - REPO=facebookresearch/
+
+
+pytorch3d
+  - REPO=explosion/
+
+
+spaCy
+  - REPO=Rapptz/
+
+
+discord.py
+  - REPO=chipik/
+
+
+SAP_RECON
+  - REPO=keras-team/
+
+
+keras
+  - REPO=Cadene/
+
+
+pretrained-models.pytorch
+  - REPO=gradio-app/
+
+
+gradio
+  - REPO=fishtown-analytics/
+
+
+dbt
+  - REPO=openai/
+
+
+gym
+  - REPO=open-mmlab/
+
+
+mmediting
+  - REPO=JDAI-CV/
+
+
+fast-reid
+  - REPO=openai/
+
+
+spinningup
+  - REPO=microsoft/
+
+
+botframework-sdk
+  - REPO=apache/
+
+
+incubator-superset
+  - REPO=python-poetry/
+
+
+poetry
+  - REPO=django/
+
+
+django
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
