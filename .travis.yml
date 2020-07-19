@@ -16,106 +16,106 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=fireeye/
-
-
-capa
   - REPO=floodsung/
 
 
 Deep-Learning-Papers-Reading-Roadmap
-  - REPO=MrMimic/
+  - REPO=KalleHallden/
 
 
-data-scientist-roadmap
-  - REPO=obsidianforensics/
-
-
-unfurl
-  - REPO=ray-project/
-
-
-ray
+reddit_automations
   - REPO=zulip/
 
 
 zulip
+  - REPO=fireeye/
+
+
+capa
   - REPO=openai/
 
 
 gpt-2
-  - REPO=spack/
+  - REPO=donnemartin/
 
 
-spack
-  - REPO=calebstewart/
-
-
-pwncat
+system-design-primer
   - REPO=facebookresearch/
 
 
-pytorch3d
-  - REPO=explosion/
+pifuhd
+  - REPO=Yorko/
 
 
-spaCy
-  - REPO=Rapptz/
-
-
-discord.py
-  - REPO=chipik/
-
-
-SAP_RECON
-  - REPO=keras-team/
-
-
-keras
-  - REPO=Cadene/
-
-
-pretrained-models.pytorch
-  - REPO=gradio-app/
-
-
-gradio
-  - REPO=fishtown-analytics/
-
-
-dbt
+mlcourse.ai
   - REPO=openai/
 
 
 gym
+  - REPO=openai/
+
+
+baselines
+  - REPO=home-assistant/
+
+
+core
   - REPO=open-mmlab/
 
 
-mmediting
-  - REPO=JDAI-CV/
-
-
-fast-reid
+mmdetection
   - REPO=openai/
 
 
 spinningup
-  - REPO=microsoft/
+  - REPO=facebookresearch/
 
 
-botframework-sdk
-  - REPO=apache/
+pytorch3d
+  - REPO=josephmisiti/
 
 
-incubator-superset
-  - REPO=python-poetry/
+awesome-machine-learning
+  - REPO=trailofbits/
 
 
-poetry
-  - REPO=django/
+algo
+  - REPO=Palashio/
 
 
-django
+libra
+  - REPO=pandas-dev/
+
+
+pandas
+  - REPO=owid/
+
+
+covid-19-data
+  - REPO=mirumee/
+
+
+saleor
+  - REPO=frappe/
+
+
+erpnext
+  - REPO=django-oscar/
+
+
+django-oscar
+  - REPO=dwyl/
+
+
+english-words
+  - REPO=Al-Azif/
+
+
+ps4-exploit-host
+  - REPO=Chia-Network/
+
+
+chia-blockchain
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
