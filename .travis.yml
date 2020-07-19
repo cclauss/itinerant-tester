@@ -16,106 +16,31 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=floodsung/
-
-
-Deep-Learning-Papers-Reading-Roadmap
-  - REPO=KalleHallden/
-
-
-reddit_automations
-  - REPO=zulip/
-
-
-zulip
-  - REPO=fireeye/
-
-
-capa
-  - REPO=openai/
-
-
-gpt-2
-  - REPO=donnemartin/
-
-
-system-design-primer
-  - REPO=facebookresearch/
-
-
-pifuhd
-  - REPO=Yorko/
-
-
-mlcourse.ai
-  - REPO=openai/
-
-
-gym
-  - REPO=openai/
-
-
-baselines
-  - REPO=home-assistant/
-
-
-core
-  - REPO=open-mmlab/
-
-
-mmdetection
-  - REPO=openai/
-
-
-spinningup
-  - REPO=facebookresearch/
-
-
-pytorch3d
-  - REPO=josephmisiti/
-
-
-awesome-machine-learning
-  - REPO=trailofbits/
-
-
-algo
-  - REPO=Palashio/
-
-
-libra
-  - REPO=pandas-dev/
-
-
-pandas
-  - REPO=owid/
-
-
-covid-19-data
-  - REPO=mirumee/
-
-
-saleor
-  - REPO=frappe/
-
-
-erpnext
-  - REPO=django-oscar/
-
-
-django-oscar
-  - REPO=dwyl/
-
-
-english-words
-  - REPO=Al-Azif/
-
-
-ps4-exploit-host
-  - REPO=Chia-Network/
-
-
-chia-blockchain
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+  - REPO=KalleHallden/reddit_automations
+  - REPO=zulip/zulip
+  - REPO=fireeye/capa
+  - REPO=openai/gpt-2
+  - REPO=donnemartin/system-design-primer
+  - REPO=facebookresearch/pifuhd
+  - REPO=Yorko/mlcourse.ai
+  - REPO=openai/gym
+  - REPO=openai/baselines
+  - REPO=home-assistant/core
+  - REPO=open-mmlab/mmdetection
+  - REPO=openai/spinningup
+  - REPO=facebookresearch/pytorch3d
+  - REPO=josephmisiti/awesome-machine-learning
+  - REPO=trailofbits/algo
+  - REPO=Palashio/libra
+  - REPO=pandas-dev/pandas
+  - REPO=owid/covid-19-data
+  - REPO=mirumee/saleor
+  - REPO=frappe/erpnext
+  - REPO=django-oscar/django-oscar
+  - REPO=dwyl/english-words
+  - REPO=Al-Azif/ps4-exploit-host
+  - REPO=Chia-Network/chia-blockchain
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
