@@ -16,7 +16,138 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=dependabot/dependabot-core
+  - REPO=home-assistant/
+
+
+core
+  - REPO=zulip/
+
+
+zulip
+  - REPO=floodsung/
+
+
+Deep-Learning-Papers-Reading-Roadmap
+  - REPO=elyra-ai/
+
+
+elyra
+  - REPO=minimaxir/
+
+
+gpt-3-experiments
+  - REPO=KalleHallden/
+
+
+reddit_automations
+  - REPO=pi-hole/
+
+
+docker-pi-hole
+  - REPO=openai/
+
+
+gpt-2
+  - REPO=facebookresearch/
+
+
+detectron2
+  - REPO=donnemartin/
+
+
+system-design-primer
+  - REPO=openai/
+
+
+baselines
+  - REPO=openai/
+
+
+image-gpt
+  - REPO=mbadry1/
+
+
+DeepLearning.ai-Summary
+  - REPO=TheAlgorithms/
+
+
+Python
+  - REPO=TheSpeedX/
+
+
+TBomb
+  - REPO=josephmisiti/
+
+
+awesome-machine-learning
+  - REPO=d2l-ai/
+
+
+d2l-zh
+  - REPO=facebookresearch/
+
+
+pifuhd
+  - REPO=Rapptz/
+
+
+discord.py
+  - REPO=openai/
+
+
+gym
+  - REPO=FujiMakoto/
+
+
+twitter-saucenao
+  - REPO=xHak9x/
+
+
+fbi
+  - REPO=minimaxir/
+
+
+gpt-2-simple
+  - REPO=pythonstock/
+
+
+stock
+  - REPO=ChoudharyChanchal/
+
+
+game_control
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
