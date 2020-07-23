@@ -16,73 +16,138 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=guyjeangilles/openlibrary    # 2020-03-10 internetarchive/openlibrary
+  - REPO=floodsung/
+
+
+Deep-Learning-Papers-Reading-Roadmap
+  - REPO=pythonstock/
+
+
+stock
+  - REPO=d2l-ai/
+
+
+d2l-en
+  - REPO=openai/
+
+
+gym
+  - REPO=vt-vl-lab/
+
+
+3d-photo-inpainting
+  - REPO=openai/
+
+
+baselines
+  - REPO=openai/
+
+
+gpt-2
+  - REPO=Pitt-CSC/
+
+
+Summer2021-Internships
+  - REPO=horovod/
+
+
+horovod
+  - REPO=psf/
+
+
+black
+  - REPO=rusty1s/
+
+
+pytorch_geometric
+  - REPO=ymcui/
+
+
+Chinese-BERT-wwm
+  - REPO=facebookresearch/
+
+
+swav
+  - REPO=minimaxir/
+
+
+gpt-3-experiments
+  - REPO=openai/
+
+
+spinningup
+  - REPO=asciimoo/
+
+
+searx
+  - REPO=timgrossmann/
+
+
+InstaPy
+  - REPO=aws/
+
+
+aws-cli
+  - REPO=deepset-ai/
+
+
+haystack
+  - REPO=sherlock-project/
+
+
+sherlock
+  - REPO=locustio/
+
+
+locust
+  - REPO=home-assistant/
+
+
+core
+  - REPO=mlflow/
+
+
+mlflow
+  - REPO=spulec/
+
+
+moto
+  - REPO=pytorch/
+
+
+ignite
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
   - REPO=internetarchive/openlibrary
-  - REPO=guyjeangilles/openlibrary-bots  # 2020-07-22 internetarchive/openlibrary-bots
-  - REPO=internetarchive/openlibrary-bots
-  - REPO=guyjeangilles/openlibrary-client  # 2020-06-29 internetarchive/openlibrary-client
-  - REPO=internetarchive/openlibrary-client
-  - REPO=guyjeangilles/openlibrary-wikidata-bot  # 2020-04-15 cdrini/openlibrary-wikidata-bot
-  - REPO=cdrini/openlibrary-wikidata-bot
-  - REPO=internetarchive/acs4_py      # 2020-01-22
-  - REPO=internetarchive/analyze_ocr  # 2011-11-30 mikemccabe/analyze_ocr
-  - REPO=mikemccabe/analyze_ocr
-  - REPO=internetarchive/archive-analysis  # 2016-07-12 vinaygoel/archive-analysis
-  - REPO=vinaygoel/archive-analysis
-  - REPO=internetarchive/autocrop     # 2013-04-25 rajbot/autocrop
-  - REPO=rajbot/autocrop
-  - REPO=internetarchive/bookserver   # 2018-11-01
-  - REPO=internetarchive/brozzler     # 2020-07-14
-  - REPO=internetarchive/btget        # 2011-07-26
-  - REPO=internetarchive/CDX-Writer   # 2020-05-20 rajbot/CDX-Writer
-  - REPO=rajbot/CDX-Writer
-  - REPO=internetarchive/crawling-for-nomore404  # 2020-07-16
-  - REPO=internetarchive/doublethink  # 2019-05-17
-  - REPO=internetarchive/draintasker  # 2020-06-02
-  - REPO=internetarchive/dweb-gateway  # 2020-01-04
-  - REPO=internetarchive/dwebsummit-site-2  # 2020-06-05
-  - REPO=internetarchive/epub         # 2016-01-18
-  - REPO=internetarchive/epub3        # 2019-12-05 deborahgu/abbyy-to-epub3
-  - REPO=deborahgu/abbyy-to-epub3
-  - REPO=internetarchive/eventer      # 2011-06-01
-  - REPO=internetarchive/fatcat       # 2020-07-11
-  - REPO=internetarchive/IA-solr-frontend  # 2012-04-05
-  - REPO=internetarchive/ias3         # 2010-03-25
-  - REPO=internetarchive/IAWatchBot   # 2012-03-26 dmontalvo/IAWatchBot
-  - REPO=dmontalvo/IAWatchBot
-  - REPO=internetarchive/infogami     # 2020-07-21 infogami/infogami
-  - REPO=infogami/infogami
-  - REPO=internetarchive/liveweb      # 2019-10-22
-  - REPO=internetarchive/maisy        # 2011-07-08
-  - REPO=internetarchive/map-of-the-web  # 2018-08-17
-  - REPO=internetarchive/maxmind-geoip  # 2011-10-11 jlopez/maxmind-geoip
-  - REPO=jlopez/maxmind-geoip
-  - REPO=internetarchive/pdf_trio     # 2020-06-11 tralfamadude/pdf_trio
-  - REPO=tralfamadude/pdf_trio
-  - REPO=internetarchive/pig          # 2013-06-04
-  - REPO=internetarchive/poppler-ia   # 2009-11-25
-  - REPO=internetarchive/py-wasapi-client  # 2017-09-22 unt-libraries/py-wasapi-client
-  - REPO=unt-libraries/py-wasapi-client
-  - REPO=internetarchive/rulesengine  # 2020-06-05
-  - REPO=internetarchive/rulesengine-client  # 2019-10-18
-  - REPO=internetarchive/s3_loader    # 2013-02-05
-  - REPO=internetarchive/scrapy-warcio  # 2019-12-21
-  - REPO=internetarchive/scribe-redux  # 2016-09-22
-  - REPO=internetarchive/snakebite-py3  # 2020-05-20
-  - REPO=internetarchive/surt         # 2020-02-14 rajbot/surt
-  - REPO=rajbot/surt
-  - REPO=internetarchive/trough       # 2020-06-10
-  - REPO=internetarchive/ultrajson    # 2019-11-04 ultrajson/ultrajson
-  - REPO=ultrajson/ultrajson
-  - REPO=internetarchive/umbra        # 2020-04-25
-  - REPO=internetarchive/waimea       # 2013-06-05
-  - REPO=internetarchive/warc         # 2018-04-20
-  - REPO=internetarchive/warcprox     # 2020-07-09
-  - REPO=internetarchive/warctools    # 2019-12-11
-  - REPO=internetarchive/wayback-discover-diff  # 2020-01-14 ftsalamp/wayback-discover-diff
-  - REPO=ftsalamp/wayback-discover-diff
-  - REPO=internetarchive/wmd          # 2020-04-27 derobins/wmd
-  - REPO=derobins/wmd
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
