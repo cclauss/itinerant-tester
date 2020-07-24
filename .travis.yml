@@ -16,31 +16,106 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
-  - REPO=pythonstock/stock
-  - REPO=d2l-ai/d2l-en
-  - REPO=openai/gym
-  - REPO=vt-vl-lab/3d-photo-inpainting
-  - REPO=openai/baselines
-  - REPO=openai/gpt-2
-  - REPO=Pitt-CSC/Summer2021-Internships
-  - REPO=horovod/horovod
-  - REPO=psf/black
-  - REPO=rusty1s/pytorch_geometric
-  - REPO=ymcui/Chinese-BERT-wwm
-  - REPO=facebookresearch/swav
-  - REPO=minimaxir/gpt-3-experiments
-  - REPO=openai/spinningup
-  - REPO=asciimoo/searx
-  - REPO=timgrossmann/InstaPy
-  - REPO=aws/aws-cli
-  - REPO=deepset-ai/haystack
-  - REPO=sherlock-project/sherlock
-  - REPO=locustio/locust
-  - REPO=home-assistant/core
-  - REPO=mlflow/mlflow
-  - REPO=spulec/moto
-  - REPO=pytorch/ignite
+  - REPO=Shawn-Shan/
+
+
+fawkes
+  - REPO=pythonstock/
+
+
+stock
+  - REPO=vt-vl-lab/
+
+
+3d-photo-inpainting
+  - REPO=mlflow/
+
+
+mlflow
+  - REPO=returntocorp/
+
+
+semgrep
+  - REPO=donnemartin/
+
+
+data-science-ipython-notebooks
+  - REPO=apache/
+
+
+airflow
+  - REPO=aws/
+
+
+chalice
+  - REPO=ansible/
+
+
+ansible
+  - REPO=gto76/
+
+
+python-cheatsheet
+  - REPO=jina-ai/
+
+
+jina
+  - REPO=wangzheng0822/
+
+
+algo
+  - REPO=django/
+
+
+django
+  - REPO=graphql-python/
+
+
+graphene-django
+  - REPO=rusty1s/
+
+
+pytorch_geometric
+  - REPO=3b1b/
+
+
+manim
+  - REPO=d2l-ai/
+
+
+d2l-en
+  - REPO=home-assistant/
+
+
+core
+  - REPO=demisto/
+
+
+content
+  - REPO=bregman-arie/
+
+
+devops-exercises
+  - REPO=awslabs/
+
+
+serverless-application-model
+  - REPO=m4ll0k/
+
+
+Bug-Bounty-Toolz
+  - REPO=swisskyrepo/
+
+
+PayloadsAllTheThings
+  - REPO=timesler/
+
+
+facenet-pytorch
+  - REPO=confluentinc/
+
+
+confluent-kafka-python
   - REPO=n1nj4sec/pupy
   - REPO=PythonCharmers/python-future
   - REPO=ansible/ansible
