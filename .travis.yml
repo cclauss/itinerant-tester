@@ -16,10 +16,78 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=rytilahti/python-miio
-  - REPO=internetarchive/openlibrary
-  - REPO=internetarchive/infogami
-  - REPO=v8/v8
+  - REPO=rorodata/facial-recognition-demo  # 2018-05-23
+  - REPO=rorodata/firefly             # 2018-12-18
+  - REPO=rorodata/hypertype           # 2020-02-22
+  - REPO=rorodata/instance-recognition  # 2018-04-02
+  - REPO=rorodata/iris-demo           # 2018-05-18
+  - REPO=rorodata/lambdapool          # 2020-07-21
+  - REPO=rorodata/load-forecasting-demo  # 2018-05-13
+  - REPO=rorodata/python-snappy       # 2020-01-08 andrix/python-snappy
+  - REPO=andrix/python-snappy
+  - REPO=rorodata/recommender-system-demo  # 2018-01-06
+  - REPO=rorodata/rorocloud           # 2017-08-21
+  - REPO=rorodata/rorocloud-examples  # 2017-07-12
+  - REPO=rorodata/rorolite            # 2018-04-18
+  - REPO=rorodata/rorolite-demo       # 2018-01-31
+  - REPO=rorodata/style-transfer-demo  # 2018-01-06
+  - REPO=anandology/anandology.com    # 2019-07-11
+  - REPO=pythonindia/bangalore.python.org.in
+  - REPO=anandology/blaze             # 2018-08-20 blaze/blaze
+  - REPO=blaze/blaze
+  - REPO=anandology/bookloader        # 2014-04-05
+  - REPO=anandology/broadgauge        # 2015-06-20
+  - REPO=anandology/cleansweep        # 2018-08-03 AamAadmiParty/cleansweep
+  - REPO=AamAadmiParty/cleansweep
+  - REPO=anandology/cleansweep-data   # 2017-03-02
+  - REPO=AamAadmiParty/cleansweep-karnataka
+  - REPO=AamAadmiParty/cleansweep-sms-bridge
+  - REPO=anandology/creative-coding-workshop  # 2020-04-16
+  - REPO=anandology/credit-risk-demo  # 2018-04-06
+  - REPO=anandology/deep-learning     # 2018-07-22 amitkaps/deep-learning
+  - REPO=amitkaps/deep-learning
+  - REPO=hasgeek/eventframe
+  - REPO=anandology/events            # 2018-04-06 hasgeek/events
+  - REPO=hasgeek/events
+  - REPO=hasgeek/funnel
+  - REPO=anandology/generators-inside-out-talk  # 2016-09-24
+  - REPO=benoitc/gunicorn
+  - REPO=anandology/hacks             # 2018-12-14
+  - REPO=anandology/httpbottomup      # 2017-11-04
+  - REPO=anandology/india-geosearch   # 2015-02-21
+  - REPO=anandology/inpycon-design    # 2010-06-04
+  - REPO=jupyter-widgets/ipywidgets
+  - REPO=leela/kottapalli
+  - REPO=brownplt/lambda-py
+  - REPO=adamzap/landslide
+  - REPO=anandology/microrepl         # 2017-11-05 ntoll/microrepl
+  - REPO=ntoll/microrepl
+  - REPO=anandology/microservices-workshop  # 2017-09-21
+  - REPO=anandology/mockdown          # 2020-02-04
+  - REPO=anandology/modelvis          # 2018-04-17 amitkaps/modelvis-talks
+  - REPO=amitkaps/modelvis-talks
+  - REPO=Anomareh/mynt
+  - REPO=anandology/niftyhacks        # 2018-08-08
+  - REPO=anandology/opendata-ge2014   # 2014-08-26
+  - REPO=ashima/pdf-table-extract
+  - REPO=ariya/phantomjs
+  - REPO=pythonindia/pyconindia-handbook
+  - REPO=pydot/pydot
+  - REPO=anandology/pygame-workshop   # 2017-06-01
+  - REPO=GoogleCloudPlatform/python-docs-samples
+  - REPO=anandology/python-magic-show  # 2020-02-22
+  - REPO=anandology/python-practice-book  # 2019-10-16
+  - REPO=anandology/restful-apis      # 2018-09-15
+  - REPO=hasgeek/rootconf
+  - REPO=anandology/rsvpapp           # 2017-01-18 cloudyuga/rsvpapp
+  - REPO=cloudyuga/rsvpapp
+  - REPO=anandology/serverless-python-talk  # 2017-04-30
+  - REPO=anandology/simple-webpy-blog  # 2017-02-18
+  - REPO=anandology/solving-puzzles-with-python  # 2012-10-05
+  - REPO=jeetsukumaran/Syrupy
+  - REPO=tornadoweb/tornado
+  - REPO=webpy/webpy.github.com
+
 install:
   #- pip install -r requirements.txt
   - pip install bandit codespell flake8  # pytest  # add other testing frameworks later
