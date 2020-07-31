@@ -16,7 +16,113 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=odashi/latexify_py
+  - REPO=linkedin/
+
+detext
+  - REPO=facebookresearch/
+
+TransCoder
+  - REPO=gto76/
+
+python-cheatsheet
+  - REPO=WongKinYiu/
+
+PyTorch_YOLOv4
+  - REPO=aws/
+
+sagemaker-python-sdk
+  - REPO=SystemErrorWang/
+
+White-box-Cartoonization
+  - REPO=google/
+
+jax
+  - REPO=pfnet/
+
+pfrl
+  - REPO=fishtown-analytics/
+
+dbt
+  - REPO=doccano/
+
+doccano
+  - REPO=psf/
+
+black
+  - REPO=apache/
+
+incubator-superset
+  - REPO=byt3bl33d3r/
+
+CrackMapExec
+  - REPO=Manisso/
+
+fsociety
+  - REPO=kubernetes-sigs/
+
+kubespray
+  - REPO=tiangolo/
+
+fastapi
+  - REPO=apache/
+
+incubator-tvm
+  - REPO=bojone/
+
+bert4keras
+  - REPO=pytest-dev/
+
+pytest
+  - REPO=allenai/
+
+allennlp
+  - REPO=Neo23x0/
+
+sigma
+  - REPO=NVIDIA/
+
+DeepLearningExamples
+  - REPO=FortyNorthSecurity/
+
+EyeWitness
+  - REPO=awslabs/
+
+serverless-application-model
+  - REPO=bubbliiiing/
+
+yolov4-pytorch
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
