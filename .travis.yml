@@ -67,7 +67,9 @@ env:
   - REPO=elastic/elasticsearch-sql-odbc  # 2020-07-27
   - REPO=elastic/elasticsearch-transport-memcached  # 2019-01-16
   - REPO=elastic/elasticsearch-transport-thrift  # 2019-01-16
-  - REPO=elastic/elasticsearch-transport-wares  # 2019-01-16install:
+  - REPO=elastic/elasticsearch-transport-wares  # 2019-01-16
+
+install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
 before_script:
