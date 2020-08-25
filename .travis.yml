@@ -18,18 +18,6 @@ jobs:
     - python: pypy3
 env:
   - REPO=TensorSpeech/TensorFlowTTS
-  - REPO=optuna/optuna
-  - REPO=PostHog/posthog
-  - REPO=ytdl-org/youtube-dl
-  - REPO=Unity-Technologies/ml-agents
-  - REPO=ycm-core/YouCompleteMe
-  - REPO=vaastav/Fantasy-Premier-League
-  - REPO=drduh/macOS-Security-and-Privacy-Guide
-  - REPO=python-telegram-bot/python-telegram-bot
-  - REPO=OUCMachineLearning/OUCML
-  - REPO=huangrt01/CS-Notes
-  - REPO=3b1b/manim
-  - REPO=tjf801/oneliners
   - REPO=devanshbatham/Awesome-Bugbounty-Writeups
   - REPO=jackzhenguo/python-small-examples
   - REPO=qilingframework/qiling
