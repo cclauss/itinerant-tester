@@ -17,9 +17,63 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=microsoft/debugpy
-  - REPO=internetarchive/wmd          # 2020-04-27 derobins/wmd
-  - REPO=derobins/wmd
+  - REPO=jerry-git/learn-python3
+  - REPO=trekhleb/learn-python
+  - REPO=chriskiehl/Gooey
+  - REPO=TheAlgorithms/Python
+  - REPO=psf/black
+  - REPO=ml-jku/hopfield-layers
+  - REPO=apache/incubator-superset
+  - REPO=ytdl-org/youtube-dl
+  - REPO=iGhibli/iOS-DeviceSupport
+  - REPO=ray-project/ray
+  - REPO=donnemartin/system-design-primer
+  - REPO=NVIDIA/DeepLearningExamples
+  - REPO=google/objax
+  - REPO=fireeye/speakeasy
+  - REPO=eriklindernoren/ML-From-Scratch
+  - REPO=Ncohen10/StockAlgorithm
+  - REPO=SforAiDl/genrl
+  - REPO=MTrajK/coding-problems
+  - REPO=bregman-arie/devops-exercises
+  - REPO=albumentations-team/albumentations
+  - REPO=floodsung/Deep-Learning-Papers-Reading-Roadmap
+  - REPO=paramiko/paramiko
+  - REPO=junyanz/pytorch-CycleGAN-and-pix2pix
+  - REPO=malwaredllc/byob
+  - REPO=keras-team/keras
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=CoreSecurity/impacket
+  - REPO=internetarchive/openlibrary
+  - REPO=google/ffn
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=apache/spark
+  - REPO=Tribler/tribler
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=getsentry/sentry
+  - REPO=v8/v8
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
