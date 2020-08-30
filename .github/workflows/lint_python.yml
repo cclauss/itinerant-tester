@@ -12,8 +12,8 @@ jobs:
         python-version: [3.9.0-rc.1]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-python@master
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install black codespell flake8 isort pytest
