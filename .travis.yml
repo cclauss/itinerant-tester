@@ -17,8 +17,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=Open-Book-Genome-Project/sequencer
-  - REPO=Open-Book-Genome-Project/TheBestBookOn.com
+  - REPO=mvdh7/calkulate
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
