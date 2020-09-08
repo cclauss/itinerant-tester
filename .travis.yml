@@ -18,6 +18,15 @@ jobs:
     - python: pypy3
 env:
   - REPO=google/oss-fuzz
+  - REPO=kpdyer/dpi-test-suite        # 2014-06-21
+  - REPO=kpdyer/fteproxy              # 2020-09-08
+  - REPO=kpdyer/fteproxy-builder      # 2014-10-04
+  - REPO=kpdyer/fteproxy-tester       # 2014-10-05
+  - REPO=kpdyer/libffx                # 2018-11-11
+  - REPO=kpdyer/libfte                # 2016-02-02
+  - REPO=kpdyer/pypcapparser          # 2014-09-17
+  - REPO=kpdyer/regex2dfa             # 2015-08-22
+  - REPO=kpdyer/website-fingerprinting  # 2013-11-21
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
