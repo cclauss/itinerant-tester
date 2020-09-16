@@ -17,8 +17,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=readium/readium-lcp-client   # 2020-07-20
-  - REPO=readium/readium-sdk          # 2020-01-29
+  - REPO=mvdh7/calkulate
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
