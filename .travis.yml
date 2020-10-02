@@ -17,26 +17,47 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=KIOS-Research/BattLeDIM      # 2020-09-22
-  - REPO=KIOS-Research/effinet-smart-water-game  # 2015-12-12
-  - REPO=KIOS-Research/Epa2Shp        # 2018-12-10
-  - REPO=KIOS-Research/EPANET-Plugins  # 2019-06-25 eladsal/EPANET-Plugins
-  - REPO=eladsal/EPANET-Plugins
-  - REPO=KIOS-Research/epanet-python  # 2016-03-21 OpenWaterAnalytics/epanet-python
-  - REPO=OpenWaterAnalytics/epanet-python
-  - REPO=KIOS-Research/ImportEpanetInpFiles  # 2020-08-02
-  - REPO=KIOS-Research/ImportPhotos   # 2020-04-16
-  - REPO=KIOS-Research/LeakDB         # 2019-11-03
-  - REPO=KIOS-Research/PostGIS-to-EPANET  # 2019-04-15
-  - REPO=KIOS-Research/QVisualize     # 2019-11-21
-  - REPO=KIOS-Research/QWeather       # 2020-05-18
-  - REPO=KIOS-Research/QWeb           # 2020-02-04
-  - REPO=KIOS-Research/SWMM-EPANET_User_Interface  # 2020-01-03 USEPA/SWMM-EPANET_User_Interface
-  - REPO=USEPA/SWMM-EPANET_User_Interface
-  - REPO=swisspush/ansible-kafka-topics  # 2020-06-10
-  - REPO=swisspush/yglu               # 2020-02-10 lbovet/yglu
-  - REPO=lbovet/yglu
-  
+  - REPO=google-research/accelerated_gbm  # 2020-08-26
+  - REPO=google-research/adapter-bert  # 2019-06-04
+  - REPO=google-research/agent-based-epidemic-sim  # 2020-10-02
+  - REPO=google-research/albert       # 2020-09-26
+  - REPO=google-research/arxiv-latex-cleaner  # 2020-09-11
+  - REPO=google-research/augmix       # 2020-10-01
+  - REPO=google-research/autoconj     # 2019-12-01
+  - REPO=google-research/batch-ppo    # 2019-01-11
+  - REPO=google-research/batch_rl     # 2020-06-08
+  - REPO=google-research/bert         # 2020-10-01
+  - REPO=google-research/big_transfer  # 2020-09-25
+  - REPO=google-research/bleurt       # 2020-10-02
+  - REPO=google-research/clevr_robot_env  # 2019-07-18
+  - REPO=google-research/computation-thru-dynamics  # 2020-10-01
+  - REPO=google-research/cryptanalytic-model-extraction  # 2020-07-23
+  - REPO=google-research/dads         # 2020-06-30
+  - REPO=google-research/data-driven-pdes  # 2020-08-04
+  - REPO=google-research/deep_ope     # 2020-09-30
+  - REPO=google-research/dex-lang     # 2020-10-02
+  - REPO=google-research/dice_rl      # 2020-09-28
+  - REPO=google-research/disentanglement_lib  # 2020-08-27
+  - REPO=google-research/dreamer      # 2020-07-14
+  - REPO=google-research/electra      # 2020-08-11
+  - REPO=google-research/episodic-curiosity  # 2019-11-14
+  - REPO=google-research/evoflow      # 2020-06-13
+  - REPO=google-research/exoplanet-ml  # 2020-02-24
+  - REPO=google-research/fast-soft-sort  # 2020-07-28
+  - REPO=google-research/federated    # 2020-10-01
+  - REPO=google-research/fixmatch     # 2020-09-25
+  - REPO=google-research/football     # 2020-10-01
+  - REPO=google-research/generic-adaptive-restarts  # 2020-06-24
+  - REPO=google-research/google-research  # 2020-10-02
+  - REPO=google-research/heldout-influence-estimation  # 2020-09-22
+  - REPO=google-research/korvapuusti  # 2020-09-30
+  - REPO=google-research/kubric       # 2020-10-02
+  - REPO=google-research/lag          # 2020-10-01
+  - REPO=google-research/language     # 2020-10-01
+  - REPO=google-research/lasertagger  # 2020-09-26
+  - REPO=google-research/libsoftwaresync  # 2019-12-13
+  - REPO=google-research/lottery-ticket-hypothesis  # 2020-07-27
+
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
