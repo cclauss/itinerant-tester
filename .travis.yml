@@ -17,55 +17,19 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google-research/meta-dataset  # 2020-09-10
-  - REPO=google-research/mixmatch     # 2020-09-25
-  - REPO=google-research/ml-for-systems-taxonomy  # 2020-09-08
-  - REPO=google-research/mma          # 2020-09-25
-  - REPO=google-research/mnist-c      # 2019-06-07
-  - REPO=google-research/morph-net    # 2020-10-01
-  - REPO=google-research/motion_imitation  # 2020-09-26
-  - REPO=google-research/nasbench     # 2020-08-21
-  - REPO=google-research/neural-structural-optimization  # 2020-05-21
-  - REPO=google-research/noisystudent  # 2020-06-18
-  - REPO=google-research/open-covid-19-data  # 2020-10-02
-  - REPO=google-research/pddm         # 2020-01-12
-  - REPO=google-research/pegasus      # 2020-09-25
-  - REPO=google-research/planet       # 2020-09-25
-  - REPO=google-research/policy-learning-landscape  # 2019-01-16
-  - REPO=google-research/privateFM    # 2020-08-20
-  - REPO=google-research/proteinfer   # 2020-09-26
-  - REPO=google-research/realworldrl_suite  # 2020-08-11
-  - REPO=google-research/receptive_field  # 2019-12-24
-  - REPO=google-research/recsim       # 2020-06-30
-  - REPO=google-research/relay-policy-learning  # 2020-05-08
-  - REPO=google-research/remixmatch   # 2020-09-25
-  - REPO=google-research/reverse-engineering-neural-networks  # 2020-09-07
-  - REPO=google-research/rigl         # 2020-07-10
-  - REPO=google-research/rl-reliability-metrics  # 2020-08-14
-  - REPO=google-research/robel        # 2020-09-02
-  - REPO=google-research/robustness_metrics  # 2020-10-02
-  - REPO=google-research/s4l          # 2019-11-06
-  - REPO=google-research/seed_rl      # 2020-09-17
-  - REPO=google-research/self-organising-systems  # 2020-09-29
-  - REPO=google-research/si-score     # 2020-09-30
-  - REPO=google-research/simclr       # 2020-09-26
-  - REPO=google-research/sound-separation  # 2020-07-23
-  - REPO=google-research/ssl_detection  # 2020-09-25
-  - REPO=google-research/structured-additive-IR  # 2020-10-02
-  - REPO=google-research/tapas        # 2020-09-29
-  - REPO=google-research/task_adaptation  # 2020-09-26
-  - REPO=google-research/tensor2robot  # 2020-10-02
-  - REPO=google-research/tensorflow-coder  # 2020-09-11
-  - REPO=google-research/tensorflow_constrained_optimization  # 2020-09-01
-  - REPO=google-research/text-to-text-transfer-transformer  # 2020-10-01
-  - REPO=google-research/tf-slim      # 2020-05-07
-  - REPO=google-research/tiny-differentiable-simulator  # 2020-09-27
-  - REPO=google-research/torchsde     # 2020-09-26
-  - REPO=google-research/turkish-morphology  # 2020-09-08
-  - REPO=google-research/uda          # 2020-04-22
-  - REPO=google-research/unique-randomizer  # 2020-08-12
-  - REPO=google-research/valan        # 2020-07-18
-  - REPO=google-research/xtreme       # 2020-10-01
+  - REPO=mytechnotalent/Adafruit_CircuitPython_ESP32SPI  # 2020-09-29 adafruit/Adafruit_CircuitPython_ESP32SPI
+  - REPO=adafruit/Adafruit_CircuitPython_ESP32SPI
+  - REPO=mytechnotalent/Automation_Framework  # 2020-09-27
+  - REPO=mytechnotalent/CircuitPython_Unittest  # 2020-09-27
+  - REPO=mytechnotalent/micropython   # 2020-10-01 micropython/micropython
+  - REPO=micropython/micropython
+  - REPO=mytechnotalent/MicroPython-Firmware-Development  # 2020-09-27
+  - REPO=mytechnotalent/MicroPython-micro-bit_Friend_MOD  # 2020-09-30
+  - REPO=mytechnotalent/MicroPython_Music  # 2020-09-27
+  - REPO=mytechnotalent/minipython    # 2020-10-01 bbcmicrobit/micropython
+  - REPO=bbcmicrobit/micropython
+  - REPO=mytechnotalent/Python-For-Kids  # 2020-10-02
+  - REPO=mytechnotalent/Simple_Guessing_Game  # 2020-09-27
 
 install:
   #- pip install -r requirements.txt
