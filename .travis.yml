@@ -17,62 +17,26 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=huggingface/datasets
-  - REPO=anandpawara/Real_Time_Image_Animation
-  - REPO=mingrammer/diagrams
-  - REPO=NVlabs/imaginaire
-  - REPO=OpenMined/PySyft
-  - REPO=qxresearch/qxresearch-event-1
-  - REPO=donnemartin/system-design-primer
-  - REPO=ansible/ansible
-  - REPO=mytechnotalent/Python-For-Kids
-  - REPO=PaytmLabs/nerve
-  - REPO=Pitt-CSC/Summer2021-Internships
-  - REPO=isocpp/CppCoreGuidelines
-  - REPO=domokane/FinancePy
-  - REPO=Ciphey/Ciphey
-  - REPO=frappe/frappe
-  - REPO=vinayak-mehta/present
-  - REPO=saltstack/salt
-  - REPO=sukeesh/Jarvis
-  - REPO=great-expectations/great_expectations
-  - REPO=OWASP/CheatSheetSeries
-  - REPO=deepmipt/DeepPavlov
-  - REPO=geekcomputers/Python
-  - REPO=kovidgoyal/kitty
-  - REPO=lyft/l5kit
-  - REPO=matrix-org/synapse
-  - REPO=n1nj4sec/pupy
-  - REPO=PythonCharmers/python-future
-  - REPO=ansible/ansible
-  - REPO=oaubert/python-vlc
-  - REPO=ColdGrub1384/Pyto
-  - REPO=internetarchive/openlibrary
-  - REPO=apache/beam
-  - REPO=apache/incubator-mxnet
-  - REPO=hyperledger/iroha-python
-  - REPO=Supervisor/supervisor
-  - REPO=cheshirekow/cmake_format
-  - REPO=ckan/ckan
-  - REPO=ibm-watson-iot/connector-cloudant
-  - REPO=ibm-watson-iot/device-kodi
-  - REPO=ibm-watson-iot/functions
-  - REPO=hyperledger/fabric-sdk-py
-  - REPO=v8/v8
-  - REPO=webpy/webpy
-  - REPO=nodejs/node
-  - REPO=nodejs/node-gyp
-  - REPO=ArduPilot/ardupilot
-  - REPO=ArduPilot/pymavlink
-  - REPO=dronekit/dronekit-python
-  - REPO=ansible/awx
-  - REPO=matplotlib/matplotlib
-  - REPO=ggtracker/sc2reader
-  - REPO=httplib2/httplib2
-  - REPO=getsentry/sentry
-  - REPO=getsentry/sentry-python
-  - REPO=CoreSecurity/impacket
-  - REPO=google/ffn
+  - REPO=KIOS-Research/BattLeDIM      # 2020-09-22
+  - REPO=KIOS-Research/effinet-smart-water-game  # 2015-12-12
+  - REPO=KIOS-Research/Epa2Shp        # 2018-12-10
+  - REPO=KIOS-Research/EPANET-Plugins  # 2019-06-25 eladsal/EPANET-Plugins
+  - REPO=eladsal/EPANET-Plugins
+  - REPO=KIOS-Research/epanet-python  # 2016-03-21 OpenWaterAnalytics/epanet-python
+  - REPO=OpenWaterAnalytics/epanet-python
+  - REPO=KIOS-Research/ImportEpanetInpFiles  # 2020-08-02
+  - REPO=KIOS-Research/ImportPhotos   # 2020-04-16
+  - REPO=KIOS-Research/LeakDB         # 2019-11-03
+  - REPO=KIOS-Research/PostGIS-to-EPANET  # 2019-04-15
+  - REPO=KIOS-Research/QVisualize     # 2019-11-21
+  - REPO=KIOS-Research/QWeather       # 2020-05-18
+  - REPO=KIOS-Research/QWeb           # 2020-02-04
+  - REPO=KIOS-Research/SWMM-EPANET_User_Interface  # 2020-01-03 USEPA/SWMM-EPANET_User_Interface
+  - REPO=USEPA/SWMM-EPANET_User_Interface
+  - REPO=swisspush/ansible-kafka-topics  # 2020-06-10
+  - REPO=swisspush/yglu               # 2020-02-10 lbovet/yglu
+  - REPO=lbovet/yglu
+  
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
