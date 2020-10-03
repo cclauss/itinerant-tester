@@ -17,20 +17,62 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=mytechnotalent/Adafruit_CircuitPython_ESP32SPI  # 2020-09-29 adafruit/Adafruit_CircuitPython_ESP32SPI
-  - REPO=adafruit/Adafruit_CircuitPython_ESP32SPI
-  - REPO=mytechnotalent/Automation_Framework  # 2020-09-27
-  - REPO=mytechnotalent/CircuitPython_Unittest  # 2020-09-27
-  - REPO=mytechnotalent/micropython   # 2020-10-01 micropython/micropython
-  - REPO=micropython/micropython
-  - REPO=mytechnotalent/MicroPython-Firmware-Development  # 2020-09-27
-  - REPO=mytechnotalent/MicroPython-micro-bit_Friend_MOD  # 2020-09-30
-  - REPO=mytechnotalent/MicroPython_Music  # 2020-09-27
-  - REPO=mytechnotalent/minipython    # 2020-10-01 bbcmicrobit/micropython
-  - REPO=bbcmicrobit/micropython
-  - REPO=mytechnotalent/Python-For-Kids  # 2020-10-02
-  - REPO=mytechnotalent/Simple_Guessing_Game  # 2020-09-27
-
+  - REPO=huggingface/datasets
+  - REPO=EssayKillerBrain/EssayKiller_V2
+  - REPO=NVIDIA/NeMo
+  - REPO=geekcomputers/Python
+  - REPO=rvizzz/rotate
+  - REPO=TheAlgorithms/Python
+  - REPO=microsoft/playwright-python
+  - REPO=philippnormann/nvidia-sniper
+  - REPO=NLDev/Hacktoberfest-2020-FizzBuzz
+  - REPO=pujie1216/RushCoupon
+  - REPO=jayshah19949596/CodingInterviews
+  - REPO=TheRenegadeCoder/sample-programs
+  - REPO=Py-Droid/Python-Thunder
+  - REPO=microsoft/archai
+  - REPO=microsoft/qlib
+  - REPO=Showndarya/Hacktoberfest
+  - REPO=Py-Contributors/awesomeScripts
+  - REPO=espressif/esptool
+  - REPO=bokeh/bokeh
+  - REPO=mne-tools/mne-python
+  - REPO=huggingface/transformers
+  - REPO=rahullrajesh/implement-devops
+  - REPO=MobSF/Mobile-Security-Framework-MobSF
+  - REPO=home-assistant/core
+  - REPO=spulec/moto
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=internetarchive/openlibrary
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=v8/v8
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=getsentry/sentry
+  - REPO=getsentry/sentry-python
+  - REPO=CoreSecurity/impacket
+  - REPO=google/ffn
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
