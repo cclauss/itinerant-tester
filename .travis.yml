@@ -9,7 +9,7 @@ python:
   #- 3.6
   #- 3.7
   #- 3.8
-  - 3.9-dev
+  - 3.9
 jobs:
   allow_failures:
     - python: 2.7
@@ -17,100 +17,8 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=aio-libs/aiomysql
-  - REPO=aiortc/aiortc
-  - REPO=sqlalchemy/alembic
-  - REPO=angular/angular
-  - REPO=ansible/ansible
-  - REPO=encode/apistar
-  - REPO=django/asgiref
-  - REPO=lepture/authlib
-  - REPO=myint/autoflake
-  - REPO=vinta/awesome-python
-  - REPO=tiangolo/bitbucket_issues_to_redmine_csv  # 2015-02-05
-  - REPO=tiangolo/blog-posts          # 2020-05-17
-  - REPO=BVLC/caffe
-  - REPO=pallets/click
-  - REPO=click-contrib/click-completion
-  - REPO=click-contrib/click-spinner
-  - REPO=cmake-js/cmake-js
-  - REPO=tiangolo/compose-to-rancher  # 2016-08-26
-  - REPO=cookiecutter/cookiecutter
-  - REPO=couchbase/couchbase-python-client
-  - REPO=HazyResearch/deepdive
-  - REPO=angular/devkit
-  - REPO=tiangolo/docker-auto-labels  # 2018-09-24
-  - REPO=echonest/echoprint-server
-  - REPO=coursera-dl/edx-dl
-  - REPO=claytron/ever2simple
-  - REPO=facebookresearch/faiss
-  - REPO=tiangolo/fastapi             # 2020-10-05
-  - REPO=conda-forge/fastapi-feedstock
-  - REPO=jmcarp/flask-apispec
-  - REPO=tiangolo/flask-frontend-docker  # 2020-04-12
-  - REPO=mattupstate/flask-security
-  - REPO=TechEmpower/FrameworkBenchmarks
-  - REPO=tiangolo/full-stack          # 2020-02-07
-  - REPO=tiangolo/full-stack-fastapi-couchbase  # 2020-04-18
-  - REPO=tiangolo/full-stack-fastapi-postgresql  # 2020-10-01
-  - REPO=tiangolo/full-stack-flask-couchbase  # 2020-02-07
-  - REPO=tiangolo/full-stack-flask-couchdb  # 2020-02-07
-  - REPO=udacity/fullstack-nanodegree-vm
-  - REPO=mattmakai/fullstackpython.com
-  - REPO=graphql-python/graphene
-  - REPO=benoitc/gunicorn
-  - REPO=bwhite/hadoopy
-  - REPO=tiangolo/issue-manager       # 2020-06-13
-  - REPO=jupyterlab/jupyterlab
-  - REPO=keras-team/keras
-  - REPO=keras-team/keras-preprocessing
-  - REPO=rcmalli/keras-vggface
-  - REPO=kivy/kivy
-  - REPO=tiangolo/latest-changes      # 2020-10-04
-  - REPO=authlib/loginpass
-  - REPO=Mailu/Mailu
-  - REPO=tiangolo/meinheld-gunicorn-flask-docker  # 2020-07-23
-  - REPO=OleMussmann/meinheld-gunicorn-flask-docker_test
-  - REPO=squidfunk/mkdocs-material
-  - REPO=python/mypy
-  - REPO=anaisbetts/node-system-idle-time
-  - REPO=hashicorp/nomad
-  - REPO=jupyter/notebook
-  - REPO=oauthlib/oauthlib
-  - REPO=coleifer/peewee
-  - REPO=wallix/PEPS
-  - REPO=PyAV-Org/PyAV
-  - REPO=samuelcolvin/pydantic
-  - REPO=tiangolo/pydantic-sqlalchemy  # 2020-09-28
-  - REPO=xiaoxu193/PyTeaser
-  - REPO=cloudant/python-cloudant
-  - REPO=palantir/python-language-server
-  - REPO=tiangolo/python-machine-learning-docker  # 2019-05-15
-  - REPO=willprice/python-omxplayer-wrapper
-  - REPO=pytorch/pytorch
-  - REPO=pytorch/tutorials
-  - REPO=pywebhdfs/pywebhdfs
-  - REPO=mirumee/saleor
-  - REPO=Bloodevil/sony_camera_api
-  - REPO=explosion/spaCy
-  - REPO=ines/spacy-course
-  - REPO=apache/spark
-  - REPO=sqlalchemy/sqlalchemy
-  - REPO=dropbox/sqlalchemy-stubs
-  - REPO=conda-forge/staged-recipes
-  - REPO=encode/starlette
-  - REPO=couchbase/sync_gateway
-  - REPO=explosion/thinc
-  - REPO=tiangolo/typer               # 2020-09-26
-  - REPO=tiangolo/typer-cli           # 2020-09-23
-  - REPO=encode/uvicorn
-  - REPO=tiangolo/uvicorn-gunicorn-docker  # 2020-07-11
-  - REPO=tiangolo/uvicorn-gunicorn-fastapi-docker  # 2020-06-06
-  - REPO=tiangolo/uvicorn-gunicorn-machine-learning-docker  # 2020-06-05
-  - REPO=tiangolo/uvicorn-gunicorn-starlette-docker  # 2020-04-27
-  - REPO=tiangolo/uwsgi-nginx-docker  # 2020-05-09
-  - REPO=tiangolo/uwsgi-nginx-flask-docker  # 2020-08-16
-  - REPO=tiangolo/wunderlist2csv      # 2014-12-17
+  - REPO=mxrch/GHunt
+  - REPO=Asabeneh/30-Days-Of-Python 
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
