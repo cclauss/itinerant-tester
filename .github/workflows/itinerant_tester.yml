@@ -1,16 +1,16 @@
-name: lint_python
+name: itinerant_tester
 on:
   pull_request:
   push:
   #  branches: [master]
 jobs:
-  lint_python:
+  itinerant_tester:
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]    # [ubuntu-latest, macos-latest, windows-latest]
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
-        repo: [https://github.com/google/oss-fuzz, https://github.com/cclauss/itinerant-tester]
+        repo: ["https://github.com/google/oss-fuzz", "https://github.com/cclauss/itinerant-tester"]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v2
