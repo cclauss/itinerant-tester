@@ -9,25 +9,70 @@ python:
   #- 3.6
   #- 3.7
   #- 3.8
-  - 3.9
   - 3.9-dev
 jobs:
   allow_failures:
     - python: 2.7
-    - python: 3.9
     - python: nightly
     - python: pypy
     - python: pypy3
 env:
-  - REPO=egamma/azure-quickstart-templates  # 2017-02-20 Azure/azure-quickstart-templates
-  - REPO=Azure/azure-quickstart-templates
-  - REPO=egamma/vidcutter             # 2019-10-07 ozmartian/vidcutter
-  - REPO=ozmartian/vidcutter
-  - REPO=egamma/vscode                # 2020-09-28 microsoft/vscode
-  - REPO=microsoft/vscode
-  - REPO=egamma/vscode-python         # 2020-09-21 microsoft/vscode-python
-  - REPO=microsoft/vscode-python
-
+  - REPO=mxrch/GHunt
+  - REPO=TheAlgorithms/Python
+  - REPO=Asabeneh/30-Days-Of-Python
+  - REPO=matplotlib/matplotlib
+  - REPO=willmcgugan/rich
+  - REPO=tiangolo/fastapi
+  - REPO=huggingface/transformers
+  - REPO=pytorch/ignite
+  - REPO=edx/edx-platform
+  - REPO=swapnanildutta/Hackerrank-Codes
+  - REPO=vJechsmayr/PythonAlgorithms
+  - REPO=slackapi/python-slackclient
+  - REPO=OWASP/CheatSheetSeries
+  - REPO=facebookresearch/mmf
+  - REPO=hamuchiwa/AutoRCCar
+  - REPO=encode/uvicorn
+  - REPO=open-mmlab/mmpose
+  - REPO=dagster-io/dagster
+  - REPO=facebookresearch/detectron2
+  - REPO=nvbn/thefuck
+  - REPO=nidhaloff/igel
+  - REPO=mindcrypt/uriDeep
+  - REPO=public-apis/public-apis
+  - REPO=open-mmlab/mmdetection
+  - REPO=celery/celery
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=internetarchive/openlibrary
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=v8/v8
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=getsentry/sentry
+  - REPO=getsentry/sentry-python
+  - REPO=CoreSecurity/impacket
+  - REPO=google/ffn
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
