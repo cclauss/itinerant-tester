@@ -18,6 +18,7 @@ jobs:
     - python: pypy3
 env:
   - REPO=hyperopt/hyperopt
+  - REPO=microsoft/archai
 
 install:
   #- pip install -r requirements.txt
