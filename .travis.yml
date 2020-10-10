@@ -19,7 +19,7 @@ jobs:
 env:
   - REPO=hyperopt/hyperopt
   - REPO=microsoft/archai
-  - REPO= Wenzel/checksec.py
+  - REPO=Wenzel/checksec.py
 
 install:
   #- pip install -r requirements.txt
