@@ -17,6 +17,7 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
+  - REPO=google/clusterfuzz
   - REPO=google/oss-fuzz
   - REPO=open-mmlab/OpenSelfSup
 
