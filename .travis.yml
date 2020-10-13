@@ -17,11 +17,67 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=google/clusterfuzz
+  - REPO=twintproject/twint
+  - REPO=TurboWay/big_screen
+  - REPO=The-Art-of-Hacking/h4cker
+  - REPO=CorentinJ/Real-Time-Voice-Cloning
+  - REPO=scikit-learn/scikit-learn
+  - REPO=timgrossmann/InstaPy
+  - REPO=home-assistant/core
+  - REPO=ct-Open-Source/tuya-convert
+  - REPO=ProgrammingHero1/audiobook
+  - REPO=numpy/numpy
+  - REPO=facebookresearch/TransCoder
+  - REPO=python-geeks/Automation-scripts
+  - REPO=Mebus/cupp
+  - REPO=donnemartin/system-design-primer
+  - REPO=pytorch/fairseq
+  - REPO=jackfrued/Python-100-Days
+  - REPO=thu-ml/tianshou
+  - REPO=wagtail/wagtail
+  - REPO=Ciphey/Ciphey
+  - REPO=apprenticeharper/DeDRM_tools
+  - REPO=bitcoin/bips
+  - REPO=Pitt-CSC/Summer2021-Internships
+  - REPO=Jrohy/multi-v2ray
+  - REPO=tmrowco/electricitymap-contrib
+  - REPO=megadose/holehe
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
   - REPO=google/oss-fuzz
-  - REPO=open-mmlab/OpenSelfSup
-  - REPO=tartley/colorama
-
+  - REPO=GoogleCloudPlatform/professional-services
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=internetarchive/openlibrary
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=ibm-watson-iot/connector-cloudant
+  - REPO=ibm-watson-iot/device-kodi
+  - REPO=ibm-watson-iot/functions
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=v8/v8
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=getsentry/sentry
+  - REPO=getsentry/sentry-python
+  - REPO=CoreSecurity/impacket
+  - REPO=google/ffn
+  - REPO=wxWidgets/Phoenix
+  - REPO=pyinstaller/pyinstaller
+  - REPO=hyperopt/hyperopt
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
