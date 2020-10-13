@@ -20,6 +20,7 @@ env:
   - REPO=google/clusterfuzz
   - REPO=google/oss-fuzz
   - REPO=open-mmlab/OpenSelfSup
+  - REPO=tartley/colorama
 
 install:
   #- pip install -r requirements.txt
