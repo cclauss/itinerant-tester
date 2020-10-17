@@ -21,6 +21,7 @@ env:
   - REPO=wxWidgets/Phoenix
   - REPO=pyinstaller/pyinstaller
   - REPO=hyperopt/hyperopt
+  - REPO=rednafi/konfik
 install:
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
