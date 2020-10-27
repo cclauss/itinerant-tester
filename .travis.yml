@@ -17,14 +17,65 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=statsmodels/statsmodels
-  - A=$TRAVIS_PYTHON_VERSION
-  - B=${TRAVIS_PYTHON_VERSION}
-  - C=$(TRAVIS_PYTHON_VERSION)
-  - D="$TRAVIS_PYTHON_VERSION"
+  - REPO=sherlock-project/sherlock
+  - REPO=blackjack4494/yt-dlc
+  - REPO=EssayKillerBrain/EssayKiller_V2
+  - REPO=l1ving/youtube-dl
+  - REPO=scastillo/not-youtube-dl
+  - REPO=alexandreborges/malwoverview
+  - REPO=vinta/awesome-python
+  - REPO=croningp/ChemputerAntiviralXDL
+  - REPO=jiupinjia/SkyAR
+  - REPO=lrvick/youtube-dl
+  - REPO=facebookresearch/detr
+  - REPO=caioross/python_vingador
+  - REPO=hardikvasa/google-images-download
+  - REPO=home-assistant/core
+  - REPO=3b1b/manim
+  - REPO=iperov/DeepFaceLab
+  - REPO=soskek/bookcorpus
+  - REPO=TheresAFewConors/Sooty
+  - REPO=JustAnotherArchivist/snscrape
+  - REPO=soimort/you-get
+  - REPO=MrS0m30n3/youtube-dl-gui
+  - REPO=pyca/cryptography
+  - REPO=PySimpleGUI/PySimpleGUI
+  - REPO=s0md3v/Photon
+  - REPO=ymcui/Chinese-ELECTRA
+  - REPO=n1nj4sec/pupy
+  - REPO=PythonCharmers/python-future
+  - REPO=ansible/ansible
+  - REPO=google/oss-fuzz
+  - REPO=GoogleCloudPlatform/professional-services
+  - REPO=oaubert/python-vlc
+  - REPO=ColdGrub1384/Pyto
+  - REPO=internetarchive/openlibrary
+  - REPO=apache/beam
+  - REPO=apache/incubator-mxnet
+  - REPO=hyperledger/iroha-python
+  - REPO=Supervisor/supervisor
+  - REPO=cheshirekow/cmake_format
+  - REPO=ckan/ckan
+  - REPO=hyperledger/fabric-sdk-py
+  - REPO=v8/v8
+  - REPO=webpy/webpy
+  - REPO=nodejs/node
+  - REPO=nodejs/node-gyp
+  - REPO=ArduPilot/ardupilot
+  - REPO=ArduPilot/pymavlink
+  - REPO=dronekit/dronekit-python
+  - REPO=ansible/awx
+  - REPO=matplotlib/matplotlib
+  - REPO=ggtracker/sc2reader
+  - REPO=httplib2/httplib2
+  - REPO=getsentry/sentry
+  - REPO=getsentry/sentry-python
+  - REPO=CoreSecurity/impacket
+  - REPO=google/ffn
+  - REPO=wxWidgets/Phoenix
+  - REPO=pyinstaller/pyinstaller
+  - REPO=hyperopt/hyperopt
 install:
-  - echo ${TRAVIS_PYTHON_VERSION} $A $B $C $D
-  - pip install --upgrade pip setuptools wheel
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
 before_script:
