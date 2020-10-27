@@ -17,12 +17,10 @@ jobs:
     - python: pypy
     - python: pypy3
 env:
-  - REPO=idapython/src
-  - REPO=idapython/pyhexraysdeob
-  - REPO=ReFirmLabs/binwalk
-  - REPO=ReFirmLabs/centrifuge-cli
-  - REPO=ReFirmLabs/qnx6-extractor
+  - REPO=statsmodels/statsmodels
 install:
+  - echo ${TRAVIS_PYTHON_VERSION}
+  - pip install --upgrade pip setuptools wheel
   #- pip install -r requirements.txt
   - pip install codespell flake8  # pytest  # add other testing frameworks later
 before_script:
