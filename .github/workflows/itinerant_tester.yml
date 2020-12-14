@@ -10,11 +10,18 @@ jobs:
       matrix:
         os: [ubuntu-latest]    # [ubuntu-latest, macos-latest, windows-latest]
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
-        repo: ["https://github.com/giampaolo/pyftpdlib", "https://github.com/v8/v8", "https://github.com/google/oss-fuzz", "https://github.com/cclauss/itinerant-tester", "https://github.com/docker/compose", "https://github.com/talkpython/modern-apis-with-fastapi"]
+        repo:
+          - cclauss/itinerant-tester
+          - giampaolo/pyftpdlib
+          - v8/v8
+          - google/oss-fuzz
+          - docker/compose
+          - talkpython/modern-apis-with-fastapi
+          - nextstrain/fauna
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v2
-      - run: git clone ${{ matrix.repo }}
+      - run: git clone https://github.com/${{ matrix.repo }}
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
