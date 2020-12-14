@@ -10,11 +10,12 @@ jobs:
       matrix:
         repo:
           - cclauss/itinerant-tester
-          - giampaolo/pyftpdlib
+          -  internetarchive/fatcat
+          # - giampaolo/pyftpdlib
           - v8/v8
           - google/oss-fuzz
-          - docker/compose
-          - talkpython/modern-apis-with-fastapi
+          # - docker/compose
+          # - talkpython/modern-apis-with-fastapi
           - nextstrain/fauna
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
