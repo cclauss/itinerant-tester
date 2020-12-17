@@ -10,7 +10,8 @@ jobs:
       matrix:
         repo:
           - cclauss/itinerant-tester
-          -  internetarchive/fatcat
+          - internetarchive/fatcat
+          - internetarchive/openlibrary
           # - giampaolo/pyftpdlib
           - v8/v8
           - google/oss-fuzz
@@ -25,7 +26,8 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - run: pip install black codespell flake8 isort pytest
+      - run: pip install bandit black codespell flake8 isort pytest
+      - run: bandit -r . || true
       - run: black --check . || true
       # - run: black --diff . || true
       # - if: matrix.python-version >= 3.6
