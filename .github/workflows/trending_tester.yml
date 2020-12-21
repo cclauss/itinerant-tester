@@ -1,1 +1,53 @@
-
+name: itinerant_tester
+on:
+  pull_request:
+  push:
+  #  branches: [master]
+jobs:
+  itinerant_tester:
+    strategy:
+      fail-fast: false
+      matrix:
+        repo:
+          - h2oai/wave
+          - apple/ml-hypersim
+          - aristocratos/bpytop
+          - owid/covid-19-data
+          - 3b1b/manim
+          - Rapptz/discord.py
+          - H1R0GH057/Anonymous
+          - swisskyrepo/PayloadsAllTheThings
+          - Hari-Nagarajan/fairgame
+          - freqtrade/freqtrade
+          - laramies/theHarvester
+          - y1ndan/genshin-impact-helper
+          - ruromgar/python-ai-trading-system
+          - kivymd/KivyMD
+          - emmahodcroft/cluster_scripts
+          - malwaredllc/byob
+          - PiotrMachowski/Xiaomi-cloud-tokens-extractor
+          - dataabc/weiboSpider
+          - public-apis/public-apis
+          - TheAlgorithms/Python
+          - PySimpleGUI/PySimpleGUI
+          - TheSpeedX/TBomb
+          - vitalik/django-ninja
+          - lutris/lutris
+          - PyCQA/pylint
+        python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
+    runs-on: ubuntu-latest
+    steps:
+      # - uses: actions/checkout@v2
+      - run: git clone https://github.com/${ matrix.repo }
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${ matrix.python-version }
+      - run: pip install bandit black codespell flake8 isort pytest
+      - run: bandit -r . || true
+      - run: black --check . || true
+      - run: codespell --quiet-level=2 || true  # --ignore-words-list="" --skip=""
+      - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+      - run: isort --profile black . || true
+      - run: pip install -r requirements.txt || true
+      - run: pytest . || true
+      - run: pytest --doctest-modules . || true
