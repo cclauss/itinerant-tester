@@ -28,12 +28,12 @@ jobs:
           - PiotrMachowski/Xiaomi-cloud-tokens-extractor
           - dataabc/weiboSpider
           - public-apis/public-apis
-          - TheAlgorithms/Python
+          #- TheAlgorithms/Python
           - PySimpleGUI/PySimpleGUI
-          - TheSpeedX/TBomb
-          - vitalik/django-ninja
-          - lutris/lutris
-          - PyCQA/pylint
+          #- TheSpeedX/TBomb
+          #- vitalik/django-ninja
+          #- lutris/lutris
+          #- PyCQA/pylint
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
     steps:
