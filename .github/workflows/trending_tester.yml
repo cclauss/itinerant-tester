@@ -1,10 +1,10 @@
-name: itinerant_tester
+name: trending_tester
 on:
   pull_request:
   push:
   #  branches: [master]
 jobs:
-  itinerant_tester:
+  trending_tester:
     strategy:
       fail-fast: false
       matrix:
