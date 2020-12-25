@@ -11,6 +11,7 @@ jobs:
         repo:
           - vitalik/django-ninja
           - lutris/lutris
+          - stub42/pytz
           - PyCQA/pylint
           - cclauss/itinerant-tester
           - internetarchive/fatcat
