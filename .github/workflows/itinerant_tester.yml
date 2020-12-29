@@ -9,20 +9,11 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - kurtmckee/feedparser
-          - vitalik/django-ninja
-          - lutris/lutris
-          - stub42/pytz
-          - PyCQA/pylint
-          - cclauss/itinerant-tester
-          - internetarchive/fatcat
-          - internetarchive/openlibrary
-          # - giampaolo/pyftpdlib
+          - ShlomiRex/WiFi-EvilTwin
+          - ShlomiRex/WiFi-Deauthernticator
+          - ShlomiRex/wifi-deauth-rpi-wardrive
           - v8/v8
           - google/oss-fuzz
-          # - docker/compose
-          # - talkpython/modern-apis-with-fastapi
-          - nextstrain/fauna
           - dependabot/dependabot-core
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
