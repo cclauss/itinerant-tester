@@ -11,6 +11,7 @@ jobs:
         repo:
           - ShlomiRex/opencv-demos
           - v8/v8
+          - google/clusterfuzz
           - google/oss-fuzz
           - dependabot/dependabot-core
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
