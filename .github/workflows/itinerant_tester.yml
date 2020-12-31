@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - swisskyrepo/PayloadsAllTheThings
+          - faif/python-patterns
           - v8/v8
           - google/clusterfuzz
           - google/oss-fuzz
