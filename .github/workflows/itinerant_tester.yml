@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - ShlomiRex/opencv-demos
+          - swisskyrepo/PayloadsAllTheThings
           - v8/v8
           - google/clusterfuzz
           - google/oss-fuzz
