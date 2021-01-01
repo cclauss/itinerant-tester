@@ -38,10 +38,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
-      - run: git clone https://github.com/${ matrix.repo }
+      - run: git clone https://github.com/${{ matrix.repo }}
       - uses: actions/setup-python@v2
         with:
-          python-version: ${ matrix.python-version }
+          python-version: ${{ matrix.python-version }}
       - run: pip install bandit black codespell flake8 isort pytest
       - run: bandit -r . || true
       - run: black --check . || true
