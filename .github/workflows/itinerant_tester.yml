@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - mxrch/GHunt
           - Open-Book-Genome-Project/TheBestBookOn.com
           # - v8/v8
           # - google/clusterfuzz
