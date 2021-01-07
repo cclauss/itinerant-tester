@@ -11,6 +11,7 @@ jobs:
         repo:
           - mxrch/GHunt
           - Open-Book-Genome-Project/TheBestBookOn.com
+          - ubuntu/microk8s
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
