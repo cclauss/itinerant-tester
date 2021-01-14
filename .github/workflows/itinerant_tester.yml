@@ -10,7 +10,11 @@ jobs:
       matrix:
         repo:
           # - bpython/bpython
-          - Open-Book-Genome-Project/TheBestBookOn.com
+          # - Open-Book-Genome-Project/TheBestBookOn.com
+          - signalapp/Signal-Android
+          - signalapp/Signal-Desktop
+          - signalapp/Signal-iOS
+          - signalapp/Signal-Server
           # - ubuntu/microk8s
           # - v8/v8
           # - google/clusterfuzz
@@ -36,7 +40,7 @@ jobs:
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: isort --profile black . || true
       - run: pip install -r requirements.txt || true
-      - run: mypy --ignore-missing-imports bestbook || true
+      - run: mypy --ignore-missing-imports . || true
       - run: pytest . || true
       - run: pytest --doctest-modules . || true
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
