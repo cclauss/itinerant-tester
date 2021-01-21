@@ -11,11 +11,11 @@ jobs:
         repo:
           # - bpython/bpython
           # - Open-Book-Genome-Project/TheBestBookOn.com
-          - signalapp/Signal-Android
-          - signalapp/Signal-Desktop
-          - signalapp/Signal-iOS
-          - signalapp/Signal-Server
-          # - ubuntu/microk8s
+          #- signalapp/Signal-Android
+          #- signalapp/Signal-Desktop
+          #- signalapp/Signal-iOS
+          #- signalapp/Signal-Server
+          - ubuntu/microk8s
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
