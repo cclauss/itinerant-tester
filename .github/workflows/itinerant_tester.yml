@@ -17,6 +17,7 @@ jobs:
           #- signalapp/Signal-Server
           - ubuntu/microk8s
           - google/brotli
+          - facebookincubator/xar
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
