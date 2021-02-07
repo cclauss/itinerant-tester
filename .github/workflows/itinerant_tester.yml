@@ -18,6 +18,7 @@ jobs:
           - ubuntu/microk8s
           - google/brotli
           - facebookincubator/xar
+          - rytilahti/python-miio
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
