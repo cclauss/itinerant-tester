@@ -15,10 +15,13 @@ jobs:
           #- signalapp/Signal-Desktop
           #- signalapp/Signal-iOS
           #- signalapp/Signal-Server
+          - bnewbold/fatcat-test-base:focal
           - ubuntu/microk8s
           - google/brotli
           - facebookincubator/xar
           - rytilahti/python-miio
+          - docker/docker-py
+          - internetarchive/fatcat-scholar 
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
