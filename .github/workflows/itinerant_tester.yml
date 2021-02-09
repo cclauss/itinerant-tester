@@ -21,7 +21,8 @@ jobs:
           - facebookincubator/xar
           - rytilahti/python-miio
           - docker/docker-py
-          - internetarchive/fatcat-scholar 
+          - internetarchive/fatcat-scholar
+          - internetarchive/snakebite-py3
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
