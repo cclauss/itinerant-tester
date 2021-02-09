@@ -23,6 +23,7 @@ jobs:
           - docker/docker-py
           - internetarchive/fatcat-scholar
           - internetarchive/snakebite-py3
+          - mapbox/node-pre-gyp
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
