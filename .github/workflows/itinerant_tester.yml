@@ -25,6 +25,10 @@ jobs:
           - internetarchive/snakebite-py3
           - internetarchive/wmd
           - mapbox/node-pre-gyp
+          - gdamdam/iagitup
+          - gdamdam/saitan
+          - gdamdam/sumo
+          - gdamdam/rapni
           # - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
