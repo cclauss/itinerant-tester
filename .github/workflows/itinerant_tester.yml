@@ -29,7 +29,7 @@ jobs:
           - gdamdam/saitan
           - gdamdam/sumo
           - gdamdam/rapni
-          # - v8/v8
+          - v8/v8
           # - google/clusterfuzz
           # - google/oss-fuzz
           # - dependabot/dependabot-core
