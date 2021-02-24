@@ -18,18 +18,19 @@ jobs:
           - bnewbold/fatcat-test-base:focal
           - ubuntu/microk8s
           - google/brotli
-          - facebookincubator/xar
-          - rytilahti/python-miio
-          - docker/docker-py
+          #- facebookincubator/xar
+          #- rytilahti/python-miio
+          #- docker/docker-py
           - internetarchive/fatcat-scholar
           - internetarchive/snakebite-py3
           - internetarchive/wmd
-          - mapbox/node-pre-gyp
-          - gdamdam/iagitup
-          - gdamdam/saitan
-          - gdamdam/sumo
-          - gdamdam/rapni
+          #- mapbox/node-pre-gyp
+          #- gdamdam/iagitup
+          #- gdamdam/saitan
+          #- gdamdam/sumo
+          #- gdamdam/rapni
           - v8/v8
+          - httptoolkit/httptoolkit-server
           # - google/clusterfuzz
           # - google/oss-fuzz
           # - dependabot/dependabot-core
