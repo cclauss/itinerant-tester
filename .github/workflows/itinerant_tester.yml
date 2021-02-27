@@ -15,6 +15,7 @@ jobs:
           #- signalapp/Signal-Desktop
           #- signalapp/Signal-iOS
           #- signalapp/Signal-Server
+          - google/sentencepiece
           - bnewbold/fatcat-test-base:focal
           - ubuntu/microk8s
           - google/brotli
