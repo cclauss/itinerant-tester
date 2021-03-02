@@ -23,6 +23,9 @@ jobs:
           #- rytilahti/python-miio
           #- docker/docker-py
           - internetarchive/fatcat-scholar
+          - internetarchive/infogami
+          - internetarchive/openlibrary
+          - internetarchive/openlibrary-client
           - internetarchive/snakebite-py3
           - internetarchive/wmd
           #- mapbox/node-pre-gyp
