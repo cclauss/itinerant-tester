@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           -  domoticz/domoticz
+          -  microsoft/debugpy
           # - bpython/bpython
           # - Open-Book-Genome-Project/TheBestBookOn.com
           #- signalapp/Signal-Android
