@@ -9,8 +9,9 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          -  domoticz/domoticz
-          -  microsoft/debugpy
+          - wasm3/wasm3
+          - domoticz/domoticz
+          - microsoft/debugpy
           # - bpython/bpython
           # - Open-Book-Genome-Project/TheBestBookOn.com
           #- signalapp/Signal-Android
