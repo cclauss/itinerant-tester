@@ -12,6 +12,7 @@ jobs:
           - wasm3/wasm3
           - domoticz/domoticz
           - microsoft/debugpy
+          - osm-by/OpenStreetMap.by
           # - bpython/bpython
           # - Open-Book-Genome-Project/TheBestBookOn.com
           #- signalapp/Signal-Android
