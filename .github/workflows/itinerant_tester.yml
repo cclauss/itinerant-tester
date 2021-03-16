@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - ReFirmLabs/binwalk
+          - ipython/ipython
           # - wasm3/wasm3
           # - domoticz/domoticz
           - joyent/javascriptlint
