@@ -9,9 +9,10 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - wasm3/wasm3
-          - domoticz/domoticz
-          - microsoft/debugpy
+          # - wasm3/wasm3
+          # - domoticz/domoticz
+          - joyent/smartos-live
+          # - microsoft/debugpy
           - osm-by/OpenStreetMap.by
           # - bpython/bpython
           # - Open-Book-Genome-Project/TheBestBookOn.com
