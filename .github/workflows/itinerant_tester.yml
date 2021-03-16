@@ -11,6 +11,7 @@ jobs:
         repo:
           # - wasm3/wasm3
           # - domoticz/domoticz
+          - joyent/javascriptlint
           - joyent/smartos-live
           # - microsoft/debugpy
           - osm-by/OpenStreetMap.by
