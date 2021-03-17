@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - sass/libsass-python
           - ReFirmLabs/binwalk
           - ipython/ipython
           # - wasm3/wasm3
