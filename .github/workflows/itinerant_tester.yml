@@ -9,9 +9,12 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - sass/libsass-python
-          - ReFirmLabs/binwalk
-          - ipython/ipython
+          #- sass/libsass-python
+          #- ReFirmLabs/binwalk
+          #- ipython/ipython
+          -  nodejs/node-gyp
+          -  nodejs/node-gyp
+          -  nodejs/gyp-next
           # - wasm3/wasm3
           # - domoticz/domoticz
           - joyent/javascriptlint
