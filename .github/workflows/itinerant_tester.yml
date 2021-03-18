@@ -12,7 +12,7 @@ jobs:
           #- sass/libsass-python
           #- ReFirmLabs/binwalk
           #- ipython/ipython
-          -  nodejs/node-gyp
+          -  nodejs/node
           -  nodejs/node-gyp
           -  nodejs/gyp-next
           # - wasm3/wasm3
@@ -40,6 +40,7 @@ jobs:
           - internetarchive/openlibrary-client
           - internetarchive/snakebite-py3
           - internetarchive/wmd
+          - jjjake/internetarchive
           #- mapbox/node-pre-gyp
           #- gdamdam/iagitup
           #- gdamdam/saitan
