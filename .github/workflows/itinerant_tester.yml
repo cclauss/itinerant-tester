@@ -10,12 +10,13 @@ jobs:
       matrix:
         repo:
           - cisagov/CHIRP
+          - cedadev/datamad2
           #- sass/libsass-python
           #- ReFirmLabs/binwalk
           #- ipython/ipython
-          -  nodejs/node
-          -  nodejs/node-gyp
-          -  nodejs/gyp-next
+          #-  nodejs/node
+          #-  nodejs/node-gyp
+          #-  nodejs/gyp-next
           # - wasm3/wasm3
           # - domoticz/domoticz
           - joyent/javascriptlint
