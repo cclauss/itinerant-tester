@@ -9,31 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - h2oai/wave
-          - apple/ml-hypersim
-          - aristocratos/bpytop
-          - owid/covid-19-data
-          - 3b1b/manim
-          - Rapptz/discord.py
-          - H1R0GH057/Anonymous
-          - swisskyrepo/PayloadsAllTheThings
-          - Hari-Nagarajan/fairgame
-          - freqtrade/freqtrade
-          - laramies/theHarvester
-          - y1ndan/genshin-impact-helper
-          - ruromgar/python-ai-trading-system
-          - kivymd/KivyMD
-          - emmahodcroft/cluster_scripts
-          - malwaredllc/byob
-          - PiotrMachowski/Xiaomi-cloud-tokens-extractor
-          - dataabc/weiboSpider
-          - public-apis/public-apis
-          #- TheAlgorithms/Python
-          - PySimpleGUI/PySimpleGUI
-          #- TheSpeedX/TBomb
-          #- vitalik/django-ninja
-          #- lutris/lutris
-          #- PyCQA/pylint
+          - lucidrains/big-sleep
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
     steps:
