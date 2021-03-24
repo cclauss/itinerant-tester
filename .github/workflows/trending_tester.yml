@@ -10,37 +10,12 @@ jobs:
       matrix:
         repo:
           - lucidrains/big-sleep
-          - google/model_search
-          - google/ctfscoreboard
-          - google/ctf-scoreboard
-          - google/corpuscrawler
-          - google/gin-config
-          - google/lkml-gerrit-bridge
-          - google/openhtf
-          - google/dfdewey
-          - google/automl-video-ondevice
-          - google/pcbdl
-          - google/autol2
-          - google/pinject
-          - google/dspl
-          - google/wikiloop-analysis
-          - google/dotty
-          - google/NeuroNER-CSPMC
-          - google/multi-task-architecture-search
-          - google/nixysa
-          - google/enjarify
-          - google/atlassian-addons-audit-sheet
-          - google/dcm-video-uploader
-          - google/har-sanitizer
-          - google/ipaddr-py
-          - google/wasserstein-dist
-          - google/amt-forensics
-          - google/packet-queue
-          - google/stress_transfer
-          - google/cluster-insight
-          - google/objectfilter
-          - google/lab_device_proxy
-          - google/firmata.py
+          - kyclark/tiny_python_projects
+          - kyclark/biofx_python
+          - kyclark/new.py
+          - kyclark/csvchk
+          - kyclark/excel2txt-py
+          - kyclark/parallelprocs
         python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
     steps:
