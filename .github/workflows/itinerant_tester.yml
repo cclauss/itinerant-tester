@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - deep-learning-indaba/Baobab
           #- pantsbuild/pants
           - apache/incubator-nuttx
           - dropbox/pyannotate
