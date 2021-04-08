@@ -9,8 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - AnimeshPandey/Lekh
-          #- pantsbuild/pants
+          - micheles/decorator
+          - pantsbuild/pants
           - apache/incubator-nuttx
           - dropbox/pyannotate
           - facebookresearch/TransCoder
