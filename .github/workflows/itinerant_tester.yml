@@ -10,7 +10,7 @@ jobs:
       matrix:
         repo:
           - jsocol/pystatsd
-          #- micheles/decorator
+          #- micheles/decorator 
           #- pantsbuild/pants
           #- apache/incubator-nuttx
           #- dropbox/pyannotate
