@@ -9,13 +9,14 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - micheles/decorator
-          - pantsbuild/pants
-          - apache/incubator-nuttx
-          - dropbox/pyannotate
-          - facebookresearch/TransCoder
-          - cisagov/CHIRP
-          - cedadev/datamad2
+          - jsocol/pystatsd
+          #- micheles/decorator
+          #- pantsbuild/pants
+          #- apache/incubator-nuttx
+          #- dropbox/pyannotate
+          #- facebookresearch/TransCoder
+          #- cisagov/CHIRP
+          #- cedadev/datamad2
           #- sass/libsass-python
           #- ReFirmLabs/binwalk
           #- ipython/ipython
@@ -24,37 +25,37 @@ jobs:
           #-  nodejs/gyp-next
           # - wasm3/wasm3
           # - domoticz/domoticz
-          - joyent/javascriptlint
-          - joyent/smartos-live
+          #- joyent/javascriptlint
+          #- joyent/smartos-live
           # - microsoft/debugpy
-          - osm-by/OpenStreetMap.by
+          #- osm-by/OpenStreetMap.by
           # - bpython/bpython
           # - Open-Book-Genome-Project/TheBestBookOn.com
           #- signalapp/Signal-Android
           #- signalapp/Signal-Desktop
           #- signalapp/Signal-iOS
           #- signalapp/Signal-Server
-          - google/sentencepiece
+          #- google/sentencepiece
           #- bnewbold/fatcat-test-base:focal
           #- ubuntu/microk8s
           #- google/brotli
           #- facebookincubator/xar
           #- rytilahti/python-miio
           #- docker/docker-py
-          - internetarchive/fatcat-scholar
-          - internetarchive/infogami
-          - internetarchive/openlibrary
-          - internetarchive/openlibrary-client
-          - internetarchive/snakebite-py3
-          - internetarchive/wmd
-          - jjjake/internetarchive
+          #- internetarchive/fatcat-scholar
+          #- internetarchive/infogami
+          #- internetarchive/openlibrary
+          #- internetarchive/openlibrary-client
+          #- internetarchive/snakebite-py3
+          #- internetarchive/wmd
+          #- jjjake/internetarchive
           #- mapbox/node-pre-gyp
           #- gdamdam/iagitup
           #- gdamdam/saitan
           #- gdamdam/sumo
           #- gdamdam/rapni
           - v8/v8
-          - httptoolkit/httptoolkit-server
+          #- httptoolkit/httptoolkit-server
           # - google/clusterfuzz
           # - google/oss-fuzz
           # - dependabot/dependabot-core
