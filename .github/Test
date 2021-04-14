@@ -1,0 +1,64 @@
+        """
+        >>> ll = LinkedList()
+        >>> list(ll)
+        []
+        >>> ll.push(88)
+        >>> tuple(ll)
+        (88,)
+        >>> ll.push(89)
+        >>> tuple(ll)
+        (89, 88)
+        """
+        node = self.head
+        while node:
+            yield node.data
+            node = node.next
+
+    def __repr__(self):
+        """
+        >>> ll = LinkedList()
+        >>> repr(ll)
+        'LinkedList()'
+        >>> ll.push(99)
+        >>> ll.push(100)
+        >>> repr(ll)
+        'LinkedList(100, 99)'
+        >>> str(ll)
+        'LinkedList(100, 99)'
+        # Linked List class contains a Node object 
+
+    def push(self, data):
+        node = Node(data)
+        node.next = self.head
+        self.head = new_node 
+
+    def pop(self):
+        if not self.head:
+            raise ValueError()
+        node = self.head
+        self.head = node.next
+ 
+        # If head node itself holds the key to be deleted 
+        if (temp is not None): 
+            self.head = temp.next
+            temp = None
+            return
+        else:
+            return('underflow')
+    def printList(self): 
+        temp = self.head 
+        while(temp): 
+            print (temp.data)
+            temp = temp.next
+
+  
+  
+# Code execution starts here 
+if __name__=='__main__':
+    l=LinkedList()
+    l.insertAtHead(1)
+    l.insertAtHead('xyz')
+    l.insertAtHead(1.1)
+    l.removeAtHead()
+    l.printList()
+
