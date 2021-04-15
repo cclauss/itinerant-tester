@@ -15,7 +15,8 @@ jobs:
           - apache/incubator-nuttx
           - Open-Book-Genome-Project/TheBestBookOn.com
           - Open-Book-Genome-Project/sequencer 
-          - cyberwizard1001/Sem-4-code
+          #- cyberwizard1001/Sem-4-code
+          - aman-raza/Friends_Hack
           #- dropbox/pyannotate
           #- facebookresearch/TransCoder
           #- cisagov/CHIRP
