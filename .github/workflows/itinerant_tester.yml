@@ -10,7 +10,12 @@ jobs:
       matrix:
         repo:
           - jsocol/pystatsd
-          - OriginTrail/ReadTheDocs
+          - wilson1yan/VideoGPT
+          - kizniche/Mycodo
+          - microsoft/DeepSpeed
+          - pyodide/pyodide
+          - Chia-Network/chia-blockchain
+          - gaasedelen/tenet
           #- micheles/decorator 
           #- pantsbuild/pants
           - apache/incubator-nuttx
