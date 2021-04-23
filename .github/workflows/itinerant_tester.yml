@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - jsocol/pystatsd
+          - OriginTrail/ReadTheDocs
           #- micheles/decorator 
           #- pantsbuild/pants
           - apache/incubator-nuttx
