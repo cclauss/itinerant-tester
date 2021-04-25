@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - jsocol/pystatsd
+          - STEllAR-GROUP/octotiger
           - wilson1yan/VideoGPT
           - kizniche/Mycodo
           - microsoft/DeepSpeed
