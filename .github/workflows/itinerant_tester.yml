@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - jsocol/pystatsd
+          - nginx-proxy/nginx-proxy
           - STEllAR-GROUP/octotiger
           - wilson1yan/VideoGPT
           - kizniche/Mycodo
