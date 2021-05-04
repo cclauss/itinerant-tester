@@ -9,15 +9,9 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - jsocol/pystatsd
-          - nginx-proxy/nginx-proxy
-          - STEllAR-GROUP/octotiger
-          - wilson1yan/VideoGPT
-          - kizniche/Mycodo
-          - microsoft/DeepSpeed
-          - pyodide/pyodide
-          - Chia-Network/chia-blockchain
-          - gaasedelen/tenet
+          - MarcoCavalazzi/intro-data-capstone-biodiversity
+          - MarcoCavalazzi/intro-data-capstone-musclehub
+          - MarcoCavalazzi/Python
           #- micheles/decorator 
           #- pantsbuild/pants
           - apache/incubator-nuttx
