@@ -12,6 +12,7 @@ jobs:
           - MarcoCavalazzi/intro-data-capstone-biodiversity
           - MarcoCavalazzi/intro-data-capstone-musclehub
           - MarcoCavalazzi/Python
+          - pallupz/covid-vaccine-booking
           #- micheles/decorator 
           #- pantsbuild/pants
           - apache/incubator-nuttx
