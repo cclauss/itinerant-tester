@@ -10,6 +10,11 @@ jobs:
       matrix:
         repo:
           - psf/black
+          - burnash/gspread
+          - googleworkspace/PyDrive
+          - TadaSoftware/PyNFe
+          - akretion/nfelib
+          - njdreikosen/email_listener
           - pallupz/covid-vaccine-booking
           #- micheles/decorator 
           #- pantsbuild/pants
