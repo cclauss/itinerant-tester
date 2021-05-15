@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - psf/black
+          - HubSpot/hubspot-api-python
           - burnash/gspread
           - googleworkspace/PyDrive
           - TadaSoftware/PyNFe
