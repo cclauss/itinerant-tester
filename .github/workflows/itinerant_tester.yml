@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - psf/black
+          # - psf/black  # bandit goes into an infinite loop
           - HubSpot/hubspot-api-python
           - burnash/gspread
           - googleworkspace/PyDrive
