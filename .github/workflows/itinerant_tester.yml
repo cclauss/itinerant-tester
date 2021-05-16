@@ -10,20 +10,23 @@ jobs:
       matrix:
         repo:
           # - psf/black  # bandit goes into an infinite loop
-          - HubSpot/hubspot-api-python
+          - sqlfluff/sqlfluff
+          - linkedin/greykite
+          - maurosoria/dirsearch
+          #- HubSpot/hubspot-api-python
           - burnash/gspread
-          - googleworkspace/PyDrive
-          - TadaSoftware/PyNFe
-          - akretion/nfelib
+          #- googleworkspace/PyDrive
+          #- TadaSoftware/PyNFe
+          #- akretion/nfelib
           - njdreikosen/email_listener
           - pallupz/covid-vaccine-booking
           #- micheles/decorator 
           #- pantsbuild/pants
-          - apache/incubator-nuttx
-          - Open-Book-Genome-Project/TheBestBookOn.com
-          - Open-Book-Genome-Project/sequencer 
+          #- apache/incubator-nuttx
+          #- Open-Book-Genome-Project/TheBestBookOn.com
+          #- Open-Book-Genome-Project/sequencer 
           #- cyberwizard1001/Sem-4-code
-          - aman-raza/Friends_Hack
+          #- aman-raza/Friends_Hack
           #- dropbox/pyannotate
           #- facebookresearch/TransCoder
           #- cisagov/CHIRP
@@ -65,7 +68,7 @@ jobs:
           #- gdamdam/saitan
           #- gdamdam/sumo
           #- gdamdam/rapni
-          - v8/v8
+          #- v8/v8
           #- httptoolkit/httptoolkit-server
           # - google/clusterfuzz
           # - google/oss-fuzz
