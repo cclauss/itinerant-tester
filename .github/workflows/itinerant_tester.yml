@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           # - psf/black  # bandit goes into an infinite loop
+          - prompt-toolkit/python-prompt-toolkit
           - hyperledger/aries-rfcs
           - sqlfluff/sqlfluff
           - linkedin/greykite
