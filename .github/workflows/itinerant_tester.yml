@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           # - psf/black  # bandit goes into an infinite loop
+          - farmerconnect/farmerconnect-ui
           - jumpserver/jumpserver
           - prompt-toolkit/python-prompt-toolkit
           - hyperledger/aries-rfcs
