@@ -10,7 +10,8 @@ jobs:
       matrix:
         repo:
           # - psf/black  # bandit goes into an infinite loop
-          - Azure/azure-sdk-for-python
+          # - Azure/azure-sdk-for-python
+          - davidlatwe/montydb
           - infarm/logicipi
           - farmOS/farmOS.py
           - farmOS/farmOS-aggregator
