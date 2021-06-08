@@ -11,6 +11,7 @@ jobs:
         repo:
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
+          - ParthJadhav/Tkinter-Designer
           - davidlatwe/montydb
           - infarm/logicipi
           - farmOS/farmOS.py
