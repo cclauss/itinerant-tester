@@ -12,6 +12,11 @@ jobs:
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
           - ParthJadhav/Tkinter-Designer
+          - samuelcolvin/pydantic
+          - DataDog/dd-trace-py
+          - DataDog/datadogpy
+          - jd/tenacity
+          - sileht/cotyledon
           - davidlatwe/montydb
           - infarm/logicipi
           - farmOS/farmOS.py
