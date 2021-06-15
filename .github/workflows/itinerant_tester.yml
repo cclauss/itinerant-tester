@@ -11,6 +11,7 @@ jobs:
         repo:
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
+          - codespell-project/codespell
           - ParthJadhav/Tkinter-Designer
           - samuelcolvin/pydantic
           - DataDog/dd-trace-py
