@@ -11,6 +11,7 @@ jobs:
         repo:
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
+          - ArduPilot/pymavlink
           - codespell-project/codespell
           - ParthJadhav/Tkinter-Designer
           - samuelcolvin/pydantic
@@ -26,7 +27,6 @@ jobs:
           - jumpserver/jumpserver
           - prompt-toolkit/python-prompt-toolkit
           - hyperledger/aries-rfcs
-          - sqlfluff/sqlfluff
           - linkedin/greykite
           - maurosoria/dirsearch
           #- HubSpot/hubspot-api-python
