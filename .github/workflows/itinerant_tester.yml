@@ -12,6 +12,7 @@ jobs:
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
           - ArduPilot/pymavlink
+          - bee-san/pyWhat
           - codespell-project/codespell
           - ParthJadhav/Tkinter-Designer
           - samuelcolvin/pydantic
