@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - PX4/px4_ros_com
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
           #- ArduPilot/pymavlink
