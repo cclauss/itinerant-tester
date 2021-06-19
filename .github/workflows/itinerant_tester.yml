@@ -11,16 +11,21 @@ jobs:
         repo:
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
-          - ArduPilot/pymavlink
-          - bee-san/pyWhat
-          - codespell-project/codespell
-          - ParthJadhav/Tkinter-Designer
-          - samuelcolvin/pydantic
-          - DataDog/dd-trace-py
-          - DataDog/datadogpy
-          - jd/tenacity
-          - sileht/cotyledon
-          - davidlatwe/montydb
+          #- ArduPilot/pymavlink
+          #- bee-san/pyWhat
+          #- codespell-project/codespell
+          #- ParthJadhav/Tkinter-Designer
+          #- samuelcolvin/pydantic
+          #- DataDog/dd-trace-py
+          #- DataDog/datadogpy
+          #- jd/tenacity
+          #- sileht/cotyledon
+          #- davidlatwe/montydb
+          - aaronbassett/FARM-starter
+          - artisan-roaster-scope/artisan
+          - jldbc/coffee-quality-database
+          - Q42/coffeehack
+          - Roastero/Openroast
           - infarm/logicipi
           - farmOS/farmOS.py
           - farmOS/farmOS-aggregator
