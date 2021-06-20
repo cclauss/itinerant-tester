@@ -9,6 +9,11 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - mavlink/MAVSDK
+          - mavlink/MAVSDK-Proto
+          - mavlink/MAVSDK-Python
+          - mavlink/mavlink-devguide
+          - mavlink/mavlink.io
           - boto/s3transfer
           - PX4/px4_ros_com
           # - psf/black  # bandit goes into an infinite loop
