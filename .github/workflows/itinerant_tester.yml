@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - nodejs/gyp-next
           - nodejs/node-gyp
           - mavlink/MAVSDK
           - mavlink/MAVSDK-Proto
