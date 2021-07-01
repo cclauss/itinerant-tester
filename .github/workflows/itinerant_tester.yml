@@ -17,7 +17,7 @@ jobs:
           - mavlink/MAVSDK-Python
           - mavlink/mavlink-devguide
           - mavlink/mavlink.io
-          - boto/s3transfer
+          - sovrin-foundation/sovrin
           - PX4/px4_ros_com
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
