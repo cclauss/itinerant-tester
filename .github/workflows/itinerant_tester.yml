@@ -18,6 +18,16 @@ jobs:
           - mavlink/mavlink-devguide
           - mavlink/mavlink.io
           - sovrin-foundation/sovrin
+          - sovrin-foundation/community-tools
+          - sovrin-foundation/token-plugin
+          - sovrin-foundation/sovrin-sip  # from hyperledger/indy-hipe
+          - sovrin-foundation/steward-tools
+          - sovrin-foundation/aries-acapy-plugin-toolbox  # from hyperledger/aries-acapy-plugin-toolbox
+          - sovrin-foundation/aries-cloudagent-python  # from hyperledger/aries-cloudagent-python
+          - sovrin-foundation/training
+          - sovrin-foundation/sovrin-test-automation
+          - sovrin-foundation/indy-dev  # from michaeldboyd/indy-dev
+          - sovrin-foundation/sov-docs-conf
           - PX4/px4_ros_com
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
