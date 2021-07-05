@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - serge-sans-paille/pythran
           - JaidedAI/EasyOCR
           - nodejs/gyp-next
           - nodejs/node-gyp
