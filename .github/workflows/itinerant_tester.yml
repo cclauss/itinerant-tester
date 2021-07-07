@@ -9,27 +9,28 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - zalando/connexion
           - iterative/dvc
           - serge-sans-paille/pythran
           - JaidedAI/EasyOCR
-          - nodejs/gyp-next
-          - nodejs/node-gyp
-          - mavlink/MAVSDK
-          - mavlink/MAVSDK-Proto
-          - mavlink/MAVSDK-Python
-          - mavlink/mavlink-devguide
-          - mavlink/mavlink.io
+          #- nodejs/gyp-next
+          #- nodejs/node-gyp
+          #- mavlink/MAVSDK
+          #- mavlink/MAVSDK-Proto
+          #- mavlink/MAVSDK-Python
+          #- mavlink/mavlink-devguide
+          #- mavlink/mavlink.io
           - sovrin-foundation/sovrin
           - sovrin-foundation/community-tools
-          - sovrin-foundation/token-plugin
-          - sovrin-foundation/sovrin-sip  # from hyperledger/indy-hipe
-          - sovrin-foundation/steward-tools
-          - sovrin-foundation/aries-acapy-plugin-toolbox  # from hyperledger/aries-acapy-plugin-toolbox
-          - sovrin-foundation/aries-cloudagent-python  # from hyperledger/aries-cloudagent-python
-          - sovrin-foundation/training
-          - sovrin-foundation/sovrin-test-automation
-          - sovrin-foundation/indy-dev  # from michaeldboyd/indy-dev
-          - sovrin-foundation/sov-docs-conf
+          #- sovrin-foundation/token-plugin
+          #- sovrin-foundation/sovrin-sip  # from hyperledger/indy-hipe
+          #- sovrin-foundation/steward-tools
+          #- sovrin-foundation/aries-acapy-plugin-toolbox  # from hyperledger/aries-acapy-plugin-toolbox
+          #- sovrin-foundation/aries-cloudagent-python  # from hyperledger/aries-cloudagent-python
+          #- sovrin-foundation/training
+          #- sovrin-foundation/sovrin-test-automation
+          #- sovrin-foundation/indy-dev  # from michaeldboyd/indy-dev
+          #- sovrin-foundation/sov-docs-conf
           - PX4/px4_ros_com
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
@@ -52,18 +53,18 @@ jobs:
           - farmOS/farmOS.py
           - farmOS/farmOS-aggregator
           #- farmerconnect/farmerconnect-ui
-          - jumpserver/jumpserver
-          - prompt-toolkit/python-prompt-toolkit
-          - hyperledger/aries-rfcs
-          - linkedin/greykite
-          - maurosoria/dirsearch
-          #- HubSpot/hubspot-api-python
-          - burnash/gspread
+          #- jumpserver/jumpserver
+          #- prompt-toolkit/python-prompt-toolkit
+          #- hyperledger/aries-rfcs
+          #- linkedin/greykite
+          #- maurosoria/dirsearch
+          - HubSpot/hubspot-api-python
+          -burnash/gspread
           #- googleworkspace/PyDrive
           #- TadaSoftware/PyNFe
           #- akretion/nfelib
-          - njdreikosen/email_listener
-          - pallupz/covid-vaccine-booking
+          #- njdreikosen/email_listener
+          #- pallupz/covid-vaccine-booking
           #- micheles/decorator 
           #- pantsbuild/pants
           #- apache/incubator-nuttx
