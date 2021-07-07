@@ -59,7 +59,7 @@ jobs:
           #- linkedin/greykite
           #- maurosoria/dirsearch
           - HubSpot/hubspot-api-python
-          -burnash/gspread
+          - burnash/gspread
           #- googleworkspace/PyDrive
           #- TadaSoftware/PyNFe
           #- akretion/nfelib
