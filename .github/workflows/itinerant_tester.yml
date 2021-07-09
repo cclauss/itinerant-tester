@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - apple/swift-log
           - heartexlabs/label-studio
           - kean/Pulse
           - zalando/connexion
