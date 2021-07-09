@@ -11,7 +11,7 @@ jobs:
         repo:
           - apple/swift-log
           - heartexlabs/label-studio
-          - kean/Pulse
+          - anhtuan1410/sucafina_test_interview
           - zalando/connexion
           - iterative/dvc
           - serge-sans-paille/pythran
