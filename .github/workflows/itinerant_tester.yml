@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - bqplot/bqplot
+          - chriskiehl/Gooey
           - Neo23x0/Loki
           - CODAIT/pydax
           - giswqs/geemap
