@@ -135,7 +135,16 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: brew --version || true
       - run: pip install bandit black codespell flake8 isort mypy pytest pyupgrade safety
-      - run: bandit -r . || true
+      - run: |
+          bandit -r . > bandit.out.txt || true
+          cat bandit.out.txt
+      - shell: python
+        run: |
+          with open("bandit.out.txt") as in_file:
+              errors = sorted(
+                  set(line[11:15] for line in in_file if line.startswith(">> "))
+              )
+          print(",".join(errors))
       - run: black --check . || true
       # - run: black --diff . || true
       # - if: matrix.python-version >= 3.6
