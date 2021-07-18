@@ -144,7 +144,7 @@ jobs:
               errors = sorted(
                   set(line[11:15] for line in in_file if line.startswith(">> "))
               )
-          print(",".join(errors))
+          print(f"bandit --recursive --skip {','.join(errors)} .")
       - run: black --check . || true
       # - run: black --diff . || true
       # - if: matrix.python-version >= 3.6
