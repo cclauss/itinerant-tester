@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - bqplot/bqplot
+          - cyphonmdr/cyphon
           - dateutil/dateutil
           - Neo23x0/Loki
           - CODAIT/pydax
