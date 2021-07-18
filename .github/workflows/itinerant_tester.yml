@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - austinsonger/Incident-Playbook
+          - deepmind/alphafold
           - dateutil/dateutil
           - Neo23x0/Loki
           - CODAIT/pydax
