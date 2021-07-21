@@ -59,6 +59,8 @@ jobs:
           - infarm/logicipi
           - farmOS/farmOS.py
           - farmOS/farmOS-aggregator
+          - applecreekacres/farm-terminal
+          - yamsamcham/ekisan_farmersportal.github.io
           #- farmerconnect/farmerconnect-ui
           #- jumpserver/jumpserver
           #- prompt-toolkit/python-prompt-toolkit
