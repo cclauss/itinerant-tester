@@ -10,6 +10,12 @@ jobs:
       matrix:
         repo:
           - mvt-project/mvt
+          - Ciphey/Ciphey
+          - tebelorg/RPA-Python
+          - outscale/osc-cli
+          - ArjanCodes/betterpython
+          - matrix-org/synapse
+          - microsoft/unilm
           - AmnestyTech/investigations
           - AmnestyTech/covid19-apps
           - dateutil/dateutil
@@ -22,36 +28,36 @@ jobs:
           - iterative/dvc
           - serge-sans-paille/pythran
           - JaidedAI/EasyOCR
-          - deepmind/alphafold
-          - deepmind/android_env
-          - deepmind/optax
-          - deepmind/acme
-          - deepmind/chex
-          - deepmind/meltingpot
-          - deepmind/launchpad
-          - deepmind/tree
-          - deepmind/enn
-          - deepmind/dm-haiku
-          - deepmind/distrax
-          - deepmind/dm_c19_modelling
-          - deepmind/jax_verify
-          - deepmind/jraph
-          - deepmind/sonnet
-          - deepmind/dm_pix
-          - deepmind/dqn_zoo
-          - deepmind/ferminet
-          - deepmind/dm_env
-          - deepmind/rlax
-          - deepmind/dmvr
-          - deepmind/learning-to-learn
-          - deepmind/dnc
-          - deepmind/bsuite
-          - deepmind/surface-distance
-          - deepmind/dm_control
-          - deepmind/tensor_annotations
-          - deepmind/jaxline
-          - deepmind/dm_env_rpc
-          - deepmind/jmp 
+          #- deepmind/alphafold
+          #- deepmind/android_env
+          #- deepmind/optax
+          #- deepmind/acme
+          #- deepmind/chex
+          #- deepmind/meltingpot
+          #- deepmind/launchpad
+          #- deepmind/tree
+          #- deepmind/enn
+          #- deepmind/dm-haiku
+          #- deepmind/distrax
+          #- deepmind/dm_c19_modelling
+          #- deepmind/jax_verify
+          #- deepmind/jraph
+          #- deepmind/sonnet
+          #- deepmind/dm_pix
+          #- deepmind/dqn_zoo
+          #- deepmind/ferminet
+          #- deepmind/dm_env
+          #- deepmind/rlax
+          #- deepmind/dmvr
+          #- deepmind/learning-to-learn
+          #- deepmind/dnc
+          #- deepmind/bsuite
+          #- deepmind/surface-distance
+          #- deepmind/dm_control
+          #- deepmind/tensor_annotations
+          #- deepmind/jaxline
+          #- deepmind/dm_env_rpc
+          #- deepmind/jmp 
           #- nodejs/gyp-next
           #- nodejs/node-gyp
           #- mavlink/MAVSDK
