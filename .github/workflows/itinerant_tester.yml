@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - mvt-project/mvt
+          - theskumar/python-dotenv
           - Ciphey/Ciphey
           - tebelorg/RPA-Python
           - outscale/osc-cli
