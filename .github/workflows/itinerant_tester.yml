@@ -208,9 +208,11 @@ jobs:
           from subprocess import run  # Requires Python >= 3.7
           from typing import Tuple
 
-          flake8_out: Tuple[str] = tuple(
-              run(["flake8", "--max-complexity=1", "."], capture_output=True, text=True).stdout.splitlines()
-          )
+          flake8_out: Tuple[str] = tuple(run(
+              ["flake8", "--ignore=AA", "--isolated", "--max-complexity=1", "."],
+              capture_output=True,
+              text=True
+          ).stdout.splitlines())
 
 
           def get_max_complexity(flake8_out: Tuple[str] = flake8_out) -> int:
