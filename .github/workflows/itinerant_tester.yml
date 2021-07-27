@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - mvt-project/mvt
+          -  PyGithub/PyGithub
           - theskumar/python-dotenv
           - Ciphey/Ciphey
           - tebelorg/RPA-Python
