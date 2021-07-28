@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - asl2/PyZ3950
+          - openai/gym
           - confluentinc/confluent-kafka-python
           #- deepmind/alphafold
           #- deepmind/android_env
