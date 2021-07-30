@@ -12,6 +12,7 @@ jobs:
           - asl2/PyZ3950
           - openai/gym
           - confluentinc/confluent-kafka-python
+          - dfirtrack/dfirtrack
           #- deepmind/alphafold
           #- deepmind/android_env
           #- deepmind/optax
