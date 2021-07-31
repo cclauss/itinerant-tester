@@ -13,9 +13,7 @@ jobs:
           - openai/gym
           - confluentinc/confluent-kafka-python
           - dfirtrack/dfirtrack
-          - pre-commit-ci/pre-commit.ci
-          - pre-commit-ci/pre-commit-ci-config
-          - pre-commit-ci/runner-image
+          - ucla-mobility/OpenCDA
           #- deepmind/alphafold
           #- deepmind/android_env
           #- deepmind/optax
