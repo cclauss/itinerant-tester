@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - nedbat/coveragepy
+          - PyCQA/prospector
           - SJang1/korea-covid-19-remaining-vaccine-macro
           - isl-org/Open3D
           - pantsbuild/pants
