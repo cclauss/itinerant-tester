@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - nedbat/coveragepy
+          - SJang1/korea-covid-19-remaining-vaccine-macro
           - isl-org/Open3D
           - pantsbuild/pants
           - asl2/PyZ3950
