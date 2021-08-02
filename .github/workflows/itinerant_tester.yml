@@ -9,8 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - mitmproxy/mitmproxy
-          - Tib3rius/AutoRecon
+          - lutris/lutris
           - PyCQA/prospector
           - SJang1/korea-covid-19-remaining-vaccine-macro
           #- isl-org/Open3D
