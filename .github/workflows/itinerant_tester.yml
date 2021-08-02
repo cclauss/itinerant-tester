@@ -9,15 +9,16 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - verigak/progress
           - PyCQA/prospector
           - SJang1/korea-covid-19-remaining-vaccine-macro
-          - isl-org/Open3D
-          - pantsbuild/pants
-          - asl2/PyZ3950
-          - openai/gym
-          - confluentinc/confluent-kafka-python
+          #- isl-org/Open3D
+          #- pantsbuild/pants
+          #- asl2/PyZ3950
+          #- openai/gym
+          #- confluentinc/confluent-kafka-python
           - dfirtrack/dfirtrack
-          - ucla-mobility/OpenCDA
+          #- ucla-mobility/OpenCDA
           #- deepmind/alphafold
           #- deepmind/android_env
           #- deepmind/optax
@@ -79,16 +80,16 @@ jobs:
           #- jd/tenacity
           #- sileht/cotyledon
           #- davidlatwe/montydb
-          - aaronbassett/FARM-starter
-          - artisan-roaster-scope/artisan
-          - jldbc/coffee-quality-database
-          - Q42/coffeehack
-          - Roastero/Openroast
-          - infarm/logicipi
-          - farmOS/farmOS.py
-          - farmOS/farmOS-aggregator
-          - applecreekacres/farm-terminal
-          - yamsamcham/ekisan_farmersportal.github.io
+          #- aaronbassett/FARM-starter
+          #- artisan-roaster-scope/artisan
+          #- jldbc/coffee-quality-database
+          #- Q42/coffeehack
+          #- Roastero/Openroast
+          #- infarm/logicipi
+          #- farmOS/farmOS.py
+          #- farmOS/farmOS-aggregator
+          #- applecreekacres/farm-terminal
+          #- yamsamcham/ekisan_farmersportal.github.io
           #- farmerconnect/farmerconnect-ui
           #- jumpserver/jumpserver
           #- prompt-toolkit/python-prompt-toolkit
