@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - verigak/progress
+          - Tib3rius/AutoRecon
           - PyCQA/prospector
           - SJang1/korea-covid-19-remaining-vaccine-macro
           #- isl-org/Open3D
@@ -165,6 +165,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: brew --version || true
+      - run: pip install --upgrade pip wheel
       - run: pip install bandit black codespell flake8 isort mypy pytest pyupgrade safety
       - run: |
           bandit -r . > bandit.out.txt || true
@@ -182,11 +183,12 @@ jobs:
       #  run: |
       #    pip install black
       #    black --check . || true
-      - run: codespell --quiet-level=2 || true  # --ignore-words-list="" --skip=""
+      - run: codespell || true  # --ignore-words-list="" --skip=""
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       - run: pip install -r requirements.txt || true
+      - run: mkdir -p .mypy_cache
       - run: mypy --install-types --non-interactive . || true
       - run: pytest . || true
       - run: pytest --doctest-modules . || true
