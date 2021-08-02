@@ -9,9 +9,14 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - lutris/lutris
+          - m4ll0k/BBTz
+          - GamestonkTerminal/GamestonkTerminal
+          - PiotrMachowski/Xiaomi-cloud-tokens-extractor
+          - dvlab-research/Entity
           - PyCQA/prospector
           - SJang1/korea-covid-19-remaining-vaccine-macro
+          - mementum/backtrader
+          - searx/searx
           #- isl-org/Open3D
           #- pantsbuild/pants
           #- asl2/PyZ3950
