@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - elastic/helm-charts
+          - andyzys/jd_seckill
           #- isl-org/Open3D
           #- pantsbuild/pants
           #- asl2/PyZ3950
