@@ -9,12 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - m4ll0k/BBTz
-          - ShutdownRepo/pywhisker
-          - PyCQA/prospector
-          - SJang1/korea-covid-19-remaining-vaccine-macro
-          - mementum/backtrader
-          - searx/searx
+          - elastic/helm-charts
           #- isl-org/Open3D
           #- pantsbuild/pants
           #- asl2/PyZ3950
