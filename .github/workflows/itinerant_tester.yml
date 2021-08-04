@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - isl-org/Open3D
+          - isl-org/Open3D-ML
           - openai/gym
           #- pantsbuild/pants
           #- asl2/PyZ3950
