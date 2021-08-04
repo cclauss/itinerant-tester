@@ -9,9 +9,13 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - Hiroshiba/voicevox_engine
-          - SigmaHQ/sigma
-          - open-mmlab/mmcv
+          - speechbrain/speechbrain
+          - skelsec/pypykatz
+          - t-rekttt/lolsn
+          - lanjelot/patator
+          - parnexcodes/widevine-L3-WEB-DL-Script
+          - DIGITALCRIMINAL/OnlyFans
+          - Beckschen/TransUNet
           - isl-org/Open3D
           - isl-org/Open3D-ML
           - openai/gym
