@@ -9,6 +9,9 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - Hiroshiba/voicevox_engine
+          - SigmaHQ/sigma
+          - open-mmlab/mmcv
           - isl-org/Open3D
           - isl-org/Open3D-ML
           - openai/gym
