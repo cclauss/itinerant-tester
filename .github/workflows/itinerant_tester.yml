@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - andyzys/jd_seckill
+          - isl-org/Open3D
           #- isl-org/Open3D
           #- pantsbuild/pants
           #- asl2/PyZ3950
