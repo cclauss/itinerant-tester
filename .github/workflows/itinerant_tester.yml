@@ -10,7 +10,7 @@ jobs:
       matrix:
         repo:
           - chriskiehl/Gooey
-          - isl-org/Open3D-ML
+          #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
           #- asl2/PyZ3950
@@ -95,8 +95,8 @@ jobs:
           #- hyperledger/aries-rfcs
           #- linkedin/greykite
           #- maurosoria/dirsearch
-          - HubSpot/hubspot-api-python
-          - burnash/gspread
+          #- HubSpot/hubspot-api-python
+          #- burnash/gspread
           #- googleworkspace/PyDrive
           #- TadaSoftware/PyNFe
           #- akretion/nfelib
@@ -194,9 +194,13 @@ jobs:
           pip install --editable .
         # if: ${{ failure() }}
       - run: mkdir -p .mypy_cache
-      - run: mypy --install-types --non-interactive . || true
-      - run: pytest . || true
-      - run: pytest --doctest-modules . || true
+      - run: mypy --ignore-missing-imports --install-types --non-interactive . || true
+      - uses: GabrielBB/xvfb-action@v1
+        with:
+          run: pytest gooey
+      - uses: GabrielBB/xvfb-action@v1
+        with:
+          run: pytest --doctest-modules gooey
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
       - run: safety check
       - shell: python
