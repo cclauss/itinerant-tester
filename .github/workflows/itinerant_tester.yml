@@ -187,7 +187,9 @@ jobs:
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       - run: pip install -r requirements.txt
-      - run: pip install --editable .
+      - run: |
+          ls -l
+          pip install --editable .
         if: ${{ failure() }}
       - run: mkdir -p .mypy_cache
       - run: mypy --install-types --non-interactive . || true
