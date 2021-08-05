@@ -184,15 +184,15 @@ jobs:
       #    pip install black
       #    black --check . || true
       - run: codespell || true  # --ignore-words-list="" --skip=""
-      - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+      - run: flake8 . --count --builtins=_,self --select=E9,F63,F7,F82 --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt || true
       - run: |
           cd Gooey
           sudo apt-get install freeglut3-dev libgl1-mesa-dev libglu1-mesa-dev libgstreamer-plugins-base1.0-dev libgtk-3-dev libjpeg-dev libnotify-dev libpng-dev libsdl2-dev libsm-dev libtiff-dev libwebkit2gtk-4.0-dev libxtst-dev
           pip install --editable .
-        if: ${{ failure() }}
+        # if: ${{ failure() }}
       - run: mkdir -p .mypy_cache
       - run: mypy --install-types --non-interactive . || true
       - run: pytest . || true
