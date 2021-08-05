@@ -183,10 +183,12 @@ jobs:
       #    pip install black
       #    black --check . || true
       - run: codespell || true  # --ignore-words-list="" --skip=""
+      - run: codespell --ignore-words-list="datas,metatdata,strat" --skip="*.json"
       - run: flake8 . --count --select=E9,F63,F7 --show-source --statistics  # F82
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       - run: pip install -r requirements.txt || true
+      - run: pip install --editable .
       - run: mkdir -p .mypy_cache
       - run: mypy --install-types --non-interactive . || true
       - run: pytest . || true
