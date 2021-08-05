@@ -9,15 +9,14 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - apache/tvm
-          - isl-org/Open3D
+          - chriskiehl/Gooey
           - isl-org/Open3D-ML
-          - openai/gym
+          #- openai/gym
           #- pantsbuild/pants
           #- asl2/PyZ3950
           #- openai/gym
           #- confluentinc/confluent-kafka-python
-          - dfirtrack/dfirtrack
+          #- dfirtrack/dfirtrack
           #- ucla-mobility/OpenCDA
           #- deepmind/alphafold
           #- deepmind/android_env
@@ -56,8 +55,8 @@ jobs:
           #- mavlink/MAVSDK-Python
           #- mavlink/mavlink-devguide
           #- mavlink/mavlink.io
-          - sovrin-foundation/sovrin
-          - sovrin-foundation/community-tools
+          #- sovrin-foundation/sovrin
+          #- sovrin-foundation/community-tools
           #- sovrin-foundation/token-plugin
           #- sovrin-foundation/sovrin-sip  # from hyperledger/indy-hipe
           #- sovrin-foundation/steward-tools
@@ -67,7 +66,7 @@ jobs:
           #- sovrin-foundation/sovrin-test-automation
           #- sovrin-foundation/indy-dev  # from michaeldboyd/indy-dev
           #- sovrin-foundation/sov-docs-conf
-          - PX4/px4_ros_com
+          #- PX4/px4_ros_com
           # - psf/black  # bandit goes into an infinite loop
           # - Azure/azure-sdk-for-python
           #- ArduPilot/pymavlink
