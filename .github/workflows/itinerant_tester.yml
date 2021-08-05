@@ -197,10 +197,10 @@ jobs:
       - run: mypy --ignore-missing-imports --install-types --non-interactive . || true
       - uses: GabrielBB/xvfb-action@v1
         with:
-          run: pytest gooey
+          run: pytest .
       - uses: GabrielBB/xvfb-action@v1
         with:
-          run: pytest --doctest-modules gooey
+          run: pytest --doctest-modules .
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
       - run: safety check
       - shell: python
