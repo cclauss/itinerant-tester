@@ -10,6 +10,37 @@ jobs:
       matrix:
         repo:
           - chriskiehl/Gooey
+          - wagtail/wagtail
+          - GoogleCloudPlatform/python-docs-samples
+          - GoogleCloudPlatform/professional-services
+          - GoogleCloudPlatform/appengine-python-standard
+          - GoogleCloudPlatform/PerfKitBenchmarker
+          - GoogleCloudPlatform/fourkeys
+          - GoogleCloudPlatform/deploymentmanager-samples
+          - GoogleCloudPlatform/microservices-demo
+          - GoogleCloudPlatform/artifact-registry-python-tools
+          - GoogleCloudPlatform/cloud-sql-python-connector
+          - GoogleCloudPlatform/professional-services-data-validator
+          - GoogleCloudPlatform/public-datasets-pipelines
+          - GoogleCloudPlatform/marketplace-k8s-app-tools
+          - GoogleCloudPlatform/datacatalog-connectors-bi
+          - GoogleCloudPlatform/gsutil
+          - GoogleCloudPlatform/cloud-run-microservice-template-python
+          - GoogleCloudPlatform/datacatalog-tag-engine
+          - GoogleCloudPlatform/covid-19-open-data
+          - GoogleCloudPlatform/getting-started-python
+          - GoogleCloudPlatform/oozie-to-airflow
+          - GoogleCloudPlatform/cloud-shell-tutorials
+          - GoogleCloudPlatform/functions-framework-python
+          - GoogleCloudPlatform/cloud-debug-python
+          - GoogleCloudPlatform/artifact-registry-yum-plugin
+          - GoogleCloudPlatform/opentelemetry-operations-python
+          - GoogleCloudPlatform/cloud-profiler-python
+          - GoogleCloudPlatform/cloud-data-quality
+          - GoogleCloudPlatform/gke-photoalbum-example
+          - GoogleCloudPlatform/python-runtime
+          - GoogleCloudPlatform/explainable_ai_sdk
+          - GoogleCloudPlatform/compute-gpu-monitoring
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
