@@ -22,25 +22,7 @@ jobs:
           - GoogleCloudPlatform/cloud-sql-python-connector
           - GoogleCloudPlatform/professional-services-data-validator
           - GoogleCloudPlatform/public-datasets-pipelines
-          - GoogleCloudPlatform/marketplace-k8s-app-tools
-          - GoogleCloudPlatform/datacatalog-connectors-bi
-          - GoogleCloudPlatform/gsutil
-          - GoogleCloudPlatform/cloud-run-microservice-template-python
-          - GoogleCloudPlatform/datacatalog-tag-engine
-          - GoogleCloudPlatform/covid-19-open-data
-          - GoogleCloudPlatform/getting-started-python
-          - GoogleCloudPlatform/oozie-to-airflow
-          - GoogleCloudPlatform/cloud-shell-tutorials
-          - GoogleCloudPlatform/functions-framework-python
-          - GoogleCloudPlatform/cloud-debug-python
-          - GoogleCloudPlatform/artifact-registry-yum-plugin
-          - GoogleCloudPlatform/opentelemetry-operations-python
-          - GoogleCloudPlatform/cloud-profiler-python
-          - GoogleCloudPlatform/cloud-data-quality
-          - GoogleCloudPlatform/gke-photoalbum-example
-          - GoogleCloudPlatform/python-runtime
-          - GoogleCloudPlatform/explainable_ai_sdk
-          - GoogleCloudPlatform/compute-gpu-monitoring
+          - wxWidgets/Phoenix
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
@@ -214,8 +196,8 @@ jobs:
       #  run: |
       #    pip install black
       #    black --check . || true
-      - run: codespell || true  # --ignore-words-list="" --skip=""
-      - run: flake8 . --count --builtins=_,self --select=E9,F63,F7,F82 --show-source --statistics
+      - run: codespell --skip="*.po" || true  # --ignore-words-list="" --skip="*.po"
+      - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       - run: pip install -r requirements.txt || true
