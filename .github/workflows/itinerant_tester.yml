@@ -12,6 +12,7 @@ jobs:
           - chriskiehl/Gooey
           - wagtail/wagtail
           - wxWidgets/Phoenix
+          - burnash/gspread
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
