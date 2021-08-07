@@ -11,17 +11,6 @@ jobs:
         repo:
           - chriskiehl/Gooey
           - wagtail/wagtail
-          - GoogleCloudPlatform/python-docs-samples
-          - GoogleCloudPlatform/professional-services
-          - GoogleCloudPlatform/appengine-python-standard
-          - GoogleCloudPlatform/PerfKitBenchmarker
-          - GoogleCloudPlatform/fourkeys
-          - GoogleCloudPlatform/deploymentmanager-samples
-          - GoogleCloudPlatform/microservices-demo
-          - GoogleCloudPlatform/artifact-registry-python-tools
-          - GoogleCloudPlatform/cloud-sql-python-connector
-          - GoogleCloudPlatform/professional-services-data-validator
-          - GoogleCloudPlatform/public-datasets-pipelines
           - wxWidgets/Phoenix
           #- isl-org/Open3D-ML
           #- openai/gym
@@ -200,11 +189,11 @@ jobs:
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
-      - run: pip install -r requirements.txt || true
+      - run: pip install -r requirements.txt || pip install --editable . || true
       - run: mkdir -p .mypy_cache
       - run: mypy --ignore-missing-imports --install-types --non-interactive . || true
-      - run: pytest .
-      - run: pytest --doctest-modules .
+      - run: pytest . || true
+      - run: pytest --doctest-modules . || true
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
       - run: safety check
       - shell: python
