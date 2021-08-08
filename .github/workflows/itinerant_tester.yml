@@ -13,6 +13,10 @@ jobs:
           - wagtail/wagtail
           - wxWidgets/Phoenix
           - burnash/gspread
+          - dbt-labs/dbt
+          - mne-tools/mne-python
+          - akretion/nfelib
+          - akretion/generateds-odoo
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
