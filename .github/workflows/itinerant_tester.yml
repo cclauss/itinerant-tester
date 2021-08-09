@@ -17,6 +17,7 @@ jobs:
           - mne-tools/mne-python
           - akretion/nfelib
           - akretion/generateds-odoo
+          - Vonng/ddia
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
