@@ -18,6 +18,7 @@ jobs:
           - akretion/nfelib
           - akretion/generateds-odoo
           - Vonng/ddia
+          - BYVoid/OpenCC
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
