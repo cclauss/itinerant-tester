@@ -21,6 +21,7 @@ jobs:
           - akretion/generateds-odoo
           - Vonng/ddia
           - BYVoid/OpenCC
+          - cvpe/Pythonista-scripts
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
