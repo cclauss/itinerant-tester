@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - google/yapf
           - yogeshojha/rengine
           - elastic/elasticsearch-py
           - chriskiehl/Gooey
