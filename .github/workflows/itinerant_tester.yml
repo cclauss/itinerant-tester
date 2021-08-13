@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - deepmind/alphafold
           - DmytroLitvinov/awesome-flake8-extensions
           - google/yapf
           - mxrch/GHunt
