@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - google/yapf
+          - mxrch/GHunt
           - yogeshojha/rengine
           - elastic/elasticsearch-py
           - chriskiehl/Gooey
