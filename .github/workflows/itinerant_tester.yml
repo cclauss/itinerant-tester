@@ -24,7 +24,9 @@ jobs:
           - akretion/generateds-odoo
           - Vonng/ddia
           - BYVoid/OpenCC
-          - cvpe/Pythonista-scripts
+          - elastic/detection-rules
+          - unit8co/darts
+          - netbox-community/netbox
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
