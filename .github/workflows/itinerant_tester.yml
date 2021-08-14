@@ -9,24 +9,25 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - deepmind/alphafold
-          - DmytroLitvinov/awesome-flake8-extensions
-          - google/yapf
-          - mxrch/GHunt
-          - yogeshojha/rengine
-          - chriskiehl/Gooey
-          - wagtail/wagtail
-          - wxWidgets/Phoenix
-          - burnash/gspread
-          - dbt-labs/dbt
-          - mne-tools/mne-python
-          - akretion/nfelib
-          - akretion/generateds-odoo
-          - Vonng/ddia
-          - BYVoid/OpenCC
-          - elastic/detection-rules
-          - unit8co/darts
-          - netbox-community/netbox
+          - OWASP/CheatSheetSeries
+          #- deepmind/alphafold
+          #- DmytroLitvinov/awesome-flake8-extensions
+          #- google/yapf
+          #- mxrch/GHunt
+          #- yogeshojha/rengine
+          #- chriskiehl/Gooey
+          #- wagtail/wagtail
+          #- wxWidgets/Phoenix
+          #- burnash/gspread
+          #- dbt-labs/dbt
+          #- mne-tools/mne-python
+          #- akretion/nfelib
+          #- akretion/generateds-odoo
+          #- Vonng/ddia
+          #- BYVoid/OpenCC
+          #- elastic/detection-rules
+          #- unit8co/darts
+          #- netbox-community/netbox
           #- isl-org/Open3D-ML
           #- openai/gym
           #- pantsbuild/pants
