@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - OWASP/CheatSheetSeries
+          - NVlabs/imaginaire
           - DeepGraphLearning/torchdrug
           - microsoft/recommenders
           - G-Security-Team/GSLibrary
