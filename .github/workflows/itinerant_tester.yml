@@ -10,6 +10,11 @@ jobs:
       matrix:
         repo:
           - OWASP/CheatSheetSeries
+          - DeepGraphLearning/torchdrug
+          - microsoft/recommenders
+          - G-Security-Team/GSLibrary
+          - nsidnev/fastapi-realworld-example-app
+          - samuelcolvin/pydantic
           #- deepmind/alphafold
           #- DmytroLitvinov/awesome-flake8-extensions
           #- google/yapf
