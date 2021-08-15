@@ -15,6 +15,7 @@ jobs:
           - G-Security-Team/GSLibrary
           - nsidnev/fastapi-realworld-example-app
           - samuelcolvin/pydantic
+          - readthedocs/readthedocs.org
           #- deepmind/alphafold
           #- DmytroLitvinov/awesome-flake8-extensions
           #- google/yapf
