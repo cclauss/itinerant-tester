@@ -16,6 +16,12 @@ jobs:
           - nsidnev/fastapi-realworld-example-app
           - samuelcolvin/pydantic
           - readthedocs/readthedocs.org
+          - Rapptz/discord.py
+          - projectdiscovery/nuclei-templates
+          - platformio/platformio-core
+          - Z4nzu/hackingtool
+          - blakeblackshear/frigate
+          - Ciphey/Ciphey
           #- deepmind/alphafold
           #- DmytroLitvinov/awesome-flake8-extensions
           #- google/yapf
