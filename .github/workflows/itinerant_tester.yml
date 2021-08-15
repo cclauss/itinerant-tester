@@ -188,7 +188,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: brew --version || true
       - run: pip install --upgrade pip wheel
-      - run: pip install bandit black codespell flake8 isort mypy pytest pyupgrade safety
+      - run: pip install bandit black codespell flake8 flake8-bugbear
+                         flake8-comprehensions flake8-return isort
+                         mypy pytest pyupgrade safety
       - run: |
           bandit -r . > bandit.out.txt || true
           cat bandit.out.txt
@@ -213,8 +215,7 @@ jobs:
       - run: pip install -r requirements.txt || pip install --editable . || true
       - run: mkdir -p .mypy_cache
       - run: mypy --ignore-missing-imports --install-types --non-interactive . || true
-      - run: pytest . || true
-      - run: pytest --doctest-modules . || true
+      - run: pytest . || pytest --doctest-modules . || true
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
       - run: safety check
       - shell: python
@@ -260,5 +261,5 @@ jobs:
           print(flake8_cmd)
           print("=" * 80)
           run(flake8_cmd.split(), text=True)
-      - run: pip install flake8-bugbear flake8-comprehensions  # flake8-docstrings flake8-import-order flake8-polyfill flake8-return flake8-variables-names
-      - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics || true
+      #- run: pip install flake8-bugbear flake8-comprehensions  # flake8-docstrings flake8-import-order flake8-polyfill flake8-return flake8-variables-names
+      #- run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics || true
