@@ -9,6 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - ms-jpq/coq_nvim
+          - aws/serverless-application-model
           - aristocratos/bpytop
           - NVlabs/imaginaire
           - DeepGraphLearning/torchdrug
