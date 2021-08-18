@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - RobotWebTools/rosbridge_suite
           - ms-jpq/coq_nvim
           - aws/serverless-application-model
           - aristocratos/bpytop
