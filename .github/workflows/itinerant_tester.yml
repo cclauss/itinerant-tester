@@ -21,7 +21,7 @@ jobs:
           #- nsidnev/fastapi-realworld-example-app
           #- samuelcolvin/pydantic
           #- readthedocs/readthedocs.org
-          3- Rapptz/discord.py
+          #- Rapptz/discord.py
           #- projectdiscovery/nuclei-templates
           #- platformio/platformio-core
           #- Z4nzu/hackingtool
