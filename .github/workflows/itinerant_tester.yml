@@ -9,23 +9,24 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - RobotWebTools/rosbridge_suite
-          - ms-jpq/coq_nvim
-          - aws/serverless-application-model
-          - aristocratos/bpytop
-          - NVlabs/imaginaire
-          - DeepGraphLearning/torchdrug
-          - microsoft/recommenders
-          - G-Security-Team/GSLibrary
-          - nsidnev/fastapi-realworld-example-app
-          - samuelcolvin/pydantic
-          - readthedocs/readthedocs.org
-          - Rapptz/discord.py
-          - projectdiscovery/nuclei-templates
-          - platformio/platformio-core
-          - Z4nzu/hackingtool
-          - blakeblackshear/frigate
-          - Ciphey/Ciphey
+          - PettingZoo-Team/PettingZoo
+          #- RobotWebTools/rosbridge_suite
+          #- ms-jpq/coq_nvim
+          #- aws/serverless-application-model
+          #- aristocratos/bpytop
+          #- NVlabs/imaginaire
+          #- DeepGraphLearning/torchdrug
+          #- microsoft/recommenders
+          #- G-Security-Team/GSLibrary
+          #- nsidnev/fastapi-realworld-example-app
+          #- samuelcolvin/pydantic
+          #- readthedocs/readthedocs.org
+          3- Rapptz/discord.py
+          #- projectdiscovery/nuclei-templates
+          #- platformio/platformio-core
+          #- Z4nzu/hackingtool
+          #- blakeblackshear/frigate
+          #- Ciphey/Ciphey
           #- deepmind/alphafold
           #- DmytroLitvinov/awesome-flake8-extensions
           #- google/yapf
