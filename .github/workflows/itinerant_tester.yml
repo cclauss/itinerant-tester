@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - PettingZoo-Team/PettingZoo
+          - unit8co/darts
           #- RobotWebTools/rosbridge_suite
           #- ms-jpq/coq_nvim
           #- aws/serverless-application-model
@@ -43,7 +44,6 @@ jobs:
           #- Vonng/ddia
           #- BYVoid/OpenCC
           #- elastic/detection-rules
-          #- unit8co/darts
           #- netbox-community/netbox
           #- isl-org/Open3D-ML
           #- openai/gym
