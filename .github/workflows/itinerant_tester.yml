@@ -9,10 +9,13 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - readthedocs/common
-          - simplejson/simplejson
+          - aelol/quant
+          - kornia/kornia
+          - tmrowco/electricitymap-contrib
           - PettingZoo-Team/PettingZoo
           - unit8co/darts
+          - benbusby/whoogle-search
+          - Udyz/proxyshell-auto 
           #- RobotWebTools/rosbridge_suite
           #- ms-jpq/coq_nvim
           #- aws/serverless-application-model
