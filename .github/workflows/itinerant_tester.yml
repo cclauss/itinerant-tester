@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - aelol/quant
+          - ros/genpy
           - kornia/kornia
           - tmrowco/electricitymap-contrib
           - PettingZoo-Team/PettingZoo
