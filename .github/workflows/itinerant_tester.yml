@@ -9,7 +9,12 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - ros/genpy
+          - RobotWebTools/depthcloud_encoder
+          - RobotWebTools/rclnodejs
+          - RobotWebTools/rclnodejs-cli
+          - RobotWebTools/rosbridge_suite
+          - RobotWebTools/tf2_web_republisher
+          - RobotWebTools/webrtc_ros
           - kornia/kornia
           - tmrowco/electricitymap-contrib
           - PettingZoo-Team/PettingZoo
