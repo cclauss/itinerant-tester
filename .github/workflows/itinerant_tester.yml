@@ -210,7 +210,7 @@ jobs:
       - run: pip install bandit black codespell flake8 flake8-bugbear
                          flake8-comprehensions flake8-return isort
                          mypy pytest pyupgrade safety
-      # cut: domain/repo --> repo
+      
       - run: cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`
       # tee: write to stdout and also into the file
       - run: bandit --recursive . | tee bandit.out.txt || true
@@ -235,9 +235,15 @@ jobs:
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
-      - run: pip install -r requirements.txt || pip install --editable . || true
-      - run: mkdir -p .mypy_cache
-      - run: mypy --ignore-missing-imports --install-types --non-interactive . || true
+      - name: pip install -r requirements.txt || pip install --editable . || true
+        run: |
+          # cut: domain/repo --> repo
+          cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`
+          pip install -r requirements.txt || pip install --editable . || true
+      - name: mypy --ignore-missing-imports --install-types --non-interactive . || true
+        run: |
+          mkdir -p .mypy_cache
+          mypy --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytest . || pytest --doctest-modules . || true
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
       - run: safety check
