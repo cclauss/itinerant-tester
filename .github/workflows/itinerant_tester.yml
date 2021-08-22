@@ -210,29 +210,28 @@ jobs:
       - run: pip install bandit black codespell flake8 flake8-bugbear
                          flake8-comprehensions flake8-return isort
                          mypy pytest pyupgrade safety
-      - shell: python
-        run: |
-          import json, os
-          print(json.dumps(dict(os.environ), indent=4))
-      - run: cd `python -c "import os; print(os.environ['GITHUB_ENV.matrix.repo'].split('/')[-1])"`
-      - run: |
-          bandit -r . > bandit.out.txt || true
-          cat bandit.out.txt
-      - shell: python
+      # cut: domain/repo --> repo
+      - run: cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`
+      # tee: write to stdout and also into the file
+      - run: bandit --recursive . | tee bandit.out.txt || true
+      - name: Customized bandit command
+        shell: python
         run: |
           with open("bandit.out.txt") as in_file:
               errors = sorted(
                   set(line[11:15] for line in in_file if line.startswith(">> "))
               )
-          print(f"bandit --recursive --skip {','.join(errors)} .")
-      - run: rm bandit.out.txt
-      - run: black --check . || true
+          skip = f" --skip {','.join(errors)}" if errors else ""
+          print(f"bandit --recursive {skip} .")
+      - run: |
+          black --check . || true
+          rm bandit.out.txt
       # - run: black --diff . || true
       # - if: matrix.python-version >= 3.6
       #  run: |
       #    pip install black
       #    black --check . || true
-      - run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.po"
+      - run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
