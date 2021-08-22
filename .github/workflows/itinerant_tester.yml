@@ -204,7 +204,7 @@ jobs:
       - run: git clone https://github.com/${{ matrix.repo }}
       # cut: domain/repo --> repo
       - run: echo "repo_directory=$(echo ${{ matrix.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
-      - script: python
+      - shell: python
         run: import json, os; print(json.dumps(dict(os.environ) , indent=4))
       - run: |
           echo ${{ matrix }}
