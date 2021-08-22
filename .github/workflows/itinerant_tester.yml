@@ -204,10 +204,13 @@ jobs:
       - run: git clone https://github.com/${{ matrix.repo }}
       # cut: domain/repo --> repo
       - run: echo "repo_directory=$(echo ${{ matrix.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
+      - script: python
+        run: import json, os; print(json.dumps(dict(os.environ) , indent=4))
       - run: |
+          echo ${{ matrix }}
           # echo "0: ${{ repo_directory }}"
-          echo "1: ${{ matrix.repo_directory }}"
-          echo "2: ${{ GITHUB_ENV.repo_directory }}"
+          # echo "1: ${{ matrix.repo_directory }}"
+          # echo "2: ${{ GITHUB_ENV.repo_directory }}"
           # echo "3: $repo_directory" || true
       - uses: actions/setup-python@v2
         with:
