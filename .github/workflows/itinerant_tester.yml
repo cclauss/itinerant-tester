@@ -211,7 +211,6 @@ jobs:
                          flake8-comprehensions flake8-return isort
                          mypy pytest pyupgrade safety
       
-      - run: cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`
       # tee: write to stdout and also into the file
       - run: bandit --recursive . | tee bandit.out.txt || true
       - name: Customized bandit command
@@ -235,13 +234,14 @@ jobs:
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
+      # The next two commands need to 'cd repo_name' to work correctly
       - name: pip install -r requirements.txt || pip install --editable . || true
         run: |
-          # cut: domain/repo --> repo
-          cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`
+          cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`  # cut: domain/repo --> repo
           pip install -r requirements.txt || pip install --editable . || true
       - name: mypy --ignore-missing-imports --install-types --non-interactive . || true
         run: |
+          cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`  # cut: domain/repo --> repo
           mkdir -p .mypy_cache
           mypy --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytest . || pytest --doctest-modules . || true
