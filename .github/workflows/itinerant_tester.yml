@@ -203,7 +203,7 @@ jobs:
       # - uses: actions/checkout@v2
       - run: git clone https://github.com/${{ matrix.repo }}
       # cut: domain/repo --> repo
-      - run: echo "repo_directory=$(${{ matrix.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
+      - run: echo "repo_directory=$(echo ${{ matrix.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
       - run: echo ${{ matrix.repo_directory }}
       - uses: actions/setup-python@v2
         with:
