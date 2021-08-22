@@ -9,12 +9,9 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - RobotWebTools/depthcloud_encoder
-          - RobotWebTools/rclnodejs
-          - RobotWebTools/rclnodejs-cli
-          - RobotWebTools/rosbridge_suite
-          - RobotWebTools/tf2_web_republisher
-          - RobotWebTools/webrtc_ros
+          - DIGITALCRIMINAL/OnlyFans
+          - CyberPunkMetalHead/binance-trading-bot-new-coins
+          - open-mmlab/mmdetection
           - kornia/kornia
           - tmrowco/electricitymap-contrib
           - PettingZoo-Team/PettingZoo
