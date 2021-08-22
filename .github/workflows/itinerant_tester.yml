@@ -210,6 +210,10 @@ jobs:
       - run: pip install bandit black codespell flake8 flake8-bugbear
                          flake8-comprehensions flake8-return isort
                          mypy pytest pyupgrade safety
+      - shell: python
+        run: |
+          import json, os
+          print(json.dumps(os.environ), indent=4))
       - run: cd `python -c "import os; print(os.environ['GITHUB_ENV.matrix.repo'].split('/')[-1])"`
       - run: |
           bandit -r . > bandit.out.txt || true
