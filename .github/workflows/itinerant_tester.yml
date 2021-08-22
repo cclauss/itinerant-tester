@@ -9,15 +9,12 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - DIGITALCRIMINAL/OnlyFans
-          - CyberPunkMetalHead/binance-trading-bot-new-coins
-          - open-mmlab/mmdetection
-          - kornia/kornia
-          - tmrowco/electricitymap-contrib
-          - PettingZoo-Team/PettingZoo
-          - unit8co/darts
-          - benbusby/whoogle-search
-          - Udyz/proxyshell-auto 
+          - ManimCommunity/manim
+          - smicallef/spiderfoot
+          - LiveOverflow/ctf-screenshotter
+          - zero-to-mastery/start-here-guidelines
+          - Slam-Team/slam-mirrorbot
+          - pokepetter/ursina
           #- RobotWebTools/rosbridge_suite
           #- ms-jpq/coq_nvim
           #- aws/serverless-application-model
