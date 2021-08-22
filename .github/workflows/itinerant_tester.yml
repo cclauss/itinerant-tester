@@ -213,7 +213,7 @@ jobs:
       - shell: python
         run: |
           import json, os
-          print(json.dumps(os.environ, indent=4))
+          print(json.dumps(dict(os.environ), indent=4))
       - run: cd `python -c "import os; print(os.environ['GITHUB_ENV.matrix.repo'].split('/')[-1])"`
       - run: |
           bandit -r . > bandit.out.txt || true
