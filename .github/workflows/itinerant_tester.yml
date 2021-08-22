@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - TheAlgorithms/Go
+          - kornia/kornia
           - ManimCommunity/manim
           - smicallef/spiderfoot
           - LiveOverflow/ctf-screenshotter
