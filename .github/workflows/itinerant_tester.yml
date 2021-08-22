@@ -210,7 +210,7 @@ jobs:
       - run: pip install bandit black codespell flake8 flake8-bugbear
                          flake8-comprehensions flake8-return isort
                          mypy pytest pyupgrade safety
-      - run: cd ${{ matrix.repo }}
+      - run: cd `python -c "import os; print(os.environ['matrix.repo'].split('/')[-1])"
       - run: |
           bandit -r . > bandit.out.txt || true
           cat bandit.out.txt
