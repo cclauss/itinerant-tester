@@ -208,7 +208,7 @@ jobs:
           echo "repo_directory=$repo_directory" >> $GITHUB_ENV
       - shell: python
         run: import json, os; print(json.dumps(dict(os.environ) , indent=4))
-      - run: |
+      #- run: |
           # echo ${{ matrix }}
           # echo "0: ${{ repo_directory }}"
           # echo "1: ${{ matrix.repo_directory }}"
