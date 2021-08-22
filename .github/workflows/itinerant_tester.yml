@@ -202,6 +202,9 @@ jobs:
     steps:
       # - uses: actions/checkout@v2
       - run: git clone https://github.com/${{ matrix.repo }}
+      # cut: domain/repo --> repo
+      - run: echo "repo_directory=$(${{ matrix.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
+      - run: echo ${{ matrix.repo_directory }}
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
@@ -237,11 +240,11 @@ jobs:
       # The next two commands need to 'cd repo_name' to work correctly
       - name: pip install -r requirements.txt || pip install --editable . || true
         run: |
-          cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`  # cut: domain/repo --> repo
+          cd ${{ matrix.repo_directory }}
           pip install -r requirements.txt || pip install --editable . || true
       - name: mypy --ignore-missing-imports --install-types --non-interactive . || true
         run: |
-          cd `echo ${{ matrix.repo }} | cut -d"/" -f 2`  # cut: domain/repo --> repo
+          cd ${{ matrix.repo_directory }}
           mkdir -p .mypy_cache
           mypy --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytest . || pytest --doctest-modules . || true
