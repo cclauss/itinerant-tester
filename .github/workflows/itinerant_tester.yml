@@ -209,10 +209,6 @@ jobs:
           echo "1: ${{ matrix.repo_directory }}"
           echo "2: ${{ GITHUB_ENV.repo_directory }}"
           echo "3: $repo_directory" || true
-          echo "4:" ${{ repo_directory }} || true
-          echo "5:" ${{ matrix.repo_directory }} || true
-          echo "6:" ${{ GITHUB_ENV.repo_directory }} || true
-          echo "7:" $repo_directory
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
