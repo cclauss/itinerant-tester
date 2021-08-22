@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - TheAlgorithms/Go
           - ManimCommunity/manim
           - smicallef/spiderfoot
           - LiveOverflow/ctf-screenshotter
