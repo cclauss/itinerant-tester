@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - cryos/avogadro
           - kornia/kornia
           - burnash/gspread
           - ManimCommunity/manim
