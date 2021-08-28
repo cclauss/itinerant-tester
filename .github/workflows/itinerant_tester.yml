@@ -10,12 +10,13 @@ jobs:
       matrix:
         repo:
           - kornia/kornia
+          - burnash/gspread
           - ManimCommunity/manim
           - smicallef/spiderfoot
           - LiveOverflow/ctf-screenshotter
           - zero-to-mastery/start-here-guidelines
           - Slam-Team/slam-mirrorbot
-          - pokepetter/ursina
+          - internetarchive/rulesengine
           #- RobotWebTools/rosbridge_suite
           #- ms-jpq/coq_nvim
           #- aws/serverless-application-model
