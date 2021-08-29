@@ -10,7 +10,7 @@ jobs:
       matrix:
         repo:
           - nose-devs/nose2
-          - Kitware/VTK
+          - NeuroVault/NeuroVault
           - kornia/kornia
           - burnash/gspread
           - ManimCommunity/manim
