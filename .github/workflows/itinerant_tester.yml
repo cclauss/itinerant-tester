@@ -9,6 +9,11 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - openbabel/documentation
+          - openbabel/openbabel
+          - openbabel/maintenance
+          - openbabel/conda-openbabel
+          - openbabel/contributed
           - nose-devs/nose2
           - NeuroVault/NeuroVault
           - kornia/kornia
