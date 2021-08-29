@@ -9,13 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - OpenChemistry/avogadroapp
-          - OpenChemistry/avogadrolabs
-          - OpenChemistry/tomviz
-          - OpenChemistry/molequeue
-          - OpenChemistry/ParaView
-          - OpenChemistry/VTK
-          - OpenChemistry/Kitware/VTK
+          - nose-devs/nose2
+          - Kitware/VTK
           - kornia/kornia
           - burnash/gspread
           - ManimCommunity/manim
