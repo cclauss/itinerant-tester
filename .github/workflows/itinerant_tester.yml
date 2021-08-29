@@ -9,7 +9,19 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - cryos/avogadro
+          - OpenChemistry/oremda
+          - OpenChemistry/avogadro-cclib 
+          - OpenChemistry/avogenerators
+          - OpenChemistry/avogadro-commands
+          - OpenChemistry/stemserver
+          - OpenChemistry/mongochemdeploy
+          - OpenChemistry/openchemistrypy
+          - OpenChemistry/mongochemserver
+          - OpenChemistry/avogadro-ugm2018
+          - OpenChemistry/girder_jupyter
+          - girder/girder_jupyter
+          - OpenChemistry/girder_jupyterhub 
+          - girder/girder_jupyterhub
           - kornia/kornia
           - burnash/gspread
           - ManimCommunity/manim
