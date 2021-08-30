@@ -16,7 +16,7 @@ jobs:
           - openbabel/contributed
           - nose-devs/nose2
           - NeuroVault/NeuroVault
-          - kornia/kornia
+          - PeterL1n/RobustVideoMatting
           - burnash/gspread
           - ManimCommunity/manim
           - smicallef/spiderfoot
