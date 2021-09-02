@@ -9,6 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - daviddrysdale/python-phonenumbers
+          - 328d95/40083
           - OpenChemistry/avogadroapp
           - OpenChemistry/avogenerators
           - OpenChemistry/avogadrolabs
