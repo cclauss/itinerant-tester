@@ -10,7 +10,7 @@ jobs:
       matrix:
         repo:
           - Pycord-Development/pycord
-          - 328d95/40083
+          - ThoughtfulDev/EagleEye
           - OpenChemistry/avogadroapp
           - OpenChemistry/avogenerators
           - OpenChemistry/avogadrolabs
