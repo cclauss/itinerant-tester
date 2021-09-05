@@ -9,16 +9,18 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - kevin1024/vcrpy
+          - kiwicom/pytest-recording
           - Pycord-Development/pycord
           - ThoughtfulDev/EagleEye
           - OpenChemistry/avogadroapp
           - OpenChemistry/avogenerators
-          - OpenChemistry/avogadrolabs
+          - OpenChemistry/avogadrolibs
           - OpenChemistry/tomviz
           - OpenChemistry/molequeue
           - OpenChemistry/ParaView
           - OpenChemistry/VTK
-          - OpenChemistry/Kitware/VTK
+          - Kitware/VTK
           - openbabel/documentation
           - openbabel/openbabel
           - openbabel/maintenance
@@ -213,7 +215,7 @@ jobs:
           # - google/clusterfuzz
           # - google/oss-fuzz
           # - dependabot/dependabot-core
-        python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
+        python-version: ['3.10-dev']  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
