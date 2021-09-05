@@ -9,23 +9,27 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - kevin1024/vcrpy
-          - kiwicom/pytest-recording
+          #- kevin1024/vcrpy
+          #- kiwicom/pytest-recording
           - Pycord-Development/pycord
-          - ThoughtfulDev/EagleEye
-          - OpenChemistry/avogadroapp
-          - OpenChemistry/avogenerators
-          - OpenChemistry/avogadrolibs
-          - OpenChemistry/tomviz
-          - OpenChemistry/molequeue
-          - OpenChemistry/ParaView
-          - OpenChemistry/VTK
-          - Kitware/VTK
-          - openbabel/documentation
-          - openbabel/openbabel
-          - openbabel/maintenance
-          - openbabel/conda-openbabel
-          - openbabel/contributed
+          #- ThoughtfulDev/EagleEye
+          #- OpenChemistry/avogadroapp
+          #- OpenChemistry/avogenerators
+          #- OpenChemistry/avogadrolibs
+          #- OpenChemistry/tomviz
+          #- OpenChemistry/molequeue
+          #- OpenChemistry/ParaView
+          #- OpenChemistry/VTK
+          #- Kitware/VTK
+          #- openbabel/documentation
+          #- openbabel/openbabel
+          #- openbabel/maintenance
+          #- openbabel/conda-openbabel
+          #- openbabel/contributed
+          - DiegoVicen/som-tsp
+          - ytdl-org/youtube-dl
+          - PatrickAlphaC/nft-mix
+          - erikalu/omnimatte
           - nose-devs/nose2
           - NeuroVault/NeuroVault
           - PeterL1n/RobustVideoMatting
