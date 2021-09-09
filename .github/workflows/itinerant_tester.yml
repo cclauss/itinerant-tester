@@ -11,6 +11,7 @@ jobs:
         repo:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
+          - xfangfang/Macast
           - compphoto/BoostingMonocularDepth
           - sphinx-doc/sphinx
           - aiogram/aiogram
