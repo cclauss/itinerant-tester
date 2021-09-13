@@ -11,7 +11,7 @@ jobs:
         repo:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
-          - signorrayan/RedTeam_toolkit
+          - GeoffMaciolek/python-itunes-backup-browser
           - microsoft/qlib
           - microsoft/SoftTeacher
           - xfangfang/Macast
