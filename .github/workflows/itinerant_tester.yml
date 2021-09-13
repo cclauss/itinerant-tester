@@ -12,8 +12,8 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           - GeoffMaciolek/python-itunes-backup-browser
-          - microsoft/qlib
-          - microsoft/SoftTeacher
+          - apache/superset
+          - Microsoft's/SoftTeacher
           - xfangfang/Macast
           - compphoto/BoostingMonocularDepth
           - sphinx-doc/sphinx
