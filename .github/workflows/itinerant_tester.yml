@@ -12,6 +12,7 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
+          - davidteather/TikTok-Api
           - apache/superset
           - microsoft/SoftTeacher
           - microsoft/qlib
