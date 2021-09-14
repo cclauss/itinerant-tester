@@ -11,9 +11,10 @@ jobs:
         repo:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
-          - GeoffMaciolek/python-itunes-backup-browser
+          #- GeoffMaciolek/python-itunes-backup-browser
           - apache/superset
-          - Microsoft's/SoftTeacher
+          - microsoft/SoftTeacher
+          - microsoft/qlib
           - xfangfang/Macast
           - compphoto/BoostingMonocularDepth
           - sphinx-doc/sphinx
