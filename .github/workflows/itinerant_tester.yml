@@ -12,6 +12,8 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
+          - google/googletest
+          - google/yapf
           - PyFPDF/fpdf2
           - davidteather/TikTok-Api
           - apache/superset
