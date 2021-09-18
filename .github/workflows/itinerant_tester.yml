@@ -14,6 +14,7 @@ jobs:
           #- GeoffMaciolek/python-itunes-backup-browser
           - jsbain/pythonista_matplotlib_backports
           - Pycord-Development/pycord
+          - The-Art-of-Hacking/h4cker
           #- ThoughtfulDev/EagleEye
           #- OpenChemistry/avogadroapp
           #- OpenChemistry/avogenerators
