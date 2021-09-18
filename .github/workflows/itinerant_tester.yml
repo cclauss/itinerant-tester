@@ -12,26 +12,7 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
-          - wireapp/echo-bot-roman
-          - wireapp/anthe
-          - wireapp/charon
-          - wireapp/sample-data
-          - marcoconti83/sample-data
-          - wireapp/charon-webhook-cli
-          - wireapp/security-monitoring
-          - franziskuskiefer/security-monitoring
-          - wireapp/ansible-redis
-          - google/googletest
-          - google/yapf
-          - PyFPDF/fpdf2
-          - davidteather/TikTok-Api
-          - apache/superset
-          - microsoft/SoftTeacher
-          - microsoft/qlib
-          - xfangfang/Macast
-          - compphoto/BoostingMonocularDepth
-          - sphinx-doc/sphinx
-          - aiogram/aiogram
+          - jsbain/pythonista_matplotlib_backports
           - Pycord-Development/pycord
           #- ThoughtfulDev/EagleEye
           #- OpenChemistry/avogadroapp
