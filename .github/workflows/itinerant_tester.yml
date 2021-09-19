@@ -12,6 +12,7 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
+          - bbilly1/tubearchivist
           - jsbain/pythonista_matplotlib_backports
           - Pycord-Development/pycord
           - The-Art-of-Hacking/h4cker
