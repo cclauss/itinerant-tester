@@ -12,7 +12,8 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
-          - https:jorisschellekens/borb
+          - bytedance/music_source_separation
+          - jorisschellekens/borb
           - Orange-Cyberdefense/arsenal
           - bbilly1/tubearchivist
           - jsbain/pythonista_matplotlib_backports
