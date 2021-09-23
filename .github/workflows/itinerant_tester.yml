@@ -12,6 +12,7 @@ jobs:
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
+          - 7eu7d7/genshin_auto_fish
           - bytedance/music_source_separation
           - jorisschellekens/borb
           - Orange-Cyberdefense/arsenal
