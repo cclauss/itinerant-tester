@@ -9,32 +9,9 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          #- kevin1024/vcrpy
-          #- kiwicom/pytest-recording
-          #- GeoffMaciolek/python-itunes-backup-browser
-          - 7eu7d7/genshin_auto_fish
-          - bytedance/music_source_separation
+          - urllib3/urllib3
           - jorisschellekens/borb
-          - Orange-Cyberdefense/arsenal
-          - bbilly1/tubearchivist
-          - jsbain/pythonista_matplotlib_backports
-          - Pycord-Development/pycord
           - The-Art-of-Hacking/h4cker
-          - Netflix/metaflow
-          #- ThoughtfulDev/EagleEye
-          #- OpenChemistry/avogadroapp
-          #- OpenChemistry/avogenerators
-          #- OpenChemistry/avogadrolibs
-          #- OpenChemistry/tomviz
-          #- OpenChemistry/molequeue
-          #- OpenChemistry/ParaView
-          #- OpenChemistry/VTK
-          #- Kitware/VTK
-          #- openbabel/documentation
-          #- openbabel/openbabel
-          #- openbabel/maintenance
-          #- openbabel/conda-openbabel
-          #- openbabel/contributed
           - DiegoVicen/som-tsp
           - ytdl-org/youtube-dl
           - PatrickAlphaC/nft-mix
@@ -49,6 +26,33 @@ jobs:
           - zero-to-mastery/start-here-guidelines
           - Slam-Team/slam-mirrorbot
           - internetarchive/rulesengine
+          - v8/v8
+          - httptoolkit/httptoolkit-server
+          - google/clusterfuzz
+          - google/oss-fuzz
+          - dependabot/dependabot-core
+          #- kevin1024/vcrpy
+          #- kiwicom/pytest-recording
+          #- GeoffMaciolek/python-itunes-backup-browser
+          #- 7eu7d7/genshin_auto_fish
+          #- bytedance/music_source_separation
+          #- Orange-Cyberdefense/arsenal
+          #- bbilly1/tubearchivist
+          #- jsbain/pythonista_matplotlib_backports
+          #- ThoughtfulDev/EagleEye
+          #- OpenChemistry/avogadroapp
+          #- OpenChemistry/avogenerators
+          #- OpenChemistry/avogadrolibs
+          #- OpenChemistry/tomviz
+          #- OpenChemistry/molequeue
+          #- OpenChemistry/ParaView
+          #- OpenChemistry/VTK
+          #- Kitware/VTK
+          #- openbabel/documentation
+          #- openbabel/openbabel
+          #- openbabel/maintenance
+          #- openbabel/conda-openbabel
+          #- openbabel/contributed
           #- RobotWebTools/rosbridge_suite
           #- ms-jpq/coq_nvim
           #- aws/serverless-application-model
@@ -140,8 +144,8 @@ jobs:
           #- sovrin-foundation/indy-dev  # from michaeldboyd/indy-dev
           #- sovrin-foundation/sov-docs-conf
           #- PX4/px4_ros_com
-          # - psf/black  # bandit goes into an infinite loop
-          # - Azure/azure-sdk-for-python
+          #- psf/black  # bandit goes into an infinite loop
+          #- Azure/azure-sdk-for-python
           #- ArduPilot/pymavlink
           #- bee-san/pyWhat
           #- codespell-project/codespell
@@ -189,17 +193,17 @@ jobs:
           #- sass/libsass-python
           #- ReFirmLabs/binwalk
           #- ipython/ipython
-          #-  nodejs/node
-          #-  nodejs/node-gyp
-          #-  nodejs/gyp-next
-          # - wasm3/wasm3
-          # - domoticz/domoticz
+          #- nodejs/node
+          #- nodejs/node-gyp
+          #- nodejs/gyp-next
+          #- wasm3/wasm3
+          #- domoticz/domoticz
           #- joyent/javascriptlint
           #- joyent/smartos-live
-          # - microsoft/debugpy
+          #- microsoft/debugpy
           #- osm-by/OpenStreetMap.by
-          # - bpython/bpython
-          # - Open-Book-Genome-Project/TheBestBookOn.com
+          #- bpython/bpython
+          #- Open-Book-Genome-Project/TheBestBookOn.com
           #- signalapp/Signal-Android
           #- signalapp/Signal-Desktop
           #- signalapp/Signal-iOS
@@ -223,11 +227,6 @@ jobs:
           #- gdamdam/saitan
           #- gdamdam/sumo
           #- gdamdam/rapni
-          #- v8/v8
-          #- httptoolkit/httptoolkit-server
-          # - google/clusterfuzz
-          # - google/oss-fuzz
-          # - dependabot/dependabot-core
         python-version: ['3.10-dev']  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
     steps:
