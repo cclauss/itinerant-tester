@@ -9,25 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - urllib3/urllib3
-          - jorisschellekens/borb
-          - The-Art-of-Hacking/h4cker
-          - DiegoVicen/som-tsp
-          - ytdl-org/youtube-dl
-          - PatrickAlphaC/nft-mix
-          - erikalu/omnimatte
-          - nose-devs/nose2
-          - NeuroVault/NeuroVault
-          - PeterL1n/RobustVideoMatting
-          - burnash/gspread
-          - ManimCommunity/manim
-          - smicallef/spiderfoot
-          - LiveOverflow/ctf-screenshotter
-          - zero-to-mastery/start-here-guidelines
-          - Slam-Team/slam-mirrorbot
-          - internetarchive/rulesengine
+          - mher/flower
           - v8/v8
-          - httptoolkit/httptoolkit-server
           - google/clusterfuzz
           - google/oss-fuzz
           - dependabot/dependabot-core
