@@ -9,8 +9,11 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - mher/flower
-          - v8/v8
+          - xinntao/Real-ESRGAN
+          - chilli-axe/mpc-autofill
+          - orchest/orchest
+          - waydroid/waydroid
+          #- v8/v8
           - google/clusterfuzz
           - google/oss-fuzz
           - dependabot/dependabot-core
