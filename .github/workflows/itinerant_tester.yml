@@ -9,6 +9,12 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - GoekeLab/bioinformatics-workflows
+          - microsoft/muzic
+          - qtile/qtile
+          - TheSpeedX/TBomb
+          - whittlem/pycryptobot
+          - knownsec/pocsuite3
           - joerick/pyinstrument
           - xinntao/Real-ESRGAN
           - chilli-axe/mpc-autofill
