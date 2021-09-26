@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - joerick/pyinstrument
           - xinntao/Real-ESRGAN
           - chilli-axe/mpc-autofill
           - orchest/orchest
