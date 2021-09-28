@@ -9,22 +9,11 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - benfred/py-spy
-          - GoekeLab/bioinformatics-workflows
-          - microsoft/muzic
-          - qtile/qtile
-          - TheSpeedX/TBomb
-          - whittlem/pycryptobot
-          - knownsec/pocsuite3
-          - joerick/pyinstrument
-          - xinntao/Real-ESRGAN
-          - chilli-axe/mpc-autofill
-          - orchest/orchest
-          - waydroid/waydroid
+          - tsoding/porth
           #- v8/v8
-          - google/clusterfuzz
-          - google/oss-fuzz
-          - dependabot/dependabot-core
+          #- google/clusterfuzz
+          #- google/oss-fuzz
+          #- dependabot/dependabot-core
           #- kevin1024/vcrpy
           #- kiwicom/pytest-recording
           #- GeoffMaciolek/python-itunes-backup-browser
