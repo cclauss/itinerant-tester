@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           #- YadiraF/DECA
+          - hkociemba/CubeExplorer
           - cliport/cliport
           - python/mypy
           - GoogleCloudPlatform/professional-services
