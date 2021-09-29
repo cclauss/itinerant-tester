@@ -10,7 +10,11 @@ jobs:
       matrix:
         repo:
           #- YadiraF/DECA
+          - cliport/cliport
+          - python/mypy
           - GoogleCloudPlatform/professional-services
+          - 521xueweihan/GitHub520
+          - ryanjgallagher/focalevents
           #- microsoft/Swin-Transformer
           #- Vonng/ddia
           #- v8/v8
