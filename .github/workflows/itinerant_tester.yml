@@ -10,8 +10,10 @@ jobs:
       matrix:
         repo:
           #- YadiraF/DECA
-          - hkociemba/CubeExplorer
-          - cliport/cliport
+          - Mashiro2000/HeyTapTask
+          - Synthaze/EpyNN
+          - netbox-community/netbox
+          - mesonbuild/meson
           - python/mypy
           - GoogleCloudPlatform/professional-services
           - 521xueweihan/GitHub520
