@@ -9,15 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          #- YadiraF/DECA
-          - Mashiro2000/HeyTapTask
-          - Synthaze/EpyNN
-          - netbox-community/netbox
-          - mesonbuild/meson
-          - python/mypy
-          - GoogleCloudPlatform/professional-services
-          - 521xueweihan/GitHub520
-          - ryanjgallagher/focalevents
+          - RangiLyu/nanodet
           #- microsoft/Swin-Transformer
           #- Vonng/ddia
           #- v8/v8
