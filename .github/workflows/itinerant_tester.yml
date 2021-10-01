@@ -9,7 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - RangiLyu/nanodet
+          - jina-ai/jina
+          - Fluepke/ssi-poc
           #- microsoft/Swin-Transformer
           #- Vonng/ddia
           #- v8/v8
