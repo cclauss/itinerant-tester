@@ -234,16 +234,16 @@ jobs:
                          mypy pytest pyupgrade safety
       
       # tee: write to stdout and also into the file
-      - run: bandit --recursive . | tee bandit.out.txt || true
-      - name: Customized bandit command
-        shell: python
-        run: |
-          with open("bandit.out.txt") as in_file:
-              errors = sorted(
-                  set(line[11:15] for line in in_file if line.startswith(">> "))
-              )
-          skip = f" --skip {','.join(errors)}" if errors else ""
-          print(f"bandit --recursive {skip} .")
+      #- run: bandit --recursive . | tee bandit.out.txt || true
+      #- name: Customized bandit command
+      #  shell: python
+      #  run: |
+      #    with open("bandit.out.txt") as in_file:
+      #        errors = sorted(
+      #            set(line[11:15] for line in in_file if line.startswith(">> "))
+      #        )
+      #    skip = f" --skip {','.join(errors)}" if errors else ""
+      #    print(f"bandit --recursive {skip} .")
       - run: |
           black --check . || true
           rm bandit.out.txt
