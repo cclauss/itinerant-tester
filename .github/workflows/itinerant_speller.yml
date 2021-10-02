@@ -18,6 +18,6 @@ jobs:
       - run: pip install codespell
       #- run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
       - run: codespell --count
-                       --ignore-words-list=alo,ans,ba,fo,hist,keypair,myu,nd,ned,nnumber,oclock,ot,pard,ser,sur,te,teh,ths,tre,wan
+                       --ignore-words-list=alo,ans,ba,fo,hist,keypair,loadin,myu,nd,ned,nnumber,oclock,ot,pard,ser,sur,te,teh,ths,tre,wan
                        --skip="*/names.h,*.aff,*.dic,*.js,*.json,*.recipe,*.rtf,*.svg,*.txt,*.types,*.ui,*.vim"
       
