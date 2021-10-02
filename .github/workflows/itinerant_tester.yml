@@ -11,6 +11,7 @@ jobs:
         repo:
           - jina-ai/jina
           - Fluepke/ssi-poc
+          - kovidgoyal/calibre
           #- microsoft/Swin-Transformer
           #- Vonng/ddia
           #- v8/v8
