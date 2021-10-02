@@ -19,5 +19,5 @@ jobs:
       #- run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
       - run: codespell --count
                        --ignore-words-list=alo,ans,ba,fo,keypair,myu,nd,ned,nnumber,oclock,ot,pard,sur,te,teh,ths,tre,wan
-                       --skip="*/names.h,*.recipe,*.rtf,*.txt,*.ui,*.vim"
+                       --skip="*/names.h,*.aff,*.js,*.json,*.recipe,*.rtf,*.svg,*.txt,*.types,*.ui,*.vim"
       
