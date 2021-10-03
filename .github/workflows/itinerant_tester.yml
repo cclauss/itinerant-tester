@@ -12,6 +12,9 @@ jobs:
           - jina-ai/jina
           - Fluepke/ssi-poc
           - kovidgoyal/calibre
+          - login-securite/DonPAPI
+          - oppia/oppia
+          - dbt-labs/dbt
           #- microsoft/Swin-Transformer
           #- Vonng/ddia
           #- v8/v8
