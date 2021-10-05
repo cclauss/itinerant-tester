@@ -9,20 +9,21 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - internetarchive/archive-pdf-tools
-          - internetarchive/archive-hocr-tools
-          - ajwdewit/pcse
-          - pokepetter/ursina
-          - jina-ai/jina
-          - Fluepke/ssi-poc
-          - kovidgoyal/calibre
-          - login-securite/DonPAPI
-          - oppia/oppia
-          - dbt-labs/dbt
-          - archlinux/archinstall
-          - corpnewt/ProperTree
-          - derv82/wifite2
-          - Siterizer/new-world-fishing-bot
+          - strawberry-graphql/strawberry
+          #- internetarchive/archive-pdf-tools
+          #- internetarchive/archive-hocr-tools
+          #- ajwdewit/pcse
+          #- pokepetter/ursina
+          #- jina-ai/jina
+          #- Fluepke/ssi-poc
+          #- kovidgoyal/calibre
+          #- login-securite/DonPAPI
+          #- oppia/oppia
+          #- dbt-labs/dbt
+          #- archlinux/archinstall
+          #- corpnewt/ProperTree
+          #- derv82/wifite2
+          #- Siterizer/new-world-fishing-bot
           #- microsoft/Swin-Transformer
           #- Vonng/ddia
           #- v8/v8
