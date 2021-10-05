@@ -11,6 +11,7 @@ jobs:
         repo:
           #- strawberry-graphql/strawberry
           - pyston/pyston
+          - internetarchive/openlibrary-client
           #- Ganapati/RsaCtfTool
           #- internetarchive/archive-pdf-tools
           #- internetarchive/archive-hocr-tools
