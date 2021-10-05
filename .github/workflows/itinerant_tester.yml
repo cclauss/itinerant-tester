@@ -10,9 +10,10 @@ jobs:
       matrix:
         repo:
           #- strawberry-graphql/strawberry
-          - Ganapati/RsaCtfTool
-          - internetarchive/archive-pdf-tools
-          - internetarchive/archive-hocr-tools
+          - pyston/pyston
+          #- Ganapati/RsaCtfTool
+          #- internetarchive/archive-pdf-tools
+          #- internetarchive/archive-hocr-tools
           #- ajwdewit/pcse
           #- pokepetter/ursina
           #- jina-ai/jina
