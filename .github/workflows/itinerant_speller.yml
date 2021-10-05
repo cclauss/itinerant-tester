@@ -9,7 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - python-pillow/Pillow
+          #- python-pillow/Pillow
+          - python/cpython
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
