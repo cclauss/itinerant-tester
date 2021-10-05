@@ -9,9 +9,10 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - strawberry-graphql/strawberry
-          #- internetarchive/archive-pdf-tools
-          #- internetarchive/archive-hocr-tools
+          #- strawberry-graphql/strawberry
+          - Ganapati/RsaCtfTool
+          - internetarchive/archive-pdf-tools
+          - internetarchive/archive-hocr-tools
           #- ajwdewit/pcse
           #- pokepetter/ursina
           #- jina-ai/jina
