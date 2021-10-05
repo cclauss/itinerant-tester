@@ -225,7 +225,7 @@ jobs:
           #- gdamdam/saitan
           #- gdamdam/sumo
           #- gdamdam/rapni
-        python-version: ['3.10-dev']  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
+        python-version: ['3.10']  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
@@ -244,9 +244,9 @@ jobs:
                          flake8-comprehensions flake8-return isort
                          mypy pytest pyupgrade safety
       
-      - run: touch bandit.out.txt
+      #- run: touch bandit.out.txt
       # tee: write to stdout and also into the file
-      #- run: bandit --recursive . | tee bandit.out.txt || true
+      - run: bandit --recursive . | tee bandit.out.txt || true
       - name: Customized bandit command
         shell: python
         run: |
