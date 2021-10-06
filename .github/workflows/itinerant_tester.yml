@@ -10,9 +10,11 @@ jobs:
       matrix:
         repo:
           - microsoft/pyright
+          - projectdiscovery/nuclei-templates
+          - nft-fun/generate-bitbirds
           #- strawberry-graphql/strawberry
-          - pyston/pyston
-          - internetarchive/openlibrary-client
+          #- pyston/pyston
+          #- internetarchive/openlibrary-client
           #- Ganapati/RsaCtfTool
           #- internetarchive/archive-pdf-tools
           #- internetarchive/archive-hocr-tools
