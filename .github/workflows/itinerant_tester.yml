@@ -9,9 +9,10 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - microsoft/pyright
-          - projectdiscovery/nuclei-templates
-          - nft-fun/generate-bitbirds
+          - RobotWebTools/rosbridge_suite
+          #- microsoft/pyright
+          #- projectdiscovery/nuclei-templates
+          #- nft-fun/generate-bitbirds
           #- strawberry-graphql/strawberry
           #- pyston/pyston
           #- internetarchive/openlibrary-client
