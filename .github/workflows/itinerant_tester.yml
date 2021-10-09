@@ -10,6 +10,10 @@ jobs:
       matrix:
         repo:
           - RobotWebTools/rosbridge_suite
+          - canonical/cloud-init
+          - behave/behave
+          - awslabs/gluon-ts
+          - demisto/content
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
