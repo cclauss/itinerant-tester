@@ -15,6 +15,7 @@ jobs:
           - awslabs/gluon-ts
           - demisto/content
           - asottile/flake8-2020
+          - jjjake/internetarchive
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
