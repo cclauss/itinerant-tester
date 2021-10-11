@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - lucianmarin/logparser
+          - herosi/CTO
           - RobotWebTools/rosbridge_suite
           - canonical/cloud-init
           - behave/behave
