@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - lucianmarin/logparser
           - RobotWebTools/rosbridge_suite
           - canonical/cloud-init
           - behave/behave
