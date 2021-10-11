@@ -9,6 +9,12 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - whai362/PVT
+          - Chakazul/Lenia
+          - trailofbits/algo
+          - whittlem/pycryptobot
+          - owid/covid-19-data
+          - LionSec/katoolin
           - lucianmarin/logparser
           - herosi/CTO
           - RobotWebTools/rosbridge_suite
