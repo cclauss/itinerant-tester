@@ -9,24 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - antimatter15/jsgif
-          - benjaminadk/gif-encoder-2
-          - whai362/PVT
-          - Chakazul/Lenia
-          - trailofbits/algo
-          - whittlem/pycryptobot
-          - owid/covid-19-data
-          - LionSec/katoolin
-          - lucianmarin/logparser
-          - herosi/CTO
-          - RobotWebTools/rosbridge_suite
-          - canonical/cloud-init
-          - behave/behave
-          - awslabs/gluon-ts
-          - demisto/content
-          - asottile/flake8-2020
-          - jjjake/internetarchive
-          - PyCQA/flake8
+          - keonlee9420/PortaSpeech
+          - dmlc/dgl
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
