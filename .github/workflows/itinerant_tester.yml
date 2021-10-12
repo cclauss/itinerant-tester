@@ -10,6 +10,8 @@ jobs:
       matrix:
         repo:
           - RDFLib/rdflib
+          - gquere/pwn_jenkins
+          - apache/superset
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
