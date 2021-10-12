@@ -9,6 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - antimatter15/jsgif
+          - benjaminadk/gif-encoder-2
           - whai362/PVT
           - Chakazul/Lenia
           - trailofbits/algo
@@ -24,6 +26,7 @@ jobs:
           - demisto/content
           - asottile/flake8-2020
           - jjjake/internetarchive
+          - PyCQA/flake8
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
