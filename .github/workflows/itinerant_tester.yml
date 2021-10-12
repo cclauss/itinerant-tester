@@ -9,11 +9,10 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - internetarchive/openlibrary
-          - internetarchive/brozzler
-          - internetarchive/bookreader
-          - internetarchive/internetarchivebot
-          - internetarchive/heritrix3
+          - jimman2003/jwstream
+          - jimman2003/hdvidlink
+          - jimman2003/openlibrary_rdf
+          - jimman2003/openlibrary_librarian_utils
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
