@@ -9,8 +9,11 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - keonlee9420/PortaSpeech
-          - dmlc/dgl
+          - internetarchive/openlibrary
+          - internetarchive/brozzler
+          - internetarchive/bookreader
+          - internetarchive/internetarchivebot
+          - internetarchive/heritrix3
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
