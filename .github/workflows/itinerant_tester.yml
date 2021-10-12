@@ -9,10 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - jimman2003/jwstream
-          - jimman2003/hdvidlink
-          - jimman2003/openlibrary_rdf
-          - jimman2003/openlibrary_librarian_utils
+          - RDFLib/rdflib
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
