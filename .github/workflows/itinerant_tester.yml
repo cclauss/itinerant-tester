@@ -14,6 +14,7 @@ jobs:
           - apache/superset
           - corpnewt/ProperTree
           - pyinstaller/hooksample
+          - pyinstaller/pyinstaller
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
