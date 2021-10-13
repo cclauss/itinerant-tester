@@ -12,6 +12,7 @@ jobs:
           - RDFLib/rdflib
           - gquere/pwn_jenkins
           - apache/superset
+          - corpnewt/ProperTree
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
