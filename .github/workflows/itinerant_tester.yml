@@ -13,6 +13,7 @@ jobs:
           - gquere/pwn_jenkins
           - apache/superset
           - corpnewt/ProperTree
+          - pyinstaller/hooksample
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
