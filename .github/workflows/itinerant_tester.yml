@@ -15,6 +15,7 @@ jobs:
           - corpnewt/ProperTree
           - pyinstaller/hooksample
           - pyinstaller/pyinstaller
+          - RDFLib/pySHACL
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
