@@ -16,6 +16,7 @@ jobs:
           - pyinstaller/hooksample
           - pyinstaller/pyinstaller
           - RDFLib/pySHACL
+          - AlessandroZ/LaZagne
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
