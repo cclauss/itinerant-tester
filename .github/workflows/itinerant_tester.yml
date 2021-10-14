@@ -11,12 +11,13 @@ jobs:
         repo:
           - RDFLib/rdflib
           - gquere/pwn_jenkins
-          - apache/superset
-          - corpnewt/ProperTree
-          - pyinstaller/hooksample
-          - pyinstaller/pyinstaller
-          - RDFLib/pySHACL
-          - AlessandroZ/LaZagne
+          - pypa/warehouse
+          #- apache/superset
+          #- corpnewt/ProperTree
+          #- pyinstaller/hooksample
+          #- pyinstaller/pyinstaller
+          #- RDFLib/pySHACL
+          #- AlessandroZ/LaZagne
           #- microsoft/pyright
           #- projectdiscovery/nuclei-templates
           #- nft-fun/generate-bitbirds
