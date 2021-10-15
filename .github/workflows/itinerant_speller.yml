@@ -10,7 +10,8 @@ jobs:
       matrix:
         repo:
           #- python-pillow/Pillow
-          - python/cpython
+          #- python/cpython
+          - opencv/opencv-python
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
