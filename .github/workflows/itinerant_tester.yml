@@ -9,7 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - RDFLib/rdflib
+          - scikit-image/scikit-image
+          #- RDFLib/rdflib
           - gquere/pwn_jenkins
           - pypa/warehouse
           #- apache/superset
