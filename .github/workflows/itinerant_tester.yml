@@ -9,13 +9,18 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - scikit-image/scikit-image
+          #- scikit-image/scikit-image
           #- RDFLib/rdflib
-          - gquere/pwn_jenkins
-          - pypa/warehouse
-          - p0dalirius/LDAPmonitor
-          - Footsiefat/zspotify
-          - CoinAlpha/hummingbot
+          #- gquere/pwn_jenkins
+          #- pypa/warehouse
+          #- p0dalirius/LDAPmonitor
+          #- Footsiefat/zspotify
+          #- CoinAlpha/hummingbot
+          - vishnubob/wait-for-it
+          - mcw0/PoC
+          - kholia/OSX-KVM
+          - luizalabs/tutorial-python-brasil
+          - ShiqiYu/OpenGait
           #- apache/superset
           #- corpnewt/ProperTree
           #- pyinstaller/hooksample
