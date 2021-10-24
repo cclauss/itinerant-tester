@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - ninja-build/ninja
           - wikimedia/mediawiki-extensions
           - wikimedia/operations-software-tools-manifest
           - wikimedia/operations-alerts
