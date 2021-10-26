@@ -9,7 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - varnishcache/varnish-cache
+          - Backblaze/B2_Command_Line_Tool
+          #- varnishcache/varnish-cache
           #- richpl/PyBasic
           #- BadagalaAdarsh/Super_Mario
           #- Endermanch/MalwareDatabase
