@@ -9,16 +9,17 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - richpl/PyBasic
-          - BadagalaAdarsh/Super_Mario
-          - Endermanch/MalwareDatabase
-          - ninja-build/ninja
-          - wikimedia/mediawiki-extensions
-          - wikimedia/operations-software-tools-manifest
-          - wikimedia/operations-alerts
-          - wikimedia/pywikibot
-          - wikimedia/articlequality
-          - wikimedia/ores
+          - varnishcache/varnish-cache
+          #- richpl/PyBasic
+          #- BadagalaAdarsh/Super_Mario
+          #- Endermanch/MalwareDatabase
+          #- ninja-build/ninja
+          #- wikimedia/mediawiki-extensions
+          #- wikimedia/operations-software-tools-manifest
+          #- wikimedia/operations-alerts
+          #- wikimedia/pywikibot
+          #- wikimedia/articlequality
+          #- wikimedia/ores
           #- scikit-image/scikit-image
           #- RDFLib/rdflib
           #- gquere/pwn_jenkins
