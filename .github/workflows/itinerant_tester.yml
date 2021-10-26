@@ -11,7 +11,8 @@ jobs:
         repo:
           - Backblaze/B2_Command_Line_Tool
           #- varnishcache/varnish-cache
-          #- richpl/PyBasic
+          - richpl/PyBasic
+          - TheAlgorithms/Python
           #- BadagalaAdarsh/Super_Mario
           #- Endermanch/MalwareDatabase
           #- ninja-build/ninja
