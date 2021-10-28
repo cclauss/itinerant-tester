@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - Bambla78/Pythonista_SunCalculator_iPad
+          - javipalanca/spade
           #- varnishcache/varnish-cache
           - richpl/PyBasic
           - TheAlgorithms/Python
