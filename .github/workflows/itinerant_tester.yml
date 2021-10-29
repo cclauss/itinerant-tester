@@ -9,14 +9,14 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - ablab/spades
+          #- ablab/spades
           - Netflix/metaflow
           #- varnishcache/varnish-cache
           - richpl/PyBasic
           - TheAlgorithms/Python
           #- BadagalaAdarsh/Super_Mario
           #- Endermanch/MalwareDatabase
-          #- ninja-build/ninja
+          - ninja-build/ninja
           #- wikimedia/mediawiki-extensions
           #- wikimedia/operations-software-tools-manifest
           #- wikimedia/operations-alerts
