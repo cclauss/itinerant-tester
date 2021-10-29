@@ -10,6 +10,8 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - pypa/cibuildwheel
+          - pypa/packaging
           - nwchemgit/nwchem
           - Netflix/metaflow
           #- varnishcache/varnish-cache
