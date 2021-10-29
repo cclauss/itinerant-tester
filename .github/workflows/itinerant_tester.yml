@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - ablab/spades
           - Netflix/metaflow
           #- varnishcache/varnish-cache
           - richpl/PyBasic
