@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - ParthJadhav/Tkinter-Designer
           - pypa/cibuildwheel
           - pypa/packaging
           - nwchemgit/nwchem
