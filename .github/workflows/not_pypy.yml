@@ -1,0 +1,25 @@
+name: not_pypy
+on: [pull_request, push]
+jobs:
+  not_pypy:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python_version:
+          ["3.9", "3.10", "pypy-3.7"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python_version }}
+      - if: startsWith(matrix.python_version, 'pypy')
+        shell: python
+        run: |
+          from sys import version_info
+          print(f"This is pypy... {version_info}")
+       - - if: ! startsWith(matrix.python_version, 'pypy')
+        shell: python
+        run: |
+          from sys import version_info
+          print(f"This is NOT pypy... {version_info}")
