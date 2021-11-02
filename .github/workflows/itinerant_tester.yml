@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - Backblaze/b2-sdk-python
           - ParthJadhav/Tkinter-Designer
           - pypa/cibuildwheel
           - pypa/packaging
