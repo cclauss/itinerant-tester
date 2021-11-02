@@ -18,7 +18,7 @@ jobs:
         run: |
           from sys import version_info
           print(f"This is pypy... {version_info}")
-       - if: ${{ ! startsWith(matrix.python_version, 'pypy') }}
+      - if: ! startsWith(matrix.python_version, 'pypy')
         shell: python
         run: |
           from sys import version_info
