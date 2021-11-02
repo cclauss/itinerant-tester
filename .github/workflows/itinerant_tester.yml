@@ -10,8 +10,9 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - Backblaze/terraform-provider-b2
           - cjolowicz/cookiecutter-hypermodern-python
-          - Backblaze/b2-sdk-python
+          #- Backblaze/b2-sdk-python
           - ParthJadhav/Tkinter-Designer
           - pypa/cibuildwheel
           - pypa/packaging
