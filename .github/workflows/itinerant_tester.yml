@@ -13,7 +13,7 @@ jobs:
           - internetarchive/openlibrary
           #- brettcannon/python-launcher
           #- commaai/openpilot
-          #- pywebio/PyWebIO
+          - pywebio/PyWebIO
           #- Pycord-Development/pycord
           #- Backblaze/terraform-provider-b2
           #- cjolowicz/cookiecutter-hypermodern-python
