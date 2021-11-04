@@ -10,21 +10,22 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
-          - brettcannon/python-launcher
-          - commaai/openpilot
-          - pywebio/PyWebIO
-          - Pycord-Development/pycord
-          - Backblaze/terraform-provider-b2
-          - cjolowicz/cookiecutter-hypermodern-python
+          - internetarchive/openlibrary
+          #- brettcannon/python-launcher
+          #- commaai/openpilot
+          #- pywebio/PyWebIO
+          #- Pycord-Development/pycord
+          #- Backblaze/terraform-provider-b2
+          #- cjolowicz/cookiecutter-hypermodern-python
           #- Backblaze/b2-sdk-python
-          - ParthJadhav/Tkinter-Designer
+          #- ParthJadhav/Tkinter-Designer
           - pypa/cibuildwheel
           - pypa/packaging
-          - nwchemgit/nwchem
-          - Netflix/metaflow
+          #- nwchemgit/nwchem
+          #- Netflix/metaflow
           #- varnishcache/varnish-cache
           - richpl/PyBasic
-          - TheAlgorithms/Python
+          #- TheAlgorithms/Python
           #- BadagalaAdarsh/Super_Mario
           #- Endermanch/MalwareDatabase
           - ninja-build/ninja
