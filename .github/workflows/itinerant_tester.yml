@@ -10,6 +10,8 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - pywebio/PyWebIO
+          - Pycord-Development/pycord
           - Backblaze/terraform-provider-b2
           - cjolowicz/cookiecutter-hypermodern-python
           #- Backblaze/b2-sdk-python
