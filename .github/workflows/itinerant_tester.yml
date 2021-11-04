@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - commaai/openpilot
           - pywebio/PyWebIO
           - Pycord-Development/pycord
           - Backblaze/terraform-provider-b2
