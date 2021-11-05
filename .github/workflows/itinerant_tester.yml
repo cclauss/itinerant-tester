@@ -11,6 +11,7 @@ jobs:
         repo:
           #- ablab/spades Not!
           - isl-org/Open3D
+          - ThioJoe/YouTube-Spammer-Purge
           - internetarchive/openlibrary
           #- brettcannon/python-launcher
           #- commaai/openpilot
