@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - isl-org/Open3D
           - internetarchive/openlibrary
           #- brettcannon/python-launcher
           #- commaai/openpilot
