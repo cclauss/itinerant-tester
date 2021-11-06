@@ -10,7 +10,7 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
-          - Diaoul/subliminal
+          - markokr/rarfile
           - facebook/watchman
           - isl-org/Open3D
           - PyO3/maturin
