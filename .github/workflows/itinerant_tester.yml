@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - facebook/watchman
           - isl-org/Open3D
           - PyO3/maturin
           - fanout/condure
