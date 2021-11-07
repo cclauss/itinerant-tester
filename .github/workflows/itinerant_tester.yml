@@ -27,7 +27,8 @@ jobs:
           - isl-org/Open3D
           #- PyO3/maturin
           #- fanout/condure
-          #- internetarchive/openlibrary
+          - internetarchive/openlibrary
+          - internetarchive/infogami
           #- brettcannon/python-launcher
           #- commaai/openpilot
           #- pywebio/PyWebIO
