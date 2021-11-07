@@ -10,6 +10,18 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
+          - zappa/Zappa
+          - d2l-ai/d2l-zh
+          - insitro/redun
+          - google-research/t5x
+          - lux-org/lux
+          - CsEnox/Gitlab-Exiftool-RCE
+          - open-mmlab/mmcv
+          - apache/tvm
+          - TophantTechnology/ARL 
+          - facebookresearch/deit
+          - alibaba/TinyNeuralNetwork
+          - cloudtools/troposphere 
           - markokr/rarfile
           - facebook/watchman
           - isl-org/Open3D
