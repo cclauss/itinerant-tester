@@ -10,42 +10,42 @@ jobs:
       matrix:
         repo:
           #- ablab/spades Not!
-          - zappa/Zappa
-          - d2l-ai/d2l-zh
-          - insitro/redun
-          - google-research/t5x
-          - lux-org/lux
-          - CsEnox/Gitlab-Exiftool-RCE
-          - open-mmlab/mmcv
-          - apache/tvm
-          - TophantTechnology/ARL 
-          - facebookresearch/deit
-          - alibaba/TinyNeuralNetwork
-          - cloudtools/troposphere 
-          - markokr/rarfile
-          - facebook/watchman
+          #- zappa/Zappa
+          #- d2l-ai/d2l-zh
+          #- insitro/redun
+          #- google-research/t5x
+          #- lux-org/lux
+          #- CsEnox/Gitlab-Exiftool-RCE
+          #- open-mmlab/mmcv
+          #- apache/tvm
+          #- TophantTechnology/ARL 
+          #- facebookresearch/deit
+          #- alibaba/TinyNeuralNetwork
+          #- cloudtools/troposphere 
+          #- markokr/rarfile
+          #- facebook/watchman
           - isl-org/Open3D
-          - PyO3/maturin
-          - fanout/condure
-          - internetarchive/openlibrary
+          #- PyO3/maturin
+          #- fanout/condure
+          #- internetarchive/openlibrary
           #- brettcannon/python-launcher
           #- commaai/openpilot
-          - pywebio/PyWebIO
+          #- pywebio/PyWebIO
           #- Pycord-Development/pycord
           #- Backblaze/terraform-provider-b2
           #- cjolowicz/cookiecutter-hypermodern-python
           #- Backblaze/b2-sdk-python
           #- ParthJadhav/Tkinter-Designer
-          - pypa/cibuildwheel
-          - pypa/packaging
+          #- pypa/cibuildwheel
+          #- pypa/packaging
           #- nwchemgit/nwchem
           #- Netflix/metaflow
           #- varnishcache/varnish-cache
-          - richpl/PyBasic
+          #- richpl/PyBasic
           #- TheAlgorithms/Python
           #- BadagalaAdarsh/Super_Mario
           #- Endermanch/MalwareDatabase
-          - ninja-build/ninja
+          #- ninja-build/ninja
           #- wikimedia/mediawiki-extensions
           #- wikimedia/operations-software-tools-manifest
           #- wikimedia/operations-alerts
