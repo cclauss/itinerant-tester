@@ -4,9 +4,6 @@
 # Notes: nose2pytest does not remove unused imports
 #        nose2pytest does not fix assume_raises, raises which still function on Py3.10.
          
-# TODO: Try pip install https://github.com/pytest-dev/nose2pytest.git
-#                       git@github.com:pytest-dev/nose2pytest.git
-
 name: nose2pytest
 on: [push, pull_request]
 jobs:
@@ -18,9 +15,9 @@ jobs:
       with:
         python-version: 3.6  # nose2pytest must run on Python <= 3.6
     - run: pip install nose2pytest
-    - run: python -m pip install git+https://github.com/pytest-dev/nose2pytest.git || true
-    # - run: pip install https://github.com/pytest-dev/nose2pytest.git || true
-    # - run: pip install git@github.com:pytest-dev/nose2pytest.git || true
+    # - run: python -m pip install git+https://github.com/pytest-dev/nose2pytest.git
+    ## - run: pip install https://github.com/pytest-dev/nose2pytest.git || true
+    ## - run: pip install git@github.com:pytest-dev/nose2pytest.git || true
     - run: nose2pytest -h
     - run: nose2pytest -v .
     - run: git diff  # Copy this command's output into a file and `git apply nose2pytest.patch`
