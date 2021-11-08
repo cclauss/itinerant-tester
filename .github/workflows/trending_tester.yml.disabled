@@ -16,7 +16,7 @@ jobs:
           - kyclark/csvchk
           - kyclark/excel2txt-py
           - kyclark/parallelprocs
-        python-version: [3.9]  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
+        python-version: ["3.10"]  # [2.7, 3.5, 3.6, 3.7, 3.8, ,3.9, pypy3]
     runs-on: ubuntu-latest
     steps:
       # - uses: actions/checkout@v2
