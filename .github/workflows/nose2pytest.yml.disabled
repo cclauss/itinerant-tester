@@ -1,0 +1,22 @@
+# Use https://pypi.org/project/nose2pytest to migrate from nose to pytest
+# Create a git patch because nose2pytest will only run on Python <= 3.6.
+# `nose.tools.assert_equals()` will raise an AttributeError on Python >= 3.10
+# Notes: nose2pytest does not remove unused imports
+         nose2pytest does not fix assume_raises, raises which still function on Py3.10.
+
+name: nose2pytest
+on: [push, pull_request]
+jobs:
+  run-nose2pytest:  # Make a `git apply` patch - https://git-scm.com/docs/git-apply
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.6  # nose2pytest must run on Python <= 3.6
+    - run: pip install nose2pytest
+    - run: nose2pytest -h
+    - run: nose2pytest -v .
+    - run: git diff  # Copy this command's output into a file and `git apply nose2pytest.patch`
+    - run: grep -r nose .  # nose2pytest does NOT remove the now unused imports
+    # run: flake8 --select=F40
