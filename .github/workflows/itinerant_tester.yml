@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - wechatpy/wechatpy
+          - ninja-build/ninja
           #- ablab/spades Not!
           #- zappa/Zappa
           #- d2l-ai/d2l-zh
