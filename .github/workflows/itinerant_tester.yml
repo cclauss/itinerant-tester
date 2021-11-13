@@ -9,8 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - wechatpy/wechatpy
-          - ninja-build/ninja
+          -- locustio/locust
           #- ablab/spades Not!
           #- zappa/Zappa
           #- d2l-ai/d2l-zh
