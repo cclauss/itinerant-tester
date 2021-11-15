@@ -9,11 +9,12 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - locustio/locust
-          - aqlaboratory/openfold
-          - davidbombal/red-python-scripts
-          - blakeblackshear/frigate
-          - hacs/integration
+          - internetarchive/bookreader
+          #- locustio/locust
+          #- aqlaboratory/openfold
+          #- davidbombal/red-python-scripts
+          #- blakeblackshear/frigate
+          #- hacs/integration
           #- ablab/spades Not!
           #- zappa/Zappa
           #- d2l-ai/d2l-zh
