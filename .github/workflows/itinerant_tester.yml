@@ -10,6 +10,7 @@ jobs:
       matrix:
         repo:
           - agronholm/anyio
+          - swagger-api/swagger-ui
           - internetarchive/bookreader
           #- locustio/locust
           #- aqlaboratory/openfold
