@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - kholia/OSX-KVM
           - agronholm/anyio
           - swagger-api/swagger-ui
           - internetarchive/bookreader
