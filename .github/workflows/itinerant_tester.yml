@@ -9,7 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - openalpr/openalpr
+          - opencv/opencv
+          - opencv/opencv-python
           #- kholia/OSX-KVM
           - agronholm/anyio
           - swagger-api/swagger-ui
