@@ -9,6 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         repo:
+          - tiangolo/sqlmodel
           - opencv/opencv
           - opencv/opencv_contrib
           - opencv/opencv-python
