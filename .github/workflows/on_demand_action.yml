@@ -4,4 +4,4 @@ jobs:
   on_demand_action:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "$USER says: Hello at $(date)" 
+      - run: echo "$USER says Hello at $(date)" 
