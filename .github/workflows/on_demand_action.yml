@@ -1,0 +1,7 @@
+name: on_demand_action
+on: workflow_dispatch  # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+jobs:
+  on_demand_action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$USER says: Hello at $(date)" 
