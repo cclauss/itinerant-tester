@@ -9,7 +9,8 @@ jobs:
       fail-fast: false
       matrix:
         repo:
-          - lagadic/visp
+          - envoyproxy/envoy
+          #- lagadic/visp
           - tiangolo/sqlmodel
           - tiangolo/fastapi
           - opencv/opencv
