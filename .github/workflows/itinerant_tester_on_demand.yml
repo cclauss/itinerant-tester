@@ -1,4 +1,4 @@
-name: itinerant_tester
+name: itinerant_tester_on_demand
 on:
   workflow_dispatch:
     inputs:
@@ -7,7 +7,7 @@ on:
         required: true
 
 jobs:
-  itinerant_tester:
+  itinerant_tester_on_demand:
     strategy:
       fail-fast: false
       matrix:
