@@ -23,7 +23,7 @@ jobs:
       #- shell: python
       #  run: import json, os; print(json.dumps(dict(os.environ) , indent=4))
       #- run: echo ${{ env.repo_directory }}
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
       - run: brew --version || true
@@ -43,7 +43,7 @@ jobs:
                   set(line[11:15] for line in in_file if line.startswith(">> "))
               )
           skip = f" --skip {','.join(errors)}" if errors else ""
-          print(f"bandit --recursive {skip} .")
+          print(f"bandit --recursive{skip} .")
       - run: |
           black --check . || true
           rm bandit.out.txt
@@ -53,7 +53,7 @@ jobs:
       #    pip install black
       #    black --check . || true
       - run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
-      - run: flake8 . --count --builtins=ml_ops --select=E9,F63,F7,F82,Y --show-source --statistics  # F82
+      - run: flake8 . --count --select=E9,F63,F7,F82,Y --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       # The next two commands need to 'cd repo_name' to work correctly
