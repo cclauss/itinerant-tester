@@ -16,7 +16,7 @@ jobs:
     steps:
       - run: echo "$HOME"
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      # - uses: actions/checkout@v2
+      # - uses: actions/checkout@v3
       - run: git clone https://github.com/${{ github.event.inputs.repo }}
       # cut: domain_name/repo_name --> repo_name so that S{{ env.repo_directory }} is repo_name
       - run: echo "repo_directory=$(echo ${{ github.event.inputs.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
@@ -57,7 +57,7 @@ jobs:
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       # The next two commands need to 'cd repo_name' to work correctly
-      - name: pip install -r requirements.txt || pip install --editable . || true
+      - name: pip install -r requirements.txt || pip install --editable . || pip install . || true
         run: |
           cd ${{ env.repo_directory }}
           pip install -r requirements.txt || pip install --editable . || true
