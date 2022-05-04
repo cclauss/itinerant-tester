@@ -53,7 +53,7 @@ jobs:
       #    pip install black
       #    black --check . || true
       - run: codespell --count --skip="*.js,*.json" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
-      - run: flake8 . --count --builtins=Element,PyItemTemplate,pyscript --select=E9,F63,F7,F82,Y --show-source --statistics
+      - run: flake8 . --count --builtins=Element,PyItemTemplate,PyListTemplate,pyscript --select=E9,F63,F7,F82,Y --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       # The next two commands need to 'cd repo_name' to work correctly
