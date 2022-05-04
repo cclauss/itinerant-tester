@@ -1,4 +1,4 @@
-name: itinerant_tester_on_demand
+name: on_demand_ignore_undefined_names
 on:
   workflow_dispatch:
     inputs:
@@ -7,7 +7,7 @@ on:
         required: true
 
 jobs:
-  itinerant_tester_on_demand:
+  on_demand_ignore_undefined_names:
     strategy:
       fail-fast: false
       matrix:
@@ -34,7 +34,7 @@ jobs:
       
       #- run: touch bandit.out.txt
       # tee: write to stdout and also into the file
-      - run: bandit --recursive . | tee bandit.out.txt || true
+      - run: bandit --recursive --skip B201 . | tee bandit.out.txt || true
       - name: Customized bandit command
         shell: python
         run: |
@@ -52,8 +52,8 @@ jobs:
       #  run: |
       #    pip install black
       #    black --check . || true
-      - run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
-      - run: flake8 . --count --select=E9,F63,F7,Y --show-source --statistics  # TODO: Add F82
+      - run: codespell --count --skip="*.js,*.json" || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.map,*.po,*.svg"
+      - run: flake8 . --count --builtins=Element,PyItemTemplate,pyscript --select=E9,F63,F7,F82,Y --show-source --statistics
       - run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics
       - run: isort --profile black . || true
       # The next two commands need to 'cd repo_name' to work correctly
@@ -67,7 +67,7 @@ jobs:
           mkdir -p .mypy_cache
           mypy --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytest . || pytest --doctest-modules . || true
-      - run: shopt -s globstar && pyupgrade --py310-plus --show-diff-on-failure **/*.py || true
+      - run: shopt -s globstar && pyupgrade --py310-plus **/*.py || true
       - run: safety check || true  # TODO
       - shell: python
         run: |
