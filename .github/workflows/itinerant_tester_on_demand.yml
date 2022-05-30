@@ -67,7 +67,7 @@ jobs:
           mkdir -p .mypy_cache
           mypy --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytest . || pytest --doctest-modules . || true
-      - run: shopt -s globstar && pyupgrade exit-zero-even-if-changed --py37-plus **/*.py
+      - run: shopt -s globstar && pyupgrade --exit-zero-even-if-changed --py37-plus **/*.py
       - run: safety check
       - shell: python
         run: |
