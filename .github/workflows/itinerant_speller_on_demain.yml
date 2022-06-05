@@ -6,7 +6,7 @@ on:
         description: 'Repo to spellcheck (user_name/repo_name)'
         required: true
 jobs:
-  "Spellchecking ${{ github.event.inputs.repo }}...":
+  itinerant_speller:
     runs-on: ubuntu-latest
     steps:
       - run: pip install codespell
