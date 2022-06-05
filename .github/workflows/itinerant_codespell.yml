@@ -1,15 +1,15 @@
-name: itinerant_speller
+name: itinerant_codespell
 on:
   workflow_dispatch:
     inputs:
       repo:
-        description: 'Repo to spellcheck (user_name/repo_name)'
+        description: 'GitHub repo to check with codespell (user_name/repo_name)'
         required: true
 jobs:
-  itinerant_speller:
+  itinerant_codespell:
     runs-on: ubuntu-latest
     steps:
       - run: pip install codespell
       - run: echo "Spellchecking ${{ github.event.inputs.repo }}..."
       - run: git clone https://github.com/${{ github.event.inputs.repo }}
-      - run: codespell --count --skip="*.po" || true  # --ignore-words-list="" --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
+      - run: codespell --count --skip="*.po"  # --ignore-words-list="" --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
