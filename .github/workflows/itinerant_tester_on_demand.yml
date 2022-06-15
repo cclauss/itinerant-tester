@@ -113,6 +113,6 @@ jobs:
           print("=" * 80)
           run(flake8_cmd.split(), text=True)
       - run: pytype --help
-      - run: pytype -j auto
+      - run: pytype --jobs auto --platform=linux .
       #- run: pip install flake8-bugbear flake8-comprehensions  # flake8-docstrings flake8-import-order flake8-polyfill flake8-return flake8-variables-names
       #- run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics || true
