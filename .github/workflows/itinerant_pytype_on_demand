@@ -1,0 +1,42 @@
+name: itinerant_tester_on_demand
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_tester_on_demand:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10']  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "$HOME"
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      # - uses: actions/checkout@v3
+      - run: git clone https://github.com/${{ github.event.inputs.repo }}
+      # cut: domain_name/repo_name --> repo_name so that S{{ env.repo_directory }} is repo_name
+      - run: echo "repo_directory=$(echo ${{ github.event.inputs.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
+      - uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install --upgrade pip wheel
+      - run: pip install mypy pytype python-memcached
+      # The next commands need to 'cd repo_name' to work correctly
+      - name: pip install -r requirements.txt || pip install --editable . || pip install . || true
+        run: |
+          cd ${{ env.repo_directory }}
+          pip install -r requirements.txt || pip install --editable . || true
+      - name: mypy --ignore-missing-imports --install-types --non-interactive . || true
+        run: |
+          cd ${{ env.repo_directory }}
+          mkdir -p .mypy_cache
+          mypy --ignore-missing-imports --install-types --non-interactive . || true
+      - run: pytype --help
+      - run: |
+          cd ${{ env.repo_directory }}
+          pip install types-all
+          pytype --jobs auto --keep-going --platform linux .
