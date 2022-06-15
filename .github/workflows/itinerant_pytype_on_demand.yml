@@ -38,5 +38,6 @@ jobs:
       - run: pytype --help
       - run: |
           cd ${{ env.repo_directory }}
+          ls -Fla
           pip install types-all
-          pytype . --jobs auto --keep-going --platform linux --exclude infogami/migration/migrate-0.4-0.5.py _init_path.py
+          pytype . --jobs auto --keep-going --platform linux --exclude ./migration/migrate-0.4-0.5.py ./_init_path.py
