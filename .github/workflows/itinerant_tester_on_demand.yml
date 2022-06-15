@@ -29,7 +29,7 @@ jobs:
       - run: brew --version || true
       - run: pip install --upgrade pip wheel
       - run: pip install bandit black codespell flake8 flake8-2020 flake8-bugbear
-                         flake8-comprehensions flake8-return isort mypy pytest
+                         flake8-comprehensions flake8-return isort mypy pytest pytype
                          pyupgrade safety
       
       #- run: touch bandit.out.txt
@@ -112,5 +112,7 @@ jobs:
           print(flake8_cmd)
           print("=" * 80)
           run(flake8_cmd.split(), text=True)
+          pytype --help
+          pytype -j auto
       #- run: pip install flake8-bugbear flake8-comprehensions  # flake8-docstrings flake8-import-order flake8-polyfill flake8-return flake8-variables-names
       #- run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics || true
