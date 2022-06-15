@@ -13,5 +13,7 @@ jobs:
           import os
           assert os.getenv("SLACK_CHANNEL_ABC_TEAM")
           assert os.getenv("SLACK_TOKEN")
-          assert client := WebClient(token=os.getenv("SLACK_TOKEN"))
-          assert response := client.chat_postMessage(channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"), text="Test sent using GitHub Action Secrets.")
+          client = WebClient(token=os.getenv("SLACK_TOKEN"))
+          assert client
+          response = client.chat_postMessage(channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"), text="Test sent using GitHub Action Secrets.")
+          print(response)
