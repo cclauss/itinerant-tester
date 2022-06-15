@@ -11,11 +11,9 @@ jobs:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         run: |
           import os, slack_sdk
-          slack_sdk.WebClient(
-            token=os.environ["SLACK_TOKEN"], team_id=os.getenv("SLACK_CHANNEL_ABC_TEAM")
-          ).chat_postMessage(
-            # channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"),
-            text="Test re-sent using GitHub Action Secrets.",
+          slack_sdk.WebClient(token=os.environ["SLACK_TOKEN"]).chat_postMessage(
+            channel=os.environ["SLACK_CHANNEL_ABC_TEAM"],
+            text="Test `re-sent` using GitHub Action ___Secrets___.",
           )
         #run: |
         #  import os
