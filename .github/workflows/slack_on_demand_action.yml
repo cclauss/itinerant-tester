@@ -10,15 +10,23 @@ jobs:
           SLACK_CHANNEL_ABC_TEAM: ${{ secrets.SLACK_CHANNEL_ABC_TEAM }}
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         run: |
-          import os
-          import slack_sdk
-          print(f"{slack_sdk.version.__version__ = }")
-          assert os.getenv("SLACK_CHANNEL_ABC_TEAM")
-          assert os.getenv("SLACK_TOKEN")
-          slack_client = slack_sdk.WebClient(token=os.getenv("SLACK_TOKEN"))
-          assert slack_client
-          response = slack_client.chat_postMessage(
-              channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"),
-              text="Test sent using GitHub Action Secrets.",
+          import os, slack_sdk
+          slack_sdk.WebClient(
+            token=os.environ["SLACK_TOKEN"], team_id=os.getenv("SLACK_CHANNEL_ABC_TEAM")
+          ).chat_postMessage(
+            # channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"),
+            text="Test re-sent using GitHub Action Secrets.",
           )
-          print(response)
+        #run: |
+        #  import os
+        #  import slack_sdk
+        #  print(f"{slack_sdk.version.__version__ = }")
+        #  assert os.getenv("SLACK_CHANNEL_ABC_TEAM")
+        #  assert os.getenv("SLACK_TOKEN")
+        #  slack_client = slack_sdk.WebClient(token=os.getenv("SLACK_TOKEN"))
+        #  assert slack_client
+        #  response = slack_client.chat_postMessage(
+        #      channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"),
+        #      text="Test sent using GitHub Action Secrets.",
+        #  )
+        #  print(response)
