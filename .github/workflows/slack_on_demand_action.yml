@@ -11,9 +11,14 @@ jobs:
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         run: |
           import os
+          import slack_sdk
+          print(f"{slack_sdk.version.__version__ = }")
           assert os.getenv("SLACK_CHANNEL_ABC_TEAM")
           assert os.getenv("SLACK_TOKEN")
-          client = WebClient(token=os.getenv("SLACK_TOKEN"))
-          assert client
-          response = client.chat_postMessage(channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"), text="Test sent using GitHub Action Secrets.")
+          slack_client = slack_sdk.WebClient(token=os.getenv("SLACK_TOKEN"))
+          assert slack_client
+          response = slack_client.chat_postMessage(
+              channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"),
+              text="Test sent using GitHub Action Secrets.",
+          )
           print(response)
