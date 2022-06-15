@@ -40,4 +40,4 @@ jobs:
           cd ${{ env.repo_directory }}
           ls -Fla
           pip install types-all
-          pytype . --jobs auto --keep-going --platform linux --exclude **/_init_path.py **/bootstrap.py **/dbstore.py **/logreader.py **/markdown.py **/mdx_footnotes.py **/migrate-0.4-0.5.py **/readquery.py **/sequence.py  **/store.py
+          pytype . --jobs auto --keep-going --platform linux --exclude **/_init_path.py **/bootstrap.py **/dbstore.py **/logreader.py **/markdown.py **/mdx_footnotes.py **/migrate-0.4-0.5.py **/readquery.py **/sequence.py **/server.py **/store.py **/test_dbstore.py
