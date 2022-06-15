@@ -1,0 +1,17 @@
+name: slack_on_demand_action
+on: workflow_dispatch  # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+jobs:
+  on_demand_action:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python3 -m pip install slack-sdk
+      - shell: python
+        env:
+          SLACK_CHANNEL_ABC_TEAM: ${{ secrets.SLACK_CHANNEL_ABC_TEAM }}
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+        run: |
+          import os
+          assert os.getenv("SLACK_CHANNEL_ABC_TEAM")
+          assert os.getenv("SLACK_TOKEN")
+          assert client := WebClient(token=os.getenv("SLACK_TOKEN"))
+          assert response := client.chat_postMessage(channel=os.getenv("SLACK_CHANNEL_ABC_TEAM"), text="Test sent using GitHub Action Secrets.")
