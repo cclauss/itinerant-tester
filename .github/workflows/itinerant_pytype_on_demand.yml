@@ -40,4 +40,5 @@ jobs:
           cd ${{ env.repo_directory }}
           ls -Fla
           pip install types-all
-          pytype . --jobs auto --keep-going --platform linux --exclude **/_init_path.py **/migrate-0.4-0.5.py 
+          pytype . --jobs auto --keep-going --platform linux
+            --exclude **/_init_path.py **/migrate-0.4-0.5.py **/sequence.py
