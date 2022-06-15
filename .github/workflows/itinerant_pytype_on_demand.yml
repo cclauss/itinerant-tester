@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip wheel
-      - run: pip install mypy pytype python-memcached
+      - run: pip install mypy pytype   python-memcached pytest
       # The next commands need to 'cd repo_name' to work correctly
       - name: pip install -r requirements.txt || pip install --editable . || pip install . || true
         run: |
