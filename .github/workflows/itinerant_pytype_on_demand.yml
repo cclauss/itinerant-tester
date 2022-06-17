@@ -1,7 +1,5 @@
 name: itinerant_pytype_on_demand
 on:
-  pull_request:
-  push:
   workflow_dispatch:
     inputs:
       repo:
@@ -42,4 +40,4 @@ jobs:
           cd ${{ env.repo_directory }}
           ls -Fla
           pip install types-all
-          pytype . --jobs auto --keep-going --platform linux --exclude **/__init__.py **/_init_path.py **/app.py **/bootstrap.py **/db.py **/dbstore.py **/delegate.py **/logreader.py **/macro.py **/markdown.py **/mdx_footnotes.py **/migrate-0.4-0.5.py **/readquery.py **/sequence.py **/server.py **/store.py **/template.py **/test_*.py **/view.py
+          pytype . --jobs auto --keep-going --platform linux --exclude **/__init__.py **/_init_path.py **/app.py **/bootstrap.py **/code.py **/db.py **/dbstore.py **/dbupgrade.py **/delegate.py **/logreader.py **/macro.py **/markdown.py **/mdx_footnotes.py **/migrate-0.4-0.5.py **/readquery.py **/sequence.py **/server.py **/store.py **/template.py **/test_*.py **/view.py
