@@ -1,0 +1,26 @@
+name: lxml_on_cpython_nightly
+on: [workflow_dispatch]
+jobs:
+  lxml_from_pypi_on_cpython_nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11-dev
+      - run: pip install lxml || true
+      - run: sudo apt-get update && sudo apt-get install -y libxml2 libxslt-dev
+      - run: pip install lxml
+  lxml_from_repo_on_cpython_nightly:
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: lxml/lxml
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11-dev
+      - run: |
+          ls .
+          cd lxml
+          pip install . || true
+      - run: sudo apt-get update && sudo apt-get install -y libxml2 libxslt-dev
+      - run: pip install .
