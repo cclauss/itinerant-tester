@@ -8,7 +8,7 @@ jobs:
         with:
           python-version: 3.11-dev
       - run: pip install lxml || true
-      - run: sudo apt-get update && sudo apt-get install -y cython libxml2 libxslt-dev
+      - run: sudo apt-get update && sudo apt-get install -y libxml2 libxslt-dev
       - run: pip install Cython
       - run: pip install lxml
   lxml_from_repo_on_cpython_nightly:
