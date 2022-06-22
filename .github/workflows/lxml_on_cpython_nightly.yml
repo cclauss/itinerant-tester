@@ -19,9 +19,6 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.11-dev
-      - run: |
-          ls .
-          cd lxml
-          pip install . || true
+      - run: pip install . || true  # We expect this to fail...
       - run: sudo apt-get update && sudo apt-get install -y libxml2 libxslt-dev
       - run: pip install .
