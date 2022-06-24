@@ -65,7 +65,7 @@ jobs:
         run: |
           cd ${{ env.repo_directory }}
           mkdir -p .mypy_cache
-          mypy --ignore-missing-imports --install-types --non-interactive . || true
+          mypy --explicit-package-bases --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytest . || pytest --doctest-modules . || true
       - run: shopt -s globstar && pyupgrade --exit-zero-even-if-changed --py37-plus **/*.py
       - run: safety check
@@ -112,7 +112,3 @@ jobs:
           print(flake8_cmd)
           print("=" * 80)
           run(flake8_cmd.split(), text=True)
-      - run: pytype --help
-      - run: pytype --jobs auto --keep-going --platform linux .
-      #- run: pip install flake8-bugbear flake8-comprehensions  # flake8-docstrings flake8-import-order flake8-polyfill flake8-return flake8-variables-names
-      #- run: flake8 . --count --exit-zero --max-line-length=88 --show-source --statistics || true
