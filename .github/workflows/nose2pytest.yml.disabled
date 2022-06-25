@@ -17,13 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-python@v3
+      with:
+        repo: ${{ github.event.inputs.repo }}
+    - uses: actions/setup-python@v4
       with:
         python-version: 3.6  # nose2pytest must run on Python <= 3.6
     - run: pip install nose2pytest
-    # - run: python -m pip install git+https://github.com/pytest-dev/nose2pytest.git
-    ## - run: pip install https://github.com/pytest-dev/nose2pytest.git || true
-    ## - run: pip install git@github.com:pytest-dev/nose2pytest.git || true
     - run: nose2pytest -h
     - run: nose2pytest -v .
     - run: git diff  # Copy this command's output into a file and `git apply nose2pytest.patch`
