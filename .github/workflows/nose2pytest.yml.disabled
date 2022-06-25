@@ -5,9 +5,15 @@
 #        nose2pytest does not fix assume_raises, raises which still function on Py3.10.
          
 name: nose2pytest
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
 jobs:
-  run-nose2pytest:  # Make a `git apply` patch - https://git-scm.com/docs/git-apply
+  nose2pytest:  # Make a `git apply` patch - https://git-scm.com/docs/git-apply
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
