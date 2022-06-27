@@ -1,0 +1,18 @@
+# https://github.com/actions/virtual-environments/tree/main/images/macos
+
+name: macOS
+on:
+  workflow_dispatch:
+jobs:
+  macOS:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macOS-12, macOS-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+    - run: sw_vers && uname -a
