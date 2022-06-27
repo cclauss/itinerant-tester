@@ -9,7 +9,9 @@ jobs:
   itinerant_codespell:
     runs-on: ubuntu-latest
     steps:
-      - run: pip install codespell
       - run: echo "Spellchecking ${{ github.event.inputs.repo }}..."
-      - run: git clone https://github.com/${{ github.event.inputs.repo }}
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: pip install codespell
       - run: codespell --count --skip="*.po"  # --ignore-words-list="" --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
