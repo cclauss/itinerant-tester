@@ -29,3 +29,6 @@ jobs:
     - run: git diff  # Copy this command's output into a file and `git apply nose2pytest.patch`
     - run: grep -r nose .  # nose2pytest does NOT remove the now unused imports
     # run: flake8 --select=F40
+    - run: unittest2pytest --help
+    - run: unittest2pytest --list-fixes
+    - run: unittest2pytest .
