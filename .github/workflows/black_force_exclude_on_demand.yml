@@ -1,0 +1,37 @@
+name: black_force_exclude_on_demand
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  black_force_exclude_on_demand:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+      - run: pip install black tomli
+      - shell: python
+        run: |
+          with open("pyproject.toml", "rb") as in_file:
+              data = tomli.load(in_file)
+          force_exclude = data['tool']['black']['force-exclude'].splitlines()
+          filenames = {line.strip("|^ /") for line in force_exclude if "|" in line}
+          print("\n".join(filenames))
+      - run: shopt -s globstar && black --check **/*.py | tee black.out.txt || true
+      #- name: Customized black command
+      #  shell: python
+      #  run: |
+      #    with open("black.out.txt") as in_file:
+      #        errors = sorted(
+      #            set(line[11:15] for line in in_file if line.startswith(">> "))
+      #        )
+      #    skip = f" --skip {','.join(errors)}" if errors else ""
+      #    print(f"bandit --recursive{skip} .")
