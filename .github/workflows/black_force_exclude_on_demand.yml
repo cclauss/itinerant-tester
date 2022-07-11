@@ -19,13 +19,13 @@ jobs:
           python-version: "3.x"
       - run: pip install black tomli
       - run: mv pyproject.toml pyproject.toml.disabled
-      - run: shopt -s globstar && black --check **/*.py | tee black.out.txt || true
+      - run: shopt -s globstar && black --check --skip-string-normalization **/*.py | tee black.out.txt || true
       - run: mv pyproject.toml.disabled pyproject.toml
       - shell: python
         run: |
           from pathlib import Path
           import tomli
-          data = tomli.loads(Path("pyproject.toml").read_test())
+          data = tomli.loads(Path("pyproject.toml").read_text())
           force_exclude = data['tool']['black']['force-exclude'].splitlines()
           expected = {line.strip("|^ /") for line in force_exclude if "/" in line}
           actual = {line.split()[-1] for line in Path("black.out.txt").read_text().splitlines()}
