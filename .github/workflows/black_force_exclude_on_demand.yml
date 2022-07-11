@@ -19,8 +19,9 @@ jobs:
           python-version: "3.x"
       - run: pip install black tomli
       - run: mv pyproject.toml pyproject.toml.disabled
-      - run: shopt -s globstar && black --check --skip-string-normalization **/*.py | tee black.out.txt || true
+      - run: shopt -s globstar && black --check --skip-string-normalization **/*.py |& tee black.out.txt || true
       - run: cat black.out.txt
+      - run: bash --version
       - run: mv pyproject.toml.disabled pyproject.toml
       - shell: python
         run: |
