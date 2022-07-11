@@ -20,6 +20,7 @@ jobs:
       - run: pip install black tomli
       - shell: python
         run: |
+          import tomli
           with open("pyproject.toml", "rb") as in_file:
               data = tomli.load(in_file)
           force_exclude = data['tool']['black']['force-exclude'].splitlines()
