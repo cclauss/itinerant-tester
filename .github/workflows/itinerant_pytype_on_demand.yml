@@ -7,7 +7,8 @@ on:
         required: true
 
 jobs:
-  itinerant_pytype_on_demand:
+  # itinerant_pytype_on_demand:
+  "repo: ${{ github.event.inputs.repo }}":
     strategy:
       fail-fast: false
       matrix:
