@@ -30,7 +30,7 @@ jobs:
       - run: pip install --upgrade pip wheel
       - run: pip install bandit black codespell flake8 flake8-2020 flake8-bugbear
                          flake8-comprehensions flake8-return isort mypy pytest pytype
-                         pyupgrade safety
+                         pyupgrade safety flit
       
       #- run: touch bandit.out.txt
       # tee: write to stdout and also into the file
@@ -60,7 +60,7 @@ jobs:
       - name: pip install -r requirements.txt || pip install --editable . || pip install . || true
         run: |
           cd ${{ env.repo_directory }}
-          pip install -r requirements.txt || pip install --editable . || true
+          pip install -r requirements.txt || pip install --editable .  || flit install --deps develop || true
       - name: mypy --explicit-package-bases --ignore-missing-imports --install-types --non-interactive --namespace-packages . || true
         run: |
           cd ${{ env.repo_directory }}
