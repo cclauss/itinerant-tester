@@ -60,13 +60,13 @@ jobs:
       - name: pip install -r requirements.txt || pip install --editable . || pip install . || true
         run: |
           cd ${{ env.repo_directory }}
-          pip install -r requirements.txt || pip install --editable .  || flit install --deps develop || true
+          pip install -r requirements.txt || pip install --editable .  || flit install || true
       - name: mypy --explicit-package-bases --ignore-missing-imports --install-types --non-interactive --namespace-packages . || true
         run: |
           cd ${{ env.repo_directory }}
           mkdir -p .mypy_cache
           mypy --explicit-package-bases --ignore-missing-imports --install-types --non-interactive --namespace-packages . || true
-      - run: pytest . || pytest --doctest-modules . || true
+      - run: pytest --doctest-modules . || pytest . || true
       - run: shopt -s globstar && pyupgrade --exit-zero-even-if-changed --py37-plus **/*.py
       - run: safety check
       - shell: python
