@@ -19,4 +19,4 @@ jobs:
           python-version: 3.x
       - run: pip install com2ann  # https://pypi.org/project/com2ann
       # Run com2ann and list out the changed files.
-      - run: com2ann . > /dev/null && git diff --name-only && git stash && git stash drop
+      - run: com2ann . > /dev/null && git diff --name-only && git stash --quiet && git stash drop || true
