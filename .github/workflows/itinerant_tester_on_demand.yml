@@ -22,11 +22,10 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip wheel
-      - run: pip install bandit black codespell flake8 flake8-2020 flake8-bugbear
+      - run: pip install bandit black codespell com2ann flake8 flake8-2020 flake8-bugbear
                          flake8-comprehensions flake8-return isort mypy pytest pytype
                          pyupgrade safety
-      - name: Old-style Python type hints --> com2ann
-        run: git grep "# type:" **/*.py
+      - run: com2ann . > /dev/null && git diff --name-only && git stash --quiet && git stash drop --quiet || true
       # tee: write to stdout and also into the file
       - run: bandit --recursive . | tee bandit.out.txt || true
       - name: Customized bandit command
