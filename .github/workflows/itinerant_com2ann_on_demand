@@ -1,0 +1,22 @@
+name: itinerant_com2ann_on_demand
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+jobs:
+  itinerant_com2ann_on_demand:
+  # "${{ github.event.inputs.repo }}":  # Does not work :-(
+    strategy:
+    runs-on: ubuntu-latest
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install com2ann  # https://pypi.org/project/com2ann
+      - run: com2ann .
+      - run: git diff --name-only
