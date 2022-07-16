@@ -25,6 +25,8 @@ jobs:
       - run: pip install bandit black codespell flake8 flake8-2020 flake8-bugbear
                          flake8-comprehensions flake8-return isort mypy pytest pytype
                          pyupgrade safety
+      - name: Old-style Python type hints --> com2ann
+        run: git grep "# type:" **/*.py
       # tee: write to stdout and also into the file
       - run: bandit --recursive . | tee bandit.out.txt || true
       - name: Customized bandit command
