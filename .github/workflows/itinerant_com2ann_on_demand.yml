@@ -18,6 +18,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install com2ann  # https://pypi.org/project/com2ann
-      - run: git grep "# type" **/*.py || com2ann .
-      - run: com2ann .
-      - run: git diff --name-only
+      # If we find `# type:` in a Python file, run com2ann and list the changed files
+      - run: git grep "# type:" **/*.py && com2ann . && git diff --name-only
