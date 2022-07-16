@@ -9,6 +9,7 @@ jobs:
   itinerant_com2ann_on_demand:
   # "${{ github.event.inputs.repo }}":  # Does not work :-(
     runs-on: ubuntu-latest
+    steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v3
         with:
