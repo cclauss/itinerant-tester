@@ -10,6 +10,9 @@ jobs:
           - cchardet
           - frozenlist
           - yarl
+          - git+https://github.com/PyYoshi/cChardet.git
+          - git+https://github.com/aio-libs/frozenlist
+          - git+https://github.com/aio-libs/yarl.git
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v4
