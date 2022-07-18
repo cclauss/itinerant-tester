@@ -7,16 +7,16 @@ jobs:
       fail-fast: false
       matrix:
         package:
-          - cchardet
-          - frozenlist
-          - yarl
-          - git+https://github.com/PyYoshi/cChardet.git
-          - git+https://github.com/aio-libs/frozenlist
-          - git+https://github.com/aio-libs/yarl.git
+          - cchardet  # Fails
+          - frozenlist  # Fails
+          - yarl  # Fails
+          - git+https://github.com/PyYoshi/cChardet.git  # Passes!!!
+          - git+https://github.com/aio-libs/frozenlist  # Fails
+          - git+https://github.com/aio-libs/yarl.git  # Fails
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.11-dev
-      - run: pip install --upgrade pip wheel
-      - run: pip install ${{ matrix.package }}
+      - run: python3.11 -m pip install --upgrade pip wheel
+      - run: python3.11 -m pip install ${{ matrix.package }}
