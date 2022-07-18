@@ -11,7 +11,7 @@ jobs:
           - frozenlist  # Fails
           - yarl  # Fails
           - git+https://github.com/PyYoshi/cChardet.git  # Passes!!!
-          - git+https://github.com/aio-libs/frozenlist  # Fails
+          - git+https://github.com/aio-libs/frozenlist.git  # Fails
           - git+https://github.com/aio-libs/yarl.git  # Fails
     runs-on: ubuntu-latest
     steps:
