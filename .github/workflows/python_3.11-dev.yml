@@ -1,0 +1,17 @@
+name: python_3.11-dev
+on: workflow-dispatch
+jobs:
+  python_3.11-dev:
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - cchardet
+          - frozenlist
+          - yarl
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11-dev
+      - run: pip install ${{ matrix.package }}
