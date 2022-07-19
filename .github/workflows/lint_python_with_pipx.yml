@@ -1,7 +1,7 @@
-name: lint_python
+name: lint_python_with_pipx
 on: [pull_request, push]
 jobs:
-  lint_python:
+  lint_python_with_pipx:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
