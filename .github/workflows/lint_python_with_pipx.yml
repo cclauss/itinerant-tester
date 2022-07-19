@@ -1,5 +1,5 @@
 name: lint_python_with_pipx
-on: [pull_request, push]
+on: [pull_request, push, workflow_dispatch]
 jobs:
   lint_python_with_pipx:
     runs-on: ubuntu-latest
