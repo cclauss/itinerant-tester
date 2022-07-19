@@ -1,3 +1,5 @@
+# flake8: noqa
+
     publishers = {publisher.casefold() for publisher in book_item["publishers"]}
     book_title = book_item["title"].casefold()  # should we .split() ?
     if low_quality := "notebook" in book_title and publishers & LOW_QUALITY_PUBLISHERS:
