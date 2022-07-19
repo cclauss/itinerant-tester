@@ -7,7 +7,7 @@ jobs:
       fail-fast: false
       matrix:
         package:
-          - cchardet  # Fails
+          - cchardet  # Passes if cython>=0.29.30
           - frozenlist  # Fails
           - yarl  # Fails
           - git+https://github.com/PyYoshi/cChardet.git  # Passes!!!
