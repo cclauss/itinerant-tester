@@ -1,0 +1,19 @@
+name: install_octoprint_on_legacy_python
+on:
+  workflow_dispatch:
+jobs:
+  install_octoprint_on_legacy_python:
+    strategy:
+      fail-fast: false
+      matrix:
+        package:
+          - OctoPrint
+          - git+https://github.com/OctoPrint/OctoPrint.git
+          - git+https://github.com/OctoPrint/OctoPrint.git@maintenance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 2
+      - run: python2 -m pip install --upgrade pip
+      - run: python2 -m pip install ${{ matrix.package }}
