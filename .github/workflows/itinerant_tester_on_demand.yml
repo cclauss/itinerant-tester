@@ -7,7 +7,7 @@ on:
         required: true
 
 jobs:
-  "Testing ${{ github.event.inputs.repo }}...":
+  itinerant_tester_on_demand:
     strategy:
       fail-fast: false
       matrix:
