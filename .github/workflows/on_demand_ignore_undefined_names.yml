@@ -28,7 +28,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: brew --version || true
       - run: pip install --upgrade pip wheel
-      - run: pip install bandit black codespell flake8 flake8-2020 flake8-bugbear
+      - run: pip install bandit black codespell flake8 flake8-bugbear
                          flake8-comprehensions flake8-return isort mypy pytest
                          pyupgrade safety
       
