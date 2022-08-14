@@ -1,0 +1,22 @@
+name: itinerant_tester_flake8_simplify
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_tester_flake8_simplify:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install --upgrade pip wheel
+      - run: pip install flake8 flake8-simplify
+      - run: flake8 . --count --select=SIM --show-source --statistics
