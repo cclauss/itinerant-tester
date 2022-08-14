@@ -25,7 +25,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip wheel
       - run: pip install bandit black codespell com2ann flake8 flake8-2020 flake8-bugbear
-                         flake8-comprehensions flake8-return isort mypy pytest pytype
+                         flake8-comprehensions flake8-return flake8-simplify isort mypy pytest pytype
                          pyupgrade safety
       - run: com2ann . > /dev/null && git diff --name-only && git stash --quiet && git stash drop --quiet || true
       # tee: write to stdout and also into the file
