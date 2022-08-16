@@ -78,7 +78,7 @@ jobs:
               return max(int(line.split(E501_TAG)[-1].split()[0]) for line in e501_lines)
 
 
-          violations = set(line.split()[1] for line in flake8_out)
+          violations = set(line.split()[1] for line in flake8_out if line)
 
           try:
               violations.remove("C901")
