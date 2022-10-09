@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip wheel
-      - run: pip install sympy  # Fails: qiskit, statsmodels, tensorflow
+      - run: pip install sympy  # Fails: barnaba, mdtraj, qiskit, statsmodels, tensorflow
