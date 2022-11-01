@@ -20,5 +20,6 @@ jobs:
       - run: pip install cython-lint  # https://pypi.org/project/com2ann
       - run: cython-lint --version || true
       - run: cython-lint --help
+      - run: shopt -s globstar && cython-lint **/*.pyi  # Are .pyi files ignored?
       - run: shopt -s globstar && cython-lint --max-line-length=120 --no-pycodestyle **/*.py[ix] || true
       - run: shopt -s globstar && cython-lint --max-line-length=120 **/*.py[ix]
