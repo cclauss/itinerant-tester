@@ -7,7 +7,7 @@ on:
         required: true
 jobs:
   itinerant_cython_lint_on_demand:
-    name: "${{ github.event.inputs.repo }}"  # Does not work :-(
+    name: "${{ github.event.inputs.repo }}"
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
