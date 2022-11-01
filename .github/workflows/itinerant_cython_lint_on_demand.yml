@@ -18,5 +18,5 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install cython-lint  # https://pypi.org/project/com2ann
-      - run: cython-lint .
-      - run: shopt -s globstar && cython-lint **/*.pyx
+      - run: cython-lint --version || true
+      - run: shopt -s globstar && cython-lint --max-line-length=120 --statistics **/*.pyx
