@@ -8,6 +8,7 @@ on:
 
 jobs:
   itinerant_tester_on_demand:
+    name: "${{ github.event.inputs.repo }}"
     strategy:
       fail-fast: false
       matrix:
