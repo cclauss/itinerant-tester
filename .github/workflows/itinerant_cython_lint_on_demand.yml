@@ -1,0 +1,22 @@
+name: itinerant_cython_lint_on_demand
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+jobs:
+  itinerant_cython_lint_on_demand:
+     name: "${{ github.event.inputs.repo }}"  # Does not work :-(
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install cython-lint  # https://pypi.org/project/com2ann
+      - run: cython-lint .
+      - run: shopt -s globstar && cython-lint **/*.pyx
