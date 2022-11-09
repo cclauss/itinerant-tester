@@ -1,7 +1,8 @@
-name: deadsnakes_py3.12-dev
+name: deadsnakes_python_3_12-dev
 on: [push, pull_request, workflow_dispatch]
 jobs:
-  deadsnakes_py3.12-dev:
+  deadsnakes_python_3_12-dev:
+    runs-on: ubuntu-latest
     steps:
       - uses: deadsnakes/action@v2.1.1
         with:
