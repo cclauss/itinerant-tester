@@ -1,5 +1,5 @@
 name: deadsnakes_python_3_12-dev
-on: [push, pull_request, workflow_dispatch]
+on: [workflow_dispatch]  # push, pull_request, 
 jobs:
   deadsnakes_python_3_12-dev:
     runs-on: ubuntu-latest
