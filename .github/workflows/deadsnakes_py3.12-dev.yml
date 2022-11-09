@@ -1,0 +1,8 @@
+name: deadsnakes_py3.12-dev
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  deadsnakes_py3.12-dev:
+    steps:
+      - uses: deadsnakes/action@v2.1.1
+        with:
+          python-version: 3.12-dev
