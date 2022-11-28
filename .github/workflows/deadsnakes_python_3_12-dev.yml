@@ -7,5 +7,5 @@ jobs:
       - uses: deadsnakes/action@v2.1.1
         with:
           python-version: 3.12-dev
-      - run: python3 -vv
-      - run: python -vv || true
+      - run: python3 -VV
+      - run: python -VV
