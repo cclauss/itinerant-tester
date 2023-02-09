@@ -25,10 +25,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip setuptools wheel
+      - run: pip install ruff
+      - run: ruff check --select=E9,F63,F7,F82,Y --show-source --statistics .
       - run: pip install bandit black codespell com2ann flake8 flake8-2020 flake8-bugbear
                          flake8-comprehensions flake8-return flake8-simplify isort mypy pytest pytype
-                         pyupgrade ruff safety
-      - run: ruff --count --select=E9,F63,F7,F82,Y --show-source --statistics .
+                         pyupgrade safety
       - run: com2ann . > /dev/null && git diff --name-only && git stash --quiet && git stash drop --quiet || true
       # tee: write to stdout and also into the file
       - run: bandit --recursive . | tee bandit.out.txt || true
