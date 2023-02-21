@@ -24,4 +24,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip setuptools wheel
       - run: pip install ruff
-      - run: ruff check --select=ALL --statistics . | grep "[*]"
+      - run: ruff check --select=ALL --ignore=ANN,C4,COM,D,ERA,F841,I,PIE790,PT,Q,RUF001,RUF100,TID252,UP --statistics . | grep "\[*\]"
