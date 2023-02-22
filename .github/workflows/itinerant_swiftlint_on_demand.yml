@@ -33,5 +33,5 @@ jobs:
         run: |
           with open("swiftlint.out.txt") as in_file:
               errors = set(line.rsplit("(")[-1][:-2] for line in in_file if line.strip().endswith(")"))
-          print(f"{len(errors) = }")
-          print("\n\n  " + "\n  ".join(sorted(errors)))
+          print(f"{len(errors) = }\ndisabled_rules:")
+          print("  - " + "\n  - ".join(sorted(errors)))
