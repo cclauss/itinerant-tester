@@ -32,6 +32,6 @@ jobs:
         shell: python
         run: |
           with open("swiftlint.out.txt") as in_file:
-              errors = set(line.rsplit("(")[-1][:-1] for line in in_file if (line := line.strip()).endswith(")"))
+              errors = set(line.rsplit("(")[-1][:-2] for line in in_file if line.strip().endswith(")"))
           print(f"{len(errors) = }")
-          print("\n\n  " "\n  ".join(sorted(errors)))
+          print("\n\n  " + "\n  ".join(sorted(errors)))
