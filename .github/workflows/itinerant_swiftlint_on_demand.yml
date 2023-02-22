@@ -1,0 +1,26 @@
+name: itinerant_swiftlint_on_demand
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  swiftlint_help:
+    runs-on: macos-latest
+    steps:
+      - run: swiftlint help
+      - run: swiftlint help lint
+
+  itinerant_swiftlint_on_demand:
+    name: "${{ github.event.inputs.repo }}"
+    runs-on: macos-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: cat .swiftlint.yml || true
+      - run: mv .swiftlint.yml .swiftlint.yml.disabled || true      
+      - run: swiftlint --fix --quiet && git diff && swiftlint --quiet
