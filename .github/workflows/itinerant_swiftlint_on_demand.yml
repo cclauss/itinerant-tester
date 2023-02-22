@@ -30,4 +30,4 @@ jobs:
         run: |
           with open("swiftlint.out.txt") as in_file:
               errors = set(line.rsplit("(")[-1][:-1] for line in in_file if line.endswith(")"))
-          print("\n\n  " "\n  ".join(sorted(errors))
+          print("\n\n  " "\n  ".join(sorted(errors)))
