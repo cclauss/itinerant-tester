@@ -23,4 +23,11 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: cat .swiftlint.yml || true
       - run: mv .swiftlint.yml .swiftlint.yml.disabled || true      
-      - run: swiftlint --fix --quiet && git diff && swiftlint --quiet
+      - run: swiftlint --fix --quiet && git diff
+      - run: swiftlint --quiet | tee swiftlint.out.txt
+      - name: Failing SwiftLint rules
+        shell: python
+        run: |
+          with open("swiftlint.out.txt") as in_file:
+              errors = set(line.rsplit("(")[-1][:-1] for line in in_file if line.endswith(")"))
+          print("\n\n  " "\n  ".join(sorted(errors))
