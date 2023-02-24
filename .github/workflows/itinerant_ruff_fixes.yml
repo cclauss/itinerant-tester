@@ -19,9 +19,22 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: ${{ github.event.inputs.repo }}
-      - uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-      - run: pip install --upgrade pip setuptools wheel
+      # - uses: actions/setup-python@v4
+      #   with:
+      #    python-version: ${{ matrix.python-version }}
+      # - run: pip install --upgrade pip setuptools wheel
       - run: pip install ruff
-      - run: ruff check --select=ALL --ignore=ANN,C4,COM,D,ERA,F841,I,PIE790,PT,Q,RSE102,RUF001,RUF003,RUF100,TID252,UP --statistics . | grep "\[\*\]"
+      - run: |
+          ruff check --select=ALL --statistics . | tee ruff.out.txt || true
+          echo "-----"
+          grep "\[\*\]" ruff.out.txt
+      - name: ruff check --select=ALL --ignore=
+        shell: python
+        run: |
+          with open("ruff.out.txt") as in_file:
+              errors = set(line.split()[1] for line in in_file if not line.startswith("warning"))
+          ignore = f" --ignore {','.join(sorted(errors_)}" if errors else ""
+          print(f"ruff check --select=ALL{ignore} .")
+      - run: ruff check --select=ALL --statistics
+               --ignore=ANN,C4,COM,D,ERA,F841,I,PIE790,PT,Q,RSE102,RUF001,RUF003,RUF100,TID252,UP . | grep "\[\*\]"
+ 
