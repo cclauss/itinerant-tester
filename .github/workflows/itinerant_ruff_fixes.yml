@@ -25,11 +25,11 @@ jobs:
       # - run: pip install --upgrade pip setuptools wheel
       - run: pip install ruff
       - run: |
-          ruff check --select=ALL --statistics . | tee ruff.out.txt || true
+          ruff check --select=ALL --statistics --target-version=py37 . | tee ruff.out.txt || true
           echo "-------"
           grep "\[\*\]" ruff.out.txt
           ruff check --select=E501 . > ruff_long_lines.txt || true
-      - name: ruff --line-lenght=88 check --select=ALL --ignore=??? .
+      - name: ruff --line-length=88 check --select=ALL --target-version=py37 --ignore=??? .
         shell: python
         run: |
           with open("ruff.out.txt") as in_file:
@@ -44,7 +44,7 @@ jobs:
                   ))
                   line_length = max(line_length, longest)
           ignore = f" --ignore {','.join(sorted(errors))}" if errors else ""
-          print(f"ruff check --line-length={line_length} --select=ALL{ignore} .")
+          print(f"ruff check --line-length={line_length} --select=ALL{ignore} --target-version=py37 .")
       - run: ruff check --ignore=ANN,C4,COM,D,ERA,F841,I,PIE790,PT,Q,RSE102,RUF001,RUF003,RUF100,TID252,UP
-                         --select=ALL --statistics . | grep "\[\*\]" || true
+                         --select=ALL --statistics --target-version=py37 . | grep "\[\*\]" || true
  
