@@ -15,4 +15,4 @@ jobs:
         with:
           python-version-file: "python-version"
       - shell: python
-      - run: import sys ; print(sys.version)
+        run: import sys ; print(sys.version)
