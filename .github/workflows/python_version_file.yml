@@ -6,7 +6,7 @@ jobs:
   example_needs:
     runs-on: ubuntu-latest
     outputs:
-      output1: ${{ steps.step1.outputs.python_version }}
+      python_version: ${{ steps.step1.outputs.python_version }}
     steps:
       - id: read_python_version
         run: echo "python_version=3.7.13" >> "$GITHUB_OUTPUT"
