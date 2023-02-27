@@ -15,14 +15,14 @@ jobs:
   example_job_2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo {{ GITHUB_ENV }}
+      - run: echo "${{ env }}" || true
       - name: set_env_2
         shell: python
         run: |
           import os
           os.environ["GITHUB_ENV"] += "\ntest_value=7"
-      - run: echo ${{ GITHUB_ENV }}
-      # - run: echo ${{ set_env_2.env.test_value }}
+      - run: echo "${{ env }}" || true
+      - run: echo "${{ env.test_value }}" || true
       - name: Test environment variable
         run: echo $test_value
   python_version_file:
