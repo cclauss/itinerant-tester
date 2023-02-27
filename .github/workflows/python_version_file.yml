@@ -8,6 +8,7 @@ jobs:
     outputs:
       python_version: ${{ steps.get_python_version.outputs.PYVERSION }}
     steps:
+      - uses: actions/checkout@v3
       - id: get_python_version
         run: |
           echo "PYVERSION=$(git grep 'export PYVERSION ?=' Makefile.envs | cut -d' ' -f4)"  >> "$GITHUB_OUTPUT"
@@ -16,6 +17,7 @@ jobs:
     outputs:
       python_version: ${{ steps.get_python_version.outputs.PYVERSION }}
     steps:
+      - uses: actions/checkout@v3
       - id: get_python_version
         run: |
           echo "PYVERSION=$(grep 'export PYVERSION ?=' Makefile.envs)"  >> "$GITHUB_OUTPUT"
@@ -24,6 +26,7 @@ jobs:
     outputs:
       python_version: ${{ steps.get_python_version.outputs.PYVERSION }}
     steps:
+      - uses: actions/checkout@v3
       - id: get_python_version
         run: |
           echo "PYVERSION=$(git grep 'export PYVERSION ?=' Makefile.envs)"  >> "$GITHUB_OUTPUT"
