@@ -13,6 +13,8 @@ jobs:
       - name: Test environment variable
         run: echo $test_value
   example_job_2:
+    env:
+      bob: "Hello"
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ env }}" || true
@@ -20,11 +22,11 @@ jobs:
         shell: python
         run: |
           import os
-          print(os.environ["GITHUB_ENV"])
+          print(0, os.environ["GITHUB_ENV"])
           os.environ["GITHUB_ENV"] += "test_value=7"
-          print(os.environ["GITHUB_ENV"])
-          os.setenv("GITHUB_ENV", f"{os.environ['GITHUB_ENV']}\ntest_value8=8")
-          print(os.environ["GITHUB_ENV"])
+          print(1, os.environ["GITHUB_ENV"])
+          os.environ.putenv("GITHUB_ENV", f"{os.environ['GITHUB_ENV']}\ntest_value8=8")
+          print(1, os.environ["GITHUB_ENV"])
       - run: echo "${{ env }}" || true
       - run: echo "${{ env.test_value }}" || true
       - name: Test environment variable
