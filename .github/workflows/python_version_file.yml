@@ -6,6 +6,14 @@ jobs:
   example_job:
     runs-on: ubuntu-latest
     steps:
+      - shell: python
+        run |
+          import os
+          with open(os.environ.get('GITHUB_ENV'), "a") as f:
+              f.write("test_value=7\n")
+          with open(os.environ.get('GITHUB_ENV')) as f:
+              for i, line in enumerate(f):
+                  print(line)
       - name: set_env
         run: |
           python -c "import os; os.environ['test_value'] = '7'"
@@ -23,14 +31,17 @@ jobs:
         run: |
           import os
           with open(os.environ.get('GITHUB_ENV')) as f:
-              for line in f:
+              for i, line in enumerate(f):
                   print(line)
           # name, value = line.strip().split('=', 1)
           print(0, os.environ["GITHUB_ENV"])
           # os.environ["GITHUB_ENV"] += "test_value=7"
           print(1, os.environ["GITHUB_ENV"])
           os.putenv("GITHUB_ENV", f"{os.environ['GITHUB_ENV']}\ntest_value8=8")
-          print(1, os.environ["GITHUB_ENV"])
+          print(2, os.environ["GITHUB_ENV"])
+          with open(os.environ.get('GITHUB_ENV')) as f:
+              for i, line in enumerate(f):
+                  print(line)
       - run: echo "${{ env }}" || true
       - run: echo "${{ env.test_value }}" || true
       - name: Test environment variable
