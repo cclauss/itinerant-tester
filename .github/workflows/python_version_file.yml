@@ -12,6 +12,15 @@ jobs:
       - run: echo ${{ jobs.set_env.env.test_value }}
       - name: Test environment variable
         run: echo $test_value
+  example_job_2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo {{ GITHUB_ENV }}
+      - name: Append to environment variable
+        run: os.environ["GITHUB_ENV"] += "\ntest_value=7"
+      - run: echo {{ GITHUB_ENV }}
+      - name: Test environment variable
+        run: echo $test_value
   python_version_file:
     runs-on: ubuntu-latest
     steps:
