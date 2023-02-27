@@ -13,11 +13,12 @@ jobs:
           from pathlib import Path
           lines = Path("Makefile.envs").read_text().splitlines()
           # Looking for a line like: "export PYVERSION ?= 3.11.1"
-          python_version = any(
-              line.split()[3] for line in lines if line.startswith("export PYVERSION ?= ")
+          python_version = next(
+              (line.split()[3] for line in lines if line.startswith("export PYVERSION ?= ")),
+              "PYVERSION not found!"
           )
           # Write an ephemeral file because GitHub Actions do not git commit changes
-          Path("python-version").write_text(python_version or "PYVERSION not found!")
+          Path("python-version").write_text(python_version)
       - uses: actions/setup-python@v4
         with:
           python-version-file: "python-version"  # Use the ephemeral file generated above
