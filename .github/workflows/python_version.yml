@@ -23,8 +23,8 @@ jobs:
         env:
           PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
         run: echo "$PYVERSION"
-      - env:
-          PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
-        uses: actions/setup-python@v4
+      # - env:
+      #    PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
+      - uses: actions/setup-python@v4
         with:
           python-version: ${{ needs.get_python_version.outputs.PYVERSION }}
