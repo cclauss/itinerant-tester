@@ -27,4 +27,4 @@ jobs:
           PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
         uses: actions/setup-python@v4
         with:
-          python-version: $PYVERSION
+          python-version: "$PYVERSION"
