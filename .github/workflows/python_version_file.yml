@@ -17,8 +17,11 @@ jobs:
     steps:
       - run: echo {{ GITHUB_ENV }}
       - name: set_env_2
-        run: os.environ["GITHUB_ENV"] += "\ntest_value=7"
-      - run: echo {{ GITHUB_ENV }}
+        script: python
+        run: |
+          import os
+          os.environ["GITHUB_ENV"] += "\ntest_value=7"
+      - run: echo ${{ GITHUB_ENV }}
       # - run: echo ${{ set_env_2.env.test_value }}
       - name: Test environment variable
         run: echo $test_value
