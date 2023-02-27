@@ -25,7 +25,7 @@ jobs:
           print(0, os.environ["GITHUB_ENV"])
           os.environ["GITHUB_ENV"] += "test_value=7"
           print(1, os.environ["GITHUB_ENV"])
-          os.environ.putenv("GITHUB_ENV", f"{os.environ['GITHUB_ENV']}\ntest_value8=8")
+          os.putenv("GITHUB_ENV", f"{os.environ['GITHUB_ENV']}\ntest_value8=8")
           print(1, os.environ["GITHUB_ENV"])
       - run: echo "${{ env }}" || true
       - run: echo "${{ env.test_value }}" || true
