@@ -3,10 +3,10 @@
 name: python_version_file
 on: [pull_request, push]
 jobs:
-  get_python_version_0:
+  get_python_version:
     runs-on: ubuntu-latest
     outputs:
-      python_version: ${{ steps.get_python_version.outputs.PYVERSION }}
+      PYVERSION: ${{ steps.get_python_version.outputs.PYVERSION }}
     steps:
       - uses: actions/checkout@v3
       - id: get_python_version
@@ -32,11 +32,11 @@ jobs:
           echo "PYVERSION=$(git grep 'export PYVERSION ?=' Makefile.envs)"  >> "$GITHUB_OUTPUT"
   simple_reader_needs:
     runs-on: ubuntu-latest
-    needs: get_python_version_0
+    needs: get_python_version
     steps:
       - env:
-          python_version: ${{needs.get_python_version.outputs.PYVERSION}}
-        run: echo "$python_version"
+          PYVERSION: ${{needs.get_python_version.outputs.PYVERSION}}
+        run: echo "$PYVERSION"
   example_needs:
     runs-on: ubuntu-latest
     outputs:
