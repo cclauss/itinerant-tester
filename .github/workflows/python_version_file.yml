@@ -3,6 +3,14 @@
 name: python_version_file
 on: [pull_request, push]
 jobs:
+  total:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "$(git grep 'export PYVERSION ?=' Makefile.envs | cut -d' ' -f4)"
+      - run: python --version
   get_python_version:
     runs-on: ubuntu-latest
     outputs:
