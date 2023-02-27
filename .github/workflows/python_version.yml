@@ -17,5 +17,14 @@ jobs:
     needs: get_python_version
     steps:
       - env:
-          PYVERSION: ${{needs.get_python_version.outputs.PYVERSION}}
+          PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
         run: echo "$PYVERSION"
+      - name: Name is Python ${{ PYVERSION }}
+        env:
+          PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
+        run: echo "$PYVERSION"
+      - env:
+          PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ PYVERSION }}
