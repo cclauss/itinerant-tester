@@ -7,11 +7,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Write python-version file
+      - name: Read the Python version from Makefile.envs
         shell: python
         run: |
           from pathlib import Path
-          Path("python-version").write_text("3.7.13")
+          python_version = "PYVERSION not found!"
+          # Looking for the line: "export PYVERSION ?= 3.11.1"
+          for line in Path("Makefile.envs").read_text():
+              parts = line.split()
+              if parts[1] == "":
+                  python_version = parts[3]
+                  break
+          # Write an ephemeral file because GitHub Actions do not write back changes
+          Path("python-version").write_text(python_version)
       - uses: actions/setup-python@v4
         with:
           python-version-file: "python-version"
