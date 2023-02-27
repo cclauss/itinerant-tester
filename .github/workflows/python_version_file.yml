@@ -20,7 +20,11 @@ jobs:
         shell: python
         run: |
           import os
-          os.environ["GITHUB_ENV"]["test_value"] = "7"
+          print(os.environ["GITHUB_ENV"])
+          os.environ["GITHUB_ENV"] += "test_value=7"
+          print(os.environ["GITHUB_ENV"])
+          os.setenv("GITHUB_ENV", f"{os.environ['GITHUB_ENV']}\ntest_value8=8")
+          print(os.environ["GITHUB_ENV"])
       - run: echo "${{ env }}" || true
       - run: echo "${{ env.test_value }}" || true
       - name: Test environment variable
