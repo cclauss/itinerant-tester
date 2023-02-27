@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: echo {{ GITHUB_ENV }}
       - name: set_env_2
-        script: python
+        shell: python
         run: |
           import os
           os.environ["GITHUB_ENV"] += "\ntest_value=7"
