@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - shell: python
-        run |
+        run: |
           import os
           with open(os.environ.get('GITHUB_ENV'), "a") as f:
               f.write("test_value=7\n")
