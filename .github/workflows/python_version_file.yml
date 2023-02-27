@@ -11,17 +11,21 @@ jobs:
         shell: python
         run: |
           from pathlib import Path
-          python_version = "PYVERSION not found!"
-          # Looking for the line: "export PYVERSION ?= 3.11.1"
-          for line in Path("Makefile.envs").read_text():
-              parts = line.split()
-              if parts[1] == "":
-                  python_version = parts[3]
-                  break
-          # Write an ephemeral file because GitHub Actions do not write back changes
-          Path("python-version").write_text(python_version)
+          lines = Path("Makefile.envs").read_text().splitlines()
+          # Looking for a line like: "export PYVERSION ?= 3.11.1"
+          python_version = any(
+              line.split()[3] for line in lines if line.startswith("export PYVERSION ?= ")
+          )
+          # Write an ephemeral file because GitHub Actions do not git commit changes
+          Path("python-version").write_text(python_version or "PYVERSION not found!")
       - uses: actions/setup-python@v4
         with:
-          python-version-file: "python-version"
+          python-version-file: "python-version"  # Use the ephemeral file generated above
+      - shell: python
+        run: import sys ; print(sys.version)
+  other:
+    runs-on: ubuntu-latest
+    needs: python_version_file
+    steps:
       - shell: python
         run: import sys ; print(sys.version)
