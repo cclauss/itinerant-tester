@@ -25,6 +25,7 @@ jobs:
     needs: example_job
     steps:
     - run: echo $test_value
+    - run: echo "${{ env.test_value }}"
   example_job_2:
     env:
       bob: "Hello"
