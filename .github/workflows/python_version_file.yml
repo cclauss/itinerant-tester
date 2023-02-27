@@ -1,4 +1,5 @@
 # https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#using-the-python-version-file-input
+# https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
 name: python_version_file
 on: [pull_request, push]
 jobs:
