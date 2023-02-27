@@ -10,17 +10,17 @@ jobs:
     steps:
       - id: read_python_version
         run: echo "python_version=3.7.13" >> "$GITHUB_OUTPUT"
-      - run: echo ${{ steps.read_python_version.outputs.python_version }}
+      - run: echo ${{ steps.read_python_version.outputs.python_version }}  # Works
       - env:
-          python_version: ${{needs.example_needs.outputs.python_version}}
+          python_version: ${{needs.example_needs.outputs.python_version}}  # Does not work
         run: echo "$python_version"
   reader_needs:
     runs-on: ubuntu-latest
     needs: example_needs
     steps:
-      - run: echo ${{ steps.read_python_version.outputs.python_version }}
+      - run: echo ${{ steps.read_python_version.outputs.python_version }}  # Does not work
       - env:
-          python_version: ${{needs.example_needs.outputs.python_version}}
+          python_version: ${{needs.example_needs.outputs.python_version}}  # Works!
         run: echo "$python_version"
   example_job:
     runs-on: ubuntu-latest
