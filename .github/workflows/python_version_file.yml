@@ -20,6 +20,11 @@ jobs:
       # - run: echo ${{ set_env.env.test_value }}
       - name: Test environment variable
         run: echo $test_value
+  reader:
+    runs-on: ubuntu-latest
+    needs: example_job
+    steps:
+    - run: echo $test_value
   example_job_2:
     env:
       bob: "Hello"
