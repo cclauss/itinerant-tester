@@ -23,8 +23,8 @@ jobs:
         run: |
           import os
           with open(os.environ.get('GITHUB_ENV')) as f:
-          for line in f:
-              print(line)
+              for line in f:
+                  print(line)
           # name, value = line.strip().split('=', 1)
           print(0, os.environ["GITHUB_ENV"])
           # os.environ["GITHUB_ENV"] += "test_value=7"
