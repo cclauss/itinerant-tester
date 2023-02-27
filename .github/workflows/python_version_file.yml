@@ -1,0 +1,18 @@
+# https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#using-the-python-version-file-input
+name: python_version_file
+on: [pull_request, push]
+jobs:
+  python_version_file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Write python-version file
+        shell: python
+        run: |
+          from pathlib import Path
+          Path("python-version").write_text("3.7.10\n")
+      - uses: actions/setup-python@v4
+        with:
+          python-version-file: "python-version"
+      - shell: python
+      - run: import sys ; print(sys.version)
