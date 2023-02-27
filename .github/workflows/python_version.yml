@@ -19,7 +19,7 @@ jobs:
       - env:
           PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
         run: echo "$PYVERSION"
-      - name: Name is Python ${{ PYVERSION }}
+      - name: "Name is Python $PYVERSION"
         env:
           PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
         run: echo "$PYVERSION"
