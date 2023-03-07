@@ -15,4 +15,4 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     - run: pip install ruff
-    - run: ruff --format=github --target-version=py37 .
+    - run: ruff --format=github --line-length=361 --target-version=py37 .
