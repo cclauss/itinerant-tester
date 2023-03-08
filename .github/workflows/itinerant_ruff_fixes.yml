@@ -24,6 +24,7 @@ jobs:
       #   with:
       #    python-version: ${{ matrix.python-version }}
       # - run: pip install --upgrade pip setuptools wheel
+      - run: ls -Fla
       - run: python3 ruff_generate_baseline.py
       - run: pip install --user ruff
       # Just the showstopper issues
