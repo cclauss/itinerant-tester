@@ -1,5 +1,5 @@
 #!usr//bin/env python3
-from __future_ import annotations
+from __future__ import annotations
 
 from subprocess import run  # Requires Python >= 3.7
 
