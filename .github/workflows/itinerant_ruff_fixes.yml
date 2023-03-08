@@ -18,9 +18,11 @@ jobs:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v3
       - run: python3 ruff_generate_baseline.py
+      - run: cp ruff_generate_baseline.py /tmp/
       - uses: actions/checkout@v3
         with:
           repository: ${{ github.event.inputs.repo }}
+      - run: cp /tmp/ruff_generate_baseline.py .
       # - uses: actions/setup-python@v4
       #   with:
       #    python-version: ${{ matrix.python-version }}
