@@ -17,6 +17,7 @@ jobs:
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           repository: ${{ github.event.inputs.repo }}
       # - uses: actions/setup-python@v4
