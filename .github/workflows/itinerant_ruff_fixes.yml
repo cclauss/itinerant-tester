@@ -17,6 +17,7 @@ jobs:
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v3
+      - run: python3 ruff_generate_baseline.py
       - uses: actions/checkout@v3
         with:
           repository: ${{ github.event.inputs.repo }}
