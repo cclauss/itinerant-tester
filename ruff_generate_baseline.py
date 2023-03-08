@@ -18,7 +18,7 @@ def get_max_complexity(ruff_out: Tuple[str] = ruff_out) -> int:
 
 def get_max_line_length(ruff_out: Tuple[str] = ruff_out) -> int:
     E501_TAG = ": E501 line too long ("
-    e501_lines = [line for line in ruff_out if E501_TAG in line] or [0]
+    e501_lines = [line for line in ruff_out if E501_TAG in line] or [f"{E501_TAG}0"]
     return max(int(line.split(E501_TAG)[-1].split()[0]) for line in e501_lines)
 
 
