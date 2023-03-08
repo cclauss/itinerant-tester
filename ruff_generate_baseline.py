@@ -24,10 +24,7 @@ def get_max_line_length(ruff_out: Tuple[str] = ruff_out) -> int:
 
 if __name__ == "__main__":
     violations = set(line.split()[1] for line in ruff_out)
-
-    if "C901" in violations and (mc := get_max_complexity()) > 10:
-        max_complexity = f"  # --max-complexity={mc} " if (mc := get_max_complexity()) > 10 else ""
-
+    max_complexity = f"  # --max-complexity={mc}" if (mc := get_max_complexity()) > 10 else ""
     try:
         violations.remove("E501")
         max_line_length = f"--max-line-length={max(get_max_line_length(), 88)} "
