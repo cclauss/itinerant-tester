@@ -23,6 +23,7 @@ jobs:
       #   with:
       #    python-version: ${{ matrix.python-version }}
       # - run: pip install --upgrade pip setuptools wheel
+      - run: python3 ruff_generate_baseline.py
       - run: pip install --user ruff
       # Just the showstopper issues
       - run: ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
@@ -32,6 +33,8 @@ jobs:
       - run: ruff --exit-zero --select=ALL --statistics --target-version=py37 . | grep "\[\*\]" || true
       # exit-zero default issues
       - run: ruff --exit-zero --statistics --target-version=py37 .
+      - run: ruff --exit-zero --select=E501 . > long_lines.txt
+      
       # The default issues
       - run: ruff --format=github --target-version=py37 .
       - run: |
