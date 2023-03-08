@@ -29,16 +29,19 @@ def get_max_line_length(ruff_out: tuple[str] = ruff_out) -> int:
 if __name__ == "__main__":
     print(ruff_out)
     violations = set(line.split()[1] for line in ruff_out)
-    max_complexity = f"  # --max-complexity={mc}" if (mc := get_max_complexity()) > 10 else ""
+    if (mc := get_max_complexity()) > 10:
+        max_complexity = f"  # --max-complexity={mc}"
+    else:
+        max_complexity = ""
     try:
         violations.remove("E501")
-        max_line_length = f"--max-line-length={max(get_max_line_length(), 88)} "
+        line_length = f"--line-length={max(get_max_line_length(), 88)} "
     except KeyError:
-        max_line_length = ""
+        line_length = ""
 
     ignore = f"--ignore={','.join(sorted(violations))} " if violations else ""
     ruff_cmd = (
-        f"ruff {ignore}{max_line_length}--show-source --statistics .{max_complexity}" 
+        f"ruff {ignore}{line_length}--show-source --statistics .{max_complexity}" 
     )
     print(ruff_cmd)
     run(ruff_cmd.split(), text=True)
