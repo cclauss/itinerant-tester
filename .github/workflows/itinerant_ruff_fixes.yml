@@ -23,7 +23,17 @@ jobs:
       #   with:
       #    python-version: ${{ matrix.python-version }}
       # - run: pip install --upgrade pip setuptools wheel
-      - run: pip install ruff
+      - run: pip install --user ruff
+      # Just the showstopper issues
+      - run: ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
+      # exit-zero on select=ALL
+      - run: ruff --exit-zero --select=ALL --statistics --target-version=py37 .
+      # exit-zero on select=ALL that are fixable
+      - run: ruff --exit-zero --select=ALL --statistics --target-version=py37 . | grep "\[\*\]" || true
+      # exit-zero default issues
+      - run: ruff --exit-zero --statistics --target-version=py37 .
+      # The default issues
+      - run: ruff --format=github --target-version=py37 .
       - run: |
           ruff check --select=ALL --statistics --target-version=py37 . | tee ruff.out.txt || true
           echo "-------"
