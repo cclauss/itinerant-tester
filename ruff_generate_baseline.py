@@ -4,9 +4,9 @@ from __future__ import annotations
 from subprocess import run  # Requires Python >= 3.7
 
 ruff_out: tuple[str] = tuple(
-    line for line in run(
+    run(
         ["ruff", "--extend-select=C90", "."], capture_output=True, text=True
-    ).stdout.splitlines() if not line.startswith("warning:")
+    ).stdout.splitlines()
 )
 
 
@@ -27,6 +27,7 @@ def get_max_line_length(ruff_out: tuple[str] = ruff_out) -> int:
 
 
 if __name__ == "__main__":
+    print(ruff_out)
     violations = set(line.split()[1] for line in ruff_out)
     max_complexity = f"  # --max-complexity={mc}" if (mc := get_max_complexity()) > 10 else ""
     try:
