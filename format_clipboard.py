@@ -79,7 +79,7 @@ The command "echo ; echo -n "flake8 testing of ${URL} on " ; python -V" exited w
 real	0m2.707s
 user	0m4.394s
 sys	0m0.192s
-"""
+"""  # noqa: E501
 
 if __name__ == "__main__":
     # test(PAYLOAD)
