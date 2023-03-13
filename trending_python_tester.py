@@ -77,7 +77,7 @@ script:
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
-"""
+"""  # noqa: E501
 
 print(f"{dt.now():%a %b %d %H:%M:%S %Z %Y}")
 # extract the repo names of GitHub's Top 25 Trending Python list
