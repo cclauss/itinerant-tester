@@ -16,7 +16,7 @@ On the flake8 test selection, this PR does _not_ focus on "_style violations_" (
 * F63 tests are usually about the confusion between identity and equality in Python.  Use ==/!= to compare str, bytes, and int literals is the classic case.  These are areas where __a == b__ is True but __a is b__ is False (or vice versa).  Python >= 3.8 will raise SyntaxWarnings on these instances.
 * F7 tests logic errors and syntax errors in type hints
 * F82 tests are almost always _undefined names_ which are usually a sign of a typo, missing imports, or code that has not been ported to Python 3.  These also would be compile-time errors in a compiled language but in Python a __NameError__ is raised which will halt/crash the script on the user.
-"""
+"""  # noqa: E501
 
 
 def osx_clipboard_get():  # Only works for data types: {txt | rtf | ps}
