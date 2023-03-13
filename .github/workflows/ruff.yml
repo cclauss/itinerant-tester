@@ -1,12 +1,14 @@
-# https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+# https://beta.ruff.rs
 name: ruff
 on:
   push:
     branches:
       - main
+      - master
   pull_request:
     branches:
       - main
+      - master
 jobs:
   ruff:
     runs-on: ubuntu-latest
@@ -14,4 +16,5 @@ jobs:
     - uses: actions/checkout@v3
     - run: pip install --user ruff
     - run: ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
-    - run: ruff --format=github --line-length=361 --target-version=py37 .
+    - run: ruff --format=github --line-length=200 --target-version=py37 .
+    - run: ruff --format=github --target-version=py37 .
