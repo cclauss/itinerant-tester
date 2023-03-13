@@ -1,4 +1,5 @@
 # flake8: noqa
+# ruff: noqa
 
     publishers = {publisher.casefold() for publisher in book_item["publishers"]}
     book_title = book_item["title"].casefold()  # should we .split() ?
