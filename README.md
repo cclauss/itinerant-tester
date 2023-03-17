@@ -2,9 +2,9 @@
 
 [![Open in VS Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/cclauss/itinerant-tester)
 
-Create GitHub Actions for running [flake8](http://flake8.pycqa.org/en/latest/) and other tests on each of the [GitHub Trending Python](https://github.com/trending?l=python) repos.
+Create GitHub Actions for running [ruff](https://beta.ruff.rs) and other tests on each of the [GitHub Trending Python](https://github.com/trending?l=python) repos.
 
-What about a different approach?  What if I have a local Python command line app that accepts the name of one or more repos and it commits an updated .travis.yml file that tests those repos.  That commit will cause Travis CI to test each of those repos.
+What about a different approach?  What if I have a local Python command line app that accepts the name of one or more repos and it commits an updated GitHub Actions .yml file that tests those repos.  That commit will cause GitHub Actions to test each of those repos in a separate job.
 
 Appveyor https://github.com/google/protobuf/pull/4756
 
