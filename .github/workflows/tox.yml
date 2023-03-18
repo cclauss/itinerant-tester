@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-          # cache: 'pip'
+          # cache: 'pip'  # Only use if there are requirements.txt files
       - run: pip install --upgrade pip
       - run: pip install tox
       - run: tox -e ${{ matrix.job }}
@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           # python-version: ${{ matrix.python }}
-          # cache: 'pip'
+          # cache: 'pip'  # Only use if there are requirements.txt files
           python-version: |
             3.7
             3.8
@@ -45,4 +45,4 @@ jobs:
       - run: tox -e py39
       - run: tox -e py310
       - run: tox -e py311
-      - run: tox -r ALL
+      - run: tox -e ALL
