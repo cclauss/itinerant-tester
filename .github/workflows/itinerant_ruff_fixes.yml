@@ -36,7 +36,7 @@ jobs:
       - run: ruff --exit-zero --statistics --target-version=py37 .
       # - run: cp /tmp/ruff_generate_baseline.py .
       # - run: python3 ruff_generate_baseline.py
-      - run: python3 /tmp/ruff_generate_baseline.py
+      # - run: python3 /tmp/ruff_generate_baseline.py
       - run: ruff --exit-zero --select=E501 . | tee long_lines.txt
       
       # Just the showstopper issues without undefined names
