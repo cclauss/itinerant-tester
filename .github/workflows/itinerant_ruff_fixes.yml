@@ -26,14 +26,8 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: ${{ github.event.inputs.repo }}
-      # - uses: actions/setup-python@v4
-      #   with:
-      #    python-version: ${{ matrix.python-version }}
-      # - run: pip install --upgrade pip setuptools wheel
       - run: ls -Fla
-      # - run: pip install --user ruff
-      # Just the showstopper issues
-      - run: ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
+      # ruff --exit-zero runs first...
       # exit-zero on select=ALL
       - run: ruff --exit-zero --select=ALL --statistics --target-version=py37 .
       # exit-zero on select=ALL that are fixable
@@ -43,8 +37,12 @@ jobs:
       # - run: cp /tmp/ruff_generate_baseline.py .
       # - run: python3 ruff_generate_baseline.py
       - run: python3 /tmp/ruff_generate_baseline.py
-      - run: ruff --exit-zero --select=E501 . > long_lines.txt
+      - run: ruff --exit-zero --select=E501 . | tee long_lines.txt
       
+      # Just the showstopper issues without undefined names
+      - run: ruff --format=github --select=E9,F63,F7 --target-version=py37 .
+      # Just the showstopper issues
+      - run: ruff --format=github --select=E9,F63,F7,F82 --target-version=py37 .
       # The default issues
       - run: ruff --format=github --target-version=py37 .
       - run: |
