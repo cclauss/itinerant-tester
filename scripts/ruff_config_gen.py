@@ -20,13 +20,15 @@ def ruff_config_gen(lines: list[str]) -> None:
         "PLR0911": "max-returns",
         "PLR0915": "max-statements",
     }
+    need_pylint_header = True
     for rule, config in rules.items():
-        if rule == "PLR0913":
-            print("\n[tool.ruff.pylint]\n")
         if maximum := max(
             (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
             default=0,
         ):
+            if need_pylint_header and rule.startswith("PL"):
+                print("\n[tool.ruff.pylint]")
+                need_pylint_header = False
             print(f"{config} = {maximum}")  # noqa: T201
 
 
