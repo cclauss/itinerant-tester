@@ -22,6 +22,7 @@ jobs:
       - run: |
           pushd scripts
           cp ruff_generate_baseline.py /tmp/
+          cp ruff_config_gen.py /tmp/
           popd
       - uses: actions/checkout@v3
         with:
@@ -37,7 +38,9 @@ jobs:
       # - run: cp /tmp/ruff_generate_baseline.py .
       # - run: python3 ruff_generate_baseline.py
       # - run: python3 /tmp/ruff_generate_baseline.py
-      - run: ruff --exit-zero --select=E501 . | tee long_lines.txt
+      - run: ruff --exit-zero --exclude="*/migrations/*" --select=ALL --target-version=py37 . | tmp/ruff_config_gen.py
+      - run: ruff --exit-zero --select=ALL --target-version=py37 . | tmp/ruff_config_gen.py
+      # - run: ruff --exit-zero --select=E501 . | tee long_lines.txt
       
       # Just the showstopper issues without undefined names
       - run: ruff --format=github --select=E9,F63,F7 --target-version=py37 .
