@@ -34,7 +34,7 @@ jobs:
       # exit-zero on select=ALL that are fixable
       - run: ruff --exit-zero --select=ALL --statistics --target-version=py37 . | grep "\[\*\]" | sort -k 2 || true
       # exit-zero default issues
-      - run: ruff --exit-zero --statistics --target-version=py37 .
+      - run: ruff --exit-zero --statistics --target-version=py37 . | sort -k 2
       # - run: cp /tmp/ruff_generate_baseline.py .
       # - run: python3 ruff_generate_baseline.py
       # - run: python3 /tmp/ruff_generate_baseline.py
