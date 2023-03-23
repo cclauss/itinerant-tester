@@ -14,7 +14,7 @@ def ruff_config_gen(lines: list[str]) -> None:
     """
     rules = {
         "E501": "line-length",
-        "C901": "\n[tool.ruff.mccabe]\nmax-complexity"
+        "C901": "\n[tool.ruff.mccabe]\nmax-complexity",
         "PLR0913": "max-args",
         "PLR0912": "max-branches",
         "PLR0911": "max-returns",
