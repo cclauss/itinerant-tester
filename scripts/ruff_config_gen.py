@@ -21,7 +21,7 @@ def ruff_config_gen(lines: list[str]) -> None:
         "PLR0915": "max-statements",
     }
     for rule, config in rules.items():
-        if rule == "PLR0913"
+        if rule == "PLR0913":
             print("\n[tool.ruff.pylint]\n")
         if maximum := max(
             (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
