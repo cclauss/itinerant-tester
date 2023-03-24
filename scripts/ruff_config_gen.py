@@ -5,12 +5,19 @@ from __future__ import annotations
 
 ruff_header = """
 [tool.ruff]
-extend-select = [
+select = [
+    # "C4",
     "C9",
-    "PLR091",
+    "E",
+    "F",
+    "PL",
+    # "PLR091",
     "S",
+    # "SIM",
+    "W",
 ]
-target-version = py37
+# ignore = []
+target-version = "py37"
 """
 
 ruff_pylint_header = """
@@ -18,6 +25,7 @@ ruff_pylint_header = """
 
 ruff_per_file_includes_header = """
 # [tool.ruff.per-file-includes]
+# "*/migrations/*" = ["E501"]
 # "test/*" = ["S101"]
 # "tests/*" = ["S101"]"""
 
@@ -41,17 +49,14 @@ def ruff_config_gen(lines: list[str]) -> None:
     print(ruff_header)
     need_pylint_header = True
     for rule, config in rules.items():
-        try:
-            if maximum := max(
-                (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
-                default=0,
-            ):
-                if need_pylint_header and rule.startswith("PL"):
-                    print(ruff_pylint_header)
-                    need_pylint_header = False
-                print(f"{config} = {maximum}")  # noqa: T201
-        except IndexError:
-            print(_)
+        if maximum := max(
+            (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
+            default=0,
+        ):
+            if need_pylint_header and rule.startswith("PL"):
+                print(ruff_pylint_header)
+                need_pylint_header = False
+            print(f"{config} = {maximum}")  # noqa: T201
     print(ruff_per_file_includes_header)
 
 
