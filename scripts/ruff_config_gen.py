@@ -41,14 +41,17 @@ def ruff_config_gen(lines: list[str]) -> None:
     print(ruff_header)
     need_pylint_header = True
     for rule, config in rules.items():
-        if maximum := max(
-            (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
-            default=0,
-        ):
-            if need_pylint_header and rule.startswith("PL"):
-                print(ruff_pylint_header)
-                need_pylint_header = False
-            print(f"{config} = {maximum}")  # noqa: T201
+        try:
+            if maximum := max(
+                (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
+                default=0,
+            ):
+                if need_pylint_header and rule.startswith("PL"):
+                    print(ruff_pylint_header)
+                    need_pylint_header = False
+                print(f"{config} = {maximum}")  # noqa: T201
+        except IndexError:
+            print(_)
     print(ruff_per_file_includes_header)
 
 
