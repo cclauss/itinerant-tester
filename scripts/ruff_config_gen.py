@@ -16,6 +16,11 @@ target-version = py37
 ruff_pylint_header = """
 [tool.ruff.pylint]"""
 
+ruff_per_file_includes_header = """
+# [tool.ruff.per-file-includes]
+# "test/*" = ["S101"]
+# "tests/*" = ["S101"]"""
+
 
 def ruff_config_gen(lines: list[str]) -> None:
     """Generate ruff TOML config from ruff output.
@@ -44,6 +49,7 @@ def ruff_config_gen(lines: list[str]) -> None:
                 print(ruff_pylint_header)
                 need_pylint_header = False
             print(f"{config} = {maximum}")  # noqa: T201
+    print(ruff_per_file_includes_header)
 
 
 if __name__ == "__main__":
