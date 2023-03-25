@@ -12,8 +12,8 @@ jobs:
           3.9
           3.10
           3.11
-    - run: python3.11 -c "def func(x: str | None) -> None; pass"
-    - run: python3.10 -c "def func(x: str | None) -> None; pass"
-    - run: python3.9  -c "def func(x: str | None) -> None; pass"
-    - run: python3.8  -c "def func(x: str | None) -> None; pass"
-    - run: python3.7  -c "def func(x: str | None) -> None; pass"
+    - run: python3.11 -c "def func(x: str | None) -> None: pass"
+    - run: python3.10 -c "def func(x: str | None) -> None: pass"
+    - run: python3.9  -c "def func(x: str | None) -> None: pass"
+    - run: python3.8  -c "def func(x: str | None) -> None: pass"
+    - run: python3.7  -c "def func(x: str | None) -> None: pass"
