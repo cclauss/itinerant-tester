@@ -15,7 +15,7 @@ jobs:
             3.10
             3.11
       - env:
-          OLD: "type(1) == int"
+          OLD: "type(1) is int"
           NEW: "isinstance(1, int)"
         run: |
           python3.7  -m timeit "$OLD"
