@@ -34,6 +34,7 @@ ruff_pylint_header = """
 ruff_per_file_includes_header = """
 [tool.ruff.per-file-ignores]
 "test/*" = ["S101"]
+"""
 
 
 def ruff_config_gen(lines: list[str]) -> None:
