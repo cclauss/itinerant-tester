@@ -3,18 +3,26 @@
 
 from __future__ import annotations
 
-ruff_header = """
+from subprocess import run 
+
+linters_as_text = run("ruff linter", capture_output=True, shell=True, text=True).stdout
+
+
+def select_lines(s: str = linters_as_text) -> str:
+    linters = dict(line.strip().split(" ", 1) for line in linters_as_text.splitlines())
+    value = linters.pop("E/W")  # Split E and W into two separate linters
+    for key in "EW":
+        linters[key] = value
+    for key in ("COM", "DJ", "ERA", "NPY", "PD", "Q", "T20"):
+        linters[f"# {key}"] = linters.pop(key)  # Comment out some less useful linters
+    linters["# PLR091"] = "Pylint Refactor just for max-args, max-branches, etc."
+    return "\n".join(f'  "{code}"  # {name}' for code, name in sorted(linters.items())))
+
+
+ruff_header = f"""
 [tool.ruff]
 select = [
-    # "C4",
-    "C9",
-    "E",
-    "F",
-    "PL",
-    # "PLR091",
-    "S",
-    # "SIM",
-    "W",
+{select_lines()}
 ]
 # ignore = []
 target-version = "py37"
@@ -24,10 +32,8 @@ ruff_pylint_header = """
 [tool.ruff.pylint]"""
 
 ruff_per_file_includes_header = """
-# [tool.ruff.per-file-includes]
-# "*/migrations/*" = ["E501"]
-# "test/*" = ["S101"]
-# "tests/*" = ["S101"]"""
+[tool.ruff.per-file-ignores]
+"test/*" = ["S101"]
 
 
 def ruff_config_gen(lines: list[str]) -> None:
