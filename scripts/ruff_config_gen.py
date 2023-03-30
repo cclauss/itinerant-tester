@@ -8,6 +8,18 @@ from subprocess import run
 linters_as_text = run("ruff linter", capture_output=True, shell=True, text=True).stdout
 
 
+def rule_fmt(rule_family: str = "PLR") -> str:
+    """
+    >>> rule_fmt("A")
+    '"A",  '
+    >>> rule_fmt("AB")
+    '"AB", '
+    >>> rule_fmt("ABC")
+    '"ABC",'
+    """
+    return """{f'"{rule_family}",':<6}"""
+
+
 def select_lines(s: str = linters_as_text) -> str:
     linters = dict(line.strip().split(" ", 1) for line in linters_as_text.splitlines())
     value = linters.pop("E/W")  # Split E and W into two separate linters
@@ -16,7 +28,7 @@ def select_lines(s: str = linters_as_text) -> str:
     for key in ("COM", "DJ", "ERA", "NPY", "PD", "Q", "T20"):
         linters[f"# {key}"] = linters.pop(key)  # Comment out some less useful linters
     linters["# PLR091"] = "Pylint Refactor just for max-args, max-branches, etc."
-    return "\n".join(f'  "{code}"  # {name}' for code, name in sorted(linters.items()))
+    return "\n".join(f'  "{rule_fmt(code)}"  # {name}' for code, name in sorted(linters.items()))
 
 
 ruff_header = f"""
