@@ -17,7 +17,7 @@ def rule_fmt(rule_family: str = "PLR") -> str:
     >>> rule_fmt("ABC")
     '"ABC",'
     """
-    return """{f'"{rule_fmt(rule_family)}",':<6}"""
+    return """{:<6}""".format(f'"{rule_fmt(rule_family)}",')
 
 
 def select_lines(s: str = linters_as_text) -> str:
