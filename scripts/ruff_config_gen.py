@@ -29,7 +29,7 @@ def select_lines(s: str = linters_as_text) -> str:
     for key in ("COM", "DJ", "ERA", "NPY", "PD", "Q", "T20"):
         linters[f"# {key}"] = linters.pop(key)  # Comment out some less useful linters
     linters["# PLR091"] = "Pylint Refactor just for max-args, max-branches, etc."
-    return "\n".join(f'  "{rule_fmt(code)}"  # {name}' for code, name in sorted(linters.items()))
+    return "\n".join(f'  {rule_fmt(code)}  # {name}' for code, name in sorted(linters.items()))
 
 
 ruff_header = f"""
