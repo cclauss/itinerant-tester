@@ -23,6 +23,7 @@ def rule_fmt(rule_family: str = "PLR") -> str:
 def select_lines(s: str = linters_as_text) -> str:
     linters = dict(line.strip().split(" ", 1) for line in linters_as_text.splitlines())
     value = linters.pop("E/W")  # Split E and W into two separate linters
+    linters["C90"] = "McCabe cyclomatic complexity"
     for key in "EW":
         linters[key] = value
     for key in ("COM", "DJ", "ERA", "NPY", "PD", "Q", "T20"):
@@ -45,6 +46,7 @@ ruff_pylint_header = """
 
 ruff_per_file_includes_header = """
 [tool.ruff.per-file-ignores]
+"__init__.py" = ["E402"]
 "test/*" = ["S101"]
 """
 
