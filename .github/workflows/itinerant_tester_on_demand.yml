@@ -26,7 +26,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip setuptools wheel
       - run: pip install ruff
-      - run: ruff check --select=E9,F63,F7,F82,YTT --statistics .
+      - run: ruff --exit-zero --select=E9,F63,F7,F82,YTT .
+      - run: ruff --select=E9,F63,F7,F82,YTT --statistics .
       - run: pip install bandit black codespell com2ann flake8 flake8-2020 flake8-bugbear
                          flake8-comprehensions flake8-return flake8-simplify isort mypy pytest pytype
                          pyupgrade safety
