@@ -24,7 +24,8 @@ jobs:
       - run: ruff --exit-zero --exclude=tests/ --line-length=120 --select=E501 .
       - run: ruff --exit-zero --exclude=tests/ --line-length=88 --select=E501 .
       - run: ruff --exit-zero --exclude=tests/ --ignore=E501 .
-      - run: ruff --exit-zero --exclude=tests/ --select=E402,E712,E721,E722,E741,F401,F403,F405,F541,F601,F811,F822,F841 .
+      - run: ruff --select=E402,E712,E721,E722,E741,F401,F403,F405,F541,F601,F811,F822,F841
+                  --exit-zero --exclude=tests/ --statistics . | sort -k 2
       # - if: "contains(matrix.python-version, '-dev')"
       #  run: sudo apt-get install -y libxml2 libxslt-dev
       - uses: actions/setup-python@v4
