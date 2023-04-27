@@ -19,7 +19,7 @@ def rule_fmt(rule_family: str = "PLR") -> str:
     >>> rule_fmt("# ABC")  # Move the comment (#) before the quote
     '# "ABC",'
     """
-    return """{:<6}""".format(f'"{rule_family}",').replace('" #', '# "')
+    return """{:<6}""".format(f'"{rule_family}",').replace('"# ', '# "')
 
 
 def select_lines(s: str = linters_as_text) -> str:
