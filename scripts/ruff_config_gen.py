@@ -64,10 +64,11 @@ def ruff_config_gen(lines: list[str]) -> None:
     rules = {
         "E501": "line-length",
         "C901": "\n[tool.ruff.mccabe]\nmax-complexity",
-        "PLR0913": "max-args",
-        "PLR0912": "max-branches",
-        "PLR0911": "max-returns",
-        "PLR0915": "max-statements",
+        "PLR2004": 'allow-magic-value-types = ["int", "str"]',
+        "PLR0913": "max-args  # Recommended: 5",
+        "PLR0912": "max-branches  # Recommended: 12",
+        "PLR0911": "max-returns  # Recommended: 6",
+        "PLR0915": "max-statements  # Recommended: 50",
     }
     print(ruff_header)
     need_pylint_header = True
