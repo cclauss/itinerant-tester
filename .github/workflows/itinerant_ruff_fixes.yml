@@ -7,6 +7,18 @@ on:
         required: true
 
 jobs:
+  home_dir:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo $HOME
+      - uses: actions/checkout@v3
+      - run: echo $HOME
+      - shell: python
+        run: |
+          import os
+          home = os.path.expanduser("~")
+          print("{home = }")
+      
   itinerant_ruff_fixes:
     name: "${{ github.event.inputs.repo }}"
     strategy:
