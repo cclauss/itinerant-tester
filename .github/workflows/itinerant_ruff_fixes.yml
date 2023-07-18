@@ -18,7 +18,7 @@ jobs:
         run: |
           import os
           home = os.path.expanduser("~/junk")
-          print("{home = }")
+          print(f"{home = }")
       
   itinerant_ruff_fixes:
     name: "${{ github.event.inputs.repo }}"
