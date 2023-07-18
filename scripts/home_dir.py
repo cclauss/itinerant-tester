@@ -1,3 +1,3 @@
-  import os
-  home = os.path.expanduser("~/junk")
-  print(f"{home = }")
+import os
+home = os.path.expanduser("~")
+print(f"{home = }")
