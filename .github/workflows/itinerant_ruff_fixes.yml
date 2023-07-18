@@ -10,11 +10,11 @@ jobs:
   home_dir:
     runs-on: ubuntu-latest
     steps:
-      - run: echo $HOME
+      - run: echo $HOME  # '/home/runner'
       - uses: actions/checkout@v3
-      - run: echo $HOME
-      - run: python3 scripts/home_dir.py
-      - run: sudo python3 scripts/home_dir.py
+      - run: echo $HOME  # '/home/runner'
+      - run: python3 scripts/home_dir.py  # '/home/runner'
+      - run: sudo python3 scripts/home_dir.py  # '/root'
       
   itinerant_ruff_fixes:
     name: "${{ github.event.inputs.repo }}"
