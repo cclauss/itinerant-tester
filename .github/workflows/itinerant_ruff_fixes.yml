@@ -48,8 +48,8 @@ jobs:
       # - run: cp /tmp/ruff_generate_baseline.py .
       # - run: python3 ruff_generate_baseline.py
       # - run: python3 /tmp/ruff_generate_baseline.py
-      - run: ruff --exit-zero --exclude="*/migrations/*,test/*,tests/*" --select=ALL --target-version=py37 . | /tmp/ruff_config_gen.py
-      - run: ruff --exit-zero --select=ALL --target-version=py37 . | /tmp/ruff_config_gen.py
+      - run: ruff --exit-zero --exclude="*/migrations/*,test/*,tests/*" --quiet --select=ALL --target-version=py37 . | /tmp/ruff_config_gen.py
+      - run: ruff --exit-zero --quiet --select=ALL --target-version=py37 . | /tmp/ruff_config_gen.py
       # - run: ruff --exit-zero --select=E501 . | tee long_lines.txt
       
       # Just the showstopper issues without undefined names
