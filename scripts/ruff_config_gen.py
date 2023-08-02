@@ -56,7 +56,7 @@ ruff_per_file_includes_header = """
 def ruff_config_gen(lines: list[str]) -> None:
     """Generate ruff TOML config from ruff output.
 
-    ex. ruff --select=ALL . | ./ruff_config_gen.py
+    ex. ruff --select=ALL --quiet . | ./ruff_config_gen.py
     line-length = 148
     max-branches = 21
     max-statements = 60
