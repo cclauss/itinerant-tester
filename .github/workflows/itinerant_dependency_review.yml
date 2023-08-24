@@ -20,6 +20,10 @@ jobs:
           git rm requirement*.txt || true
           git rm pyproject.toml || true
           git diff
+          git status
+          git commit -a
+          git diff
+          git status
       - uses: actions/dependency-review-action@v3
         with:
           # base-ref: ${{ github.ref }}
