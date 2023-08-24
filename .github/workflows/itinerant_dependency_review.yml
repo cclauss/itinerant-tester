@@ -1,0 +1,19 @@
+# Source repository: https://github.com/actions/dependency-review-action
+# Public documentation: https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review#dependency-review-enforcement
+name: itinerant_dependency_review
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  dependency_review:
+    name: "${{ github.event.inputs.repo }}"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - uses: actions/dependency-review-action@v2
