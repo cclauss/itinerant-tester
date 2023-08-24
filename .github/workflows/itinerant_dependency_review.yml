@@ -17,7 +17,7 @@ jobs:
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: |
-          git rm reqirement*.txt || true
+          git rm requirement*.txt || true
           git rm pyproject.toml || true
           git diff
       - uses: actions/dependency-review-action@v3
