@@ -18,4 +18,5 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - uses: actions/dependency-review-action@v3
         with:
-          base_ref: ${{ github.ref }}
+          base-ref: ${{ github.ref }}
+          head-ref: master
