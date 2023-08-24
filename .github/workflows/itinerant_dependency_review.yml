@@ -17,3 +17,5 @@ jobs:
         with:
           repository: ${{ github.event.inputs.repo }}
       - uses: actions/dependency-review-action@v2
+        with:
+          base_ref: ${{ github.ref }}
