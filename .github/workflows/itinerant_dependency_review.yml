@@ -26,6 +26,7 @@ jobs:
           git commit -am"Remove Python dependencies"
           git diff
           git status
+          git branch
       - uses: actions/dependency-review-action@v3
         with:
           # base-ref: ${{ github.ref }}
