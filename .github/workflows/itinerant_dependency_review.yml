@@ -21,6 +21,8 @@ jobs:
           git rm pyproject.toml || true
           git diff
           git status
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git commit -a
           git diff
           git status
