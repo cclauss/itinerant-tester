@@ -30,7 +30,7 @@ jobs:
           git branch
       - uses: actions/dependency-review-action@v3
         with:
-          # base-ref: ${{ github.ref }}
+          base-ref: ${{ github.ref }}
           # base-ref: ${{ github.event.base_ref }}
           # base-ref: ${{ github.event.before }}
           # head-ref: main
@@ -39,6 +39,6 @@ jobs:
           # head-ref: ${{ github.event.before }}
           #base-ref: ${{github.ref}}~1
           #head-ref: ${{github.ref}}
-          base-ref: master
+          # base-ref: master
           head-ref: remove_deps
           
