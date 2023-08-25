@@ -40,5 +40,4 @@ jobs:
           #base-ref: ${{github.ref}}~1
           #head-ref: ${{github.ref}}
           # base-ref: master
-          head-ref: remove_deps
-          
+          head-ref: refs/heads/remove_deps
