@@ -17,6 +17,7 @@ jobs:
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: |
+          git checkout -b remove_deps
           git rm requirement*.txt || true
           git rm pyproject.toml || true
           git diff
