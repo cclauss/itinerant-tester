@@ -23,7 +23,7 @@ jobs:
           git status
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
-          git commit -a
+          git commit -am"Remove Python dependencies"
           git diff
           git status
       - uses: actions/dependency-review-action@v3
