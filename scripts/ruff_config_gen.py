@@ -5,6 +5,8 @@ from __future__ import annotations
 
 from subprocess import run
 
+from .ruff_pylint_settings import ruff_pylint_settings
+
 linters_as_text = run("ruff linter", capture_output=True, shell=True, text=True).stdout
 
 
@@ -66,31 +68,18 @@ def ruff_config_gen(lines: list[str]) -> None:
     rules = {
         "E501": "line-length",
         "C901": "\n[tool.ruff.mccabe]\nmax-complexity",
-        "PLR2004": 'allow-magic-value-types = ["int", "str"]',
-        "PLR0913": "max-args  # Recommended: 5",
-        "PLR0912": "max-branches  # Recommended: 12",
-        "PLR0911": "max-returns  # Recommended: 6",
-        "PLR0915": "max-statements  # Recommended: 50",
     }
     print(ruff_header)
-    need_pylint_header = True
     for rule, config in rules.items():
         print(rule, config)
-        try:
-            if maximum := max(
-                (
-                    int(_.split("(")[-1].split()[0])
-                    for _ in lines
-                    if _.split()[1] == rule
-                ),
-                default=0,
-            ):
-                if need_pylint_header and rule.startswith("PL"):
-                    print(ruff_pylint_header)
-                    need_pylint_header = False
-                print(f"{config} = {maximum}")  # noqa: T201
-        except ValueError as e:
-            raise ValueError(_) from e
+        if maximum := max(
+            (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
+            default=0,
+        ):
+            print(f"{config} = {maximum}")  # noqa: T201
+    if s := ruff_pylint_settings():
+        print(s)
+    # print(ruff_pylint_header)
     print(ruff_per_file_includes_header)
 
 
