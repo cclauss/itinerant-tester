@@ -13,7 +13,7 @@ https://github.com/PyO3/maturin (Rust)
 https://github.com/elastic/beats (Go, JavaScript)
 
 https://github.com/protocolbuffers/protobuf (C, C++, C#, Objectve-C, Java) -- upstream is Python 3.10 compatible.
-https://github.com/ablab/spades (C, C++) Issue in PyYAML dependancy was fixed in 2019.
+https://github.com/ablab/spades (C, C++) Issue in PyYAML dependency was fixed in 2019.
 https://github.com/facebook/watchman (C, C++)
 https://github.com/varnishcache/varnish-cache (C)
 https://quex.sourceforge.io (C/C++)

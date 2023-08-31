@@ -1,6 +1,6 @@
 # flake8: noqa
 # ruff: noqa
-
+def junk():
     publishers = {publisher.casefold() for publisher in book_item["publishers"]}
     book_title = book_item["title"].casefold()  # should we .split() ?
     if low_quality := "notebook" in book_title and publishers & LOW_QUALITY_PUBLISHERS:
@@ -10,11 +10,13 @@
     of case)is also considered a low quality book.
     """
     created_year = int(book_item.get("created", "0")[:4])  # YYYY
-    return "independently published" in publishers and created_year >= 2018 and any(
-                title in book_title for title in ("annotated", "annoté", "illustrated")
-            )
+    return (
+        "independently published" in publishers
+        and created_year >= 2018
+        and any(title in book_title for title in ("annotated", "annoté", "illustrated"))
+    )
 
-# ===========
+    # ===========
 
     book["publishers"] = ["razal", "tobias publishing", "koraya", "pickleball", "d"]
     assert is_low_quality_book(book) is True, book

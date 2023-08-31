@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-from subprocess import run 
+from subprocess import run
 
 linters_as_text = run("ruff linter", capture_output=True, shell=True, text=True).stdout
 
@@ -31,7 +31,9 @@ def select_lines(s: str = linters_as_text) -> str:
     for key in ("COM", "DJ", "ERA", "NPY", "PD", "Q", "T20"):
         linters[f"# {key}"] = linters.pop(key)  # Comment out some less useful linters
     linters["# PLR091"] = "Pylint Refactor just for max-args, max-branches, etc."
-    return "\n".join(f'  {rule_fmt(code)}  # {name}' for code, name in sorted(linters.items()))
+    return "\n".join(
+        f"  {rule_fmt(code)}  # {name}" for code, name in sorted(linters.items())
+    )
 
 
 ruff_header = f"""
@@ -76,7 +78,11 @@ def ruff_config_gen(lines: list[str]) -> None:
         print(rule, config)
         try:
             if maximum := max(
-                (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
+                (
+                    int(_.split("(")[-1].split()[0])
+                    for _ in lines
+                    if _.split()[1] == rule
+                ),
                 default=0,
             ):
                 if need_pylint_header and rule.startswith("PL"):
