@@ -6,7 +6,9 @@ from subprocess import run  # Requires Python >= 3.7
 ruff_out: tuple[str] = tuple(
     run(
         ["ruff", "--extend-select=C90", "."], capture_output=True, text=True
-    ).stdout.splitlines()[:-2]  # Remove the two summary lines
+    ).stdout.splitlines()[
+        :-2
+    ]  # Remove the two summary lines
 )
 
 
@@ -40,8 +42,6 @@ if __name__ == "__main__":
         line_length = ""
 
     ignore = f"--ignore={','.join(sorted(violations))} " if violations else ""
-    ruff_cmd = (
-        f"ruff {ignore}{line_length}--show-source --statistics .{max_complexity}" 
-    )
+    ruff_cmd = f"ruff {ignore}{line_length}--show-source --statistics .{max_complexity}"
     print(ruff_cmd)
     run(ruff_cmd.split(), text=True)

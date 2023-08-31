@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     ignore = f"--ignore={','.join(sorted(violations))} " if violations else ""
     flake8_cmd = (
-        f"flake8 {ignore}{max_complexity}{max_line_length}--show-source --statistics ." 
+        f"flake8 {ignore}{max_complexity}{max_line_length}--show-source --statistics ."
     )
     print(flake8_cmd)
     run(flake8_cmd.split(), text=True)
