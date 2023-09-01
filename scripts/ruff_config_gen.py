@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 from subprocess import run
 
 
@@ -104,11 +105,20 @@ target-version = "py37"
 ruff_pylint_header = """
 [tool.ruff.pylint]"""
 
-ruff_per_file_includes_header = """
+
+def tests_may_assert(dir_name: str = "tests") -> str:
+    """If a test directory exists, then add a per-file-ignore to allow `assert`."""
+    return f'\n"{dir_name}/*" = ["S101"]' if (Path.cwd() / dir_name).is_dir() else ""
+
+
+ruff_per_file_includes_header = (
+    """
 [tool.ruff.per-file-ignores]
 "__init__.py" = ["E402"]
-"test/*" = ["S101"]
 """
+    + tests_may_assert("test")
+    + tests_may_assert("tests")
+)
 
 
 def ruff_config_gen(lines: list[str]) -> None:
