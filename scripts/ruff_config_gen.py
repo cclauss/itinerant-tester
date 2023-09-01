@@ -84,7 +84,7 @@ def select_lines(s: str = linters_as_text) -> str:
     value = linters.pop("E/W")  # Split E and W into two separate linters
     for key in "EW":
         linters[key] = value
-    for key in ("COM", "DJ", "ERA", "NPY", "PD", "Q", "T20"):
+    for key in ("COM", "ERA", "Q", "T20"):
         linters[f"# {key}"] = linters.pop(key)  # Comment out some less useful linters
     linters["# PLR091"] = "Pylint Refactor just for max-args, max-branches, etc."
     return "\n".join(
@@ -125,7 +125,7 @@ def ruff_config_gen(lines: list[str]) -> None:
     }
     print(ruff_header)
     for rule, config in rules.items():
-        print(rule, config)
+        # print(rule, config)
         if maximum := max(
             (int(_.split("(")[-1].split()[0]) for _ in lines if _.split()[1] == rule),
             default=0,
