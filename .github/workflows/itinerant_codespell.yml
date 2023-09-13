@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Spellchecking ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
-      - run: pip install codespell
-      - run: codespell --count --skip="./.*,*.po"  # --ignore-words-list="" --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
+      - run: pip install --user codespell
+      - run: codespell --count --skip="./.*,*.po,*.svg"  # --ignore-words-list="" --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
