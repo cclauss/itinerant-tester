@@ -15,6 +15,9 @@ jobs:
       - run: echo $HOME  # '/home/runner'
       - run: python3 scripts/home_dir.py  # '/home/runner'
       - run: sudo python3 scripts/home_dir.py  # '/root'
+      - run: npm version
+      - run: npm config list
+      - run: npm doctor
       
   itinerant_ruff_fixes:
     name: "${{ github.event.inputs.repo }}"
