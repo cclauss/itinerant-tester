@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo $HOME  # '/home/runner'
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: echo $HOME  # '/home/runner'
       - run: python3 scripts/home_dir.py  # '/home/runner'
       - run: sudo python3 scripts/home_dir.py  # '/root'
@@ -30,14 +30,14 @@ jobs:
     steps:
       - run: pip install --user codespell[toml] ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: python3 scripts/ruff_generate_baseline.py
       - run: |
           pushd scripts
           cp ruff_generate_baseline.py /tmp/
           cp ruff_config_gen.py /tmp/
           popd
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
@@ -57,11 +57,11 @@ jobs:
       # - run: ruff --exit-zero --select=E501 . | tee long_lines.txt
       
       # Just the showstopper issues without undefined names
-      - run: ruff --format=github --select=E9,F63,F7 --target-version=py38 .
+      - run: ruff --output-format=github --select=E9,F63,F7 --target-version=py38 .
       # Just the showstopper issues
-      - run: ruff --format=github --select=E9,F63,F7,F82 --target-version=py38 .
+      - run: ruff --output-format=github --select=E9,F63,F7,F82 --target-version=py38 .
       # The default issues
-      - run: ruff --format=github --target-version=py38 .
+      - run: ruff --output-format=github --target-version=py38 .
       - run: |
           ruff check --select=ALL --statistics --target-version=py38 . | tee ruff.out.txt || true
           echo "-------"
