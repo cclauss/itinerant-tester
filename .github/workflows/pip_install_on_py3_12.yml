@@ -1,11 +1,11 @@
-name: pip_install_on_py3
+name: pip_install_on_py3_12
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  pip_install_on_py3:
+  pip_install_on_py3_12:
     strategy:
       fail-fast: false
       matrix:
