@@ -9,7 +9,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        module: ["PyWavelets", "scikit-image", "scikit-fuzzy"]
+        module:
+          - PyWavelets
+          - git+https://github.com/PyWavelets/pywt.git
+          - scikit-image
+          - scikit-fuzzy
+          - qiskit
+          - tensorflow
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
