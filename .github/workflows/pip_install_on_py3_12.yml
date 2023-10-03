@@ -14,8 +14,11 @@ jobs:
           - git+https://github.com/PyWavelets/pywt.git
           - scikit-image
           - scikit-fuzzy
+          - symengine
           - qiskit
+          - git+https://github.com/Qiskit/qiskit.git
           - tensorflow
+          - git+https://github.com/tensorflow/tensorflow.git
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
