@@ -1,0 +1,19 @@
+name: pip_install_on_py3
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+jobs:
+  pip_install_on_py3:
+    strategy:
+      fail-fast: false
+      matrix:
+        module: ["PyWavelets", "scikit-image", "scikit-fuzzy"]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@4
+      with:
+        python-version: 3.12
+    - run: pip install ${{ matrix.module }}
