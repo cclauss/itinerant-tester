@@ -13,9 +13,9 @@ jobs:
           #- PyWavelets
           #- git+https://github.com/PyWavelets/pywt.git
           #- scikit-image
-          - scikit-fuzzy
-          - symengine
-          - qiskit
+          #- scikit-fuzzy
+          #- symengine
+          #- qiskit
           #- git+https://github.com/Qiskit/qiskit.git
           - tensorflow
           #- git+https://github.com/tensorflow/tensorflow.git
@@ -30,4 +30,10 @@ jobs:
     #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
     - run: pip install ${{ matrix.module }}
+    # - shell: python
+    #  run: |
+    #      import django
+    #      print(django.__version__)
+    #      # import haystack
+    #      # print(haystack.__version__)
     
