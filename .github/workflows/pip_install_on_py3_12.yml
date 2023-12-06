@@ -19,6 +19,7 @@ jobs:
           #- git+https://github.com/Qiskit/qiskit.git
           - tensorflow
           #- git+https://github.com/tensorflow/tensorflow.git
+          - django django-haystack
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -26,3 +27,7 @@ jobs:
       with:
         python-version: 3.12
     - run: pip install ${{ matrix.module }}
+    - run: pip uninstall ${{ matrix.module }}
+    - run: pip install --upgrade pip
+    - run: pip install ${{ matrix.module }}
+    
