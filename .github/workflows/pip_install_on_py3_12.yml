@@ -26,8 +26,8 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: 3.12
-    - run: pip install ${{ matrix.module }}
-    - run: pip uninstall -y ${{ matrix.module }}
+    #- run: pip install ${{ matrix.module }}
+    #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
     - run: pip install ${{ matrix.module }}
     
