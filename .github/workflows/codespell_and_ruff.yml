@@ -2,7 +2,7 @@
 # look for typos in the codebase using codespell, and
 # lint Python code using ruff and provide intuitive GitHub Annotations to contributors.
 # https://github.com/codespell-project/codespell#readme
-# https://beta.ruff.rs
+# https://docs.astral.sh/ruff/
 name: codespell_and_ruff
 on:
   push:
@@ -20,4 +20,4 @@ jobs:
     - run: ruff --output-format=github --select=E9,F63,F7,F82 --target-version=py37 .
     - run: ruff --output-format=github --line-length=200 --target-version=py37 .
     - run: ruff --output-format=github --target-version=py37 .
-    - run: ruff --output-format=github .
+    - run: ruff --output-format=github
