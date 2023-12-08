@@ -14,4 +14,4 @@ jobs:
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: pip install --user codespell
-      - run: codespell --count --skip="./.*,*.po,*.svg"  # --ignore-words-list="" --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
+      - run: codespell --ignore-words-list="crate" --count --skip="./.*,*.po,*.svg"  #  --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"
