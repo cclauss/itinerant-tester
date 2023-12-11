@@ -8,8 +8,8 @@ jobs:
         job: [lint, docs-lint, pycodestyle]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
           # cache: 'pip'  # Only use if there are requirements.txt files
@@ -23,20 +23,20 @@ jobs:
       # max-parallel: 4
       matrix:
         os: [ubuntu-latest]  # [macos-latest, ubuntu-latest, windows-latest]
-        # python: ['3.10']  # ['3.7', '3.8', '3.9', '3.10', '3.11', 'pypy3.7']
+        # python: ['3.x']  # ['3.8', '3.9', '3.10', '3.11', '3.12', 'pypy3.10']
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           # python-version: ${{ matrix.python }}
           # cache: 'pip'  # Only use if there are requirements.txt files
           python-version: |
-            3.7
             3.8
             3.9
             3.10
             3.11
+            3.12
       - run: python3 --version && python --version
       - run: pip install --upgrade pip
       - run: pip install tox
