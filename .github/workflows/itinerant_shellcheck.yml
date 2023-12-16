@@ -1,0 +1,28 @@
+name: itinerant_shellcheck
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+jobs:      
+  itinerant_shellcheck:
+    name: "${{ github.event.inputs.repo }}"
+    runs-on: ubuntu-latest
+    steps:
+      - run: shellcheck --version || true
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      # - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: ls -Fla
+      - run: shellcheck || true
+      # - uses: koalaman/shellcheck
+      - uses: reviewdog/action-shellcheck@v1
+      - run: shellcheck --version || true
+      - run: shellcheck || true
+      - uses: sudo-bot/action-shellcheck@latest
+      - uses: bewuethr/shellcheck-action@v2
+      - uses: ludeeus/action-shellcheck@v2
+      - uses: fearphage/shellcheck-action@v0.0.4
