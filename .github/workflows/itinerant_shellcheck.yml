@@ -5,13 +5,20 @@ on:
       repo:
         description: 'Repo to test (user_name/repo_name)'
         required: true
-jobs:      
+jobs:
   itinerant_shellcheck:
     name: "${{ github.event.inputs.repo }}"
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
     steps:
       - run: shellcheck --version  # v0.8.0, not v0.9.0
       - run: shellcheck --help
+      - run: brew install shellcheck
+      - run: shellcheck --version  # v0.8.0, not v0.9.0
+      - run: shellcheck --help      
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       # - uses: actions/checkout@v4
       - uses: actions/checkout@v4
