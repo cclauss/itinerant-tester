@@ -10,7 +10,8 @@ jobs:
     name: "${{ github.event.inputs.repo }}"
     runs-on: ubuntu-latest
     steps:
-      - run: shellcheck --version || true  # v0.8.0, not v0.9.0
+      - run: shellcheck --version  # v0.8.0, not v0.9.0
+      - run: shellcheck --help
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       # - uses: actions/checkout@v4
       - uses: actions/checkout@v4
@@ -18,6 +19,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: shellcheck . || true
+      - run: find . -type f \( -name "*.sh" -o -name "*.bash" \) -exec shellcheck {} +
       # - uses: koalaman/shellcheck
       - uses: reviewdog/action-shellcheck@v1  # reviewdog: this is not PullRequest build.
       - run: shellcheck --version || true  # v0.8.0, not v0.9.0
