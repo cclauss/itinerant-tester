@@ -10,19 +10,22 @@ jobs:
     name: "${{ github.event.inputs.repo }}"
     runs-on: ubuntu-latest
     steps:
-      - run: shellcheck --version || true
+      - run: shellcheck --version || true  # v0.8.0, not v0.9.0
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       # - uses: actions/checkout@v4
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
-      - run: shellcheck || true
+      - run: shellcheck . || true
       # - uses: koalaman/shellcheck
-      - uses: reviewdog/action-shellcheck@v1
-      - run: shellcheck --version || true
-      - run: shellcheck || true
+      - uses: reviewdog/action-shellcheck@v1  # reviewdog: this is not PullRequest build.
+      - run: shellcheck --version || true  # v0.8.0, not v0.9.0
+      - run: shellcheck . || true
       - uses: sudo-bot/action-shellcheck@latest
+        with:
+          # https://github.com/koalaman/shellcheck#how-to-use
+          cli-args: .
       - uses: bewuethr/shellcheck-action@v2
       # - uses: ludeeus/action-shellcheck@v2
       # - uses: fearphage/shellcheck-action@v0.0.4
