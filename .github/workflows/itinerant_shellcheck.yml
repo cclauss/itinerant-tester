@@ -14,9 +14,9 @@ jobs:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - run: shellcheck --version  # v0.8.0, not v0.9.0
-      - run: shellcheck --help
-      - run: brew install shellcheck
+      - run: shellcheck --version || true  # v0.8.0, not v0.9.0
+      - run: shellcheck --help || true
+      - run: brew install shellcheck || true  # Fails on Ubuntu
       - run: shellcheck --version  # v0.8.0, not v0.9.0
       - run: shellcheck --help      
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
@@ -28,13 +28,13 @@ jobs:
       - run: shellcheck . || true
       - run: find . -type f \( -name "*.sh" -o -name "*.bash" \) -exec shellcheck {} +
       # - uses: koalaman/shellcheck
-      - uses: reviewdog/action-shellcheck@v1  # reviewdog: this is not PullRequest build.
+      # - uses: reviewdog/action-shellcheck@v1  # reviewdog: this is not PullRequest build.
       - run: shellcheck --version || true  # v0.8.0, not v0.9.0
       - run: shellcheck . || true
-      - uses: sudo-bot/action-shellcheck@latest
-        with:
-          # https://github.com/koalaman/shellcheck#how-to-use
-          cli-args: .
-      - uses: bewuethr/shellcheck-action@v2
+      # - uses: sudo-bot/action-shellcheck@latest
+      #  with:
+      #    # https://github.com/koalaman/shellcheck#how-to-use
+      #    cli-args: .
+      # - uses: bewuethr/shellcheck-action@v2
       # - uses: ludeeus/action-shellcheck@v2
       # - uses: fearphage/shellcheck-action@v0.0.4
