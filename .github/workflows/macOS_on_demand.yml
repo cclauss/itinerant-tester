@@ -15,4 +15,4 @@ jobs:
     - uses: actions/setup-python@v5
       with:
         python-version: 3.x
-    - run: sw_vers && uname -a
+    - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
