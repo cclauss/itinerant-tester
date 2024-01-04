@@ -1,0 +1,12 @@
+# https://github.com/actions/setup-python
+name: pypy_version
+on: [pull_request, push]
+jobs:
+  pypy_version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: pypy3.10
+      - run: pypy3 --version
