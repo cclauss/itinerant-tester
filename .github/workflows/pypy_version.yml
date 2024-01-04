@@ -4,8 +4,9 @@ on: [pull_request, push]
 jobs:
   pypy_version:
     runs-on: ubuntu-latest
-    matrix:
-      python-version: [pypy3, pypy3.10, pypy3.10-v7.3.14, '>pypy3.10-v7.3.13']
+    strategy:
+      matrix:
+        python-version: [pypy3, pypy3.10, pypy-3.10, pypy3.10-v7.3.14, pypy-3.10-v7.3.14, '>pypy-3.10-v7.3.13']
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
