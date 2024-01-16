@@ -6,9 +6,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-18.04, ubuntu-19.04, ubuntu-20.04, ubuntu-22.04, ubuntu-23.04]
+        os: [ubuntu-20.04, ubuntu-22.04, ubuntu-24.04]
     runs-on: ${{ matrix.os }}
     steps:
       - run: python --version || true
       - run: python2 --version || true
-      - run: python4 --version || true
+      - run: python3 --version || true
