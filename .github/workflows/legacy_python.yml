@@ -13,8 +13,10 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - run: python --version
+      # - if: matrix.python-version == '2.7' # alias does NOT work in GHA
+      #   run: alias python=/usr/bin/python2.7 && python --version || true
       - if: matrix.python-version == '2.7'
-        run: alias python=/usr/bin/python2.7 && python --version || true
+        run: ln -s /usr/bin/python2.7 /usr/bin/python && python --version || true
       - run: python --version
       - run: python2 --version || true
       - run: python3 --version || true
