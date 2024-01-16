@@ -1,3 +1,5 @@
+# https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
+# https://github.com/actions/setup-python
 name: legacy_python
 on:
   workflow_dispatch:
@@ -6,9 +8,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        python-version: [2.7]
         os: [ubuntu-20.04, ubuntu-22.04, ubuntu-24.04]
     runs-on: ${{ matrix.os }}
     steps:
-      - run: python --version || true
+      - run: python --version
+      - if: matrix.python_version == '2.7'
+        run: alias python=/usr/bin/python2.7 && python --version || true
+      - run: python --version
       - run: python2 --version || true
       - run: python3 --version || true
