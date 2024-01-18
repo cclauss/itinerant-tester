@@ -21,7 +21,7 @@ jobs:
       - run: git clone https://github.com/${{ github.event.inputs.repo }}
       # cut: domain_name/repo_name --> repo_name so that S{{ env.repo_directory }} is repo_name
       - run: echo "repo_directory=$(echo ${{ github.event.inputs.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip wheel

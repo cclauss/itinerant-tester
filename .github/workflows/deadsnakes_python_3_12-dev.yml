@@ -4,7 +4,7 @@ jobs:
   deadsnakes_python_3_12-dev:
     runs-on: ubuntu-latest
     steps:
-      - uses: deadsnakes/action@v2.1.1
+      - uses: deadsnakes/action@v3.1.0
         with:
           python-version: 3.12-dev
       - run: python3 -VV
