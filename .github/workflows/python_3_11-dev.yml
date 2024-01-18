@@ -17,7 +17,7 @@ jobs:
           - git+https://github.com/aio-libs/aiohttp.git  # Fails
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.11-dev
       - run: python3.11 -m pip install --upgrade pip wheel

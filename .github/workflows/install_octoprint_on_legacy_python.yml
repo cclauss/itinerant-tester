@@ -12,7 +12,7 @@ jobs:
           - git+https://github.com/OctoPrint/OctoPrint.git@maintenance
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 2
       - run: python2 -m pip install --upgrade pip

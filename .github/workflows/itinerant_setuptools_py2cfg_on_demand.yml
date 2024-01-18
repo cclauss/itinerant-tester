@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
       - run: pip install --upgrade pip wheel
