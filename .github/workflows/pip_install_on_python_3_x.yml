@@ -1,11 +1,11 @@
-name: pip_install_on_py3_12
+name: pip_install_on_py3_x
 on:
   push:
     branches: [main, master]
   pull_request:
     branches: [main, master]
 jobs:
-  pip_install_on_py3_12:
+  pip_install_on_py3_x:
     strategy:
       fail-fast: false
       matrix:
@@ -19,13 +19,13 @@ jobs:
           #- git+https://github.com/Qiskit/qiskit.git
           - tensorflow
           #- git+https://github.com/tensorflow/tensorflow.git
-          - django django-haystack
+          - django-haystack
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
-        python-version: 3.12
+        python-version: 3.x
     #- run: pip install ${{ matrix.module }}
     #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
