@@ -34,6 +34,5 @@ jobs:
       run: |
           import django
           print(django.__version__)
-          # import haystack
-          # print(haystack.__version__)
-    
+          import haystack
+          print(haystack.__version__)
