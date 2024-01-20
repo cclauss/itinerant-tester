@@ -20,6 +20,7 @@ jobs:
           - tensorflow
           #- git+https://github.com/tensorflow/tensorflow.git
           - django-haystack
+          - pysolr
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -34,5 +35,7 @@ jobs:
       run: |
           import django
           print(django.__version__)
+          import pysolr
+          print(pysolr.__version__)
           import haystack
           print(haystack.__version__)
