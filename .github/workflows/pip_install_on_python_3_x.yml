@@ -31,11 +31,15 @@ jobs:
     #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
     - run: pip install ${{ matrix.module }}
-    - shell: python
+    - if: matrix.module == "django-haystack"
+      shell: python
       run: |
           import django
           print(django.__version__)
-          import pysolr
-          print(pysolr.__version__)
           import haystack
           print(haystack.__version__)
+    - if: matrix.module == "pysolr"
+      shell: python
+      run: |
+          import pysolr
+          print(pysolr.__version__)
