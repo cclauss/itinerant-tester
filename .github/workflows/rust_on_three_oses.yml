@@ -14,3 +14,5 @@ jobs:
           rustup --version
           rustc --version
           rustfmt --version
+          cargo --version
+          clippy --version
