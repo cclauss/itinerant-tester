@@ -15,4 +15,5 @@ jobs:
           rustc --version
           rustfmt --version
           cargo --version
-          clippy --version
+          clippy --version || true
+          cargo run clippy --version
