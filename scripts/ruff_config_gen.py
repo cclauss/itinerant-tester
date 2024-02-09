@@ -29,7 +29,7 @@ def ruff_pylint_settings() -> str:
     Run the command: `ruff --quiet --select=PLR091 .`
 
     Convert the resulting text into output of the form:
-    [tool.ruff.pylint]
+    [tool.ruff.lint.pylint]
         PLR0911 = 7  # Default is 6
         PLR0912 = 13  # Default is 12
         PLR0913	= 15  # Default is 5
@@ -57,7 +57,7 @@ def ruff_pylint_settings() -> str:
     if not any(ndm.get_maximum() for ndm in rules.values()):  # No PLR091x violations.
         return ""
     return "\n".join(
-        ["[tool.ruff.pylint]", 'allow-magic-value-types = ["str"]']
+        ["[tool.ruff.lint.pylint]", 'allow-magic-value-types = ["str"]']
         + [str(ndm) for ndm in rules.values() if ndm.get_maximum()]
     )
 
@@ -95,6 +95,9 @@ def select_lines(s: str = linters_as_text) -> str:
 
 ruff_header = f"""
 [tool.ruff]
+target-version = "py38"
+
+[tool.ruff.lint]
 select = [
 {select_lines()}
 ]
@@ -103,7 +106,7 @@ target-version = "py37"
 """
 
 ruff_pylint_header = """
-[tool.ruff.pylint]"""
+[tool.ruff.lint.pylint]"""
 
 
 def tests_may_assert(dir_name: str = "tests") -> str:
@@ -113,7 +116,7 @@ def tests_may_assert(dir_name: str = "tests") -> str:
 
 ruff_per_file_includes_header = (
     """
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["E402"]
 """
     + tests_may_assert("test")
@@ -131,7 +134,7 @@ def ruff_config_gen(lines: list[str]) -> None:
     """
     rules = {
         "E501": "line-length",
-        "C901": "\n[tool.ruff.mccabe]\nmax-complexity",
+        "C901": "\n[tool.ruff.lint.mccabe]\nmax-complexity",
     }
     print(ruff_header)
     for rule, config in rules.items():
