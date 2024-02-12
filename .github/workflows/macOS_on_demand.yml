@@ -16,3 +16,37 @@ jobs:
       with:
         python-version: 3.x
     - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
+  pythons_on_macOS:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: |
+            3.0
+            3.1
+            3.2
+            3.3
+            3.4
+            3.5
+            3.6
+            3.7
+            3.8
+            3.9
+            "3.10"
+            3.11
+            3.12
+    - run: |
+        python3.0 --version || true
+        python3.1 --version || true
+        python3.2 --version || true
+        python3.3 --version || true
+        python3.4 --version || true
+        python3.5 --version || true
+        python3.6 --version || true
+        python3.7 --version || true
+        python3.8 --version || true
+        python3.9 --version || true
+        python3.10 --version || true
+        python3.11 --version || true
+        python3.12 --version || true
