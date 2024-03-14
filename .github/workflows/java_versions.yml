@@ -10,7 +10,7 @@ jobs:
         java-version: ['8', '11', '21']
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-java@v2  # not v4 for Java 8
+      - uses: actions/setup-java@v1  # not v2, v3, or v4 for Java 8
         with:
           distribution: 'microsoft'
           java-version: ${{ matrix.java-version }}
