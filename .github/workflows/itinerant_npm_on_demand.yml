@@ -20,4 +20,5 @@ jobs:
       - run: node --version
       - run: npm --version
       - run: npm config list -l
-      - run: echo ${{ matrix }}
+      - run: npm config set msvs_version
+      - run: echo "${{ toJSON(matrix) }}
