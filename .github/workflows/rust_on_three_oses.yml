@@ -16,4 +16,4 @@ jobs:
           rustfmt --version
           cargo --version
           clippy --version || true
-      - run: echo ${{ toJSON(matrix) }}
+      - run: echo "${{ matrix }} or ${{ toJSON(matrix) }}"
