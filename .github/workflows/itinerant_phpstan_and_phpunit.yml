@@ -1,0 +1,34 @@
+# https://github.com/php-actions
+
+name: itinerant_phpstan_and_phpunit
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'PHP repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_phpstan_and_phpunit:
+    name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        php_version: [latest]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: ls -Fla
+      - run: pip install --user codespell[toml]
+      - run: codespell || true
+      - uses: php-actions/composer@v6 # or alternative dependency management
+      - uses: php-actions/phpstan@v3
+        with:
+          php_version: ${{ matrix.php_version }}
+      - if: ${{ always() }}
+        uses: php-actions/phpunit@v3
+        with:
+          php_version: ${{ matrix.php_version }}
