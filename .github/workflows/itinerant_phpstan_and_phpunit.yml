@@ -55,6 +55,6 @@ jobs:
           tools: phplint, phpstan, phpunit
       - run: phplint
       - if: ${{ always() }}
-        run: phpstan
+        run: phpstan .
       - if: ${{ always() }}
         run: phpunit
