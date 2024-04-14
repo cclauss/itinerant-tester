@@ -56,8 +56,10 @@ jobs:
           tools: phplint, phpstan, phpunit
       - run: phplint
       - if: ${{ always() }}
+        run: phplint --configuration settings.php
+      - if: ${{ always() }}
         run: phpstan analyse
       - if: ${{ always() }}
-        run: phpstan analyse classes
+        run: phpstan analyse --configuration settings.php classes
       - if: ${{ always() }}
         run: phpunit
