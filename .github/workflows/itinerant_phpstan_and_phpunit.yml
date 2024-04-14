@@ -32,6 +32,7 @@ jobs:
       - if: ${{ always() }}
         uses: php-actions/phpunit@v3
         with:
+          path: classes
           php_version: ${{ matrix.php_version }}
 
   itinerant_phpstan_and_phpunit_alt:
@@ -55,6 +56,8 @@ jobs:
           tools: phplint, phpstan, phpunit
       - run: phplint
       - if: ${{ always() }}
-        run: phpstan .
+        run: phpstan analyse
+      - if: ${{ always() }}
+        run: phpstan analyse classes
       - if: ${{ always() }}
         run: phpunit
