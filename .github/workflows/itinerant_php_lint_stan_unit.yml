@@ -1,0 +1,68 @@
+# https://github.com/php-actions
+# https://github.com/setup-php
+
+name: itinerant_phpstan_and_phpunit
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'PHP repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_php_lint_stan_unit:
+    name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        php_version: [latest]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: ls -Fla
+      - run: pip install --user codespell[toml]
+      - run: codespell || true
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php_version }}
+          tools: phplint, phpstan, phpunit
+      - run: phplint
+      - if: ${{ always() }}
+        run: phplint --configuration settings.php
+      # - if: ${{ always() }}
+      #  run: phpstan analyse
+      - if: ${{ always() }}
+        run: phpstan analyse --configuration settings.php --level max classes
+      - if: ${{ always() }}
+        run: phpunit --configuration settings.php
+
+#  inflexible:
+#    name: "${{ github.event.inputs.repo }}"
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        php_version: [latest]
+#    runs-on: ubuntu-latest
+#    steps:
+#      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+#      - uses: actions/checkout@v4
+#        with:
+#          repository: ${{ github.event.inputs.repo }}
+#      - run: ls -Fla
+#      - run: pip install --user codespell[toml]
+#      - run: codespell || true
+#      - uses: php-actions/composer@v6 # or alternative dependency management
+#      - uses: php-actions/phpstan@v3
+#        with:
+#          configuration: settings.php
+#          level: max
+#          path: classes
+#          php_version: ${{ matrix.php_version }}
+#      - if: ${{ always() }}
+#        uses: php-actions/phpunit@v3
+#        with:
+#          path: classes
+#          php_version: ${{ matrix.php_version }}
