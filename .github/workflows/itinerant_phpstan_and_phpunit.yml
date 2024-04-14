@@ -28,6 +28,9 @@ jobs:
       - uses: php-actions/composer@v6 # or alternative dependency management
       - uses: php-actions/phpstan@v3
         with:
+          configuration: settings.php
+          level: max
+          path: classes
           php_version: ${{ matrix.php_version }}
       - if: ${{ always() }}
         uses: php-actions/phpunit@v3
@@ -60,6 +63,6 @@ jobs:
       - if: ${{ always() }}
         run: phpstan analyse
       - if: ${{ always() }}
-        run: phpstan analyse --configuration settings.php classes
+        run: phpstan analyse --configuration settings.php level max classes
       - if: ${{ always() }}
         run: phpunit
