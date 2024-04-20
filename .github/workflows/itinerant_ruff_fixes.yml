@@ -19,8 +19,7 @@ jobs:
       - run: npm config list
       - run: npm config list -l
       - run: npm doctor || true
-      - run: echo ${{ runner.name }} ${{ runner.os }} ${{ runner.arch }} ${{ runner.debug }} ${{ runner.temp }} ${{ runner.tool_cache }} || true
-      - run: echo ${{ runner.name }} ${{ runner.os }} ${{ runner.arch }} ${{ runner.debug }} ${{ runner.temp }} ${{ runner.tool-cache }} || true
+      - run: echo ${{ runner.name }}, ${{ runner.os }}, ${{ runner.arch }}, ${{ runner.debug }}, ${{ runner.temp }}, ${{ runner.tool_cache }} || true
   itinerant_ruff_fixes:
     name: "${{ github.event.inputs.repo }}"
     strategy:
