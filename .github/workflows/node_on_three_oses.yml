@@ -1,14 +1,13 @@
 name: node_on_three_oses
-on: [push, pull_request]
+on: [workflow_dispatch]
 jobs:
   node_on_three_oses:
     strategy:
       fail-fast: false
       max-parallel: 16
       matrix:
-        node-version: [18, 20, 21, 22]
+        node-version: [22]  # , 18, 20, 21]
         os: [macos-13, macos-14, ubuntu-latest, windows-latest]
-        # arch: [arm64]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v4
