@@ -1,13 +1,12 @@
 name: rust_on_three_oses
-on: [push, pull_request]
+on: [workflow_dispatch]
 jobs:
   rust_on_three_oses:
     strategy:
       fail-fast: false
-      max-parallel: 3
+      max-parallel: 4
       matrix:
-        os: [macos-latest-arm64, ubuntu-latest-arm64, windows-latest-arm64]
-        arch: [arm64]
+        os: [macos-13, macos-14, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v4
@@ -17,4 +16,12 @@ jobs:
           rustfmt --version
           cargo --version
           clippy --version || true
-      - run: echo "${{ matrix }} or ${{ toJSON(matrix) }}"
+      # https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
+      - name: Dump matrix context
+        env:
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+        run: echo "$MATRIX_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
