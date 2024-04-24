@@ -1,0 +1,37 @@
+name: python_3_13-dev
+on:
+  workflow_dispatch:
+jobs:
+  python_3_13-dev:
+    strategy:
+      fail-fast: false
+      matrix:
+        architecture: [x64, arm64]
+        package:
+          - cchardet  # Passes if cython>=0.29.30
+          - frozenlist  # Fails
+          - yarl  # Passes!!!
+          - aiohttp  # Fails
+          - git+https://github.com/PyYoshi/cChardet.git  # Passes!!!
+          - git+https://github.com/aio-libs/frozenlist.git  # Fails
+          - git+https://github.com/aio-libs/yarl.git  # Fails
+          - git+https://github.com/aio-libs/aiohttp.git  # Fails
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          architecture: ${{ matrix.architecture }}
+          python-version: 3.13
+          allow-pre-releases: true
+      - run: python3.13 -m pip install --upgrade pip wheel
+      - run: python3.13 -m pip install --upgrade cython  # >=0.29.32
+      - run: python3.13 -m pip install ${{ matrix.package }}
+      # https://docs.github.com/en/actions/learn-github-actions/contexts#example-printing-context-information-to-the-log
+      - name: Dump matrix context
+        env:
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+        run: echo "$MATRIX_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
