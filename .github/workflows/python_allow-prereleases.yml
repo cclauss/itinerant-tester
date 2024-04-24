@@ -6,21 +6,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        architecture: [x64, arm64]
+        # architecture: [x64, arm64]
         package:
           - cchardet  # Passes if cython>=0.29.30
-          - frozenlist  # Fails
-          - yarl  # Passes!!!
-          - aiohttp  # Fails
-          - git+https://github.com/PyYoshi/cChardet.git  # Passes!!!
-          - git+https://github.com/aio-libs/frozenlist.git  # Fails
-          - git+https://github.com/aio-libs/yarl.git  # Fails
+          # - frozenlist  # Fails
+          # - yarl  # Passes!!!
+          # - aiohttp  # Fails
+          # - git+https://github.com/PyYoshi/cChardet.git  # Passes!!!
+          # - git+https://github.com/aio-libs/frozenlist.git  # Fails
+          # - git+https://github.com/aio-libs/yarl.git  # Fails
           - git+https://github.com/aio-libs/aiohttp.git  # Fails
-    runs-on: macos-latest  # macos-14
+    runs-on: macos-14
     steps:
       - uses: actions/setup-python@v5
         with:
-          architecture: ${{ matrix.architecture }}
+          # architecture: ${{ matrix.architecture }}  # Does not work.
           python-version: 3.13
           allow-prereleases: true
       - run: python3.13 -m pip install --upgrade pip wheel
