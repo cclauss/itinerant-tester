@@ -16,7 +16,7 @@ jobs:
           - git+https://github.com/aio-libs/frozenlist.git  # Fails
           - git+https://github.com/aio-libs/yarl.git  # Fails
           - git+https://github.com/aio-libs/aiohttp.git  # Fails
-    runs-on: macos-14
+    runs-on: macos-latest  # macos-14
     steps:
       - uses: actions/setup-python@v5
         with:
