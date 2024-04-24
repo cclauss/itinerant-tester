@@ -1,8 +1,8 @@
-name: python_allow-pre-releases
+name: python_allow-prereleases
 on:
   workflow_dispatch:
 jobs:
-  python_allow-pre-releases:
+  python_allow-prereleases:
     strategy:
       fail-fast: false
       matrix:
@@ -22,7 +22,7 @@ jobs:
         with:
           architecture: ${{ matrix.architecture }}
           python-version: 3.13
-          allow-pre-releases: true
+          allow-prereleases: true
       - run: python3.13 -m pip install --upgrade pip wheel
       - run: python3.13 -m pip install --upgrade cython  # >=0.29.32
       - run: python3.13 -m pip install ${{ matrix.package }}
