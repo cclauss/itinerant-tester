@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       # Temporary workaround for Node.js v22 on Windows
-      - if: ${{ matrix.node == "22" && runner.os == "Windows" }}
+      - if: ${{ matrix.node == '22' && runner.os == 'Windows' }}
         shell: bash  # Not pwsh!!!
         run: |
           npm --version  # 10.5.1
