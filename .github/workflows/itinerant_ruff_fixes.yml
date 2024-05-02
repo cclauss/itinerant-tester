@@ -78,6 +78,7 @@ jobs:
       - run: codespell || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
+      - run: ruff check --exit-zero --select=W605 --target-version=py38
       - run: ruff check --exit-zero --select=ALL --target-version=py38
       - run: ruff check --exit-zero --select=ALL --statistics --target-version=py38 | sort -k 2
       # exit-zero on select=ALL that are fixable
