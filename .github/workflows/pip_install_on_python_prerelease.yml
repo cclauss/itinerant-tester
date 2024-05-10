@@ -1,0 +1,19 @@
+name: pip_install_on_python_prerelease
+on:
+  workflow_dispatch:
+    inputs:
+      pagkage:
+        description: 'PyPI package to test'
+        required: true
+jobs:
+  pip_install_on_python_prerelease:
+    name: "${{ github.event.inputs.pagkage }}"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
+      with:
+        python-version: 3.13
+        allow-prereleases: true
+    - run: pip install --upgrade pip
+    - run: pip install ${{ github.event.inputs.pagkage }}
