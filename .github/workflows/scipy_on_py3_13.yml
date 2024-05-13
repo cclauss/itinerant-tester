@@ -26,7 +26,14 @@ jobs:
           sudo apt-get install --yes libopenblas-dev
       - if: runner.os == 'macOS'
         run: |
-          brew install gfortran openblas pkg-config
+          brew install openblas
+          brew install gfortran
+          brew install flang || true
+          brew install nvfortran || true
+          brew install pgfortran || true
+          brew install ifort || true
+          brew install ifx || true
+          brew install g95 || true
       - name: Install dependencies
         run: |
           pip install --upgrade pip
