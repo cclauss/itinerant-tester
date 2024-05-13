@@ -16,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - run: gfortran --version || true
-      - run: gfortran -V || true
+      - run: gfortran -v || true
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -28,12 +28,17 @@ jobs:
           sudo apt-get install --yes libopenblas-dev
       - if: runner.os == 'macOS'
         env:
+          LDFLAGS: "-L$HOMEBREW_PREFIX/opt/openblas/lib"
+          CPPFLAGS: "-I$HOMEBREW_PREFIX/opt/openblas/include"
           PKG_CONFIG_PATH: "$HOMEBREW_PREFIX/opt/openblas/lib/pkgconfig"
         run: |
+          echo $LDFLAGS
+          echo $CPPFLAGS
+          echo $PKG_CONFIG_PATH
           brew install openblas
           brew install gfortran
           gfortran --version || true
-          gfortran -V || true
+          gfortran -v || true
       - name: Install dependencies
         run: |
           pip install --upgrade pip
