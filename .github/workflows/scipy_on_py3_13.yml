@@ -10,9 +10,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # Windows see https://docs.scipy.org/doc/scipy-1.13.0/building/index.html#building-from-source
-        # os: [macos-latest, ubuntu-latest]  # , windows-latest]
-        os: [macos-13, macos-latest]  # , ubuntu-latest, windows-latest]
+        # https://docs.scipy.org/doc/scipy-1.13.0/building/index.html#building-from-source
+        os: [ubuntu-latest]  # , macos-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - run: gfortran --version || true
@@ -52,4 +51,4 @@ jobs:
           pip install --upgrade pip
           pip install scipy
           # Some packages that depend on SciPy
-          pip install scikit-learn statsmodels
+          pip install scikit-learn statsmodels xgboost
