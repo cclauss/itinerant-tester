@@ -32,6 +32,7 @@ jobs:
           CPPFLAGS: "-I${{ env.HOMEBREW_PREFIX }}/opt/openblas/include"
           PKG_CONFIG_PATH: "${{ env.HOMEBREW_PREFIX }}/opt/openblas/lib/pkgconfig"
         run: |
+          brew shellenv
           echo $PATH
           echo $HOMEBREW_PREFIX
           echo $LDFLAGS
