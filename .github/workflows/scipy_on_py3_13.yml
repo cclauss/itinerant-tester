@@ -28,13 +28,17 @@ jobs:
           sudo apt-get install --yes libopenblas-dev
       - if: runner.os == 'macOS'
         env:
-          LDFLAGS: "-L$HOMEBREW_PREFIX/opt/openblas/lib"
-          CPPFLAGS: "-I$HOMEBREW_PREFIX/opt/openblas/include"
-          PKG_CONFIG_PATH: "$HOMEBREW_PREFIX/opt/openblas/lib/pkgconfig"
+          LDFLAGS: "-L${{ env.HOMEBREW_PREFIX }}/opt/openblas/lib"
+          CPPFLAGS: "-I${{ env.HOMEBREW_PREFIX }}/opt/openblas/include"
+          PKG_CONFIG_PATH: "${{ env.HOMEBREW_PREFIX }}/opt/openblas/lib/pkgconfig"
         run: |
+          echo $PATH
+          echo $HOMEBREW_PREFIX
           echo $LDFLAGS
           echo $CPPFLAGS
           echo $PKG_CONFIG_PATH
+          echo ${{ env.PATH }}
+          echo ${{ env.HOMEBREW_PREFIX }}
           brew install openblas
           brew install gfortran
           gfortran --version || true
