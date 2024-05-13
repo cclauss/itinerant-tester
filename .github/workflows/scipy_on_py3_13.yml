@@ -28,9 +28,12 @@ jobs:
           sudo apt-get install --yes libopenblas-dev
       - if: runner.os == 'macOS'
         env:
-          LDFLAGS: "-L/opt/homebrew/opt/openblas/lib"
-          CPPFLAGS: "-I/opt/homebrew/opt/openblas/include"
-          PKG_CONFIG_PATH: "/opt/homebrew/opt/openblas/lib/pkgconfig"
+          # LDFLAGS: "-L/opt/homebrew/opt/openblas/lib"
+          # CPPFLAGS: "-I/opt/homebrew/opt/openblas/include"
+          # PKG_CONFIG_PATH: "/opt/homebrew/opt/openblas/lib/pkgconfig"
+          LDFLAGS: "-L/usr/local/opt/openblas/lib"
+          CPPFLAGS: "-I/usr/local/opt/openblas/include"
+          PKG_CONFIG_PATH: "/usr/local/opt/openblas/lib/pkgconfig"
         run: |
           brew shellenv
           echo $PATH
