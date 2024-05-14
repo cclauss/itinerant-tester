@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         # https://docs.scipy.org/doc/scipy-1.13.0/building/index.html#building-from-source
-        os: [ubuntu-latest]  # , macos-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest]  # , windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - run: gfortran --version || true
@@ -27,25 +27,28 @@ jobs:
           sudo apt-get install --yes libopenblas-dev
       - if: runner.os == 'macOS'
         env:
-          # LDFLAGS: "-L/opt/homebrew/opt/openblas/lib"
-          # CPPFLAGS: "-I/opt/homebrew/opt/openblas/include"
-          # PKG_CONFIG_PATH: "/opt/homebrew/opt/openblas/lib/pkgconfig"
-          LDFLAGS: "-L/usr/local/opt/openblas/lib"
-          CPPFLAGS: "-I/usr/local/opt/openblas/include"
-          PKG_CONFIG_PATH: "/usr/local/opt/openblas/lib/pkgconfig"
+          LDFLAGS: "-L/opt/homebrew/opt/openblas/lib"
+          CPPFLAGS: "-I/opt/homebrew/opt/openblas/include"
+          PKG_CONFIG_PATH: "/opt/homebrew/opt/openblas/lib/pkgconfig"
+          # LDFLAGS: "-L/usr/local/opt/openblas/lib"
+          # CPPFLAGS: "-I/usr/local/opt/openblas/include"
+          # PKG_CONFIG_PATH: "/usr/local/opt/openblas/lib/pkgconfig"
         run: |
+          env
+          echo "---"
           brew shellenv
-          echo $PATH
-          echo $HOMEBREW_PREFIX
-          echo $LDFLAGS
-          echo $CPPFLAGS
-          echo $PKG_CONFIG_PATH
+          echo "PATH: $PATH"
+          echo "HOMEBREW_PREFIX: $HOMEBREW_PREFIX
+          echo "LDFLAGS: $LDFLAGS
+          echo "CPPFLAGS: $CPPFLAGS
+          echo "PKG_CONFIG_PATH: $PKG_CONFIG_PATH
           echo ${{ env.PATH }}
           echo ${{ env.HOMEBREW_PREFIX }}
           brew install openblas
           brew install gfortran
           gfortran --version || true
           gfortran -v || true
+          pip install scipy
       - name: Install dependencies
         run: |
           pip install --upgrade pip
