@@ -5,6 +5,9 @@ on:
       pagkage:
         description: 'PyPI package to test'
         required: true
+      apt_package:
+        description: 'apt-get packages to install'
+        required: false
 jobs:
   pip_install_on_python_prerelease:
     name: "${{ github.event.inputs.pagkage }}"
@@ -15,5 +18,9 @@ jobs:
       with:
         python-version: 3.13
         allow-prereleases: true
+    - if: ${{ github.event.inputs.apt_package }}
+      run: |
+          sudo apt-get update -qq
+          sudo apt-get install --yes ${{ github.event.inputs.apt_package }}
     - run: pip install --upgrade pip
     - run: pip install ${{ github.event.inputs.pagkage }}
