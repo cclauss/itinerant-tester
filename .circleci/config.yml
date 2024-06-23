@@ -34,7 +34,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install --upgrade pip
-            pip install ruff  # -r requirements.txt
+            pip install pytest ruff -r requirements.txt
 
       - save_cache:
           paths:
@@ -42,15 +42,20 @@ jobs:
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       # run tests!
-      # This example uses Django's built-in test-runner
-      # Other common Python testing frameworks include pytest
-      # https://pytest.org
-      # https://nose.readthedocs.io
+      # https://docs.astral.sh/ruff
       - run:
           name: run tests
           command: |
             . venv/bin/activate
             python -m ruff .
+
+      # run tests!
+      # https://pytest.org
+      - run:
+          name: run tests
+          command: |
+            . venv/bin/activate
+            python -m pytest
 
       - store_artifacts:
           path: test-reports
