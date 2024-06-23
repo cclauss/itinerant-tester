@@ -57,7 +57,7 @@ jobs:
 
       # https://pre-commit.com
       - run:
-          command: pre-commit
+          command: pre-commit run --all-files
           # command: |
           #  . venv/bin/activate
           #  pre-commit run --all-files
