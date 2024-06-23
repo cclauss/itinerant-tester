@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-    Update the repo's '.travis.yml' to trigger Travis CI to run flake8 tests on
-    the top 25 GitHub Trending Python repos.
+Update the repo's '.travis.yml' to trigger Travis CI to run flake8 tests on
+the top 25 GitHub Trending Python repos.
 
-    Requires: pip3 install --upgrade beautifulsoup4 github3.py requests lxml
-        If lxml is not available, html5lib should be a workable substitute
+Requires: pip3 install --upgrade beautifulsoup4 github3.py requests lxml
+    If lxml is not available, html5lib should be a workable substitute
 """
 
 import getpass

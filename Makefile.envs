@@ -159,7 +159,7 @@ export CARGO_TARGET_WASM32_UNKNOWN_EMSCRIPTEN_LINKER=emcc
 export RUST_TOOLCHAIN=nightly-2022-06-26
 
 
-# idealy we could automatically include all SIDE_MODULE_LDFLAGS here
+# ideally we could automatically include all SIDE_MODULE_LDFLAGS here
 export RUSTFLAGS= \
 	-C link-arg=-sSIDE_MODULE=2 \
 	-C link-arg=-sWASM_BIGINT \
