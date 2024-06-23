@@ -54,7 +54,7 @@ jobs:
           name: pre-commit
           command: |
             . venv/bin/activate
-            python -m pre-commit run --all-files
+            pre-commit run --all-files
 
       # run tests!
       # https://pytest.org
