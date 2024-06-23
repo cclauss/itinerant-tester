@@ -34,7 +34,7 @@ jobs:
             python3 -m venv venv
             . venv/bin/activate
             pip install --upgrade pip
-            pip install pytest ruff  # -r requirements.txt
+            pip install pre-commit pytest ruff  # -r requirements.txt
 
       - save_cache:
           paths:
@@ -44,18 +44,35 @@ jobs:
       # run tests!
       # https://docs.astral.sh/ruff
       - run:
-          name: run tests
+          name: ruff
           command: |
             . venv/bin/activate
-            python -m ruff .
+            python -m ruff check
+
+      # https://pre-commit.com
+      - run:
+          name: pre-commit
+          command: |
+            . venv/bin/activate
+            python -m pre-commit run --all-files
 
       # run tests!
       # https://pytest.org
       - run:
-          name: run tests
+          name: pytest
           command: |
             . venv/bin/activate
             python -m pytest
+
+      # run tests!
+      # https://pipx.pypa.io
+      - run:
+          name: pipx
+          command: |
+            python -m pip install --user pipx
+            # python -m pipx ensurepath
+            python -m pipx run ruff --version
+            pipx --version
 
       - store_artifacts:
           path: test-reports
