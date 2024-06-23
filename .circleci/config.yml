@@ -31,10 +31,13 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install --upgrade pip
-            pip install pre-commit pytest ruff  # -r requirements.txt
+            python -m pip install --upgrade pip
+            pip install pytest  # -r requirements.txt
+            pipx install pre-commit ruff
+          #  python3 -m venv venv
+          #  . venv/bin/activate
+          #  pip install --upgrade pip
+          #  pip install pre-commit pytest ruff  # -r requirements.txt
 
       - save_cache:
           paths:
@@ -44,17 +47,18 @@ jobs:
       # run tests!
       # https://docs.astral.sh/ruff
       - run:
-          name: ruff
-          command: |
-            . venv/bin/activate
-            python -m ruff check
+          command: ruff
+          # name: ruff
+          # command: |
+          #  . venv/bin/activate
+          #  python -m ruff check
 
       # https://pre-commit.com
       - run:
-          name: pre-commit
-          command: |
-            . venv/bin/activate
-            pre-commit run --all-files
+          command: pre-commit
+          # command: |
+          #  . venv/bin/activate
+          #  pre-commit run --all-files
 
       # run tests!
       # https://pytest.org
@@ -63,16 +67,6 @@ jobs:
           command: |
             . venv/bin/activate
             python -m pytest
-
-      # run tests!
-      # https://pipx.pypa.io
-      - run:
-          name: pipx
-          command: |
-            python -m pip install --user pipx
-            # python -m pipx ensurepath
-            python -m pipx run ruff --version
-            pipx --version
 
       - store_artifacts:
           path: test-reports
