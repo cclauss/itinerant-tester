@@ -9,7 +9,7 @@ jobs:
     docker:
       # Specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: cimg/python:3.12
+      - image: cimg/python:3.12-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -31,10 +31,15 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            python -m pip install --upgrade pip
+            pipx install pre-commit ruff
             python3 -m venv venv
             . venv/bin/activate
-            pip install --upgrade pip
-            pip install ruff  # -r requirements.txt
+            pip install pytest  # -r requirements.txt
+          #  python3 -m venv venv
+          #  . venv/bin/activate
+          #  pip install --upgrade pip
+          #  pip install pre-commit pytest ruff  # -r requirements.txt
 
       - save_cache:
           paths:
@@ -42,15 +47,28 @@ jobs:
           key: v1-dependencies-{{ checksum "requirements.txt" }}
 
       # run tests!
-      # This example uses Django's built-in test-runner
-      # Other common Python testing frameworks include pytest
-      # https://pytest.org
-      # https://nose.readthedocs.io
+      # https://docs.astral.sh/ruff
       - run:
-          name: run tests
+          command: ruff check
+          # name: ruff
+          # command: |
+          #  . venv/bin/activate
+          #  python -m ruff check
+
+      # https://pre-commit.com
+      - run:
+          command: pre-commit
+          # command: |
+          #  . venv/bin/activate
+          #  pre-commit run --all-files
+
+      # run tests!
+      # https://pytest.org
+      - run:
+          name: pytest
           command: |
             . venv/bin/activate
-            python -m ruff .
+            python -m pytest
 
       - store_artifacts:
           path: test-reports
