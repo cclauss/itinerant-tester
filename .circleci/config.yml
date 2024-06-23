@@ -3,7 +3,7 @@
 # https://circleci.com/docs/language-python/
 # https://circleci.com/features/python
 #
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
