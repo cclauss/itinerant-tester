@@ -1,23 +1,20 @@
 repos:
-  - repo: https://github.com/python/black
-    rev: 23.7.0
-    hooks:
-      - id: black
-  
   - repo: https://github.com/MarcoGorelli/auto-walrus
-    rev: v0.2.2
+    rev: 0.3.4
     hooks:
       - id: auto-walrus
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.0.286
+    rev: v0.4.10
     hooks:
       - id: ruff
+      - id: ruff-format
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.5
+    rev: v2.3.0
     hooks:
       - id: codespell
         args:
+          - --ignore-words-list=crate
           - --quiet-level=2
           - --skip=.github/workflows/codespell.yml.disabled
