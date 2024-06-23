@@ -32,8 +32,10 @@ jobs:
           name: install dependencies
           command: |
             python -m pip install --upgrade pip
-            pip install pytest  # -r requirements.txt
             pipx install pre-commit ruff
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install pytest  # -r requirements.txt
           #  python3 -m venv venv
           #  . venv/bin/activate
           #  pip install --upgrade pip
