@@ -23,6 +23,15 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install --yes python3-pyaudio
+      - if: runner.os == 'macOS'
+        run: |
+          brew install portaudio
+      - if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          choco install portaudio || true
+          choco install fluidsynth
+          vcpkg install portaudio:x64-windows-static
       - name: Install dependencies
         run: |
           pip install --upgrade pip
