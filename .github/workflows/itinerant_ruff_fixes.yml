@@ -7,53 +7,6 @@ on:
         required: true
 
 jobs:
-  home_dir:
-    runs-on: macos-14  # ubuntu-latest
-    steps:
-      - run: echo $HOME  # '/home/runner'
-      - uses: actions/checkout@v4
-      - run: echo $HOME  # '/home/runner'
-      - run: python3 scripts/home_dir.py  # '/home/runner'
-      - run: sudo python3 scripts/home_dir.py  # '/root'
-      - run: npm version
-      - run: npm config list
-      - run: npm config list -l
-      - run: npm doctor || true
-      - run: echo ${{ runner.name }}, ${{ runner.os }}, ${{ runner.arch }}, ${{ runner.debug }}, ${{ runner.temp }}, ${{ runner.tool_cache }}
-      # - run: echo ${{ toJson(runner) }}
-      # - run: echo ${{ runner }}  # Object
-      # - run: echo toJSON( $runner ) || true
-      # - run: echo toJSON( ${{ runner }} ) || true
-      # - run: echo toJSON(runner) || true
-
-  dump_contexts_to_log:
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-      - name: Dump job context
-        env:
-          JOB_CONTEXT: ${{ toJson(job) }}
-        run: echo "$JOB_CONTEXT"
-      - name: Dump steps context
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEPS_CONTEXT"
-      - name: Dump runner context
-        env:
-          RUNNER_CONTEXT: ${{ toJson(runner) }}
-        run: echo "$RUNNER_CONTEXT"
-      - name: Dump strategy context
-        env:
-          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
-        run: echo "$STRATEGY_CONTEXT"
-      - name: Dump matrix context
-        env:
-          MATRIX_CONTEXT: ${{ toJson(matrix) }}
-        run: echo "$MATRIX_CONTEXT"
-
   itinerant_ruff_fixes:
     name: "${{ github.event.inputs.repo }}"
     strategy:
@@ -62,7 +15,7 @@ jobs:
         python-version: [3.x]
     runs-on: ubuntu-latest
     steps:
-      - run: pip install --user auto-warlus codespell[toml] ruff
+      - run: pip install --user auto-walrus codespell[toml] ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
       - run: python3 scripts/ruff_generate_baseline.py
@@ -76,7 +29,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: codespell || true
-      - run: auto-walrus . || true
+      - run: auto-walrus . || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
       - run: ruff check --exit-zero --select=W605 --target-version=py38
@@ -126,3 +79,49 @@ jobs:
           ruff check --select=SIM --fix . | true
           git diff
  
+  dump_contexts_to_log:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Dump job context
+        env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+        run: echo "$JOB_CONTEXT"
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
+      - name: Dump strategy context
+        env:
+          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
+        run: echo "$STRATEGY_CONTEXT"
+      - name: Dump matrix context
+        env:
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+        run: echo "$MATRIX_CONTEXT"
+
+  home_dir:
+    runs-on: macos-14  # ubuntu-latest
+    steps:
+      - run: echo $HOME  # '/home/runner'
+      - uses: actions/checkout@v4
+      - run: echo $HOME  # '/home/runner'
+      - run: python3 scripts/home_dir.py  # '/home/runner'
+      - run: sudo python3 scripts/home_dir.py  # '/root'
+      - run: npm version
+      - run: npm config list
+      - run: npm config list -l
+      - run: npm doctor || true
+      - run: echo ${{ runner.name }}, ${{ runner.os }}, ${{ runner.arch }}, ${{ runner.debug }}, ${{ runner.temp }}, ${{ runner.tool_cache }}
+      # - run: echo ${{ toJson(runner) }}
+      # - run: echo ${{ runner }}  # Object
+      # - run: echo toJSON( $runner ) || true
+      # - run: echo toJSON( ${{ runner }} ) || true
+      # - run: echo toJSON(runner) || true
