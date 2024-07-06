@@ -62,7 +62,7 @@ jobs:
         python-version: [3.x]
     runs-on: ubuntu-latest
     steps:
-      - run: pip install --user codespell[toml] ruff
+      - run: pip install --user auto-warlus codespell[toml] ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
       - run: python3 scripts/ruff_generate_baseline.py
@@ -76,6 +76,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: codespell || true
+      - run: auto-walrus . || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
       - run: ruff check --exit-zero --select=W605 --target-version=py38
