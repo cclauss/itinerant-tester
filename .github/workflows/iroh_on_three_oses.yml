@@ -1,7 +1,7 @@
 name: iroh_on_three_oses
 on: [workflow_dispatch]
 jobs:
-  rust_on_three_oses:
+  iroh_doc_new:
     strategy:
       fail-fast: false
       max-parallel: 4
@@ -17,7 +17,7 @@ jobs:
       - run: curl -fsSL https://sh.iroh.computer/install.sh | sh
       - run: pip install --upgrade pip
       # https://iroh.computer/docs/sdks/python
-      - run: $ pip install iroh
+      - run: pip install iroh
       # https://iroh.computer/docs/api/doc-new -- click 'python' at the right
       - shell: python
         run: |
