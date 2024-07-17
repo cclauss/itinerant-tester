@@ -5,7 +5,7 @@ jobs:
     strategy:
       fail-fast: false
       max-parallel: 4
-      matrix:
+      matrix:  # GitHub Actions: macos-13 is Intel, macos-latest is ARM
         os: [macos-13, macos-latest, ubuntu-latest]  # , windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
