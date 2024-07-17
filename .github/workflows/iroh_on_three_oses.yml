@@ -1,0 +1,35 @@
+name: iroh_on_three_oses
+on: [workflow_dispatch]
+jobs:
+  rust_on_three_oses:
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        os: [macos-13, macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      # - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      # https://iroh.computer/docs/install
+      - run: curl -fsSL https://sh.iroh.computer/install.sh | sh
+      - run: pip install --upgrade pip
+      # https://iroh.computer/docs/sdks/python
+      - run: $ pip install iroh
+      # https://iroh.computer/docs/api/doc-new -- click 'python' at the right
+      - shell: python
+        run: |
+          import iroh
+
+          IROH_DATA_DIR = "./iroh_data_dir"
+
+          node = iroh.IrohNode(IROH_DATA_DIR)
+          print("Started Iroh node: {}".format(node.node_id()))
+
+          author = node.author_create()
+          print("Created author: {}".format(author.to_string()))
+
+          doc = node.doc_create()
+          print("Created doc: {}".format(doc.id().to_string()))
