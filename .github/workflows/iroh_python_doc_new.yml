@@ -1,12 +1,12 @@
-name: iroh_on_three_oses
-on: [workflow_dispatch]
+name: iroh_python_doc_new
+on: [push, pull_request, workflow_dispatch]
 jobs:
-  iroh_doc_new:
+  iroh_python_doc_new:
     strategy:
       fail-fast: false
       max-parallel: 4
       matrix:
-        os: [macos-13, macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-13, macos-latest, ubuntu-latest]  # , windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v4
@@ -21,10 +21,12 @@ jobs:
       # https://iroh.computer/docs/api/doc-new -- click 'python' at the right
       - shell: python
         run: |
+          # https://iroh.computer/docs/api/doc-new for Python
           import iroh
 
           IROH_DATA_DIR = "./iroh_data_dir"
 
+          # Fails: ValueError("This class has no default constructor")
           node = iroh.IrohNode(IROH_DATA_DIR)
           print("Started Iroh node: {}".format(node.node_id()))
 
