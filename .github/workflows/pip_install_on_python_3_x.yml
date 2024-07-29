@@ -34,7 +34,7 @@ jobs:
     #- run: pip install ${{ matrix.module }}
     #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
-    - run: pip install django ${{ matrix.module }}
+    - run: pip install ${{ matrix.module }}
     - if: ${{ matrix.module }} == "django-haystack"
       shell: python
       run: |
