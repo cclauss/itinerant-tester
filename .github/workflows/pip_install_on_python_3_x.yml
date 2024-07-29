@@ -24,6 +24,7 @@ jobs:
           - pyproject_api
           - celery
           - django-celery-beat
+          - pyproject_hooks
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -33,7 +34,7 @@ jobs:
     #- run: pip install ${{ matrix.module }}
     #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
-    - run: pip install ${{ matrix.module }}
+    - run: pip install django ${{ matrix.module }}
     - if: ${{ matrix.module }} == "django-haystack"
       shell: python
       run: |
