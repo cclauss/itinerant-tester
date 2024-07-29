@@ -25,6 +25,7 @@ jobs:
           - celery
           - django-celery-beat
           - pyproject_hooks
+          - cssbeautifier
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
