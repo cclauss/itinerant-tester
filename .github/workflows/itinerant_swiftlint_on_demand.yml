@@ -25,7 +25,8 @@ jobs:
         with:
           python-version: 3.x
       - run: cat .swiftlint.yml || true
-      - run: mv .swiftlint.yml .swiftlint.yml.disabled || true      
+      - run: mv .swiftlint.yml .swiftlint.yml.disabled || true
+      - run: brew install swiftlint
       - run: swiftlint --fix --quiet && git diff
       - run: swiftlint --quiet | tee swiftlint.out.txt
       - name: Failing SwiftLint rules
@@ -35,3 +36,10 @@ jobs:
               errors = set(line.rsplit("(")[-1][:-2] for line in in_file if line.strip().endswith(")"))
           print(f"{len(errors) = }\ndisabled_rules:")
           print("  - " + "\n  - ".join(sorted(errors)))
+      - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: ${{ matrix.swift }}
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
