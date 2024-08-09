@@ -10,7 +10,7 @@ jobs:
   swiftlint_help:
     runs-on: macos-latest
     steps:
-      - run: brew install swift
+      - run: brew install swift swiftlint
       - run: swiftlint help
       - run: swiftlint help lint
 
@@ -27,7 +27,7 @@ jobs:
           python-version: 3.x
       - run: cat .swiftlint.yml || true
       - run: mv .swiftlint.yml .swiftlint.yml.disabled || true
-      - run: brew install swiftlint
+      - run: brew install swift swiftlint
       - run: swiftlint --fix --quiet && git diff
       - run: swiftlint --quiet | tee swiftlint.out.txt
       - name: Failing SwiftLint rules
