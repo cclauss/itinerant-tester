@@ -10,6 +10,7 @@ jobs:
   swiftlint_help:
     runs-on: macos-latest
     steps:
+      - run: brew install swift
       - run: swiftlint help
       - run: swiftlint help lint
 
@@ -36,9 +37,9 @@ jobs:
               errors = set(line.rsplit("(")[-1][:-2] for line in in_file if line.strip().endswith(")"))
           print(f"{len(errors) = }\ndisabled_rules:")
           print("  - " + "\n  - ".join(sorted(errors)))
-      - uses: swift-actions/setup-swift@v2
-        with:
-          swift-version: ${{ matrix.swift }}
+      # - uses: swift-actions/setup-swift@v2
+      #   with:
+      #     swift-version: ${{ matrix.swift }}
       - name: Build
         run: swift build
       - name: Run tests
