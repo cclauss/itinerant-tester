@@ -17,3 +17,6 @@ Appveyor https://github.com/google/protobuf/pull/4756
 >>> print(",".join(errors))
 B101,B102,B105,B106,B107,B110,B303,B311,B320,B403,B404,B410,B602,B603,B604,B607,B608,B701
 ```
+Test (:github:14) syntax (:github_pr:`14`)
+* (:github_pr:`14`)
+* #14
