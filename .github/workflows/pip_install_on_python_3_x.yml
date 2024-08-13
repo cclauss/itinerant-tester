@@ -18,14 +18,15 @@ jobs:
           #- qiskit
           #- git+https://github.com/Qiskit/qiskit.git
           - tensorflow
-          #- git+https://github.com/tensorflow/tensorflow.git
+          # - git+https://github.com/tensorflow/tensorflow.git
           # - django-haystack
           # - pysolr
           - pyproject_api
           - celery
-          - django-celery-beat
+          - greenlet
+          # - django-celery-beat
           - pyproject_hooks
-          - cssbeautifier
+          # - cssbeautifier
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
