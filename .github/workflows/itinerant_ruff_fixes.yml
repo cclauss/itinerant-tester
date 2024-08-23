@@ -29,7 +29,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: codespell || true
-      - run: auto-walrus . || git diff || true
+      - run: auto-walrus . || ruff check --select=SIM108 --fix || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
       - run: ruff check --exit-zero --select=W605 --target-version=py38
