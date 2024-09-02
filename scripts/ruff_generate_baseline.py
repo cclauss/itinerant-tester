@@ -5,7 +5,7 @@ from subprocess import run  # Requires Python >= 3.7
 
 ruff_out: tuple[str] = tuple(
     run(
-        ["ruff", "--extend-select=C90", "."], capture_output=True, text=True
+        ["ruff", "check", "--extend-select=C90", "."], capture_output=True, text=True
     ).stdout.splitlines()[:-2]  # Remove the two summary lines
 )
 
