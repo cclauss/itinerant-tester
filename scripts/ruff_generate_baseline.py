@@ -40,6 +40,6 @@ if __name__ == "__main__":
         line_length = ""
 
     ignore = f"--ignore={','.join(sorted(violations))} " if violations else ""
-    ruff_cmd = f"ruff check {ignore}{line_length}--show-source --statistics .{max_complexity}"
+    ruff_cmd = f"ruff check {ignore}{line_length}--statistics .{max_complexity}"
     print(ruff_cmd)
     run(ruff_cmd.split(), text=True)
