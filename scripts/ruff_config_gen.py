@@ -26,7 +26,7 @@ def ruff_pylint_settings() -> str:
     """
     Generate ruff.toml settings for pylint rules: PLR0911, PLR0912, PLR0913, PLR0915.
 
-    Run the command: `ruff --quiet --select=PLR091 .`
+    Run the command: `ruff check --quiet --select=PLR091 .`
 
     Convert the resulting text into output of the form:
     [tool.ruff.lint.pylint]
@@ -38,7 +38,7 @@ def ruff_pylint_settings() -> str:
     The highest value for each rule should be used.
     """
     x = run(
-        ["ruff", "--quiet", "--select=PLR091", "../paho.mqtt.python"],
+        ["ruff", "check", "--quiet", "--select=PLR091", "../paho.mqtt.python"],
         capture_output=True,
         check=False,
         text=True,
@@ -95,14 +95,14 @@ def select_lines(s: str = linters_as_text) -> str:
 
 ruff_header = f"""
 [tool.ruff]
-target-version = "py38"
+target-version = "py39"
 
 [tool.ruff.lint]
 select = [
 {select_lines()}
 ]
 # ignore = []
-target-version = "py37"
+target-version = "py39"
 """
 
 ruff_pylint_header = """
