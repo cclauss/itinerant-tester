@@ -1,0 +1,6 @@
+[project]
+dependencies = [
+    "auto-walrus",
+    "codespell[toml]",
+    "ruff",
+]
