@@ -1,5 +1,6 @@
 [project]
 name = "itinerant-tester"
+version = "0.0.1"
 dependencies = [
     "auto-walrus",
     "codespell[toml]",
