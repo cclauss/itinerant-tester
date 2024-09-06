@@ -1,4 +1,5 @@
 [project]
+name = "itinerant-tester"
 dependencies = [
     "auto-walrus",
     "codespell[toml]",
