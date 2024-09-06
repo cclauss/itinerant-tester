@@ -15,9 +15,13 @@ jobs:
         python-version: [3.x]
     runs-on: ubuntu-latest
     steps:
-      - run: pip install --user auto-walrus codespell[toml] ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v2
+        with:
+            enable-cache: true
+      - run: uv python install
+      - run: uv install auto-walrus codespell[toml] ruff
       - run: python3 scripts/ruff_generate_baseline.py
       - run: |
           pushd scripts
