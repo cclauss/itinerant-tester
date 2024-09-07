@@ -15,14 +15,12 @@ jobs:
         python-version: [3.x]
     runs-on: ubuntu-latest
     steps:
+      - run: pip install --user auto-walrus codespell[toml] ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v2
+      - uses: actions/setup-python@v5
         with:
-            enable-cache: true
-      - run: uv python install
-      - run: uv add auto-walrus codespell[toml] ruff
-      - run: pip install ruff  # because uv add ruff does not do the right thing!
+            python-version: ${{ matrix.python-version }}
       - run: python3 scripts/ruff_generate_baseline.py
       - run: |
           pushd scripts
@@ -37,32 +35,32 @@ jobs:
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
-      - run: ruff check --exit-zero --select=W605 --target-version=py38
-      - run: ruff check --exit-zero --select=ALL --target-version=py38
-      - run: ruff check --exit-zero --select=ALL --statistics --target-version=py38 | sort -k 2
+      - run: ruff check --exit-zero --select=W605 --target-version=py39
+      - run: ruff check --exit-zero --select=ALL --target-version=py39
+      - run: ruff check --exit-zero --select=ALL --statistics --target-version=py39 | sort -k 2
       # exit-zero on select=ALL that are fixable
-      - run: ruff check --exit-zero --select=ALL --statistics --target-version=py38 | grep "\[\*\]" | sort -k 2 || true
+      - run: ruff check --exit-zero --select=ALL --statistics --target-version=py39 | grep "\[\*\]" | sort -k 2 || true
       # exit-zero default issues
-      - run: ruff check --exit-zero --statistics --target-version=py38 | sort -k 2
+      - run: ruff check --exit-zero --statistics --target-version=py39 | sort -k 2
       # - run: cp /tmp/ruff_generate_baseline.py
       # - run: python3 ruff_generate_baseline.py
       # - run: python3 /tmp/ruff_generate_baseline.py
-      - run: ruff check --exit-zero --exclude="*/migrations/*,test/*,tests/*" --output-format=concise --quiet --select=ALL --target-version=py38 | /tmp/ruff_config_gen.py
-      - run: ruff check --exit-zero --output-format=concise --quiet --select=ALL --target-version=py38 | /tmp/ruff_config_gen.py
+      - run: ruff check --exit-zero --exclude="*/migrations/*,test/*,tests/*" --output-format=concise --quiet --select=ALL --target-version=py39 | /tmp/ruff_config_gen.py
+      - run: ruff check --exit-zero --output-format=concise --quiet --select=ALL --target-version=py39 | /tmp/ruff_config_gen.py
       # - run: ruff check --exit-zero --select=E501 | tee long_lines.txt
       
       # Just the showstopper issues without undefined names
-      - run: ruff check --output-format=github --select=E9,F63,F7 --target-version=py38
+      - run: ruff check --output-format=github --select=E9,F63,F7 --target-version=py39
       # Just the showstopper issues
-      - run: ruff check --output-format=github --select=E9,F63,F7,F82 --target-version=py38
+      - run: ruff check --output-format=github --select=E9,F63,F7,F82 --target-version=py39
       # The default issues
-      - run: ruff check --output-format=github --target-version=py38
+      - run: ruff check --output-format=github --target-version=py39
       - run: |
-          ruff check --select=ALL --statistics --target-version=py38 | tee ruff.out.txt || true
+          ruff check --select=ALL --statistics --target-version=py39 | tee ruff.out.txt || true
           echo "-------"
           grep "\[\*\]" ruff.out.txt
           ruff check --select=E501 > ruff_long_lines.txt || true
-      - name: ruff check --line-length=88 check --select=ALL --target-version=py38 --ignore=???
+      - name: ruff check --line-length=88 check --select=ALL --target-version=py39 --ignore=???
         shell: python
         run: |
           with open("ruff.out.txt") as in_file:
@@ -79,7 +77,7 @@ jobs:
           ignore = f" --ignore {','.join(sorted(errors))}" if errors else ""
           print(f"ruff check --line-length={line_length} --select=ALL{ignore} --target-version=py38 .")
       - run: ruff check --ignore=ANN,C4,COM,D,ERA,F841,I,PIE790,PT,Q,RSE102,RUF001,RUF003,RUF100,TID252,UP
-                         --select=ALL --statistics --target-version=py38 | grep "\[\*\]" || true
+                         --select=ALL --statistics --target-version=py39 | grep "\[\*\]" || true
       - run: |
           ruff check --select=SIM --fix . | true
           git diff
