@@ -22,6 +22,7 @@ jobs:
             enable-cache: true
       - run: uv python install
       - run: uv add auto-walrus codespell[toml] ruff
+      - run: pip install ruff  # because uv add ruff does not do the right thing!
       - run: python3 scripts/ruff_generate_baseline.py
       - run: |
           pushd scripts
