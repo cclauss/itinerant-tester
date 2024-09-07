@@ -1,0 +1,132 @@
+name: itinerant_ruff_fixes
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_ruff_fixes:
+    name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.x]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v2
+        with:
+            enable-cache: true
+      - run: uv python install
+      - run: uv add auto-walrus codespell[toml] ruff
+      - run: pip install ruff  # because uv add ruff does not do the right thing!
+      - run: python3 scripts/ruff_generate_baseline.py
+      - run: |
+          pushd scripts
+          cp ruff_generate_baseline.py /tmp/
+          cp ruff_config_gen.py /tmp/
+          popd
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: ls -Fla
+      - run: codespell --count || true
+      - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
+      # ruff check --exit-zero runs first...
+      # exit-zero on select=ALL
+      - run: ruff check --exit-zero --select=W605 --target-version=py38
+      - run: ruff check --exit-zero --select=ALL --target-version=py38
+      - run: ruff check --exit-zero --select=ALL --statistics --target-version=py38 | sort -k 2
+      # exit-zero on select=ALL that are fixable
+      - run: ruff check --exit-zero --select=ALL --statistics --target-version=py38 | grep "\[\*\]" | sort -k 2 || true
+      # exit-zero default issues
+      - run: ruff check --exit-zero --statistics --target-version=py38 | sort -k 2
+      # - run: cp /tmp/ruff_generate_baseline.py
+      # - run: python3 ruff_generate_baseline.py
+      # - run: python3 /tmp/ruff_generate_baseline.py
+      - run: ruff check --exit-zero --exclude="*/migrations/*,test/*,tests/*" --output-format=concise --quiet --select=ALL --target-version=py38 | /tmp/ruff_config_gen.py
+      - run: ruff check --exit-zero --output-format=concise --quiet --select=ALL --target-version=py38 | /tmp/ruff_config_gen.py
+      # - run: ruff check --exit-zero --select=E501 | tee long_lines.txt
+      
+      # Just the showstopper issues without undefined names
+      - run: ruff check --output-format=github --select=E9,F63,F7 --target-version=py38
+      # Just the showstopper issues
+      - run: ruff check --output-format=github --select=E9,F63,F7,F82 --target-version=py38
+      # The default issues
+      - run: ruff check --output-format=github --target-version=py38
+      - run: |
+          ruff check --select=ALL --statistics --target-version=py38 | tee ruff.out.txt || true
+          echo "-------"
+          grep "\[\*\]" ruff.out.txt
+          ruff check --select=E501 > ruff_long_lines.txt || true
+      - name: ruff check --line-length=88 check --select=ALL --target-version=py38 --ignore=???
+        shell: python
+        run: |
+          with open("ruff.out.txt") as in_file:
+              errors = set(line.split()[1] for line in in_file if not line.startswith("warning"))
+          line_length = 88
+          if "E501" in errors:  # Find the longest long line.
+              errors.remove("E501")
+              with open("ruff_long_lines.txt") as in_file:
+                  longest = max(*(
+                      int(line.split("(")[-1].split()[0])
+                      for line in in_file if not line.startswith("Found ")
+                  ))
+                  line_length = max(line_length, longest)
+          ignore = f" --ignore {','.join(sorted(errors))}" if errors else ""
+          print(f"ruff check --line-length={line_length} --select=ALL{ignore} --target-version=py38 .")
+      - run: ruff check --ignore=ANN,C4,COM,D,ERA,F841,I,PIE790,PT,Q,RSE102,RUF001,RUF003,RUF100,TID252,UP
+                         --select=ALL --statistics --target-version=py38 | grep "\[\*\]" || true
+      - run: |
+          ruff check --select=SIM --fix . | true
+          git diff
+ 
+  dump_contexts_to_log:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Dump job context
+        env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+        run: echo "$JOB_CONTEXT"
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
+      - name: Dump strategy context
+        env:
+          STRATEGY_CONTEXT: ${{ toJson(strategy) }}
+        run: echo "$STRATEGY_CONTEXT"
+      - name: Dump matrix context
+        env:
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+        run: echo "$MATRIX_CONTEXT"
+
+  home_dir:
+    runs-on: macos-14  # ubuntu-latest
+    steps:
+      - run: echo $HOME  # '/home/runner'
+      - uses: actions/checkout@v4
+      - run: echo $HOME  # '/home/runner'
+      - run: python3 scripts/home_dir.py  # '/home/runner'
+      - run: sudo python3 scripts/home_dir.py  # '/root'
+      - run: npm version
+      - run: npm config list
+      - run: npm config list -l
+      - run: npm doctor || true
+      - run: echo ${{ runner.name }}, ${{ runner.os }}, ${{ runner.arch }}, ${{ runner.debug }}, ${{ runner.temp }}, ${{ runner.tool_cache }}
+      # - run: echo ${{ toJson(runner) }}
+      # - run: echo ${{ runner }}  # Object
+      # - run: echo toJSON( $runner ) || true
+      # - run: echo toJSON( ${{ runner }} ) || true
+      # - run: echo toJSON(runner) || true
