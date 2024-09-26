@@ -1,0 +1,41 @@
+name: itinerant_ruff_fixes
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_ruff_fixes:
+    name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.x]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+            python-version: ${{ matrix.python-version }}
+      - run: |
+          pushd scripts
+          cp sphinx_conf.py /tmp/
+          popd
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: ls -Fla
+      - run: pip install --upgrade pip
+      - run: pip install --upgrade myst_parser sphinx-autodoc2
+      - uses: actions/configure-pages@v5
+      - run: mkdir itinerant_sphinx_autodoc2
+      - run: cp tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
+      - run: sphinx-build itinerant_sphinx_autodoc2 itinerant_sphinx_autodoc2/_build/html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: itinerant_sphinx_autodoc2/_build/html
+      - run: echo ${{ github.event_name }} 
+      
