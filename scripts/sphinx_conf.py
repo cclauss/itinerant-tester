@@ -20,7 +20,7 @@ exclude_patterns = [
     ".DS_Store",
 ]
 extensions = [
-    "autodoc2",
+    # "autodoc2",
     "myst_parser",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
