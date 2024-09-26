@@ -36,15 +36,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
-      - run: mkdir -p itinerant_sphinx_autodoc2
+      - run: mkdir itinerant_sphinx_autodoc2
       - run: cp /tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
       - run: ls -Fla
       - run: ls -Fla itinerant_sphinx_autodoc2
       - run: pip install --upgrade pip
       - run: pip install --upgrade furo myst_parser sphinx-autodoc2
       - uses: actions/configure-pages@v5
-      - run: mkdir itinerant_sphinx_autodoc2
-      - run: cp tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
       - run: sphinx-build itinerant_sphinx_autodoc2 itinerant_sphinx_autodoc2/_build/html
       - uses: actions/upload-pages-artifact@v3
         with:
