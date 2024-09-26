@@ -1,4 +1,4 @@
-name: itinerant_ruff_fixes
+name: itinerant_sphinx_autodoc2
 on:
   workflow_dispatch:
     inputs:
@@ -7,7 +7,7 @@ on:
         required: true
 
 jobs:
-  itinerant_ruff_fixes:
+  itinerant_sphinx_autodoc2:
     name: "${{ github.event.inputs.repo }}"
     strategy:
       fail-fast: false
