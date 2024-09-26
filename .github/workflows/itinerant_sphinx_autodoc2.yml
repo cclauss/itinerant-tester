@@ -44,9 +44,9 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install --upgrade furo myst_parser sphinx-autodoc2
       - uses: actions/configure-pages@v5
-      # - uses: echo -e "# itinerant_sphinx_autodoc2\n\\`\\`\\`{toctree}\n:maxdepth: 2\README.md\n\\`\\`\\`"
-      - run: sphinx-build -c itinerant_sphinx_autodoc2/conf.py . itinerant_sphinx_autodoc2/_build/html | true
       - run: ls -FlaR itinerant_sphinx_autodoc2
+      # - uses: echo -e "# itinerant_sphinx_autodoc2\n\\`\\`\\`{toctree}\n:maxdepth: 2\README.md\n\\`\\`\\`"
+      - run: sphinx-build -c itinerant_sphinx_autodoc2 . itinerant_sphinx_autodoc2/_build/html | true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: itinerant_sphinx_autodoc2/_build/html
