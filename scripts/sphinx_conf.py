@@ -22,12 +22,10 @@ exclude_patterns = [
 extensions = [
     "autodoc2",
     "myst_parser",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinxcontrib.mermaid",
 ]
-# autodoc2_output_dir = "docs/_build/html"
-#autodoc2_packages = [
-#    "..",
-#]
-autodoc2_render_plugin = "myst"
 myst_enable_extensions = [
     "amsmath",
     "attrs_inline",
@@ -59,5 +57,5 @@ templates_path = ["_templates"]
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-# html_static_path = ["_static"]
-# html_theme = "alabaster"
+html_static_path = ["_static"]
+html_theme = "alabaster"
