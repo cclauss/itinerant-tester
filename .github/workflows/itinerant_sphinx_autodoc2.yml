@@ -43,7 +43,8 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install --upgrade furo myst_parser sphinx-autodoc2
       - uses: actions/configure-pages@v5
-      - run: sphinx-build itinerant_sphinx_autodoc2 itinerant_sphinx_autodoc2/_build/html
+      - run: sphinx-build itinerant_sphinx_autodoc2 itinerant_sphinx_autodoc2/_build/html | true
+      - run: ls -Fla itinerant_sphinx_autodoc2
       - uses: actions/upload-pages-artifact@v3
         with:
           path: itinerant_sphinx_autodoc2/_build/html
