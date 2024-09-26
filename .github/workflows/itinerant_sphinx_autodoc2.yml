@@ -41,7 +41,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: pip install --upgrade pip
-      - run: pip install --upgrade myst_parser sphinx-autodoc2
+      - run: pip install --upgrade furo myst_parser sphinx-autodoc2
       - uses: actions/configure-pages@v5
       - run: mkdir itinerant_sphinx_autodoc2
       - run: cp tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
