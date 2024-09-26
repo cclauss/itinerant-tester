@@ -36,9 +36,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
-      - run: ls /tmp
       - run: mkdir itinerant_sphinx_autodoc2
-      - run: cp tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
+      - run: cp /tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
       - run: ls -Fla
       - run: pip install --upgrade pip
       - run: pip install --upgrade furo myst_parser sphinx-autodoc2
