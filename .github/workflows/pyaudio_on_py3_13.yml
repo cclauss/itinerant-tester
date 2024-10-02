@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
       matrix:
         # https://github.com/CristiFati/pyaudio/blob/master/INSTALL
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]  # [macos-latest, ubuntu-latest, windows-latest]
         python-version: [3.12, 3.13, 3.14]
     runs-on: ${{ matrix.os }}
     steps:
@@ -20,6 +20,13 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
+      - name: Failing step
+        id: demo
+        if: python-version == '3.14'
+        run: exit 1
+      - name: The demo step has failed
+        if: ${{ failure() && steps.demo.conclusion == 'failure' && python-version == '3.14'}}
+        run: exit 0
       - if: runner.os == 'Linux'
         run: |
           sudo apt-get update -qq
