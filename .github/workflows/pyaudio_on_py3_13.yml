@@ -22,10 +22,10 @@ jobs:
           allow-prereleases: true
       - name: Failing step
         id: demo
-        if: python-version == '3.14'
+        if: matrix.python-version == '3.14'
         run: exit 1
       - name: The demo step has failed
-        if: ${{ failure() && steps.demo.conclusion == 'failure' && python-version == '3.14'}}
+        if: ${{ failure() && steps.demo.conclusion == 'failure' && matrix.python-version == '3.14'}}
         run: exit 0
       - if: runner.os == 'Linux'
         run: |
