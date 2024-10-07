@@ -115,6 +115,7 @@ jobs:
     steps:
       - run: echo $HOME  # '/home/runner'
       - run: echo $USER
+      - run: echo $GROUP
       - uses: actions/checkout@v4
       - run: echo $HOME  # '/home/runner'
       - run: python3 scripts/home_dir.py  # '/home/runner'
