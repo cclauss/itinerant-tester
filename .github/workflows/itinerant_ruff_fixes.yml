@@ -31,7 +31,7 @@ jobs:
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
-      - run: codespell --count || true
+      - run: codespell --count --ignore-words-list=astroid,crate || true
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
