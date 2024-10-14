@@ -94,8 +94,8 @@ jobs:
           C=C++
           """
           import os
-          with open(os.getenv("GITHUB_OUTPUT"), "a") as github_output:
-              github_output.write(new_environment_variables)
+          with open(os.getenv("GITHUB_ENV"), "a") as github_env:
+              github_env.write(new_environment_variables)
       - run: env  # Should include environment_variables $A, $B, and $C
       - name: Dump GitHub context
         env:
