@@ -85,6 +85,18 @@ jobs:
   dump_contexts_to_log:
     runs-on: ubuntu-24.04
     steps:
+      - run: env  # Should not include environment_variables $A, $B, and $C
+      - shell: python
+        run: |
+          new_environment_variables = """\
+          A=Algol
+          B=Basic
+          C=C++
+          """
+          import os
+          with open(os.getenv(new_environment_variables), "a") as github_output:
+              github_output.write("x")
+      - run: env  # Should include environment_variables $A, $B, and $C
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
