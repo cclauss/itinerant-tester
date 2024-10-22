@@ -2,7 +2,7 @@
 
 # ruff: noqa: T201
 
-"""Usage: ruff check --select=ALL --statistics | ./ruff_exclude.py ."""
+"""Usage: ruff check --select=ALL --statistics | ./which_ruff_rules.py ."""
 
 from __future__ import annotations
 
@@ -11,17 +11,19 @@ from subprocess import run
 from sys import stdin
 
 
-def quoted(s: str) -> str:
-    """Return a double-quoted string.
+def quoted(s: str, trailing: str = ",") -> str:
+    """Return a double-quoted string followed by a comma.
 
-    >>> quoted("s")
+    >>> quoted("s", "")
+    '"s"'
+    >>> quoted('s', '')
     '"s"'
     >>> quoted('s')
-    '"s"'
-    >>> quoted(None)
-    '"None"'
+    '"s",'
+    >>> quoted(None, "!!!")
+    '"None"!!!'
     """
-    return f'"{s}"'
+    return f'"{s}"{trailing}'
 
 
 def ruff_linters() -> dict[str, str]:
@@ -49,9 +51,9 @@ def ruff_linters() -> dict[str, str]:
 if __name__ == "__main__":
     violations = {line.split()[1].rstrip(digits) for line in stdin}
     lines = [
-        f'  {"#" if key in violations else " "} {quoted(key):<7} # {value}'
+        f'  {"#" if key in violations else " "} {quoted(key):<8} # {value}'
         for key, value in ruff_linters().items()
     ]
-    print("[tools.ruff.lint]\nexclude = [")
+    print("[tool.ruff]\nlint.select = [")
     print("\n".join(sorted(lines)))
     print("]")
