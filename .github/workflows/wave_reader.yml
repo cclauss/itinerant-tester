@@ -27,5 +27,5 @@ jobs:
           print(f"{scipy_path = }")
           wave_filepath = scipy_path / "io/tests/data/test-8000Hz-be-3ch-5S-24bit.wav"
           print(f"{wave_filepath = } {wave_filepath.exists() = }")
-          with wave.open(wave_filepath):
+          with wave.open(str(wave_filepath)):
               pass
