@@ -26,6 +26,6 @@ jobs:
           scipy_path = Path(find_spec("scipy").submodule_search_locations[0])
           print(f"{scipy_path = }")
           wave_filepath = scipy_path / "scipy/io/tests/data/test-8000Hz-be-3ch-5S-24bit.wav"
-          print(f"{wave_filepath = } {wave_filepath.exists() = }
+          print(f"{wave_filepath = } {wave_filepath.exists() = }")
           wave_filepath = scipy_path / "io/tests/data/test-8000Hz-be-3ch-5S-24bit.wav"
-          print(f"{wave_filepath = } {wave_filepath.exists() = }
+          print(f"{wave_filepath = } {wave_filepath.exists() = }")
