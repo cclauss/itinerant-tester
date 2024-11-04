@@ -17,15 +17,15 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m pip install --upgrade pip
       - run: pip install scipy
-      - run: pip show scipy
       - shell: python
         run: |
           import wave
           from importlib.util import find_spec
           from pathlib import Path
           scipy_path = Path(find_spec("scipy").submodule_search_locations[0])
-          print(f"{scipy_path = }")
           wave_filepath = scipy_path / "io/tests/data/test-8000Hz-be-3ch-5S-24bit.wav"
           print(f"{wave_filepath = } {wave_filepath.exists() = }")
           with wave.open(str(wave_filepath)):
+              # --> wave.Error: file does not start with RIFF id
+              # scipy_path / "io/tests/data/test-8000Hz-be-3ch-5S-24bit.wav" generates the same error.
               pass
