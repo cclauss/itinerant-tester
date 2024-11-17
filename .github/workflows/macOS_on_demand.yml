@@ -8,7 +8,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-14, macos-13, macos-latest]
+        os: [macos-15, macos-14, macos-13, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v4
@@ -72,7 +72,7 @@ jobs:
       with:
         python-version: |
           3.6
-          3.5
+          # 3.5
 #          3.4
 #          3.3
 #          3.2
