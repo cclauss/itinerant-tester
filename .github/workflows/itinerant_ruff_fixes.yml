@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
-          branch: dev
+          ref: dev  # branch, tag, or SHA
       - run: ls -Fla
       - run: codespell --count --ignore-words-list=assertin,astroid,crate || true
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
