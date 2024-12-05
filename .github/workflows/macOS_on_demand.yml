@@ -12,6 +12,10 @@ jobs:
         # arch: [arm64, x64]
     runs-on: ${{ matrix.os }}
     steps:
+    - name: ${{ runner.os }} on ${{ runner.arch }}
+      run: |
+        echo "${{ runner.os }} on ${{ runner.arch }}"
+        echo ${{ runner.os }} on ${{ runner.arch }}
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
