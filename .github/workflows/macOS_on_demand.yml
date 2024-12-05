@@ -8,14 +8,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-15, macos-14, macos-13, macos-15-large, macos-14-large, macos-13-large, macos-latest]
-        # arch: [arm64, x64]
+        os: [macos-15, macos-14, macos-13, macos-latest]
+        # arch: [ARM64, X64]  # macos-13 is X64, others are ARM64
     runs-on: ${{ matrix.os }}
     steps:
-    - name: ${{ runner.os }} on ${{ runner.arch }}
-      run: |
-        echo "${{ runner.os }} on ${{ runner.arch }}"
-        echo ${{ runner.os }} on ${{ runner.arch }}
+    - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
+      run: echo ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
