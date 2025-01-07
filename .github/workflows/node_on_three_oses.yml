@@ -6,8 +6,8 @@ jobs:
       fail-fast: false
       max-parallel: 16
       matrix:
-        node-version: [22]  # , 18, 20, 21]
-        os: [macos-13, macos-14, ubuntu-latest, windows-latest]
+        node-version: [23]  # [18, 20, 22, 23]
+        os: [macos-13, macos-15, macos-latest, ubuntu-latest, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v4
@@ -31,3 +31,7 @@ jobs:
         env:
           RUNNER_CONTEXT: ${{ toJson(runner) }}
         run: echo "$RUNNER_CONTEXT"
+      - if: runner.os == "Windows"
+        run: vswhere -legacy -latest -property installationPath
+      - if: runner.os == "Windows"
+        run: vswhere -latest -property installationPath
