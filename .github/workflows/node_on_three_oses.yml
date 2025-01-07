@@ -31,7 +31,7 @@ jobs:
         env:
           RUNNER_CONTEXT: ${{ toJson(runner) }}
         run: echo "$RUNNER_CONTEXT"
-      - if: runner.os == "Windows"
+      - if: runner.os == 'Windows'
         run: vswhere -legacy -latest -property installationPath
-      - if: runner.os == "Windows"
+      - if: runner.os == 'Windows'
         run: vswhere -latest -property installationPath
