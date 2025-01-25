@@ -84,7 +84,7 @@ jobs:
           git diff
  
   dump_contexts_to_log:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     steps:
       - run: env  # Should not include environment_variables $A, $B, and $C
       - shell: python
