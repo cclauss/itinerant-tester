@@ -30,5 +30,14 @@ jobs:
     - run: |
         pip install --upgrade pip
         pip install pipenv
+        echo "1 -----"
+        pipenv lock
+        grep ruff Pipfile.lock || true
+        echo "2 -----"
+        pipenv lock --dev
+        grep ruff Pipfile.lock || true
+        echo "3 -----"
         pipenv update --clear
+        grep ruff Pipfile.lock
+        echo "4 -----"
         cat Pipfile.lock
