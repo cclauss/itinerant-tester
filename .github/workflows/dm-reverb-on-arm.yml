@@ -1,15 +1,15 @@
-name: dm-reverb-on-arm
+name: dm-reverb
 on:
   push:
   pull_request:
   workflow_dispatch:
 jobs:
-  dm-reverb-on-arm:
+  dm-reverb:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12", "3.13" ]
         os: [ ubuntu-24.04, ubuntu-24.04-arm ]
+        python-version: [ "3.8", "3.9", "3.10", "3.11" ]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/setup-python@v5
