@@ -5,9 +5,13 @@ on:
   workflow_dispatch:
 jobs:
   dm-reverb-on-arm:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.8", "3.9", "3.10", "3.11", "3.12", "3.13" ]
     runs-on: ubuntu-24.04-arm
     steps:
     - uses: actions/setup-python@v5
       with:
-        python-version: 3.x
+        python-version: ${{ matrix.python-version }}
     - run: pip install dm-reverb
