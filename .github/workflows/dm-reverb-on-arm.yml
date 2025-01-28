@@ -1,0 +1,10 @@
+name: dm-reverb-on-arm
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  dm-reverb-on-arm:
+    runs-on: ubuntu-24.04-arm
+    steps:
+    - run: pip install dm-reverb
