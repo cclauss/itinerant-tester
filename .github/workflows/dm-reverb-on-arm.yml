@@ -24,20 +24,22 @@ jobs:
         repository: cclauss/ml-compiler-opt
         ref: lint-with-ruff
     - run: grep ruff Pipfile
+    - run: grep ruff Pipfile.lock || true
     - uses: actions/setup-python@v5
       with:
         python-version: "3.11"
     - run: |
         pip install --upgrade pip
         pip install pipenv
-        echo "1 -----"
+        # echo "1 -----"
         pipenv lock
-        grep ruff Pipfile.lock || true
-        echo "2 -----"
-        pipenv lock --dev
-        grep ruff Pipfile.lock || true
-        echo "3 -----"
-        pipenv update --clear
         grep ruff Pipfile.lock
-        echo "4 -----"
+        git diff || true
+        # echo "2 -----"
+        # pipenv lock --dev
+        # grep ruff Pipfile.lock || true
+        # echo "3 -----"
+        # pipenv update --clear
+        # grep ruff Pipfile.lock
+        # echo "4 -----"
         cat Pipfile.lock
