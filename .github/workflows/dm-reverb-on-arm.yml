@@ -7,7 +7,7 @@ jobs:
   dm-reverb-on-arm:
     runs-on: ubuntu-24.04-arm
     steps:
-    - uses: setup-python@v5
+    - uses: actions/setup-python@v5
       with:
         python-version: 3.x
     - run: pip install dm-reverb
