@@ -26,5 +26,8 @@ jobs:
     - uses: actions/setup-python@v5
       with:
         python-version: "3.11"
-    - run: pipx run pipenv update --clear
-    - run: cat Pipfile.lock
+    - run: |
+        pip install --upgrade pip
+        pip install pipenv
+        pipenv update --clear
+        cat Pipfile.lock
