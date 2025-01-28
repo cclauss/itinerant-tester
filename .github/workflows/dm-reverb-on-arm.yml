@@ -23,6 +23,7 @@ jobs:
       with:
         repository: cclauss/ml-compiler-opt
         ref: lint-with-ruff
+    - run: grep ruff Pipfile
     - uses: actions/setup-python@v5
       with:
         python-version: "3.11"
