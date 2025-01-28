@@ -9,10 +9,22 @@ jobs:
       fail-fast: false
       matrix:
         os: [ ubuntu-24.04, ubuntu-24.04-arm ]
-        python-version: [ "3.8", "3.9", "3.10", "3.11" ]
+        python-version: [ "3.11" ]  # [ "3.8", "3.9", "3.10", "3.11" ]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
     - run: pip install dm-reverb
+  pipenv-update:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        repository: cclauss/ml-compiler-opt
+        ref: lint-with-ruff
+    - uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - run: pipx run pipenv update --clear
+    - run: cat Pipfile.lock
