@@ -6,13 +6,15 @@ jobs:
       fail-fast: false
       max-parallel: 16
       matrix:
+        architecture: [x86, x64]
         node-version: [23]  # [18, 20, 22, 23]
-        os: [macos-13, macos-15, macos-latest, ubuntu-latest, windows-latest, windows-2025]
+        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
+          architecture: ${{ matrix.architecture }}
           node-version: ${{ matrix.node-version }}
       # Temporary workaround for Node.js v22 on Windows
       # - if: ${{ matrix.node-version == '22' && runner.os == 'Windows' }}
@@ -40,11 +42,13 @@ jobs:
       fail-fast: false
       max-parallel: 22
       matrix:
-        node-version: [23.x, 22.x, 21.x, 20.x, 19.x, 18.x, 17.x, 16.x, 15.x, 14.x, 13.x, 12.x, 11.x, 10.x, 9.x, 8.x, 7.x, 6.x, 5.x, 4.x, 0.12, 0.10]
+        # architecture: [x86, x64]
+        node-version: [23.x, 22.x, 21.x, 20.x, 19.x, 18.x, 17.x, 16.x, 15.x, 14.x, 13.x, 12.x, 11.x, 10.x, 9.x, 8.x, 7.x, 6.x, 5.x, 4.x, 0.12, '0.10']
     runs-on: windows-latest
     steps:
       # - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
+          # architecture: ${{ matrix.architecture }}
           node-version: ${{ matrix.node-version }}
       - run: node --version
