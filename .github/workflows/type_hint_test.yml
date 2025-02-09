@@ -9,26 +9,26 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: |
-            3.7
-            3.8
             3.9
             3.10
             3.11
+            3.12
+            3.13
       - env:
           OLD: "type(1) is int"
           NEW: "isinstance(1, int)"
         run: |
-          python3.7  -m timeit "$OLD"
-          python3.7  -m timeit "$NEW"
-          python3.8  -m timeit "$OLD"
-          python3.8  -m timeit "$NEW"
           python3.9  -m timeit "$OLD"
           python3.9  -m timeit "$NEW"
           python3.10 -m timeit "$OLD"
           python3.10 -m timeit "$NEW"
           python3.11 -m timeit "$OLD"
           python3.11 -m timeit "$NEW"
-      - run: python3.11 -c "$CODE"
+          python3.12 -m timeit "$OLD"
+          python3.12 -m timeit "$NEW"
+          python3.13 -m timeit "$OLD"
+          python3.13 -m timeit "$NEW"
+      - run: python3.13 -c "$CODE"
       - run: python3.10 -c "$CODE"
       # - run: python3.9  -c "$CODE"  # TypeError: unsupported operand type(s) for |: 'type' and 'NoneType'
       # - run: python3.8  -c "$CODE"
