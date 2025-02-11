@@ -47,8 +47,10 @@ jobs:
     runs-on: windows-latest
     steps:
       # - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: "Setup Node.js v${{ matrix.node-version }} on ${{ runner.os }} on ${{ runner.arch }}"
+        uses: actions/setup-node@v4
         with:
           # architecture: ${{ matrix.architecture }}
           node-version: ${{ matrix.node-version }}
-      - run: node --version
+      - name: Check Node.js v${{ matrix.node-version }} on ${{ runner.os }} on ${{ runner.arch }}
+        run: node --version
