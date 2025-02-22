@@ -18,4 +18,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: latest
-      - run: ${{ runner.command }}
+      - run: "${{ runner.command }}"
