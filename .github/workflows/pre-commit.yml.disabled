@@ -6,7 +6,7 @@ name: pre-commit
 on:
   pull_request:
   push:
-    branches: [main]
+    branches: [develop]
   workflow_dispatch:
 jobs:
   pre-commit:
