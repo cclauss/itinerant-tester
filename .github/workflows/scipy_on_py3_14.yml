@@ -1,6 +1,6 @@
 # A GitHub Action to demonstrate how to run SciPy on Python 3.13 before its release in Oct. 2024
 
-name: scipy_on_py3_13
+name: scipy_on_py3_14
 on:
   push:
   pull_request:
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.13
+          python-version: 3.14
           allow-prereleases: true
       - if: runner.os == 'Linux'  # https://github.com/scipy/scipy/issues/16308#issuecomment-1140477372
         run: |
