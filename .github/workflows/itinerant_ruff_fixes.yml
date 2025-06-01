@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.x]
+        python-version: [3.14]
     runs-on: ubuntu-24.04-arm
     steps:
       - run: pip install --user auto-walrus codespell[toml] ruff
@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
             python-version: ${{ matrix.python-version }}
+            allow-prereleases: true
       - run: python3 scripts/ruff_generate_baseline.py
       - run: |
           pushd scripts
