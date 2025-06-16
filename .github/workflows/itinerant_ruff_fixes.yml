@@ -37,9 +37,10 @@ jobs:
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
-      - run: ruff check --exit-zero --select=NPY --target-version=py39
-      - run: ruff check --exit-zero --select=W605 --target-version=py39
-      - run: ruff check --exit-zero --select=ALL --target-version=py39
+      - run: ruff check --exit-zero --select=NPY001 --target-version=py39
+      - run: ruff check --exit-zero --select=NPY    --target-version=py39
+      - run: ruff check --exit-zero --select=W605   --target-version=py39
+      - run: ruff check --exit-zero --select=ALL    --target-version=py39
       - run: ruff check --exit-zero --select=ALL --statistics --target-version=py39 | sort -k 2
       # exit-zero on select=ALL that are fixable
       - run: ruff check --exit-zero --select=ALL --statistics --target-version=py39 | grep "\[\*\]" | sort -k 2 || true
@@ -125,21 +126,21 @@ jobs:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
 
-  home_dir:
-    runs-on: macos-14  # ubuntu-latest
-    steps:
-      - run: echo $HOME  # '/home/runner'
-      - run: echo $USER
-      - run: echo $GROUP
-      - uses: actions/checkout@v4
-      - run: echo $HOME  # '/home/runner'
-      - run: python3 scripts/home_dir.py  # '/home/runner'
-      - run: sudo python3 scripts/home_dir.py  # '/root'
-      - run: npm version
-      - run: npm config list
-      - run: npm config list -l
-      - run: npm doctor || true
-      - run: echo ${{ runner.name }}, ${{ runner.os }}, ${{ runner.arch }}, ${{ runner.debug }}, ${{ runner.temp }}, ${{ runner.tool_cache }}
+  # home_dir:
+  #  runs-on: macos-latest  # ubuntu-latest
+  #  steps:
+  #    - run: echo $HOME  # '/home/runner'
+  #    - run: echo $USER
+  #    - run: echo $GROUP
+  #    - uses: actions/checkout@v4
+  #    - run: echo $HOME  # '/home/runner'
+  #    - run: python3 scripts/home_dir.py  # '/home/runner'
+  #    - run: sudo python3 scripts/home_dir.py  # '/root'
+  #    - run: npm version
+  #    - run: npm config list
+  #    - run: npm config list -l
+  #    - run: npm doctor || true
+  #    - run: echo ${{ runner.name }}, ${{ runner.os }}, ${{ runner.arch }}, ${{ runner.debug }}, ${{ runner.temp }}, ${{ runner.tool_cache }}
       # - run: echo ${{ toJson(runner) }}
       # - run: echo ${{ runner }}  # Object
       # - run: echo toJSON( $runner ) || true
