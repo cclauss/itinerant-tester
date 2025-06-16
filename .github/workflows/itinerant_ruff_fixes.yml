@@ -37,6 +37,7 @@ jobs:
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
+      - run: ruff check --exit-zero --select=NPY --target-version=py39
       - run: ruff check --exit-zero --select=W605 --target-version=py39
       - run: ruff check --exit-zero --select=ALL --target-version=py39
       - run: ruff check --exit-zero --select=ALL --statistics --target-version=py39 | sort -k 2
