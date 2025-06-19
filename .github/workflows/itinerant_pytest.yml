@@ -27,7 +27,7 @@ jobs:
             allow-prereleases: true
       # - run: tree
       - run: pip install --upgrade pip
-      - run: pip install build pytest dronecan numpy
+      - run: pip install build dronecan numpy pymavlink pytest
       - run: pip install -e Tools/autotest/pysim || true
       - run: python -m build || true
       - run: pip install --editable . || true
