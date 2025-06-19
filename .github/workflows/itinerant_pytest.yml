@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.x]
+        python-version: [3.12]  # tkinter!
     runs-on: ubuntu-24.04  # -arm
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
