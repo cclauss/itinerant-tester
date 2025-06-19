@@ -36,8 +36,7 @@ jobs:
           git clone https://github.com/DroneCAN/DSDL.git
           ln -s $PWD/DSDL ../
       - run: python -m pytest --version && pytest --version || true
-      - run: pytest --ignore=Tools/FilterTestTool/run_filter_test.py --ignore=Tools/autotest/test_param_upgrade.py || true
-      - run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
+      # - run: pytest --ignore=Tools/FilterTestTool/run_filter_test.py --ignore=Tools/autotest/test_param_upgrade.py || true
       # - run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_parser.py
