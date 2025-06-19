@@ -13,7 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: [3.x]
-    runs-on: ubuntu-24.04-arm
+    runs-on: ubuntu-24.04  # -arm
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
@@ -29,7 +29,8 @@ jobs:
       - run: pip install build pytest
       - run: python -m build || true
       - run: pip install --editable . || true
-      - run: python -m pytest --version && python --version || true
+      - run: python -m pytest --version && pytest --version || true
+      - run: pipx run pytest --ignore=MAVProxy/modules/mavproxy_test.py || true
       - run: python -m pytest --ignore=MAVProxy/modules/mavproxy_test.py || true
       - run: pytest --ignore=MAVProxy/modules/mavproxy_test.py || true
       
