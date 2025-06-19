@@ -26,6 +26,7 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install pytest
+      - run: pip install build pytest
+      - run: python -m build || true
       - run: pip install --editable .
       - run: pytest --ignore=MAVProxy/modules/mavproxy_test.py
