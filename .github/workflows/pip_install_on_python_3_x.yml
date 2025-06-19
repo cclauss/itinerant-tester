@@ -33,6 +33,7 @@ jobs:
           # - cssbeautifier
           - wave
           - MySQL-python
+          - dronecan
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
