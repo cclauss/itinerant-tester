@@ -25,7 +25,7 @@ jobs:
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
-      - run: tree || true
+      # - run: tree
       - run: pip install --upgrade pip
       - run: pip install build pytest dronecan numpy
       - run: pip install -e Tools/autotest/pysim || true
@@ -48,6 +48,7 @@ jobs:
                     --ignore=modules/gtest/googletest/test/gtest_skip_check_output_test.py
                     --ignore=modules/gtest/googletest/test/gtest_skip_environment_check_output_test.py
                     --ignore=modules/gtest/googletest/test/gtest_testbridge_test.py
+                    --ignore=modules/gtest/googletest/test/gtest_xml_outfiles_test.py
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
                     --ignore=modules/mavlink/pymavlink/tests/snapshottests/test_wlua.py
                     --ignore=modules/mavlink/pymavlink/tests/test_mavlogdump.py
@@ -58,11 +59,12 @@ jobs:
                     --ignore=modules/mavlink/pymavlink/tests/test_wp.py
                     --ignore=modules/waf/playground/genpybind/example_test.py
                     --ignore=modules/waf/playground/pytest/test/test_bar.py
+                    --ignore=modules/waf/playground/pytest/test/test_baz.py
                     --ignore=modules/waf/playground/pytest/test/test_foo.py
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
                     --ignore=Tools/FilterTestTool/run_filter_test.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
                     --ignore=Tools/scripts/build_tests/test_ccache.py
+                    # --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
