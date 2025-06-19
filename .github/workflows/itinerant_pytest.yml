@@ -26,7 +26,7 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install build pytest
+      - run: pip install build pytest dronecan numpy
       - run: python -m build || true
       - run: pip install --editable . || true
       - run: python -m pytest --version && pytest --version || true
