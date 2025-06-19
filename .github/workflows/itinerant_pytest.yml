@@ -28,4 +28,4 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install pytest
       - run: pip install --editable .
-      - run: pytest
+      - run: pytest --ignore=MAVProxy/modules/mavproxy_test.py
