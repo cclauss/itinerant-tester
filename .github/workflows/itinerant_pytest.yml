@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: ${{ github.event.inputs.repo }}
+          submodules: recursive
           # ref: dev  # branch, tag, or SHA
       - uses: actions/setup-python@v5
         with:
