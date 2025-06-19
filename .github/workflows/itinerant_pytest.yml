@@ -72,5 +72,10 @@ jobs:
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
                     --ignore=Tools/scripts/build_tests/test_ccache.py
-      - run: pytest modules/gtest/googlemock || true
-      - run: pytest modules/gtest/googletest || true
+      - run: pytest modules/gtest || true
+      - run: pytest modules/mavlink || true
+      - run: pytest modules/waf || true
+      - run: pytest Tools/autotest || true
+      - run: pytest Tools/FilterTestTool || true
+      - run: pytest Tools/ros2 || true
+      - run: pytest Tools/scripts || true
