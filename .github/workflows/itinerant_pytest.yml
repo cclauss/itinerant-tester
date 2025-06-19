@@ -30,7 +30,5 @@ jobs:
       - run: python -m build || true
       - run: pip install --editable . || true
       - run: python -m pytest --version && pytest --version || true
-      - run: pipx run pytest --ignore=MAVProxy/modules/mavproxy_test.py || true
-      - run: python -m pytest --ignore=MAVProxy/modules/mavproxy_test.py || true
-      - run: pytest --ignore=MAVProxy/modules/mavproxy_test.py || true
+      - run: pipx run pytest || true
       
