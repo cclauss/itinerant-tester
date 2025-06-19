@@ -1,0 +1,30 @@
+name: itinerant_pytest
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'Repo to test (user_name/repo_name)'
+        required: true
+
+jobs:
+  itinerant_pytest:
+    name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.14]
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.inputs.repo }}
+          # ref: dev  # branch, tag, or SHA
+      - uses: actions/setup-python@v5
+        with:
+            python-version: ${{ matrix.python-version }}
+            allow-prereleases: true
+      - run: pip install --upgrade pip
+      - run: pip install pytest
+      - run: pip install --editable .
+      - run: pytest
