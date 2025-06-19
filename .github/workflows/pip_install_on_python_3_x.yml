@@ -31,6 +31,8 @@ jobs:
           - pyproject_hooks
           - Pillow
           # - cssbeautifier
+          - wave
+          - MySQL-python
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
