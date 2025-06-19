@@ -3,6 +3,7 @@
 # /// script
 # requires-python = ">=3.9"
 # dependencies = [
+#     "openai",
 #     "playsound",
 #     "pyaudio",
 # ]
@@ -114,6 +115,7 @@ if __name__ == "__main__":
     filepath = Path(__file__).parent / filename
     assert filepath.exists()
     assert filepath.is_file()
-    print(f"Size of {filepath} is {filepath.size} bytes.")
+    print(f"{filepath.stat() = }")
+    print(f"Size of {filepath} is {filepath.stat().st_size:,} bytes.")
     playsound(filename, block=True)
     playsound(filepath, block=True)
