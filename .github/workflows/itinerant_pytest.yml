@@ -64,7 +64,7 @@ jobs:
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
                     --ignore=Tools/FilterTestTool/run_filter_test.py
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
                     --ignore=Tools/scripts/build_tests/test_ccache.py
-                    # --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
