@@ -28,7 +28,7 @@ jobs:
       - run: tree || true
       - run: pip install --upgrade pip
       - run: pip install build pytest dronecan numpy
-      - run: pip install -e Tools/autotest/pysim
+      - run: pip install -e Tools/autotest/pysim || true
       - run: python -m build || true
       - run: pip install --editable . || true
       - run: python -m pytest --version && pytest --version || true
