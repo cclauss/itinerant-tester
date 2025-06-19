@@ -25,9 +25,10 @@ jobs:
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
-      # - run: tree
+      - run: tree
+      - run: tree modules/mavlink
       - run: pip install --upgrade pip
-      - run: pip install ament-lint-pep257 build dronecan numpy pymavlink pytest
+      - run: pip install ament-lint-pep257 build dronecan numpy pyserial pytest  # pymavlink
       - run: pip install -e Tools/autotest/pysim || true
       - run: python -m build || true
       - run: pip install --editable . || true
