@@ -1,0 +1,25 @@
+name: itinerant_pip_install
+on:
+  workflow_dispatch:
+    inputs:
+      pypi_package:
+        description: 'PyPI package to test'
+        required: true
+
+jobs:
+  itinerant_pip_install:
+    name: "${{ github.event.inputs.pypi_package }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [3.x]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - uses: actions/setup-python@v5
+        with:
+            python-version: ${{ matrix.python-version }}
+            allow-prereleases: true
+      - run: pip install --upgrade pip
+      - run: pip install ${{ github.event.inputs.repo }}
