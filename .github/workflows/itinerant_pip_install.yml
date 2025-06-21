@@ -16,10 +16,10 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${{ github.event.inputs.pypi_package }}..."
       - uses: actions/setup-python@v5
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install ${{ github.event.inputs.repo }}
+      - run: pip install ${{ github.event.inputs.pypi_package }}
