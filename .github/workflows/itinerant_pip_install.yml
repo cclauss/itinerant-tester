@@ -12,8 +12,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.x]
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ubuntu-latest]
+        python-version: ['3.9', '3.10', '3.11', '3.12', '3.x']
+        include:
+        - os: macos-latest
+          python-version: 3.x
+        - os: windows-latest
+          python-version: 3.x
     runs-on: ${{ matrix.os }}
     steps:
       - run: echo "Testing ${{ github.event.inputs.pypi_package }}..."
