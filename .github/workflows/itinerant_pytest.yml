@@ -104,6 +104,7 @@ jobs:
                     --ignore=modules/mavlink/pymavlink/tests/test_wp.py
                     --ignore=modules/waf/playground/genpybind/example_test.py
                     --ignore=modules/waf/playground/pytest/test/test_bar.py
+                    --ignore=modules/waf/playground/pytest/test/test_baz.py
                     --ignore=modules/waf/playground/pytest/test/test_foo.py
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
