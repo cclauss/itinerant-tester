@@ -150,7 +150,6 @@ jobs:
   pytest_ardupilot_ros2:
     runs-on: ubuntu-22.04
     steps:
-      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright
       - uses: actions/checkout@v4
         with:
           # repository: ${{ github.event.inputs.repo }}
@@ -161,6 +160,7 @@ jobs:
         with:
             python-version: 3.x
             allow-prereleases: true
+      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright
       - run: pip install --upgrade pip
       # - run: pip install ament-black  # Fails!
       # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
@@ -168,3 +168,8 @@ jobs:
       #                   ament-style-uncrustify ament-xmllint
       - run: pip install pytest
       - run: pytest Tools/ros2
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
+      - run: pip install ament-lint-pep257
+      - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
