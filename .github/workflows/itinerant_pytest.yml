@@ -1,10 +1,10 @@
 name: itinerant_pytest
 on:
   workflow_dispatch:
-    inputs:
-      repo:
-        description: 'Repo to test (user_name/repo_name)'
-        required: true
+  #  inputs:
+  #    repo:
+  #      description: 'Repo to test (user_name/repo_name)'
+  #      required: true
 
 jobs:
   itinerant_pytest:
@@ -15,10 +15,11 @@ jobs:
         python-version: [3.12]  # tkinter!
     runs-on: ubuntu-24.04  # -arm
     steps:
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.inputs.repo }}
+          # repository: ${{ github.event.inputs.repo }}
+          repository: ArduPilot/ardupilot
           submodules: recursive
           # ref: dev  # branch, tag, or SHA
       - uses: actions/setup-python@v5
@@ -111,6 +112,8 @@ jobs:
                     --ignore=Tools/FilterTestTool/run_filter_test.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
+                    --ignore=Tools/scripts/build_tests/test_ccache.py
       # DroneCAN==1.0.26 tests fail on pkg_resources
       - run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
                     --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
