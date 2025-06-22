@@ -153,7 +153,7 @@ jobs:
   pytest_ardupilot_ros2:
     runs-on: ubuntu-latest
     steps:
-      run: sudo apt-get update && sudo apt-get install python3-ament-package
+      - run: sudo apt-get update && sudo apt-get install python3-ament-package
       - uses: actions/checkout@v4
         with:
           # repository: ${{ github.event.inputs.repo }}
