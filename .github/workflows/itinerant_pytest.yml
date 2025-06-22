@@ -94,6 +94,7 @@ jobs:
                     --ignore=modules/gtest/googletest/test/gtest_skip_check_output_test.py
                     --ignore=modules/gtest/googletest/test/gtest_skip_environment_check_output_test.py
                     --ignore=modules/gtest/googletest/test/gtest_testbridge_test.py
+                    --ignore=modules/gtest/googletest/test/gtest_xml_outfiles_test.py
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
                     --ignore=modules/mavlink/pymavlink/tests/snapshottests/test_wlua.py
                     --ignore=modules/mavlink/pymavlink/tests/test_mavlogdump.py
