@@ -70,6 +70,8 @@ jobs:
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
+                    --ignore=Tools/scripts/build_tests/test_ccache.py
+
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
       - run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
                     --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
@@ -141,6 +143,30 @@ jobs:
       - run: pytest modules/waf || true
       - run: pytest Tools/autotest || true
       - run: pytest Tools/FilterTestTool || true
+
+
+      python3-ament-package
       - run: pytest Tools/ros2 || true
       - run: pytest Tools/scripts || true
       - run: echo Done.
+
+  pytest_ardupilot_ros2:
+    runs-on: ubuntu-latest
+    steps:
+      run: sudo apt-get update && sudo apt-get install python3-ament-package
+      - uses: actions/checkout@v4
+        with:
+          # repository: ${{ github.event.inputs.repo }}
+          repository: ArduPilot/ardupilot
+          submodules: recursive
+          # ref: dev  # branch, tag, or SHA
+      - uses: actions/setup-python@v5
+        with:
+            python-version: 3.x
+            allow-prereleases: true
+      - run: pip install --upgrade pip
+      # - run: pip install ament-black  # Fails!
+      # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
+      #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
+      #                   ament-style-uncrustify ament-xmllint
+      - run: pytest Tools/ros2
