@@ -148,7 +148,7 @@ jobs:
       - run: echo Done.
 
   pytest_ardupilot_ros2:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - run: sudo apt-get update && sudo apt-get install python3-ament-package
       - uses: actions/checkout@v4
