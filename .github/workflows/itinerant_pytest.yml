@@ -170,6 +170,7 @@ jobs:
       - run: pytest Tools/ros2
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
+      - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
       - run: pip install ament-lint-pep257
       - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
