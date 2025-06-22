@@ -69,7 +69,6 @@ jobs:
                     --ignore=Tools/FilterTestTool/run_filter_test.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
                     --ignore=Tools/scripts/build_tests/test_ccache.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
       - run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
@@ -89,13 +88,6 @@ jobs:
                     --ignore=modules/gtest/googletest/test/gtest_testbridge_test.py
                     --ignore=modules/gtest/googletest/test/gtest_xml_outfiles_test.py
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
-                    --ignore=modules/mavlink/pymavlink/tests/snapshottests/test_wlua.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_mavlogdump.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_mavxml.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_quaternion.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_rotmat.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_trim.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_wp.py
                     --ignore=modules/waf/playground/genpybind/example_test.py
                     --ignore=modules/waf/playground/pytest/test/test_bar.py
                     --ignore=modules/waf/playground/pytest/test/test_baz.py
@@ -106,7 +98,6 @@ jobs:
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
-                    --ignore=Tools/scripts/build_tests/test_ccache.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Fails!
       #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
