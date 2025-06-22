@@ -8,7 +8,7 @@ on:
 
 jobs:
   itinerant_pip_install:
-    name: "${{ github.event.inputs.pypi_package }}"
+    name: "${{ github.event.inputs.pypi_package }} on Python  ${{ matrix.python-version }} on ${{ matrix.os }}"
     strategy:
       fail-fast: false
       matrix:
@@ -35,5 +35,4 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - name: pip install ${{ github.event.inputs.pypi_package }} on Python ${{ matrix.python-version }} on ${{ matrix.os }}
-        run: pip install ${{ github.event.inputs.pypi_package }}
+      - run: pip install ${{ github.event.inputs.pypi_package }}
