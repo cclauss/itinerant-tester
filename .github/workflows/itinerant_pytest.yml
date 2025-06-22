@@ -68,7 +68,6 @@ jobs:
                     --ignore=Tools/FilterTestTool/run_filter_test.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-
       - run: echo Fixes? 
                     #--ignore=modules/gtest/googletest/test/gtest_xml_outfiles_test.py
                     #--ignore=modules/mavlink/pymavlink/tests/snapshottests/test_wlua.py
