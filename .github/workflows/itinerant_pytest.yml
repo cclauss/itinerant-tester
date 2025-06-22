@@ -143,9 +143,6 @@ jobs:
       - run: pytest modules/waf || true
       - run: pytest Tools/autotest || true
       - run: pytest Tools/FilterTestTool || true
-
-
-      python3-ament-package
       - run: pytest Tools/ros2 || true
       - run: pytest Tools/scripts || true
       - run: echo Done.
