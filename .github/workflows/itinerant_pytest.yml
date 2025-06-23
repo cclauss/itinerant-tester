@@ -26,7 +26,7 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install pytest setuptools  # numpy pymavlink
+      - run: pip install numpy pytest setuptools  # pymavlink
       # - run: mv MAVProxy/modules/mavproxy_test.py MAVProxy/modules/mavproxy_test_module.py
       - name: Install mavlink message
         run: |
