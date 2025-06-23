@@ -27,4 +27,5 @@ jobs:
             allow-prereleases: true
       - run: pip install --upgrade pip
       - run: pip install numpy pymavlink pytest setuptools
+      - run: mv MAVProxy/modules/mavproxy_test.py MAVProxy/modules/mavproxy_test_module.py
       - run: pytest 
