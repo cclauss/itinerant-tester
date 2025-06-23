@@ -29,11 +29,15 @@ jobs:
       - run: pip install numpy pytest setuptools  # pymavlink
       # - run: mv MAVProxy/modules/mavproxy_test.py MAVProxy/modules/mavproxy_test_module.py
       - name: Install mavlink message
+        if: github.event.inputs.repo == 'ArduPilot/pymavlink'
         run: |
           git clone https://github.com/ArduPilot/mavlink.git
           ln -s $PWD/mavlink/message_definitions ../
       - run: pip install --editable .
+      - run: pytest
       # - run: ./test_generate_all.sh
       # - run: ./test_generator.sh || true
-      - run: rm pytest.ini  # https://github.com/ArduPilot/pymavlink/pull/1062
-      - run: pytest --ignore=generator/C/test/posix/sha256_test.py
+      - if: github.event.inputs.repo == 'ArduPilot/pymavlink'
+        run: rm pytest.ini  # https://github.com/ArduPilot/pymavlink/pull/1062
+      - if: github.event.inputs.repo == 'ArduPilot/pymavlink'
+        run: pytest --ignore=generator/C/test/posix/sha256_test.py
