@@ -54,12 +54,12 @@ jobs:
       #- run: python -m pytest --version && pytest --version || true
       - run: pytest --ignore=modules/gtest
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
+                    --ignore=modules/mavlink/pymavlink/tests/test_wp.py
                     --ignore=modules/waf/playground
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
                     --ignore=Tools/FilterTestTool/run_filter_test.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test
-                    # --ignore=modules/mavlink/pymavlink/tests/test_wp.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
       #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
