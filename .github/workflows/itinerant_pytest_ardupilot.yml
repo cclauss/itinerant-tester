@@ -39,13 +39,14 @@ jobs:
       - run: pip install --editable modules/mavlink/pymavlink
       #- run: python -m build || true
       #- run: pip install --editable . || true
-      #- name: Download the DroneCAN DSDL Specifications
-      #  run: |
-      #    git clone https://github.com/DroneCAN/DSDL.git
-      #    ln -s $PWD/DSDL ../
+      - name: Download the DroneCAN DSDL Specifications
+        run: |
+          cd modules/DroneCAN
+          git clone https://github.com/DroneCAN/DSDL.git
+          ln -s $PWD/DSDL ../
+          pip install --editable .
       #- run: python -m pytest --version && pytest --version || true
-      - run: pytest --ignore=modules/DroneCAN
-                    --ignore=modules/gtest
+      - run: pytest --ignore=modules/gtest
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
                     --ignore=modules/waf/playground
                     --ignore=Tools/autotest/test_build_options.py
