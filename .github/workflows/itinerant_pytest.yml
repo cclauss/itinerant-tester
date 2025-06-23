@@ -33,6 +33,11 @@ jobs:
         run: |
           git clone https://github.com/ArduPilot/mavlink.git
           ln -s $PWD/mavlink/message_definitions ../
+      - name: Download DSDL Specifications
+        if: github.event.inputs.repo == 'dronecan/pydronecan'
+        run: |
+          git clone https://github.com/DroneCAN/DSDL.git
+          ln -s $PWD/DSDL ../
       - run: pip install --editable .
       - run: pytest
       # - run: ./test_generate_all.sh
