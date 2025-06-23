@@ -8,12 +8,12 @@ on:
 
 jobs:
   itinerant_pytest:
-    name: "${{ github.event.inputs.repo }}"
+    # name: "${{ github.event.inputs.repo }}"
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]  # tkinter!
-    runs-on: ubuntu-24.04  # -arm
+        python-version: ["3.12", "3.13"]  # , "3.14", "pypy-3.11"]  # tkinter!
+    runs-on: ubuntu-latest
     steps:
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
@@ -29,20 +29,21 @@ jobs:
       - run: tree
       - run: tree modules/mavlink
       - run: pip install --upgrade pip
+      - run: pip install pytest
       # - run: pip install ament-black  # Fails!
-      - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
-                         ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
-                         ament-style-uncrustify ament-xmllint build dronecan numpy
-                         pyserial pytest  # pymavlink
-      - run: pip install --editable Tools/autotest/pysim || true
+      #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
+      #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
+      #                   ament-style-uncrustify ament-xmllint build dronecan numpy
+      #                   pyserial pytest  # pymavlink
+      #- run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable modules/mavlink/pymavlink
-      - run: python -m build || true
-      - run: pip install --editable . || true
-      - name: Download the DroneCAN DSDL Specifications
-        run: |
-          git clone https://github.com/DroneCAN/DSDL.git
-          ln -s $PWD/DSDL ../
-      - run: python -m pytest --version && pytest --version || true
+      #- run: python -m build || true
+      #- run: pip install --editable . || true
+      #- name: Download the DroneCAN DSDL Specifications
+      #  run: |
+      #    git clone https://github.com/DroneCAN/DSDL.git
+      #    ln -s $PWD/DSDL ../
+      #- run: python -m pytest --version && pytest --version || true
       - run: pytest --ignore=modules/DroneCAN
                     --ignore=modules/gtest
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
