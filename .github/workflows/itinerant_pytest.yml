@@ -28,4 +28,5 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install numpy pytest setuptools  # pymavlink
       # - run: mv MAVProxy/modules/mavproxy_test.py MAVProxy/modules/mavproxy_test_module.py
+      - run: pip install --editable .
       - run: pytest 
