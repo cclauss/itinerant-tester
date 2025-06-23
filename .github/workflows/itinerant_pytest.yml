@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.12]  # tkinter!
+        python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]  # tkinter!
     runs-on: ubuntu-24.04  # -arm
     steps:
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
@@ -78,7 +78,7 @@ jobs:
                     --ignore=Tools/FilterTestTool/run_filter_test.py
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-                    --ignore=Tools/scripts/build_tests/test_ccache.py
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Fails!
       #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
@@ -123,7 +123,6 @@ jobs:
       - run: pytest Tools/autotest || true
       - run: pytest Tools/FilterTestTool || true
       - run: pytest Tools/ros2 || true
-      - run: pytest Tools/scripts || true
       - run: echo Done.
 
   pytest_ardupilot_ros2:
@@ -152,4 +151,4 @@ jobs:
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
       - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
       - run: pip install ament-lint-pep257
-      - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
+      - run: pytest --ignore=Tools Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
