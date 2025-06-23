@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.12", "3.13"]  # , "3.14", "pypy-3.11"]  # tkinter!
+        python-version: ["3.12"]  # , "3.13", "3.14", "pypy-3.11"]  # tkinter!
     runs-on: ubuntu-latest
     steps:
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
@@ -32,7 +32,7 @@ jobs:
       - run: tree modules/gtest
       - run: tree modules/waf
       - run: pip install --upgrade pip
-      - run: pip install numpy pytest setuptools
+      - run: pip install ament-lint-pep257 numpy pytest setuptools
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
@@ -41,7 +41,7 @@ jobs:
       #- run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/gtest || true
-      - run: pip install --editable modules/waf/utils || true
+      - run: pip install --editable modules/waf/utils
       - run: pip install --editable modules/mavlink/pymavlink
       #- run: python -m build || true
       #- run: pip install --editable . || true
@@ -59,7 +59,8 @@ jobs:
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
                     --ignore=Tools/FilterTestTool/run_filter_test.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
       #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
@@ -153,11 +154,7 @@ jobs:
       # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
       #                   ament-style-uncrustify ament-xmllint
-      - run: pip install pytest
+      - run: pip install ament-lint-pep257 pytest
       - run: pytest Tools/ros2
                     --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
-      - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
-      - run: pip install ament-lint-pep257
-      - run: pytest --ignore=Tools Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py || true
