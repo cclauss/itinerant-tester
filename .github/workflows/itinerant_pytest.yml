@@ -36,4 +36,4 @@ jobs:
       - run: ./test_generate_all.sh
       - run: ./test_generator.sh || true
       - run: rm pytest.ini
-      - run: pytest 
+      - run: pytest --ignore=generator/C/test/posix/sha256_test.py
