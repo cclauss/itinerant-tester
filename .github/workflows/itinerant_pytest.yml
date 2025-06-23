@@ -28,5 +28,11 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install numpy pytest setuptools  # pymavlink
       # - run: mv MAVProxy/modules/mavproxy_test.py MAVProxy/modules/mavproxy_test_module.py
+      - name: Install mavlink message
+        run: |
+          git clone https://github.com/ArduPilot/mavlink.git
+          ln -s $PWD/mavlink/message_definitions ../
       - run: pip install --editable .
+      - run: ./test_generate_all.sh
+      - run: ./test_generator.sh
       - run: pytest 
