@@ -29,7 +29,7 @@ jobs:
       - run: tree
       - run: tree modules/mavlink
       - run: pip install --upgrade pip
-      - run: pip install pytest
+      - run: pip install numpy pytest
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
