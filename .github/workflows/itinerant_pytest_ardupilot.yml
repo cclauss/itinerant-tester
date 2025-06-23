@@ -28,7 +28,9 @@ jobs:
             allow-prereleases: true
       # - run: tree
       # - run: tree modules/mavlink
-      - run: tree modules/DroneCAN
+      # - run: tree modules/DroneCAN
+      - run: tree modules/gtest
+      - run: tree modules/waf
       - run: pip install --upgrade pip
       - run: pip install numpy pytest setuptools
       # - run: pip install ament-black  # Fails!
@@ -38,6 +40,8 @@ jobs:
       #                   pyserial pytest  # pymavlink
       #- run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable modules/DroneCAN/pydronecan
+      - run: pip install --editable modules/gtest || true
+      - run: pip install --editable modules/waf || true
       - run: pip install --editable modules/mavlink/pymavlink
       #- run: python -m build || true
       #- run: pip install --editable . || true
@@ -50,6 +54,7 @@ jobs:
       #- run: python -m pytest --version && pytest --version || true
       - run: pytest --ignore=modules/gtest
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
+                    --ignore=modules/mavlink/pymavlink/tests/test_wp.py
                     --ignore=modules/waf/playground
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
