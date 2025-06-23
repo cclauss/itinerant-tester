@@ -38,7 +38,7 @@ jobs:
       #                   pyserial pytest  # pymavlink
       #- run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable modules/mavlink/pymavlink
-      - run: pip install --editable modules/DroneCAN/DroneCAN
+      - run: pip install --editable modules/DroneCAN/pydronecan
       #- run: python -m build || true
       #- run: pip install --editable . || true
       #- name: Download the DroneCAN DSDL Specifications
