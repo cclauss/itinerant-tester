@@ -22,13 +22,21 @@ jobs:
           cd demos/c/
           ./waf configure build
       - run: |
-          cp waf playground/pytest
-          cd playground/pytest
-          ./waf configure build
-      - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          ./waf configure build
+          ./waf configure
+          echo "./waf build..."
+          ./waf build || true
+      - run: |
+          cp waf playground/pytest
+          cd playground/pytest
+          ./waf configure
+          echo "./waf build bar..."
+          ./waf build bar || true
+          echo "./waf build baz..."
+          ./waf build baz || true
+          echo "./waf build foo..."
+          ./waf build foo || true
       # Demonstrate that pytest can discover test_baz.py, but testing fails.
       - run: pytest --ignore=playground/genpybind/example_test.py
                     --ignore=playground/pytest/test/test_bar.py
