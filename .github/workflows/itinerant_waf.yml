@@ -20,6 +20,7 @@ jobs:
                     --ignore=playground/pytest/test/test_bar.py
                     --ignore=playground/pytest/test/test_foo.py || true
       - run: pytest || true
+      - run: python waf-light
       - run: |
           cp waf demos/c/
           cd demos/c/
