@@ -18,6 +18,7 @@ jobs:
       - run: pip install --editable ./utils
       - run: python waf-light
       - run: tree build
+      - run: cat build/*.log
       #- run: |
       #    cp waf demos/c/
       #    cd demos/c/
@@ -31,6 +32,7 @@ jobs:
           echo ">>>>> ./waf build..."
           ./waf build || true
       # - run: ls -l build || true
+      - run: cat build/*.log
       - run: tree playground/genpybind
       - run: ls -l playground/genpybind/build || true
       - run: cat playground/genpybind/build/*.log || true
@@ -47,6 +49,7 @@ jobs:
           ./waf build baz || true
           echo ">>>>> ./waf build foo..."
           ./waf build foo || true
+      - run: cat build/*.log
       - run: tree playground/pytest
       - run: ls -l playground/pytest/build || true
       - run: cat playground/pytest/build/*.log || true
