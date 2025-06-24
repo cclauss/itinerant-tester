@@ -40,7 +40,14 @@ jobs:
         run: |
           git clone https://github.com/DroneCAN/DSDL.git
           ln -s $PWD/DSDL ../
+      - if: github.event.inputs.repo == 'ArduPilot/waf'
+        run: cd utils && pip install --editable . && pwd
+      - run: pwd
       - run: pip install --editable . || true
+      - if: github.event.inputs.repo == 'ArduPilot/waf'
+        run: pytest --ignore=playground/genpybind/example_test.py
+                    --ignore=playground/pytest/test/test_bar.py
+                    --ignore=playground/pytest/test/test_foo.py || true
       - run: pytest
       # - run: ./test_generate_all.sh
       # - run: ./test_generator.sh || true
