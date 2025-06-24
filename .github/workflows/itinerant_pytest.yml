@@ -27,6 +27,8 @@ jobs:
             allow-prereleases: true
       - run: pip install --upgrade pip
       - run: pip install numpy pytest setuptools  # pymavlink
+      - if: github.event.inputs.repo == 'ArduPilot/waf'
+        run: cd utils && pip install --editable .
       # - run: mv MAVProxy/modules/mavproxy_test.py MAVProxy/modules/mavproxy_test_module.py
       - name: Install mavlink message
         if: github.event.inputs.repo == 'ArduPilot/pymavlink'
@@ -38,7 +40,7 @@ jobs:
         run: |
           git clone https://github.com/DroneCAN/DSDL.git
           ln -s $PWD/DSDL ../
-      - run: pip install --editable .
+      - run: pip install --editable . || true
       - run: pytest
       # - run: ./test_generate_all.sh
       # - run: ./test_generator.sh || true
