@@ -60,7 +60,8 @@ jobs:
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
                     --ignore=Tools/FilterTestTool/run_filter_test.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
+                    --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
       #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
       #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
@@ -155,4 +156,5 @@ jobs:
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
       #                   ament-style-uncrustify ament-xmllint
       - run: pip install ament-lint-pep257 pytest
+      - run: pip install --editable Tools/ros2/ardupilot_dds_tests
       - run: pytest Tools/ros2 || true
