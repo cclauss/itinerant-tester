@@ -31,13 +31,15 @@ jobs:
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          pwd
-          echo ">>>>> ./waf configure..."
-          ./waf configure || true
-          echo ">>>>> ./waf build..."
-          ./waf build || true
+          # echo ">>>>> ./waf configure build..."
+          ./waf configure build
+          #echo ">>>>> ./waf configure..."
+          #./waf configure || true
+          #echo ">>>>> ./waf build..."
+          #./waf build || true
       - run: tree build
       - run: ls -l build || true
+      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/pytest
       # - run: cat build/*.log
       # - run: tree playground/genpybind
       # - run: ls -l playground/genpybind/build || true
@@ -55,7 +57,7 @@ jobs:
           # ./waf build baz || true
           # echo ">>>>> ./waf build foo..."
           # ./waf build foo || true
-      - run: cat build/*.log
+      # - run: cat build/*.log
       - run: tree playground/pytest
       - run: ls -l playground/pytest/build || true
       - run: cat playground/pytest/build/*.log || true
@@ -65,4 +67,5 @@ jobs:
                     --ignore=playground/pytest/test/test_bar.py
                     --ignore=playground/pytest/test/test_foo.py || true
       # Demonstrate that pytest can discover example, bar, and foo, but testing fails.
-      - run: PYTHONPATH=build,playground/pytest/build/src pytest
+      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py
+      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py
