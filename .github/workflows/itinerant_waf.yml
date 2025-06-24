@@ -1,0 +1,27 @@
+name: itinerant_waf
+on:
+  workflow_dispatch:
+jobs:
+  itinerant_waf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ArduPilot/waf
+          submodules: recursive
+          # ref: dev  # branch, tag, or SHA
+      - uses: actions/setup-python@v5
+        with:
+            python-version: 3.x
+      - run: pip install --upgrade pip
+      - run: pip install pytest setuptools
+      - run: cd utils && pip install --editable .
+      - run: pytest --ignore=playground/genpybind/example_test.py
+                    --ignore=playground/pytest/test/test_bar.py
+                    --ignore=playground/pytest/test/test_foo.py || true
+      - run: pytest || true
+      - run: |
+          cp waf demos/c/
+          cd demos/c/
+          ./waf configure build
+      - run: pytest
