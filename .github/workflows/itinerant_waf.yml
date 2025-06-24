@@ -17,7 +17,7 @@ jobs:
       - run: pip install pytest setuptools
       - run: pip install --editable ./utils
 
-      - run: python waf-light --tools=buildcopy,genpybind
+      - run: python waf-light --tools=buildcopy,genpybind,pytest
       - run: tree build
       # - run: cat build/*.log
       #- run: |
@@ -68,5 +68,5 @@ jobs:
       #              --ignore=playground/pytest/test/test_bar.py
       #              --ignore=playground/pytest/test/test_foo.py || true
       # Demonstrate that pytest can discover example, bar, and foo, but testing fails.
-      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py
+      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py || true
       - run: PYTHONPATH=build,playground/pytest/build/src pytest
