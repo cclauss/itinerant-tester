@@ -17,7 +17,7 @@ jobs:
       - run: pip install pytest setuptools
       - run: pip install --editable ./utils
 
-      - run: python waf-light --tools=buildcopy
+      - run: python waf-light --tools=buildcopy,genpybind
       - run: tree build
       - run: cat build/*.log
       #- run: |
@@ -46,8 +46,8 @@ jobs:
           cp waf playground/pytest
           cd playground/pytest
           pwd
-          echo ">>>>> ./waf configure..."
-          ./waf configure || true
+          echo ">>>>> ./waf configure build..."
+          ./waf configure build
           echo ">>>>> ./waf build bar..."
           ./waf build bar || true
           echo ">>>>> ./waf build baz..."
