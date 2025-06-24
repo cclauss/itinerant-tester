@@ -19,10 +19,14 @@ jobs:
       - run: python waf-light --tools=waflib.extras,waflib.extras.buildcopy
       - run: tree build
       - run: cat build/*.log
+      - run: |
+          cp waf waflib/extras
+          cd waflib/extras
+          ./waf configure build buildcopy
       #- run: |
       #    cp waf demos/c/
       #    cd demos/c/
-      #    ./waf configure build
+      #    ./waf configure build      
       - run: |
           export WAF_EXTRA_TOOL_DIRS=waflib/extras
           cp waf playground/genpybind
