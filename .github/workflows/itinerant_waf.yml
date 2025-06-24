@@ -15,14 +15,15 @@ jobs:
             python-version: 3.x
       - run: pip install --upgrade pip
       - run: pip install pytest setuptools
-      - run: cd utils && pip install --editable .
-      - run: pytest --ignore=playground/genpybind/example_test.py
-                    --ignore=playground/pytest/test/test_bar.py
-                    --ignore=playground/pytest/test/test_foo.py || true
-      - run: pytest || true
+      - run: pip install --editable ./utils
       - run: python waf-light
       - run: |
           cp waf demos/c/
           cd demos/c/
           ./waf configure build
+      # Demonstrate that pytest can discover test_baz.py, but testing fails.
+      - run: pytest --ignore=playground/genpybind/example_test.py
+                    --ignore=playground/pytest/test/test_bar.py
+                    --ignore=playground/pytest/test/test_foo.py || true
+      # Demonstrate that pytest can discover example, bar, and foo, but testing fails.
       - run: pytest
