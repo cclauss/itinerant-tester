@@ -42,6 +42,7 @@ jobs:
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/waf/utils
       - run: pip install --editable modules/mavlink/pymavlink
+      - run: pip install --editable Tools/ros2/ardupilot_dds_tests
       - run: pip install --editable modules/gtest || true
       #- run: python -m build || true
       #- run: pip install --editable . || true
