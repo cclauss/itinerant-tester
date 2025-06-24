@@ -16,7 +16,7 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install pytest setuptools
       - run: pip install --editable ./utils
-      - run: python waf-light
+      - run: python waf-light --tools=waflib.extras
       - run: tree build
       - run: cat build/*.log
       #- run: |
