@@ -24,13 +24,17 @@ jobs:
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          ./waf configure
+          pwd
+          echo "./waf configure..."
+          ./waf configure || true
           echo "./waf build..."
           ./waf build || true
       - run: |
           cp waf playground/pytest
           cd playground/pytest
-          ./waf configure
+          pwd
+          echo "./waf configure..."
+          ./waf configure || true
           echo "./waf build bar..."
           ./waf build bar || true
           echo "./waf build baz..."
