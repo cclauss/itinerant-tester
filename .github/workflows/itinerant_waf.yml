@@ -23,15 +23,15 @@ jobs:
       #    ./waf configure build
       - run: |
           cp waf playground/genpybind
-          cd playground/genpybind
+          cd playground
           pwd
           echo ">>> ./waf configure..."
-          ./waf configure || true
+          ./waf configure genpybind || true
           echo ">>> ./waf build..."
-          ./waf build || true
-      - run: ls -l build || true
-      - run: ls -l playground/genpybind/build || true
-      - run: tree playground/genpybind
+          ./waf build genpybind || true
+      # - run: ls -l build || true
+      - run: ls -l genpybind/build || true
+      - run: tree genpybind
 
       - run: |
           cp waf playground/pytest
