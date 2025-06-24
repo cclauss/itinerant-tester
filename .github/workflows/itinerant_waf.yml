@@ -64,4 +64,4 @@ jobs:
                     --ignore=playground/pytest/test/test_bar.py
                     --ignore=playground/pytest/test/test_foo.py || true
       # Demonstrate that pytest can discover example, bar, and foo, but testing fails.
-      - run: pytest
+      - run: PYTHONPATH=playground/pytest/build/src pytest
