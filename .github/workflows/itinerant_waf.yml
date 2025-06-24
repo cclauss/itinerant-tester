@@ -21,6 +21,14 @@ jobs:
           cp waf demos/c/
           cd demos/c/
           ./waf configure build
+      - run: |
+          cp waf playground/pytest/src
+          cd playground/pytest/src
+          ./waf configure build
+      - run: |
+          cp waf playground/genpybind/src
+          cd playground/genpybind/src
+          ./waf configure build
       # Demonstrate that pytest can discover test_baz.py, but testing fails.
       - run: pytest --ignore=playground/genpybind/example_test.py
                     --ignore=playground/pytest/test/test_bar.py
