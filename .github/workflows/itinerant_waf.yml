@@ -12,35 +12,43 @@ jobs:
           # ref: dev  # branch, tag, or SHA
       - uses: actions/setup-python@v5
         with:
-            python-version: 3.x
+            python-version: 3.9
       - run: pip install --upgrade pip
       - run: pip install pytest setuptools
       - run: pip install --editable ./utils
       - run: python waf-light
-      - run: |
-          cp waf demos/c/
-          cd demos/c/
-          ./waf configure build
+      #- run: |
+      #    cp waf demos/c/
+      #    cd demos/c/
+      #    ./waf configure build
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
           pwd
-          echo "./waf configure..."
+          echo ">>> ./waf configure..."
           ./waf configure || true
-          echo "./waf build..."
+          echo ">>> ./waf build..."
           ./waf build || true
+      - run: ls -l build || true
+      - run: ls -l playground/genpybind/build || true
+      - run: tree playground/genpybind
+
       - run: |
           cp waf playground/pytest
           cd playground/pytest
           pwd
-          echo "./waf configure..."
+          echo ">>> ./waf configure..."
           ./waf configure || true
-          echo "./waf build bar..."
+          echo ">>> ./waf build bar..."
           ./waf build bar || true
-          echo "./waf build baz..."
+          echo ">>> ./waf build baz..."
           ./waf build baz || true
-          echo "./waf build foo..."
+          echo ">>> ./waf build foo..."
           ./waf build foo || true
+      - run: ls -l build || true
+      - run: ls -l playground/pytest/build || true
+      - run: tree playground/pytest
+
       # Demonstrate that pytest can discover test_baz.py, but testing fails.
       - run: pytest --ignore=playground/genpybind/example_test.py
                     --ignore=playground/pytest/test/test_bar.py
