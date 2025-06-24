@@ -28,6 +28,7 @@ jobs:
           ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
       # When there is a PYTHONPATH, playground/pytest/test/test_bar.py and foo pass but baz fails.
       # TODO(cclauss): Fix genpybind/example_test.py later
+      - run: PYTHONPATH=playground/pytest/build/src pytest || true
       - run: PYTHONPATH=playground/pytest/build/src pytest
                  --ignore=playground/genpybind/example_test.py
                  --ignore=playground/pytest/test/test_baz.py
