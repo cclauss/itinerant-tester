@@ -56,11 +56,10 @@ jobs:
       - run: |
           cd modules/waf
           python waf-light --tools=buildcopy,genpybind,pytest
-      - run: |
-          cp waf modules/waf/playground/pytest
-          cd modules/waf/playground/pytest
+          cp waf playground/pytest
+          cd playground/pytest
           ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
-      - run: PYTHONPATH=playground/pytest/build/src pytest
+      - run: PYTHONPATH=modules/waf/playground/pytest/build/src pytest
                     --ignore=modules/gtest
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
                     --ignore=modules/mavlink/pymavlink/tests/test_wp.py
