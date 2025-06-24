@@ -21,7 +21,7 @@ jobs:
       - run: |
           cp waf playground/pytest
           cd playground/pytest
-          ./waf configure build
-      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py || true
-      - run: PYTHONPATH=build,playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py || true
-      - run: pytest --ignore=playground/genpybind/example_test.py || true
+          ./waf configure build --alltests
+      - run: PYTHONPATH=playground/pytest/build/src       pytest --ignore=playground/genpybind/example_test.py || true
+      - run: PYTHONPATH=build:playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py || true
+      - run:                                              pytest --ignore=playground/genpybind/example_test.py || true
