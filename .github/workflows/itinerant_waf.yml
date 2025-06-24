@@ -16,7 +16,7 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install pytest setuptools
       - run: pip install --editable ./utils
-      - run: python waf-light --tools=waflib.extras
+      - run: python waf-light --tools=waflib.extras,waflib.extras.buildcopy
       - run: tree build
       - run: cat build/*.log
       #- run: |
@@ -24,6 +24,7 @@ jobs:
       #    cd demos/c/
       #    ./waf configure build
       - run: |
+          export WAF_EXTRA_TOOL_DIRS=waflib/extras
           cp waf playground/genpybind
           cd playground/genpybind
           pwd
@@ -38,6 +39,7 @@ jobs:
       - run: cat playground/genpybind/build/*.log || true
 
       - run: |
+          export WAF_EXTRA_TOOL_DIRS=waflib/extras
           cp waf playground/pytest
           cd playground/pytest
           pwd
