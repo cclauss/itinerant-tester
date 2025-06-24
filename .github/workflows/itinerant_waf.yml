@@ -16,12 +16,14 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install pytest setuptools
       - run: pip install --editable ./utils
-
       - run: python waf-light --tools=buildcopy,genpybind,pytest
+      # TODO(cclauss): Fix genpybind/example_test.py later
+      - run: rm playground/genpybind/example_test.py
       - run: |
           cp waf playground/pytest
           cd playground/pytest
-          ./waf configure build --alltests
-      - run: PYTHONPATH=playground/pytest/build/src       pytest --ignore=playground/genpybind/example_test.py || true
-      - run: PYTHONPATH=build:playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py || true
-      - run:                                              pytest --ignore=playground/genpybind/example_test.py || true
+          ./waf configure build --alltests  # These test pass on bar, baz, and foo.
+      # When there is no PYTHONPATH, playground/pytest/test/test_baz.py passes but bar and foo fail.
+      - run:                                        pytest || true
+      # When there is a PYTHONPATH, playground/pytest/test/test_bar.py and foo pass but baz fails.
+      - run: PYTHONPATH=playground/pytest/build/src pytest
