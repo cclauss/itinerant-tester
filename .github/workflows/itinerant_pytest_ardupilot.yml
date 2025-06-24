@@ -40,8 +40,8 @@ jobs:
       #                   pyserial pytest  # pymavlink
       #- run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable modules/DroneCAN/pydronecan
-      - run: pip install --editable modules/waf/utils
       - run: pip install --editable modules/mavlink/pymavlink
+      - run: pip install --editable modules/waf/utils
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
       - run: pip install --editable modules/gtest || true
       #- run: python -m build || true
@@ -53,10 +53,17 @@ jobs:
       #    ln -s $PWD/DSDL ../
       #    pip install --editable .
       #- run: python -m pytest --version && pytest --version || true
-      - run: pytest --ignore=modules/gtest
+      - run: python waf-light --tools=buildcopy,genpybind,pytest
+      - run: |
+          cp waf playground/pytest
+          cd playground/pytest
+          ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
+      - run: PYTHONPATH=playground/pytest/build/src pytest
+                    --ignore=modules/gtest
                     --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
                     --ignore=modules/mavlink/pymavlink/tests/test_wp.py
-                    --ignore=modules/waf/playground
+                    --ignore=playground/genpybind/example_test.py
+                    --ignore=playground/pytest/test/test_baz.py
                     --ignore=Tools/autotest/test_build_options.py
                     --ignore=Tools/autotest/test_param_upgrade.py
                     --ignore=Tools/FilterTestTool/run_filter_test.py
