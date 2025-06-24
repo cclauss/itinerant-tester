@@ -53,7 +53,9 @@ jobs:
       #    ln -s $PWD/DSDL ../
       #    pip install --editable .
       #- run: python -m pytest --version && pytest --version || true
-      - run: python modules/waf/waf-light --tools=buildcopy,genpybind,pytest
+      - run: |
+          cd modules/waf
+          python waf-light --tools=buildcopy,genpybind,pytest
       - run: |
           cp waf modules/waf/playground/pytest
           cd modules/waf/playground/pytest
