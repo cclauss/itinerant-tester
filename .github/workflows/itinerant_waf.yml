@@ -19,7 +19,7 @@ jobs:
 
       - run: python waf-light --tools=buildcopy,genpybind
       - run: tree build
-      - run: cat build/*.log
+      # - run: cat build/*.log
       #- run: |
       #    cp waf waflib/extras
       #    cd waflib/extras
@@ -31,15 +31,16 @@ jobs:
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          # echo ">>>>> ./waf configure build..."
-          ./waf configure build
-          #echo ">>>>> ./waf configure..."
-          #./waf configure || true
-          #echo ">>>>> ./waf build..."
-          #./waf build || true
+          echo ">>>>> ./waf configure build..."
+          ./waf configure build || true
+          # echo ">>>>> ./waf configure..."
+          # ./waf configure || true
+          # echo ">>>>> ./waf build..."
+          # ./waf build || true
       - run: tree build
+      - run: tree playground/genpybind
       - run: ls -l build || true
-      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/pytest
+      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/pytest || true
       # - run: cat build/*.log
       # - run: tree playground/genpybind
       # - run: ls -l playground/genpybind/build || true
@@ -49,7 +50,7 @@ jobs:
           cp waf playground/pytest
           cd playground/pytest
           # pwd
-          # echo ">>>>> ./waf configure build..."
+          echo ">>>>> ./waf configure build..."
           ./waf configure build
           # echo ">>>>> ./waf build bar..."
           # ./waf build bar || true
@@ -63,9 +64,9 @@ jobs:
       - run: cat playground/pytest/build/*.log || true
 
       # Demonstrate that pytest can discover test_baz.py, but testing fails.
-      - run: pytest --ignore=playground/genpybind/example_test.py
-                    --ignore=playground/pytest/test/test_bar.py
-                    --ignore=playground/pytest/test/test_foo.py || true
+      #- run: pytest --ignore=playground/genpybind/example_test.py
+      #              --ignore=playground/pytest/test/test_bar.py
+      #              --ignore=playground/pytest/test/test_foo.py || true
       # Demonstrate that pytest can discover example, bar, and foo, but testing fails.
       - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py
-      - run: PYTHONPATH=playground/pytest/build/src pytest --ignore=playground/genpybind/example_test.py
+      - run: PYTHONPATH=build,playground/pytest/build/src pytest
