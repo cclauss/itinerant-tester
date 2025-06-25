@@ -38,7 +38,7 @@ jobs:
       - run: tree modules/gtest
       - run: tree modules/waf
       - run: pip install --upgrade pip
-      - run: pip install ament-lint-pep257 numpy pytest setuptools
+      - run: pip install ament-lint-pep257 numpy pytest requests setuptools
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
