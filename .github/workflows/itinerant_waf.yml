@@ -30,8 +30,11 @@ jobs:
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          ./waf --tools=genpybind configure build  # --alltests  # pytest pass here on bar, baz, and foo.
-      # When there is a PYTHONPATH, playground/pytest/test/test_bar.py and foo pass but baz fails.
+          ./waf configure build || true  # Fails
+          pip install genpybind
+          ./waf configure build
+      # --alltests  # pytest pass here on bar, baz, and foo.
+      # When there is a PYTHONPATH, playground/pytest/test/test_bar.py and foo pass, but baz fails.
       - run: PYTHONPATH=playground/pytest/build/src pytest || true
       #         --ignore=playground/genpybind/example_test.py 
       - run: PYTHONPATH=playground/pytest/build/src pytest
