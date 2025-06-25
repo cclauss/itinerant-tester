@@ -1,5 +1,12 @@
 name: lint_python_with_pipx
-on: [pull_request, push, workflow_dispatch]
+on:
+  push:
+    paths:
+      - '.github/workflows/lint_python_with_pipx.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/lint_python_with_pipx.yml'
+  workflow_dispatch:
 jobs:
   lint_python_with_pipx:
     runs-on: ubuntu-latest

@@ -4,7 +4,11 @@
 name: pip_install_pylint_on_pypy
 on:
   push:
+    paths:
+      - '.github/workflows/pip_install_pylint_on_pypy.yml'
   pull_request:
+    paths:
+      - '.github/workflows/pip_install_pylint_on_pypy.yml'
   workflow_dispatch:
 jobs:
   pip_install_pylint:
