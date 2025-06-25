@@ -3,7 +3,11 @@
 name: scipy_on_py3_14
 on:
   push:
+    paths:
+      - '.github/workflows/scipy_on_py3_14.yml'
   pull_request:
+    paths:
+      - '.github/workflows/scipy_on_py3_14.yml'
   workflow_dispatch:
 jobs:
   scipy_on_py3_13:

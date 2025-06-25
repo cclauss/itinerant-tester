@@ -1,7 +1,14 @@
 # https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#using-the-python-version-file-input
 # https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json
 name: python_version
-on: [pull_request, push]
+on:
+  push:
+    paths:
+      - '.github/workflows/python_version.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/python_version.yml'
+  workflow_dispatch:
 jobs:
   get_python_version:
     runs-on: ubuntu-latest
