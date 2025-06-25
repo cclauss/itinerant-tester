@@ -20,18 +20,27 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install genpybind pytest setuptools
+      - run: pip install genpybind pybind11 pytest setuptools  # scikit-build-core
+      - run: pip show genpybind
+      - run: which genpybind || echo "genpybind not found in PATH"
       - run: pip install --editable ./utils
       - run: python waf-light --tools=buildcopy,genpybind,pytest
       - run: |
           cp waf playground/pytest
           cd playground/pytest
           ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
+
       - run: pip install genpybind
+      - run: pip show genpybind
+      - run: which genpybind || echo "genpybind not found in PATH"
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          ./waf configure build
+          echo ">>> ./waf configure"
+          ./waf configure
+          echo ">>> ./waf build"
+          ./waf build
+      - run: which genpybind || echo "genpybind not found in PATH"
       # --alltests  # pytest pass here on bar, baz, and foo.
       # When there is a PYTHONPATH, playground/pytest/test/test_bar.py and foo pass, but baz fails.
       - run: PYTHONPATH=playground/pytest/build/src pytest || true
