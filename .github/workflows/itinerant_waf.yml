@@ -20,7 +20,7 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install genpybind pybind11 pytest setuptools  # scikit-build-core
+      - run: pip install genpybind pybind11 pytest scikit-build-core setuptools
       - run: pip show genpybind
       - run: which genpybind || echo "genpybind not found in PATH"
       - run: pip install --editable ./utils
@@ -37,7 +37,7 @@ jobs:
           cp waf playground/genpybind
           cd playground/genpybind
           echo ">>> ./waf configure"
-          ./waf configure --tools=genpybind
+          ./waf configure
           echo ">>> ./waf build"
           ./waf build
       - run: which genpybind || echo "genpybind not found in PATH"
