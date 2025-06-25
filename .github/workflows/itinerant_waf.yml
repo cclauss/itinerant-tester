@@ -20,18 +20,17 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install pytest setuptools
+      - run: pip install genpybind pytest setuptools
       - run: pip install --editable ./utils
       - run: python waf-light --tools=buildcopy,genpybind,pytest
       - run: |
           cp waf playground/pytest
           cd playground/pytest
           ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
+      - run: pip install genpybind
       - run: |
           cp waf playground/genpybind
           cd playground/genpybind
-          ./waf configure build || true  # Fails
-          pip install genpybind
           ./waf configure build
       # --alltests  # pytest pass here on bar, baz, and foo.
       # When there is a PYTHONPATH, playground/pytest/test/test_bar.py and foo pass, but baz fails.
