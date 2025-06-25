@@ -37,7 +37,7 @@ jobs:
           cp waf playground/genpybind
           cd playground/genpybind
           echo ">>> ./waf configure"
-          ./waf configure
+          ./waf configure --tools=genpybind
           echo ">>> ./waf build"
           ./waf build
       - run: which genpybind || echo "genpybind not found in PATH"
