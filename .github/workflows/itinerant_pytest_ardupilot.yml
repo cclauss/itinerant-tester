@@ -77,7 +77,7 @@ jobs:
                     --ignore=Tools/ros2/ardupilot_dds_tests/test
                     # --ignore=Tools/ros2/ardupilot_dds_tests/test
       - env:
-          PYTHONPATH: .github/workflows/itinerant_pytest_ardupilot.yml
+          PYTHONPATH: /Tools/scripts:/modules/mavlink/pymavlink
         run: pytest Tools/autotest/unittest/*_unittest.py
       # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
       #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
