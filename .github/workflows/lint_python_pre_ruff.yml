@@ -1,5 +1,12 @@
 name: lint_python_pre_ruff
-on: [pull_request, push]
+on:
+  push:
+    paths:
+      - '.github/workflows/lint_python_pre_ruff.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/lint_python_pre_ruff.yml'
+  workflow_dispatch:
 jobs:
   lint_python_pre_ruff:
     runs-on: ubuntu-latest

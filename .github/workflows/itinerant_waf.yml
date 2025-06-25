@@ -1,5 +1,11 @@
 name: itinerant_waf
 on:
+  push:
+    paths:
+      - '.github/workflows/itinerant_waf.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/itinerant_waf.yml'
   workflow_dispatch:
 jobs:
   itinerant_waf:

@@ -1,18 +1,22 @@
 # A GitHub Action to demonstrate how to run pyaudio on Python 3.13 before its release in Oct. 2024
 
-name: pyaudio_on_py3_13
+name: pip_install_pyaudio
 on:
   push:
+    paths:
+      - '.github/workflows/pip_install_pyaudio.yml'
   pull_request:
+    paths:
+      - '.github/workflows/pip_install_pyaudio.yml'
   workflow_dispatch:
 jobs:
-  pyaudio_on_py3_13:
+  pip_install_pyaudio:
     strategy:
       fail-fast: false
       matrix:
         # https://github.com/CristiFati/pyaudio/blob/master/INSTALL
         os: [ubuntu-latest]  # [macos-latest, ubuntu-latest, windows-latest]
-        python-version: [3.12, 3.13, 3.14]
+        python-version: [3.x, 3.14]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4

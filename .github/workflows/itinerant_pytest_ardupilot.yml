@@ -1,5 +1,11 @@
 name: itinerant_pytest_ardupilot
 on:
+  push:
+    paths:
+      - '.github/workflows/itinerant_pytest_ardupilot.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/itinerant_pytest_ardupilot.yml'
   workflow_dispatch:
   #  inputs:
   #    repo:

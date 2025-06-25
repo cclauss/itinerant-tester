@@ -1,9 +1,12 @@
 name: pip_install_on_py3_x
 on:
   push:
-    branches: [main, master]
+    paths:
+      - 'pip_install_on_py3_x.yml'
   pull_request:
-    branches: [main, master]
+    paths:
+      - 'pip_install_on_py3_x.yml'
+  workflow_dispatch:
 jobs:
   pip_install_on_py3_x:
     strategy:
