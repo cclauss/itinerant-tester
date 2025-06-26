@@ -1,6 +1,6 @@
 # Itinerant Tester
 
-[![Open in VS Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/cclauss/itinerant-tester)
+[![Open in VS Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://vscode.dev/github/cclauss/itinerant-tester)
 
 Create GitHub Actions for running [ruff](https://beta.ruff.rs) and other tests on each of the [GitHub Trending Python](https://github.com/trending?l=python) repos.
 
