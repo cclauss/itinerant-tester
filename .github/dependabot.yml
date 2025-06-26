@@ -1,9 +1,3 @@
-# Keep GitHub Actions up to date with GitHub's Dependabot dependabot.yml
-# Fixes software supply chain safety warnings like at the bottom right of
-
-#* [Keeping your actions up to date with Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot)
-#* [Configuration options for the dependabot.yml file - package-ecosystem](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
-
 # Keep GitHub Actions up to date with GitHub's Dependabot...
 # https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot
 # https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem
@@ -17,3 +11,7 @@ updates:
           - "*"  # Group all Actions updates into a single larger pull request
     schedule:
       interval: weekly
+# Keep GitHub Actions up to date with GitHub's Dependabot dependabot.yml
+#* [Keeping your software supply chain secure with Dependabot](https://docs.github.com/en/code-security/dependabot)
+#* [Keeping your actions up to date with Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot)
+#* [Configuration options for the `dependabot.yml` file - package-ecosystem](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
