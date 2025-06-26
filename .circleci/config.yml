@@ -9,7 +9,7 @@ jobs:
     docker:
       # Specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: cimg/python:3.12-browsers
+      - image: cimg/python:3.13-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -24,7 +24,7 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "requirements.txt" }}
+            - v1-dependencies-{{ checksum "pyproject.toml" }}
             # Fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
@@ -35,16 +35,16 @@ jobs:
             pipx install pre-commit ruff
             python3 -m venv venv
             . venv/bin/activate
-            pip install pytest  # -r requirements.txt
+            pip install pytest  # -r pyproject.toml
           #  python3 -m venv venv
           #  . venv/bin/activate
           #  pip install --upgrade pip
-          #  pip install pre-commit pytest ruff  # -r requirements.txt
+          #  pip install pre-commit pytest ruff  # -r pyproject.toml
 
       - save_cache:
           paths:
             - ./venv
-          key: v1-dependencies-{{ checksum "requirements.txt" }}
+          key: v1-dependencies-{{ checksum "pyproject.toml" }}
 
       # run tests!
       # https://docs.astral.sh/ruff
