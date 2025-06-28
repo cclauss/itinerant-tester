@@ -1,0 +1,28 @@
+# A GitHub Action to demonstrate how to install tkinter on Python 3.13
+
+name: tkinter
+on:
+  push:
+    paths:
+      - '.github/workflows/tkinter.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/tkinter.yml'
+  workflow_dispatch:
+jobs:
+  tkinter:
+    strategy:
+      fail-fast: false
+      matrix:
+        # https://github.com/CristiFati/pyaudio/blob/master/INSTALL
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        python-version: [3.x, 3.14]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+      - shell: python
+        run: pip install tkinter
