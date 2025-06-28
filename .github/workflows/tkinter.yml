@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - run: pip install tkinter
+      # - run: pip install tkinter
       - shell: python
         run: import tkinter
         
