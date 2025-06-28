@@ -48,6 +48,8 @@ jobs:
         run: pytest --ignore=playground/genpybind/example_test.py
                     --ignore=playground/pytest/test/test_bar.py
                     --ignore=playground/pytest/test/test_foo.py || true
+      - if: github.event.inputs.repo == 'mavlink/mavlink'
+        run: pytest --ignore=pymavlink/generator/C/test/posix/sha256_test.py
       - run: pytest
       # - run: ./test_generate_all.sh
       # - run: ./test_generator.sh || true
