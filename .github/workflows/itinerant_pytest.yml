@@ -51,6 +51,8 @@ jobs:
                     --ignore=playground/pytest/test/test_foo.py || true
       - if: github.event.inputs.repo == 'mavlink/mavlink'
         run: pytest --ignore=pymavlink/generator/C/test/posix/sha256_test.py
+      - if: github.event.inputs.repo == 'mavlink/MAVSDK-Python'
+        run: pip install Jinja2
       - run: pytest
       # - run: ./test_generate_all.sh
       # - run: ./test_generator.sh || true
