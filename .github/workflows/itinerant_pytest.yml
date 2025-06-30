@@ -43,6 +43,7 @@ jobs:
       - if: github.event.inputs.repo == 'ArduPilot/waf'
         run: cd utils && pip install --editable . && pwd
       - run: pwd
+      - run: if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - run: pip install --editable . || pip install pymavlink
       - if: github.event.inputs.repo == 'ArduPilot/waf'
         run: pytest --ignore=playground/genpybind/example_test.py
