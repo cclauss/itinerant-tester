@@ -18,5 +18,6 @@ jobs:
           allow-prereleases: true
       - run: pip install --upgrade pip
       - run: pip install pytest
-      - run: pip install --editable .
+      - run: if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - run: pip install --editable . || true
       - run: pytest
