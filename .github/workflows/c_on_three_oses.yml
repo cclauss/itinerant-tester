@@ -1,0 +1,25 @@
+name: c_on_three_oses
+on: [workflow_dispatch]
+jobs:
+  c_on_three_oses:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
+        ccompiler: [gcc, clang]  #, msvc]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: cat -e "char buff[1024];" >> uninitialized.c
+      - run: cat -e "char buff[1024] = {0};" >> initialized.c
+      - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
+        run: |
+          "${{ matrix.ccompiler }}" -o uninitialized uninitialized.c
+          "${{ matrix.ccompiler }}" -o initialized initialized.c
+          #elif [ "${{ matrix.ccompiler }}" = "msvc" ]; then
+          #  cl /EHsc uninitialized.c /Fe:uninitialized.exe
+          #  cl /EHsc initialized.c /Fe:initialized.exe
+          #fi
+      - run: ls -l
+      - run: "${{ matrix.ccompiler }} *.c"
+      - run: ls -l
