@@ -27,6 +27,4 @@ jobs:
           #  cl /EHsc uninitialized.c /Fe:uninitialized.exe
           #  cl /EHsc initialized.c /Fe:initialized.exe
           #fi
-      - run: ls -l
-      - run: "${{ matrix.ccompiler }} *.c"
-      - run: ls -l
+      - run: ls -l uninitialized initialized
