@@ -1,0 +1,175 @@
+name: c_on_three_oses
+on:
+  push:
+    paths:
+      - '.github/workflows/c_on_three_oses.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/c_on_three_oses.yml'
+  workflow_dispatch:
+jobs:
+  c_on_three_oses:
+    strategy:
+      fail-fast: false
+      matrix:
+        ccompiler: [gcc, clang]  #, msvc]
+        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
+        shell: bash
+        run: |
+          echo "int main() { char buff[1024] = {0}; return 0; }" > initialized.c
+          echo "int main() { char buff[1024]; return 0; }" > uninitialized.c
+          "${{ matrix.ccompiler }}" -o initialized initialized.c
+          "${{ matrix.ccompiler }}" -o uninitialized uninitialized.c
+      
+      - name: Get file sizes and calculate difference
+        shell: python
+        run: |
+          from pathlib import Path
+          import sys
+          
+          # Determine executable names based on OS
+          if sys.platform == 'win32' or '${{ runner.os }}' == 'Windows':
+              initialized_file = Path('initialized.exe')
+              uninitialized_file = Path('uninitialized.exe')
+          else:
+              initialized_file = Path('initialized')
+              uninitialized_file = Path('uninitialized')
+          
+          # Get file sizes
+          try:
+              initialized_size = initialized_file.stat().st_size
+          except FileNotFoundError:
+              initialized_size = 0
+              
+          try:
+              uninitialized_size = uninitialized_file.stat().st_size
+          except FileNotFoundError:
+              uninitialized_size = 0
+          
+          # Calculate difference
+          size_diff = initialized_size - uninitialized_size
+          
+          # Output results in a parseable format
+          result_line = f"${{ matrix.os }}|${{ matrix.ccompiler }}|{initialized_size}|{uninitialized_size}|{size_diff}"
+          print(f"RESULT: {result_line}")
+          
+          # Also show human-readable output
+          print(f"Initialized size: {initialized_size} bytes")
+          print(f"Uninitialized size: {uninitialized_size} bytes")
+          print(f"Size difference: {size_diff} bytes")
+          
+          # Save results to file for artifact
+          Path('result.txt').write_text(result_line)
+      
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: result-${{ matrix.os }}-${{ matrix.ccompiler }}
+          path: result.txt
+
+  build-table:
+    needs: c_on_three_oses
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: results
+      
+      - name: Create markdown table
+        shell: python
+        run: |
+          from pathlib import Path
+          from collections import defaultdict
+          
+          def parse_results():
+              """Parse result files and create a data structure."""
+              results = defaultdict(dict)
+              
+              # Find all result files using pathlib
+              results_dir = Path('results')
+              for result_file in results_dir.rglob('result.txt'):
+                  line = result_file.read_text().strip()
+                  # Format: os|compiler|init_size|uninit_size|diff
+                  parts = line.split('|')
+                  if len(parts) == 5:
+                      os_name, compiler, init_size, uninit_size, size_diff = parts
+                      results[os_name][compiler] = {
+                          'initialized': int(init_size),
+                          'uninitialized': int(uninit_size),
+                          'difference': int(size_diff)
+                      }
+              
+              return results
+          
+          def create_markdown_table(results):
+              """Create a markdown table from the results."""
+              if not results:
+                  return "No results found."
+              
+              # Get all unique compilers
+              all_compilers = set()
+              for os_data in results.values():
+                  all_compilers.update(os_data.keys())
+              compilers = sorted(all_compilers)
+              
+              # Get all OS names
+              os_names = sorted(results.keys())
+              
+              # Create table header
+              table = "# C Compilation Size Differences\n\n"
+              table += "Size difference (initialized - uninitialized) in bytes:\n\n"
+              table += "| OS | " + " | ".join(compilers) + " |\n"
+              table += "|" + "---|" * (len(compilers) + 1) + "\n"
+              
+              # Create table rows
+              for os_name in os_names:
+                  row = f"| {os_name} |"
+                  for compiler in compilers:
+                      if compiler in results[os_name]:
+                          diff = results[os_name][compiler]['difference']
+                          if diff > 0:
+                              cell = f" +{diff} |"
+                          elif diff < 0:
+                              cell = f" {diff} |"
+                          else:
+                              cell = " 0 |"
+                      else:
+                          cell = " N/A |"
+                      row += cell
+                  table += row + "\n"
+              
+              # Add detailed results
+              table += "\n## Detailed Results\n\n"
+              for os_name in os_names:
+                  table += f"### {os_name}\n\n"
+                  for compiler in compilers:
+                      if compiler in results[os_name]:
+                          data = results[os_name][compiler]
+                          table += f"**{compiler}:**\n"
+                          table += f"- Initialized: {data['initialized']} bytes\n"
+                          table += f"- Uninitialized: {data['uninitialized']} bytes\n"
+                          table += f"- Difference: {data['difference']} bytes\n\n"
+              
+              return table
+          
+          # Main execution
+          results = parse_results()
+          markdown_table = create_markdown_table(results)
+          
+          # Save to file and display
+          Path('size_comparison_table.md').write_text(markdown_table)
+          
+          print("Generated markdown table:")
+          print("=" * 50)
+          print(markdown_table)
+      
+      - name: Upload markdown table
+        uses: actions/upload-artifact@v4
+        with:
+          name: size-comparison-table
+          path: size_comparison_table.md
