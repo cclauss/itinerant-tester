@@ -1,5 +1,12 @@
 name: c_on_three_oses
-on: [workflow_dispatch]
+on:
+  push:
+    paths:
+      - '.github/workflows/c_on_three_oses.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/c_on_three_oses.yml'
+  workflow_dispatch:
 jobs:
   c_on_three_oses:
     strategy:
