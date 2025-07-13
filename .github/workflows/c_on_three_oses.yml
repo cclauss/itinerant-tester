@@ -17,8 +17,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - run: echo -e "char buff[1024];"     > uninitialized.c
-      - run: echo -e "char buff[1024] = {0};" > initialized.c
+      - run: echo -e "int main() { char buff[1024]; return 0; }"     > uninitialized.c
+      - run: echo -e "int main() { char buff[1024] = {0}; return 0; }" > initialized.c
       - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
         run: |
           "${{ matrix.ccompiler }}" -o uninitialized uninitialized.c
