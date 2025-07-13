@@ -12,19 +12,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
         ccompiler: [gcc, clang]  #, msvc]
+        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
-      - run: echo "int main() { char buff[1024]; return 0; }"     > uninitialized.c
-      - run: echo "int main() { char buff[1024] = {0}; return 0; }" > initialized.c
       - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
+        shell: bash
         run: |
-          "${{ matrix.ccompiler }}" -o uninitialized uninitialized.c
-          "${{ matrix.ccompiler }}" -o initialized initialized.c
-          #elif [ "${{ matrix.ccompiler }}" = "msvc" ]; then
-          #  cl /EHsc uninitialized.c /Fe:uninitialized.exe
-          #  cl /EHsc initialized.c /Fe:initialized.exe
-          #fi
-      - run: ls -l uninitialized initialized
+          echo "int main() { char buff[1024] = {0}; return 0; }" > initialized.c
+          echo "int main() { char buff[1024]; return 0; }"     > uninitialized.c
+          "${{ matrix.ccompiler }}" -o initialized initialized.c -o uninitialized uninitialized.c
+          ls -l uninitialized initialized
