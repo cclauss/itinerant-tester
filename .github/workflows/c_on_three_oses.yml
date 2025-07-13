@@ -21,6 +21,7 @@ jobs:
         shell: bash
         run: |
           echo "int main() { char buff[1024] = {0}; return 0; }" > initialized.c
-          echo "int main() { char buff[1024]; return 0; }"     > uninitialized.c
-          "${{ matrix.ccompiler }}" -o initialized initialized.c -o uninitialized uninitialized.c
+          echo "int main() { char buff[1024]; return 0; }" > uninitialized.c
+          "${{ matrix.ccompiler }}" -o initialized initialized.c
+          "${{ matrix.ccompiler }}" -o uninitialized uninitialized.c
           ls -l uninitialized initialized
