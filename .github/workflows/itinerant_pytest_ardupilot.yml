@@ -85,7 +85,7 @@ jobs:
       # - run: pip install --editable modules/gsoap || true
       # - run: pip install --editable modules/gtest || true
       - run: rm pyproject.toml
-      - run: sudo apt-get install python3-ament-pep257 python3-ament-copyright
+      - run: sudo apt-get install python3-ament-pep257 python3-ament-copyright || true
       - run: pip install ament-lint-pep257 pyserial
       - run: pytest Tools/ros2 || true
       - run: pytest Tools/FilterTestTool || true
