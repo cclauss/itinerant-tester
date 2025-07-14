@@ -18,11 +18,12 @@ jobs:
         python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]  # tkinter!
     runs-on: ubuntu-latest
     steps:
-      - if: matrix.python-version == 'pypy-3.11' || matrix.python-version == '3.14'
+      - if: matrix.python-version == '3.14' || startsWith(matrix.python-version, 'pypy')
         run: sudo apt-get update && sudo apt-get install --yes libxml2-dev libxslt1-dev
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
       - run: cp ardupilot_pyproject.toml /tmp
+      - run: cp ardupilot_and_submodules_pytest.toml /tmp
       - uses: actions/setup-python@v5
         with:
             python-version: ${{ matrix.python-version }}
@@ -34,31 +35,39 @@ jobs:
           repository: ArduPilot/ardupilot
           submodules: recursive
       - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
+      - run: cp /tmp/ardupilot_and_submodules_pytest.toml .
       - run: cat pyproject.toml
-      - run: ls -l modules
-      - run: rm -fr modules/DroneCAN modules/gtest modules/waf
+      # - run: ls -l modules
+      # COLCON_IGNORE (file)
+      # ChibiOS
+      # CrashDebug
+      # DroneCAN
+      # Micro-CDR
+      # Micro-XRCE-DDS-Client
+      # gbenchmark
+      # gsoap
+      # gtest
+      # littlefs
+      # lwip
+      # mavlink
+      # waf
       - run: pip install --upgrade pip
       - run: pip install MAVProxy mock numpy pexpect pytest requests
       - run: pip install --editable modules/mavlink/pymavlink
-      - run: pytest --ignore modules/mavlink/pymavlink || true
+      - run: pytest
 
-      - uses: actions/checkout@v4
-        with:
-          repository: ArduPilot/ardupilot
-          submodules: recursive
-      - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
-      - run: cat pyproject.toml
       - run: pip install "setuptools<81"  # pydronecan still uses pkg_resources
       - run: pip install --editable modules/DroneCAN/pydronecan
-      - run: pip install --editable modules/mavlink/pymavlink
       - run: pip install --editable modules/waf/utils
-      - run: |
+      - name: waf playground/pytest
+        if: ${{ !startsWith(matrix.python-version, 'pypy') }}
+        run: |
           cd modules/waf
           python waf-light --tools=buildcopy,genpybind,pytest
           cp waf playground/pytest
           cd playground/pytest
           ./waf configure build --alltests  # pytest passes here on bar, baz, and foo.
-      - run: pytest # 158 passed, 7 skipped in 28.95s
+      - run: pytest --config-file=ardupilot_and_submodules_pytest.toml  # 158 passed, 7 skipped in 28.95s
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
@@ -67,12 +76,16 @@ jobs:
       - run: tree Tools/autotest/pysim
       # - run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
-      - run: pytest  # 158 passed, 7 skipped in 28.95s
+      - run: pytest --config-file=ardupilot_and_submodules_pytest.toml   # 158 passed, 7 skipped in 28.95s
 
+      # - run: tree modules/gbenchmark
+      # - run: tree modules/gsoap
       # - run: tree modules/gtest
+      - run: pip install --editable modules/gbenchmark || true
+      - run: pip install --editable modules/gsoap || true
       - run: pip install --editable modules/gtest || true
       - run: pytest modules/gtest || true
-      - run: pip install pyserial && pytest Tools/FilterTestTool || true
+      - run: pip install pyserial && pytest Tools/FilterTestTool || Tools/FilterTestTool/run_filter_test.py || true
       - run: pytest Tools/ros2 || true
       - run: echo Done.
 
