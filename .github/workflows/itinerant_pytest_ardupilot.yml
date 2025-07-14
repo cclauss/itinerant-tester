@@ -23,11 +23,12 @@ jobs:
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
       - run: cp ardupilot_pyproject.toml /tmp
+      # Test this repo with no submodules
       - uses: actions/checkout@v4
         with:
           # repository: ${{ github.event.inputs.repo }}
           repository: ArduPilot/ardupilot
-          submodules: recursive
+          # submodules: recursive
           # ref: dev  # branch, tag, or SHA
       - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
       - run: cat pyproject.toml
@@ -38,6 +39,14 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install pytest
       - run: pytest || true
+
+      
+      - uses: actions/checkout@v4
+        with:
+          # repository: ${{ github.event.inputs.repo }}
+          repository: ArduPilot/ardupilot
+          submodules: recursive
+          # ref: dev  # branch, tag, or SHA
       - run: pip install MAVProxy mock numpy pexpect pytest requests "setuptools<81"
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/mavlink/pymavlink
