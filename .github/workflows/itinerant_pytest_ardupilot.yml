@@ -31,26 +31,24 @@ jobs:
       # Test this repo with only the submodule modules/mavlink
       - uses: actions/checkout@v4
         with:
-          # repository: ${{ github.event.inputs.repo }}
           repository: ArduPilot/ardupilot
           submodules: recursive
-          # ref: dev  # branch, tag, or SHA
       - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
       - run: cat pyproject.toml
       - run: ls -l modules
       - run: rm -fr modules/DroneCAN modules/gtest modules/waf
       - run: pip install --upgrade pip
-      - run: pip install numpy pexpect pytest requests
+      - run: pip install MAVProxy mock numpy pexpect pytest requests
       - run: pip install --editable modules/mavlink/pymavlink
       - run: pytest --ignore modules/mavlink/pymavlink || true
 
       - uses: actions/checkout@v4
         with:
-          # repository: ${{ github.event.inputs.repo }}
           repository: ArduPilot/ardupilot
           submodules: recursive
-          # ref: dev  # branch, tag, or SHA
-      - run: pip install MAVProxy mock numpy pexpect pytest requests "setuptools<81"
+      - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
+      - run: cat pyproject.toml
+      - run: pip install "setuptools<81"  # pydronecan still uses pkg_resources
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/mavlink/pymavlink
       - run: pip install --editable modules/waf/utils
