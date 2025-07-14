@@ -37,7 +37,7 @@ jobs:
       # - run: tree modules/mavlink
       # - run: tree modules/waf
       - run: pip install --upgrade pip
-      - run: pip install MAVProxy mock numpy pexpect pytest requests setuptools<81
+      - run: pip install MAVProxy mock numpy pexpect pytest requests "setuptools<81"
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/mavlink/pymavlink
       - run: pytest || true
