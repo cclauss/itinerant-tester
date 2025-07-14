@@ -146,14 +146,19 @@ jobs:
             python-version: 3.x
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install pytest
+      - run: pip install pydocstyle pytest
+      - run: |
+          https://github.com/ament/ament_index
+          ls -l ament_index
+          pip install --editable ament_index/ament_index_python
       - run: |
           git clone https://github.com/ament/ament_lint.git
           ls -l ament_lint
-          pip install --editable ament_lint/ament_copyright || tree ament_lint/ament_copyright
-          pip install --editable ament_lint/ament_pep257 || tree ament_lint/ament_pep257
-      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py || true
-      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
+          pip install --editable ament_lint/ament_copyright
+          pip install --editable ament_lint/ament_pep257
+          pip install --editable ament_lint/ament_pydocstyle || pip install pydocstyle
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
       - run: cd Tools/ros2 && pytest || true
       - run: pip install ament-lint-pep257
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
