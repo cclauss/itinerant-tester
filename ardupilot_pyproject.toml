@@ -12,7 +12,7 @@ addopts = [
 filterwarnings = [
     "ignore:cannot collect test class.*test_build_options:pytest.PytestCollectionWarning",
     "ignore:cannot collect test class.*test_param_upgrade:pytest.PytestCollectionWarning",
-    "ignore:cannot collect test class.*pydronecan/test/test_node.py):pytest.PytestCollectionWarning",
+    "ignore:cannot collect test class.*pydronecan/test/test_node.py*:pytest.PytestCollectionWarning",
 ]
 markers = ["linter"]
 python_files = ["test_*.py", "*_test.py", "*_unittest.py", "*_unittests.py"]
