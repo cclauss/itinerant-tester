@@ -1,6 +1,7 @@
 
 [tool.pytest.ini_options]
 addopts = [
+    "--ignore=modules/gtest",
     "--ignore=Tools/FilterTestTool",
     "--ignore=Tools/ros2/ardupilot_dds_tests/test"
 ]
