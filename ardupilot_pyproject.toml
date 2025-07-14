@@ -14,5 +14,6 @@ python_files = ["test_*.py", "*_test.py", "*_unittest.py", "*_unittests.py"]
 pythonpath = [
     ".",
     "Tools/autotest",
+    "Tools/ros2/ardupilot_sitl/launch",
     "Tools/scripts"
 ]
