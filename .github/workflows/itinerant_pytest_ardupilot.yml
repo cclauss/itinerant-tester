@@ -3,9 +3,11 @@ on:
   push:
     paths:
       - '.github/workflows/itinerant_pytest_ardupilot.yml'
+      - 'ardupilot_pyproject.toml'
   pull_request:
     paths:
       - '.github/workflows/itinerant_pytest_ardupilot.yml'
+      - 'ardupilot_pyproject.toml'
   workflow_dispatch:
 jobs:
   itinerant_pytest_ardupilot:
