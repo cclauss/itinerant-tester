@@ -113,10 +113,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # repository: ${{ github.event.inputs.repo }}
           repository: ArduPilot/ardupilot
           submodules: recursive
-          # ref: dev  # branch, tag, or SHA
       - uses: actions/setup-python@v5
         with:
             python-version: 3.x
@@ -133,5 +131,35 @@ jobs:
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py || true
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
       - run: cd Tools/ros2 && pytest || true
-      # - run: pip install ament-lint-pep257 pytest
+      - run: pip install ament-lint-pep257
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
+
+  install-ament-tools:  # http://packages.ros.org
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ArduPilot/ardupilot
+          submodules: recursive
+      - uses: actions/setup-python@v5
+        with:
+            python-version: 3.x
+            allow-prereleases: true
+      - run: pip install --upgrade pip
+      - run: pip install pytest
+      - run: |
+          git clone https://github.com/ament/ament_lint.git
+          cd ament_lint
+          pip install . || ls -l
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py || true
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
+      - run: cd Tools/ros2 && pytest || true
+      - run: pip install ament-lint-pep257
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
+
+      #- name: Install ament Python tools
+      #  run: |
+      #    sudo apt install -y \
+      #      python3-ament-pep257 \
+      #      python3-ament-copyright \
+      #      python3-ament-python-index
