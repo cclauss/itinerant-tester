@@ -149,8 +149,9 @@ jobs:
       - run: pip install pytest
       - run: |
           git clone https://github.com/ament/ament_lint.git
-          cd ament_lint
-          pip install . || ls -l
+          ls -l ament_lint
+          pip install --editable ament_lint/ament_copyright || tree ament_lint/ament_copyright
+          pip install --editable ament_lint/ament_pep257 || tree ament_lint/ament_pep257
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py || true
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
       - run: cd Tools/ros2 && pytest || true
