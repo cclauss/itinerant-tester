@@ -18,6 +18,8 @@ jobs:
         python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]  # tkinter!
     runs-on: ubuntu-latest
     steps:
+      - if: matrix.python-version == 'pypy-3.11' || matrix.python-version == '3.14'
+        run: sudo apt-get update && sudo apt-get install --yes libxml2-dev libxslt1-dev
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
       - run: cp ardupilot_pyproject.toml /tmp
@@ -34,6 +36,8 @@ jobs:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
+      - run: pip install pytest
+      - run: pytest || true
       - run: pip install MAVProxy mock numpy pexpect pytest requests "setuptools<81"
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/mavlink/pymavlink
