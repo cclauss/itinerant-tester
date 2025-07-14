@@ -68,15 +68,23 @@ jobs:
           cd playground/pytest
           ./waf configure build --alltests  # pytest passes here on bar, baz, and foo.
       - run: pytest --config-file=ardupilot_and_submodules_pytest.toml  # 158 passed, 7 skipped in 28.95s
+      - run: pip install ament-lint-pep257 pyserial
+      # test_pep257.py has no sense of place so it tests the entire repository!!!
+      - name: test Tools/ros2 for pydocstyle compliance with PEP257
+        run: |
+          pip install ament-lint-pep257
+          cd Tools/ros2
+          pytest ardupilot_dds_tests/test/test_pep257.py
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
       #                   ament-style-uncrustify ament-xmllint build dronecan numpy
       #                   pyserial pytest  # pymavlink
-      - run: tree Tools/autotest/pysim
+      # - run: tree Tools/autotest/pysim
       # - run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
-      - run: pytest --config-file=ardupilot_and_submodules_pytest.toml   # 158 passed, 7 skipped in 28.95s
+      - if: ${{ !startsWith(matrix.python-version, 'pypy') }}
+        run: pytest --config-file=ardupilot_and_submodules_pytest.toml   # 158 passed, 7 skipped in 28.95s
 
       # - run: tree modules/gbenchmark
       # - run: tree modules/gsoap
