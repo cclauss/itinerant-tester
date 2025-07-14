@@ -148,7 +148,7 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install pydocstyle pytest
       - run: |
-          https://github.com/ament/ament_index
+          git clone https://github.com/ament/ament_index
           ls -l ament_index
           pip install --editable ament_index/ament_index_python
       - run: |
