@@ -16,4 +16,10 @@ filterwarnings = [
 ]
 markers = ["linter"]
 python_files = ["test_*.py", "*_test.py", "*_unittest.py", "*_unittests.py"]
-pythonpath = [".", "modules/waf/playground/pytest/build/src", "Tools/autotest", "Tools/scripts"]
+pythonpath = [
+    ".",
+    "modules/waf/playground/pytest/build/src",
+    "modules/waf/playground/pytest/build/src/baz",
+    "Tools/autotest",
+    "Tools/scripts"
+]

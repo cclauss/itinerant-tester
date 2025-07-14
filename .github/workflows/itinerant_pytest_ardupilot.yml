@@ -49,6 +49,7 @@ jobs:
           cp waf playground/pytest
           cd playground/pytest
           ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
+      - run: tree modules/waf/playground/pytest
       - run: pytest || true
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
