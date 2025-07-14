@@ -23,24 +23,27 @@ jobs:
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
       - run: cp ardupilot_pyproject.toml /tmp
-      # Test this repo with no submodules
-      - uses: actions/checkout@v4
-        with:
-          # repository: ${{ github.event.inputs.repo }}
-          repository: ArduPilot/ardupilot
-          # submodules: recursive
-          # ref: dev  # branch, tag, or SHA
-      - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
-      - run: cat pyproject.toml
       - uses: actions/setup-python@v5
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
-      - run: pip install --upgrade pip
-      - run: pip install pytest
-      - run: pytest || true
 
-      
+      # Test this repo with only the submodule modules/mavlink
+      - uses: actions/checkout@v4
+        with:
+          # repository: ${{ github.event.inputs.repo }}
+          repository: ArduPilot/ardupilot
+          submodules: recursive
+          # ref: dev  # branch, tag, or SHA
+      - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
+      - run: cat pyproject.toml
+      - run: ls -l modules
+      - run: rm -fr modules/DroneCAN modules/gtest modules/waf
+      - run: pip install --upgrade pip
+      - run: pip install numpy pexpect pytest requests
+      - run: pip install --editable modules/mavlink/pymavlink
+      - run: pytest --ignore modules/mavlink/pymavlink || true
+
       - uses: actions/checkout@v4
         with:
           # repository: ${{ github.event.inputs.repo }}
