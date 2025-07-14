@@ -44,18 +44,19 @@ jobs:
           cp waf playground/pytest
           cd playground/pytest
           ./waf configure build --alltests  # pytest passes here on bar, baz, and foo.
-      - run: pytest
+      - run: pytest # 158 passed, 7 skipped in 28.95s
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
       #                   ament-style-uncrustify ament-xmllint build dronecan numpy
       #                   pyserial pytest  # pymavlink
-      - run: pip install --editable Tools/autotest/pysim || true
-      - run: tree modules/gtest
-      - run: pip install --editable modules/gtest || true
+      - run: tree Tools/autotest/pysim
+      # - run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
-      - run: pytest
+      - run: pytest  # 158 passed, 7 skipped in 28.95s
 
+      # - run: tree modules/gtest
+      - run: pip install --editable modules/gtest || true
       - run: pytest modules/gtest || true
       - run: pip install pyserial && pytest Tools/FilterTestTool || true
       - run: pytest Tools/ros2 || true
@@ -79,7 +80,7 @@ jobs:
       # - run: pip install ament-black  # Fails!
       # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
-      #                   ament-style-uncrustify ament-xmllint
+      #                   ament-style-uncrustify ament-xmllint pyserial
       - run: pip install ament-lint-pep257 pytest
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
       - run: pytest Tools/ros2 || true
