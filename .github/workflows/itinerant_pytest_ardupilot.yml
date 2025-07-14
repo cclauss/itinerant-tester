@@ -106,7 +106,7 @@ jobs:
         with:
             python-version: 3.x
             allow-prereleases: true
-      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright
+      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright || true
       - run: pip install --upgrade pip
       # - run: pip install ament-black  # Fails!
       # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
