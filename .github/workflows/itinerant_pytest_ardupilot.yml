@@ -88,8 +88,8 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright || true
       - run: pip install ament-lint-pep257 pyserial
       # test_pep257.py has no sense of place so it tests the entire repository.
-      - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
-      - run: cd Tools/ros2 && Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
+      # - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
       - run: pytest Tools/ros2/ardupilot_dds_tests || true
       - run: pytest Tools/ros2 || true
       - run: pytest Tools/FilterTestTool || true
