@@ -15,6 +15,7 @@ pythonpath = [
     ".",
     "Tools/autotest",
     "Tools/ros2/ardupilot_sitl",
+    "Tools/ros2/ardupilot_sitl/launch",
     "ardupilot_sitl",
     "ardupilot_sitl/launch",
     "Tools/scripts"

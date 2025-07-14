@@ -147,20 +147,23 @@ jobs:
             allow-prereleases: true
       - run: pip install --upgrade pip
       - run: pip install pydocstyle pytest
-      - run: pip install "git+https://github.com/ament/ament_index.git#subdirectory=ament_index_python"
-      - run: |
-          # pip install --editable ament_index_python @ git+https://github.com/ament/ament_index.git  || true
-          pip install --editable git+https://github.com/ament/ament_index.git#egg=ament_index_python&subdirectory=ament_index_python || true
-          git clone https://github.com/ament/ament_index
-          # ls -l ament_index
-          pip install --editable ament_index/ament_index_python
-      - run: |
-          git clone https://github.com/ament/ament_lint.git
-          # ls -l ament_lint
-          pip install --editable ament_lint/ament_copyright ament_lint/ament_pep257 || true
-          pip install --editable ament_lint/ament_copyright
-          pip install --editable ament_lint/ament_pep257
-          # pip install --editable ament_lint/ament_pydocstyle || pip install pydocstyle
+      - run: pip install
+                 "git+https://github.com/ament/ament_index.git#subdirectory=ament_index_python"
+                 "git+https://github.com/ament/ament_lint.git#subdirectory=ament_copyright"
+                 "git+https://github.com/ament/ament_lint.git#subdirectory=ament_pep257"
+      #- run: |
+      #    # pip install --editable ament_index_python @ git+https://github.com/ament/ament_index.git  || true
+      #    pip install --editable git+https://github.com/ament/ament_index.git#egg=ament_index_python&subdirectory=ament_index_python || true
+      #    git clone https://github.com/ament/ament_index
+      #    # ls -l ament_index
+      #    pip install --editable ament_index/ament_index_python
+      #- run: |
+      #    git clone https://github.com/ament/ament_lint.git
+      #    # ls -l ament_lint
+      #    pip install --editable ament_lint/ament_copyright ament_lint/ament_pep257 || true
+      #    pip install --editable ament_lint/ament_copyright
+      #    pip install --editable ament_lint/ament_pep257
+      #    # pip install --editable ament_lint/ament_pydocstyle || pip install pydocstyle
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
       - run: cd Tools/ros2 && pytest || true
