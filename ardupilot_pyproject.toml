@@ -20,3 +20,13 @@ pythonpath = [
     "ardupilot_sitl/launch",
     "Tools/scripts"
 ]
+
+[dependency-groups]
+test = [
+  "MAVProxy",
+  "mock",
+  "numpy",
+  "pexpect",
+  "pytest",
+  "requests",
+]
