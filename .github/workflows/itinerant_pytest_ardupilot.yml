@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]  # tkinter!
+        python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]
     runs-on: ubuntu-latest
     steps:
       - if: matrix.python-version == '3.14' || startsWith(matrix.python-version, 'pypy')
@@ -56,6 +56,13 @@ jobs:
       - run: pip install --editable modules/mavlink/pymavlink
       - run: pytest  # 53 passed in 2.41s
 
+      # test_pep257.py has no sense of place so it tests the entire repository!!!
+      - name: test Tools/ros2 for pydocstyle compliance with PEP257
+        run: |
+          pip install ament-lint-pep257
+          cd Tools/ros2  # Run test_pep257 only on the Tools/ros2 directory!
+          pytest ardupilot_dds_tests/test/test_pep257.py
+
       - run: pip install "setuptools<81"  # pydronecan still uses pkg_resources
       - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/waf/utils
@@ -67,14 +74,9 @@ jobs:
           cp waf playground/pytest
           cd playground/pytest
           ./waf configure build --alltests  # pytest passes here on bar, baz, and foo.
-      - run: pytest --config-file=ardupilot_and_submodules_pytest.toml  # 158 passed, 7 skipped in 28.95s
-      - run: pip install ament-lint-pep257 pyserial
-      # test_pep257.py has no sense of place so it tests the entire repository!!!
-      - name: test Tools/ros2 for pydocstyle compliance with PEP257
-        run: |
-          pip install ament-lint-pep257
-          cd Tools/ros2
-          pytest ardupilot_dds_tests/test/test_pep257.py
+      - if: ${{ !startsWith(matrix.python-version, 'pypy') }}
+        run: pytest --config-file=ardupilot_and_submodules_pytest.toml  # 158 passed, 7 skipped in 28.95s
+      # - run: pip install ament-lint-pep257 pyserial
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
@@ -100,6 +102,7 @@ jobs:
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
       - run: pytest Tools/ros2/ardupilot_dds_tests || true
       - run: pytest Tools/ros2 || true
+      # Does FilterTestTool need tkinter?
       - run: pytest Tools/FilterTestTool || true
       - run: pytest Tools/FilterTestTool/run_filter_test.py || true
       - run: pytest modules/gtest || true
@@ -124,7 +127,11 @@ jobs:
       # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
       #                   ament-style-uncrustify ament-xmllint pyserial
-      - run: pip install ament-lint-pep257 pytest
+      - run: pip install pytest
+      # test_pep257.py has no sense of place so it tests the entire repository.
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
-      - run: pip install --editable Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
-      - run: pytest Tools/ros2 || true
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py || true
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
+      - run: cd Tools/ros2 && pytest || true
+      # - run: pip install ament-lint-pep257 pytest
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
