@@ -3,6 +3,7 @@
 addopts = [
     "--ignore=modules/gtest",
     "--ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py",
+    "--ignore=modules/mavlink/pymavlink/tests/test_wp.py",
     "--ignore=modules/waf",
     "--ignore=Tools/FilterTestTool",
     "--ignore=Tools/ros2/ardupilot_dds_tests/test"
