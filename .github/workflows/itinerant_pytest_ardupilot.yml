@@ -37,7 +37,9 @@ jobs:
       # - run: tree modules/mavlink
       # - run: tree modules/waf
       - run: pip install --upgrade pip
-      - run: pip install MAVProxy mock numpy pexpect pytest requests setuptools
+      - run: pip install MAVProxy mock numpy pexpect pytest requests setuptools<81
+      - run: pip install --editable modules/DroneCAN/pydronecan
+      - run: pip install --editable modules/mavlink/pymavlink
       - run: pytest || true
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
@@ -45,9 +47,7 @@ jobs:
       #                   ament-style-uncrustify ament-xmllint build dronecan numpy
       #                   pyserial pytest  # pymavlink
       #- run: pip install --editable Tools/autotest/pysim || true
-      - run: pip install --editable modules/DroneCAN/pydronecan
       - run: pip install --editable modules/gtest || true
-      - run: pip install --editable modules/mavlink/pymavlink
       - run: pip install --editable modules/waf/utils
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
       - run: pytest

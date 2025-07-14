@@ -5,13 +5,15 @@ addopts = [
     "--ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py",
     "--ignore=modules/mavlink/pymavlink/tests/test_wp.py",
     "--ignore=modules/waf",
+    "--ignore=modules/waf/playground/genpybind/example_test.py",
     "--ignore=Tools/FilterTestTool",
     "--ignore=Tools/ros2/ardupilot_dds_tests/test"
 ]
 filterwarnings = [
     "ignore:cannot collect test class.*test_build_options:pytest.PytestCollectionWarning",
     "ignore:cannot collect test class.*test_param_upgrade:pytest.PytestCollectionWarning",
+    "ignore:cannot collect test class.*pydronecan/test/test_node.py):pytest.PytestCollectionWarning",
 ]
 markers = ["linter"]
 python_files = ["test_*.py", "*_test.py", "*_unittest.py", "*_unittests.py"]
-pythonpath = [".", "Tools/autotest", "Tools/scripts"]
+pythonpath = [".", "modules/waf/playground/pytest/build/src", "Tools/autotest", "Tools/scripts"]
