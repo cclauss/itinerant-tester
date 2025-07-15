@@ -52,7 +52,6 @@ jobs:
       # mavlink
       # waf
       - run: pip install --upgrade pip
-      - run: pip install --group-only=test || true
       - run: pip install --group=test || true
       - run: pip install MAVProxy mock numpy pexpect pytest requests
       - run: pip install --editable modules/mavlink/pymavlink
