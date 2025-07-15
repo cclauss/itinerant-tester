@@ -3,9 +3,11 @@ on:
   push:
     paths:
       - '.github/workflows/itinerant_pytest_ardupilot.yml'
+      - 'ardupilot_pyproject.toml'
   pull_request:
     paths:
       - '.github/workflows/itinerant_pytest_ardupilot.yml'
+      - 'ardupilot_pyproject.toml'
   workflow_dispatch:
 jobs:
   itinerant_pytest_ardupilot:
@@ -13,139 +15,98 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.12"]  # , "3.13", "3.14", "pypy-3.11"]  # tkinter!
+        python-version: ["3.12", "3.13", "3.14", "pypy-3.11"]
     runs-on: ubuntu-latest
     steps:
+      - if: matrix.python-version == '3.14' || startsWith(matrix.python-version, 'pypy')
+        run: sudo apt-get update && sudo apt-get install --yes libxml2-dev libxslt1-dev
       # - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v4
-        with:
-          # repository: ${{ github.event.inputs.repo }}
-          repository: ArduPilot/ardupilot
-          submodules: recursive
-          # ref: dev  # branch, tag, or SHA
+      - run: cp ardupilot_pyproject.toml /tmp
+      - run: cp ardupilot_and_submodules_pytest.toml /tmp
       - uses: actions/setup-python@v5
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
-      # - run: tree
-      # - run: tree modules/mavlink
-      # - run: tree modules/DroneCAN
-      - run: tree modules/gtest
-      - run: tree modules/waf
+
+      # Test this repo with only the submodule modules/mavlink
+      - uses: actions/checkout@v4
+        with:
+          repository: ArduPilot/ardupilot
+          submodules: recursive
+      - run: cat /tmp/ardupilot_pyproject.toml >> pyproject.toml
+      - run: cp /tmp/ardupilot_and_submodules_pytest.toml .
+      - run: cat pyproject.toml
+      # - run: ls -l modules
+      # COLCON_IGNORE (file)
+      # ChibiOS
+      # CrashDebug
+      # DroneCAN
+      # Micro-CDR
+      # Micro-XRCE-DDS-Client
+      # gbenchmark
+      # gsoap
+      # gtest
+      # littlefs
+      # lwip
+      # mavlink
+      # waf
       - run: pip install --upgrade pip
-      - run: pip install ament-lint-pep257 mock numpy pytest requests setuptools
+      - run: pip install --group=test || true
+      - run: pip install MAVProxy mock numpy pexpect pytest requests
+      - run: pip install --editable modules/mavlink/pymavlink
+      - run: pytest  # 53 passed in 2.41s
+
+      - run: pip install pydocstyle
+                 git+https://github.com/ament/ament_lint.git#subdirectory=ament_copyright
+                 git+https://github.com/ament/ament_lint.git#subdirectory=ament_pep257
+      # test_copyright.py and test_pep257.py have no sense of place so they test the entire repository!!!
+      - name: test Tools/ros2 for copyright and pydocstyle compliance with PEP257
+        run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_*.py
+
+      - run: pip install "setuptools<81"  # pydronecan still uses pkg_resources
+      - run: pip install --editable modules/DroneCAN/pydronecan
+      - run: pip install --editable modules/waf/utils
+      - name: waf playground/pytest
+        if: ${{ !startsWith(matrix.python-version, 'pypy') }}
+        run: |
+          cd modules/waf
+          python waf-light --tools=buildcopy,genpybind,pytest
+          cp waf playground/pytest
+          cd playground/pytest
+          ./waf configure build --alltests  # pytest passes here on bar, baz, and foo.
+      - if: ${{ !startsWith(matrix.python-version, 'pypy') }}
+        run: pytest --config-file=ardupilot_and_submodules_pytest.toml  # 158 passed, 7 skipped in 28.95s
+      # - run: pip install ament-lint-pep257 pyserial
       # - run: pip install ament-black  # Fails!
       #- run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
       #                   ament-style-uncrustify ament-xmllint build dronecan numpy
       #                   pyserial pytest  # pymavlink
-      #- run: pip install --editable Tools/autotest/pysim || true
-      - run: pip install --editable modules/DroneCAN/pydronecan
-      - run: pip install --editable modules/mavlink/pymavlink
-      - run: pip install --editable modules/waf/utils
+      # - run: tree Tools/autotest/pysim
+      # - run: pip install --editable Tools/autotest/pysim || true
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
-      - run: pip install --editable modules/gtest || true
-      #- run: python -m build || true
-      #- run: pip install --editable . || true
-      #- name: Download the DroneCAN DSDL Specifications
-      #  run: |
-      #    cd modules/DroneCAN
-      #    git clone https://github.com/DroneCAN/DSDL.git
-      #    ln -s $PWD/DSDL ../
-      #    pip install --editable .
-      #- run: python -m pytest --version && pytest --version || true
-      - run: |
-          cd modules/waf
-          python waf-light --tools=buildcopy,genpybind,pytest
-          cp waf playground/pytest
-          cd playground/pytest
-          ./waf configure build --alltests  # pytest pass here on bar, baz, and foo.
-      - run: PYTHONPATH=modules/waf/playground/pytest/build/src pytest
-                    --ignore=modules/gtest
-                    --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
-                    --ignore=modules/mavlink/pymavlink/tests/test_wp.py
-                    --ignore=modules/waf/playground/genpybind/example_test.py
-                    --ignore=modules/waf/playground/pytest/test/test_baz.py
-                    --ignore=Tools/autotest/test_build_options.py
-                    --ignore=Tools/autotest/test_param_upgrade.py
-                    --ignore=Tools/FilterTestTool/run_filter_test.py
-                    --ignore=Tools/ros2/ardupilot_dds_tests/test
-                    # --ignore=Tools/ros2/ardupilot_dds_tests/test
-      - env:
-          PYTHONPATH: /Tools/scripts:/modules/mavlink/pymavlink
-        run: pytest Tools/autotest/unittest/*_unittest.py
-      # DroneCAN==1.0.26 tests fail on pkg_resources -- Experiment
-      #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_parser.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_signature.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/test_driver.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/test_node.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/test_transport.py
-      #              --ignore=modules/gtest/googlemock/test/gmock_leak_test.py
-      #              --ignore=modules/gtest/googlemock/test/gmock_output_test.py
-      #              --ignore=modules/gtest/googlemock/test/gmock-function-mocker_nc_test.py
-      #              --ignore=modules/gtest/googlemock/test/pump_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_help_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_skip_check_output_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_skip_environment_check_output_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_testbridge_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_xml_outfiles_test.py
-      #              --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
-      #              --ignore=modules/waf/playground/genpybind/example_test.py
-      #              --ignore=modules/waf/playground/pytest/test/test_bar.py
-      #              --ignore=modules/waf/playground/pytest/test/test_baz.py
-      #              --ignore=modules/waf/playground/pytest/test/test_foo.py
-      #              --ignore=Tools/autotest/test_build_options.py
-      #              --ignore=Tools/autotest/test_param_upgrade.py
-      #              --ignore=Tools/FilterTestTool/run_filter_test.py
-      #              --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
-      #              --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-      #              --ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
-      # DroneCAN==1.0.26 tests fail on pkg_resources -- Fails!
-      #- run: pytest --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_common.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_load_dsdl.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_parser.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/dsdl/test_signature.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/test_driver.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/test_node.py
-      #              --ignore=modules/DroneCAN/pydronecan/test/test_transport.py
-      #              --ignore=modules/gtest/googlemock/test/gmock_leak_test.py
-      #              --ignore=modules/gtest/googlemock/test/gmock_output_test.py
-      #              --ignore=modules/gtest/googlemock/test/gmock-function-mocker_nc_test.py
-      #              --ignore=modules/gtest/googlemock/test/pump_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_help_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_skip_check_output_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_skip_environment_check_output_test.py
-      #              --ignore=modules/gtest/googletest/test/gtest_testbridge_test.py
-      #              --ignore=modules/mavlink/pymavlink/generator/C/test/posix/sha256_test.py
-      #              --ignore=modules/mavlink/pymavlink/tests/test_mavlogdump.py
-      #              --ignore=modules/waf/playground/genpybind/example_test.py
-      #              --ignore=modules/waf/playground/pytest/test/test_bar.py
-      #              --ignore=modules/waf/playground/pytest/test/test_foo.py
-      #              --ignore=Tools/autotest/test_build_options.py
-      #              --ignore=Tools/autotest/test_param_upgrade.py
-      #              --ignore=Tools/FilterTestTool/run_filter_test.py
-      #              --ignore=Tools/ros2/ardupilot_dds_tests/test/ardupilot_dds_tests
-      #              --ignore=Tools/ros2/ardupilot_dds_tests/test/test_copyright.py
-      - run: echo Fixes? 
-                    #--ignore=modules/gtest/googletest/test/gtest_xml_outfiles_test.py
-                    #--ignore=modules/mavlink/pymavlink/tests/snapshottests/test_wlua.py
-                    #--ignore=modules/mavlink/pymavlink/tests/test_mavxml.py
-                    #--ignore=modules/mavlink/pymavlink/tests/test_quaternion.py
-                    #--ignore=modules/mavlink/pymavlink/tests/test_rotmat.py
-                    #--ignore=modules/mavlink/pymavlink/tests/test_trim.py
-                    #--ignore=modules/mavlink/pymavlink/tests/test_wp.py
-                    #--ignore=modules/waf/playground/pytest/test/test_baz.py
-                    #--ignore=Tools/ros2/ardupilot_dds_tests/test/test_pep257.py
-                    #--ignore=Tools/scripts/build_tests/test_ccache.py
+      - if: ${{ !startsWith(matrix.python-version, 'pypy') }}
+        run: pytest --config-file=ardupilot_and_submodules_pytest.toml   # 158 passed, 7 skipped in 28.95s
 
-      - run: pytest modules/gtest || true
-      - run: pytest modules/mavlink || true
-      - run: pytest modules/waf || true
-      - run: pytest Tools/autotest || true
-      - run: pip install pyserial && pytest Tools/FilterTestTool || true
+      # - run: tree modules/gbenchmark
+      # - run: tree modules/gsoap
+      # - run: tree modules/gtest
+      - run: pip install --editable modules/gbenchmark || true
+      # - run: pip install --editable modules/gsoap || true
+      # - run: pip install --editable modules/gtest || true
+      - run: rm pyproject.toml
+      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright || true
+      - run: pip install ament-lint-pep257 pyserial
+      # test_pep257.py has no sense of place so it tests the entire repository.
+      # - run: pytest Tools/ros2/ardupilot_dds_tests/test/test_pep257.py || true
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
+      - run: pytest Tools/ros2/ardupilot_dds_tests || true
       - run: pytest Tools/ros2 || true
+      # Does FilterTestTool need tkinter?
+      - run: pytest Tools/FilterTestTool || true
+      - run: pytest Tools/FilterTestTool/run_filter_test.py || true
+      - run: pytest modules/gtest || true
       - run: echo Done.
 
   pytest_ardupilot_ros2:
@@ -153,20 +114,53 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # repository: ${{ github.event.inputs.repo }}
           repository: ArduPilot/ardupilot
           submodules: recursive
-          # ref: dev  # branch, tag, or SHA
       - uses: actions/setup-python@v5
         with:
             python-version: 3.x
             allow-prereleases: true
-      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright
+      - run: sudo apt-get update && sudo apt-get install python3-ament-pep257 python3-ament-copyright || true
       - run: pip install --upgrade pip
       # - run: pip install ament-black  # Fails!
       # - run: pip install ament-clang-tidy ament-lint ament-lint-cmake-py
       #                   ament-lint-flake8 ament-lint-pep257 ament-mypy ament-pycodestyle
-      #                   ament-style-uncrustify ament-xmllint
-      - run: pip install ament-lint-pep257 pytest
+      #                   ament-style-uncrustify ament-xmllint pyserial
+      - run: pip install pytest
+      # test_pep257.py has no sense of place so it tests the entire repository.
       - run: pip install --editable Tools/ros2/ardupilot_dds_tests
-      - run: pytest Tools/ros2 || true
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_copyright.py || true
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py || true
+      - run: cd Tools/ros2 && pytest || true
+      - run: pip install ament-lint-pep257
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
+
+  install-ament-tools:  # http://packages.ros.org
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ArduPilot/ardupilot
+          submodules: recursiv
+      - uses: actions/setup-python@v5
+        with:
+            python-version: 3.x
+            allow-prereleases: true
+      - run: pip install --upgrade pip
+      - run: pip install pydocstyle pytest
+      - run: pip install
+                 "git+https://github.com/ament/ament_index.git#subdirectory=ament_index_python"
+                 "git+https://github.com/ament/ament_lint.git#subdirectory=ament_copyright"
+                 "git+https://github.com/ament/ament_lint.git#subdirectory=ament_pep257"
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_*.py
+      - run: pip install --editable Tools/ros2/ardupilot_dds_tests
+      - run: cd Tools/ros2 && ls -l && pytest || true
+      # - run: pip install ament-lint-pep257
+      # - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
+
+      #- name: Install ament Python tools
+      #  run: |
+      #    sudo apt install -y \
+      #      python3-ament-pep257 \
+      #      python3-ament-copyright \
+      #      python3-ament-python-index
