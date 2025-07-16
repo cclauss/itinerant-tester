@@ -135,6 +135,23 @@ jobs:
       - run: pip install ament-lint-pep257
       - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_pep257.py
 
+  lint_ros2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ArduPilot/ardupilot
+      - uses: actions/setup-python@v5
+        with:
+            python-version: 3.x
+            allow-prereleases: true
+      - run: python3 -m pip install --upgrade pip
+      - run: python3 -m pip install pydocstyle pytest
+      - run: python3 -m pip install
+                 "git+https://github.com/ament/ament_lint.git#subdirectory=ament_copyright"
+                 "git+https://github.com/ament/ament_lint.git#subdirectory=ament_pep257"
+      - run: cd Tools/ros2 && pytest ardupilot_dds_tests/test/test_*.py
+
   install-ament-tools:  # http://packages.ros.org
     runs-on: ubuntu-22.04
     steps:
