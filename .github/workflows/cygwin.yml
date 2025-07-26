@@ -1,0 +1,29 @@
+name: cygwin
+on:
+  push:
+    paths:
+      - '.github/workflows/cygwin.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/cygwin.yml'
+  workflow_dispatch:
+jobs:
+  cygwin:
+    # name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        cygwin_package:
+          - ""
+          - "cygiconv"
+          - "cygintl"
+          - "libiconv2"
+          - "libintl8"
+          - "python3.9"
+          - "python3.11"
+          - "python3.13"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cygwin/cygwin-install-action@v6
+        with:
+          packages: ${{ matrix.cygwin_package }}
