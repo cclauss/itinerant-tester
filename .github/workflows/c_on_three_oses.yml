@@ -16,7 +16,7 @@ jobs:
         os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
         shell: bash
         run: |
@@ -76,7 +76,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           path: results
       

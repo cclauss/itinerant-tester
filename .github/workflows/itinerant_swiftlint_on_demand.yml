@@ -19,7 +19,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: ${{ github.event.inputs.repo }}
       - uses: actions/setup-python@v5

@@ -15,7 +15,7 @@ jobs:
     outputs:
       PYVERSION: ${{ steps.get_python_version.outputs.PYVERSION }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - id: get_python_version
         run: |
           echo "PYVERSION=$(git grep 'export PYVERSION ?=' Makefile.envs | cut -d' ' -f4)"  >> "$GITHUB_OUTPUT"

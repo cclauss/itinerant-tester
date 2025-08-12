@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: pip install --user ruff
