@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt-get update && sudo apt-get install -y llvm pybind11-dev
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           repository: ArduPilot/waf
           submodules: recursive

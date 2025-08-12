@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: actions/setup-python@v5
       with:
         python-version: 3.x
@@ -46,7 +46,7 @@ jobs:
   pythons_on_macOS_12:
     runs-on: macos-12
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: actions/setup-python@v5
       with:
         python-version: |
@@ -70,7 +70,7 @@ jobs:
   pythons_on_macOS_11:
     runs-on: macos-11
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - uses: actions/setup-python@v5
       with:
         python-version: |
