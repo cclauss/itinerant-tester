@@ -140,6 +140,7 @@ jobs:
           3.9
           3.8
           3.7
+        allow-prereleases: true
     - run: |
         python3.7 --version
         python3.8 --version
