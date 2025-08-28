@@ -1,0 +1,2 @@
+| macOS Version | runner.arch |
+|--------------|-------------|

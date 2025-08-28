@@ -108,6 +108,76 @@ jobs:
       env:
         RUNNER_CONTEXT: ${{ toJson(runner) }}
       run: echo "$RUNNER_CONTEXT"
-        python3.10 --version || true
-        python3.11 --version || true
-        python3.12 --version || true
+  write_macOS_CPUs.md:
+    needs: macOS
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+    - name: Download all macOS_CPUs artifacts
+      uses: actions/download-artifact@v4
+      with:
+        pattern: macOS_CPUs-*
+        merge-multiple: true
+        path: artifacts
+    - name: Process and merge macOS_CPUs files
+      shell: python
+      run: |
+        import os
+        import glob
+        from pathlib import Path
+        
+        # Find all macOS_CPUs.md files in artifacts directory
+        artifact_files = glob.glob("artifacts/**/macOS_CPUs.md", recursive=True)
+        print(f"Found artifact files: {artifact_files}")
+        
+        # Read all content and collect unique rows
+        all_rows = set()
+        header = "| macOS Version | runner.arch |"
+        separator = "|--------------|-------------|"
+        
+        for file_path in artifact_files:
+            with open(file_path, 'r') as f:
+                content = f.read().strip()
+                lines = content.split('\n')
+                # Skip header and separator lines, collect data rows
+                for line in lines:
+                    line = line.strip()
+                    if line and line != header and line != separator:
+                        all_rows.add(line)
+        
+        # Sort rows for consistent output
+        sorted_rows = sorted(list(all_rows))
+        
+        # Create combined content
+        combined_content = f"{header}\n{separator}\n"
+        if sorted_rows:
+            combined_content += "\n".join(sorted_rows) + "\n"
+        
+        # Write combined file
+        with open("macOS_CPUs_combined.md", 'w') as f:
+            f.write(combined_content)
+        
+        print(f"Combined content:\n{combined_content}")
+        
+        # Read existing file for comparison
+        existing_content = ""
+        if os.path.exists("macOS_CPUs.md"):
+            with open("macOS_CPUs.md", 'r') as f:
+                existing_content = f.read()
+        
+        print(f"Existing content:\n{existing_content}")
+        
+        # Compare and update if different
+        if combined_content.strip() != existing_content.strip():
+            print("Contents differ, updating macOS_CPUs.md")
+            with open("macOS_CPUs.md", 'w') as f:
+                f.write(combined_content)
+        else:
+            print("Contents are the same, no update needed")
+    - name: Upload combined macOS_CPUs.md
+      uses: actions/upload-artifact@v4
+      with:
+        name: macOS_CPUs_final
+        path: |
+          macOS_CPUs.md
+          macOS_CPUs_combined.md
