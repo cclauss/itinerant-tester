@@ -48,16 +48,16 @@ jobs:
 
       # run tests!
       # https://docs.astral.sh/ruff
-      # - run:
-          # command: ruff check
+      - run:
+          command: ruff check
           # name: ruff
           # command: |
           #  . venv/bin/activate
           #  python -m ruff check
 
       # https://pre-commit.com
-      - run:
-          command: pre-commit run --all-files
+      # - run:
+          # command: pre-commit run --all-files
           # command: |
           #  . venv/bin/activate
           #  pre-commit run --all-files
