@@ -19,18 +19,18 @@ jobs:
       with:
         python-version: 3.x
     - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
-    - name: Create macOS_CPUs.md
+    - name: Create ${{ matrix.os }}_cpu.md
       run: |
-        echo "| macOS Version | runner.arch |" > macOS_CPUs.md
-        echo "|--------------|-------------|" >> macOS_CPUs.md
-        echo "| ${{ matrix.os }} | ${{ runner.arch }} |" >> macOS_CPUs.md
-    - name: Display macOS_CPUs.md content
-      run: cat macOS_CPUs.md
-    - name: Upload macOS_CPUs.md artifact
+        echo "| macOS Version | runner.arch |" > ${{ matrix.os }}_cpu.md
+        echo "|--------------|-------------|" >> ${{ matrix.os }}_cpu.md
+        echo "| ${{ matrix.os }} | ${{ runner.arch }} |" >> ${{ matrix.os }}_cpu.md
+    - name: Display ${{ matrix.os }}_cpu.md content
+      run: cat ${{ matrix.os }}_cpu.md
+    - name: Upload ${{ matrix.os }}_cpu.md artifact
       uses: actions/upload-artifact@v4
       with:
-        name: macOS_CPUs-${{ matrix.os }}
-        path: macOS_CPUs.md
+        name: ${{ matrix.os }}_cpu
+        path: ${{ matrix.os }}_cpu.md
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -113,21 +113,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v5
-    - name: Download all macOS_CPUs artifacts
+    - name: Download all CPU artifacts
       uses: actions/download-artifact@v4
       with:
-        pattern: macOS_CPUs-*
+        pattern: "*_cpu"
         merge-multiple: true
         path: artifacts
-    - name: Process and merge macOS_CPUs files
+    - name: Process and merge CPU files
       shell: python
       run: |
         import os
         import glob
         from pathlib import Path
         
-        # Find all macOS_CPUs.md files in artifacts directory
-        artifact_files = glob.glob("artifacts/**/macOS_CPUs.md", recursive=True)
+        # Find all *_cpu.md files in artifacts directory
+        artifact_files = glob.glob("artifacts/**/*_cpu.md", recursive=True)
         print(f"Found artifact files: {artifact_files}")
         
         # Read all content and collect unique rows
