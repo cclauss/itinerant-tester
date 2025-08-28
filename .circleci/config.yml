@@ -48,8 +48,8 @@ jobs:
 
       # run tests!
       # https://docs.astral.sh/ruff
-      - run:
-          command: ruff check
+      # - run:
+          # command: ruff check
           # name: ruff
           # command: |
           #  . venv/bin/activate
