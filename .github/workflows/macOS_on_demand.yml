@@ -19,6 +19,18 @@ jobs:
       with:
         python-version: 3.x
     - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
+    - name: Create macOS_CPUs.md
+      run: |
+        echo "| macOS Version | runner.arch |" > macOS_CPUs.md
+        echo "|--------------|-------------|" >> macOS_CPUs.md
+        echo "| ${{ matrix.os }} | ${{ runner.arch }} |" >> macOS_CPUs.md
+    - name: Display macOS_CPUs.md content
+      run: cat macOS_CPUs.md
+    - name: Upload macOS_CPUs.md artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: macOS_CPUs-${{ matrix.os }}
+        path: macOS_CPUs.md
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
