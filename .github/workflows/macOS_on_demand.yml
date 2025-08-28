@@ -108,7 +108,7 @@ jobs:
       env:
         RUNNER_CONTEXT: ${{ toJson(runner) }}
       run: echo "$RUNNER_CONTEXT"
-  write_macOS_CPUs.md:
+  write_macOS_CPUs_md:
     needs: macOS
     runs-on: ubuntu-latest
     steps:
