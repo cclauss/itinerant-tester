@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v5
     - uses: actions/setup-python@v5
       with:
-        python-version: 3.13
+        python-version: 3.14
         allow-prereleases: true
     - if: ${{ github.event.inputs.apt_package }}
       run: |
