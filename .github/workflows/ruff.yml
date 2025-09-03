@@ -1,18 +1,28 @@
-# https://beta.ruff.rs
-name: ruff
+# Add a GitHub Action to run codespell and ruff
+# * https://github.com/codespell-project/codespell
+# * https://docs.astral.sh/ruff
+#
+# Test results: https://github.com/cclauss/???/actions
+name: ci
 on:
   push:
-    branches: [main, master]
+    # branches: [main, master]
   pull_request:
     branches: [main, master]
+  workflow_dispatch:
 jobs:
-  ruff:
+  codespell:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v5
-    - run: pip install --user codespell[toml] ruff
-    - run: codespell || true  # --ignore-words-list="" --skip="*.css,*.js,*.lock,*.po"
-    - run: ruff check --output-format=github --select=E9,F63,F7 --target-version=py38 .
-    - run: ruff check --output-format=github --select=E9,F63,F7,F82 --target-version=py38 .
-    - run: ruff check --output-format=github --line-length=200 --target-version=py38 .
-    - run: ruff check --output-format=github --target-version=py38 .
+    - run: pipx run codespell
+  ruff_check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+    - run: pipx run ruff check --output-format=github
+  ruff_format:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+    - run: pipx run ruff format
