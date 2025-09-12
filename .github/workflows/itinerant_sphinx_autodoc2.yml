@@ -29,7 +29,7 @@ jobs:
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v5
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
             python-version: ${{ matrix.python-version }}
       - run: cp scripts/sphinx_conf.py /tmp/

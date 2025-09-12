@@ -4,7 +4,7 @@ jobs:
   lxml_from_pypi_on_cpython_nightly:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: 3.11-dev
       - run: pip install Cython wheel  # Not vital but useful
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           repository: lxml/lxml
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: 3.11-dev
       - run: pip install Cython wheel

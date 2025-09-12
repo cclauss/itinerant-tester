@@ -33,6 +33,6 @@ jobs:
       # - env:
       #    PYVERSION: ${{ needs.get_python_version.outputs.PYVERSION }}
       - name: Setup Python ${{ needs.get_python_version.outputs.PYVERSION }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ needs.get_python_version.outputs.PYVERSION }}

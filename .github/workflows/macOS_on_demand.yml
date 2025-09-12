@@ -21,7 +21,7 @@ jobs:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
     - uses: actions/checkout@v5
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: 3.x
     - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
@@ -65,7 +65,7 @@ jobs:
     steps:
     - uses: actions/checkout@v5
     - name: Download all CPU artifacts
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v5
       with:
         pattern: "*_cpu"
         merge-multiple: true
@@ -135,7 +135,7 @@ jobs:
     runs-on: macos-13
     steps:
     - uses: actions/checkout@v5
-    - uses: actions/setup-python@v5
+    - uses: actions/setup-python@v6
       with:
         python-version: |
           3.14

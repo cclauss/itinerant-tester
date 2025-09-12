@@ -23,7 +23,7 @@ jobs:
       #- shell: python
       #  run: import json, os; print(json.dumps(dict(os.environ) , indent=4))
       #- run: echo ${{ env.repo_directory }}
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
       - run: brew --version || true
