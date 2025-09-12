@@ -2,13 +2,19 @@
 
 name: macOS
 on:
+  push:
+    paths:
+      - '.github/workflows/macOS_on_demand.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/macOS_on_demand.yml'
   workflow_dispatch:
 jobs:
   macOS:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-15, macos-14, macos-13, macos-latest]
+        os: [macos-26, macos-15, macos-14, macos-13, macos-latest]
         # arch: [ARM64, X64]  # macos-13 is X64, others are ARM64
     runs-on: ${{ matrix.os }}
     steps:
