@@ -15,7 +15,7 @@ jobs:
       - uses: codespell-project/actions-codespell@v2
       - uses: astral-sh/ruff-action@v3
       - uses: astral-sh/setup-uv@v6
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with: {python-version: 3.x}
       - run: pip install --upgrade pip ruff setuptools wheel
       - name: "Ruff: Show stopper (must-fix) issues"

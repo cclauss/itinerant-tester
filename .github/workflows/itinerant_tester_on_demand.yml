@@ -28,7 +28,7 @@ jobs:
                   --exit-zero --exclude=tests/ --statistics . | sort -k 2
       # - if: "contains(matrix.python-version, '-dev')"
       #  run: sudo apt-get install -y libxml2 libxslt-dev
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install --upgrade pip setuptools wheel
