@@ -13,13 +13,13 @@ on:
         required: false
 jobs:
   pip_install_on_pypy:
-    name: "${{ github.event.inputs.package }}"
+    name: "${{ matrix.python-version }} -m pip install ${{ github.event.inputs.package }} on ${{ matrix.os }}"
     strategy:
       fail-fast: false
       matrix:
         # https://downloads.python.org/pypy
         python-version: [ pypy3.10, pypy3.11 ]
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [ macos-latest, ubuntu-latest, windows-latest ]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v5
@@ -31,5 +31,5 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install --yes ${{ github.event.inputs.apt_package }}
-      - run: pip install --upgrade pip
+      - run: python -m pip install --upgrade pip
       - run: pip install ${{ github.event.inputs.package }}
