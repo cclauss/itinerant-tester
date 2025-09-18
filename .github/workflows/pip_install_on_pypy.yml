@@ -1,0 +1,35 @@
+# A GitHub Action to demonstrate how to pip install on PyPy v3.10 and v3.11
+# https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#available-versions-of-python-pypy-and-graalpy
+
+name: pip_install_on_pypy
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'PyPI package to test'
+        required: true
+      apt_package:
+        description: 'apt-get packages to install'
+        required: false
+jobs:
+  pip_install_on_pypy:
+    name: "${{ github.event.inputs.package }}"
+    strategy:
+      fail-fast: false
+      matrix:
+        # https://downloads.python.org/pypy
+        python-version: [ pypy3.10, pypy3.11 ]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+      - if: ${{ github.event.inputs.apt_package }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --yes ${{ github.event.inputs.apt_package }}
+      - run: pip install --upgrade pip
+      - run: pip install ${{ github.event.inputs.package }}
