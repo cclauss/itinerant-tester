@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-26, macos-15, macos-14, macos-13, macos-latest]
-        # arch: [ARM64, X64]  # macos-13 is X64, others are ARM64
+        os: [macos-26, macos-15, macos-15-intel, macos-14, macos-13, macos-latest]
+        # arch: [ARM64, X64]  # macos-13 and macos-15-intel are X64, others are ARM64
     runs-on: ${{ matrix.os }}
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
@@ -133,6 +133,36 @@ jobs:
           macOS_CPUs_combined.md
   pythons_on_macOS_13:
     runs-on: macos-13
+    steps:
+    - uses: actions/checkout@v5
+    - uses: actions/setup-python@v6
+      with:
+        python-version: |
+          3.14
+          3.13
+          3.12
+          3.11
+          3.10
+          3.9
+          3.8
+          3.7
+        allow-prereleases: true
+    - run: |
+        python3.7 --version
+        python3.8 --version
+        python3.9 --version
+        python3.10 --version
+        python3.11 --version
+        python3.12 --version
+        python3.13 --version
+        python3.14 --version
+    - name: Dump runner context
+      env:
+        RUNNER_CONTEXT: ${{ toJson(runner) }}
+      run: echo "$RUNNER_CONTEXT"
+
+  pythons_on_macOS_15_intel:
+    runs-on: macos-15-intel
     steps:
     - uses: actions/checkout@v5
     - uses: actions/setup-python@v6
