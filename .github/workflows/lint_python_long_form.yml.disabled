@@ -9,20 +9,17 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]    # [ubuntu-latest, macos-latest, windows-latest]
-        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11", "pypy39"]
+        python-version: ["3.10", "3.11", "3.12", "3.13", "3.14", "pypy311"]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
       - run: pip install black codespell flake8 isort pytest
       - run: black --check . || true
       # - run: black --diff . || true
-      # - if: matrix.python-version >= 3.6
-      #  run: |
-      #    pip install black
-      #    black --check . || true
       - run: codespell --quiet-level=2 || true  # --ignore-words-list="" --skip=""
       - run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
       - run: isort --profile black . || true
