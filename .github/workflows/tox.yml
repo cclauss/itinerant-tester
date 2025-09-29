@@ -49,8 +49,9 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install tox
       - run: tox -e py
-      #- run: tox -e py38
-      #- run: tox -e py39
       #- run: tox -e py310
       #- run: tox -e py311
+      #- run: tox -e py312
+      #- run: tox -e py313
+      #- run: tox -e py314
       #- run: tox -e ALL
