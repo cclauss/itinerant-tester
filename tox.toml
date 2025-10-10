@@ -1,0 +1,8 @@
+requires = [ "tox>=4.27" ]
+env_list = [ "fix", "3.14t", "3.14", "3.13", "3.12", "3.11", "3.10", "cov", "type", "docs", "pkg_meta" ]
+skip_missing_interpreters = true
+
+[env_run_base]
+description = "run the tests with pytest under {env_name}"
+commands = [ [ "python", "--version" ], [ "python", "-c", 'print(r"{env_python}")' ] ]
+uv_seed = true
