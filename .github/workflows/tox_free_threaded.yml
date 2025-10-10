@@ -58,3 +58,28 @@ jobs:
       #- run: tox -e py313
       #- run: tox -e py314
       #- run: tox -e ALL
+
+  tox_gh_one:
+    strategy:
+      fail-fast: false
+      matrix:
+        env: ["3.14t", "3.14", "3.13", "3.12"]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v7
+      - name: Install tox
+        run: uv tool install --python-preference only-managed --python 3.14 tox --with tox-uv --with tox-gh
+      - name: Install Python
+        if: matrix.env != '3.14'
+        run: uv python install --python-preference only-managed ${{ matrix.env }}
+      - name: Setup test suite
+        run: tox run -vv --notest --skip-missing-interpreters false
+        env:
+          TOX_GH_MAJOR_MINOR: ${{ matrix.env }}
+      - name: Run test suite
+        run: tox run --skip-pkg-install
+        env:
+          TOX_GH_MAJOR_MINOR: ${{ matrix.env }}
