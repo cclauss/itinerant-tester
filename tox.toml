@@ -4,5 +4,5 @@ skip_missing_interpreters = true
 
 [env_run_base]
 description = "run the tests with pytest under {env_name}"
-commands = [ [ "python", "--version" ], [ "python", "-c", 'print(r"{env_python}")' ] ]
+commands = [ [ "python", "-VV" ], [ "python", "-c", 'print(r"{env_python}")' ] ]
 uv_seed = true
