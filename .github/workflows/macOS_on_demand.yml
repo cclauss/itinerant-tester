@@ -31,7 +31,7 @@ jobs:
     - name: Display ${{ matrix.os }}_cpu.md content
       run: cat ${{ matrix.os }}_cpu.md
     - name: Upload ${{ matrix.os }}_cpu.md artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: ${{ matrix.os }}_cpu
         path: ${{ matrix.os }}_cpu.md
@@ -65,7 +65,7 @@ jobs:
     steps:
     - uses: actions/checkout@v5
     - name: Download all CPU artifacts
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v6
       with:
         pattern: "*_cpu"
         merge-multiple: true
@@ -125,7 +125,7 @@ jobs:
         else:
             print("Contents are the same, no update needed")
     - name: Upload combined macOS_CPUs.md
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: macOS_CPUs_final
         path: |
