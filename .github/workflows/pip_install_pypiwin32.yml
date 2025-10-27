@@ -1,0 +1,28 @@
+# A GitHub Action to demonstrate pip install pypiwin32 on Windows on Python 3.14t.
+# https://github.com/Googulator/pypiwin32 --> https://pypi.org/project/pypiwin32
+
+name: pip_install_pypiwin32
+on:
+  push:
+    paths:
+      - '.github/workflows/pip_install_pypiwin32.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/pip_install_pypiwin32.yml'
+  workflow_dispatch:
+jobs:
+  pip_install_pypiwin32:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest]
+        python-version: [3.x, 3.14, 3.14t]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: ${{ matrix.python-version }}
+          # allow-prereleases: true
+      - run: python3 -m pip install --upgrade pip
+      - run: pip install pypiwin32
