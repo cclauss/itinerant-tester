@@ -16,7 +16,8 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest]
-        python-version: [3.x, 3.14, 3.14t]
+        python-version: [3.14, 3.14t]
+        module: [pypiwin32, pywin32]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v5
@@ -25,4 +26,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
           # allow-prereleases: true
       - run: python3 -m pip install --upgrade pip
-      - run: pip install pypiwin32
+      - run: pip install ${{ matrix.module }}
