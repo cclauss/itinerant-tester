@@ -31,7 +31,7 @@ jobs:
         shell: python
         run: |
           import sys
-          print f"{sys._is_gil_enabled() = }"
+          print(f"{sys._is_gil_enabled() = }")
           import orjson
-          print f"{sys._is_gil_enabled() = }"
+          print(f"{sys._is_gil_enabled() = }")
     
