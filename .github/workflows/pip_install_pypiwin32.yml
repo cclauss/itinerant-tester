@@ -27,3 +27,11 @@ jobs:
           # allow-prereleases: true
       - run: python3 -m pip install --upgrade pip
       - run: pip install ${{ matrix.module }}
+      - if: matrix.module == 'orjson'
+        shell: python
+        run: |
+          import sys
+          print f"{sys._is_gil_enabled() = }"
+          import orjson
+          print f"{sys._is_gil_enabled() = }"
+    
