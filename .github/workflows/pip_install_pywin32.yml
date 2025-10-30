@@ -1,6 +1,8 @@
 # A GitHub Action to demonstrate pip install pypiwin32 on Windows on Python 3.14t.
 # https://github.com/Googulator/pypiwin32 --> https://pypi.org/project/pypiwin32
 
+# % `uvx --with=module python3.14t -c "import module"`
+
 name: pip_install_pywin32
 on:
   push:
@@ -21,15 +23,19 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       #- uses: actions/checkout@v5
+      # Approach one: The old-fashioned way
       #- uses: actions/setup-python@v6
       #  with:
       #    python-version: ${{ matrix.python-version }}
       #    # allow-prereleases: true
       #- run: python3 -m pip install --upgrade pip
       #- run: pip install ${{ matrix.module }}
+
+      # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
       - uses: astral-sh/setup-uv@v7
       - run: uvx --with=${{ matrix.module }} python${{ matrix.python-version }} -c "import ${{ matrix.module }}"
 
+      # Approach one: a longer way 
       - uses: astral-sh/setup-uv@v7
         with:
           python-version: ${{ matrix.python-version }}
