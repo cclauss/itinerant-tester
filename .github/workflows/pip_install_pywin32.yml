@@ -1,17 +1,17 @@
 # A GitHub Action to demonstrate pip install pypiwin32 on Windows on Python 3.14t.
 # https://github.com/Googulator/pypiwin32 --> https://pypi.org/project/pypiwin32
 
-name: pip_install_pypiwin32
+name: pip_install_pywin32
 on:
   push:
     paths:
-      - '.github/workflows/pip_install_pypiwin32.yml'
+      - '.github/workflows/pip_install_pywin32.yml'
   pull_request:
     paths:
-      - '.github/workflows/pip_install_pypiwin32.yml'
+      - '.github/workflows/pip_install_pywin32.yml'
   workflow_dispatch:
 jobs:
-  pip_install_pypiwin32:
+  pip_install:
     strategy:
       fail-fast: false
       matrix:
@@ -20,13 +20,18 @@ jobs:
         module: [orjson, pypiwin32, pywin32]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-python@v6
+      #- uses: actions/checkout@v5
+      #- uses: actions/setup-python@v6
+      #  with:
+      #    python-version: ${{ matrix.python-version }}
+      #    # allow-prereleases: true
+      #- run: python3 -m pip install --upgrade pip
+      #- run: pip install ${{ matrix.module }}
+      - uses: astral-sh/setup-uv@v7
         with:
-          python-version: ${{ matrix.python-version }}
-          # allow-prereleases: true
-      - run: python3 -m pip install --upgrade pip
-      - run: pip install ${{ matrix.module }}
+          python-version: 3.14t
+          activate-environment: true
+      - run: uv pip install ${{ matrix.module }}
       - if: matrix.module == 'orjson'
         shell: python
         run: |
