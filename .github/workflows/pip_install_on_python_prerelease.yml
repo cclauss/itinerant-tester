@@ -1,3 +1,5 @@
+# uvx --with=orjson python3.14t -c "import orjson"
+
 name: pip_install_on_python_prerelease
 on:
   workflow_dispatch:
