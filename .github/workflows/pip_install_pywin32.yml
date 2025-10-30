@@ -28,7 +28,7 @@ jobs:
       #- run: python3 -m pip install --upgrade pip
       #- run: pip install ${{ matrix.module }}
       - uses: astral-sh/setup-uv@v7
-      - run: uv --with=${{ matrix.module }} python${{ matrix.python-version }} -c "import ${{ matrix.python-version }}"
+      - run: uvx --with=${{ matrix.module }} python${{ matrix.python-version }} -c "import ${{ matrix.python-version }}"
 
       - uses: astral-sh/setup-uv@v7
         with:
