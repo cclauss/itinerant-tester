@@ -19,7 +19,7 @@ jobs:
       matrix:
         os: [windows-latest]
         python-version: [3.14, 3.14t]
-        module: [orjson, pypiwin32, pywin32]
+        module: [dbt-extractor, orjson, pypiwin32, pywin32]
     runs-on: ${{ matrix.os }}
     steps:
       #- uses: actions/checkout@v5
