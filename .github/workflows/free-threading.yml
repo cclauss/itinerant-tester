@@ -1,0 +1,24 @@
+# A GitHub Action to demonstrate pip install on Python 3.14t.
+# https://github.com/Googulator/pypiwin32 --> https://pypi.org/project/pypiwin32
+
+# % `uvx --with=module python3.14t -c "import module"`
+
+name: free-threading
+on:
+  workflow_dispatch:
+    inputs:
+      pypi_package:
+        description: 'PyPI package to test'
+        required: true
+jobs:
+  free-threading:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        python-version: [3.14, 3.14t]
+    runs-on: ${{ matrix.os }}
+    steps:
+      # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
+      - uses: astral-sh/setup-uv@v7
+      - run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import ${{ github.event.inputs.pypi_package }}"
