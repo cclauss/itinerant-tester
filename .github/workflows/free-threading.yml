@@ -20,7 +20,12 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
-      - uses: astral-sh/setup-uv@v7
+      - name: "${{ github.event.inputs.pypi_package }} on python${{ matrix.python-version }}"
+        uses: astral-sh/setup-uv@v7
         with:
           ignore-empty-workdir: true
-      - run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import ${{ github.event.inputs.pypi_package }}"
+      # Hyphen to underscore
+      - if: github.event.inputs.pypi_package == 'clickhouse-connect'
+        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import clickhouse_connect"
+      - if: github.event.inputs.pypi_package != 'clickhouse-connect'
+        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import ${{ github.event.inputs.pypi_package }}"
