@@ -52,7 +52,8 @@ jobs:
       - run: python3 --version && python --version
       - run: pip install --upgrade pip
       - run: pip install tox ${{ matrix.tox-gh-actions }}
-      - run: tox -e py
+      - run: tox -e py  # tox-gh-actions dislikes the '-e py'
+      - run: tox
       #- run: tox -e py310
       #- run: tox -e py311
       #- run: tox -e py312
