@@ -32,7 +32,7 @@ jobs:
             allow-prereleases: true
 
       # Test this repo with only the submodule modules/mavlink
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ArduPilot/ardupilot
           submodules: recursive
@@ -105,7 +105,7 @@ jobs:
   #    - if: matrix.python-version == '3.14' || startsWith(matrix.python-version, 'pypy')
   #      run: sudo apt-get update && sudo apt-get install --yes libxml2-dev libxslt1-dev
   #    # - run: echo "Testing ${{ github.event.inputs.repo }}..."
-  #    - uses: actions/checkout@v5
+  #    - uses: actions/checkout@v6
   #    - run: cp ardupilot_pyproject.toml /tmp
   #    - run: cp ardupilot_and_submodules_pytest.toml /tmp
   #    - uses: actions/setup-python@v6
@@ -114,7 +114,7 @@ jobs:
   #          allow-prereleases: true
   #
   #    # Test this repo with only the submodule modules/mavlink
-  #    - uses: actions/checkout@v5
+  #    - uses: actions/checkout@v6
   #      with:
   #        repository: ArduPilot/ardupilot
   #        submodules: recursive
@@ -196,7 +196,7 @@ jobs:
   pytest_ardupilot_ros2:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ArduPilot/ardupilot
           submodules: recursive
@@ -222,7 +222,7 @@ jobs:
   lint_ros2:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ArduPilot/ardupilot
       - uses: actions/setup-python@v6
@@ -239,7 +239,7 @@ jobs:
   install-ament-tools:  # http://packages.ros.org
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ArduPilot/ardupilot
           submodules: recursiv

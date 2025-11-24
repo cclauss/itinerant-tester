@@ -10,7 +10,7 @@ jobs:
     name: "conda_on_demand: ${{ github.event.inputs.conda_command }}"
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - run: conda search python
     - if: ${{ github.event.inputs.conda_command }}
       run: ${{ github.event.inputs.conda_command }}

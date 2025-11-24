@@ -21,7 +21,7 @@ jobs:
     steps:
       # - name: apt-get install --yes python3-tk
       #  run: sudo apt-get update && sudo apt-get install --yes python3-tk
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}

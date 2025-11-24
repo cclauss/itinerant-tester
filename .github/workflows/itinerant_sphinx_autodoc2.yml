@@ -28,13 +28,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
         with:
             python-version: ${{ matrix.python-version }}
       - run: cp scripts/sphinx_conf.py /tmp/
       - run: cp scripts/sphinx_index.md /tmp/
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: mkdir itinerant_sphinx_autodoc2
