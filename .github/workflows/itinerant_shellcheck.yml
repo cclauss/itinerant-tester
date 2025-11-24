@@ -20,8 +20,8 @@ jobs:
       - run: shellcheck --version  # v0.8.0, not v0.9.0
       - run: shellcheck --help      
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      # - uses: actions/checkout@v5
-      - uses: actions/checkout@v5
+      # - uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla

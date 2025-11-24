@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: astral-sh/setup-uv@v7
         with:
             enable-cache: true
@@ -29,7 +29,7 @@ jobs:
           cp ruff_generate_baseline.py /tmp/
           cp ruff_config_gen.py /tmp/
           popd
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
@@ -116,7 +116,7 @@ jobs:
     runs-on: macos-14  # ubuntu-latest
     steps:
       - run: echo $HOME  # '/home/runner'
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - run: echo $HOME  # '/home/runner'
       - run: python3 scripts/home_dir.py  # '/home/runner'
       - run: sudo python3 scripts/home_dir.py  # '/root'
