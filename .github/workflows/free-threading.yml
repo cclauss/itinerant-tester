@@ -29,5 +29,7 @@ jobs:
         run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import clickhouse_connect"
       - if: github.event.inputs.pypi_package == 'scikit-learn'
         run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import sklearn"
+      - if: github.event.inputs.pypi_package == 'MacFSEvents'
+        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import fsevents"
       - if: github.event.inputs.pypi_package != 'clickhouse-connect' && github.event.inputs.pypi_package != 'scikit-learn'
         run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import ${{ github.event.inputs.pypi_package }}"
