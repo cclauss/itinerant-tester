@@ -8,11 +8,11 @@ jobs:
       matrix:
         os: [windows-latest]  # , macos-latest, ubuntu-latest]
         # node-version: [12.x, 14.x, 16.x, 18.x, 20.x, latest]
-        node-version: [lts/-5, lts/-4, lts/-3, lts/-2, lts/-1, lts/*, latest, latest/-1]
+        node-version: [lts/-9, lts/-8, lts/-7, lts/-6, lts/-5, lts/-4, lts/-3, lts/-2, lts/-1, lts/*, latest]
     runs-on: ${{ matrix.os }}
     steps:
-      #- uses: actions/checkout@v4
-      #- uses: actions/setup-python@v5
+      #- uses: actions/checkout@6
+      #- uses: actions/setup-python@v6
       #  with:
       #    python-version: 3.x
       - uses: actions/setup-node@v6
@@ -22,5 +22,5 @@ jobs:
       - run: npm --version
       - run: npm config list -l
       # - run: npm config set msvs_version
-      - run: npm config set node_gyp
+      #- run: npm config set node_gyp
       - run: echo "${{ toJSON(matrix) }}
