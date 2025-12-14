@@ -7,7 +7,8 @@ jobs:
       fail-fast: false
       matrix:
         os: [windows-latest]  # , macos-latest, ubuntu-latest]
-        node-version: [12.x, 14.x, 16.x, 18.x, 20.x, latest]
+        # node-version: [12.x, 14.x, 16.x, 18.x, 20.x, latest]
+        node-version: [lts/n-1, lts/-1, lts/*, latest, node]
     runs-on: ${{ matrix.os }}
     steps:
       #- uses: actions/checkout@v4
