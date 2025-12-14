@@ -23,4 +23,4 @@ jobs:
       - run: npm config list -l
       # - run: npm config set msvs_version
       #- run: npm config set node_gyp
-      - run: echo "${{ toJSON(matrix) }}
+      - run: echo "${{ toJSON(matrix) }}"
