@@ -8,7 +8,7 @@ jobs:
       matrix:
         os: [windows-latest]  # , macos-latest, ubuntu-latest]
         # node-version: [12.x, 14.x, 16.x, 18.x, 20.x, latest]
-        node-version: [lts/n-1, lts/-1, lts/*, latest, node]
+        node-version: [lts/-5, lts/-4, lts/-3, lts/-2, lts/-1, lts/*, latest, latest/-1]
     runs-on: ${{ matrix.os }}
     steps:
       #- uses: actions/checkout@v4
