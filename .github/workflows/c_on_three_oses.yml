@@ -66,7 +66,7 @@ jobs:
           Path('result.txt').write_text(result_line)
       
       - name: Upload results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: result-${{ matrix.os }}-${{ matrix.ccompiler }}
           path: result.txt
@@ -76,7 +76,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           path: results
       
@@ -169,7 +169,7 @@ jobs:
           print(markdown_table)
       
       - name: Upload markdown table
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: size-comparison-table
           path: size_comparison_table.md
