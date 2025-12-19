@@ -34,6 +34,7 @@ jobs:
           # ref: dev  # branch, tag, or SHA
       - run: ls -Fla
       - run: codespell --count --ignore-words-list=assertin,astroid,crate || true
+      - run: brew install typos-cli && typos || true
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
