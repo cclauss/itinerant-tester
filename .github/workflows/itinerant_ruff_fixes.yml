@@ -34,7 +34,9 @@ jobs:
           # ref: dev  # branch, tag, or SHA
       - run: ls -Fla
       - run: codespell --count --ignore-words-list=assertin,astroid,crate || true
-      - run: cargo install typos-cli --locked --quiet && typos || true
+      # - run: cargo install typos-cli --locked --quiet && typos || true
+      - uses: crate-ci/typos@v1
+        continue-on-error: true
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
