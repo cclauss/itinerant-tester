@@ -71,7 +71,7 @@ jobs:
           command: |
             # . venv/bin/activate
             uv venv --allow-existing
-            uvx --with=pyaudio pytest
+            uvx --with=openai,pyaudio pytest
 
       - store_artifacts:
           path: test-reports
