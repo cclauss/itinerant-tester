@@ -32,7 +32,7 @@ jobs:
           name: install dependencies
           command: |
             sudo apt-get update
-            sudo apt-get install python3-pyaudio
+            sudo apt-get install python3-pyaudio python3-venv
             python -m pip install --upgrade pip
             pipx install pre-commit  # ruff
             python3 -m venv venv
