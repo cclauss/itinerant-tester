@@ -71,7 +71,7 @@ jobs:
           command: |
             # . venv/bin/activate
             uv venv --allow-existing
-            python -m pytest
+            uvx pytest
 
       - store_artifacts:
           path: test-reports
