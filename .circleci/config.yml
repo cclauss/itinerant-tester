@@ -35,7 +35,7 @@ jobs:
             curl -LsSf https://astral.sh/uv/install.sh | sh
             uv --version
             sudo apt-get update
-            sudo apt-get install python3-pyaudio python3-venv
+            sudo apt-get install portaudio19-dev python3-pyaudio
             uv venv --allow-existing
             uv tool install pre-commit  # ruff
             pip install pyaudio pytest  # -r pyproject.toml
