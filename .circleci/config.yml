@@ -31,14 +31,13 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            uv --version || true
-            curl -LsSf https://astral.sh/uv/install.sh | sh
-            uv --version
+            uv self upgdate
             sudo apt-get update
             sudo apt-get install portaudio19-dev python3-pyaudio
             uv venv --allow-existing
-            uv tool install pre-commit  # ruff
-            pip install pyaudio pytest  # -r pyproject.toml
+            # uv tool install pre-commit  # ruff
+            # pip install pyaudio pytest  # -r pyproject.toml
+            uv sync
           #  python3 -m venv venv
           #  . venv/bin/activate
           #  pip install --upgrade pip
@@ -70,7 +69,8 @@ jobs:
       - run:
           name: pytest
           command: |
-            . venv/bin/activate
+            # . venv/bin/activate
+            uv venv --allow-existing
             python -m pytest
 
       - store_artifacts:
