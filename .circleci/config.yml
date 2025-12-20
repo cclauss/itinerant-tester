@@ -31,12 +31,13 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            uv --version || true
+            curl -LsSf https://astral.sh/uv/install.sh | sh
+            uv --version
             sudo apt-get update
             sudo apt-get install python3-pyaudio python3-venv
-            python -m pip install --upgrade pip
-            pipx install pre-commit  # ruff
-            python3 -m venv venv
-            . venv/bin/activate
+            uv venv --allow-existing
+            uv tool install pre-commit  # ruff
             pip install pyaudio pytest  # -r pyproject.toml
           #  python3 -m venv venv
           #  . venv/bin/activate
@@ -51,7 +52,7 @@ jobs:
       # run tests!
       # https://docs.astral.sh/ruff
       - run:
-          command: pipx run ruff check
+          command: uvx ruff check
           # name: ruff
           # command: |
           #  . venv/bin/activate
