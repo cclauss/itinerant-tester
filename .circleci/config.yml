@@ -31,7 +31,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            uv self upgdate
+            uv self update
             sudo apt-get update
             sudo apt-get install portaudio19-dev python3-pyaudio
             uv venv --allow-existing
