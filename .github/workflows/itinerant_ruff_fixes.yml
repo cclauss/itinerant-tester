@@ -15,7 +15,7 @@ jobs:
         python-version: [3.14]
     runs-on: ubuntu-24.04-arm
     steps:
-      - run: pip install --user auto-walrus codespell[toml] ruff
+      - run: pip install --user auto-walrus codespell[toml] pre-commit ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -37,6 +37,7 @@ jobs:
       # - run: cargo install typos-cli --locked --quiet && typos || true
       - uses: crate-ci/typos@v1
         continue-on-error: true
+      - run: pre-commit autoupdate || true
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
