@@ -33,7 +33,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
           # ref: dev  # branch, tag, or SHA
       - run: ls -Fla
-      - run: git grep 'uses: ' .github/workflows/ || true
+      - run: "git grep 'uses: ' .github/workflows || true"
       - run: codespell --count --ignore-words-list=assertin,astroid,crate || true
       # - run: cargo install typos-cli --locked --quiet && typos || true
       - uses: crate-ci/typos@v1
