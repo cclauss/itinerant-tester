@@ -41,6 +41,7 @@ jobs:
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
       # ruff check --exit-zero runs first...
       # exit-zero on select=ALL
+      - run: git grep ruff
       - run: ruff check --exit-zero --select=ASYNC  --target-version=py310
       - run: ruff check --exit-zero --select=NPY001 --target-version=py310
       - run: ruff check --exit-zero --select=NPY    --target-version=py310
