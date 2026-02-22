@@ -34,6 +34,8 @@ jobs:
           # ref: dev  # branch, tag, or SHA
       - run: ls -Fla
       - run: "git grep 'uses: ' .github/workflows || true"
+      - run: git grep threading || true  # Add Python 3.14t
+      - run: git grep unittest || true  # uvx --python=3.12 unittest2pytest --write .
       - run: codespell --count --ignore-words-list=assertin,astroid,crate || true
       # - run: cargo install typos-cli --locked --quiet && typos || true
       - uses: crate-ci/typos@v1
