@@ -1,6 +1,6 @@
 # Keep GitHub Actions up to date with GitHub's Dependabot...
-# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot
-# https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem
+# https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/keeping-your-actions-up-to-date-with-dependabot
+# https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference#package-ecosystem
 version: 2
 updates:
   - package-ecosystem: github-actions
@@ -12,9 +12,9 @@ updates:
     schedule:
       interval: weekly
 # Keep GitHub Actions up to date with GitHub's Dependabot dependabot.yml
-#* [Keeping your software supply chain secure with Dependabot](https://docs.github.com/en/code-security/dependabot)
-#* [Keeping your actions up to date with Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot)
-#* [Configuration options for the `dependabot.yml` file - package-ecosystem](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#package-ecosystem)
+#* [Keeping your software supply chain secure with Dependabot](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain)
+#* [Keeping your actions up to date with Dependabot](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/keeping-your-actions-up-to-date-with-dependabot)
+#* [Configuration options for the `dependabot.yml` file - package-ecosystem](https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference#package-ecosystem-)
 
 #To see all GitHub Actions dependencies, type:
 #% `git grep 'uses: ' .github/workflows/`
