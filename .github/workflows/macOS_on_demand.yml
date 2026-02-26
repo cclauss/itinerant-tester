@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-26, macos-15, macos-15-intel, macos-14, macos-13, macos-latest]
-        # arch: [ARM64, X64]  # macos-13 and macos-15-intel are X64, others are ARM64
+        os: [macos-26, macos-15, macos-15-intel, macos-14, macos-latest]
+        # arch: [ARM64, X64]  # macos-15-intel is X64, others are ARM64
     runs-on: ${{ matrix.os }}
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
@@ -131,8 +131,8 @@ jobs:
         path: |
           macOS_CPUs.md
           macOS_CPUs_combined.md
-  pythons_on_macOS_13:
-    runs-on: macos-13
+  pythons_on_macOS_14:
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v6
     - uses: actions/setup-python@v6
