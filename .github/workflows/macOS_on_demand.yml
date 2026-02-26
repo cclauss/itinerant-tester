@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-26, macos-15, macos-15-intel, macos-14, macos-13, macos-latest]
-        # arch: [ARM64, X64]  # macos-13 and macos-15-intel are X64, others are ARM64
+        os: [macos-26, macos-15, macos-15-intel, macos-14, macos-latest]
+        # arch: [ARM64, X64]  # macos-15-intel is X64, others are ARM64
     runs-on: ${{ matrix.os }}
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
@@ -31,7 +31,7 @@ jobs:
     - name: Display ${{ matrix.os }}_cpu.md content
       run: cat ${{ matrix.os }}_cpu.md
     - name: Upload ${{ matrix.os }}_cpu.md artifact
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: ${{ matrix.os }}_cpu
         path: ${{ matrix.os }}_cpu.md
@@ -65,7 +65,7 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - name: Download all CPU artifacts
-      uses: actions/download-artifact@v7
+      uses: actions/download-artifact@v8
       with:
         pattern: "*_cpu"
         merge-multiple: true
@@ -125,14 +125,14 @@ jobs:
         else:
             print("Contents are the same, no update needed")
     - name: Upload combined macOS_CPUs.md
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: macOS_CPUs_final
         path: |
           macOS_CPUs.md
           macOS_CPUs_combined.md
-  pythons_on_macOS_13:
-    runs-on: macos-13
+  pythons_on_macOS_14:
+    runs-on: macos-14
     steps:
     - uses: actions/checkout@v6
     - uses: actions/setup-python@v6
@@ -145,10 +145,8 @@ jobs:
           3.10
           3.9
           3.8
-          3.7
         allow-prereleases: true
     - run: |
-        python3.7 --version
         python3.8 --version
         python3.9 --version
         python3.10 --version
