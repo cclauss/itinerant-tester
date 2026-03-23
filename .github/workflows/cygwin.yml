@@ -20,7 +20,7 @@ jobs:
           # - "libiconv2"  # Installed by default
           # - "libintl8"  # Installed by default
           - "python3"  # EOL Python 3.9
-          - "python39"  # EOL Python 3.9
+          # - "python39"  # EOL Python 3.9
           # - "python311"  # Package 'python311' not found.
           # - "python312"  # No python312-pip
           # - "python312-future"  # Package 'python312-future' not found.
@@ -52,4 +52,21 @@ jobs:
       - run: python3 -m pip install future
         shell: bash
       - run: python3 -m pip install lxml
+        shell: bash
+  cygwin_alt_pythons:
+    strategy:
+      fail-fast: false
+      matrix:  # https://cygwin.com/packages/summary/python312.html
+        python:
+          - "py"
+          - "python.exe"
+          - "python3.exe"
+    runs-on: windows-latest
+    steps:
+      - uses: cygwin/cygwin-install-action@v6
+      - run: ${{ matrix.python }} --version
+        shell: bash
+      - run: ${{ matrix.python }} -m pip --version
+        shell: bash
+      - run: ${{ matrix.python }} -m pip install lxml
         shell: bash
