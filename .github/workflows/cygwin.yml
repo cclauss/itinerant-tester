@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: cygwin/cygwin-install-action@v6
         with:
-          packages: ${{ matrix.cygwin_package }}
+          packages: ${{ matrix.cygwin_package }} python39-lxml
       - run: python3.exe --version  # Python 3.12.10
         shell: bash
       - run: python3 --version      # Python 3.9.16 or 3.12.12 <-- use this!!! (Not.exe)
