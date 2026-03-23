@@ -20,16 +20,16 @@ jobs:
           - "libiconv2"
           - "libintl8"
           - "python3"  # EOL Python 3.9
-          - "python3.9"  # Package 'python3.9' not found.
-          - "python3.11"  # Not available
-          - "python3.12"
-          - "python3.12-future"  # Not available
-          - "python3.12-lxml"  # Not available
-          - "python3.12-pip"
-          - "python3.12-setuptools"
-          - "python3.12-wheel"
-          - "python3.13"  # Package 'python3.13' not found.
-          - "python3.14"  # Not available
+          - "python39"  # Package 'python3.9' not found.
+          - "python311"  # Not available
+          - "python312"
+          - "python312-future"  # Not available
+          - "python312-lxml"  # Not available
+          - "python312-pip"  # Package 'python3.12-pip' not found.
+          - "python312-setuptools"
+          - "python312-wheel"
+          - "python313"  # Package 'python3.13' not found.
+          - "python314"  # Not available
     runs-on: windows-latest
     steps:
       - uses: cygwin/cygwin-install-action@v6
