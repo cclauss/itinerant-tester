@@ -12,18 +12,32 @@ jobs:
     # name: "${{ github.event.inputs.repo }}"
     strategy:
       fail-fast: false
-      matrix:
+      matrix:  # https://cygwin.com/packages/summary/python312.html
         cygwin_package:
           - ""
           - "cygiconv"
           - "cygintl"
           - "libiconv2"
           - "libintl8"
-          - "python3.9"
-          - "python3.11"
-          - "python3.13"
+          - "python3"  # EOL Python 3.9
+          - "python3.9"  # Package 'python3.9' not found.
+          - "python3.11"  # Not available
+          - "python3.12"
+          - "python3.12-future"  # Not available
+          - "python3.12-lxml"  # Not available
+          - "python3.12-pip"
+          - "python3.12-setuptools"
+          - "python3.12-wheel"
+          - "python3.13"  # Package 'python3.13' not found.
+          - "python3.14"  # Not available
     runs-on: windows-latest
     steps:
       - uses: cygwin/cygwin-install-action@v6
         with:
           packages: ${{ matrix.cygwin_package }}
+      - run: bash python3.exe --version || true
+      - run: bash python3 --version     || true
+      - run: bash python.exe --version  || true
+      - run: bash python --version      || true
+      - run: bash py --version          || true
+      - run: bash python3 -m pip --version || true
