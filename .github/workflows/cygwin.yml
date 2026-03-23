@@ -14,30 +14,37 @@ jobs:
       fail-fast: false
       matrix:  # https://cygwin.com/packages/summary/python312.html
         cygwin_package:
-          - ""
-          - "cygiconv"
-          - "cygintl"
-          - "libiconv2"
-          - "libintl8"
+          # - ""
+          # - "cygiconv"  # Package 'cygiconv' not found.
+          # - "cygintl"  # Package 'cygintl' not found.
+          # - "libiconv2"  # Installed by default
+          # - "libintl8"  # Installed by default
           - "python3"  # EOL Python 3.9
-          - "python39"  # Package 'python3.9' not found.
-          - "python311"  # Not available
-          - "python312"
-          - "python312-future"  # Not available
-          - "python312-lxml"  # Not available
-          - "python312-pip"  # Package 'python3.12-pip' not found.
-          - "python312-setuptools"
-          - "python312-wheel"
-          - "python313"  # Package 'python3.13' not found.
-          - "python314"  # Not available
+          - "python39"  # EOL Python 3.9
+          # - "python311"  # Package 'python311' not found.
+          # - "python312"  # No python312-pip
+          # - "python312-future"  # Package 'python312-future' not found.
+          # - "python312-lxml"  # Package 'python312-lxml' not found.
+          - "python312-pip"  # Everything including python312, setuptools, wheel <-- use this!!!
+          # - "python312-setuptools"  # No python312-pip
+          # - "python312-venv"  # Package 'python312-venv' not found.
+          # - "python312-wheel"  # No python312-pip
+          # - "python313"  # Package 'python313' not found.
+          # - "python314"  # Package 'python314' not found.
     runs-on: windows-latest
     steps:
       - uses: cygwin/cygwin-install-action@v6
         with:
           packages: ${{ matrix.cygwin_package }}
-      - run: bash python3.exe --version || true
-      - run: bash python3 --version     || true
-      - run: bash python.exe --version  || true
-      - run: bash python --version      || true
-      - run: bash py --version          || true
-      - run: bash python3 -m pip --version || true
+      - run: python3.exe --version || true
+        shell: bash
+      - run: python3 --version     || true
+        shell: bash
+      - run: python.exe --version  || true
+        shell: bash
+      - run: python --version      || true
+        shell: bash
+      - run: py --version          || true
+        shell: bash
+      - run: python3 -m pip --version || true
+        shell: bash
