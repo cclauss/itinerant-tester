@@ -1,3 +1,10 @@
+# https://releases.ubuntu.com
+# https://ubuntu.com/about/release-cycle -- Try here first and then fall back to:
+# https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
+
+# https://www.debian.org
+# https://en.wikipedia.org/wiki/Debian_release_version_history#Release_table
+
 name: linux_eol
 on:
   push:
@@ -27,14 +34,14 @@ jobs:
           - os: ubuntu:25.04
           - os: ubuntu:25.10
           - os: ubuntu:26.04
-          - os: debian:10
+          - os: debian:10  # apt update fails
           - os: debian:11
           - os: debian:12
           - os: debian:13
-          - os: archlinux:latest
+          # - os: archlinux:latest  # Does not to apt
     steps:
       - run: |
           apt update
-          apt install --yes lsb-release
+          apt install --yes lsb-release python3
           lsb_release -ds
           python3 -V
