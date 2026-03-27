@@ -1,0 +1,40 @@
+name: linux_eol
+on:
+  push:
+    paths:
+      - '.github/workflows/linux_eol.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/linux_eol.yml'
+  workflow_dispatch:
+jobs:
+  linux_eol:
+    runs-on: ubuntu-latest
+    container:
+      image: ${{matrix.os}}
+      options: --privileged
+    strategy:
+      fail-fast: false  # don't cancel if a job from the matrix fails
+      matrix:
+        include:
+          - os: ubuntu:20.04
+          - os: ubuntu:22.04
+          - os: ubuntu:23.04
+          - os: ubuntu:23.04
+          - os: ubuntu:23.10
+          - os: ubuntu:24.04
+          - os: ubuntu:24.10
+          - os: ubuntu:25.04
+          - os: ubuntu:25.10
+          - os: ubuntu:26.04
+          - os: debian:10
+          - os: debian:11
+          - os: debian:12
+          - os: debian:13
+          - os: archlinux:latest
+    steps:
+      - run: |
+          apt update
+          apt install --yes lsb-release
+          lsb_release -ds
+          python3 -V
