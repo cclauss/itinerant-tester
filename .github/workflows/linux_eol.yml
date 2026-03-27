@@ -24,20 +24,20 @@ jobs:
       fail-fast: false  # don't cancel if a job from the matrix fails
       matrix:
         include:
-          - os: ubuntu:20.04  # Ubuntu 20.04.6 LTS -- Python 3.8.10 -- EOL
-          - os: ubuntu:22.04  # Ubuntu 22.04.5 LTS -- Python 3.10.12
+          - os: ubuntu:20.04  # Ubuntu 20.04.6 LTS -- Python 3.8.10 -- focal -- EOL
+          - os: ubuntu:22.04  # Ubuntu 22.04.5 LTS -- Python 3.10.12 -- jammy
           # - os: ubuntu:22.10  # apt update fails
           # - os: ubuntu:23.04  # apt update fails
           # - os: ubuntu:23.10  # apt update fails
-          - os: ubuntu:24.04  # Ubuntu 24.04.4 LTS -- Python 3.12.3
+          - os: ubuntu:24.04  # Ubuntu 24.04.4 LTS -- Python 3.12.3 -- noble
           # - os: ubuntu:24.10  # apt update fails
-          - os: ubuntu:25.04  # Ubuntu 25.04 -- Python 3.13.3
-          - os: ubuntu:25.10  # Ubuntu 25.10 -- Python 3.13.7
+          - os: ubuntu:25.04  # Ubuntu 25.04 -- Python 3.13.3 -- plucky
+          - os: ubuntu:25.10  # Ubuntu 25.10 -- Python 3.13.7 -- questing
           - os: ubuntu:26.04  # Ubuntu Resolute Raccoon (development branch) -- Python 3.14.3
           # - os: debian:10  # apt update fails
           - os: debian:11  # Debian GNU/Linux 11 (bullseye) -- Python 3.9.2
           - os: debian:12  # Debian GNU/Linux 12 (bookworm) -- Python 3.11.2
-          - os: debian:13  # Debian GNU/Linux 13 (trixie) -- Python 3.13.5
+          - os: debian:13  # Debian GNU/Linux 13 (trixie)   -- Python 3.13.5
     steps:
       - env:
           DEBIAN_FRONTEND: noninteractive
