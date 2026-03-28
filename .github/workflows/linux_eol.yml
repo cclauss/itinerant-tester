@@ -47,6 +47,7 @@ jobs:
           TZ: Europe/Paris
         run: |
           apt update
+          apt list --upgradable
           apt install --yes lsb-release python3
           lsb_release --all
           lsb_release -ds
