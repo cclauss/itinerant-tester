@@ -1,8 +1,11 @@
-# https://releases.ubuntu.com
+# Ubuntu disables `apt update` and `apt install` for non-LTS versions after they lose Standard Support.
+# Buildable Ubuntu versions can be found at http://ports.ubuntu.com/ubuntu-ports/dists
+
+# Ubuntu releases: https://releases.ubuntu.com
 # https://ubuntu.com/about/release-cycle -- Try here first and then fall back to:
 # https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
 
-# https://www.debian.org
+# Debian releases: https://www.debian.org
 # https://en.wikipedia.org/wiki/Debian_release_version_history#Release_table
 
 name: linux_eol
