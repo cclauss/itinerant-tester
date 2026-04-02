@@ -43,7 +43,7 @@ jobs:
       - run: ls -Fla
       - run: pip install --upgrade pip
       - run: pip install --upgrade furo myst_parser sphinxcontrib-mermaid  # sphinx-autodoc2
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - run: ls -FlaR itinerant_sphinx_autodoc2
       # - uses: echo -e "# itinerant_sphinx_autodoc2\n\\`\\`\\`{toctree}\n:maxdepth: 2\README.md\n\\`\\`\\`"
       - run: sphinx-build -c itinerant_sphinx_autodoc2 . itinerant_sphinx_autodoc2/_build/html | true
