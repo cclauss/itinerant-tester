@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-slim
     steps:
     - uses: actions/checkout@v6
-    - name: Detect changed files
-      id: changed-files
-      uses: actions/github-script@v8
+    - uses: actions/github-script@v8
       with:
         script: |
           const files = await github.paginate(github.rest.pulls.listFiles, {
@@ -25,24 +23,19 @@ jobs:
           const hasLua = filePaths.some((path) => path.endsWith('.lua'));
           const hasPython = filePaths.some((path) => path.endsWith('.py'));
 
-          core.setOutput('has_lua', String(hasLua));
-          core.setOutput('has_python', String(hasPython));
-    - name: Add language labels if needed
-      if: steps.changed-files.outputs.has_lua == 'true' || steps.changed-files.outputs.has_python == 'true'
-      uses: actions/github-script@v8
-      with:
-        script: |
-          const labels = [];
-          if ('${{ steps.changed-files.outputs.has_lua }}' === 'true') {
-            labels.push('Lua');
-          }
-          if ('${{ steps.changed-files.outputs.has_python }}' === 'true') {
-            labels.push('Python');
-          }
+          if hasLua || hasPython {
+            const labels = [];
+            if hasLua {
+              labels.push('Lua');
+            }
+            if has_python {
+              labels.push('Python');
+            }
 
-          github.rest.issues.addLabels({
-            issue_number: context.issue.number,
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            labels,
-          })
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels,
+            })
+          }
