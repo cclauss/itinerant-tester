@@ -5,26 +5,44 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-  label-python:
-    runs-on: ubuntu-latest
-
+  labels_by_language:
+    runs-on: ubuntu-slim
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
+    - uses: actions/checkout@v6
+    - name: Detect changed files
+      id: changed-files
+      uses: actions/github-script@v8
+      with:
+        script: |
+          const files = await github.paginate(github.rest.pulls.listFiles, {
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: context.issue.number,
+            per_page: 100,
+          });
 
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v47
+          const filePaths = files.map((file) => file.filename);
+          const hasLua = filePaths.some((path) => path.endsWith('.lua'));
+          const hasPython = filePaths.some((path) => path.endsWith('.py'));
 
-      - name: Add Python label if needed
-        if: contains(steps.changed-files.outputs.all_changed_files, '.py')
-        uses: actions/github-script@v8
-        with:
-          script: |
-            github.rest.issues.addLabels({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ['Python']
-            })
+          core.setOutput('has_lua', String(hasLua));
+          core.setOutput('has_python', String(hasPython));
+    - name: Add language labels if needed
+      if: steps.changed-files.outputs.has_lua == 'true' || steps.changed-files.outputs.has_python == 'true'
+      uses: actions/github-script@v8
+      with:
+        script: |
+          const labels = [];
+          if ('${{ steps.changed-files.outputs.has_lua }}' === 'true') {
+            labels.push('Lua');
+          }
+          if ('${{ steps.changed-files.outputs.has_python }}' === 'true') {
+            labels.push('Python');
+          }
 
+          github.rest.issues.addLabels({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            labels,
+          })
