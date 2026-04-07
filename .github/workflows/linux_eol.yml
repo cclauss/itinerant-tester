@@ -48,7 +48,8 @@ jobs:
         run: |
           apt update
           apt list --upgradable
-          apt install --yes lsb-release python3
+          apt install --yes lsb-release nodejs python3
           lsb_release --all
           lsb_release -ds
+          node --version
           python3 -V
