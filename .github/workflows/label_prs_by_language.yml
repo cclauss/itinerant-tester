@@ -23,12 +23,12 @@ jobs:
           const hasLua = filePaths.some((path) => path.endsWith('.lua'));
           const hasPython = filePaths.some((path) => path.endsWith('.py'));
 
-          if hasLua || hasPython {
+          if (hasLua || hasPython) {
             const labels = [];
-            if hasLua {
+            if (hasLua) {
               labels.push('Lua');
             }
-            if has_python {
+            if (hasPython) {
               labels.push('Python');
             }
 
