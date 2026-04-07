@@ -7,7 +7,7 @@ jobs:
       max-parallel: 16
       matrix:
         # architecture: [x86, x64]
-        node-version: [latest, lts, lts/*, lts/-1, lts/-2]
+        node-version: [current, lts/*, lts/-1, lts/-2]
         os: [macos-15, macos-15-intel, macos-26, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
