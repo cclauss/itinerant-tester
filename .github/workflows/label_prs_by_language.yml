@@ -20,6 +20,8 @@ jobs:
           });
 
           const filePaths = files.map((file) => file.filename);
+
+          // Map programming languages to their file extensions.
           const languageMap = {
             C: ['.c', '.h'],
             'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
@@ -32,7 +34,7 @@ jobs:
             Rust: ['.rs'],
           };
 
-          # If any modified file has an extension, then add the label.
+          // If any modified file has an extension, then add the label.
           const labels = Object.entries(languageMap)
             .filter(([_, exts]) =>
               exts.some(ext => filePaths.some(path => path.endsWith(ext)))
