@@ -20,18 +20,26 @@ jobs:
           });
 
           const filePaths = files.map((file) => file.filename);
-          const hasLua = filePaths.some((path) => path.endsWith('.lua'));
-          const hasPython = filePaths.some((path) => path.endsWith('.py'));
+          const languageMap = {
+            Python: ['.py', '.pyi'],
+            Cython: ['.pyx', '.pxd', '.pxi'],
+            JavaScript: ['.js', '.jsx'],
+            Lua: ['.lua'],
+            TypeScript: ['.ts', '.tsx'],
+            C: ['.c', '.h'],
+            'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
+            Rust: ['.rs'],
+            Go: ['.go'],
+          };
 
-          if (hasLua || hasPython) {
-            const labels = [];
-            if (hasLua) {
-              labels.push('Lua');
-            }
-            if (hasPython) {
-              labels.push('Python');
-            }
+          # If any modified file has an extension, then add the label.
+          const labels = Object.entries(languageMap)
+            .filter(([_, exts]) =>
+              exts.some(ext => filePaths.some(path => path.endsWith(ext)))
+            )
+            .map(([label]) => label);
 
+          if (labels.length > 0) {
             github.rest.issues.addLabels({
               issue_number: context.issue.number,
               owner: context.repo.owner,
