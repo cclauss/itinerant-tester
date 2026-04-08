@@ -21,15 +21,15 @@ jobs:
 
           const filePaths = files.map((file) => file.filename);
           const languageMap = {
-            Python: ['.py', '.pyi'],
-            Cython: ['.pyx', '.pxd', '.pxi'],
+            C: ['.c', '.h'],
+            'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
+            Go: ['.go'],
             JavaScript: ['.js', '.jsx'],
             Lua: ['.lua'],
             TypeScript: ['.ts', '.tsx'],
-            C: ['.c', '.h'],
-            'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
+            Python: ['.py', '.pyi'],
+            Cython: ['.pyx', '.pxd', '.pxi'],
             Rust: ['.rs'],
-            Go: ['.go'],
           };
 
           # If any modified file has an extension, then add the label.
