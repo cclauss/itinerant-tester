@@ -73,11 +73,11 @@ jobs:
           }
           console.log(labels);
 
-          if (labels.length > 0) {
+          if (labels.size > 0) {
             github.rest.issues.addLabels({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              [...labels],
+              labels: Array.from(labels),
             })
           }
