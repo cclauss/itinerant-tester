@@ -27,9 +27,9 @@ jobs:
             'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
             Go: ['.go'],
             JavaScript: ['.js', '.jsx'],
-            Lua: ['.lua'],
             TypeScript: ['.ts', '.tsx'],
-            Python: ['.py', '.pyi'],
+            Lua_: ['.lua'],
+            Python_: ['.py', '.pyi'],
             Cython: ['.pyx', '.pxd', '.pxi'],
             Rust: ['.rs'],
           };
@@ -47,5 +47,35 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels,
+            })
+          }
+
+  labels_by_language_short:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-slim
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/github-script@v8
+      with:
+        script: |
+          const files = await github.paginate(github.rest.pulls.listFiles, {
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            pull_number: context.issue.number,
+            per_page: 100,
+          });
+
+          const labels = new Set();
+          for (const { filename } of files) {
+            if (filename.endsWith('.lua')) labels.add('Lua');
+            else if (filename.endsWith('.py')) labels.add('Python');
+          }
+
+          if (labels.length > 0) {
+            github.rest.issues.addLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: [...labels],
             })
           }
