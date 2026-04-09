@@ -64,12 +64,14 @@ jobs:
             pull_number: context.issue.number,
             per_page: 100,
           });
+          console.log(files);
 
           const labels = new Set();
           for (const { filename } of files) {
             if (filename.endsWith('.lua')) labels.add('Lua');
             else if (filename.endsWith('.py')) labels.add('Python');
           }
+          console.log(labels);
 
           if (labels.length > 0) {
             github.rest.issues.addLabels({
