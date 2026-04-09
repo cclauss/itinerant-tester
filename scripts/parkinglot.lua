@@ -16,7 +16,7 @@ def junk():
         and any(title in book_title for title in ("annotated", "annoté", "illustrated"))
     )
 
-    # ==========
+    # ===========
 
     book["publishers"] = ["razal", "tobias publishing", "koraya", "pickleball", "d"]
     assert is_low_quality_book(book) is True, book
