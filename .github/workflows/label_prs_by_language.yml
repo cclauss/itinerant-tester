@@ -54,10 +54,10 @@ jobs:
           }
 
   labels_by_language_short:
-    if: github.event_name == 'pull_request'
     runs-on: ubuntu-slim
-    steps:
-    - uses: actions/checkout@v6
+    permissions:
+      pull-requests: write  # So we can add labels to the pull request
+    steps:  # Do NOT "uses: actions/checkout" here!
     - uses: actions/github-script@v8
       with:
         script: |
