@@ -11,7 +11,7 @@ jobs:
     permissions:
       pull-requests: write  # So we can add labels to the pull request
     steps:  # Do NOT "uses: actions/checkout" here!
-    - uses: actions/github-script@v8
+    - uses: actions/github-script@v9
       with:
         script: |
           const filePaths = (await github.paginate(github.rest.pulls.listFiles, {
@@ -58,7 +58,7 @@ jobs:
     permissions:
       pull-requests: write  # So we can add labels to the pull request
     steps:  # Do NOT "uses: actions/checkout" here!
-    - uses: actions/github-script@v8
+    - uses: actions/github-script@v9
       with:
         script: |
           const files = await github.paginate(github.rest.pulls.listFiles, {
