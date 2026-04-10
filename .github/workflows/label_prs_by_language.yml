@@ -12,14 +12,12 @@ jobs:
     - uses: actions/github-script@v8
       with:
         script: |
-          const files = await github.paginate(github.rest.pulls.listFiles, {
+          const filePaths = (await github.paginate(github.rest.pulls.listFiles, {
             owner: context.repo.owner,
             repo: context.repo.repo,
             pull_number: context.issue.number,
             per_page: 100,
-          });
-
-          const filePaths = files.map((file) => file.filename);
+          })).map(file => file.filename);
           console.log(filePaths);
 
           // Map programming languages to their file extensions.
@@ -34,7 +32,7 @@ jobs:
             Cython: ['.pyx', '.pxd', '.pxi'],
             Rust: ['.rs'],
           };
-          console.log(languageMap);
+          console.log(languageMap.constructor.name, languageMap);
 
           // If any modified file has an extension, then add the label.
           const labels = Object.entries(languageMap)
