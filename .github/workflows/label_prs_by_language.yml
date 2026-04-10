@@ -20,6 +20,7 @@ jobs:
           });
 
           const filePaths = files.map((file) => file.filename);
+          console.log(filePaths);
 
           // Map programming languages to their file extensions.
           const languageMap = {
@@ -33,6 +34,7 @@ jobs:
             Cython: ['.pyx', '.pxd', '.pxi'],
             Rust: ['.rs'],
           };
+          console.log(languageMap);
 
           // If any modified file has an extension, then add the label.
           const labels = Object.entries(languageMap)
@@ -40,6 +42,7 @@ jobs:
               exts.some(ext => filePaths.some(path => path.endsWith(ext)))
             )
             .map(([label]) => label);
+          console.log(labels);
 
           if (labels.length > 0) {
             github.rest.issues.addLabels({
@@ -70,6 +73,9 @@ jobs:
           for (const { filename } of files) {
             if (filename.endsWith('.lua')) labels.add('Lua');
             else if (filename.endsWith('.py')) labels.add('Python');
+
+            // If we have Set(2) { 'Lua', 'Python' }
+            if (labels.size === 2) break;
           }
           console.log(labels);
 
