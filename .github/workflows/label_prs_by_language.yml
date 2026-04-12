@@ -11,79 +11,76 @@ jobs:
     permissions:
       pull-requests: write  # So we can add labels to the pull request
     steps:  # Do NOT "uses: actions/checkout" here!
-    - uses: actions/github-script@v9
-      with:
-        script: |
-          const filePaths = (await github.paginate(github.rest.pulls.listFiles, {
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            pull_number: context.issue.number,
-            per_page: 100,
-          })).map(file => file.filename);
-          console.log(filePaths);
-
-          // Map programming languages to their file extensions.
-          const languageMap = {
-            C: ['.c', '.h'],
-            'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
-            Go: ['.go'],
-            JavaScript: ['.js', '.jsx'],
-            TypeScript: ['.ts', '.tsx'],
-            Lua_: ['.lua'],
-            Python_: ['.py', '.pyi'],
-            Cython: ['.pyx', '.pxd', '.pxi'],
-            Rust: ['.rs'],
-          };
-          console.log(languageMap.constructor.name, languageMap);
-
-          // If any modified file has an extension, then add the label.
-          const labels = Object.entries(languageMap)
-            .filter(([_, exts]) =>
-              exts.some(ext => filePaths.some(path => path.endsWith(ext)))
-            )
-            .map(([label]) => label);
-          console.log(labels);
-
-          if (labels.length > 0) {
-            github.rest.issues.addLabels({
-              issue_number: context.issue.number,
+      - uses: actions/github-script@v9
+        with:
+          script: |
+            const filenames = await github.paginate(github.rest.pulls.listFiles, {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              labels,
-            })
-          }
+              pull_number: context.issue.number,
+              per_page: 100,
+            }).map(file => file.filename);
+            console.log(filenames);
+
+            // Map programming languages to their file extensions.
+            const languageMap = {
+              C: ['.c', '.h'],
+              'C++': ['.cpp', '.cc', '.cxx', '.hpp', '.hh', '.hxx'],
+              Go: ['.go'],
+              JavaScript: ['.js', '.jsx'],
+              TypeScript: ['.ts', '.tsx'],
+              Lua_: ['.lua'],
+              Python_: ['.py', '.pyi'],
+              Cython: ['.pyx', '.pxd', '.pxi'],
+              Rust: ['.rs'],
+            };
+            console.log(languageMap.constructor.name, languageMap);
+
+            // If any modified file has an extension, then add the label.
+            const labels = Object.entries(languageMap)
+              .filter(([_, exts]) =>
+                exts.some(ext => filenames.some(path => path.endsWith(ext)))
+              )
+              .map(([label]) => label);
+            console.log(labels);
+
+            if (labels.length > 0) {
+              github.rest.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels,
+              })
+            }
 
   labels_by_language_short:
     runs-on: ubuntu-slim
     permissions:
       pull-requests: write  # So we can add labels to the pull request
     steps:  # Do NOT "uses: actions/checkout" here!
-    - uses: actions/github-script@v9
-      with:
-        script: |
-          const files = await github.paginate(github.rest.pulls.listFiles, {
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            pull_number: context.issue.number,
-            per_page: 100,
-          });
-          console.log(files);
-
-          const labels = new Set();
-          for (const { filename } of files) {
-            if (filename.endsWith('.lua')) labels.add('Lua');
-            else if (filename.endsWith('.py')) labels.add('Python');
-
-            // If we have Set(2) { 'Lua', 'Python' }
-            if (labels.size === 2) break;
-          }
-          console.log(labels);
-
-          if (labels.size > 0) {
-            github.rest.issues.addLabels({
-              issue_number: context.issue.number,
+      - uses: actions/github-script@v9
+        with:
+          script: |
+            const filenames = await github.paginate(github.rest.pulls.listFiles, {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              labels: Array.from(labels),
-            })
-          }
+              pull_number: context.issue.number,
+              per_page: 100,
+            });
+            console.log(filenames);
+
+            const labels = new Set();
+            for (const filename of filenames) {
+              if (filename.endsWith('.lua')) labels.add('Lua');
+              else if (filename.endsWith('.py')) labels.add('Python');
+            }
+            console.log(labels);
+
+            if (labels.size > 0) {
+              github.rest.issues.addLabels({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                labels: Array.from(labels),
+              })
+            }
