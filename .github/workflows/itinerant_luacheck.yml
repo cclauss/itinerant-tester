@@ -1,0 +1,19 @@
+name: itinerant_luacheck
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'GitHub repo to lint with luacheck (user_name/repo_name)'
+        required: true
+jobs:
+  itinerant_luacheck:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running luacheck in ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v6
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: docker run --rm ghcr.io/lunarmodules/luacheck:latest --version
+      - run: docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest luacheck .
