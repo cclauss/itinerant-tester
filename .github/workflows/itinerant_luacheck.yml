@@ -5,6 +5,8 @@ on:
       repo:
         description: 'GitHub repo to lint with luacheck (user_name/repo_name)'
         required: true
+permissions:
+  contents: read
 jobs:
   itinerant_luacheck:
     runs-on: ubuntu-latest
