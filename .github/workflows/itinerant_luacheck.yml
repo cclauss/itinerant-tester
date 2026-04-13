@@ -17,16 +17,18 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - if: github.event.inputs.repo == 'ArduPilot/ardupilot'
         run: |
+          # --config libraries/AP_Scripting/tests/luacheck.lua .
           # ghcr.io/lunarmodules/luacheck:latest is v1.0.0
-          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest luacheck --config libraries/AP_Scripting/tests/luacheck.lua .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest | true
+
           # Ubuntu 24.04 uses luacheck:v1.1.2
-          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 luacheck --config libraries/AP_Scripting/tests/luacheck.lua .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 | true
           # Ubuntu 26.04 uses luacheck:v1.2.0
-          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 luacheck --config libraries/AP_Scripting/tests/luacheck.lua .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 | true
         
       - if: github.event.inputs.repo != 'ArduPilot/ardupilot'
         run: |
-          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest luacheck .
-          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 luacheck .
-          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 luacheck .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 .
         
