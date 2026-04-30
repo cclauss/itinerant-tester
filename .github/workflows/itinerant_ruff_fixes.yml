@@ -38,7 +38,7 @@ jobs:
       - run: git grep unittest || true  # uvx --python=3.12 unittest2pytest --write .
       - run: codespell --count --ignore-words-list=assertin,astroid,crate || true
       # - run: cargo install typos-cli --locked --quiet && typos || true
-      - uses: crate-ci/typos@v1
+      - uses: crate-ci/typos@v1.45.1
         continue-on-error: true
       - run: pre-commit autoupdate || true
       - run: auto-walrus . || ruff check --select=SIM108,UP034 --fix --unsafe-fixes || git diff || true
