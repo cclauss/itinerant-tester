@@ -18,7 +18,7 @@ on:
       - '.github/workflows/linux_eol.yml'
   workflow_dispatch:
 jobs:
-  ubuntu-26-04:
+  ubuntu_26_04:
     runs-on: ubuntu-26.04
     steps:
       - run: echo "Running on: ubuntu-26.04!!"
