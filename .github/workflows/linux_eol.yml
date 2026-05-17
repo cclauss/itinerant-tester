@@ -21,7 +21,7 @@ jobs:
   ubuntu_26_04:
     runs-on: ubuntu-26.04
     steps:
-      - run: echo 'Running on: ubuntu-26.04!!'
+      - run: echo "Running on: ubuntu-26.04"
 
   linux_eol:
     runs-on: ubuntu-latest
