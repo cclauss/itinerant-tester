@@ -32,11 +32,11 @@ jobs:
       #- run: pip install ${{ matrix.module }}
 
       # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v8.1.0
       - run: uvx --with=${{ matrix.module }} python${{ matrix.python-version }} -c "import ${{ matrix.module }}"
 
       # Approach one: a longer way 
-      - uses: astral-sh/setup-uv@v7
+      - uses: astral-sh/setup-uv@v8.1.0
         with:
           python-version: ${{ matrix.python-version }}
           activate-environment: true
