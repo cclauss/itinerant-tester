@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
     - uses: actions/setup-python@v6
       with:
         python-version: 3.x
@@ -63,7 +63,7 @@ jobs:
     needs: macOS
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
     - name: Download all CPU artifacts
       uses: actions/download-artifact@v8
       with:
@@ -134,7 +134,7 @@ jobs:
   pythons_on_macOS_14:
     runs-on: macos-14
     steps:
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
     - uses: actions/setup-python@v6
       with:
         python-version: |
@@ -162,7 +162,7 @@ jobs:
   pythons_on_macOS_15_intel:
     runs-on: macos-15-intel
     steps:
-    - uses: actions/checkout@v6.0.2
+    - uses: actions/checkout@v6.0.3
     - uses: actions/setup-python@v6
       with:
         python-version: |
