@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: pip install --user auto-walrus codespell[toml] pre-commit ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
       - uses: actions/setup-python@v6
         with:
             python-version: ${{ matrix.python-version }}
@@ -28,7 +28,7 @@ jobs:
           cp ruff_generate_baseline.py /tmp/
           cp ruff_config_gen.py /tmp/
           popd
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           repository: ${{ github.event.inputs.repo }}
           # ref: dev  # branch, tag, or SHA
@@ -143,7 +143,7 @@ jobs:
   #    - run: echo $HOME  # '/home/runner'
   #    - run: echo $USER
   #    - run: echo $GROUP
-  #    - uses: actions/checkout@v6.0.2
+  #    - uses: actions/checkout@v6.0.3
   #    - run: echo $HOME  # '/home/runner'
   #    - run: python3 scripts/home_dir.py  # '/home/runner'
   #    - run: sudo python3 scripts/home_dir.py  # '/root'

@@ -21,7 +21,7 @@ jobs:
     steps:
       # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
       - name: "${{ github.event.inputs.pypi_package }} on python${{ matrix.python-version }}"
-        uses: astral-sh/setup-uv@v8.1.0
+        uses: astral-sh/setup-uv@v8.2.0
         with:
           ignore-empty-workdir: true
       # Hyphen to underscore
