@@ -17,7 +17,7 @@ updates:
         - "action/*"   # official actions start with action/
 # Keep GitHub Actions up to date with GitHub's Dependabot dependabot.yml
 #* [Keeping your software supply chain secure with Dependabot](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain)
-#* [Keeping your actions up to date with Dependabot](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/keeping-your-actions-up-to-date-with-dependabot)
+#* [Keeping your actions up to date with Dependabot](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/auto-update-actions)
 #* [Configuration options for the `dependabot.yml` file - package-ecosystem](https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference#package-ecosystem-)
 
 #To see all GitHub Actions dependencies, type:
