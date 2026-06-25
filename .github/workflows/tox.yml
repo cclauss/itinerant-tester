@@ -15,8 +15,8 @@ jobs:
         job: [lint, docs-lint, pycodestyle]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.3
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
           # cache: 'pip'  # Only use if there are requirements.txt files
@@ -33,8 +33,8 @@ jobs:
         python: ['3.10', '3.11', '3.12', '3.13', '3.14', 'pypy3.11']
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6.0.3
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true

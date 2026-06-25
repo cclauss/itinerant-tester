@@ -19,8 +19,8 @@ jobs:
         python-version: [3.x, 3.14]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6.0.3
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
