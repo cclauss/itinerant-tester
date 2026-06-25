@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt-get update && sudo apt-get install -y llvm pybind11-dev
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           repository: ArduPilot/waf
           submodules: recursive
           # ref: dev  # branch, tag, or SHA
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.2.0
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true

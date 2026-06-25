@@ -17,8 +17,8 @@ jobs:
         job: [lint, docs-lint, pycodestyle]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.3
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.14t
           allow-prereleases: true
@@ -37,8 +37,8 @@ jobs:
         tox-gh-actions: ['', 'tox-gh-actions']
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6.0.3
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
@@ -69,7 +69,7 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v8.2.0
       - name: Install tox
