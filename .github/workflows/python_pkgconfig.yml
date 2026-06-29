@@ -18,7 +18,7 @@ jobs:
               from sysconfig import get_config_var, get_path
               from pathlib import Path
               pkgconfig = Path(get_path('stdlib')).parent / "pkgconfig"
-              pkgconfig = Path(get_config_var("LIBDIR") / "pkgconfig"
+              pkgconfig = Path(get_config_var("LIBDIR")) / "pkgconfig"
               if pkgconfig.exists():
                   print([path.name for path in pkgconfig.iterdir()])
                   return str(pkgconfig)
