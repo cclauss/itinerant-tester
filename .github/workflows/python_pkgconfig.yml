@@ -8,6 +8,9 @@ jobs:
         os: [macos-latest, macos-26-intel, ubuntu-latest, ubuntu-26.04-arm, windows-latest, windows-11-arm]
     runs-on: ${{ matrix.os }}
     steps:
+      - run: echo "${{ runner.os }} on ${{ runner.arch }}"
+      - &pkg_config_path
+        run: echo "PKG_CONFIG_PATH = $PKG_CONFIG_PATH"
       - &get_python_pkgconfig
         shell: python
         run: |
@@ -24,4 +27,13 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: 3.x
+      - *pkg_config_path
+      - if: runner.os == 'macOS' && runner.arch == 'arm64'
+        run: |
+          pkg-config python-3.14
+          pkg-config PYTHON-3.14
+          export PKG_CONFIG_PATH="/Library/Frameworks/Python.framework/Versions/3.14/lib/pkgconfig"
+          pkg-config python-3.14
+          pkg-config PYTHON-3.14      
+      - *pkg_config_path
       - *get_python_pkgconfig
