@@ -28,5 +28,5 @@ jobs:
         with:
           python-version: 3.x
       - *pkg_config_path
-      - run: ls PKG_CONFIG_PATH     
+      - run: ls $PKG_CONFIG_PATH     
       - *get_python_pkgconfig
