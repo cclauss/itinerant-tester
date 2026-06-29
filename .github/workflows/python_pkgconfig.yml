@@ -16,7 +16,7 @@ jobs:
               from pathlib import Path
               pkgconfig = Path(get_path('stdlib')).parent / "pkgconfig"
               if pkgconfig.exists():
-                   print([path.name for path in pkgconfig.iterdir()])
+                  print([path.name for path in pkgconfig.iterdir()])
                   return str(pkgconfig)
               msg = f"{pkgconfig} does not exist"
               raise FileNotFoundError(msg)
