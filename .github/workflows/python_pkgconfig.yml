@@ -17,11 +17,12 @@ jobs:
           def get_python_pkgconfig() -> str:
               from sysconfig import get_config_var, get_path
               from pathlib import Path
-              pkgconfig_a = Path(get_path('stdlib')).parent / "pkgconfig"
+              # pkgconfig_a works on macOS, but not on Linux
+              # pkgconfig_a = Path(get_path('stdlib')).parent / "pkgconfig"
               pkgconfig_b = Path(get_config_var("LIBDIR")) / "pkgconfig"
-              assert pkgconfig_a == pkgconfig_b, (pkgconfig_a, pkgconfig_b)
+              # assert pkgconfig_a == pkgconfig_b, (pkgconfig_a, pkgconfig_b)
               pkgconfig = Path(get_config_var("LIBPC"))
-              assert pkgconfig == pkgconfig_a, (pkgconfig, pkgconfig_a)
+              assert pkgconfig == pkgconfig_b, (pkgconfig, pkgconfig_b)
               if pkgconfig.exists():
                   print([path.name for path in pkgconfig.iterdir()])
                   return str(pkgconfig)
