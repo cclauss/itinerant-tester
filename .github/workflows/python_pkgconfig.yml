@@ -13,7 +13,7 @@ jobs:
           def get_python_pkgconfig() -> str:
               from sysconfig import get_path
               from pathlib import Path
-              pkgconfig = Path(sysconfig.get_path('stdlib')).parent / "pkgconfig"
+              pkgconfig = Path(get_path('stdlib')).parent / "pkgconfig"
               if pkgconfig.exists():
                   return str(pkgconfig)
               msg = f"{pkgconfig} does not exist"
@@ -27,7 +27,7 @@ jobs:
           def get_python_pkgconfig() -> str:
               from sysconfig import get_path
               from pathlib import Path
-              pkgconfig = Path(sysconfig.get_path('stdlib')).parent / "pkgconfig"
+              pkgconfig = Path(get_path('stdlib')).parent / "pkgconfig"
               if pkgconfig.exists():
                   return str(pkgconfig)
               msg = f"{pkgconfig} does not exist"
