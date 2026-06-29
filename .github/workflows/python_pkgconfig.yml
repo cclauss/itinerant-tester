@@ -1,0 +1,35 @@
+name: python_pkgconfig
+on: [workflow_dispatch]
+jobs:
+  python_pkgconfig:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-26-intel, ubuntu-latest, ubuntu-26.04-arm, windows-latest, windows-11-arm]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - shell: python
+        run: |
+          def get_python_pkgconfig() -> str:
+              from sysconfig import get_path
+              from pathlib import Path
+              pkgconfig = Path(sysconfig.get_path('stdlib')).parent / "pkgconfig"
+              if pkgconfig.exists():
+                  return str(pkgconfig)
+              msg = f"{pkgconfig} does not exist"
+              raise FileNotFoundError(msg)
+          print(f"{get_python_pkgconfig() = }")
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+      - shell: python
+        run: |
+          def get_python_pkgconfig() -> str:
+              from sysconfig import get_path
+              from pathlib import Path
+              pkgconfig = Path(sysconfig.get_path('stdlib')).parent / "pkgconfig"
+              if pkgconfig.exists():
+                  return str(pkgconfig)
+              msg = f"{pkgconfig} does not exist"
+              raise FileNotFoundError(msg)
+          print(f"{get_python_pkgconfig() = }")
