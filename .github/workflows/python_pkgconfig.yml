@@ -8,13 +8,15 @@ jobs:
         os: [macos-latest, macos-26-intel, ubuntu-latest, ubuntu-26.04-arm, windows-latest, windows-11-arm]
     runs-on: ${{ matrix.os }}
     steps:
-      - shell: python
+      - &get_python_pkgconfig
+        shell: python
         run: |
           def get_python_pkgconfig() -> str:
               from sysconfig import get_path
               from pathlib import Path
               pkgconfig = Path(get_path('stdlib')).parent / "pkgconfig"
               if pkgconfig.exists():
+                   print([path.name for path in pkgconfig.iterdir()])
                   return str(pkgconfig)
               msg = f"{pkgconfig} does not exist"
               raise FileNotFoundError(msg)
@@ -22,14 +24,4 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: 3.x
-      - shell: python
-        run: |
-          def get_python_pkgconfig() -> str:
-              from sysconfig import get_path
-              from pathlib import Path
-              pkgconfig = Path(get_path('stdlib')).parent / "pkgconfig"
-              if pkgconfig.exists():
-                  return str(pkgconfig)
-              msg = f"{pkgconfig} does not exist"
-              raise FileNotFoundError(msg)
-          print(f"{get_python_pkgconfig() = }")
+      - *get_python_pkgconfig
