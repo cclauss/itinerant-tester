@@ -39,6 +39,8 @@ jobs:
           ${CC} ${CFLAGS} -Iold/include ${DEF} -shared -o old/compat53.so ltablib.c lutf8lib.c lstrlib.c liolib.c ${SRC}
       - name: run test scripts
         run: |
+          mkdir -p old
+          mkdir -p new
           (cd old && bin/lua ../tests/test.lua) > old.txt
           (cd new && bin/lua ../tests/test.lua) > new.txt
       - name: compare script output
