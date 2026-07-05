@@ -88,7 +88,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libreadline-dev
-      # - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: luarocks/hererocks
       - if: ${{ matrix.pypi }}
         run: pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
       - if: ${{ !matrix.pypi }}
