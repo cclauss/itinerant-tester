@@ -162,7 +162,7 @@ jobs:
       - if: ${{ !matrix.pypi }}
         env:
           SPEC: git+https://github.com/luarocks/hererocks.git
-        run: uvx --spec=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
+        run: uvx --from=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
       - if: runner.os != 'Windows'
         run: |
           source lua/bin/activate  # Adds 'lua/bin' to $PATH.
