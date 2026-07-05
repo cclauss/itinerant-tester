@@ -74,8 +74,8 @@ jobs:
       # - uses: actions/checkout@v7
       # - run: pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
       - env:
-          SPEC: pipx run --spec git+https://github.com/luarocks/hererocks.git hererocks
-        run: pipx run --spec=SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
+          SPEC: git+https://github.com/luarocks/hererocks.git
+        run: pipx run --spec=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
       - if: runner.os != 'Windows'
         run: |
           source lua/bin/activate  # Adds 'lua/bin' to $PATH.
