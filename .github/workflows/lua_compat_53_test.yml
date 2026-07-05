@@ -65,7 +65,7 @@ jobs:
           - os: [windows-latest]
             luaVersion: "5.4"
             luaRocksVersion: "latest"
-    runs-on: ${{ matrix.luaVersion }}
+    runs-on: ${{ matrix.os }}
     steps:
       - if: runner.os == 'Linux'
         run: |
