@@ -152,7 +152,7 @@ jobs:
       - if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libreadline-dev
+          sudo apt-get install --yes libreadline-dev tree
       - uses: actions/checkout@v7
         with:
           repository: luarocks/hererocks
@@ -165,9 +165,13 @@ jobs:
         run: uvx --from=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
       - if: runner.os != 'Windows'
         run: |
+          echo "PATH=$PATH"
           source lua/bin/activate  # Adds 'lua/bin' to $PATH.
+          echo "PATH=$PATH"
+          tree lua
           lua -v && luarocks --version
           luarocks install luacheck
+          tree lua
           luacheck --version
 
       - if: runner.os == 'Windows'
