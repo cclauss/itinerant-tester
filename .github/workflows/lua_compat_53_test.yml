@@ -26,7 +26,7 @@ jobs:
         run: |
           sudo apt install libreadline-dev
           pip3 install --user hererocks
-          ~/.local/bin/hererocks old --lua${{ matrix.luaVersion }}
+          ~/.local/bin/hererocks old --lua=${{ matrix.luaVersion }}
           test -e old/bin/lua || (cd old/bin && ln -s luajit* lua)
           ~/.local/bin/hererocks new --lua=5.3
       - name: compile C modules
