@@ -49,15 +49,23 @@ jobs:
   hererocks:
     permissions:
       contents: read
-    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
+        os: [ubuntu-latest]
         luaVersion: ["5.1", "5.2", "5.3", "5.4", "5.5"]
         luaRocksVersion: ["latest"]
         include:
-          - luaVersion: "5.4"
+          - os: [ubuntu-latest]
+            luaVersion: "5.4"
             luaRocksVersion: "3.13.0"
+          - os: [macos-latest]
+            luaVersion: "5.4"
+            luaRocksVersion: "latest"
+          - os: [windows-latest]
+            luaVersion: "5.4"
+            luaRocksVersion: "latest"
+    runs-on: ${{ matrix.luaVersion }}
     steps:
       - if: runner.os == 'Linux'
         run: |
