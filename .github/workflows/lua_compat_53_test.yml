@@ -73,9 +73,10 @@ jobs:
           sudo apt-get install -y libreadline-dev
       # - uses: actions/checkout@v7
       # - run: pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
-      - env:
-          SPEC: git+https://github.com/luarocks/hererocks.git
-        run: pipx run --spec=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
+      - run: pipx run https://raw.githubusercontent.com/luarocks/hererocks/master/hererocks.py lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
+      # - env:
+      #    SPEC: git+https://github.com/luarocks/hererocks.git
+      #  run: pipx run --spec=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
       - if: runner.os != 'Windows'
         run: |
           source lua/bin/activate  # Adds 'lua/bin' to $PATH.
