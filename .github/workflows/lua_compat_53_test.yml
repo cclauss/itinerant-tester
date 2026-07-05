@@ -82,7 +82,7 @@ jobs:
 
       - if: runner.os == 'Windows'
         run: |
-          call lua\bin\activate  # Adds 'lua/bin' to $PATH.
+          lua\bin\activate.bat  # Adds 'lua/bin' to $PATH.
           lua -v && luarocks --version
           luarocks install luacheck
           luacheck --version
