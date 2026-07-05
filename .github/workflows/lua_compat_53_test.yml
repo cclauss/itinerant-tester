@@ -45,3 +45,20 @@ jobs:
           (cd new && bin/lua ../tests/test.lua) > new.txt
       - name: compare script output
         run: diff old.txt new.txt || true
+
+  hererocks:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        luaVersion: ["5.1", "5.2", "5.3", "5.4", "5.5"]
+    steps:
+      # - uses: actions/checkout@v7
+      - run: |
+          pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=latest
+          source lua/bin/activate       # Run activation script, adding 'lua/bin' to $PATH.
+          lua -v && luarocks --version
+          luarocks install luacheck
+          luacheck --version
