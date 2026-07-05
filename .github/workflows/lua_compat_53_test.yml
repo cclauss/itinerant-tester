@@ -54,6 +54,10 @@ jobs:
       fail-fast: false
       matrix:
         luaVersion: ["5.1", "5.2", "5.3", "5.4", "5.5"]
+        luaRocksVersion: ["latest"]
+        include:
+          - luaVersion: "5.4"
+            luaRocksVersion: ["3.13.0"]
     steps:
       - if: runner.os == 'Linux'
         run: |
@@ -61,8 +65,8 @@ jobs:
           sudo apt-get install -y libreadline-dev
       # - uses: actions/checkout@v7
       - run: |
-          pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=latest
-          source lua/bin/activate       # Run activation script, adding 'lua/bin' to $PATH.
+          pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaVersion }}
+          source lua/bin/activate       # Adds 'lua/bin' to $PATH.
           lua -v && luarocks --version
           luarocks install luacheck
           luacheck --version
