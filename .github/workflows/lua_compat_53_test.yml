@@ -106,7 +106,72 @@ jobs:
 
       - if: runner.os == 'Windows'
         run: |
-          lua\bin\activate.bat  # Adds 'lua/bin' to $PATH.
+          lua\bin\activate  # Adds 'lua/bin' to $PATH.
+          lua -v && luarocks --version
+          luarocks install luacheck
+          luacheck --version
+
+  hererocks-uv:
+    permissions:
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        luaVersion: ["5.1", "5.2", "5.3", "5.4", "5.5", "latest"]
+        luaRocksVersion: ["latest"]
+        pypi: [true]
+        include:
+          - os: [ubuntu-latest]
+            luaVersion: "5.4"
+            luaRocksVersion: "3.13.0"
+            pypi: true
+          - os: [macos-latest]
+            luaVersion: "5.4"
+            luaRocksVersion: "latest"
+            pypi: true
+          - os: [windows-latest]
+            luaVersion: "5.4"
+            luaRocksVersion: "latest"
+            pypi: true
+          # Tests for pypi: false
+          - os: [ubuntu-latest]
+            luaVersion: "latest"  # v5.5.0!
+            luaRocksVersion: "latest"  # v3.13.0!
+            pypi: false
+          - os: [macos-latest]
+            luaVersion: "latest"  # v5.5.0!
+            luaRocksVersion: "latest"  # v3.13.0!
+            pypi: false
+          - os: [windows-latest]
+            luaVersion: "latest"  # v5.5.0!
+            luaRocksVersion: "latest"  # v3.13.0!
+            pypi: false
+    runs-on: ${{ matrix.os }}
+    steps:
+      - if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libreadline-dev
+      - uses: actions/checkout@v7
+        with:
+          repository: luarocks/hererocks
+      - if: ${{ matrix.pypi }}
+        run: uvx hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
+      - if: ${{ !matrix.pypi }}
+        env:
+          SPEC: git+https://github.com/luarocks/hererocks.git
+        run: uvx --spec=$SPEC hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
+      - if: runner.os != 'Windows'
+        run: |
+          source lua/bin/activate  # Adds 'lua/bin' to $PATH.
+          lua -v && luarocks --version
+          luarocks install luacheck
+          luacheck --version
+
+      - if: runner.os == 'Windows'
+        run: |
+          lua\bin\activate  # Adds 'lua/bin' to $PATH.
           lua -v && luarocks --version
           luarocks install luacheck
           luacheck --version
