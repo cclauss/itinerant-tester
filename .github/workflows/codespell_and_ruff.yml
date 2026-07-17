@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7.0.0
     - uses: codespell-project/actions-codespell@v2
-    - uses: astral-sh/ruff-action@v4.0.0
+    - uses: astral-sh/ruff-action@v4.1.0
     #  with:
     #    args: --ignore=ALL
     # - run: pip install --user codespell[toml] ruff

@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.0
-      - uses: astral-sh/setup-uv@v8.2.0
+      - uses: astral-sh/setup-uv@v8.3.2
         with:
             enable-cache: true
       - run: uv python install
