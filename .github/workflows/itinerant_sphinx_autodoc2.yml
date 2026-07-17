@@ -28,13 +28,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7.0.0
+      - uses: actions/setup-python@v6.2.0
         with:
             python-version: ${{ matrix.python-version }}
       - run: cp scripts/sphinx_conf.py /tmp/
       - run: cp scripts/sphinx_index.md /tmp/
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.0
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: mkdir itinerant_sphinx_autodoc2
@@ -43,11 +43,11 @@ jobs:
       - run: ls -Fla
       - run: pip install --upgrade pip
       - run: pip install --upgrade furo myst_parser sphinxcontrib-mermaid  # sphinx-autodoc2
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - run: ls -FlaR itinerant_sphinx_autodoc2
       # - uses: echo -e "# itinerant_sphinx_autodoc2\n\\`\\`\\`{toctree}\n:maxdepth: 2\README.md\n\\`\\`\\`"
       - run: sphinx-build -c itinerant_sphinx_autodoc2 . itinerant_sphinx_autodoc2/_build/html | true
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: itinerant_sphinx_autodoc2/_build/html
       - run: echo ${{ github.event_name }} 

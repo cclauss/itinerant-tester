@@ -19,10 +19,10 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.0
         with:
           repository: ${{ github.event.inputs.repo }}
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
       - run: cat .swiftlint.yml || true

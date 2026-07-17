@@ -7,12 +7,12 @@ jobs:
       max-parallel: 16
       matrix:
         # architecture: [x86, x64]
-        node-version: [23]  # [18, 20, 22, 23]
-        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
+        node-version: [current, lts/*, lts/-1, lts/-2]
+        os: [macos-15, macos-15-intel, macos-26, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
       # - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6.4.0
         with:
           # architecture: ${{ matrix.architecture }}
           node-version: ${{ matrix.node-version }}
@@ -48,7 +48,7 @@ jobs:
     steps:
       # - uses: actions/checkout@v4
       - name: "Setup Node.js v${{ matrix.node-version }} on ${{ runner.os }} on ${{ runner.arch }}"
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6.4.0
         with:
           # architecture: ${{ matrix.architecture }}
           node-version: ${{ matrix.node-version }}

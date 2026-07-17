@@ -13,10 +13,10 @@ jobs:
       fail-fast: false
       matrix:
         ccompiler: [gcc, clang]  #, msvc]
-        os: [macos-13, macos-15, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
+        os: [macos-15, macos-15-intel, macos-latest, ubuntu-latest, ubuntu-24.04-arm, windows-latest, windows-2025]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7.0.0
       - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
         shell: bash
         run: |
@@ -66,7 +66,7 @@ jobs:
           Path('result.txt').write_text(result_line)
       
       - name: Upload results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: result-${{ matrix.os }}-${{ matrix.ccompiler }}
           path: result.txt
@@ -76,7 +76,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download all artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           path: results
       
@@ -169,7 +169,7 @@ jobs:
           print(markdown_table)
       
       - name: Upload markdown table
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: size-comparison-table
           path: size_comparison_table.md

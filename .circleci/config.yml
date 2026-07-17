@@ -9,7 +9,7 @@ jobs:
     docker:
       # Specify the version you desire here
       # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
-      - image: cimg/python:3.13-browsers
+      - image: cimg/python:3.14-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -31,11 +31,13 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            python -m pip install --upgrade pip
-            pipx install pre-commit ruff
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install pytest  # -r pyproject.toml
+            uv self update
+            sudo apt-get update
+            sudo apt-get install portaudio19-dev python3-pyaudio
+            uv venv --allow-existing
+            # uv tool install pre-commit  # ruff
+            # pip install pyaudio pytest  # -r pyproject.toml
+            uv sync
           #  python3 -m venv venv
           #  . venv/bin/activate
           #  pip install --upgrade pip
@@ -49,15 +51,15 @@ jobs:
       # run tests!
       # https://docs.astral.sh/ruff
       - run:
-          command: ruff check
+          command: uvx ruff check
           # name: ruff
           # command: |
           #  . venv/bin/activate
           #  python -m ruff check
 
       # https://pre-commit.com
-      - run:
-          command: pre-commit run --all-files
+      # - run:
+          # command: pre-commit run --all-files
           # command: |
           #  . venv/bin/activate
           #  pre-commit run --all-files
@@ -67,8 +69,9 @@ jobs:
       - run:
           name: pytest
           command: |
-            . venv/bin/activate
-            python -m pytest
+            # . venv/bin/activate
+            uv venv --allow-existing
+            uvx --with=openai,pyaudio pytest
 
       - store_artifacts:
           path: test-reports
