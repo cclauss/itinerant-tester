@@ -8,7 +8,6 @@ on:
 
 jobs:
   luarocks_install:
-    name: "${{ github.event.inputs.package }}"
     strategy:
       fail-fast: false
       matrix:
