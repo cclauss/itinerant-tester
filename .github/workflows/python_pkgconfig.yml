@@ -1,0 +1,37 @@
+name: python_pkgconfig
+on: [workflow_dispatch]
+jobs:
+  python_pkgconfig:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-26-intel, ubuntu-latest, ubuntu-26.04-arm, windows-latest, windows-11-arm]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - run: echo "${{ runner.os }} on ${{ runner.arch }}"
+      - &pkg_config_path
+        run: echo "PKG_CONFIG_PATH = $PKG_CONFIG_PATH"
+      - &get_python_pkgconfig
+        shell: python
+        run: |
+          def get_python_pkgconfig() -> str:
+              from sysconfig import get_config_var, get_path
+              from pathlib import Path
+              # pkgconfig_a works on macOS, but not on Linux
+              # pkgconfig_a = Path(get_path('stdlib')).parent / "pkgconfig"
+              pkgconfig_b = Path(get_config_var("LIBDIR")) / "pkgconfig"
+              # assert pkgconfig_a == pkgconfig_b, (pkgconfig_a, pkgconfig_b)
+              pkgconfig = Path(get_config_var("LIBPC"))
+              assert pkgconfig == pkgconfig_b, (pkgconfig, pkgconfig_b)
+              if pkgconfig.exists():
+                  print([path.name for path in pkgconfig.iterdir()])
+                  return str(pkgconfig)
+              msg = f"{pkgconfig} does not exist"
+              raise FileNotFoundError(msg)
+          print(f"{get_python_pkgconfig() = }")
+      - uses: actions/setup-python@v6
+        with:
+          python-version: 3.x
+      - *pkg_config_path
+      - run: ls $PKG_CONFIG_PATH     
+      - *get_python_pkgconfig

@@ -1,0 +1,33 @@
+name: itinerant_luacheck
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'GitHub repo to lint with luacheck (user_name/repo_name)'
+        required: true
+jobs:
+  itinerant_luacheck:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running luacheck in ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v7.0.0
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - if: github.event.inputs.repo == 'ArduPilot/ardupilot'
+        run: |
+          # --config libraries/AP_Scripting/tests/luacheck.lua .
+          # ghcr.io/lunarmodules/luacheck:latest is v1.0.0
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest . | true
+          # Ubuntu 24.04 uses luacheck:v1.1.2
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 . | true
+          # Ubuntu 26.04 uses luacheck:v1.2.0
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 . | true
+        
+      - if: github.event.inputs.repo != 'ArduPilot/ardupilot'
+        run: |
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 .
+          docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 .
+        

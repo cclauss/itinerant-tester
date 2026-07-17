@@ -95,14 +95,14 @@ def select_lines(s: str = linters_as_text) -> str:
 
 ruff_header = f"""
 [tool.ruff]
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.lint]
 select = [
 {select_lines()}
 ]
 # ignore = []
-target-version = "py39"
+target-version = "py310"
 """
 
 ruff_pylint_header = """

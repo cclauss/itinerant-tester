@@ -1,0 +1,72 @@
+name: cygwin
+on:
+  push:
+    paths:
+      - '.github/workflows/cygwin.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/cygwin.yml'
+  workflow_dispatch:
+jobs:
+  cygwin:
+    # name: "${{ github.event.inputs.repo }}"
+    strategy:
+      fail-fast: false
+      matrix:  # https://cygwin.com/packages/summary/python312.html
+        cygwin_package:
+          # - ""
+          # - "cygiconv"  # Package 'cygiconv' not found.
+          # - "cygintl"  # Package 'cygintl' not found.
+          # - "libiconv2"  # Installed by default
+          # - "libintl8"  # Installed by default
+          - "python3"  # EOL Python 3.9
+          # - "python39"  # EOL Python 3.9
+          # - "python311"  # Package 'python311' not found.
+          # - "python312"  # No python312-pip
+          # - "python312-future"  # Package 'python312-future' not found.
+          # - "python312-lxml"  # Package 'python312-lxml' not found.
+          - "python312-pip"  # Everything including python312, setuptools, wheel <-- use this!!!
+          # - "python312-setuptools"  # No python312-pip
+          # - "python312-venv"  # Package 'python312-venv' not found.
+          # - "python312-wheel"  # No python312-pip
+          # - "python313"  # Package 'python313' not found.
+          # - "python314"  # Package 'python314' not found.
+    runs-on: windows-latest
+    steps:
+      - uses: cygwin/cygwin-install-action@v6.1
+        with:
+          packages: ${{ matrix.cygwin_package }} python39-lxml
+      - run: python3.exe --version  # Python 3.12.10
+        shell: bash
+      - run: python3 --version      # Python 3.9.16 or 3.12.12 <-- use this!!! (Not.exe)
+        shell: bash
+      - run: python.exe --version   # Python 3.12.10
+        shell: bash
+      - run: python --version       # Python 3.9.16 or 3.12.12 <-- use this!!! (Not.exe)
+        shell: bash
+      - run: py --version           # Python 3.14.3
+        shell: bash
+      - run: python3 -m pip --version
+        # pip 26.0.1 from /usr/lib/python3.9/site-packages/pip (python 3.9 or 3.12)
+        shell: bash
+      - run: python3 -m pip install future
+        shell: bash
+      - run: python3 -m pip install lxml
+        shell: bash
+  cygwin_alt_pythons:
+    strategy:
+      fail-fast: false
+      matrix:  # https://cygwin.com/packages/summary/python312.html
+        python:
+          - "py"
+          - "python.exe"
+          - "python3.exe"
+    runs-on: windows-latest
+    steps:
+      - uses: cygwin/cygwin-install-action@v6.1
+      - run: ${{ matrix.python }} --version
+        shell: bash
+      - run: ${{ matrix.python }} -m pip --version
+        shell: bash
+      - run: ${{ matrix.python }} -m pip install lxml
+        shell: bash

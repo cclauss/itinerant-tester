@@ -1,3 +1,5 @@
+# uvx --with=orjson python3.14t -c "import orjson"
+
 name: pip_install_on_python_prerelease
 on:
   workflow_dispatch:
@@ -13,10 +15,10 @@ jobs:
     name: "${{ github.event.inputs.pagkage }}"
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v7.0.0
+    - uses: actions/setup-python@v6.2.0
       with:
-        python-version: 3.13
+        python-version: 3.14
         allow-prereleases: true
     - if: ${{ github.event.inputs.apt_package }}
       run: |

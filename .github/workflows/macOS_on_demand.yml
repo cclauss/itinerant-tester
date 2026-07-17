@@ -2,23 +2,39 @@
 
 name: macOS
 on:
+  push:
+    paths:
+      - '.github/workflows/macOS_on_demand.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/macOS_on_demand.yml'
   workflow_dispatch:
 jobs:
   macOS:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-15, macos-14, macos-13, macos-latest]
-        # arch: [ARM64, X64]  # macos-13 is X64, others are ARM64
+        os: [macos-26, macos-26-intel, macos-15, macos-15-intel, macos-14, macos-latest]
+        # arch: [ARM64, X64]  # macos-XX-intel is X64, others are ARM64
     runs-on: ${{ matrix.os }}
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v7.0.0
+    - uses: actions/setup-python@v6.2.0
       with:
         python-version: 3.x
     - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
+    - name: Create ${{ matrix.os }}_cpu.md
+      run: |
+        echo "| ${{ matrix.os }} | ${{ runner.arch }} |" > ${{ matrix.os }}_cpu.md
+    - name: Display ${{ matrix.os }}_cpu.md content
+      run: cat ${{ matrix.os }}_cpu.md
+    - name: Upload ${{ matrix.os }}_cpu.md artifact
+      uses: actions/upload-artifact@v7
+      with:
+        name: ${{ matrix.os }}_cpu
+        path: ${{ matrix.os }}_cpu.md
     - name: Dump GitHub context
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
@@ -43,19 +59,122 @@ jobs:
       env:
         MATRIX_CONTEXT: ${{ toJson(matrix) }}
       run: echo "$MATRIX_CONTEXT"
-  pythons_on_macOS_12:
-    runs-on: macos-12
+  write_macOS_CPUs_md:
+    needs: macOS
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v7.0.0
+    - name: Download all CPU artifacts
+      uses: actions/download-artifact@v8
+      with:
+        pattern: "*_cpu"
+        merge-multiple: true
+        path: artifacts
+    - name: Process and merge CPU files
+      shell: python
+      run: |
+        import os
+        import glob
+        from pathlib import Path
+        
+        # Find all *_cpu.md files in artifacts directory
+        artifact_files = glob.glob("artifacts/**/*_cpu.md", recursive=True)
+        print(f"Found artifact files: {artifact_files}")
+        
+        # Read all content and collect unique rows
+        all_rows = set()
+        
+        for file_path in artifact_files:
+            with open(file_path, 'r') as f:
+                content = f.read().strip()
+                lines = content.split('\n')
+                # Skip header and separator lines, collect data rows
+                for line in lines:
+                    if line := line.strip():
+                        all_rows.add(line)
+        
+        # Sort rows for consistent output
+        sorted_rows = sorted(all_rows)
+        
+        # Create combined content
+        header =    "| macOS Version | runner.arch |"
+        separator = "|---------------|-------------|"
+        combined_content = f"{header}\n{separator}\n"
+        if sorted_rows:
+            combined_content += "\n".join(sorted_rows) + "\n"
+        
+        # Write combined file
+        with open("macOS_CPUs_combined.md", 'w') as f:
+            f.write(combined_content)
+        
+        print(f"Combined content:\n{combined_content}")
+        
+        # Read existing file for comparison
+        existing_content = ""
+        if os.path.exists("macOS_CPUs.md"):
+            with open("macOS_CPUs.md", 'r') as f:
+                existing_content = f.read()
+        
+        print(f"Existing content:\n{existing_content}")
+        
+        # Compare and update if different
+        if combined_content.strip() != existing_content.strip():
+            print("Contents differ, updating macOS_CPUs.md")
+            with open("macOS_CPUs.md", 'w') as f:
+                f.write(combined_content)
+        else:
+            print("Contents are the same, no update needed")
+    - name: Upload combined macOS_CPUs.md
+      uses: actions/upload-artifact@v7
+      with:
+        name: macOS_CPUs_final
+        path: |
+          macOS_CPUs.md
+          macOS_CPUs_combined.md
+  pythons_on_macOS_14:
+    runs-on: macos-14
+    steps:
+    - uses: actions/checkout@v7.0.0
+    - uses: actions/setup-python@v6.2.0
       with:
         python-version: |
+          3.14
+          3.13
+          3.12
+          3.11
+          3.10
+          3.9
+          3.8
+        allow-prereleases: true
+    - run: |
+        python3.8 --version
+        python3.9 --version
+        python3.10 --version
+        python3.11 --version
+        python3.12 --version
+        python3.13 --version
+        python3.14 --version
+    - name: Dump runner context
+      env:
+        RUNNER_CONTEXT: ${{ toJson(runner) }}
+      run: echo "$RUNNER_CONTEXT"
+
+  pythons_on_macOS_15_intel:
+    runs-on: macos-15-intel
+    steps:
+    - uses: actions/checkout@v7.0.0
+    - uses: actions/setup-python@v6.2.0
+      with:
+        python-version: |
+          3.14
+          3.13
           3.12
           3.11
           3.10
           3.9
           3.8
           3.7
+        allow-prereleases: true
     - run: |
         python3.7 --version
         python3.8 --version
@@ -63,39 +182,9 @@ jobs:
         python3.10 --version
         python3.11 --version
         python3.12 --version
+        python3.13 --version
+        python3.14 --version
     - name: Dump runner context
       env:
         RUNNER_CONTEXT: ${{ toJson(runner) }}
       run: echo "$RUNNER_CONTEXT"
-  pythons_on_macOS_11:
-    runs-on: macos-11
-    steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
-      with:
-        python-version: |
-          3.6
-          # 3.5
-#          3.4
-#          3.3
-#          3.2
-#          3.1
-#          3.0
-    - run: |
-        python3.0 --version || true
-        python3.1 --version || true
-        python3.2 --version || true
-        python3.3 --version || true
-        python3.4 --version || true
-        python3.5 --version || true
-        python3.6 --version || true
-        python3.7 --version || true
-        python3.8 --version || true
-        python3.9 --version || true
-    - name: Dump runner context
-      env:
-        RUNNER_CONTEXT: ${{ toJson(runner) }}
-      run: echo "$RUNNER_CONTEXT"
-        python3.10 --version || true
-        python3.11 --version || true
-        python3.12 --version || true
