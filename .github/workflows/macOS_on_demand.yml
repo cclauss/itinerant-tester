@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: ${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
-    - run: env | grep BREW
+    - run: env | grep BREW && echo "$(brew --prefix)"
     - uses: actions/checkout@v7.0.0
     - uses: actions/setup-python@v6.2.0
       with:
