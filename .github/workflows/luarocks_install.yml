@@ -27,6 +27,7 @@ jobs:
           luaRocksVersion: "3.13.0"
       - run: lua -v
       - run: luarocks --version
-      - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${{ github.event.inputs.package }} --local
+      - run: luarocks --lua-version=${{ matrix.lua-version }} install --local
+      # - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions=${{ github.event.inputs.package }} --local
       - run: luarocks --lua-version=${{ matrix.lua-version }} list
       - run: luarocks --lua-version=${{ matrix.lua-version }} show ${{ github.event.inputs.package }}
