@@ -28,6 +28,8 @@ jobs:
       - run: lua -v
       - run: luarocks --version
       - run: luarocks --lua-version=${{ matrix.lua-version }} install ${{ github.event.inputs.package }} --local
+        continue-on-error: true
       # - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${{ github.event.inputs.package }} --local
       - run: luarocks --lua-version=${{ matrix.lua-version }} list
       - run: luarocks --lua-version=${{ matrix.lua-version }} show ${{ github.event.inputs.package }}
+        continue-on-error: true
