@@ -19,6 +19,8 @@ jobs:
       - uses: luarocks/gh-actions-lua@master
         with:
           luaVersion: ${{ matrix.lua-version }}
+      - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
+        uses: step-security/msvc-dev-cmd@v1
       - uses: luarocks/gh-actions-luarocks@master
         with:
           luaRocksVersion: "3.13.0"
