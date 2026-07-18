@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       package:
-        description: 'Package to test (e.g., lua-cjson)'
+        description: 'Package to test (e.g., moonscript)'
         required: true
 
 jobs:
