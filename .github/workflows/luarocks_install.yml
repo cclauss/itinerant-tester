@@ -18,7 +18,7 @@ jobs:
       - run: echo "Installing ${{ github.event.inputs.package }} on ${{ matrix.os }} on ${{ runner.arch }}..."
       - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
         uses: step-security/msvc-dev-cmd@v1
-      - run: cl --version || true
+      - run: cl || clang --version
       - uses: luarocks/gh-actions-lua@master
         with:
           luaVersion: ${{ matrix.lua-version }}
