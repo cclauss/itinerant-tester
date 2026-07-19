@@ -11,7 +11,8 @@
 #
 # That package is installed on both Lua 5.4 and 5.5 on macOS, Ubuntu, and Windows.
 
-name: luarocks_install
+# name: luarocks_install
+run-name: luarocks install ${{ inputs.package }}
 on:
   workflow_dispatch:
     inputs:
