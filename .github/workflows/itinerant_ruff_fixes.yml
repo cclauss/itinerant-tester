@@ -1,4 +1,5 @@
 name: itinerant_ruff_fixes
+run-name: itinerant_ruff_fixes ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
