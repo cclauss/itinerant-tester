@@ -44,3 +44,5 @@ jobs:
       - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${{ github.event.inputs.package }} --local
       - run: luarocks --lua-version=${{ matrix.lua-version }} list  # other dependencies that are installed
       - run: luarocks --lua-version=${{ matrix.lua-version }} show ${{ github.event.inputs.package }}
+      - run: luarocks --lua-version=${{ matrix.lua-version }} doc ${{ github.event.inputs.package }}
+      - run: luarocks --lua-version=${{ matrix.lua-version }} test ${{ github.event.inputs.package }} || true
