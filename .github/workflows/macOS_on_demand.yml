@@ -22,7 +22,7 @@ jobs:
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
     - run: env | grep BREW && echo "$(brew --prefix)"
     - uses: actions/checkout@v7.0.0
-    - uses: actions/setup-python@v6.2.0
+    - uses: actions/setup-python@v6.3.0
       with:
         python-version: 3.x
     - run: sw_vers && uname -a && system_profiler SPSoftwareDataType SPHardwareDataType
@@ -136,7 +136,7 @@ jobs:
     runs-on: macos-14
     steps:
     - uses: actions/checkout@v7.0.0
-    - uses: actions/setup-python@v6.2.0
+    - uses: actions/setup-python@v6.3.0
       with:
         python-version: |
           3.14
@@ -164,7 +164,7 @@ jobs:
     runs-on: macos-15-intel
     steps:
     - uses: actions/checkout@v7.0.0
-    - uses: actions/setup-python@v6.2.0
+    - uses: actions/setup-python@v6.3.0
       with:
         python-version: |
           3.14
