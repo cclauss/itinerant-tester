@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
         with:
           repository: ${{ github.event.inputs.repo }}
           submodules: recursive
           # ref: dev  # branch, tag, or SHA
-      - uses: actions/setup-python@v6.2.0
+      - uses: actions/setup-python@v6.3.0
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
