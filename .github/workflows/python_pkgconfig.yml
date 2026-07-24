@@ -29,7 +29,7 @@ jobs:
               msg = f"{pkgconfig} does not exist"
               raise FileNotFoundError(msg)
           print(f"{get_python_pkgconfig() = }")
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.3.0
         with:
           python-version: 3.x
       - *pkg_config_path

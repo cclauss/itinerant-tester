@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Spellchecking ${{ github.event.inputs.repo }}..."
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: pip install --user codespell

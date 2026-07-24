@@ -18,7 +18,7 @@ jobs:
           - git+https://github.com/aio-libs/aiohttp.git  # Fails
     runs-on: macos-14
     steps:
-      - uses: actions/setup-python@v6.2.0
+      - uses: actions/setup-python@v6.3.0
         with:
           # architecture: ${{ matrix.architecture }}  # Does not work.
           python-version: 3.13

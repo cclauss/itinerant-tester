@@ -19,7 +19,7 @@ jobs:
         compiler: [gcc]
         external: [true, false]
     steps:
-      - uses: actions/checkout@v7.0.0
+      - uses: actions/checkout@v7.0.1
         with:
           repository: lunarmodules/lua-compat-5.3
       - name: install Lua
@@ -88,7 +88,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y libreadline-dev
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           repository: luarocks/hererocks
       - if: ${{ matrix.pypi }}
@@ -153,7 +153,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install --yes libreadline-dev tree
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
         with:
           repository: luarocks/hererocks
       - uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
