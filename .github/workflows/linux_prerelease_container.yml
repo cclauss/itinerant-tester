@@ -1,0 +1,62 @@
+# Create a Service Container built on a pre-release or non-Ubuntu version of Linux
+# Buildable Ubuntu versions can be found at http://ports.ubuntu.com/ubuntu-ports/dists
+
+# Ubuntu releases: https://releases.ubuntu.com
+# https://ubuntu.com/about/release-cycle -- Try here first and then fall back to:
+# https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
+
+# Debian releases: https://www.debian.org
+# https://en.wikipedia.org/wiki/Debian_release_version_history#Release_table
+
+name: linux_prerelease_container
+on:
+  push:
+    paths:
+      - '.github/workflows/linux_prerelease_container.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/linux_prerelease_container.yml'
+  workflow_dispatch:
+jobs:
+  # ubuntu_26_10:
+  #  runs-on: ubuntu-26.10  # Not yet available on GitHub Actions
+  #  steps:
+  #    - run: |
+  #        echo "Running on: ubuntu-26.10"
+
+  linux_prerelease_container:
+    runs-on: ubuntu-latest
+    container:
+      image: ${{matrix.os}}
+      options: --privileged
+    strategy:
+      fail-fast: false  # don't cancel if any job from the matrix fails
+      matrix:
+        include:  # https://github.com/cclauss/lunatic-python/pull/16
+          - os: ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
+          - os: debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
+    steps:
+      - env:
+          DEBIAN_FRONTEND: noninteractive
+          TZ: Europe/Paris
+        run: |
+          apt update
+          apt list --upgradable
+          apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
+          lsb_release --all
+          lsb_release -ds
+          node --version
+          python3 -V
+          lua -v
+          luarocks --version
+          echo "Lua 5.5 version 5.5.0 on Ubuntu Stonking Stingray but contains a #define macro on Debian Forky."
+          # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160598 is fixed on Ubuntu Stonking.
+          # Is it fixed on Debian Forky?
+          echo "LUA_INCDIR and LUA_INCDIR_OK are defined on Lua 5.4 but not on Lua 5.5."
+          export PCDIR=$(pkgconf lua5.5 --variable pcfiledir)
+          head -n4 $PCDIR/lua5.5.pc
+          luarocks --lua-version=5.4 config | grep INC
+          echo "LUA_INCDIR and LUA_INCDIR_OK are NOT defined on Lua 5.5."
+          # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160601 is not fixed.
+          # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1142093 is not fixed.
+          luarocks --lua-version=5.5 config | grep INC
