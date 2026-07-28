@@ -16,12 +16,12 @@ On the flake8 test selection, this PR does _not_ focus on "_style violations_" (
 * F63 tests are usually about the confusion between identity and equality in Python.  Use ==/!= to compare str, bytes, and int literals is the classic case.  These are areas where __a == b__ is True but __a is b__ is False (or vice versa).  Python >= 3.8 will raise SyntaxWarnings on these instances.
 * F7 tests logic errors and syntax errors in type hints
 * F82 tests are almost always _undefined names_ which are usually a sign of a typo, missing imports, or code that has not been ported to Python 3.  These also would be compile-time errors in a compiled language but in Python a __NameError__ is raised which will halt/crash the script on the user.
-"""  # noqa: E501
+"""
 
 
 def osx_clipboard_get():  # Only works for data types: {txt | rtf | ps}
     p = subprocess.Popen(["pbpaste"], stdout=subprocess.PIPE)
-    _ = p.wait()  # noqa
+    _ = p.wait()
     return p.stdout.read().decode()
 
 
@@ -40,7 +40,7 @@ def cleanup(text):
     lines = [line for line in text.splitlines() if line.strip()]
     lines[0] = START_TEXT.replace("\nflake8", FLAKE8_LINK) + lines[0]
     lines[1] = ""
-    lines[2] = f'$ __{lines[2].split("$ time ")[-1]}__\n```'
+    lines[2] = f"$ __{lines[2].split('$ time ')[-1]}__\n```"
     return "\n".join(lines) + "\n```" + EXPLANATION
 
 
@@ -79,7 +79,7 @@ The command "echo ; echo -n "flake8 testing of ${URL} on " ; python -V" exited w
 real	0m2.707s
 user	0m4.394s
 sys	0m0.192s
-"""  # noqa: E501
+"""
 
 if __name__ == "__main__":
     # test(PAYLOAD)

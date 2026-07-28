@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Generate ruff TOML config from ruff output."""
 
+# ruff: noqa: RUF100
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -62,7 +64,9 @@ def ruff_pylint_settings() -> str:
     )
 
 
-linters_as_text = run("ruff linter", capture_output=True, shell=True, text=True).stdout
+linters_as_text = run(
+    "ruff linter", capture_output=True, shell=True, text=True, check=True
+).stdout
 
 
 def rule_fmt(rule_family: str = "PLR") -> str:

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# ruff: noqa: T201
+# ruff: noqa: RUF100,T201
 
 """Usage: ruff check --select=ALL --statistics | ./which_ruff_rules.py ."""
 
@@ -51,7 +51,7 @@ def ruff_linters() -> dict[str, str]:
 if __name__ == "__main__":
     violations = {line.split()[1].rstrip(digits) for line in stdin}
     lines = [
-        f'  {"#" if key in violations else " "} {quoted(key):<8} # {value}'
+        f"  {'#' if key in violations else ' '} {quoted(key):<8} # {value}"
         for key, value in ruff_linters().items()
     ]
     print("[tool.ruff]\nlint.select = [")
