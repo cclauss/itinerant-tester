@@ -15,6 +15,6 @@ repos:
     hooks:
       - id: codespell
         args:
-          - --ignore-words-list=crate
+          - --ignore-words-list=astroid,ccompiler,crate
           - --quiet-level=2
           - --skip=.github/workflows/codespell.yml.disabled

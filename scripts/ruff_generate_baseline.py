@@ -5,7 +5,10 @@ from subprocess import run  # Requires Python >= 3.7
 
 ruff_out: tuple[str] = tuple(
     run(
-        ["ruff", "check", "--extend-select=C90", "."], capture_output=True, text=True
+        ["ruff", "check", "--extend-select=C90", "."],
+        capture_output=True,
+        text=True,
+        check=True,
     ).stdout.splitlines()[:-2]  # Remove the two summary lines
 )
 
@@ -28,7 +31,7 @@ def get_max_line_length(ruff_out: tuple[str] = ruff_out) -> int:
 
 if __name__ == "__main__":
     print(ruff_out)
-    violations = set(line.split()[1] for line in ruff_out)
+    violations = {line.split()[1] for line in ruff_out}
     if (mc := get_max_complexity()) > 10:
         max_complexity = f"  # --max-complexity={mc}"
     else:
@@ -42,4 +45,4 @@ if __name__ == "__main__":
     ignore = f"--ignore={','.join(sorted(violations))} " if violations else ""
     ruff_cmd = f"ruff check {ignore}{line_length}--statistics .{max_complexity}"
     print(ruff_cmd)
-    run(ruff_cmd.split(), text=True)
+    run(ruff_cmd.split(), text=True, check=True)

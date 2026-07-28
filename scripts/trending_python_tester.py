@@ -10,6 +10,7 @@ Requires: pip3 install --upgrade beautifulsoup4 github3.py requests lxml
 import getpass
 import webbrowser
 from datetime import datetime as dt
+from datetime import timezone
 
 # self._put_long_string("%s=%s" % (key, val))  # self, key, val: undefined names
 import bs4  # will require lxml or html5lib
@@ -29,7 +30,7 @@ def my_two_factor_function():
 
 
 username = getpass.getuser()  # Does local username == GitHub username?
-print("Please enter the GitHub password for user: {}".format(username))
+print(f"Please enter the GitHub password for user: {username}")
 gh = github3_login(username, token, two_factor_callback=my_two_factor_function)
 
 # url = 'https://github.com/trending/jupyter-notebook'  # GitHub Trending top 25 repos
@@ -77,9 +78,9 @@ script:
 notifications:
   on_success: change
   on_failure: change  # `always` will be the setting once code changes slow down
-"""  # noqa: E501
+"""
 
-print(f"{dt.now():%a %b %d %H:%M:%S %Z %Y}")
+print(f"{dt.now(timezone.utc):%a %b %d %H:%M:%S %Z %Y}")
 # extract the repo names of GitHub's Top 25 Trending Python list
 soup = bs4.BeautifulSoup(
     requests.get(url, headers=HEADERS).content, "lxml"
@@ -137,4 +138,4 @@ travis_text = fmt % repos
 # log into GitHub and commit an update to .travis.yml which will trigger tests
 travis = gh.repository(username, "itinerant-tester").file_contents("/.travis.yml")
 print(travis.update("trigger a new build", travis_text.encode("utf-8")))
-webbrowser.open("https://travis-ci.com/{}/itinerant-tester".format(username))
+webbrowser.open(f"https://travis-ci.com/{username}/itinerant-tester")

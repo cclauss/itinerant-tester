@@ -1,5 +1,7 @@
 #!/usr/bin/env -S uv run --script
 
+# ruff: noqa: SIM115
+
 # /// script
 # requires-python = ">=3.9"
 # dependencies = [
@@ -11,27 +13,31 @@
 
 # Testing for https://github.com/ArduPilot/MAVProxy/pull/1588
 
-'''
+"""
 AI Chat Module voice-to-text class
 Randy Mackay, December 2023
 
 AP_FLAKE8_CLEAN
-'''
+"""
 
+import sys
 
 try:
+    import wave  # install with "pip3 install wave"
+
     import pyaudio  # install using, "sudo apt-get install python3-pyaudio"
-    import wave     # install with "pip3 install wave"
     from openai import OpenAI
-except Exception:
-    print("chat: failed to import pyaudio, wave or openai.  See https://ardupilot.org/mavproxy/docs/modules/chat.html")
-    exit()
+except Exception:  # noqa: BLE001
+    print(
+        "chat: failed to import pyaudio, wave or openai.  See https://ardupilot.org/mavproxy/docs/modules/chat.html"
+    )
+    sys.exit()
 
 # initializing the global list to keep and update the stop_recording state
 stop_recording = [False]
 
 
-class chat_voice_to_text():
+class chat_voice_to_text:
     def __init__(self):
         # initialise variables
         self.client = None
@@ -48,7 +54,7 @@ class chat_voice_to_text():
         if self.client is None:
             try:
                 self.client = OpenAI()
-            except Exception:
+            except Exception:  # noqa: BLE001
                 print("chat: failed to connect to OpenAI")
                 return False
 
@@ -63,8 +69,14 @@ class chat_voice_to_text():
 
         # Open stream
         try:
-            stream = p.open(format=pyaudio.paInt16, channels=1, rate=44100, input=True, frames_per_buffer=1024)
-        except Exception:
+            stream = p.open(
+                format=pyaudio.paInt16,
+                channels=1,
+                rate=44100,
+                input=True,
+                frames_per_buffer=1024,
+            )
+        except Exception:  # noqa: BLE001
             print("chat: failed to connect to microphone")
             return None
 
@@ -87,7 +99,7 @@ class chat_voice_to_text():
         wf.setnchannels(1)
         wf.setsampwidth(pyaudio.PyAudio().get_sample_size(pyaudio.paInt16))
         wf.setframerate(44100)
-        wf.writeframes(b''.join(frames))
+        wf.writeframes(b"".join(frames))
         wf.close()
         return "recording.wav"
 
@@ -101,15 +113,16 @@ class chat_voice_to_text():
         # Process with Whisper
         audio_file = open(audio_filename, "rb")
         transcript = self.client.audio.transcriptions.create(
-            model="whisper-1",
-            file=audio_file,
-            response_format="text")
+            model="whisper-1", file=audio_file, response_format="text"
+        )
         return transcript
 
 
 if __name__ == "__main__":
     from pathlib import Path
+
     from playsound import playsound
+
     filename = chat_voice_to_text().record_audio()
     assert filename == "recording.wav"
     filepath = Path(__file__).parent / filename
