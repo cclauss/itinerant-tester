@@ -43,7 +43,7 @@ jobs:
         run: |
           apt update
           apt list --upgradable
-          apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
+          apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev  # luarocks
           lsb_release --all
           lsb_release -ds
           node --version
@@ -51,6 +51,7 @@ jobs:
           echo "-- Lua:"
           lua -v
           lua5.5 -v
+          apt install --yes luarocks
           luarocks --version
           echo "Lua 5.5 version 5.5.0 on Ubuntu Stonking Stingray but contains a #define macro on Debian Forky."
           # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160598 is fixed on Ubuntu Stonking.
