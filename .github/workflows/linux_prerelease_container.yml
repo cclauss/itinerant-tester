@@ -57,8 +57,8 @@ jobs:
           # Is it fixed on Debian Forky?
           export PCDIR=$(pkgconf lua5.5 --variable pcfiledir)
           head -n4 $PCDIR/lua5.5.pc
-          diff /usr/include/lua5.4/lua.h /usr/include/lua5.5/lua.h
-          echo "LUA_INCDIR and LUA_INCDIR_OK are defined on Lua 5.4 but not on Lua 5.5."
+          # diff /usr/include/lua5.4/lua.h /usr/include/lua5.5/lua.h
+          cat /usr/include/lua5.5/lua.h          echo "LUA_INCDIR and LUA_INCDIR_OK are defined on Lua 5.4 but not on Lua 5.5."
           luarocks --lua-version=5.4 config | grep INC
           echo "LUA_INCDIR and LUA_INCDIR_OK are NOT defined on Lua 5.5."
           # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160601 is not fixed.
