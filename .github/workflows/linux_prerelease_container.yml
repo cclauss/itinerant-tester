@@ -27,7 +27,7 @@ jobs:
   linux_prerelease_container:
     runs-on: ubuntu-latest
     container:
-      image: ${{matrix.os}}
+      image: ${{ matrix.os }}
       options: --privileged
     strategy:
       fail-fast: false  # don't cancel if any job from the matrix fails
@@ -36,53 +36,8 @@ jobs:
           - os: ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
           - os: debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
           - os: debian:experimental
-    steps:
-      - env:
-          DEBIAN_FRONTEND: noninteractive
-          TZ: Europe/Paris
-        run: |
-          apt update
-          apt list --upgradable
-          apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
-          lsb_release --all
-          lsb_release -ds
-          node --version
-          python3 -V
-          echo "-- Lua:"
-          lua -v  # apt install luarocks (< v3.13.0) DOWNGRADES the default `lua` from 5.5 down to 5.1.
-          lua5.5 -v
-          luarocks --version
-          # 2026_07_30: lua5.5 5.5.0-5 MIGRATED to testing -- Fixes the #define macro issue on Debian Forky.
-          echo "Lua 5.5 version with #define macro bug is fixed on pre-releases Ubuntu Stonking Stingray and Debian Forky."
-          # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160598 is fixed on Ubuntu Stonking and Debian Forky.
-          export PCDIR=$(pkgconf lua5.5 --variable pcfiledir)
-          head -n4 $PCDIR/lua5.5.pc
-          # diff /usr/include/lua5.4/lua.h /usr/include/lua5.5/lua.h
-          # cat /usr/include/lua5.5/lua.h
-          # ---
-          echo "LUA_INCDIR and LUA_INCDIR_OK are defined on Lua 5.4 but not on Lua 5.5."
-          luarocks --lua-version=5.4 config | grep INC
-          echo "LUA_INCDIR and LUA_INCDIR_OK are NOT defined on Lua 5.5."
-          # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160601 is not fixed.
-          # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1142093 is not fixed.
-          luarocks --lua-version=5.5 config | grep INC
-
-  new_linux_prerelease_container:
-    runs-on: ubuntu-latest
-    # container:
-    #  image: ${{matrix.os}}
-    #   options: --privileged
-    strategy:
-      fail-fast: false  # don't cancel if any job from the matrix fails
-      matrix:
-        include:  # https://github.com/cclauss/lunatic-python/pull/16
-          - os: docker://ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
-          - os: docker://debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
-          - os: docker://debian:experimental
-    steps:
-      - env:
-          USES: ${{ matrix.os }}
-        uses: ${{ USES }}
+    steps:  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/find-and-customize-actions#referencing-a-container-on-docker-hub
+      # - uses: docker://${{ matrix.os }}  # Why is '${{ matrix.os }}' unknown in this context?
       - env:
           DEBIAN_FRONTEND: noninteractive
           TZ: Europe/Paris
