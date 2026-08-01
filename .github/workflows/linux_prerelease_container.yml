@@ -78,7 +78,7 @@ jobs:
         include:  # https://github.com/cclauss/lunatic-python/pull/16
           - os: docker://ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
           - os: docker://debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
-          - os: docker://$debian:experimental
+          - os: docker://debian:experimental
     steps:
       - env:
           USES: ${{ matrix.os }}
