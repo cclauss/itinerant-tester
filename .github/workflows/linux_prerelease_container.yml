@@ -80,7 +80,9 @@ jobs:
           - os: docker://debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
           - os: docker://$debian:experimental
     steps:
-      - uses: ${{ matrix.os }}
+      - env:
+          USES: ${{ matrix.os }}
+        uses: ${{ USES }}
       - env:
           DEBIAN_FRONTEND: noninteractive
           TZ: Europe/Paris
