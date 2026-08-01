@@ -76,11 +76,11 @@ jobs:
       fail-fast: false  # don't cancel if any job from the matrix fails
       matrix:
         include:  # https://github.com/cclauss/lunatic-python/pull/16
-          - os: ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
-          - os: debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
-          - os: debian:experimental
+          - os: docker://ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
+          - os: docker://debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
+          - os: docker://$debian:experimental
     steps:
-      - uses: docker://${{matrix.os}}
+      - uses: ${{ matrix.os }}
       - env:
           DEBIAN_FRONTEND: noninteractive
           TZ: Europe/Paris
