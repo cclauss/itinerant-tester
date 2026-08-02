@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        lua_version: ["5.1", "5.2", "5.3", "5.4", "5.5"]
+        lua_version: ["5.1", "5.2", "5.3", "5.4"]
     steps:
       - uses: actions/checkout@v7.0.1
       - name: install lua${{ matrix.lua_version }} and luarocks
@@ -23,9 +23,11 @@ jobs:
         run: |
           NO_DOTS=${{ matrix.lua_version }}
           NO_DOTS=${NO_DOTS//./}  # 5.1.2 --> 512
+          # For lua5.4, choco install lua
+          if [[ $NO_DOTS == "54" ]]; then
+            NO_DOTS=""
+          fi
           echo "lua$NO_DOTS"
-          echo "PATH=$PATH"
           choco install lua$NO_DOTS luarocks
-          echo "PATH=$PATH"
           where lua || true
           where lua${{ matrix.lua_version }} || true
