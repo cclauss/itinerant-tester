@@ -1,4 +1,5 @@
-name: lua_windows
+name: lua_on_3_platforms
+run-name: lua_on_3_platforms ${{ inputs.package }}
 on:
   push:
     paths:
@@ -7,29 +8,206 @@ on:
     paths:
       - '.github/workflows/lua_windows.yml'
   workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package to test (e.g., moonscript)'
+        required: true
 jobs:
-  lua_windows:
-    permissions:
+  # PGP public key for verifying the signature of downloaded LuaRocks files.
+  luarocks_public_key:  # Used for Linux and Windows but macOS uses Homebrew.
+    permissions: &permissions
       contents: read
-    runs-on: windows-latest
-    strategy:
+    runs-on: ubuntu-latest
+    outputs:
+      public_key: ${{ steps.download.outputs.public_key }}
+    steps:
+      - id: download
+        run: |
+          {
+            echo 'public_key<<EOF'
+            curl -fsSL https://hisham.hm/public_key
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+  lua_ubuntu:
+    needs: luarocks_public_key
+    permissions: *permissions
+    runs-on: ubuntu-26.04
+    strategy: &strategy
       fail-fast: false
       matrix:
-        lua_version: ["5.1", "5.2", "5.3", "5.4"]
+        lua_version: ["5.1", "5.2", "5.3", "5.4", "5.5"]
+        luarocks_version: ["3.13.0"]
     steps:
-      - uses: actions/checkout@v7.0.1
+      - &checkout
+        name: install lua${{ matrix.lua_version }} and luarocks
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           persist-credentials: false
-      - name: install lua${{ matrix.lua_version }} and luarocks
-        shell: bash
+      - name: Set long lua version 5.5 --> 5.5.0 and download from LuaBinaries
         run: |
-          NO_DOTS=${{ matrix.lua_version }}
-          NO_DOTS=${NO_DOTS//./}  # 5.1.2 --> 512
-          # For lua5.4, choco install lua
-          if [[ $NO_DOTS == "54" ]]; then
-            NO_DOTS=""
+          case "${{ matrix.lua_version }}" in
+            5.1) VERSION=5.1.5 ;;
+            5.2) VERSION=5.2.4 ;;
+            5.3) VERSION=5.3.6 ;;
+            5.4) VERSION=5.4.8 ;;
+            5.5) VERSION=5.5.0 ;;
+            *)
+              echo "Unsupported Lua version: ${{ matrix.lua_version }}"
+              exit 1
+              ;;
+          esac
+          curl -L --silent --output lua.tar.gz \
+            "https://sourceforge.net/projects/luabinaries/files/${VERSION}/Tools%20Executables/lua-${VERSION}_Linux515_64_bin.tar.gz/download"
+      - &extract_and_copy_to_path
+        name: Extract, Copy to lua.exe and luac.exe, and Add to PATH
+        env:
+          LUA_DIR: ${{ runner.temp }}/lua
+        run: |
+          # macOS Lua 5.4 and 5.5 are installed via Homebrew, so no need to extract them.
+          if [[ ! -f lua.tar.gz ]]; then
+            exit 0
           fi
-          echo "lua$NO_DOTS"
-          choco install lua$NO_DOTS luarocks
-          where lua || true
-          where lua${{ matrix.lua_version }} || true
+          mkdir -p "$LUA_DIR"
+          tar -xzf lua.tar.gz -C "$LUA_DIR"
+          ls "$LUA_DIR"
+          NO_DOTS=${{ matrix.lua_version }}
+          # Lua 5.1 uses a dot in the filenames, while Lua 5.2+ does not.
+          if [ "$NO_DOTS" != '5.1' ]; then
+            NO_DOTS=${NO_DOTS//./}  # Remove the dots.  5.5 --> 55
+          fi
+          # Copy lua55 --> lua and luac55 --> luac
+          cp "$LUA_DIR/lua$NO_DOTS" "$LUA_DIR/lua"
+          cp "$LUA_DIR/luac$NO_DOTS" "$LUA_DIR/luac"
+          ls "$LUA_DIR"  # Added: lua and luac executables
+          # Add the extracted directory to the PATH for subsequent steps
+          echo "$LUA_DIR" >> "$GITHUB_PATH"
+      - &verify_lua
+        name: Verify lua and luac executables
+        run: |
+          which lua
+          which luac
+          lua -v
+          luac -v
+      - name: Install LuaRocks for Ubuntu
+        env:
+          LUA_DIR: ${{ runner.temp }}/lua
+          LUAROCKS_OS: linux-x86_64
+          LUAROCKS_PUBLIC_KEY: ${{ needs.luarocks_public_key.outputs.public_key }}
+        run: &run_install_luarocks |
+          echo "${LUAROCKS_PUBLIC_KEY}" | gpg --batch --quiet --import
+          luarocks_file=luarocks-${{ matrix.luarocks_version }}-${LUAROCKS_OS}
+          curl --silent -LO https://luarocks.github.io/luarocks/releases/$luarocks_file.zip
+          curl --silent -LO https://luarocks.github.io/luarocks/releases/$luarocks_file.zip.asc
+          gpg --batch --quiet --verify $luarocks_file.zip.asc $luarocks_file.zip
+          unzip -q -j "$luarocks_file.zip" -d "$LUA_DIR"
+      - &verify_and_configure_luarocks
+        name: Verify and Configure LuaRocks
+        env:
+          LUA_DIR: ${{ runner.temp }}/lua
+        run: |
+          ls -l "$LUA_DIR"  # luarocks.exe and luarocks-admin.exe added
+          which lua
+          which luac
+          which luarocks
+          lua -v
+          luac -v
+          luarocks --version
+          luarocks config --lua-version=${{ matrix.lua_version }}  # lua_version is set to 5.1, 5.2, 5.3, 5.4, or 5.5
+          if [ "${{ runner.os }}" != "macOS" ]; then
+            luarocks --local config variables.LUA $(which lua${{ matrix.lua_version }})
+          fi
+      - &test_luarocks_package
+        env:
+          PACKAGE: ${{ inputs.package }}
+        name: Test LuaRocks package ${{ github.event.inputs.package }}
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.package != '' }}
+        run: |
+          luarocks install --check-lua-versions "$PACKAGE" --local
+          luarocks list  # other dependencies that are installed
+          luarocks show "$PACKAGE"
+          luarocks doc "$PACKAGE"
+          luarocks test "$PACKAGE" || true
+  
+  lua_macos:
+    permissions: *permissions
+    runs-on: macos-26
+    strategy: *strategy
+    steps:
+      - *checkout
+      - name: Set long lua version 5.5 --> 5.5.0 and download from LuaBinaries
+        # LuaBinaries only has macOS binaries for Lua 5.1, 5.2, and 5.3.
+        # Homebrew only provides installers for Lua 5.4 and 5.5!!!
+        run: |
+          case "${{ matrix.lua_version }}" in
+            5.1) VERSION=5.1.5_MacOS1010 ;;
+            5.2) VERSION=5.2.4_MacOS1011 ;;
+            5.3) VERSION=5.3.5_MacOS1013 ;;
+            5.4) brew install lua@5.4 ;;
+            5.5) brew install lua@5.5 ;;
+            *)
+              echo "Unsupported Lua version: ${{ matrix.lua_version }}"
+              exit 1
+              ;;
+          esac
+          if [[ -z "$VERSION" ]]; then
+            exit 0  # Lua 5.4 and 5.5 are installed via Homebrew.
+          fi
+          VER="${VERSION%_*}"  # VER is $VERSION before the underscore, e.g., 5.1.5_MacOS1010 --> 5.1.5
+          curl -L --silent --output lua.tar.gz \
+            "https://sourceforge.net/projects/luabinaries/files/${VER}/Tools%20Executables/lua-${VERSION}_bin.tar.gz/download"
+      - *extract_and_copy_to_path
+      - *verify_lua
+      - run: brew install luarocks
+      - *verify_and_configure_luarocks
+      - *test_luarocks_package
+
+  lua_windows:
+    needs: luarocks_public_key
+    defaults:
+      run:
+        shell: bash
+    permissions: *permissions
+    runs-on: windows-latest
+    strategy: *strategy
+    steps:
+      - *checkout
+      - name: Set long lua version 5.5 --> 5.5.0 and download from LuaBinaries
+        run: |
+          case "${{ matrix.lua_version }}" in
+            5.1) VERSION=5.1.5 ;;
+            5.2) VERSION=5.2.4 ;;
+            5.3) VERSION=5.3.6 ;;
+            5.4) VERSION=5.4.8 ;;
+            5.5) VERSION=5.5.0 ;;
+            *)
+              echo "Unsupported Lua version: ${{ matrix.lua_version }}"
+              exit 1
+              ;;
+          esac
+          curl -L --silent --output lua.zip \
+            "https://sourceforge.net/projects/luabinaries/files/${VERSION}/Tools%20Executables/lua-${VERSION}_Win64_bin.zip/download"
+      - name: Extract, Copy to lua.exe and luac.exe, and Add to PATH
+        env:
+          LUA_DIR: ${{ runner.temp }}/lua
+        run: |
+          unzip lua.zip -d "$LUA_DIR"
+          NO_DOTS=${{ matrix.lua_version }}
+          # Lua 5.1 uses a dot in the filenames, while Lua 5.2+ does not.
+          if [ "$NO_DOTS" != '5.1' ]; then
+            NO_DOTS=${NO_DOTS//./}  # Remove the dots.  5.5 --> 55
+          fi
+          # Copy lua55.exe --> lua.exe and luac55.exe --> luac.exe
+          cp "$LUA_DIR/lua$NO_DOTS.exe" "$LUA_DIR/lua.exe"
+          cp "$LUA_DIR/luac$NO_DOTS.exe" "$LUA_DIR/luac.exe"
+          # Add the extracted directory to the PATH for subsequent steps
+          echo "$LUA_DIR" >> "$GITHUB_PATH"
+      - *verify_lua
+      - name: Install LuaRocks for Windows
+        env:
+          LUA_DIR: ${{ runner.temp }}/lua
+          LUAROCKS_OS: windows-32
+          LUAROCKS_PUBLIC_KEY: ${{ needs.luarocks_public_key.outputs.public_key }}
+        run: *run_install_luarocks
+      - *verify_and_configure_luarocks
+      - *test_luarocks_package
