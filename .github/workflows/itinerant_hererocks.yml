@@ -11,48 +11,46 @@
 #
 # That package is installed on both Lua 5.4 and 5.5 on macOS, Ubuntu, and Windows.
 
-name: luarocks_install
-run-name: luarocks install ${{ inputs.package }}
+name: itinerant_hererocks
+run-name: itinerant_hererocks ${{ inputs.package }}
 on:
   workflow_dispatch:
     inputs:
       package:
         description: 'Package to test (e.g., moonscript)'
         required: true
-
 jobs:
-  luarocks_install:
+  itinerant_hererocks:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        lua-version: [5.4, 5.5]  # [5.1, 5.2, 5.3, 5.4, 5.5]
-    runs-on: ${{ matrix.os }}
+        lua-version: ["5.1", "5.2", "5.3", "5.4", "5.5"]
+        luarocks-version: [latest]
     env:
       PACKAGE: ${{ inputs.package }}
     steps:
-      - run: echo "Installing ${PACKAGE} on ${{ matrix.os }} on ${{ runner.arch }}..."
       - if: runner.os == 'macOS'
         run: brew install readline
       - if: runner.os == 'Linux'
         run: |
           sudo apt-get -q -q update
           sudo apt-get install -yes libreadline-dev
-      - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
-        uses: step-security/msvc-dev-cmd@v1
       - if: runner.os == 'Windows'
         run: choco install readline
-      - run: cl || clang --version
-      - uses: luarocks/gh-actions-lua@master
-        with:
-          luaVersion: ${{ matrix.lua-version }}
-      - uses: luarocks/gh-actions-luarocks@master
-        with:
-          luaRocksVersion: latest
-      - run: lua -v
-      - run: luarocks --version
-      - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${PACKAGE} --local
-      - run: luarocks --lua-version=${{ matrix.lua-version }} list  # other dependencies that are installed
-      - run: luarocks --lua-version=${{ matrix.lua-version }} show ${PACKAGE}
-      - run: luarocks --lua-version=${{ matrix.lua-version }} doc ${PACKAGE}
-      - run: luarocks --lua-version=${{ matrix.lua-version }} test ${PACKAGE} || true
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+      - env:
+          REPO: git+https://github.com/luarocks/hererocks.git
+        run: uvx --from=$REPO hererocks lua_venv --lua=${{ matrix.lua-version }} --luarocks=${{ matrix.luarocks-version }}
+      - run: |
+          source lua_venv/bin/activate  # Adds 'lua_venv/bin' to $PATH.
+          lua -v && luarocks --version
+          luarocks config --lua-version=${{ matrix.lua-version }}
+          luarocks install --check-lua-versions ${PACKAGE}
+          luarocks list  # other dependencies that are installed
+          luarocks show ${PACKAGE}
+          luarocks doc ${PACKAGE}
+          luarocks test ${PACKAGE} || true
