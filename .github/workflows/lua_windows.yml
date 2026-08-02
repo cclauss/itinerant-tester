@@ -21,12 +21,11 @@ jobs:
       - name: install lua${{ matrix.lua_version }} and luarocks
         shell: bash
         run: |
-          NO_DOT="${matrix.lua_version/.}"
-          echo "lua$NO_DOT"
+          NO_DOTS=${{ matrix.lua_version }}
+          NO_DOTS=${NO_DOTS//./}  # 5.1.2 --> 512
+          echo "lua$NO_DOTS"
           echo "PATH=$PATH"
-          choco install lua$NO_DOT luarocks
+          choco install lua$NO_DOTS luarocks
           echo "PATH=$PATH"
           where lua || true
           where lua${{ matrix.lua_version }} || true
-          where lua
-          where lua1.1
