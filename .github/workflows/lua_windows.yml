@@ -1,0 +1,32 @@
+name: lua_windows
+on:
+  push:
+    paths:
+      - '.github/workflows/lua_windows.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/lua_windows.yml'
+  workflow_dispatch:
+jobs:
+  lua_windows:
+    permissions:
+      contents: read
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        lua_version: ["5.1", "5.2", "5.3", "5.4", "5.5"]
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: install lua${{ matrix.lua_version }} and luarocks
+        shell: bash
+        run: |
+          NO_DOT="${matrix.lua_version/.}"
+          echo "lua$NO_DOT"
+          echo "PATH=$PATH"
+          choco install lua$NO_DOT luarocks
+          echo "PATH=$PATH"
+          where lua || true
+          where lua${{ matrix.lua_version }} || true
+          where lua
+          where lua1.1
