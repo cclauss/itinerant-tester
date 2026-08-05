@@ -14,5 +14,5 @@ jobs:
       - uses: actions/checkout@v7.0.1
         with:
           repository: ${{ github.event.inputs.repo }}
-      - run: cargo install --locked zizmor && 
+      - run: cargo install --locked zizmor
       - run: zizmor --show-audit-urls=always .
