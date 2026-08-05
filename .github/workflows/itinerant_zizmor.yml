@@ -8,11 +8,11 @@ on:
         required: true
 jobs:
   itinerant_zizmor:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - run: echo "zizmor Static analysis for GitHub Actions ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
           repository: ${{ github.event.inputs.repo }}
-      - run: cargo install --locked zizmor
+      - run: brew install zizmor
       - run: zizmor --show-audit-urls=always .
