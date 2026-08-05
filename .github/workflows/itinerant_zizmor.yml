@@ -1,0 +1,18 @@
+name: itinerant_zizmor
+run-name: itinerant_zizmor ${{ inputs.repo }}
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: 'GitHub repo to check with codespell (user_name/repo_name)'
+        required: true
+jobs:
+  itinerant_zizmor:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "zizmor Static analysis for GitHub Actions ${{ github.event.inputs.repo }}..."
+      - uses: actions/checkout@v7.0.1
+        with:
+          repository: ${{ github.event.inputs.repo }}
+      - run: cargo install --locked zizmor && 
+      - run: zizmor --show-audit-urls=always .
