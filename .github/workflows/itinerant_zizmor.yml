@@ -15,4 +15,11 @@ jobs:
         with:
           repository: ${{ github.event.inputs.repo }}
       - run: brew install zizmor
+      - run: zizmor --no-exit-codes --show-audit-urls=always .
+      - run: |
+          zizmor --fix=safe --no-exit-codes --quiet .
+          git diff
+      - run: |
+          zizmor --fix=all --no-exit-codes --quiet .
+          git diff
       - run: zizmor --show-audit-urls=always .
