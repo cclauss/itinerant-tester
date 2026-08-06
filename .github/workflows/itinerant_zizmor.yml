@@ -25,9 +25,9 @@ jobs:
           CONFIG: "  excessive-permissions:\n    disable: true"
         run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=medium .
-      - env:
-          CONFIG: "  artipacked:\n    disable: true"
-        run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
+      #- env:
+      #    CONFIG: "  artipacked:\n    disable: true"
+      #  run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=low .
       - run: zizmor --min-severity=informational .
       - run: rm zizmor.yml
