@@ -17,12 +17,7 @@ jobs:
       - run: brew install zizmor
       - env:
           CONFIG: "rules:\n  unpinned-uses:\n    disable: true"
-        run: cat "$CONFIG" > zizmor.yml
-        # shell: python
-        # run: |
-        #  from pathlib import Path
-        #  Path("zizmor.yml").write_text(config)
-      - run: cat zizmor.yml
+        run: echo "$CONFIG" > zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=high --show-audit-urls=always .
       - run: zizmor --no-exit-codes --show-audit-urls=always .
       - run: |
