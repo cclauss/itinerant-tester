@@ -18,15 +18,15 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: brew install zizmor
       - env:
-          CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true\n"
+          CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true"
         run: echo "$CONFIG" > zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=high .
       - env:
-          CONFIG: "\n  excessive-permissions:\n    disable: true\n"
+          CONFIG: "  excessive-permissions:\n    disable: true"
         run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=medium .
       - env:
-          CONFIG: "\n  artipacked:\n    disable: true\n"
+          CONFIG: "  artipacked:\n    disable: true"
         run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=low .
       - run: zizmor --min-severity=informational .
