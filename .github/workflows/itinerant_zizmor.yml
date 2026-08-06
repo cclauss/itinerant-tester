@@ -32,10 +32,10 @@ jobs:
       - run: zizmor --min-severity=informational .
       - run: rm zizmor.yml
       - run: zizmor --no-exit-codes .
-      - run: |
-          zizmor --fix=safe --no-exit-codes --quiet --quiet --quiet .
-          git diff
-      - run: |
-          zizmor --fix=all --no-exit-codes --quiet .
-          git diff
+      - run: zizmor --fix=safe --no-exit-codes --quiet --quiet --quiet --quiet --quiet --quiet .
+      - name: Safe fixable changes to ${{ inputs.repo }}
+        run: git diff
+      - run: zizmor --fix=all --no-exit-codes --quiet --quiet --quiet --quiet --quiet --quiet .
+      - name: All fixable changes to ${{ inputs.repo }}
+        run: git diff
       - run: zizmor .
