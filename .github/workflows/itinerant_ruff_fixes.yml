@@ -9,15 +9,17 @@ on:
 
 jobs:
   itinerant_ruff_fixes:
-    name: "${{ github.event.inputs.repo }}"
+    name: "${{ inputs.repo }}"
     strategy:
       fail-fast: false
       matrix:
         python-version: [3.14]
     runs-on: ubuntu-26.04-arm
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
       - run: pip install --user auto-walrus codespell[toml] pre-commit ruff
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
@@ -34,7 +36,7 @@ jobs:
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
           # ref: dev  # branch, tag, or SHA
       - run: ls -Fla
       - run: "git grep 'uses: ' .github/workflows || true"

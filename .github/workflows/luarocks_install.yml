@@ -28,8 +28,10 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
         lua-version: [5.4, 5.5]  # [5.1, 5.2, 5.3, 5.4, 5.5]
     runs-on: ${{ matrix.os }}
+    env:
+      PACKAGE: ${{ inputs.package }}
     steps:
-      - run: echo "Installing ${{ github.event.inputs.package }} on ${{ matrix.os }} on ${{ runner.arch }}..."
+      - run: echo "Installing ${PACKAGE} on ${{ matrix.os }} on ${{ runner.arch }}..."
       - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
         uses: step-security/msvc-dev-cmd@v1
       - run: cl || clang --version
@@ -38,11 +40,11 @@ jobs:
           luaVersion: ${{ matrix.lua-version }}
       - uses: luarocks/gh-actions-luarocks@master
         with:
-          luaRocksVersion: "3.13.0"
+          luaRocksVersion: latest
       - run: lua -v
       - run: luarocks --version
-      - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${{ github.event.inputs.package }} --local
+      - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${PACKAGE} --local
       - run: luarocks --lua-version=${{ matrix.lua-version }} list  # other dependencies that are installed
-      - run: luarocks --lua-version=${{ matrix.lua-version }} show ${{ github.event.inputs.package }}
-      - run: luarocks --lua-version=${{ matrix.lua-version }} doc ${{ github.event.inputs.package }}
-      - run: luarocks --lua-version=${{ matrix.lua-version }} test ${{ github.event.inputs.package }} || true
+      - run: luarocks --lua-version=${{ matrix.lua-version }} show ${PACKAGE}
+      - run: luarocks --lua-version=${{ matrix.lua-version }} doc ${PACKAGE}
+      - run: luarocks --lua-version=${{ matrix.lua-version }} test ${PACKAGE} || true

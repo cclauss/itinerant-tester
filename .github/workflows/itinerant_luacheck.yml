@@ -11,12 +11,14 @@ jobs:
     permissions:
       contents: read
     runs-on: ubuntu-latest
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
-      - run: echo "Running luacheck in ${{ github.event.inputs.repo }}..."
+      - run: echo "Running luacheck in ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
       - if: github.event.inputs.repo == 'ArduPilot/ardupilot'
         run: |
           # --config libraries/AP_Scripting/tests/luacheck.lua .
@@ -32,4 +34,3 @@ jobs:
           docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:latest .
           docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.1.2 .
           docker run --rm -v "$PWD:/workdir" -w /workdir ghcr.io/lunarmodules/luacheck:v1.2.0 .
-        

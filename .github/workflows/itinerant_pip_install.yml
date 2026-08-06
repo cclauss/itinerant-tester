@@ -1,4 +1,5 @@
 name: itinerant_pip_install
+run-name: itinerant_pip_install ${{ inputs.pypi_package }}
 on:
   workflow_dispatch:
     inputs:
@@ -8,7 +9,7 @@ on:
 
 jobs:
   itinerant_pip_install:
-    name: "${{ github.event.inputs.pypi_package }} on Python  ${{ matrix.python-version }} on ${{ matrix.os }}"
+    name: "${{ inputs.pypi_package }} on Python  ${{ matrix.python-version }} on ${{ matrix.os }}"
     strategy:
       fail-fast: false
       matrix:
@@ -28,11 +29,13 @@ jobs:
         #- os: windows-latest
         #  python-version: 3.x
     runs-on: ${{ matrix.os }}
+    env:
+      PYPI_PACKAGE: ${{ inputs.pypi_package }}
     steps:
-      - run: echo "Testing ${{ github.event.inputs.pypi_package }}..."
+      - run: echo "Testing ${PYPI_PACKAGE}..."
       - uses: actions/setup-python@v7.0.0
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
       - run: pip install --upgrade pip
-      - run: pip install ${{ github.event.inputs.pypi_package }}
+      - run: pip install ${PYPI_PACKAGE}

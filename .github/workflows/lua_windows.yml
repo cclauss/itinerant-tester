@@ -18,6 +18,8 @@ jobs:
         lua_version: ["5.1", "5.2", "5.3", "5.4"]
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - name: install lua${{ matrix.lua_version }} and luarocks
         shell: bash
         run: |

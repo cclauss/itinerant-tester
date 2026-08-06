@@ -8,24 +8,26 @@ on:
         required: true
 jobs:
   itinerant_shellcheck:
-    name: "${{ github.event.inputs.repo }}"
+    name: "${{ inputs.repo }}"
     strategy:
       fail-fast: false
       matrix:
         os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
       - run: shellcheck --version || true  # v0.8.0, not v0.9.0
       - run: shellcheck --help || true
       - run: brew install shellcheck || true  # Fails on Ubuntu
       - run: shellcheck --version  # v0.8.0, not v0.9.0
       - run: shellcheck --help      
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${REPO}..."
       # - uses: actions/checkout@v7.0.1
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
       - run: ls -Fla
       - run: shellcheck . || true
       - run: find . -type f \( -name "*.sh" -o -name "*.bash" \) -exec shellcheck {} +

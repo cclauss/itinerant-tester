@@ -8,12 +8,14 @@ on:
         required: false
 jobs:
   conda_on_demand:
-    name: "conda_on_demand: ${{ github.event.inputs.conda_command }}"
+    name: "conda_on_demand: ${{ inputs.conda_command }}"
     runs-on: ubuntu-latest
+    env:
+      CONDA_COMMAND: ${{ inputs.conda_command }}
     steps:
     - uses: actions/checkout@v7.0.1
       with:
         persist-credentials: false
     - run: conda search python
-    - if: ${{ github.event.inputs.conda_command }}
-      run: ${{ github.event.inputs.conda_command }}
+    - if: ${{ inputs.conda_command }}
+      run: ${CONDA_COMMAND}

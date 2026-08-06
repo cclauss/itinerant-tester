@@ -1,6 +1,6 @@
 # A GitHub Action to demonstrate how to run SciPy on Python 3.13 before its release in Oct. 2024
 
-name: scipy_on_py3_14
+name: scipy_on_py3_15
 on:
   push:
     paths:
@@ -10,7 +10,7 @@ on:
       - '.github/workflows/scipy_on_py3_14.yml'
   workflow_dispatch:
 jobs:
-  scipy_on_py3_13:
+  scipy_on_py3_15:
     strategy:
       fail-fast: false
       matrix:
@@ -25,7 +25,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-python@v7.0.0
         with:
-          python-version: 3.14
+          python-version: 3.15
           allow-prereleases: true
       - if: runner.os == 'Linux'  # https://github.com/scipy/scipy/issues/16308#issuecomment-1140477372
         run: |
@@ -48,8 +48,8 @@ jobs:
           echo "LDFLAGS: $LDFLAGS
           echo "CPPFLAGS: $CPPFLAGS
           echo "PKG_CONFIG_PATH: $PKG_CONFIG_PATH
-          echo ${{ env.PATH }}
-          echo ${{ env.HOMEBREW_PREFIX }}
+          echo ${PATH}
+          echo ${HOMEBREW_PREFIX}
           brew install openblas
           brew install gfortran
           gfortran --version || true

@@ -2,6 +2,7 @@
 # https://github.com/actions/setup-python/blob/main/docs/advanced-usage.md#available-versions-of-python-pypy-and-graalpy
 
 name: pip_install_on_pypy
+run-name: pip install on PyPy ${{ inputs.package }} with apt install ${{ inputs.apt_package }}
 on:
   workflow_dispatch:
     inputs:
@@ -13,14 +14,17 @@ on:
         required: false
 jobs:
   pip_install_on_pypy:
-    name: "${{ matrix.python-version }} -m pip install ${{ github.event.inputs.package }} on ${{ matrix.os }}"
+    name: "${{ matrix.python-version }} -m pip install ${{ inputs.package }} on ${{ matrix.os }}"
     strategy:
       fail-fast: false
       matrix:
         # https://downloads.python.org/pypy
-        python-version: [ pypy3.10, pypy3.11 ]
+        python-version: [ "3.15", pypy3.10, pypy3.11 ]
         os: [ macos-latest, ubuntu-latest, windows-latest ]
     runs-on: ${{ matrix.os }}
+    env:
+      PACKAGE: ${{ inputs.package }}
+      APT_PACKAGE: ${{ inputs.apt_package }}
     steps:
       - uses: actions/checkout@v7.0.1
         with:
@@ -29,9 +33,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           allow-prereleases: true
-      - if: ${{ github.event.inputs.apt_package }}
+      - if: ${{ inputs.apt_package }}
         run: |
           sudo apt-get update -qq
-          sudo apt-get install --yes ${{ github.event.inputs.apt_package }}
+          sudo apt-get install --yes ${APT_PACKAGE}
       - run: python -m pip install --upgrade pip
-      - run: pip install ${{ github.event.inputs.package }}
+      - run: pip install ${PACKAGE}

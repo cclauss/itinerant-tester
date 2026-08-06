@@ -1,4 +1,5 @@
 name: itinerant_pytype_on_demand
+run-name: itinerant_pytype_on_demand ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -14,13 +15,15 @@ jobs:
       matrix:
         python-version: ['3.10']  # [2.7, 3.5, 3.6, 3.7, 3.8, pypy3]
     runs-on: ubuntu-22.04
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
       - run: echo "$HOME"
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${REPO}..."
       # - uses: actions/checkout@v3
-      - run: git clone https://github.com/${{ github.event.inputs.repo }}
+      - run: git clone https://github.com/${REPO}
       # cut: domain_name/repo_name --> repo_name so that S{{ env.repo_directory }} is repo_name
-      - run: echo "repo_directory=$(echo ${{ github.event.inputs.repo }} | cut -d'/' -f 2)" >> $GITHUB_ENV
+      - run: echo "repo_directory=$(echo ${REPO} | cut -d'/' -f 2)" >> $GITHUB_ENV
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: ${{ matrix.python-version }}
@@ -29,16 +32,16 @@ jobs:
       # The next commands need to 'cd repo_name' to work correctly
       - name: pip install -r requirements.txt || pip install --editable . || pip install . || true
         run: |
-          cd ${{ env.repo_directory }}
+          cd ${repo_directory}
           pip install -r requirements.txt || pip install --editable . || true
       - name: mypy --ignore-missing-imports --install-types --non-interactive . || true
         run: |
-          cd ${{ env.repo_directory }}
+          cd ${repo_directory}
           mkdir -p .mypy_cache
           mypy --ignore-missing-imports --install-types --non-interactive . || true
       - run: pytype --help
       - run: |
-          cd ${{ env.repo_directory }}
+          cd ${repo_directory}
           ls -Fla
           pip install types-all
           pytype . --jobs auto --keep-going --platform linux --exclude **/__init__.py **/_init_path.py **/app.py **/bootstrap.py **/code.py **/db.py **/dbstore.py **/dbupgrade.py **/delegate.py **/logreader.py **/macro.py **/markdown.py **/mdx_footnotes.py **/migrate-0.4-0.5.py **/readquery.py **/sequence.py **/server.py **/store.py **/template.py **/test_*.py **/view.py
