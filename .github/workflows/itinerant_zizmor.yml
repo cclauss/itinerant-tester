@@ -4,11 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       repo:
-        description: 'GitHub repo to check with codespell (user_name/repo_name)'
+        description: 'GitHub repo to check with codespell (user_name/repo_name).'
         required: true
 jobs:
   itinerant_zizmor:
     runs-on: macos-latest
+    env:
+      ZIZMOR_SHOW_AUDIT_URLS: always
     steps:
       - run: echo "zizmor Static analysis for GitHub Actions ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
@@ -18,12 +20,15 @@ jobs:
       - env:
           CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true"
         run: echo "$CONFIG" > zizmor.yml && cat zizmor.yml
-      - run: zizmor --min-severity=high --show-audit-urls=always .
-      - run: zizmor --no-exit-codes --show-audit-urls=always .
+      - run: zizmor --min-severity=high .
+      - run: zizmor --min-severity=medium .
+      - run: zizmor --min-severity=low .
+      - run: zizmor --min-severity=informational .
+      - run: zizmor --no-exit-codes .
       - run: |
           zizmor --fix=safe --no-exit-codes --quiet .
           git diff
       - run: |
           zizmor --fix=all --no-exit-codes --quiet .
           git diff
-      - run: zizmor --show-audit-urls=always .
+      - run: zizmor .
