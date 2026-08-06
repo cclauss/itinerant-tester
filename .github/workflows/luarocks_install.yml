@@ -27,7 +27,7 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
         lua-version: [5.4, 5.5]  # [5.1, 5.2, 5.3, 5.4, 5.5]
-        luarocks-version: [latest]
+        # luarocks-version: [latest]
     runs-on: ${{ matrix.os }}
     env:
       PACKAGE: ${{ inputs.package }}
@@ -40,8 +40,8 @@ jobs:
         with:
           luaVersion: ${{ matrix.lua-version }}
       - uses: luarocks/gh-actions-luarocks@master
-        with:
-          luaRocksVersion: ${{ matrix.luarocks-version }}
+        # with:
+        #  luaRocksVersion: ${{ matrix.luarocks-version }}
       - run: lua -v
       - run: luarocks --version
       - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${PACKAGE} --local
