@@ -7,11 +7,10 @@ on:
         description: 'Repo to test (user_name/repo_name)'
         required: true
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  pages: write  # Allow deployment to GitHub Pages
+  id-token: write  # Allow deployment to GitHub Pages
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -56,5 +55,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: itinerant_sphinx_autodoc2/_build/html
-      - run: echo ${{ github.event_name }} 
+      - env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: echo $EVENT_NAME
       
