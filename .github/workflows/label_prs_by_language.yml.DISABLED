@@ -1,9 +1,9 @@
 
 name: ci
 
-on:
-  pull_request_target:  # pull_request_target, NOT pull_request
-    types: [opened, synchronize, reopened]
+on:  # DISABLED: pull_request_target is a fundamentally insecure workflow trigger
+  # pull_request_target:  # pull_request_target, NOT pull_request
+  #   types: [opened, synchronize, reopened]
 
 jobs:
   labels-by-language:
