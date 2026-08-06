@@ -15,12 +15,14 @@ jobs:
       matrix:
         python-version: [3.x]  # ["3.12", "3.13", "3.14", "pypy-3.11"]
     runs-on: ubuntu-latest
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
           submodules: recursive
           # ref: dev  # branch, tag, or SHA
       - uses: actions/setup-python@v7.0.0

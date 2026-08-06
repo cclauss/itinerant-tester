@@ -9,18 +9,19 @@ on:
 
 jobs:
   itinerant_tester_on_demand:
-    name: "${{ github.event.inputs.repo }}"
     strategy:
       fail-fast: false
       matrix:
         python-version: [3.x]  # [2.7, 3.5, 3.6, 3.7, 3.8, 3.9, '3.10', 3.11, pypy-3.9]
     runs-on: ubuntu-latest
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
       - run: pip install --user ruff
       - run: ruff check --exit-zero --exclude=tests/ --line-length=200 --select=E501 .
       - run: ruff check --exit-zero --exclude=tests/ --line-length=120 --select=E501 .

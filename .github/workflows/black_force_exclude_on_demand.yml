@@ -10,15 +10,17 @@ on:
 jobs:
   black_force_exclude_on_demand:
     runs-on: ubuntu-latest
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: "3.x"
+      - run: echo "Testing ${REPO}..."
       - run: pip install black tomli
       - run: mv pyproject.toml pyproject.toml.disabled
       - run: shopt -s globstar && black --check --skip-string-normalization **/*.py scripts/* |& tee black.out.txt || true

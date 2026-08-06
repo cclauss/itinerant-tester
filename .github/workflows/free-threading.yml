@@ -4,6 +4,7 @@
 # % `uvx --with=module python3.14t -c "import module"`
 
 name: free-threading
+run-name: free-threading ${{ inputs.pypi_package }}
 on:
   workflow_dispatch:
     inputs:
@@ -16,20 +17,22 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        python-version: [3.14, 3.14t]
+        python-version: [3.15, 3.15t]
     runs-on: ${{ matrix.os }}
+    env:
+      PYPI_PACKAGE: ${{ inputs.pypi_package }}
     steps:
       # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
-      - name: "${{ github.event.inputs.pypi_package }} on python${{ matrix.python-version }}"
+      - name: "${PYPI_PACKAGE} on python${{ matrix.python-version }}"
         uses: astral-sh/setup-uv@v9.0.0
         with:
           ignore-empty-workdir: true
       # Hyphen to underscore
-      - if: github.event.inputs.pypi_package == 'clickhouse-connect'
-        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import clickhouse_connect"
-      - if: github.event.inputs.pypi_package == 'scikit-learn'
-        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import sklearn"
-      - if: github.event.inputs.pypi_package == 'MacFSEvents'
-        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import fsevents"
-      - if: github.event.inputs.pypi_package != 'clickhouse-connect' && github.event.inputs.pypi_package != 'scikit-learn'
-        run: uvx --with=${{ github.event.inputs.pypi_package }} python${{ matrix.python-version }} -c "import ${{ github.event.inputs.pypi_package }}"
+      - if: inputs.pypi_package == 'clickhouse-connect'
+        run: uvx --with=${PYPI_PACKAGE} python${{ matrix.python-version }} -c "import clickhouse_connect"
+      - if: inputs.pypi_package == 'scikit-learn'
+        run: uvx --with=${PYPI_PACKAGE} python${{ matrix.python-version }} -c "import sklearn"
+      - if: inputs.pypi_package == 'MacFSEvents'
+        run: uvx --with=${PYPI_PACKAGE} python${{ matrix.python-version }} -c "import fsevents"
+      - if: inputs.pypi_package != 'clickhouse-connect' && inputs.pypi_package != 'scikit-learn'
+        run: uvx --with=${PYPI_PACKAGE} python${{ matrix.python-version }} -c "import ${PYPI_PACKAGE.replace('-', '_')}"

@@ -10,12 +10,14 @@ jobs:
   itinerant_zizmor:
     runs-on: macos-latest
     env:
+      REPO: ${{ inputs.repo }}
       ZIZMOR_SHOW_AUDIT_URLS: always
     steps:
-      - run: echo "zizmor Static analysis for GitHub Actions ${{ github.event.inputs.repo }}..."
+      - run: echo "zizmor Static analysis for GitHub Actions ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
-          repository: ${{ github.event.inputs.repo }}
+          persist-credentials: false
+          repository: ${REPO}
       - run: brew install zizmor
       - env:
           CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true"

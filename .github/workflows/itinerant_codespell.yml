@@ -9,11 +9,13 @@ on:
 jobs:
   itinerant_codespell:
     runs-on: ubuntu-latest
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
-      - run: echo "Spellchecking ${{ github.event.inputs.repo }}..."
+      - run: echo "Spellchecking ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
       - run: pip install --user codespell
       - run: codespell --ignore-words-list="assertin,crate" --count --skip="./.*,*.po,*.svg" --summary  #  --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"

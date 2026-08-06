@@ -18,12 +18,14 @@ jobs:
   itinerant_swiftlint_on_demand:
     name: "${{ github.event.inputs.repo }}"
     runs-on: macos-latest
+    env:
+      REPO: ${{ inputs.repo }}
     steps:
-      - run: echo "Testing ${{ github.event.inputs.repo }}..."
+      - run: echo "Testing ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${{ github.event.inputs.repo }}
+          repository: ${REPO}
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: 3.x
