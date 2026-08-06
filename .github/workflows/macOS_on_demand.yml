@@ -22,6 +22,8 @@ jobs:
       run: echo "${{ runner.os }} (${{ matrix.os }}) on ${{ runner.arch }}"
     - run: env | grep BREW && echo "$(brew --prefix)"
     - uses: actions/checkout@v7.0.1
+      with:
+        persist-credentials: false
     - uses: actions/setup-python@v7.0.0
       with:
         python-version: 3.x
@@ -65,6 +67,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7.0.1
+      with:
+        persist-credentials: false
     - name: Download all CPU artifacts
       uses: actions/download-artifact@v8
       with:
@@ -136,6 +140,8 @@ jobs:
     runs-on: macos-14
     steps:
     - uses: actions/checkout@v7.0.1
+      with:
+        persist-credentials: false
     - uses: actions/setup-python@v7.0.0
       with:
         python-version: |
@@ -164,6 +170,8 @@ jobs:
     runs-on: macos-15-intel
     steps:
     - uses: actions/checkout@v7.0.1
+      with:
+        persist-credentials: false
     - uses: actions/setup-python@v7.0.0
       with:
         python-version: |

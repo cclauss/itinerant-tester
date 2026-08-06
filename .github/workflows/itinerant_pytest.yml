@@ -1,4 +1,5 @@
 name: itinerant_pytest
+run-name: itinerant_pytest ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -18,6 +19,7 @@ jobs:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
           submodules: recursive
           # ref: dev  # branch, tag, or SHA

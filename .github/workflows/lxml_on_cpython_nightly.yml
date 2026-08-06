@@ -16,6 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: lxml/lxml
       - uses: actions/setup-python@v7.0.0
         with:

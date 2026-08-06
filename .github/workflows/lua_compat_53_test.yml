@@ -21,6 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: lunarmodules/lua-compat-5.3
       - name: install Lua
         run: |
@@ -90,6 +91,7 @@ jobs:
           sudo apt-get install -y libreadline-dev
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: luarocks/hererocks
       - if: ${{ matrix.pypi }}
         run: pipx run hererocks lua --lua=${{ matrix.luaVersion }} --luarocks=${{ matrix.luaRocksVersion }}
@@ -155,6 +157,7 @@ jobs:
           sudo apt-get install --yes libreadline-dev tree
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: luarocks/hererocks
       - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
       - if: ${{ matrix.pypi }}

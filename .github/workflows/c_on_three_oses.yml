@@ -17,6 +17,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - name: Compile with ${{ matrix.ccompiler }} on ${{ matrix.os }}
         shell: bash
         run: |

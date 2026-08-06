@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: ${{ git grep 'export PYVERSION ?=' Makefile.envs | cut -d' ' -f4 }}
@@ -24,6 +26,8 @@ jobs:
       PYVERSION: ${{ steps.get_python_version.outputs.PYVERSION }}
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - id: get_python_version
         run: |
           echo "PYVERSION=$(git grep 'export PYVERSION ?=' Makefile.envs | cut -d' ' -f4)"  >> "$GITHUB_OUTPUT"
@@ -106,6 +110,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - name: Read the Python version from Makefile.envs
         shell: python
         run: |

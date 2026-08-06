@@ -1,4 +1,5 @@
 name: itinerant_tester_on_demand
+run-name: itinerant_tester_on_demand ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -18,6 +19,7 @@ jobs:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - run: pip install --user ruff
       - run: ruff check --exit-zero --exclude=tests/ --line-length=200 --select=E501 .
