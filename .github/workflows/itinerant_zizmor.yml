@@ -30,9 +30,10 @@ jobs:
         run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=low .
       - run: zizmor --min-severity=informational .
+      - run: rm zizmor.yml
       - run: zizmor --no-exit-codes .
       - run: |
-          zizmor --fix=safe --no-exit-codes --quiet .
+          zizmor --fix=safe --no-exit-codes --quiet --quiet --quiet .
           git diff
       - run: |
           zizmor --fix=all --no-exit-codes --quiet .
