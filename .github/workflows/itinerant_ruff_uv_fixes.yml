@@ -1,4 +1,5 @@
 name: itinerant_ruff_uv_fixes
+run-name: itinerant_ruff_uv_fixes ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -17,6 +18,8 @@ jobs:
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - uses: astral-sh/setup-uv@v9.0.0
         with:
             enable-cache: true
@@ -31,6 +34,7 @@ jobs:
           popd
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: codespell --count || true
@@ -117,6 +121,8 @@ jobs:
     steps:
       - run: echo $HOME  # '/home/runner'
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - run: echo $HOME  # '/home/runner'
       - run: python3 scripts/home_dir.py  # '/home/runner'
       - run: sudo python3 scripts/home_dir.py  # '/root'

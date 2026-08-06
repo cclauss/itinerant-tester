@@ -1,4 +1,5 @@
 name: itinerant_tester_flake8_simplify
+run-name: itinerant_tester_flake8_simplify ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -13,6 +14,7 @@ jobs:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - uses: actions/setup-python@v7.0.0
         with:

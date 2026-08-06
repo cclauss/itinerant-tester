@@ -2,6 +2,7 @@
 # https://github.com/setup-php
 
 name: itinerant_phpstan_and_phpunit
+run-name: itinerant_phpstan_and_phpunit ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -21,6 +22,7 @@ jobs:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - run: ls -Fla
       - run: pip install --user codespell[toml]
@@ -50,6 +52,7 @@ jobs:
 #      - run: echo "Testing ${{ github.event.inputs.repo }}..."
 #      - uses: actions/checkout@v7.0.1
 #        with:
+#          persist-credentials: false
 #          repository: ${{ github.event.inputs.repo }}
 #      - run: ls -Fla
 #      - run: pip install --user codespell[toml]

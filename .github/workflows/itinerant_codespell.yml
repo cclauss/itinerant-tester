@@ -1,4 +1,5 @@
 name: itinerant_codespell
+run-name: itinerant_codespell ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -12,6 +13,7 @@ jobs:
       - run: echo "Spellchecking ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - run: pip install --user codespell
       - run: codespell --ignore-words-list="assertin,crate" --count --skip="./.*,*.po,*.svg" --summary  #  --skip="*.css,*.js,*.json,*.lock,*.map,*.po,*.svg"

@@ -1,4 +1,5 @@
 name: itinerant_luacheck
+run-name: itinerant_luacheck ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -14,6 +15,7 @@ jobs:
       - run: echo "Running luacheck in ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - if: github.event.inputs.repo == 'ArduPilot/ardupilot'
         run: |

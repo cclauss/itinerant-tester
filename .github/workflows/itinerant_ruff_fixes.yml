@@ -19,6 +19,8 @@ jobs:
       - run: pip install --user auto-walrus codespell[toml] pre-commit ruff
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v7.0.0
         with:
             python-version: ${{ matrix.python-version }}
@@ -31,6 +33,7 @@ jobs:
           popd
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
           # ref: dev  # branch, tag, or SHA
       - run: ls -Fla

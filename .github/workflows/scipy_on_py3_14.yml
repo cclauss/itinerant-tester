@@ -21,6 +21,8 @@ jobs:
       - run: gfortran --version || true
       - run: gfortran -v || true
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v7.0.0
         with:
           python-version: 3.14

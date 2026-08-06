@@ -5,6 +5,7 @@
 #        nose2pytest does not fix assume_raises, raises which still function on Py3.10.
          
 name: nose2pytest
+run-name: nose2pytest ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -18,6 +19,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7.0.1
       with:
+        persist-credentials: false
         repository: ${{ github.event.inputs.repo }}
     - uses: actions/setup-python@v7.0.0
       with:

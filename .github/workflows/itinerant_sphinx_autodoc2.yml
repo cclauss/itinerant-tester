@@ -1,4 +1,5 @@
 name: itinerant_sphinx_autodoc2
+run-name: itinerant_sphinx_autodoc2 ${{ inputs.repo }}
 on:
   workflow_dispatch:
     inputs:
@@ -29,6 +30,8 @@ jobs:
     steps:
       - run: echo "Testing ${{ github.event.inputs.repo }}..."
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v7.0.0
         with:
             python-version: ${{ matrix.python-version }}
@@ -36,6 +39,7 @@ jobs:
       - run: cp scripts/sphinx_index.md /tmp/
       - uses: actions/checkout@v7.0.1
         with:
+          persist-credentials: false
           repository: ${{ github.event.inputs.repo }}
       - run: mkdir itinerant_sphinx_autodoc2
       - run: cp /tmp/sphinx_conf.py itinerant_sphinx_autodoc2/conf.py
