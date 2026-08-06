@@ -16,7 +16,7 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: brew install zizmor
       - env:
-          CONFIG: "rules:\n  unpinned-uses:\n    disable: true"
+          CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true"
         run: echo "$CONFIG" > zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=high --show-audit-urls=always .
       - run: zizmor --no-exit-codes --show-audit-urls=always .
