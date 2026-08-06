@@ -20,7 +20,7 @@ jobs:
       - env:
           CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true\n"
         run: echo "$CONFIG" > zizmor.yml && cat zizmor.yml
-      - - env:
+      - env:
           CONFIG: "\n  excessive-permissions:\n    disable: true\n"
         run: echo "$CONFIG" >> zizmor.yml && cat zizmor.yml
       - run: zizmor --min-severity=high .
