@@ -16,11 +16,12 @@ jobs:
           repository: ${{ github.event.inputs.repo }}
       - run: brew install zizmor
       - env:
-          config: "rules:\n  unpinned-uses:\n    disable: true"
-        shell: python
-        run: |
-          from pathlib import Path
-          Path("zizmor.yml").write_text(config)
+          CONFIG: "rules:\n  unpinned-uses:\n    disable: true"
+        run: cat $CONFIG > zizmor.yml
+        # shell: python
+        # run: |
+        #  from pathlib import Path
+        #  Path("zizmor.yml").write_text(config)
       - run: cat zizmor.yml
       - run: zizmor --min-severity=high --show-audit-urls=always .
       - run: zizmor --no-exit-codes --show-audit-urls=always .
