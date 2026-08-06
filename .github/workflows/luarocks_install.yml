@@ -27,28 +27,21 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
         lua-version: [5.4, 5.5]  # [5.1, 5.2, 5.3, 5.4, 5.5]
+        luarocks-version: [latest]
     runs-on: ${{ matrix.os }}
     env:
       PACKAGE: ${{ inputs.package }}
     steps:
       - run: echo "Installing ${PACKAGE} on ${{ matrix.os }} on ${{ runner.arch }}..."
-      - if: runner.os == 'macOS'
-        run: brew install readline
-      - if: runner.os == 'Linux'
-        run: |
-          sudo apt-get -q -q update
-          sudo apt-get install -yes libreadline-dev
       - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
         uses: step-security/msvc-dev-cmd@v1
-      - if: runner.os == 'Windows'
-        run: choco install readline
       - run: cl || clang --version
       - uses: luarocks/gh-actions-lua@master
         with:
           luaVersion: ${{ matrix.lua-version }}
       - uses: luarocks/gh-actions-luarocks@master
         with:
-          luaRocksVersion: latest
+          luaRocksVersion: ${{ matrix.luarocks-version }}
       - run: lua -v
       - run: luarocks --version
       - run: luarocks --lua-version=${{ matrix.lua-version }} install --check-lua-versions ${PACKAGE} --local
