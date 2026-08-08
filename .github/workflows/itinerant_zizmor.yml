@@ -16,7 +16,7 @@ jobs:
       - run: echo "zizmor Static analysis for GitHub Actions ${REPO}..."
       - uses: actions/checkout@v7.0.1
         with:
-          persist-credentials: false
+          # persist-credentials: false
           repository: ${REPO}
       - run: brew install zizmor
       - env:
