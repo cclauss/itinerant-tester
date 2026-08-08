@@ -16,8 +16,8 @@ jobs:
       - run: echo "zizmor Static analysis for GitHub Actions $REPO..."
       - uses: actions/checkout@v7.0.1
         with:
-          # persist-credentials: false
-          repository: "$REPO"
+          persist-credentials: false
+          repository: ${{ inputs.repo }}
       - run: brew install zizmor
       - env:
           CONFIG: "rules:\n  template-injection:\n    disable: true\n  unpinned-uses:\n    disable: true"
