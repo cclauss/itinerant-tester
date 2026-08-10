@@ -34,9 +34,9 @@ jobs:
       matrix:
         include:  # https://github.com/cclauss/lunatic-python/pull/16
           - os: ubuntu:26.10  # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
-          - os: debian:experimental
-          - os: debian:unstable
           - os: debian:forky  # Debian GNU/Linux 14 (forky) -- Python 3.14.6
+          - os: debian:unstable
+          - os: debian:experimental
     steps:  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/find-and-customize-actions#referencing-a-container-on-docker-hub
       # - uses: docker://${{ matrix.os }}  # Why is '${{ matrix.os }}' unknown in this context?
       - env:
@@ -52,6 +52,8 @@ jobs:
           python3 -V
           echo "-- Lua:"
           lua -v  # apt install luarocks (< v3.13.0) DOWNGRADES the default `lua` from 5.5 down to 5.1.
+          echo "lua5.5.0 on ubuntu:26.04 and debian:trixie."
+          echo "lua5.5.1 on debian:unstable and debian:experimental."
           lua5.5 -v
           luarocks --version
           # 2026_07_30: lua5.5 5.5.0-5 MIGRATED to testing -- Fixes the #define macro issue on Debian Forky.
