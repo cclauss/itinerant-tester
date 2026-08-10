@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-          repository: ${REPO}
+          repository: ${{ inputs.repo }}
       - if: github.event.inputs.repo == 'ArduPilot/ardupilot'
         run: |
           # --config libraries/AP_Scripting/tests/luacheck.lua .
