@@ -63,7 +63,7 @@ jobs:
           echo ">lua5.5.0 on ubuntu:26.04 and debian:{forky,testing}."
           echo ">lua5.5.1 on ubuntu:26.10 and debian:{unstable,experimental}."
           echo "> luarocks v3.8.0, not v3.11.1 on ubuntu:26.04 so..."
-          lua5.5 -v &&vluarocks --version
+          lua5.5 -v && luarocks --version
           # 2026_07_30: lua5.5 5.5.0-5 MIGRATED to testing -- Fixes the #define macro issue on Debian Forky.
           echo "> Lua 5.5 version with #define macro bug is not fixed on ubuntu:26.04."
           # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160598 is fixed on Ubuntu Stonking and Debian Forky.
