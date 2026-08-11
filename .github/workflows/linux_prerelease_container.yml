@@ -51,7 +51,7 @@ jobs:
           echo "> lua5.5 is not available on debian:trixie"
           apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
       - run:
-          echo "$(lsb_release -s)"
+          # echo "$(lsb_release -s)"
           lsb_release --all
           lsb_release -ds
           echo "-- Node.js and Python:"
