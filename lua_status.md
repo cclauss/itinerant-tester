@@ -1,6 +1,6 @@
 OS image | lua5.5 | luarocks | #define version bug | LUAINC bug | Issues
 --- | --- | --- | --- | --- | ---
-debian:trixie | Not available | 3.8.0 | N/A | N/A | No lua5.5
+debian:trixie | Not available | 3.8.0 | N/A | N/A | No apt package for lua5.5
 ubuntu:26.04 | **5.5.0** | **3.8.0** | **BUG** | **BUG** | Old lua and rocks, 2 bugs
 debian:forky  | **5.5.0** | 3.11.1 | fixed | fixed | lua5.5.0, not 5.5.1
 debian:testing  | **5.5.0** | 3.11.1 | fixed | fixed | lua5.5.0, not 5.5.1
