@@ -43,22 +43,22 @@ jobs:
           - os: debian:experimental  # Not a full distribution — it's an overlay/staging area layered on top of unstable, containing risky packages.
     steps:  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/find-and-customize-actions#referencing-a-container-on-docker-hub
       # - uses: docker://${{ matrix.os }}  # Why is '${{ matrix.os }}' unknown in this context?
+      - run: apt update -q -q --yes && echo "--- apt list --upgradable" && apt list --upgradable
       - env:
           DEBIAN_FRONTEND: noninteractive
           TZ: Europe/Paris
         run: |
-          apt update
-          echo "> upgradable lua"
-          apt list --upgradable | grep lua || true
           echo "> lua5.5 is not available on debian:trixie"
           apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
-          echo "----------"
+      - run:
+          echo "$(lsb_release -s)"
           lsb_release --all
           lsb_release -ds
+          echo "-- Node.js and Python:"
           node --version
           python3 -V
           echo "-- Lua:"
-          lua -v  # apt install luarocks (< v3.13.0) DOWNGRADES the default `lua` from 5.5 down to 5.1.
+          lua -v && luarocks --version  # apt install luarocks (< v3.13.0) DOWNGRADES the default `lua` from 5.5 down to 5.1.
           echo ">lua5.5 is not available on debian:trixie"
           echo ">lua5.5.0 on ubuntu:26.04 and debian:{forky,testing}."
           echo ">lua5.5.1 on ubuntu:26.10 and debian:{unstable,experimental}."
