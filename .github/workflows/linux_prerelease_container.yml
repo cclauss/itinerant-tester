@@ -38,8 +38,9 @@ jobs:
           # Prerelease Linux
           - os: ubuntu:26.10   # Ubuntu Stonking Stingray (development branch) -- Python 3.14.6
           - os: debian:forky   # Debian GNU/Linux 14 (forky) -- Python 3.14.6
-          - os: debian:unstable
-          - os: debian:experimental
+          - os: debian:testing  # The staging area for the next stable release.
+          - os: debian:unstable  # The actual rolling development branch. New upstream versions land here first.
+          - os: debian:experimental  # Not a full distribution — it's an overlay/staging area layered on top of unstable, containing risky packages.
     steps:  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/find-and-customize-actions#referencing-a-container-on-docker-hub
       # - uses: docker://${{ matrix.os }}  # Why is '${{ matrix.os }}' unknown in this context?
       - env:
@@ -47,7 +48,9 @@ jobs:
           TZ: Europe/Paris
         run: |
           apt update
-          apt list --upgradable
+          echo "> upgradable lua"
+          apt list --upgradable | grep lua
+          echo "> debian:trixie does not support lua5.5"
           apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
           lsb_release --all
           lsb_release -ds
@@ -55,7 +58,7 @@ jobs:
           python3 -V
           echo "-- Lua:"
           lua -v  # apt install luarocks (< v3.13.0) DOWNGRADES the default `lua` from 5.5 down to 5.1.
-          echo ">lua5.5.0 on ubuntu:26.04 and debian:trixie."
+          echo ">lua5.5.0 on ubuntu:26.04 and debian:forky."
           echo ">lua5.5.1 on ubuntu:26.10 and debian:unstable and debian:experimental."
           lua5.5 -v
           luarocks --version
