@@ -52,6 +52,7 @@ jobs:
           apt list --upgradable | grep lua || true
           echo "> lua5.5 is not available on debian:trixie"
           apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
+          echo "----------"
           lsb_release --all
           lsb_release -ds
           node --version
@@ -59,12 +60,11 @@ jobs:
           echo "-- Lua:"
           lua -v  # apt install luarocks (< v3.13.0) DOWNGRADES the default `lua` from 5.5 down to 5.1.
           echo ">lua5.5 is not available on debian:trixie"
-          echo ">lua5.5.0 on ubuntu:26.04 and debian:forky."
-          echo ">lua5.5.1 on ubuntu:26.10 and debian:{testing,unstable,experimental}."
-          lua5.5 -v
-          luarocks --version
-          # 2026_07_30: lua5.5 5.5.0-5 MIGRATED to testing -- Fixes the #define macro issue on Debian Forky.
+          echo ">lua5.5.0 on ubuntu:26.04 and debian:{forky,testing}."
+          echo ">lua5.5.1 on ubuntu:26.10 and debian:{unstable,experimental}."
           echo "> luarocks v3.8.0, not v3.11.1 on ubuntu:26.04 so..."
+          lua5.5 -v &&vluarocks --version
+          # 2026_07_30: lua5.5 5.5.0-5 MIGRATED to testing -- Fixes the #define macro issue on Debian Forky.
           echo "> Lua 5.5 version with #define macro bug is not fixed on ubuntu:26.04."
           # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160598 is fixed on Ubuntu Stonking and Debian Forky.
           export PCDIR=$(pkgconf lua5.5 --variable pcfiledir)
@@ -72,7 +72,7 @@ jobs:
           # diff /usr/include/lua5.4/lua.h /usr/include/lua5.5/lua.h
           # cat /usr/include/lua5.5/lua.h
           # ---
-          echo "> LUA_INCDIR and LUA_INCDIR_OK are defined on Lua 5.4 but not on Lua 5.5."
+          echo "> LUA_INCDIR and LUA_INCDIR_OK are defined on Lua 5.4 but..."
           luarocks --lua-version=5.4 config | grep INC
           echo "> LUA_INCDIR and LUA_INCDIR_OK are NOT defined on ubuntu:26.04 Lua 5.5."
           # https://bugs.launchpad.net/ubuntu/+source/lua5.5/+bug/2160601 is fixed on later Linux.
