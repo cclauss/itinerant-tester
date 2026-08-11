@@ -49,7 +49,7 @@ jobs:
         run: |
           apt update
           echo "> upgradable lua"
-          apt list --upgradable | grep lua
+          apt list --upgradable | grep lua || true
           echo "> debian:trixie does not support lua5.5"
           apt install --yes lsb-release nodejs python3 lua5.4 liblua5.4-dev lua5.5 liblua5.5-dev luarocks
           lsb_release --all
