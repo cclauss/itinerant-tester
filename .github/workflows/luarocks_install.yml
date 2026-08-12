@@ -12,13 +12,16 @@
 # That package is installed on both Lua 5.4 and 5.5 on macOS, Ubuntu, and Windows.
 
 name: luarocks_install
-run-name: luarocks install ${{ inputs.package }}
+run-name: luarocks install ${{ inputs.package }} with apt install ${{ inputs.apt_package }}
 on:
   workflow_dispatch:
     inputs:
       package:
         description: 'Package to test (e.g., moonscript)'
         required: true
+      apt_package:
+        description: 'apt-get packages to install'
+        required: false
 
 jobs:
   luarocks_install:
@@ -34,8 +37,13 @@ jobs:
         shell: bash  # Make Windows work like macOS and Linux.
     env:
       PACKAGE: ${{ inputs.package }}
+      APT_PACKAGE: ${{ inputs.apt_package }}
     steps:
       - run: echo "Installing ${PACKAGE} on ${{ matrix.os }} on ${{ runner.arch }}..."
+      - if: runner.os == 'Linux' && inputs.apt_package  # Only Linux has apt-get.
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install --yes ${APT_PACKAGE}
       - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
         uses: step-security/msvc-dev-cmd@v1
       - run: cl || clang --version
