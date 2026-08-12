@@ -44,6 +44,8 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install --yes ${APT_PACKAGE}
+      - if: runner.os == 'Windows' && inputs.apt_package == 'libbz2-dev'
+        run: choco install bzip2
       - if: runner.os == 'Windows'  # Windows requires the MSVC cl tool.
         uses: step-security/msvc-dev-cmd@v1
       - run: cl || clang --version
