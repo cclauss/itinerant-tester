@@ -1,0 +1,45 @@
+# Create a Service Container built on a pre-release or non-Ubuntu version of Linux
+# Buildable Ubuntu versions can be found at http://ports.ubuntu.com/ubuntu-ports/dists
+
+# Ubuntu releases: https://releases.ubuntu.com
+# https://ubuntu.com/about/release-cycle -- Try here first and then fall back to:
+# https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
+
+# Debian releases: https://www.debian.org
+# https://en.wikipedia.org/wiki/Debian_release_version_history#Release_table
+
+name: linux_prerelease_container
+on:
+  push:
+    paths:
+      - '.github/workflows/luarocks_on_freebsd.yml'
+  pull_request:
+    paths:
+      - '.github/workflows/luarocks_on_freebsd.yml'
+  workflow_dispatch:
+jobs:
+  # ubuntu_26_10:
+  #  runs-on: ubuntu-26.10  # Not yet available on GitHub Actions
+  #  steps:
+  #    - run: |
+  #        echo "Running on: ubuntu-26.10"
+
+  linux_prerelease_container:
+    runs-on: ubuntu-latest
+    container:
+      image: ${{ matrix.os }}
+      options: --privileged
+    strategy:
+      fail-fast: false  # don't cancel if any job from the matrix fails
+      matrix:
+        include:  # https://github.com/cclauss/lunatic-python/pull/16
+          - os: freebsd
+          - os: freebsd:15.1
+    steps:  # https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/find-and-customize-actions#referencing-a-container-on-docker-hub
+      # - uses: docker://${{ matrix.os }}  # Why is '${{ matrix.os }}' unknown in this context?
+      - run: |
+          sudo pkg install lua51-luarocks-3.13.0
+
+          echo "-- Lua:"
+          echo ">luarocks < v3.13.0 DOWNGRADES the default lua to v5.1.5."
+          lua -v && luarocks --version
