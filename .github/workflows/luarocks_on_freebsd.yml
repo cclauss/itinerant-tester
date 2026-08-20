@@ -24,13 +24,28 @@ jobs:
           prepare: |
             pkg install -y lua55 lua${{ matrix.lua-version }}-luarocks
           run: |
+            echo "--- START... --------"
             echo "--- lua${{ matrix.lua-version }} -v"
             lua${{ matrix.lua-version }} -v
+
+            # Demonstrate failure of luarocks51...
             echo "--- luarocks${{ matrix.lua-version }} --version"
+            echo "---> luarocks51 will FAIL here."
             luarocks${{ matrix.lua-version }} --version || true
-            echo "--- luarocks${{ matrix.lua-version }} --version"
-            luarocks${{ matrix.lua-version }} || true
+
+            echo "--- luarocks${{ matrix.lua-version }}"
+            echo "---> luarocks51 will also FAIL here."
+            luarocks${{ matrix.lua-version }}
+
+            echo "--- luar55 -v"
+            pkg install -y lua55
+            lua$55 -v
+
+            # Demonstrate failure of luarocks52 --lua-version=5.5
             echo "--- luarocks${{ matrix.lua-version }} --lua-version=5.5 --version"
-            luarocks${{ matrix.lua-version }} --lua-version=5.5 --version
+            echo "---> luarocks52 will FAIL here."
+            luarocks${{ matrix.lua-version }} --lua-version=5.5 --version || true
+
             echo "--- luarocks${{ matrix.lua-version }} --lua-version=5.5"
+            echo "---> luarocks52 will also FAIL here."
             luarocks${{ matrix.lua-version }} --lua-version=5.5
