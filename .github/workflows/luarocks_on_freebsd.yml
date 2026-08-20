@@ -30,22 +30,21 @@ jobs:
 
             # Demonstrate failure of luarocks51...
             echo "--- luarocks${{ matrix.lua-version }} --version"
-            echo "---> luarocks51 will FAIL here."
+            echo "---> luarocks51 only FAILS here."
             luarocks${{ matrix.lua-version }} --version || true
 
             echo "--- luarocks${{ matrix.lua-version }}"
-            echo "---> luarocks51 will also FAIL here."
+            echo "---> luarocks51 and luarocks52 both FAIL here."
             luarocks${{ matrix.lua-version }}
 
-            echo "--- lua55 -v"
+            # For Lua5.3, 5.4, and 5.5...
+            # Demonstrate that luarocks{{ matrix.lua-version }} --lua-version=5.5 works as expected.
+            echo "--- pkg install -y lua55 && lua55 -v"
             pkg install -y lua55
             lua55 -v
 
-            # Demonstrate failure of luarocks52 --lua-version=5.5
             echo "--- luarocks${{ matrix.lua-version }} --lua-version=5.5 --version"
-            echo "---> luarocks52 will FAIL here."
             luarocks${{ matrix.lua-version }} --lua-version=5.5 --version || true
 
             echo "--- luarocks${{ matrix.lua-version }} --lua-version=5.5"
-            echo "---> luarocks52 will also FAIL here."
             luarocks${{ matrix.lua-version }} --lua-version=5.5
