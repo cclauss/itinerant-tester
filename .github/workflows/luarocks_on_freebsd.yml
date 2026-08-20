@@ -24,7 +24,7 @@ jobs:
           prepare: |
             pkg install -y lua${{ matrix.lua-version }}-luarocks lua55-luarocks
           run: |
-            lua{{ matrix.lua-version }} -v
-            luarocks{{ matrix.lua-version }} --version || true
-            luarocks{{ matrix.lua-version }} || true
-            luarocks{{ matrix.lua-version }} --lua-version=5.5 --version
+            lua${{ matrix.lua-version }} -v
+            luarocks${{ matrix.lua-version }} --version || true
+            luarocks${{ matrix.lua-version }} || true
+            luarocks${{ matrix.lua-version }} --lua-version=5.5 --version
