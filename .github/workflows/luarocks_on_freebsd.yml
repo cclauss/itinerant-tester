@@ -37,9 +37,9 @@ jobs:
             echo "---> luarocks51 will also FAIL here."
             luarocks${{ matrix.lua-version }}
 
-            echo "--- luar55 -v"
+            echo "--- lua55 -v"
             pkg install -y lua55
-            lua$55 -v
+            lua55 -v
 
             # Demonstrate failure of luarocks52 --lua-version=5.5
             echo "--- luarocks${{ matrix.lua-version }} --lua-version=5.5 --version"
