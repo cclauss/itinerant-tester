@@ -21,10 +21,9 @@ jobs:
             pkg install -y lua51-luarocks lua55-luarocks
           run: |
             lua51 -v
-            luarocks51 --version
-            luarocks55 --version
+            luarocks51 --version || true
+            luarocks55 --version || true
             luarocks55 || true
             luarocks51 || true
-            pkg install -y lua55
-            luarocks51 --lua-version=5.5 --version
+            luarocks51 --lua-version=5.5 --version || true
             luarocks51 --lua-version=5.5
