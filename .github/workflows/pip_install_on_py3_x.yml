@@ -30,6 +30,7 @@ jobs:
           - h5py
           - keras
           - lxml
+          - statsmodels
           # - django-celery-beat
           - pyproject_hooks
           - Pillow
@@ -54,19 +55,19 @@ jobs:
         persist-credentials: false
     - uses: actions/setup-python@v7.0.0
       with:
-        python-version: 3.14
+        python-version: 3.15
         allow-prereleases: true
-    - if: matrix.module == 'h5py' || matrix.module == 'keras' 
-      run:
-          sudo apt-get update && sudo apt-get install -y libhdf5-dev
-    - if: matrix.module == 'lxml'
-      run:
-          sudo apt-get update && sudo apt-get install -y libxml2-dev libxslt-dev
-    - if: matrix.module == 'Pillow'
-      run:
-          sudo apt-get update && sudo apt-get install -y libtiff5-dev libjpeg8-dev libopenjp2-7-dev
-          zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python3-tk
-          libharfbuzz-dev libfribidi-dev libxcb1-dev
+    # - if: matrix.module == 'h5py' || matrix.module == 'keras' 
+    #  run:
+    #      sudo apt-get update && sudo apt-get install -y libhdf5-dev
+    # - if: matrix.module == 'lxml'
+    #  run:
+    #      sudo apt-get update && sudo apt-get install -y libxml2-dev libxslt-dev
+    # - if: matrix.module == 'Pillow'
+    #  run:
+    #      sudo apt-get update && sudo apt-get install -y libtiff5-dev libjpeg8-dev libopenjp2-7-dev
+    #      zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python3-tk
+    #      libharfbuzz-dev libfribidi-dev libxcb1-dev
     #- run: pip install ${{ matrix.module }}
     #- run: pip uninstall -y ${{ matrix.module }}
     - run: pip install --upgrade pip
