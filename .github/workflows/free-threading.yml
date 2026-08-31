@@ -17,7 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        python-version: [3.15, 3.15t]
+        python-version: [3.14t, 3.15, 3.15t]
     runs-on: ${{ matrix.os }}
     env:
       PYPI_PACKAGE: ${{ inputs.pypi_package }}
