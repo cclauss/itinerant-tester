@@ -13,42 +13,50 @@ jobs:
       fail-fast: false
       matrix:
         module:
-          #- PyWavelets
-          #- git+https://github.com/PyWavelets/pywt.git
-          #- scikit-image
-          #- scikit-fuzzy
-          #- symengine
-          - contourpy
-          - qiskit
-          #- git+https://github.com/Qiskit/qiskit.git
-          - tensorflow
-          # - git+https://github.com/tensorflow/tensorflow.git
-          # - django-haystack
-          # - pysolr
-          - pyproject_api
+          # My modules
+          - cpplint
+          - django-celery-beat
+          - pyfluidsynth
+          - pyttsx3
+          - tap2junit
+          - web-py
+          # Others
+          - ament-black
           - celery
+          - contourpy
+          - cssbeautifier
+          - django-celery-beat
+          - django-haystack
+          - dronecan
           - greenlet
           - h5py
           - keras
           - lxml
-          - statsmodels
-          # - django-celery-beat
-          - pyproject_hooks
           - Pillow
-          # - cssbeautifier
-          - wave
-          - MySQL-python
-          - dronecan
-          - ament-black
-          - ament-clang-tidy
-          - ament-lint
-          - ament-lint-cmake-py
-          - ament-lint-flake8
-          - ament-lint-pep257
-          - ament-mypy
-          - ament-pycodestyle
-          - ament-style-uncrustify
-          - ament-xmllint
+          - pyproject_api
+          - pyproject_hooks
+          - pysolr
+          - PyWavelets  # - git+https://github.com/PyWavelets/pywt.git
+          - qiskit
+          - git+https://github.com/Qiskit/qiskit.git
+          - scikit-fuzzy
+          - scikit-image
+          - scikit-learn
+          - statsmodels
+          - symengine
+          - tensorflow
+          - git+https://github.com/tensorflow/tensorflow.git
+          # - ament-clang-tidy
+          # - ament-lint
+          # - ament-lint-cmake-py
+          # - ament-lint-flake8
+          # - ament-lint-pep257
+          # - ament-mypy
+          # - ament-pycodestyle
+          # - ament-style-uncrustify
+          # - ament-xmllint
+          # - MySQL-python
+          # - wave
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v7.0.1
