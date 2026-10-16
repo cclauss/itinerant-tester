@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Update the repo's '.travis.yml' to trigger Travis CI to run flake8 tests on
-the top 25 GitHub Trending Python repos.
+Lint the top 25 GitHub Trending Python repos.
 
 Requires: pip3 install --upgrade beautifulsoup4 github3.py requests lxml
     If lxml is not available, html5lib should be a workable substitute
@@ -80,7 +79,7 @@ notifications:
   on_failure: change  # `always` will be the setting once code changes slow down
 """
 
-print(f"{dt.now(timezone.utc):%a %b %d %H:%M:%S %Z %Y}")
+print(f"{dt.now(dt.UTC):%a %b %d %H:%M:%S %Z %Y}")
 # extract the repo names of GitHub's Top 25 Trending Python list
 soup = bs4.BeautifulSoup(
     requests.get(url, headers=HEADERS).content, "lxml"
