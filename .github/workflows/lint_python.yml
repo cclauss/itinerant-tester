@@ -16,8 +16,8 @@ jobs:
           persist-credentials: false
       - uses: codespell-project/actions-codespell@v2
       - uses: astral-sh/ruff-action@v4.1.0
-      - uses: astral-sh/setup-uv@v10.3.0
-      - uses: actions/setup-python@v7.0.0
+      - uses: astral-sh/setup-uv@v10.3.2
+      - uses: actions/setup-python@v7.1.0
         with: {python-version: 3.x}
       - run: pip install --upgrade pip ruff setuptools wheel
       - name: "Ruff: Show stopper (must-fix) issues"

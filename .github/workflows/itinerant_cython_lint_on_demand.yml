@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
           repository: ${REPO}
-      - uses: actions/setup-python@v7.0.0
+      - uses: actions/setup-python@v7.1.0
         with:
           python-version: 3.x
       - run: pip install cython-lint  # https://pypi.org/project/com2ann
