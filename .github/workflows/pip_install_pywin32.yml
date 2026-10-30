@@ -40,7 +40,7 @@ jobs:
       - if: matrix.module == 'pywin32' && matrix.python-version == '3.15'
         run: uvx --with=${{ matrix.module }} python${{ matrix.python-version }} -c "import win32 ; dir(win32)"
       - if: matrix.module == 'pywin32' && matrix.python-version == '3.15t'
-        run: uvx --with=https://github.com/mhammond/pywin32@main python${{ matrix.python-version }} -c "import win32 ; dir(win32)"
+        run: uvx --with=git+https://github.com/mhammond/pywin32@main python${{ matrix.python-version }} -c "import win32 ; dir(win32)"
 
       # Approach one: a longer way 
       - uses: astral-sh/setup-uv@v10.3.2
