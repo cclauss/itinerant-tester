@@ -21,7 +21,7 @@ jobs:
       with:
         persist-credentials: false
         repository: ${{ github.event.inputs.repo }}
-    - uses: actions/setup-python@v7.0.0
+    - uses: actions/setup-python@v7.1.0
       with:
         python-version: 3.6  # nose2pytest must run on Python <= 3.6
     - run: pip install nose2pytest

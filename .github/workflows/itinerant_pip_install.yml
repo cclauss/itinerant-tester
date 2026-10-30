@@ -33,7 +33,7 @@ jobs:
       PYPI_PACKAGE: ${{ inputs.pypi_package }}
     steps:
       - run: echo "Testing ${PYPI_PACKAGE}..."
-      - uses: actions/setup-python@v7.0.0
+      - uses: actions/setup-python@v7.1.0
         with:
             python-version: ${{ matrix.python-version }}
             allow-prereleases: true
