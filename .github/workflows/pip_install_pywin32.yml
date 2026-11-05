@@ -32,7 +32,7 @@ jobs:
       #- run: pip install ${{ matrix.module }}
 
       # Approach two: The terse way: % `uvx --with=module python3.14t -c "import module"`
-      - uses: astral-sh/setup-uv@v10.3.2
+      - uses: astral-sh/setup-uv@v10.3.3
       - if: matrix.module == 'dbt-extractor'
         run: uvx --with=${{ matrix.module }} python${{ matrix.python-version }} -c "import dbt_extractor ; print(dir(dbt_extractor))"
       - if: matrix.module == 'orjson'
@@ -43,7 +43,7 @@ jobs:
         run: uvx --with=git+https://github.com/mhammond/pywin32@main python${{ matrix.python-version }} -c "import win32 ; print(dir(win32))"
 
       # Approach one: a longer way 
-      - uses: astral-sh/setup-uv@v10.3.2
+      - uses: astral-sh/setup-uv@v10.3.3
         with:
           python-version: ${{ matrix.python-version }}
           activate-environment: true
