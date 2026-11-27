@@ -30,7 +30,7 @@ jobs:
           git diff
           git status
           git branch
-      - uses: actions/dependency-review-action@v5.0.0
+      - uses: actions/dependency-review-action@v5.0.1
         with:
           base-ref: ${{ github.ref }}
           # base-ref: ${{ github.event.base_ref }}
